@@ -1,0 +1,41 @@
+{
+  "step0": {
+    "chip": "上下文 100%",
+    "hudLabel": "用量小宠物，空闲",
+    "url": "http://127.0.0.1:13037/",
+    "current": "{\"sessionId\":\"sess-pet-huge\"}"
+  },
+  "stepA": {
+    "chip": "上下文 –%",
+    "hudLabel": "用量小宠物，空闲",
+    "url": "http://127.0.0.1:13037/",
+    "current": "{\"sessionId\":\"sess-pet-known\"}"
+  },
+  "stepB5": {
+    "chip": "上下文 –%",
+    "hudLabel": "用量小宠物，空闲",
+    "url": "http://127.0.0.1:13037/",
+    "current": "{\"sessionId\":\"sess-pet-known\"}"
+  },
+  "stepB15": {
+    "chip": "上下文 –%",
+    "hudLabel": "用量小宠物，空闲",
+    "url": "http://127.0.0.1:13037/",
+    "current": "{\"sessionId\":\"sess-pet-known\"}"
+  },
+  "stepC1": {
+    "chip": "上下文 100%",
+    "hudLabel": "用量小宠物，空闲",
+    "url": "http://127.0.0.1:13037/",
+    "current": "{\"sessionId\":\"sess-pet-huge\"}"
+  },
+  "stepC2": {
+    "chip": "上下文 –%",
+    "hudLabel": "用量小宠物，空闲",
+    "url": "http://127.0.0.1:13037/",
+    "current": "{\"sessionId\":\"sess-pet-known\"}"
+  },
+  "card": "用量小宠物 | ✦ 增强提示词 | 刷新 | − 收起 | 总览 | 模型 | 设置 | 当前上下文 | 模型未知 | — | 上下文窗口读取中 | 当前会话 | › 展开会话明细 | 3 轮次 | 4.0s | 索引已就绪 · 0 个已索引 | 跨会话累计 | 终身用量账本 · 4 个会话 | 2.2M | › 展开账本分类 | 永久累计，不受当前会话切换或普通统计重置影响。 | 清空历史（不可恢复） | 用量最高的 5 个服务商与模型 | 终身累计 | 01 | fixture-provider · fixtu",
+  "errors": [],
+  "consoleLog": []
+}

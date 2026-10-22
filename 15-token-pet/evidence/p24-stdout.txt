@@ -1,0 +1,64 @@
+﻿{
+ "report": {
+  "chip": {
+   "text": "上下文 50%",
+   "chain": [
+    "div",
+    "div",
+    "div",
+    "TokenPetWindow",
+    "ErrorBoundary",
+    "RootEntry",
+    "SlotErrorBoundary",
+    "div"
+   ],
+   "rect": {
+    "x": 1326,
+    "y": 963,
+    "w": 73,
+    "h": 19
+   }
+  },
+  "tokenPill": {
+   "text": "2 轮 2 步",
+   "chain": [
+    "span",
+    "TimePill",
+    "div",
+    "StatsPills",
+    "SessionEntry",
+    "SlotErrorBoundary",
+    "StrictSessionEntry",
+    "div"
+   ],
+   "rect": {
+    "x": 686,
+    "y": 974,
+    "w": 83,
+    "h": 22
+   }
+  },
+  "cacheSpan": {
+   "text": "95.2K tok·缓存命中 76%",
+   "chain": [
+    "span",
+    "UsagePill",
+    "div",
+    "StatsPills",
+    "SessionEntry",
+    "SlotErrorBoundary",
+    "StrictSessionEntry",
+    "div"
+   ],
+   "rect": {
+    "x": 781,
+    "y": 974,
+    "w": 174,
+    "h": 22
+   }
+  },
+  "dockText": "2 轮 2 步 | 95.2K tok·缓存命中 76%"
+ },
+ "errors": [],
+ "consoleLog": []
+}

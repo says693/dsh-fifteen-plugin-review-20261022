@@ -1,0 +1,15 @@
+﻿
+version repo                                                  license shasum                                  
+------- ----                                                  ------- ------                                  
+0.1.0   git+https://github.com/Jimmy0123-ux/dsh-token-pet.git MIT     2a9a2feb3840bcdcd095497d6b6ad65756275108
+0.1.1   git+https://github.com/Jimmy0123-ux/dsh-token-pet.git MIT     26854a8eada128033c3df14a78ee0992804c362a
+0.2.0   git+https://github.com/Jimmy0123-ux/dsh-token-pet.git MIT     7de77ac8163d25341050e17ea3bebd6622cb2758
+0.3.0   git+https://github.com/Jimmy0123-ux/dsh-token-pet.git MIT     0ad91026def5d47f1196ac96f8484c37b5599f6e
+0.3.1   git+https://github.com/Jimmy0123-ux/dsh-token-pet.git MIT     4227fe66aca5b092235a6d67e01d802e74ddcbaf
+0.3.2   git+https://github.com/Jimmy0123-ux/dsh-token-pet.git MIT     6221ef773a9f756b639be28b4d23a25bdf439282
+0.4.0   git+https://github.com/Jimmy0123-ux/dsh-token-pet.git MIT     c937256cba4a214bad06636b65fe184b0dbcc63b
+0.4.1   git+https://github.com/Jimmy0123-ux/dsh-token-pet.git MIT     635283838ad4a6c9bc0c375686cc71d90d32181f
+0.4.2   git+https://github.com/Jimmy0123-ux/dsh-token-pet.git MIT     3fe75ccdd3c5f129c20337663a3357584d19f006
+
+
+

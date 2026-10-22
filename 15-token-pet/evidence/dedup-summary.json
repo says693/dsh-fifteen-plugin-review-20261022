@@ -1,0 +1,27 @@
+﻿{
+  "checkedAt": "2026-10-22T10:44:00+08:00",
+  "bounty": {
+    "url": "https://github.com/FuRongJun-1999/dsh-bounty/issues",
+    "method": "api.github.com/search/issues?q=repo:FuRongJun-1999/dsh-bounty+<term>",
+    "terms": {
+      "dsh-token-pet": 0,
+      "pk7j7sqryy": 0,
+      "Jimmy0123-ux": 0,
+      "token-pet": 3
+    },
+    "fuzzyHits": [
+      {"number": 645, "title": "dsh-roleplay-plugin (ajuwm)", "sameScope": false},
+      {"number": 569, "title": "vlln/whale-girl @9c32d7a", "sameScope": false},
+      {"number": 1481, "title": "@sunwindy/dsh-tool-baixiaochun 0.2.1", "sameScope": false}
+    ],
+    "conclusion": "no same-scope report; fuzzy 'token-pet' hits are different plugins"
+  },
+  "lingshulab": {
+    "base": "https://review.lingshulab.com",
+    "method": "paged listing; ?q= is not applied server-side, so every page was fetched and scanned locally",
+    "pluginPages": {"pages": 12, "plugins": 133, "hits": {"dsh-token-pet": 0, "pk7j7sqryy": 0, "Jimmy0123": 0, "token-pet": 0, "用量小宠物": 0}},
+    "reviewPages": {"pages": 9, "reviews": 172, "hits": {"dsh-token-pet": 0, "pk7j7sqryy": 0, "Jimmy0123": 0, "token-pet": 0, "用量小宠物": 0}},
+    "conclusion": "plugin not listed; no review for it"
+  },
+  "verdict": "首报（两站同范围均无命中；评测站插件目录里该插件本身尚未收录）"
+}

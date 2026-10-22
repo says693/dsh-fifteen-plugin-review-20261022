@@ -1,0 +1,26 @@
+{
+  "empty": {
+    "id": "sess-pet-empty",
+    "closed": {
+      "hudLabel": "用量小宠物，空闲",
+      "hudText": "空闲"
+    },
+    "panel": "用量小宠物 | ✦ 增强提示词 | 刷新 | − 收起 | 总览 | 模型 | 设置 | 当前上下文 | 模型未知 | — | 上下文窗口读取中 | 当前会话 | › 展开会话明细 | 0 轮次 | 0ms | 索引已就绪 · 0 个已索引 | 跨会话累计 | 终身用量账本 · 4 个会话 | 2.2M | › 展开账本分类 | 永久累计，不受当前会话切换或普通统计重置影响。 | 清空历史（不可恢复） | 用量最高的 5 个服务商与模型 | 终身累计 | 01 | fixture-provider · fixture-model-a | 2.2M | 02 | unknown-provider · totally-unknown-model-xyz | 3.2k | 本日用量趋势 | 今日 | 近 7 日 | 近 30 日 | 暂无趋势数据 | 最耗 Token 的会话 | 来自持久化用量索引的会话合计 | 暂无会话统计 | ↘"
+  },
+  "known": {
+    "id": "sess-pet-known",
+    "closed": {
+      "hudLabel": "用量小宠物，空闲",
+      "hudText": "空闲"
+    },
+    "panel": "用量小宠物 | ✦ 增强提示词 | 刷新 | − 收起 | 总览 | 模型 | 设置 | 当前上下文 | 模型未知 | — | 上下文窗口读取中 | 当前会话 | › 展开会话明细 | 3 轮次 | 4.0s | 索引已就绪 · 0 个已索引 | 跨会话累计 | 终身用量账本 · 4 个会话 | 2.2M | › 展开账本分类 | 永久累计，不受当前会话切换或普通统计重置影响。 | 清空历史（不可恢复） | 用量最高的 5 个服务商与模型 | 终身累计 | 01 | fixture-provider · fixture-model-a | 2.2M | 02 | unknown-provider · totally-unknown-model-xyz | 3.2k | 本日用量趋势 | 今日 | 近 7 日 | 近 30 日 | 暂无趋势数据 | 最耗 Token 的会话 | 来自持久化用量索引的会话合计 | 暂无会话统计 | ↘"
+  },
+  "modelsTab": true,
+  "modelsText": "用量小宠物 | ✦ 增强提示词 | 刷新 | − 收起 | 总览 | 模型 | 设置 | 全部服务商与模型 | 分类来自账本的模型/日期记录；源接口未提供分类时仅显示真实总量。 | fixture-provider · fixture-model-a | 2.2M | 1.2M | 输入 | 32k | 输出 | 942k | 缓存读 | 4.0k | 缓存写 | unknown-provider · totally-unknown-model-xyz | 3.2k | 3.0k | 输入 | 200 | 输出 | 0 | 缓存读 | 0 | 缓存写 | ↘",
+  "hostModel": {
+    "status": 200,
+    "sample": []
+  },
+  "errors": [],
+  "consoleLog": []
+}

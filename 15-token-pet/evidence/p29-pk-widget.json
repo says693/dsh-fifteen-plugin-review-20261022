@@ -1,0 +1,186 @@
+{
+  "closed": {
+    "nodes": [
+      {
+        "cls": "tkp-root",
+        "text": "50%",
+        "rect": {
+          "x": 1284,
+          "y": 10,
+          "w": 72,
+          "h": 32
+        }
+      },
+      {
+        "cls": "tkp-pill",
+        "text": "50%",
+        "rect": {
+          "x": 1284,
+          "y": 10,
+          "w": 72,
+          "h": 32
+        }
+      },
+      {
+        "cls": "[object SVGAnimatedString]",
+        "text": "",
+        "rect": {
+          "x": 1290,
+          "y": 14,
+          "w": 24,
+          "h": 24
+        }
+      },
+      {
+        "cls": "tkp-pill-num",
+        "text": "50%",
+        "rect": {
+          "x": 1320,
+          "y": 18,
+          "w": 25,
+          "h": 16
+        }
+      }
+    ],
+    "root": {
+      "rect": {
+        "x": 1284,
+        "y": 10,
+        "w": 72,
+        "h": 32
+      },
+      "text": "50%"
+    },
+    "bodyHit": [
+      "上下文变大而变化。这是一段合成的示例内容，只用来把消息撑长，方便观察小部件读数是否会随",
+      "上下文变大而变化。这是一段合成的示例内容，只用来把消息撑长，方便观察小部件读数是否会随",
+      "上下文变大而变化。这是一段合成的示例内容，只用来把消息撑长，方便观察小部件读数是否会随",
+      "上下文变大而变化。这是一段合成的示例内容，只用来把消息撑长，方便观察小部件读数是否会随",
+      "上下文变大而变化。这是一段合成的示例内容，只用来把消息撑长，方便观察小部件读数是否会随",
+      "上下文变大而变化。这是一段合成的示例内容，只用来把消息撑长，方便观察小部件读数是否会随",
+      "上下文变大而变化。这是一段合成的示例内容，只用来把消息撑长，方便观察小部件读数是否会随",
+      "上下文变大而变化。\n\n用量 44.8K tok\n10:04\n第 2 轮：再补充一句结论"
+    ]
+  },
+  "clicked": true,
+  "open": {
+    "card": {
+      "rect": {
+        "x": 1050,
+        "y": 52,
+        "w": 306,
+        "h": 374
+      },
+      "text": "Token 泡泡 | ✕ | 📅 | 10月22日 · 周四 | 🌡️ | 天气不可用 | 上下文占用 | 50% | ~50.1K / 100K | 本会话累计 | 合计 95.2K | 输入 | 21K | 输出 | 1.2K | 缓存读 | 71K | 缓存写 | 2K | 上下文构成 | 系统提示 | 0 | 工具定义 | 135 | 消息内容 | 218 | 状态不错，继续冲～"
+    },
+    "nodes": [
+      {
+        "cls": "tkp-root",
+        "text": "50% | Token 泡泡 | ✕ | 📅 | 10月22日 · 周四 | 🌡️ | 天气不可用 | 上下文占用 | 50% | ~50.1K / 100K | 本会话累计 | 合计 95.2K | 输入 | 21K | 输出 | 1.2K | 缓存读 | 71K | 缓存写 | 2K | 上下文构成 | 系统提"
+      },
+      {
+        "cls": "tkp-pill",
+        "text": "50%"
+      },
+      {
+        "cls": "tkp-pill-num",
+        "text": "50%"
+      },
+      {
+        "cls": "tkp-card",
+        "text": "Token 泡泡 | ✕ | 📅 | 10月22日 · 周四 | 🌡️ | 天气不可用 | 上下文占用 | 50% | ~50.1K / 100K | 本会话累计 | 合计 95.2K | 输入 | 21K | 输出 | 1.2K | 缓存读 | 71K | 缓存写 | 2K | 上下文构成 | 系统提示 | 0 "
+      },
+      {
+        "cls": "tkp-head",
+        "text": "Token 泡泡 | ✕"
+      },
+      {
+        "cls": "tkp-title",
+        "text": "Token 泡泡"
+      },
+      {
+        "cls": "tkp-close",
+        "text": "✕"
+      },
+      {
+        "cls": "tkp-today",
+        "text": "📅 | 10月22日 · 周四 | 🌡️ | 天气不可用"
+      },
+      {
+        "cls": "tkp-today-item",
+        "text": "📅 | 10月22日 · 周四"
+      },
+      {
+        "cls": "tkp-today-icon",
+        "text": "📅"
+      },
+      {
+        "cls": "tkp-today-text",
+        "text": "10月22日 · 周四"
+      },
+      {
+        "cls": "tkp-today-item tkp-today-btn",
+        "text": "🌡️ | 天气不可用"
+      },
+      {
+        "cls": "tkp-today-icon",
+        "text": "🌡️"
+      },
+      {
+        "cls": "tkp-today-text",
+        "text": "天气不可用"
+      },
+      {
+        "cls": "tkp-sec",
+        "text": "上下文占用 | 50% | ~50.1K / 100K"
+      },
+      {
+        "cls": "tkp-sec-label",
+        "text": "上下文占用"
+      },
+      {
+        "cls": "tkp-bar-row",
+        "text": "50% | ~50.1K / 100K"
+      },
+      {
+        "cls": "tkp-big",
+        "text": "50%"
+      },
+      {
+        "cls": "tkp-dim",
+        "text": "~50.1K / 100K"
+      },
+      {
+        "cls": "tkp-sec",
+        "text": "本会话累计 | 合计 95.2K | 输入 | 21K | 输出 | 1.2K | 缓存读 | 71K | 缓存写 | 2K"
+      }
+    ]
+  },
+  "refreshed": "📅\n10月22日 · 周四\n🌡️\n天气不可用",
+  "afterRefresh": "50% | Token 泡泡 | ✕ | 📅 | 10月22日 · 周四 | 🌡️ | 天气不可用 | 上下文占用 | 50% | ~50.1K / 100K | 本会话累计 | 合计 95.2K | 输入 | 21K | 输出 | 1.2K | 缓存读 | 71K | 缓存写 | 2K | 上下文构成 | 系统提示 | 0 | 工具定义 | 135 | 消息内容 | 218 | 状态不错，继续冲～",
+  "errors": [],
+  "consoleLog": [
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 405 (Method Not Allowed)",
+      "utc": "2026-10-22T03:10:32.024Z"
+    }
+  ],
+  "net": [
+    {
+      "path": "/plugins/??@deepseek-ai/dsh-client-ui-open-in-app/client.js,@deepseek-ai/dsh-api-gateway/client.js,@deepseek-ai/dsh-api-job-controller/client.js,@deepseek-ai/dsh-api-terminal-controller/client.js,@deepseek-ai/dsh-api-workspace-files/client.js,@deepseek-ai/dsh-client-ui-settings-account/client.js,@deepseek-ai/dsh-client-hmr/client.js,@deepseek-ai/dsh-cordis-client-runner/client.js,@deepseek-ai/dsh-client-ui-theme/client.js,@deepseek-ai/dsh-client-locale/client.js,@deepseek-ai/dsh-client-shortcuts/client.js,@deepseek-ai/dsh-client-ui-shortcuts/client.js,@deepseek-ai/dsh-client-ui-layout/client.js,@deepseek-ai/dsh-client-ui-renderer/client.js,@deepseek-ai/dsh-client-ui-session/client.js,@deepseek-ai/dsh-client-resources/client.js,@deepseek-ai/dsh-client-ui-sidebar/client.js,@deepseek-ai/dsh-client-ui-sidebar-right/client.js,@deepseek-ai/dsh-client-ui-sidebar-documentpreview/client.js,@deepseek-ai/dsh-client-ui-sidebar-terminal/client.js,@deepseek-ai/dsh-client-ui-sidebar-files/client.js,@deepseek-ai/dsh-client-ui-settings/client.js,@deepseek-ai/dsh-client-ui-settings-general/client.js,@deepseek-ai/dsh-client-ui-settings-models/client.js,@deepseek-ai/dsh-client-ui-plugin-manager/client.js,@deepseek-ai/dsh-client-ui-settings-plugin-inventory/client.js,@deepseek-ai/dsh-client-ui-conversation/client.js,@deepseek-ai/dsh-client-ui-approval/client.js,@deepseek-ai/dsh-client-ui-chat/client.js,@deepseek-ai/dsh-client-ui-brand-official/client.js,@deepseek-ai/dsh-client-ui-attachment/client.js,@deepseek-ai/dsh-client-ui-tool/client.js,@deepseek-ai/dsh-client-ui-cordis/client.js,@deepseek-ai/dsh-client-ui-workspace/client.js,@deepseek-ai/dsh-client-ui-workflow-run/client.js,@deepseek-ai/dsh-client-ui-input-trigger/client.js,@deepseek-ai/dsh-client-ui-commands/client.js,@deepseek-ai/dsh-client-ui-skill/client.js,@deepseek-ai/dsh-client-ui-subagent/client.js,@deepseek-ai/dsh-client-ui-reference/client.js,@deepseek-ai/dsh-client-ui-jobs/client.js,@deepseek-ai/dsh-client-ui-goal/client.js,@deepseek-ai/dsh-client-ui-message-feedback/client.js,@deepseek-ai/dsh-client-ui-model-selection/client.js,@deepseek-ai/dsh-client-ui-permission-presets/client.js,@deepseek-ai/dsh-client-ui-agent-preset/client.js,@deepseek-ai/dsh-client-ui-settings-session-log/client.js,@deepseek-ai/dsh-client-ui-settings-plugins/client.js,@deepseek-ai/dsh-client-ui-settings-shell/client.js,@deepseek-ai/dsh-client-ui-settings-agent-loop/client.js,@deepseek-ai/dsh-client-ui-settings-subagent/client.js,@deepseek-ai/dsh-client-ui-settings-web-search/client.js,@deepseek-ai/dsh-client-ui-plan/client.js,@deepseek-ai/dsh-client-ui-user-questions/client.js,@deepseek-ai/dsh-client-ui-trajectory/client.js,dsh-token-pet/client.js,@deepseek-ai/dsh-session-log-export/client.js,@deepseek-ai/dsh-client-file-upload/client.js&rev=7dcd1747b912",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/plugins/??@deepseek-ai/dsh-client-ui-open-in-app/client.js,@deepseek-ai/dsh-api-gateway/client.js,@deepseek-ai/dsh-api-job-controller/client.js,@deepseek-ai/dsh-api-terminal-controller/client.js,@deepseek-ai/dsh-api-workspace-files/client.js,@deepseek-ai/dsh-client-ui-settings-account/client.js,@deepseek-ai/dsh-client-hmr/client.js,@deepseek-ai/dsh-cordis-client-runner/client.js,@deepseek-ai/dsh-client-ui-theme/client.js,@deepseek-ai/dsh-client-locale/client.js,@deepseek-ai/dsh-client-shortcuts/client.js,@deepseek-ai/dsh-client-ui-shortcuts/client.js,@deepseek-ai/dsh-client-ui-layout/client.js,@deepseek-ai/dsh-client-ui-renderer/client.js,@deepseek-ai/dsh-client-ui-session/client.js,@deepseek-ai/dsh-client-resources/client.js,@deepseek-ai/dsh-client-ui-sidebar/client.js,@deepseek-ai/dsh-client-ui-sidebar-right/client.js,@deepseek-ai/dsh-client-ui-sidebar-documentpreview/client.js,@deepseek-ai/dsh-client-ui-sidebar-terminal/client.js,@deepseek-ai/dsh-client-ui-sidebar-files/client.js,@deepseek-ai/dsh-client-ui-settings/client.js,@deepseek-ai/dsh-client-ui-settings-general/client.js,@deepseek-ai/dsh-client-ui-settings-models/client.js,@deepseek-ai/dsh-client-ui-plugin-manager/client.js,@deepseek-ai/dsh-client-ui-settings-plugin-inventory/client.js,@deepseek-ai/dsh-client-ui-conversation/client.js,@deepseek-ai/dsh-client-ui-approval/client.js,@deepseek-ai/dsh-client-ui-chat/client.js,@deepseek-ai/dsh-client-ui-brand-official/client.js,@deepseek-ai/dsh-client-ui-attachment/client.js,@deepseek-ai/dsh-client-ui-tool/client.js,@deepseek-ai/dsh-client-ui-cordis/client.js,@deepseek-ai/dsh-client-ui-workspace/client.js,@deepseek-ai/dsh-client-ui-workflow-run/client.js,@deepseek-ai/dsh-client-ui-input-trigger/client.js,@deepseek-ai/dsh-client-ui-commands/client.js,@deepseek-ai/dsh-client-ui-skill/client.js,@deepseek-ai/dsh-client-ui-subagent/client.js,@deepseek-ai/dsh-client-ui-reference/client.js,@deepseek-ai/dsh-client-ui-jobs/client.js,@deepseek-ai/dsh-client-ui-goal/client.js,@deepseek-ai/dsh-client-ui-message-feedback/client.js,@deepseek-ai/dsh-client-ui-model-selection/client.js,@deepseek-ai/dsh-client-ui-permission-presets/client.js,@deepseek-ai/dsh-client-ui-agent-preset/client.js,@deepseek-ai/dsh-client-ui-settings-session-log/client.js,@deepseek-ai/dsh-client-ui-settings-plugins/client.js,@deepseek-ai/dsh-client-ui-settings-shell/client.js,@deepseek-ai/dsh-client-ui-settings-agent-loop/client.js,@deepseek-ai/dsh-client-ui-settings-subagent/client.js,@deepseek-ai/dsh-client-ui-settings-web-search/client.js,@deepseek-ai/dsh-client-ui-plan/client.js,@deepseek-ai/dsh-client-ui-user-questions/client.js,@deepseek-ai/dsh-client-ui-trajectory/client.js,dsh-token-pet/client.js,@deepseek-ai/dsh-session-log-export/client.js,@deepseek-ai/dsh-client-file-upload/client.js&rev=7dcd1747b912",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/token-pet/weather",
+      "method": "POST",
+      "status": 405
+    }
+  ]
+}

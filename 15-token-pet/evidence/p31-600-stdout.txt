@@ -1,0 +1,546 @@
+﻿{
+ "before": [
+  {
+   "cls": "tkp-root",
+   "text": "100%",
+   "rect": {
+    "x": 437,
+    "y": 10,
+    "w": 79,
+    "h": 32
+   }
+  },
+  {
+   "cls": "tkp-pill",
+   "text": "100%",
+   "rect": {
+    "x": 437,
+    "y": 10,
+    "w": 79,
+    "h": 32
+   }
+  },
+  {
+   "cls": "(svg)",
+   "text": "",
+   "rect": {
+    "x": 443,
+    "y": 14,
+    "w": 24,
+    "h": 24
+   }
+  },
+  {
+   "cls": "tkp-pill-num",
+   "text": "100%",
+   "rect": {
+    "x": 473,
+    "y": 18,
+    "w": 32,
+    "h": 16
+   }
+  }
+ ],
+ "clickPoint": {
+  "x": 476.5390625,
+  "y": 26
+ },
+ "cardText": "Token 泡泡 | ✕ | 📅 | 10月22日 · 周四 | 🌡️ | 天气不可用 | 上下文占用 | 100% | ~2M / 100K | 本会话累计 | 合计 2M | 输入 | 1.2M | 输出 | 30K | 缓存读 | 800K | 缓存写 | 0 | 上下文构成 | 系统提示 | 0 | 工具定义 | 135 | 消息内容 | 66 | 快满啦！建议压缩一下上下文",
+ "cardRect": {
+  "x": 210,
+  "y": 52,
+  "w": 306,
+  "h": 374,
+  "right": 516,
+  "bottom": 426
+ },
+ "outside": false,
+ "overflowInside": false,
+ "docOverflowX": false,
+ "nodes": [
+  {
+   "cls": "tkp-root",
+   "text": "100% | Token 泡泡 | ✕ | 📅 | 10月22日 · 周四 | 🌡️ | 天气不可用 | 上下文占用 | 100% | ~2M / 100K | 本会话累计 | 合计 2M | 输入 | 1.2M | 输出 | 30K | 缓存读 | 800K | 缓存写 | 0 | 上下文构成 | 系统提示 | 0 | 工具定义 | 135 | 消息内容 | 66 | 快满啦！建议压缩一下上",
+   "rect": {
+    "x": 437,
+    "y": 10,
+    "w": 79,
+    "h": 32,
+    "right": 516,
+    "bottom": 42
+   }
+  },
+  {
+   "cls": "tkp-pill",
+   "text": "100%",
+   "rect": {
+    "x": 437,
+    "y": 9,
+    "w": 79,
+    "h": 32,
+    "right": 516,
+    "bottom": 41
+   }
+  },
+  {
+   "cls": "(svg)",
+   "text": "",
+   "rect": {
+    "x": 443,
+    "y": 13,
+    "w": 24,
+    "h": 24,
+    "right": 467,
+    "bottom": 37
+   }
+  },
+  {
+   "cls": "tkp-pill-num",
+   "text": "100%",
+   "rect": {
+    "x": 473,
+    "y": 17,
+    "w": 32,
+    "h": 16,
+    "right": 505,
+    "bottom": 33
+   }
+  },
+  {
+   "cls": "tkp-card tkp-full",
+   "text": "Token 泡泡 | ✕ | 📅 | 10月22日 · 周四 | 🌡️ | 天气不可用 | 上下文占用 | 100% | ~2M / 100K | 本会话累计 | 合计 2M | 输入 | 1.2M | 输出 | 30K | 缓存读 | 800K | 缓存写 | 0 | 上下文构成 | 系统提示 | 0 | 工具定义 | 135 | 消息内容 | 66 | 快满啦！建议压缩一下上下文",
+   "rect": {
+    "x": 210,
+    "y": 52,
+    "w": 306,
+    "h": 374,
+    "right": 516,
+    "bottom": 426
+   }
+  },
+  {
+   "cls": "tkp-head",
+   "text": "Token 泡泡 | ✕",
+   "rect": {
+    "x": 223,
+    "y": 65,
+    "w": 280,
+    "h": 34,
+    "right": 503,
+    "bottom": 99
+   }
+  },
+  {
+   "cls": "(svg)",
+   "text": "",
+   "rect": {
+    "x": 223,
+    "y": 65,
+    "w": 34,
+    "h": 34,
+    "right": 257,
+    "bottom": 99
+   }
+  },
+  {
+   "cls": "tkp-title",
+   "text": "Token 泡泡",
+   "rect": {
+    "x": 266,
+    "y": 74,
+    "w": 66,
+    "h": 17,
+    "right": 332,
+    "bottom": 91
+   }
+  },
+  {
+   "cls": "tkp-close",
+   "text": "✕",
+   "rect": {
+    "x": 481,
+    "y": 71,
+    "w": 22,
+    "h": 22,
+    "right": 503,
+    "bottom": 93
+   }
+  },
+  {
+   "cls": "tkp-today",
+   "text": "📅 | 10月22日 · 周四 | 🌡️ | 天气不可用",
+   "rect": {
+    "x": 223,
+    "y": 110,
+    "w": 280,
+    "h": 32,
+    "right": 503,
+    "bottom": 142
+   }
+  },
+  {
+   "cls": "tkp-today-item",
+   "text": "📅 | 10月22日 · 周四",
+   "rect": {
+    "x": 233,
+    "y": 118,
+    "w": 108,
+    "h": 16,
+    "right": 341,
+    "bottom": 134
+   }
+  },
+  {
+   "cls": "tkp-today-icon",
+   "text": "📅",
+   "rect": {
+    "x": 233,
+    "y": 118,
+    "w": 16,
+    "h": 16,
+    "right": 249,
+    "bottom": 134
+   }
+  },
+  {
+   "cls": "tkp-today-text",
+   "text": "10月22日 · 周四",
+   "rect": {
+    "x": 254,
+    "y": 118,
+    "w": 87,
+    "h": 16,
+    "right": 341,
+    "bottom": 134
+   }
+  },
+  {
+   "cls": "tkp-today-item tkp-today-btn",
+   "text": "🌡️ | 天气不可用",
+   "rect": {
+    "x": 412,
+    "y": 118,
+    "w": 81,
+    "h": 16,
+    "right": 493,
+    "bottom": 134
+   }
+  },
+  {
+   "cls": "tkp-today-icon",
+   "text": "🌡️",
+   "rect": {
+    "x": 412,
+    "y": 118,
+    "w": 16,
+    "h": 16,
+    "right": 428,
+    "bottom": 134
+   }
+  },
+  {
+   "cls": "tkp-today-text",
+   "text": "天气不可用",
+   "rect": {
+    "x": 433,
+    "y": 118,
+    "w": 60,
+    "h": 16,
+    "right": 493,
+    "bottom": 134
+   }
+  },
+  {
+   "cls": "tkp-sec",
+   "text": "上下文占用 | 100% | ~2M / 100K",
+   "rect": {
+    "x": 223,
+    "y": 153,
+    "w": 280,
+    "h": 58,
+    "right": 503,
+    "bottom": 211
+   }
+  },
+  {
+   "cls": "tkp-sec-label",
+   "text": "上下文占用",
+   "rect": {
+    "x": 223,
+    "y": 153,
+    "w": 280,
+    "h": 15,
+    "right": 503,
+    "bottom": 168
+   }
+  },
+  {
+   "cls": "tkp-bar",
+   "text": "",
+   "rect": {
+    "x": 223,
+    "y": 174,
+    "w": 280,
+    "h": 10,
+    "right": 503,
+    "bottom": 184
+   }
+  },
+  {
+   "cls": "tkp-bar-fill",
+   "text": "",
+   "rect": {
+    "x": 223,
+    "y": 174,
+    "w": 280,
+    "h": 10,
+    "right": 503,
+    "bottom": 184
+   }
+  },
+  {
+   "cls": "tkp-bar-row",
+   "text": "100% | ~2M / 100K",
+   "rect": {
+    "x": 223,
+    "y": 190,
+    "w": 280,
+    "h": 21,
+    "right": 503,
+    "bottom": 211
+   }
+  },
+  {
+   "cls": "tkp-big",
+   "text": "100%",
+   "rect": {
+    "x": 223,
+    "y": 190,
+    "w": 41,
+    "h": 21,
+    "right": 264,
+    "bottom": 211
+   }
+  },
+  {
+   "cls": "tkp-dim",
+   "text": "~2M / 100K",
+   "rect": {
+    "x": 445,
+    "y": 195,
+    "w": 58,
+    "h": 15,
+    "right": 503,
+    "bottom": 210
+   }
+  },
+  {
+   "cls": "tkp-sec",
+   "text": "本会话累计 | 合计 2M | 输入 | 1.2M | 输出 | 30K | 缓存读 | 800K | 缓存写 | 0",
+   "rect": {
+    "x": 223,
+    "y": 222,
+    "w": 280,
+    "h": 58,
+    "right": 503,
+    "bottom": 280
+   }
+  },
+  {
+   "cls": "tkp-sec-label",
+   "text": "本会话累计 | 合计 2M",
+   "rect": {
+    "x": 223,
+    "y": 222,
+    "w": 280,
+    "h": 15,
+    "right": 503,
+    "bottom": 237
+   }
+  },
+  {
+   "cls": "tkp-grid",
+   "text": "输入 | 1.2M | 输出 | 30K | 缓存读 | 800K | 缓存写 | 0",
+   "rect": {
+    "x": 223,
+    "y": 243,
+    "w": 280,
+    "h": 37,
+    "right": 503,
+    "bottom": 280
+   }
+  },
+  {
+   "cls": "tkp-cell",
+   "text": "输入 | 1.2M",
+   "rect": {
+    "x": 223,
+    "y": 243,
+    "w": 133,
+    "h": 16,
+    "right": 356,
+    "bottom": 259
+   }
+  },
+  {
+   "cls": "tkp-dot",
+   "text": "",
+   "rect": {
+    "x": 223,
+    "y": 248,
+    "w": 7,
+    "h": 7,
+    "right": 230,
+    "bottom": 255
+   }
+  },
+  {
+   "cls": "tkp-cell-label",
+   "text": "输入",
+   "rect": {
+    "x": 236,
+    "y": 243,
+    "w": 24,
+    "h": 16,
+    "right": 260,
+    "bottom": 259
+   }
+  },
+  {
+   "cls": "tkp-cell-val",
+   "text": "1.2M",
+   "rect": {
+    "x": 327,
+    "y": 243,
+    "w": 29,
+    "h": 16,
+    "right": 356,
+    "bottom": 259
+   }
+  },
+  {
+   "cls": "tkp-cell",
+   "text": "输出 | 30K",
+   "rect": {
+    "x": 370,
+    "y": 243,
+    "w": 133,
+    "h": 16,
+    "right": 503,
+    "bottom": 259
+   }
+  },
+  {
+   "cls": "tkp-dot",
+   "text": "",
+   "rect": {
+    "x": 370,
+    "y": 248,
+    "w": 7,
+    "h": 7,
+    "right": 377,
+    "bottom": 255
+   }
+  },
+  {
+   "cls": "tkp-cell-label",
+   "text": "输出",
+   "rect": {
+    "x": 383,
+    "y": 243,
+    "w": 24,
+    "h": 16,
+    "right": 407,
+    "bottom": 259
+   }
+  },
+  {
+   "cls": "tkp-cell-val",
+   "text": "30K",
+   "rect": {
+    "x": 481,
+    "y": 243,
+    "w": 22,
+    "h": 16,
+    "right": 503,
+    "bottom": 259
+   }
+  },
+  {
+   "cls": "tkp-cell",
+   "text": "缓存读 | 800K",
+   "rect": {
+    "x": 223,
+    "y": 264,
+    "w": 133,
+    "h": 16,
+    "right": 356,
+    "bottom": 280
+   }
+  },
+  {
+   "cls": "tkp-dot",
+   "text": "",
+   "rect": {
+    "x": 223,
+    "y": 269,
+    "w": 7,
+    "h": 7,
+    "right": 230,
+    "bottom": 276
+   }
+  },
+  {
+   "cls": "tkp-cell-label",
+   "text": "缓存读",
+   "rect": {
+    "x": 236,
+    "y": 264,
+    "w": 36,
+    "h": 16,
+    "right": 272,
+    "bottom": 280
+   }
+  },
+  {
+   "cls": "tkp-cell-val",
+   "text": "800K",
+   "rect": {
+    "x": 328,
+    "y": 264,
+    "w": 29,
+    "h": 16,
+    "right": 356,
+    "bottom": 280
+   }
+  },
+  {
+   "cls": "tkp-cell",
+   "text": "缓存写 | 0",
+   "rect": {
+    "x": 370,
+    "y": 264,
+    "w": 133,
+    "h": 16,
+    "right": 503,
+    "bottom": 280
+   }
+  },
+  {
+   "cls": "tkp-dot",
+   "text": "",
+   "rect": {
+    "x": 370,
+    "y": 269,
+    "w": 7,
+    "h": 7,
+    "right": 377,
+    "bottom": 276
+   }
+  },
+  {
+   "cls": "tkp-cell-label",
+   "text": "缓存写",
+   "rect": {
+    "x": 383,
+    "y"

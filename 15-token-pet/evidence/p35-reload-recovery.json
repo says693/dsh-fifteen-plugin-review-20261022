@@ -1,0 +1,37 @@
+{
+  "SID": "sess-pet-known",
+  "runs": [
+    {
+      "run": 0,
+      "samples": [
+        {
+          "t": 2,
+          "chip": "上下文 50%"
+        }
+      ],
+      "settledAt": 2
+    },
+    {
+      "run": 1,
+      "samples": [
+        {
+          "t": 2,
+          "chip": "上下文 50%"
+        }
+      ],
+      "settledAt": 2
+    },
+    {
+      "run": 2,
+      "samples": [
+        {
+          "t": 2,
+          "chip": "上下文 50%"
+        }
+      ],
+      "settledAt": 2
+    }
+  ],
+  "errors": [],
+  "consoleLog": []
+}

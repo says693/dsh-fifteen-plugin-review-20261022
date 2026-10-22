@@ -1,0 +1,128 @@
+{
+  "out": [
+    {
+      "id": "sess-pet-known",
+      "opened": true,
+      "hud": {
+        "label": "用量小宠物，状态更新",
+        "text": "状态更新",
+        "rect": {
+          "x": 1302,
+          "y": 782,
+          "w": 120,
+          "h": 175
+        }
+      },
+      "petCount": 2,
+      "bodyHead": "新会话\nCtrl\n+\nAlt\n+\nN\n插件\n工作区\nworkspace\n读数对照会话\n47分钟\n未命名\n47分钟\n未命名\n47分钟\n未命名\n47分钟\n未命名\n10小时\n设置\n读数对照会话\n对话\n轨迹\n第 1 轮：把这段话读一遍，告诉我大概多长。\n09:35\n已完成\n已完成，用时 3秒\n\n这是一段合成的示例内容，只用来把消息撑长，方便观察小部件读数是否会随着上下文变大而变化。这是一段合成的示例内容，只用来把消息撑长，方便观察小部件读数是否会随着上下文变大而变化。这是一段合成的示例内容，只用来把消息撑长，方便观察小部件读数是否会随着上下文变大而变化。这是一段合成的示例内容，只用来把消息撑长，方便观察小部件读数是否会随着上下文变大而变化。这是一段合成的示例内容，只用来把消息撑长，方便观察小部件读数是否会随着上下文变大而变化。这是一段合成的示例内容，只用来把消息撑长，方便观察小部件读数是否会随着上下文变大而变化。这是一段合成的示例内容，只用来把消息撑长，方便观察小部件读数是否会随着上下文变大而变化。这是一段合成的示例内容，只用来把消息撑长，方便观察小部件读数是否会随着上下文变大而变化。\n\n用量",
+      "consoleDelta": 0,
+      "errDelta": 0
+    },
+    {
+      "id": "sess-pet-empty",
+      "opened": true,
+      "hud": {
+        "label": "用量小宠物，空闲",
+        "text": "空闲",
+        "rect": {
+          "x": 1302,
+          "y": 782,
+          "w": 120,
+          "h": 175
+        }
+      },
+      "petCount": 1,
+      "bodyHead": "新会话\nCtrl\n+\nAlt\n+\nN\n插件\n工作区\nworkspace\n读数对照会话\n47分钟\n空会话（没有任何轮次）\n47分钟\n未命名\n47分钟\n未命名\n47分钟\n未命名\n10小时\n设置\n探索未至之境\n预览版\nworkspace\n描述你想要构建的内容, / 调用指令, @ 文件或对话\n工作区内修改\nDeepSeek-V41-Flash\nHigh\n空闲\n上下文 –%",
+      "consoleDelta": 0,
+      "errDelta": 0
+    },
+    {
+      "id": "sess-pet-huge",
+      "opened": true,
+      "hud": {
+        "label": "用量小宠物，状态更新",
+        "text": "状态更新",
+        "rect": {
+          "x": 1302,
+          "y": 782,
+          "w": 120,
+          "h": 175
+        }
+      },
+      "petCount": 2,
+      "bodyHead": "新会话\nCtrl\n+\nAlt\n+\nN\n插件\n工作区\nworkspace\n读数对照会话\n47分钟\n极端大用量会话\n47分钟\n空会话（没有任何轮次）\n47分钟\n未命名\n47分钟\n未命名\n10小时\n设置\n极端大用量会话\n对话\n轨迹\n第 1 轮：这是一个用量异常大的合成会话。\n09:35\n已完成\n已完成，用时 3秒\n\n这是一段合成的示例内容，只用来把消息撑长，方便观察小部件读数是否会随着上下文变大而变化。这是一段合成的示例内容，只用来把消息撑长，方便观察小部件读数是否会随着上下文变大而变化。这是一段合成的示例内容，只用来把消息撑长，方便观察小部件读数是否会随着上下文变大而变化。这是一段合成的示例内容，只用来把消息撑长，方便观察小部件读数是否会随着上下文变大而变化。\n\n用量 2M tok\n09:35\n发消息或创建任务, / 调用指令, @ 文件或对话\n工作区内修改\nfixture-provider/fixture-model-a\n1 轮 1 步\n2M tok·缓存命中 40%\n100%\n状态更新\n上下文 100%",
+      "consoleDelta": 0,
+      "errDelta": 0
+    },
+    {
+      "id": "sess-pet-unknown",
+      "opened": true,
+      "hud": {
+        "label": "用量小宠物，空闲",
+        "text": "空闲",
+        "rect": {
+          "x": 1302,
+          "y": 782,
+          "w": 120,
+          "h": 175
+        }
+      },
+      "petCount": 2,
+      "bodyHead": "新会话\nCtrl\n+\nAlt\n+\nN\n插件\n工作区\nworkspace\n读数对照会话\n47分钟\n极端大用量会话\n47分钟\n未知模型名会话\n47分钟\n空会话（没有任何轮次）\n47分钟\n未命名\n10小时\n设置\n未知模型名会话\n对话\n轨迹\n第 1 轮：这个会话的模型名不在任何价格表里。\n09:35\n已完成\n已完成，用时 3秒\n\n这是一段合成的示例内容，只用来把消息撑长，方便观察小部件读数是否会随着上下文变大而变化。这是一段合成的示例内容，只用来把消息撑长，方便观察小部件读数是否会随着上下文变大而变化。这是一段合成的示例内容，只用来把消息撑长，方便观察小部件读数是否会随着上下文变大而变化。\n\n用量 3.2K tok\n09:35\n发消息或创建任务, / 调用指令, @ 文件或对话\n工作区内修改\nunknown-provider/totally-unknown-model-xyz\n1 轮 1 步\n3.2K tok·缓存命中 0%\n3%\n空闲\n上下文 3%",
+      "consoleDelta": 0,
+      "errDelta": 0
+    },
+    {
+      "id": "sess-pet-midnight",
+      "opened": true,
+      "hud": {
+        "label": "用量小宠物，状态更新",
+        "text": "状态更新",
+        "rect": {
+          "x": 1302,
+          "y": 782,
+          "w": 120,
+          "h": 175
+        }
+      },
+      "petCount": 2,
+      "bodyHead": "新会话\nCtrl\n+\nAlt\n+\nN\n插件\n工作区\nworkspace\n读数对照会话\n47分钟\n极端大用量会话\n47分钟\n未知模型名会话\n47分钟\n空会话（没有任何轮次）\n47分钟\n跨零点会话\n10小时\n设置\n跨零点会话\n对话\n轨迹\n第 1 轮：这一轮发生在零点之前。\n10月21日 23:50\n已完成\n已完成，用时 3秒\n\n这是一段合成的示例内容，只用来把消息撑长，方便观察小部件读数是否会随着上下文变大而变化。这是一段合成的示例内容，只用来把消息撑长，方便观察小部件读数是否会随着上下文变大而变化。这是一段合成的示例内容，只用来把消息撑长，方便观察小部件读数是否会随着上下文变大而变化。\n\n用量 44.8K tok\n10月21日 23:50\n第 2 轮：这一轮发生在零点之后。\n00:10\n已完成\n已完成，用时 3秒\n\n这是一段合成的示例内容，只用来把消息撑长，方便观察小部件读数是否会随着上下文变大而变化。这是一段合成的示例内容，只用来把消息撑长，方便观察小部件读数是否会随着上下文变大而变化。这是一段合成的示例内容，只用来把消息撑长，方便观察小部件读数是否会随着上下文变大而变化。\n\n用量 5",
+      "consoleDelta": 0,
+      "errDelta": 0
+    }
+  ],
+  "errors": [],
+  "consoleLog": [],
+  "network": [
+    {
+      "path": "/plugins/??@deepseek-ai/dsh-client-ui-open-in-app/client.js,@deepseek-ai/dsh-api-gateway/client.js,@deepseek-ai/dsh-api-job-controller/client.js,@deepseek-ai/dsh-api-terminal-controller/client.js,@deepseek-ai/dsh-api-workspace-files/client.js,@deepseek-ai/dsh-client-ui-settings-account/client.js,@deepseek-ai/dsh-client-hmr/client.js,@deepseek-ai/dsh-cordis-client-runner/client.js,@deepseek-ai/dsh-client-ui-theme/client.js,@deepseek-ai/dsh-client-locale/client.js,@deepseek-ai/dsh-client-shortcuts/client.js,@deepseek-ai/dsh-client-ui-shortcuts/client.js,@deepseek-ai/dsh-client-ui-layout/client.js,@deepseek-ai/dsh-client-ui-renderer/client.js,@deepseek-ai/dsh-client-ui-session/client.js,@deepseek-ai/dsh-client-resources/client.js,@deepseek-ai/dsh-client-ui-sidebar/client.js,@deepseek-ai/dsh-client-ui-sidebar-right/client.js,@deepseek-ai/dsh-client-ui-sidebar-documentpreview/client.js,@deepseek-ai/dsh-client-ui-sidebar-terminal/client.js,@deepseek-ai/dsh-client-ui-sidebar-files/client.js,@deepseek-ai/dsh-client-ui-settings/client.js,@deepseek-ai/dsh-client-ui-settings-general/client.js,@deepseek-ai/dsh-client-ui-settings-models/client.js,@deepseek-ai/dsh-client-ui-plugin-manager/client.js,@deepseek-ai/dsh-client-ui-settings-plugin-inventory/client.js,@deepseek-ai/dsh-client-ui-conversation/client.js,@deepseek-ai/dsh-client-ui-approval/client.js,@deepseek-ai/dsh-client-ui-chat/client.js,@deepseek-ai/dsh-client-ui-brand-official/client.js,@deepseek-ai/dsh-client-ui-attachment/client.js,@deepseek-ai/dsh-client-ui-tool/client.js,@deepseek-ai/dsh-client-ui-cordis/client.js,@deepseek-ai/dsh-client-ui-workspace/client.js,@deepseek-ai/dsh-client-ui-workflow-run/client.js,@deepseek-ai/dsh-client-ui-input-trigger/client.js,@deepseek-ai/dsh-client-ui-commands/client.js,@deepseek-ai/dsh-client-ui-skill/client.js,@deepseek-ai/dsh-client-ui-subagent/client.js,@deepseek-ai/dsh-client-ui-reference/client.js,@deepseek-ai/dsh-client-ui-jobs/client.js,@deepseek-ai/dsh-client-ui-goal/client.js,@deepseek-ai/dsh-client-ui-message-feedback/client.js,@deepseek-ai/dsh-client-ui-model-selection/client.js,@deepseek-ai/dsh-client-ui-permission-presets/client.js,@deepseek-ai/dsh-client-ui-agent-preset/client.js,@deepseek-ai/dsh-client-ui-settings-session-log/client.js,@deepseek-ai/dsh-client-ui-settings-plugins/client.js,@deepseek-ai/dsh-client-ui-settings-shell/client.js,@deepseek-ai/dsh-client-ui-settings-agent-loop/client.js,@deepseek-ai/dsh-client-ui-settings-subagent/client.js,@deepseek-ai/dsh-client-ui-settings-web-search/client.js,@deepseek-ai/dsh-client-ui-plan/client.js,@deepseek-ai/dsh-client-ui-user-questions/client.js,@deepseek-ai/dsh-client-ui-trajectory/client.js,dsh-token-pet/client.js,@deepseek-ai/dsh-session-log-export/client.js,@deepseek-ai/dsh-client-file-upload/client.js&rev=83846a8c56a9",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/session/modelCatalog",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/session/modelCatalog",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/session/list",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/session/modelCatalog",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/session/create",
+      "method": "POST",
+      "status": 200
+    }
+  ]
+}

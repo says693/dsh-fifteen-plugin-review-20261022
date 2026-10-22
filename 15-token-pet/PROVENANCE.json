@@ -1,0 +1,165 @@
+{
+  "target": {
+    "assignedName": "dsh-token-pet",
+    "assignedRepo": "pk7j7sqryy-ops/dsh-token-pet",
+    "assignedCommit": "b498347e3c74aaced411c0ead13db3fc15222b57",
+    "assignedCommitVersion": "0.1.0",
+    "npmPackage": "dsh-token-pet",
+    "primaryTestedArtifact": "npm dsh-token-pet@0.4.2",
+    "npm": {
+      "version": "0.4.2",
+      "published": "2026-09-21T10:26:43.162Z",
+      "distTagLatest": true,
+      "shasum": "3fe75ccdd3c5f129c20337663a3357584d19f006",
+      "integrity": "sha512-+8eAE8PmjITyPVTY7X0vjvCIc6ct5XfQA7g2kIrByrWNAEx6PVrsrnxQJX4j6yvuVEsC2g5rdUHjkAg4B0Df0Q==",
+      "tarballSha512": "FBC78013C3E68C84F23D54D8ED7D2F8EF08873A72DE577D003B836908AC1CAB58D004C7A3D5AECAE7C50257E23EB2BEE544B02DA0E6B7541E39008380740DFD1",
+      "tarballBytes": 19141639,
+      "unpackedBytes": 25228180,
+      "fileCount": 53,
+      "license": "MIT",
+      "enginesNode": ">=22.19",
+      "repositoryDeclared": "git+https://github.com/Jimmy0123-ux/dsh-token-pet.git",
+      "authorField": "",
+      "dependencies": { "fflate": "^0.8.3" },
+      "peerDependencies": { "@deepseek-ai/cordis": "^4.0.1" }
+    },
+    "npmKeyFileSha256": {
+      "package.json": "D26BCBEDC30804F0CCCADEF72D1BE19D977D3024908118DD66C110F0CDFD9DB4",
+      "cordis.patch.yml": "B24B523033C5A9E53C0AAD4EF26D2B53C50C7E98C5BB023CC58D7F066B4FBB71",
+      "LICENSE": "DF705891B148CE6966F717D020CC09207F5858EC664CA19EAE1CE835FC0C6200",
+      "lib/index.js": "A72101FC3DE143E72DC018951486989BE1B60CC53BD3CDE027A02545EEE14FF5",
+      "lib/usage.js": "6B9960FEA2B25D68CBD172E0EAA7674289A123E3540E679F0D59B5D7B01041BF",
+      "client/client.js": "14AEED8DBF2470A646FD35C39A69B39E70D9AF22DCD08F991B3B104AA65A680D",
+      "README.md": "E2BA08448CD986C602C6E66D573BF2033DAE760D5E74850F781382D24C800375",
+      "CHANGELOG.md": "CBF2951FA685B09FE47E77C77F78B9566A609626CFB96C05B0B3532C046C5A3E"
+    },
+    "repoIdentityCheck": {
+      "finding": "The assigned repo and the npm package are NOT the same implementation.",
+      "pk7j7sqryyOps": {
+        "exists": true,
+        "fork": false,
+        "createdAt": "2026-08-15T15:17:18Z",
+        "pushedAt": "2026-08-15T16:10:18Z",
+        "stars": 3,
+        "defaultBranch": "main",
+        "commitExists": true,
+        "commitDate": "2026-08-15T16:10:18Z",
+        "commitMessage": "Update README.md",
+        "packageJsonAtCommit": {
+          "name": "dsh-token-pet",
+          "version": "0.1.0",
+          "author": "pk7j7sqryy-ops",
+          "license": "MIT",
+          "enginesNode": ">=18",
+          "dshClientInject": [],
+          "keywordsInclude": ["weather", "forecast", "用量", "天气"]
+        },
+        "filesAtCommit": ["lib/client.js (21551 B)", "lib/index.js (6212 B)", "dynamic/client.js", "dynamic/host.js", "README.md", "package.json", "cordis.patch.yml"],
+        "declaredFeature": "布布玩偶 in conversation.session.header.utilities + 日期周几 + 实时天气(ipwho.is + Open-Meteo) + 3天预报 + 极端天气预警",
+        "sha256": {
+          "lib/client.js": "9044162168544499314F4469FAD68FFCBCC1777DE4AD7953A6A4EB8F9CBD3C5D",
+          "lib/index.js": "373087739DB778E4DB363C2509A9430DFE0345DA4AF2506E8F71AF20B85E530C",
+          "package.json": "D26245349A7308A9745E15F4902669445F185E666B78610DD972D68620CC05F5",
+          "README.md": "B75C8B8C329E50AC1353AC0E945AA85588981FAE9A6611FFAB01166783785C04",
+          "cordis.patch.yml": "9AF8FA79BA7E16ED801BA4BF8F952064F0119114B51E03AA9C21183BFEC19ED0"
+        }
+      },
+      "jimmy0123Ux": {
+        "exists": true,
+        "createdAt": "2026-09-01T04:06:22Z",
+        "pushedAt": "2026-09-21T10:22:01Z",
+        "stars": 56,
+        "headPackageJsonVersion": "0.4.2",
+        "matchesNpmRepositoryOfEveryVersion": true
+      },
+      "evidence": ["evidence/step01-npm-view.json", "evidence/npm-versions-repository.txt", "evidence/pk0.1.0-manifest.txt"],
+      "conclusion": "npm 0.4.2 belongs to Jimmy0123-ux/dsh-token-pet; the assigned coordinate pk7j7sqryy-ops/dsh-token-pet@b498347 is a different, earlier, smaller implementation that also advertises a weather/date module. Both were tested separately; conclusions never mixed."
+    }
+  },
+  "environment": {
+    "host": {
+      "package": "@deepseek-ai/dsh",
+      "version": "0.2.0-rc.2",
+      "entry": "C:/Users/32621/AppData/Roaming/npm/node_modules/@deepseek-ai/dsh/lib/bin.js",
+      "flags": ["--host", "127.0.0.1", "--port", "0", "--no-open"]
+    },
+    "browser": {
+      "engine": "Microsoft Edge",
+      "version": "155.0.4283.62",
+      "executable": "C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe",
+      "driver": "playwright 1.64.1 (headless)",
+      "playwrightEntry": "H:/CODEX/dsh-code-security-review-20261019/tooling/node_modules/playwright/index.mjs"
+    },
+    "node": "v24.19.0",
+    "isolation": {
+      "DSH_HOME": "isolated-home",
+      "HOME": "isolated-home/user-home",
+      "USERPROFILE": "isolated-home/user-home",
+      "APPDATA": "isolated-home/appdata",
+      "LOCALAPPDATA": "isolated-home/localappdata",
+      "XDG_*": "isolated-home/{cache,config,data}",
+      "npm_config_cache": "temp/npm-cache",
+      "DSH_TELEMETRY_DISABLED": "1",
+      "note": "No user profile, session, token or cookie was read. The user's live GUIs (1241/2538/4756) were never touched."
+    },
+    "hostsStarted": [
+      { "tag": "hp1", "origin": "http://127.0.0.1:5989", "pid": 26156, "profile": "pet", "note": "first run, fixture invalid (missing request/header reason), stopped" },
+      { "tag": "hp2", "origin": "http://127.0.0.1:13037", "pid": 37032, "profile": "pet", "note": "npm 0.4.2 runs, later stopped after fixture reset" },
+      { "tag": "hp3", "origin": "http://127.0.0.1:5990", "pid": 17540, "profile": "pet", "note": "npm 0.4.2 clean-state runs" },
+      { "tag": "hpk", "origin": "http://127.0.0.1:7587", "pid": 28836, "profile": "petpk", "note": "pk7j7sqryy-ops 0.1.0 (link install)" }
+    ],
+    "profiles": {
+      "pet": "derived with --from-default-profile web, then `dsh plugin --profile pet add dsh-token-pet@0.4.2`",
+      "petpk": "derived with --from-default-profile web, then `dsh plugin --profile petpk add link:<temp/pk-src>`"
+    }
+  },
+  "fixtures": {
+    "generator": "make-sessions.mjs (official dsh-session-persistence-jsonl, compression zstd)",
+    "sessions": [
+      { "id": "sess-pet-known", "turns": 2, "usage": [{ "turn": 1, "inputTokens": 12000, "outputTokens": 800, "cacheReadTokens": 30000, "cacheWriteTokens": 2000 }, { "turn": 2, "inputTokens": 9000, "outputTokens": 400, "cacheReadTokens": 41000, "cacheWriteTokens": 0 }], "contextWindow": 100000, "expected": { "tokenUsageTotal": 95200, "pressureTokens": 50000, "percent": 50 } },
+      { "id": "sess-pet-empty", "turns": 0, "expected": { "note": "no usage at all" } },
+      { "id": "sess-pet-huge", "turns": 1, "usage": [{ "inputTokens": 1200000, "outputTokens": 30000, "cacheReadTokens": 800000, "cacheWriteTokens": 0 }], "contextWindow": 100000, "expected": { "pressureTokens": 2000000, "percentRaw": 2000, "percentClamped": 100 } },
+      { "id": "sess-pet-unknown", "turns": 1, "provider": "unknown-provider", "model": "totally-unknown-model-xyz", "usage": [{ "inputTokens": 3000, "outputTokens": 200, "cacheReadTokens": 0, "cacheWriteTokens": 0 }], "expected": { "pressureTokens": 3000, "percent": 3 } },
+      { "id": "sess-pet-midnight", "turns": 2, "note": "one turn at local 23:50 previous day, one at 00:10 today" }
+    ],
+    "fixturePitfallsHit": [
+      "request/header must carry reason: initial|resume|change|series, else the session loads as 'corrupt: seed request/header at index N has an invalid reason'",
+      "turn/end must carry data.reason:{kind:'completed'}",
+      "envelope uses {seq,time}; seq restarts at 0 per session; turn/step start at 1",
+      "a profile created by `dsh plugin add` alone lacks @deepseek-ai/dsh-web-app and boots to EXIT 1 with empty stdout/stderr"
+    ]
+  },
+  "artifacts": {
+    "PLAN.md": "plan written before any install",
+    "evidenceDir": "evidence/",
+    "probeScripts": ["probe-01-boot.mjs", "probe-02-sidebar.mjs", "probe-03-sessions.mjs", "probe-04-panel.mjs", "probe-05-attribution.mjs", "probe-06-tabs.mjs", "probe-07-expand.mjs", "probe-08-expand2.mjs", "probe-09-responsive.mjs", "probe-10-narrow.mjs", "probe-11-overlap.mjs", "probe-12-hittest.mjs", "probe-13-send.mjs", "probe-14-intercept-widths.mjs", "probe-15-index.mjs", "probe-16-endpoints.mjs", "probe-17-performance.mjs", "probe-18-empty-model.mjs", "probe-19-reload.mjs", "probe-20-reload-ab.mjs", "probe-21-clean.mjs", "probe-22-ledger-degrade.mjs", "probe-23-offline.mjs", "probe-24-dock-ownership.mjs", "probe-25-overlay-map.mjs", "probe-26-kit.mjs", "probe-27-pk-boot.mjs", "probe-28-pk-norender.mjs", "probe-29-pk-widget.mjs", "probe-30-pk-huge.mjs", "probe-31-pk-card.mjs", "probe-32-pk-fixtures.mjs", "probe-33-pk-empty-hdr.mjs", "probe-34-pk-math.mjs"]
+  },
+  "dedup": {
+    "checkedAt": "2026-10-22T10:44:00+08:00",
+    "bounty": {
+      "url": "https://github.com/FuRongJun-1999/dsh-bounty/issues",
+      "terms": { "dsh-token-pet": 0, "pk7j7sqryy": 0, "Jimmy0123-ux": 0, "token-pet": 3 },
+      "sameScopeHits": 0,
+      "fuzzyHitsDifferentPlugin": [645, 569, 1481]
+    },
+    "lingshulab": {
+      "base": "https://review.lingshulab.com",
+      "method": "all 12 plugin pages (133 entries) and all 9 review pages (172 reviews) fetched and scanned locally; ?q= is not applied server-side",
+      "hits": { "dsh-token-pet": 0, "pk7j7sqryy": 0, "Jimmy0123": 0, "token-pet": 0, "用量小宠物": 0 }
+    },
+    "verdict": "首报 — no same-scope report on either site; the plugin is not even listed in the review site's catalogue"
+  },
+  "limits": {
+    "noModelCall": true,
+    "noRealCredentials": true,
+    "noRealSessions": true,
+    "untested": [
+      "prompt-enhancement path (needs a real model call)",
+      "completion sound (needs a real reply boundary)",
+      "cost estimation with real prices (default off, needs a real billable session)",
+      "skin ZIP import (needs a user-supplied ZIP)",
+      "trend/ranking data (host 0.2.0-rc.2 lacks listSnapshots, the plugin declares it unsupported)",
+      "whether the send-button interception also occurs on DSH Desktop / older hosts"
+    ]
+  }
+}

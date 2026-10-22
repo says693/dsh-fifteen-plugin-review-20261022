@@ -1,0 +1,90 @@
+[
+  {
+    "id": "sess-pet-empty",
+    "tkp": null,
+    "topStrip": [
+      {
+        "cls": "wSkVaW_titleRow",
+        "text": "",
+        "rect": {
+          "x": 300,
+          "y": 10,
+          "w": 1112,
+          "h": 30
+        }
+      },
+      {
+        "cls": "_tabStrip_6nhg2_237",
+        "text": "",
+        "rect": {
+          "x": 1440,
+          "y": 0,
+          "w": 648,
+          "h": 38
+        }
+      }
+    ],
+    "styleTag": true,
+    "bodyHead": "新会话 | Ctrl | + | Alt | + | N | 插件 | 工作区 | workspace | 新会话 | 读数对照会话 | 1小时 | 极端大用量会话 | 1小时 | 未知模型名会话 | 1小时 | 跨零点会话 | 11小时 | 设置 | 探索未至之境 | 预览版 | workspace | 标准模式 | 描述你想要构建的内容, / 调用指令, @ 文件或对话 | 工作区内修改 | DeepSeek-V41-Flash | High | 添加一个 API Key 开始使用 | 配置 DeepSeek ",
+    "errors": 0,
+    "consoleLog": 0
+  },
+  {
+    "id": "sess-pet-known",
+    "tkp": {
+      "rect": {
+        "x": 1284,
+        "y": 10,
+        "w": 72,
+        "h": 32
+      },
+      "text": "50%"
+    },
+    "topStrip": [
+      {
+        "cls": "wSkVaW_titleRow",
+        "text": "读数对照会话 | 50%",
+        "rect": {
+          "x": 300,
+          "y": 10,
+          "w": 1112,
+          "h": 32
+        }
+      },
+      {
+        "cls": "wSkVaW_titleCluster",
+        "text": "读数对照会话",
+        "rect": {
+          "x": 300,
+          "y": 12,
+          "w": 913,
+          "h": 28
+        }
+      },
+      {
+        "cls": "wSkVaW_tabs",
+        "text": "对话 | 轨迹",
+        "rect": {
+          "x": 300,
+          "y": 52,
+          "w": 1112,
+          "h": 25
+        }
+      },
+      {
+        "cls": "_tabStrip_6nhg2_237",
+        "text": "",
+        "rect": {
+          "x": 1440,
+          "y": 0,
+          "w": 648,
+          "h": 38
+        }
+      }
+    ],
+    "styleTag": true,
+    "bodyHead": "新会话 | Ctrl | + | Alt | + | N | 插件 | 工作区 | workspace | 读数对照会话 | 1小时 | 极端大用量会话 | 1小时 | 未知模型名会话 | 1小时 | 跨零点会话 | 11小时 | 设置 | 读数对照会话 | 50% | 对话 | 轨迹 | 第 1 轮：把这段话读一遍，告诉我大概多长。 | 10:04 | 已完成 | 已完成，用时 3秒 | 这是一段合成的示例内容，只用来把消息撑长，方便观察小部件读数是否会随着上下文变大而变化。这是一段合成的示例内容，只用来把消息撑",
+    "errors": 0,
+    "consoleLog": 1
+  }
+]

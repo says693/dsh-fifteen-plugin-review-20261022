@@ -1,0 +1,32 @@
+{
+  "sendRect": {
+    "x": 1218.6875,
+    "y": 845,
+    "rect": {
+      "x": 1202,
+      "y": 828,
+      "w": 34,
+      "h": 34
+    }
+  },
+  "before": {
+    "draft": "SEND-TEST-7f3a",
+    "petLabel": "用量小宠物，空闲",
+    "flowCount": 8,
+    "bodyHasSend": true
+  },
+  "after": {
+    "draft": "SEND-TEST-7f3a",
+    "petLabel": "用量小宠物，打招呼",
+    "flowCount": 8,
+    "bodyHasSend": true,
+    "panelOpen": true
+  },
+  "control": {
+    "draft": "",
+    "flowCount": 13,
+    "bodyHasSend": true
+  },
+  "errors": [],
+  "consoleLog": []
+}

@@ -1,0 +1,132 @@
+{
+  "rows": [
+    {
+      "tag": "BUTTON",
+      "role": null,
+      "href": null,
+      "text": "新会话 Ctrl + Alt + N",
+      "dataAttrs": {}
+    },
+    {
+      "tag": "BUTTON",
+      "role": null,
+      "href": null,
+      "text": "插件",
+      "dataAttrs": {}
+    },
+    {
+      "tag": "DIV",
+      "role": "treeitem",
+      "href": null,
+      "text": "workspace",
+      "dataAttrs": {
+        "data-row-key": "workspace:99dd2c95-9fdf-41ef-956c-34e520c2bbfd"
+      }
+    },
+    {
+      "tag": "DIV",
+      "role": "treeitem",
+      "href": null,
+      "text": "新会话",
+      "dataAttrs": {
+        "data-row-key": "session:session-8cc6b2f4-16c1-41dc-a1a8-210d7005dcff"
+      }
+    },
+    {
+      "tag": "DIV",
+      "role": "treeitem",
+      "href": null,
+      "text": "未命名 48分钟",
+      "dataAttrs": {
+        "data-row-key": "session:sess-pet-empty"
+      }
+    },
+    {
+      "tag": "DIV",
+      "role": "treeitem",
+      "href": null,
+      "text": "未命名 48分钟",
+      "dataAttrs": {
+        "data-row-key": "session:sess-pet-huge"
+      }
+    },
+    {
+      "tag": "DIV",
+      "role": "treeitem",
+      "href": null,
+      "text": "未命名 48分钟",
+      "dataAttrs": {
+        "data-row-key": "session:sess-pet-known"
+      }
+    },
+    {
+      "tag": "DIV",
+      "role": "treeitem",
+      "href": null,
+      "text": "未命名 48分钟",
+      "dataAttrs": {
+        "data-row-key": "session:sess-pet-unknown"
+      }
+    },
+    {
+      "tag": "DIV",
+      "role": "treeitem",
+      "href": null,
+      "text": "未命名 10小时",
+      "dataAttrs": {
+        "data-row-key": "session:sess-pet-midnight"
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "role": null,
+      "href": null,
+      "text": "设置",
+      "dataAttrs": {}
+    },
+    {
+      "tag": "BUTTON",
+      "role": null,
+      "href": null,
+      "text": "workspace",
+      "dataAttrs": {}
+    },
+    {
+      "tag": "BUTTON",
+      "role": null,
+      "href": null,
+      "text": "标准模式",
+      "dataAttrs": {}
+    },
+    {
+      "tag": "BUTTON",
+      "role": null,
+      "href": null,
+      "text": "工作区内修改",
+      "dataAttrs": {}
+    },
+    {
+      "tag": "BUTTON",
+      "role": null,
+      "href": null,
+      "text": "DeepSeek-V41-Flash High",
+      "dataAttrs": {}
+    },
+    {
+      "tag": "BUTTON",
+      "role": null,
+      "href": null,
+      "text": "稍后配置",
+      "dataAttrs": {}
+    },
+    {
+      "tag": "BUTTON",
+      "role": null,
+      "href": null,
+      "text": "保存并继续",
+      "dataAttrs": {}
+    }
+  ],
+  "errors": [],
+  "consoleLog": []
+}

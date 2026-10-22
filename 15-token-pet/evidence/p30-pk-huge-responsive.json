@@ -1,0 +1,166 @@
+[
+  {
+    "width": 1440,
+    "closed": {
+      "root": {
+        "rect": {
+          "x": 1277,
+          "y": 10,
+          "w": 79,
+          "h": 32,
+          "right": 1356,
+          "bottom": 42
+        },
+        "text": "100%"
+      },
+      "header": {
+        "x": 0,
+        "y": 0,
+        "w": 1440,
+        "h": 900,
+        "right": 1440,
+        "bottom": 900
+      },
+      "overflowX": false
+    },
+    "open": {
+      "rect": {
+        "x": 1277,
+        "y": 10,
+        "w": 79,
+        "h": 32,
+        "right": 1356,
+        "bottom": 42
+      },
+      "text": "100%",
+      "outsideViewport": false,
+      "scrollWidth": 79,
+      "clientWidth": 79
+    },
+    "errors": 0,
+    "consoleLog": 1
+  },
+  {
+    "width": 1000,
+    "closed": {
+      "root": {
+        "rect": {
+          "x": 837,
+          "y": 10,
+          "w": 79,
+          "h": 32,
+          "right": 916,
+          "bottom": 42
+        },
+        "text": "100%"
+      },
+      "header": {
+        "x": 0,
+        "y": 0,
+        "w": 1000,
+        "h": 900,
+        "right": 1000,
+        "bottom": 900
+      },
+      "overflowX": false
+    },
+    "open": {
+      "rect": {
+        "x": 837,
+        "y": 10,
+        "w": 79,
+        "h": 32,
+        "right": 916,
+        "bottom": 42
+      },
+      "text": "100%",
+      "outsideViewport": false,
+      "scrollWidth": 79,
+      "clientWidth": 79
+    },
+    "errors": 0,
+    "consoleLog": 1
+  },
+  {
+    "width": 760,
+    "closed": {
+      "root": {
+        "rect": {
+          "x": 597,
+          "y": 10,
+          "w": 79,
+          "h": 32,
+          "right": 676,
+          "bottom": 42
+        },
+        "text": "100%"
+      },
+      "header": {
+        "x": 0,
+        "y": 0,
+        "w": 760,
+        "h": 900,
+        "right": 760,
+        "bottom": 900
+      },
+      "overflowX": false
+    },
+    "open": {
+      "rect": {
+        "x": 597,
+        "y": 10,
+        "w": 79,
+        "h": 32,
+        "right": 676,
+        "bottom": 42
+      },
+      "text": "100%",
+      "outsideViewport": false,
+      "scrollWidth": 79,
+      "clientWidth": 79
+    },
+    "errors": 0,
+    "consoleLog": 1
+  },
+  {
+    "width": 600,
+    "closed": {
+      "root": {
+        "rect": {
+          "x": 437,
+          "y": 10,
+          "w": 79,
+          "h": 32,
+          "right": 516,
+          "bottom": 42
+        },
+        "text": "100%"
+      },
+      "header": {
+        "x": 0,
+        "y": 0,
+        "w": 600,
+        "h": 900,
+        "right": 600,
+        "bottom": 900
+      },
+      "overflowX": false
+    },
+    "open": {
+      "rect": {
+        "x": 437,
+        "y": 10,
+        "w": 79,
+        "h": 32,
+        "right": 516,
+        "bottom": 42
+      },
+      "text": "100%",
+      "outsideViewport": false,
+      "scrollWidth": 79,
+      "clientWidth": 79
+    },
+    "errors": 0,
+    "consoleLog": 1
+  }
+]

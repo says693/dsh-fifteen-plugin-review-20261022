@@ -1,0 +1,356 @@
+﻿[
+ {
+  "w": 1000,
+  "scheme": "dark",
+  "title": "读数对照会话",
+  "chipText": "上下文 50%",
+  "chipColor": {
+   "color": "rgb(232, 234, 242)",
+   "bg": "rgba(24, 26, 38, 0.96)",
+   "fontSize": "11px"
+  },
+  "chipRect": {
+   "x": 886,
+   "y": 863,
+   "w": 73,
+   "h": 19,
+   "right": 958,
+   "bottom": 882
+  },
+  "hud": {
+   "x": 862,
+   "y": 682,
+   "w": 120,
+   "h": 175,
+   "right": 982,
+   "bottom": 857
+  },
+  "composer": {
+   "x": 169,
+   "y": 780,
+   "w": 708,
+   "h": 36,
+   "right": 877,
+   "bottom": 816
+  },
+  "send": {
+   "x": 839,
+   "y": 828,
+   "w": 34,
+   "h": 34,
+   "right": 873,
+   "bottom": 862
+  },
+  "overflowX": false,
+  "panel": {
+   "x": 24,
+   "y": 72,
+   "w": 500,
+   "h": 620,
+   "right": 524,
+   "bottom": 692
+  },
+  "panelOverflowX": true,
+  "panelText": "用量小宠物 | ✦ 增强提示词 | 刷新 | − 收起 | 总览 | 模型 | 设置 | 当前上下文 | 模型未知 | 50% | 50k / 100k | 当前会话 | › 展开会话明细 | 2 轮次 | 4.0s | 尚未建立历史索引 | 首次建立索引 | 跨会话累计 | 终身用量账本 · 4 个会话 | 2.2M | › 展开账本分类 | 永久累计，不",
+  "petOverComposer": true,
+  "petOverSend": true,
+  "panelOverComposer": false,
+  "errors": 0,
+  "consoleCount": 0
+ },
+ {
+  "w": 1000,
+  "scheme": "light",
+  "title": "读数对照会话",
+  "chipText": "上下文 50%",
+  "chipColor": {
+   "color": "rgb(232, 234, 242)",
+   "bg": "rgba(24, 26, 38, 0.96)",
+   "fontSize": "11px"
+  },
+  "chipRect": {
+   "x": 886,
+   "y": 863,
+   "w": 73,
+   "h": 19,
+   "right": 958,
+   "bottom": 882
+  },
+  "hud": {
+   "x": 862,
+   "y": 682,
+   "w": 120,
+   "h": 175,
+   "right": 982,
+   "bottom": 857
+  },
+  "composer": {
+   "x": 169,
+   "y": 780,
+   "w": 708,
+   "h": 36,
+   "right": 877,
+   "bottom": 816
+  },
+  "send": {
+   "x": 839,
+   "y": 828,
+   "w": 34,
+   "h": 34,
+   "right": 873,
+   "bottom": 862
+  },
+  "overflowX": false,
+  "panel": {
+   "x": 24,
+   "y": 72,
+   "w": 500,
+   "h": 620,
+   "right": 524,
+   "bottom": 692
+  },
+  "panelOverflowX": true,
+  "panelText": "用量小宠物 | ✦ 增强提示词 | 刷新 | − 收起 | 总览 | 模型 | 设置 | 当前上下文 | 模型未知 | 50% | 50k / 100k | 当前会话 | › 展开会话明细 | 2 轮次 | 4.0s | 尚未建立历史索引 | 首次建立索引 | 跨会话累计 | 终身用量账本 · 4 个会话 | 2.2M | › 展开账本分类 | 永久累计，不",
+  "petOverComposer": true,
+  "petOverSend": true,
+  "panelOverComposer": false,
+  "errors": 0,
+  "consoleCount": 0
+ },
+ {
+  "w": 760,
+  "scheme": "dark",
+  "title": "读数对照会话",
+  "chipText": "上下文 50%",
+  "chipColor": {
+   "color": "rgb(232, 234, 242)",
+   "bg": "rgba(24, 26, 38, 0.96)",
+   "fontSize": "11px"
+  },
+  "chipRect": {
+   "x": 646,
+   "y": 863,
+   "w": 73,
+   "h": 19,
+   "right": 718,
+   "bottom": 882
+  },
+  "hud": {
+   "x": 622,
+   "y": 682,
+   "w": 120,
+   "h": 175,
+   "right": 742,
+   "bottom": 857
+  },
+  "composer": {
+   "x": 72,
+   "y": 780,
+   "w": 661,
+   "h": 36,
+   "right": 733,
+   "bottom": 816
+  },
+  "send": {
+   "x": 695,
+   "y": 828,
+   "w": 34,
+   "h": 34,
+   "right": 729,
+   "bottom": 862
+  },
+  "overflowX": false,
+  "panel": {
+   "x": 24,
+   "y": 72,
+   "w": 500,
+   "h": 620,
+   "right": 524,
+   "bottom": 692
+  },
+  "panelOverflowX": true,
+  "panelText": "用量小宠物 | ✦ 增强提示词 | 刷新 | − 收起 | 总览 | 模型 | 设置 | 当前上下文 | 模型未知 | 50% | 50k / 100k | 当前会话 | › 展开会话明细 | 2 轮次 | 4.0s | 尚未建立历史索引 | 首次建立索引 | 跨会话累计 | 终身用量账本 · 4 个会话 | 2.2M | › 展开账本分类 | 永久累计，不",
+  "petOverComposer": true,
+  "petOverSend": true,
+  "panelOverComposer": false,
+  "errors": 0,
+  "consoleCount": 0
+ },
+ {
+  "w": 760,
+  "scheme": "light",
+  "title": "读数对照会话",
+  "chipText": "上下文 50%",
+  "chipColor": {
+   "color": "rgb(232, 234, 242)",
+   "bg": "rgba(24, 26, 38, 0.96)",
+   "fontSize": "11px"
+  },
+  "chipRect": {
+   "x": 646,
+   "y": 863,
+   "w": 73,
+   "h": 19,
+   "right": 718,
+   "bottom": 882
+  },
+  "hud": {
+   "x": 622,
+   "y": 682,
+   "w": 120,
+   "h": 175,
+   "right": 742,
+   "bottom": 857
+  },
+  "composer": {
+   "x": 72,
+   "y": 780,
+   "w": 661,
+   "h": 36,
+   "right": 733,
+   "bottom": 816
+  },
+  "send": {
+   "x": 695,
+   "y": 828,
+   "w": 34,
+   "h": 34,
+   "right": 729,
+   "bottom": 862
+  },
+  "overflowX": false,
+  "panel": {
+   "x": 24,
+   "y": 72,
+   "w": 500,
+   "h": 620,
+   "right": 524,
+   "bottom": 692
+  },
+  "panelOverflowX": true,
+  "panelText": "用量小宠物 | ✦ 增强提示词 | 刷新 | − 收起 | 总览 | 模型 | 设置 | 当前上下文 | 模型未知 | 50% | 50k / 100k | 当前会话 | › 展开会话明细 | 2 轮次 | 4.0s | 尚未建立历史索引 | 首次建立索引 | 跨会话累计 | 终身用量账本 · 4 个会话 | 2.2M | › 展开账本分类 | 永久累计，不",
+  "petOverComposer": true,
+  "petOverSend": true,
+  "panelOverComposer": false,
+  "errors": 0,
+  "consoleCount": 0
+ },
+ {
+  "w": 600,
+  "scheme": "dark",
+  "title": "读数对照会话",
+  "chipText": "上下文 50%",
+  "chipColor": {
+   "color": "rgb(232, 234, 242)",
+   "bg": "rgba(24, 26, 38, 0.96)",
+   "fontSize": "11px"
+  },
+  "chipRect": {
+   "x": 486,
+   "y": 863,
+   "w": 73,
+   "h": 19,
+   "right": 558,
+   "bottom": 882
+  },
+  "hud": {
+   "x": 462,
+   "y": 682,
+   "w": 120,
+   "h": 175,
+   "right": 582,
+   "bottom": 857
+  },
+  "composer": {
+   "x": 72,
+   "y": 780,
+   "w": 501,
+   "h": 36,
+   "right": 573,
+   "bottom": 816
+  },
+  "send": {
+   "x": 535,
+   "y": 828,
+   "w": 34,
+   "h": 34,
+   "right": 569,
+   "bottom": 862
+  },
+  "overflowX": false,
+  "panel": {
+   "x": 24,
+   "y": 72,
+   "w": 500,
+   "h": 620,
+   "right": 524,
+   "bottom": 692
+  },
+  "panelOverflowX": false,
+  "panelText": "用量小宠物 | ✦ 增强提示词 | 刷新 | − 收起 | 总览 | 模型 | 设置 | 当前上下文 | 模型未知 | 50% | 50k / 100k | 当前会话 | › 展开会话明细 | 2 轮次 | 4.0s | 尚未建立历史索引 | 首次建立索引 | 跨会话累计 | 终身用量账本 · 4 个会话 | 2.2M | › 展开账本分类 | 永久累计，不",
+  "petOverComposer": true,
+  "petOverSend": true,
+  "panelOverComposer": false,
+  "errors": 0,
+  "consoleCount": 0
+ },
+ {
+  "w": 600,
+  "scheme": "light",
+  "title": "读数对照会话",
+  "chipText": "上下文 50%",
+  "chipColor": {
+   "color": "rgb(232, 234, 242)",
+   "bg": "rgba(24, 26, 38, 0.96)",
+   "fontSize": "11px"
+  },
+  "chipRect": {
+   "x": 486,
+   "y": 863,
+   "w": 73,
+   "h": 19,
+   "right": 558,
+   "bottom": 882
+  },
+  "hud": {
+   "x": 462,
+   "y": 682,
+   "w": 120,
+   "h": 175,
+   "right": 582,
+   "bottom": 857
+  },
+  "composer": {
+   "x": 72,
+   "y": 780,
+   "w": 501,
+   "h": 36,
+   "right": 573,
+   "bottom": 816
+  },
+  "send": {
+   "x": 535,
+   "y": 828,
+   "w": 34,
+   "h": 34,
+   "right": 569,
+   "bottom": 862
+  },
+  "overflowX": false,
+  "panel": {
+   "x": 24,
+   "y": 72,
+   "w": 500,
+   "h": 620,
+   "right": 524,
+   "bottom": 692
+  },
+  "panelOverflowX": false,
+  "panelText": "用量小宠物 | ✦ 增强提示词 | 刷新 | − 收起 | 总览 | 模型 | 设置 | 当前上下文 | 模型未知 | 50% | 50k / 100k | 当前会话 | › 展开会话明细 | 2 轮次 | 4.0s | 尚未建立历史索引 | 首次建立索引 | 跨会话累计 | 终身用量账本 · 4 个会话 | 2.2M | › 展开账本分类 | 永久累计，不",
+  "petOverComposer": true,
+  "petOverSend": true,
+  "panelOverComposer": false,
+  "errors": 0,
+  "consoleCount": 0
+ }
+]

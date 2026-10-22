@@ -1,0 +1,135 @@
+{
+  "hud": {
+    "x": 1302,
+    "y": 682,
+    "w": 120,
+    "h": 175,
+    "right": 1422,
+    "bottom": 857
+  },
+  "root": {
+    "x": 0,
+    "y": 0,
+    "w": 1440,
+    "h": 900,
+    "right": 1440,
+    "bottom": 900
+  },
+  "rootChain": [
+    "div",
+    "PetSprite",
+    "div",
+    "div",
+    "TokenPetWindow",
+    "ErrorBoundary"
+  ],
+  "send": {
+    "x": 1202,
+    "y": 828,
+    "w": 34,
+    "h": 34,
+    "right": 1236,
+    "bottom": 862
+  },
+  "point": {
+    "x": 1219,
+    "y": 845
+  },
+  "hit": {
+    "tag": "DIV",
+    "cls": "",
+    "chain": [
+      "div",
+      "TokenPetWindow",
+      "ErrorBoundary",
+      "RootEntry",
+      "SlotErrorBoundary",
+      "div"
+    ]
+  },
+  "pointerEventsChain": [
+    {
+      "tag": "DIV",
+      "cls": "",
+      "pointerEvents": "auto",
+      "zIndex": "9998",
+      "position": "fixed"
+    },
+    {
+      "tag": "BODY",
+      "cls": "",
+      "pointerEvents": "auto",
+      "zIndex": "auto",
+      "position": "static"
+    },
+    {
+      "tag": "HTML",
+      "cls": "",
+      "pointerEvents": "auto",
+      "zIndex": "auto",
+      "position": "static"
+    }
+  ],
+  "rootStyle": {
+    "pointerEvents": "auto",
+    "position": "static",
+    "inset": "auto",
+    "width": "1440px",
+    "height": "900px",
+    "background": "rgb(255, 255, 255)"
+  },
+  "bodyChildren": [
+    {
+      "tag": "SCRIPT",
+      "id": null,
+      "cls": "",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0,
+        "right": 0,
+        "bottom": 0
+      }
+    },
+    {
+      "tag": "SCRIPT",
+      "id": null,
+      "cls": "",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0,
+        "right": 0,
+        "bottom": 0
+      }
+    },
+    {
+      "tag": "DIV",
+      "id": "root",
+      "cls": "",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "w": 1440,
+        "h": 900,
+        "right": 1440,
+        "bottom": 900
+      }
+    },
+    {
+      "tag": "DIV",
+      "id": null,
+      "cls": "",
+      "rect": {
+        "x": 1174,
+        "y": 665,
+        "w": 248,
+        "h": 217,
+        "right": 1422,
+        "bottom": 882
+      }
+    }
+  ]
+}

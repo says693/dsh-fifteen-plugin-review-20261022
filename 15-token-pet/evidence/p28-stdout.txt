@@ -1,0 +1,161 @@
+﻿{
+ "r": {
+  "styles": [
+   {
+    "plugin": "@deepseek-ai/dsh-client-ui-renderer",
+    "len": 182
+   },
+   {
+    "plugin": "dsh-token-pet",
+    "len": 5584
+   },
+   {
+    "plugin": "@deepseek-ai/dsh-client-locale",
+    "len": 696
+   },
+   {
+    "plugin": "@deepseek-ai/dsh-client-ui-settings-plugins",
+    "len": 1465
+   },
+   {
+    "plugin": "@deepseek-ai/dsh-client-ui-settings-models",
+    "len": 11271
+   },
+   {
+    "plugin": "@deepseek-ai/dsh-client-ui-settings-models",
+    "len": 380
+   },
+   {
+    "plugin": "@deepseek-ai/dsh-client-ui-settings-models",
+    "len": 185
+   },
+   {
+    "plugin": "@deepseek-ai/dsh-client-ui-settings-models",
+    "len": 398
+   },
+   {
+    "plugin": "@deepseek-ai/dsh-client-ui-theme",
+    "len": 857
+   },
+   {
+    "plugin": "@deepseek-ai/dsh-client-ui-theme",
+    "len": 1536
+   }
+  ],
+  "tkpNodes": 4,
+  "loader": {
+   "type": "object",
+   "keys": [
+    "mode",
+    "pendingQueue",
+    "load",
+    "create"
+   ]
+  },
+  "slotHost": [
+   {
+    "text": "新会话 | Ctrl | + | Alt | + | N | 插件 | 工作区 | workspace | 读数对照会话 | 1小时 | 极端大用量会话 | 1",
+    "cls": "",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 1440,
+     "h": 1000
+    }
+   },
+   {
+    "text": "新会话 | Ctrl | + | Alt | + | N | 插件 | 工作区 | workspace | 读数对照会话 | 1小时 | 极端大用量会话 | 1",
+    "cls": "pI_x6G_frame",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 1440,
+     "h": 1000
+    }
+   },
+   {
+    "text": "新会话 | Ctrl | + | Alt | + | N | 插件 | 工作区 | workspace | 读数对照会话 | 1小时 | 极端大用量会话 | 1",
+    "cls": "pI_x6G_sidebarCol",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 280,
+     "h": 1000
+    }
+   },
+   {
+    "text": "新会话 | Ctrl | + | Alt | + | N | 插件 | 工作区 | workspace | 读数对照会话 | 1小时 | 极端大用量会话 | 1",
+    "cls": "hHd-Xa_root hHd-Xa_quietBars",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 280,
+     "h": 1000
+    }
+   },
+   {
+    "text": "",
+    "cls": "hHd-Xa_logoRow",
+    "rect": {
+     "x": 12,
+     "y": 6,
+     "w": 256,
+     "h": 60
+    }
+   },
+   {
+    "text": "读数对照会话 | 50% | 对话 | 轨迹 | 第 1 轮：把这段话读一遍，告诉我大概多长。 | 10:04 | 已完成 | 已完成，用时 3秒 |  | 这",
+    "cls": "pI_x6G_centerCol",
+    "rect": {
+     "x": 280,
+     "y": 0,
+     "w": 1160,
+     "h": 1000
+    }
+   },
+   {
+    "text": "读数对照会话 | 50% | 对话 | 轨迹 | 第 1 轮：把这段话读一遍，告诉我大概多长。 | 10:04 | 已完成 | 已完成，用时 3秒 |  | 这",
+    "cls": "wSkVaW_root",
+    "rect": {
+     "x": 280,
+     "y": 0,
+     "w": 1160,
+     "h": 1000
+    }
+   },
+   {
+    "text": "读数对照会话 | 50%",
+    "cls": "wSkVaW_titleRow",
+    "rect": {
+     "x": 300,
+     "y": 10,
+     "w": 1112,
+     "h": 32
+    }
+   }
+  ],
+  "globals": [
+   "__DSH_CONTACT_CONFIG__",
+   "__DSH_BOOT__",
+   "__DSH_SHORTCUTS_CONFIG__",
+   "__DSH_DOCUMENT_PREVIEW_CONFIG__",
+   "__DSH_MODELS_ONBOARDING__",
+   "__DSH_CONNECTION_RECOVERY__",
+   "__DSH_BOOT_READY__"
+  ],
+  "styleCount": 140
+ },
+ "errors": [],
+ "consoleLog": [
+  {
+   "type": "error",
+   "text": "Failed to load resource: the server responded with a status of 405 (Method Not Allowed)",
+   "utc": "2026-10-22T03:09:36.099Z"
+  }
+ ],
+ "net": [
+  "/plugins/??@deepseek-ai/dsh-client-ui-open-in-app/client.js,@deepseek-ai/dsh-api 200",
+  "/plugins/??@deepseek-ai/dsh-client-ui-open-in-app/client.js,@deepseek-ai/dsh-api 200",
+  "/token-pet/weather 405"
+ ]
+}

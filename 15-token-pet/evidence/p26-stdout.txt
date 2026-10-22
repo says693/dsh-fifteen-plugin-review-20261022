@@ -1,0 +1,159 @@
+﻿{
+ "kit": {
+  "found": [
+   {
+    "propsKeys": [
+     "usePanelInfo",
+     "useSessions",
+     "useSessionStatus",
+     "useWorkspaces",
+     "useResource",
+     "useSessionRetainInfo",
+     "sessionId",
+     "inputActions",
+     "useSession",
+     "useConversation",
+     "useInput",
+     "useTrajectory",
+     "useChat",
+     "useProjection",
+     "renderFactorySlot",
+     "t",
+     "renderSlot",
+     "SessionProvider",
+     "usePerformanceUsage",
+     "useTurnData",
+     "useDisclosure",
+     "cwd",
+     "openFile",
+     "openSkill",
+     "inspectCall"
+    ],
+    "interest": {
+     "useSessions": "function",
+     "useSessionStatus": "function",
+     "useSessionRetainInfo": "function",
+     "useSession": "function",
+     "useProjection": "function"
+    }
+   },
+   {
+    "propsKeys": [
+     "usePanelInfo",
+     "useSessions",
+     "useSessionStatus",
+     "useWorkspaces",
+     "useResource",
+     "useSessionRetainInfo",
+     "sessionId",
+     "inputActions",
+     "useSession",
+     "useConversation",
+     "useInput",
+     "useTrajectory",
+     "useChat",
+     "useProjection",
+     "renderFactorySlot",
+     "t",
+     "useStore",
+     "actions",
+     "renderSlot",
+     "SessionProvider",
+     "fileMentions",
+     "openFile",
+     "openSkill",
+     "openExternalLink",
+     "loadOlder"
+    ],
+    "interest": {
+     "useSessions": "function",
+     "useSessionStatus": "function",
+     "useSessionRetainInfo": "function",
+     "useSession": "function",
+     "useProjection": "function"
+    }
+   },
+   {
+    "propsKeys": [
+     "usePanelInfo",
+     "useSessions",
+     "useSessionStatus",
+     "useWorkspaces",
+     "useResource",
+     "useSessionRetainInfo",
+     "sessionId",
+     "inputActions",
+     "useSession",
+     "useConversation",
+     "useInput",
+     "useTrajectory",
+     "useChat",
+     "useProjection",
+     "renderFactorySlot",
+     "useStore",
+     "actions",
+     "renderSlot",
+     "SessionProvider",
+     "bindDraftMirror",
+     "openView",
+     "useConversationViews",
+     "useInspectCall"
+    ],
+    "interest": {
+     "useSessions": "function",
+     "useSessionStatus": "function",
+     "useSessionRetainInfo": "function",
+     "useSession": "function",
+     "useProjection": "function"
+    }
+   },
+   {
+    "propsKeys": [
+     "usePanelInfo",
+     "useSessions",
+     "useSessionStatus",
+     "useWorkspaces",
+     "useResource",
+     "useSessionRetainInfo",
+     "sessionId",
+     "inputActions",
+     "useSession",
+     "useConversation",
+     "useInput",
+     "useTrajectory",
+     "useChat",
+     "useProjection",
+     "renderFactorySlot",
+     "useStore",
+     "actions",
+     "renderSlot",
+     "SessionProvider",
+     "bindDraftMirror",
+     "openView",
+     "useConversationViews",
+     "useInspectCall"
+    ],
+    "interest": {
+     "useSessions": "function",
+     "useSessionStatus": "function",
+     "useSessionRetainInfo": "function",
+     "useSession": "function",
+     "useProjection": "function"
+    }
+   }
+  ],
+  "stores": [
+   {
+    "at": "wSkVaW_root"
+   }
+  ]
+ },
+ "titles": [
+  {
+   "title": "当前上下文窗口占用率",
+   "text": "上下文 50%"
+  }
+ ],
+ "errors": [],
+ "consoleLog": []
+}

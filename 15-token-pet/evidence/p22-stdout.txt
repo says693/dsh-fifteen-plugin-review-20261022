@@ -1,0 +1,198 @@
+﻿{
+ "buildClick": "首次建立索引",
+ "afterBuild": "用量小宠物 | ✦ 增强提示词 | 刷新 | − 收起 | 总览 | 模型 | 设置 | 当前上下文 | 模型未知 | 50% | 50k / 100k | 当前会话 | › 展开会话明细 | 2 轮次 | 4.0s | 索引已就绪 · 0 个已索引 | 跨会话累计 | 终身用量账本 · 4 个会话 | 2.2M | › 展开账本分类 | 永久累计，不受当前会话切换或普通统计重置影响。 | 清空历史（不可恢复） | 用量最高的 5 个服务商与模型 | 终身累计 | 01 | fixture-provider · fixture-model-a | 2.2M | 02 | unknown-provider · totally-unknown-model-xyz | 3.2k | 本日用量趋势 | 今日 | 近 7 日 | 近 30 日 | 暂无趋势数据 | 最耗 Token 的会话 | 来自持久化用量索引的会话合计 | 首次建立历史索引后显示 | ↘",
+ "expanded": "用量小宠物 | ✦ 增强提示词 | 刷新 | − 收起 | 总览 | 模型 | 设置 | 当前上下文 | 模型未知 | 50% | 50k / 100k | 当前会话 | 21k | 输入 | 1.2k | 输出 | 71k | 缓存读 | 2.0k | 缓存写 | › 收起会话明细 | 工具调用 | 0 | 轮次 | 2 | 步数 | 2 | 模型耗时 | 4.0s | 索引已就绪 · 0 个已索引 | 跨会话累计 | 终身用量账本 · 4 个会话 | 2.2M | 1.2M | 输入 | 33k | 输出 | 942k | 缓存读 | 4.0k | 缓存写 | › 收起账本分类 | 永久累计，不受当前会话切换或普通统计重置影响。 | 清空历史（不可恢复） | 用量最高的 5 个服务商与模型 | 终身累计 | 01 | fixture-provider · fixture-model-a | 2.2M | 02 | unknown-provider · totally-unknown-model-xyz | 3.2k | 本日用量趋势 | 今日 | 近 7 日 | 近 30 日 | 暂无趋势数据 | 最耗 Token 的会话 | 来自持久化用量索引的会话合计 | 首次建立历史索引后显示 | ↘",
+ "models": "用量小宠物 | ✦ 增强提示词 | 刷新 | − 收起 | 总览 | 模型 | 设置 | 全部服务商与模型 | 分类来自账本的模型/日期记录；源接口未提供分类时仅显示真实总量。 | fixture-provider · fixture-model-a | 2.2M | 1.2M | 输入 | 32k | 输出 | 942k | 缓存读 | 4.0k | 缓存写 | unknown-provider · totally-unknown-model-xyz | 3.2k | 3.0k | 输入 | 200 | 输出 | 0 | 缓存读 | 0 | 缓存写 | ↘",
+ "raw": {
+  "usage": {
+   "status": 200,
+   "json": {
+    "sessions": 6,
+    "totals": {
+     "uncachedInputTokens": 1245000,
+     "outputTokens": 32600,
+     "cacheReadTokens": 942000,
+     "cacheWriteTokens": 4000
+    },
+    "total": 2223600,
+    "byModel": [
+     {
+      "provider": "fixture-provider",
+      "model": "fixture-model-a",
+      "total": 2220400
+     },
+     {
+      "provider": "unknown-provider",
+      "model": "totally-unknown-model-xyz",
+      "total": 3200
+     }
+    ],
+    "days": [
+     "2026-10-22",
+     "2026-10-21"
+    ],
+    "byModelDay": [
+     {
+      "provider": "fixture-provider",
+      "model": "fixture-model-a",
+      "day": "2026-10-22",
+      "totals": {
+       "uncachedInputTokens": 1230000,
+       "outputTokens": 31600,
+       "cacheReadTokens": 912000,
+       "cacheWriteTokens": 2000
+      },
+      "total": 2175600
+     },
+     {
+      "provider": "unknown-provider",
+      "model": "totally-unknown-model-xyz",
+      "day": "2026-10-22",
+      "totals": {
+       "uncachedInputTokens": 3000,
+       "outputTokens": 200,
+       "cacheReadTokens": 0,
+       "cacheWriteTokens": 0
+      },
+      "total": 3200
+     },
+     {
+      "provider": "fixture-provider",
+      "model": "fixture-model-a",
+      "day": "2026-10-21",
+      "totals": {
+       "uncachedInputTokens": 12000,
+       "outputTokens": 800,
+       "cacheReadTokens": 30000,
+       "cacheWriteTokens": 2000
+      },
+      "total": 44800
+     }
+    ],
+    "baselineActive": false
+   }
+  },
+  "lifetime": {
+   "status": 200,
+   "json": {
+    "sessions": 4,
+    "totals": {
+     "uncachedInputTokens": 1245000,
+     "outputTokens": 32600,
+     "cacheReadTokens": 942000,
+     "cacheWriteTokens": 4000
+    },
+    "total": 2223600,
+    "byModelDay": [
+     {
+      "provider": "fixture-provider",
+      "model": "fixture-model-a",
+      "day": "2026-10-22",
+      "totals": {
+       "uncachedInputTokens": 1230000,
+       "outputTokens": 31600,
+       "cacheReadTokens": 912000,
+       "cacheWriteTokens": 2000
+      },
+      "total": 2175600
+     },
+     {
+      "provider": "unknown-provider",
+      "model": "totally-unknown-model-xyz",
+      "day": "2026-10-22",
+      "totals": {
+       "uncachedInputTokens": 3000,
+       "outputTokens": 200,
+       "cacheReadTokens": 0,
+       "cacheWriteTokens": 0
+      },
+      "total": 3200
+     },
+     {
+      "provider": "fixture-provider",
+      "model": "fixture-model-a",
+      "day": "2026-10-21",
+      "totals": {
+       "uncachedInputTokens": 12000,
+       "outputTokens": 800,
+       "cacheReadTokens": 30000,
+       "cacheWriteTokens": 2000
+      },
+      "total": 44800
+     }
+    ],
+    "models": [
+     {
+      "provider": "fixture-provider",
+      "model": "fixture-model-a",
+      "total": 2220400
+     },
+     {
+      "provider": "unknown-provider",
+      "model": "totally-unknown-model-xyz",
+      "total": 3200
+     }
+    ],
+    "days": [
+     "2026-10-22",
+     "2026-10-21"
+    ],
+    "refreshFailed": 0,
+    "refreshListed": 6,
+    "refreshing": false
+   }
+  },
+  "status": {
+   "status": 200,
+   "json": {
+    "status": "ready",
+    "persisted": true,
+    "usable": true,
+    "building": false,
+    "syncing": false,
+    "refreshing": false,
+    "listed": 6,
+    "closed": 0,
+    "live": 6,
+    "indexed": 0,
+    "pending": 0,
+    "path": "H:\\CODEX\\fifteen-plugin-reviews-20261022\\r3-04-token-pet\\isolated-home\\data\\dsh-token-pet\\session-usage-index.json",
+    "entries": 0,
+    "progress": {
+     "completed": 0,
+     "total": 0,
+     "indexed": 0,
+     "skipped": 0,
+     "failed": 0,
+     "pending": 0,
+     "status": "ready"
+    }
+   }
+  }
+ },
+ "reachable": {
+  "aborted": "TypeError: Failed to fetch"
+ },
+ "reloadBtn": {
+  "clicked": true
+ },
+ "degraded": "用量小宠物 | ✦ 增强提示词 | 刷新 | − 收起 | 总览 | 模型 | 设置 | 当前上下文 | 模型未知 | 50% | 50k / 100k | 当前会话 | 21k | 输入 | 1.2k | 输出 | 71k | 缓存读 | 2.0k | 缓存写 | › 收起会话明细 | 工具调用 | 0 | 轮次 | 2 | 步数 | 2 | 模型耗时 | 4.0s | 索引已就绪 · 0 个已索引 | 跨会话累计 | 终身用量账本 · 4 个会话 | 2.2M | 1.2M | 输入 | 33k | 输出 | 942k | 缓存读 | 4.0k | 缓存写 | › 收起账本分类 | 永久累计，不受当前会话切换或普通统计重置影响。 | 清空历史（不可恢复） | 用量最高的 5 个服务商与模型 | 终身累计 | 01 | fixture-provider · fixture-model-a | 2.2M | 02 | unknown-provider · totally-unknown-model-xyz | 3.2k | 本日用量趋势 | 今日 | 近 7 日 | 近 30 日 | 暂无趋势数据 | 最耗 Token 的会话 | 来自持久化用量索引的会话合计 | 首次建立历史索引后显示 | ↘",
+ "errors": [],
+ "consoleLog": [
+  {
+   "type": "error",
+   "text": "Failed to load resource: net::ERR_FAILED",
+   "utc": "2026-10-22T02:54:07.933Z"
+  },
+  {
+   "type": "error",
+   "text": "Failed to load resource: net::ERR_FAILED",
+   "utc": "2026-10-22T02:54:07.940Z"
+  },
+  {
+   "type": "error",
+   "text": "Failed to load resource: net::ERR_FAILED",
+   "utc": "2026-10-22T02:54:07.940Z"
+  }
+ ]
+}

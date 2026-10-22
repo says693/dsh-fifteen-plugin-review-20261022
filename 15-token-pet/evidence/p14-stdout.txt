@@ -1,0 +1,238 @@
+﻿[
+ {
+  "width": 1440,
+  "geom": {
+   "hud": {
+    "x": 1302,
+    "y": 682,
+    "w": 120,
+    "h": 175,
+    "right": 1422,
+    "bottom": 857
+   },
+   "send": {
+    "x": 1202,
+    "y": 828,
+    "w": 34,
+    "h": 34,
+    "right": 1236,
+    "bottom": 862
+   },
+   "hit": {
+    "tag": "DIV",
+    "chain": [
+     "TokenPetWindow",
+     "ErrorBoundary",
+     "RootEntry",
+     "SlotErrorBoundary"
+    ]
+   },
+   "hitIsPet": true
+  },
+  "beforeDraft": "T-1440",
+  "afterClosed": {
+   "draft": "T-1440",
+   "petLabel": "用量小宠物，打招呼",
+   "panelOpen": true
+  },
+  "panelHit": {
+   "send": {
+    "x": 1202,
+    "y": 828,
+    "w": 34,
+    "h": 34,
+    "right": 1236,
+    "bottom": 862
+   },
+   "hit": {
+    "tag": "DIV",
+    "chain": [
+     "TokenPetWindow",
+     "ErrorBoundary",
+     "RootEntry",
+     "SlotErrorBoundary",
+     "SlotOutlet"
+    ]
+   }
+  },
+  "errors": 0,
+  "consoleCount": 0
+ },
+ {
+  "width": 1000,
+  "geom": {
+   "hud": {
+    "x": 862,
+    "y": 682,
+    "w": 120,
+    "h": 175,
+    "right": 982,
+    "bottom": 857
+   },
+   "send": {
+    "x": 839,
+    "y": 828,
+    "w": 34,
+    "h": 34,
+    "right": 873,
+    "bottom": 862
+   },
+   "hit": {
+    "tag": "DIV",
+    "chain": [
+     "TokenPetWindow",
+     "ErrorBoundary",
+     "RootEntry",
+     "SlotErrorBoundary"
+    ]
+   },
+   "hitIsPet": true
+  },
+  "beforeDraft": "T-1000",
+  "afterClosed": {
+   "draft": "T-1000",
+   "petLabel": "用量小宠物，打招呼",
+   "panelOpen": true
+  },
+  "panelHit": {
+   "send": {
+    "x": 839,
+    "y": 828,
+    "w": 34,
+    "h": 34,
+    "right": 873,
+    "bottom": 862
+   },
+   "hit": {
+    "tag": "DIV",
+    "chain": [
+     "TokenPetWindow",
+     "ErrorBoundary",
+     "RootEntry",
+     "SlotErrorBoundary",
+     "SlotOutlet"
+    ]
+   }
+  },
+  "errors": 0,
+  "consoleCount": 0
+ },
+ {
+  "width": 760,
+  "geom": {
+   "hud": {
+    "x": 622,
+    "y": 682,
+    "w": 120,
+    "h": 175,
+    "right": 742,
+    "bottom": 857
+   },
+   "send": {
+    "x": 695,
+    "y": 828,
+    "w": 34,
+    "h": 34,
+    "right": 729,
+    "bottom": 862
+   },
+   "hit": {
+    "tag": "DIV",
+    "chain": [
+     "TokenPetWindow",
+     "ErrorBoundary",
+     "RootEntry",
+     "SlotErrorBoundary"
+    ]
+   },
+   "hitIsPet": true
+  },
+  "beforeDraft": "T-760",
+  "afterClosed": {
+   "draft": "T-760",
+   "petLabel": "用量小宠物，打招呼",
+   "panelOpen": true
+  },
+  "panelHit": {
+   "send": {
+    "x": 695,
+    "y": 828,
+    "w": 34,
+    "h": 34,
+    "right": 729,
+    "bottom": 862
+   },
+   "hit": {
+    "tag": "DIV",
+    "chain": [
+     "TokenPetWindow",
+     "ErrorBoundary",
+     "RootEntry",
+     "SlotErrorBoundary",
+     "SlotOutlet"
+    ]
+   }
+  },
+  "errors": 0,
+  "consoleCount": 0
+ },
+ {
+  "width": 600,
+  "geom": {
+   "hud": {
+    "x": 462,
+    "y": 682,
+    "w": 120,
+    "h": 175,
+    "right": 582,
+    "bottom": 857
+   },
+   "send": {
+    "x": 535,
+    "y": 828,
+    "w": 34,
+    "h": 34,
+    "right": 569,
+    "bottom": 862
+   },
+   "hit": {
+    "tag": "DIV",
+    "chain": [
+     "TokenPetWindow",
+     "ErrorBoundary",
+     "RootEntry",
+     "SlotErrorBoundary"
+    ]
+   },
+   "hitIsPet": true
+  },
+  "beforeDraft": "T-600",
+  "afterClosed": {
+   "draft": "T-600",
+   "petLabel": "用量小宠物，打招呼",
+   "panelOpen": true
+  },
+  "panelHit": {
+   "send": {
+    "x": 535,
+    "y": 828,
+    "w": 34,
+    "h": 34,
+    "right": 569,
+    "bottom": 862
+   },
+   "hit": {
+    "tag": "DIV",
+    "chain": [
+     "TokenPetWindow",
+     "ErrorBoundary",
+     "RootEntry",
+     "SlotErrorBoundary",
+     "SlotOutlet"
+    ]
+   }
+  },
+  "errors": 0,
+  "consoleCount": 0
+ }
+]

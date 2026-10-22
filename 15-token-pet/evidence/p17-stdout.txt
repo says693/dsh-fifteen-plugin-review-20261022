@@ -1,0 +1,141 @@
+﻿{
+ "start": {
+  "nodes": 853,
+  "imgCount": 4,
+  "imgsWithSrc": 3,
+  "dataUriBytes": 2105078,
+  "listen": {
+   "used": 105351389,
+   "total": 135099137
+  },
+  "petSvg": 57,
+  "styleTags": 141
+ },
+ "after30": {
+  "nodes": 853,
+  "imgCount": 4,
+  "imgsWithSrc": 3,
+  "dataUriBytes": 2115570,
+  "listen": {
+   "used": 88872095,
+   "total": 91687519
+  },
+  "petSvg": 57,
+  "styleTags": 141
+ },
+ "frames": {
+  "sampled": 219,
+  "mean": 5.56,
+  "p50": 5.599999999627471,
+  "p95": 5.700000001117587,
+  "max": 7.4,
+  "over33ms": 0,
+  "over50ms": 0,
+  "longTasks": 0,
+  "scrollTop": 250
+ },
+ "switches": {
+  "before": 853,
+  "after": 795
+ },
+ "afterSwitch": {
+  "nodes": 795,
+  "imgCount": 4,
+  "imgsWithSrc": 3,
+  "dataUriBytes": 2115570,
+  "listen": {
+   "used": 96236783,
+   "total": 112930163
+  },
+  "petSvg": 53,
+  "styleTags": 141
+ },
+ "series": [
+  {
+   "t": 30,
+   "nodes": 795,
+   "heap": 96943639,
+   "imgs": 4
+  },
+  {
+   "t": 60,
+   "nodes": 795,
+   "heap": 96961811,
+   "imgs": 4
+  },
+  {
+   "t": 95,
+   "nodes": 795,
+   "heap": 96980159,
+   "imgs": 4
+  },
+  {
+   "t": 125,
+   "nodes": 795,
+   "heap": 98752499,
+   "imgs": 4
+  },
+  {
+   "t": 155,
+   "nodes": 795,
+   "heap": 92521092,
+   "imgs": 4
+  },
+  {
+   "t": 185,
+   "nodes": 795,
+   "heap": 91055649,
+   "imgs": 4
+  },
+  {
+   "t": 215,
+   "nodes": 795,
+   "heap": 90775774,
+   "imgs": 4
+  },
+  {
+   "t": 246,
+   "nodes": 795,
+   "heap": 90830582,
+   "imgs": 4
+  },
+  {
+   "t": 276,
+   "nodes": 795,
+   "heap": 90835694,
+   "imgs": 4
+  },
+  {
+   "t": 306,
+   "nodes": 795,
+   "heap": 90722498,
+   "imgs": 4
+  }
+ ],
+ "end": {
+  "nodes": 795,
+  "imgCount": 4,
+  "imgsWithSrc": 3,
+  "dataUriBytes": 2115570,
+  "listen": {
+   "used": 90722498,
+   "total": 95723782
+  },
+  "petSvg": 53,
+  "styleTags": 141
+ },
+ "labels": {
+  "hasWeatherWords": false,
+  "hasDateWords": false,
+  "panelText": "用量小宠物\n✦ 增强提示词\n刷新\n− 收起\n总览\n模型\n设置\n当前上下文\n模型未知\n50%\n50k / 100k\n当前会话\n› 展开会话明细\n2 轮次\n4.0s\n索引已就绪 · 0 个已索引\n跨会话累计\n终身用量账本 · 4 个会话\n2.2M\n› 展开账本分类\n永久累计，不受当前会话切换或普通统计重置影响。\n清空历史（不可恢复）\n用量最高的 5 个服务商与模型\n终身累计\n01\nfixture-provider · fixture-model-a\n2.2M\n02\nunknown-provider · totally-unknown-model-xyz\n3.2k\n本日用量趋势\n今日\n近 7 日\n近 30 日\n暂无趋势数据\n最耗 Token 的会话\n来自持久化用量索引的会话合计\n暂无会话统计\n↘"
+ },
+ "errors": [],
+ "consoleLog": [
+  {
+   "type": "warning",
+   "text": "Deprecated API for given entry type.",
+   "utc": "2026-10-22T02:41:03.781Z"
+  }
+ ],
+ "external": []
+}

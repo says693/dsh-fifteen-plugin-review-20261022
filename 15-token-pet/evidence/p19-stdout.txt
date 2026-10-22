@@ -1,0 +1,35 @@
+﻿{
+ "samples": [
+  {
+   "at": 3350,
+   "chip": "上下文 –%"
+  },
+  {
+   "at": 4005,
+   "chip": "上下文 –%"
+  },
+  {
+   "at": 6008,
+   "chip": "上下文 –%"
+  },
+  {
+   "at": 10004,
+   "chip": "上下文 –%"
+  },
+  {
+   "at": 15008,
+   "chip": "上下文 –%"
+  },
+  {
+   "at": 25009,
+   "chip": "上下文 –%"
+  }
+ ],
+ "card": "用量小宠物 | ✦ 增强提示词 | 刷新 | − 收起 | 总览 | 模型 | 设置 | 当前上下文 | 模型未知 | — | 上下文窗口读取中 | 当前会话 | › 展开会话明细 | 3 轮次 | 4.0s | 索引已就绪 · 0 个已索引 | 跨会话累计 | 终身用量账本 · 4 个会话 | 2.2M | › 展开账本分类 | 永久累计，不受当前会话切换或普通统计重置影响。 | 清空历史（不可恢复） | 用量最高的 5 个服务商与模型 | 终身累计 | 01 | fixture-provider · fixture-model-a | 2.2M | 02 | unknown-provider · totally-unknown-model-xyz | 3.2k | 本日用量趋势 | 今日 | 近 7 日 | 近 30 日 | 暂无趋势数据 | 最耗 Token 的会话 | 来自持久化用量索引的会话合计 | 暂无会话统计 | ",
+ "hostView": {
+  "status": 200,
+  "head": "{\"type\":\"server-response\",\"rpcId\":\"invalid-request\",\"result\":{\"ok\":false,\"error\":{\"code\":\"gateway/bad-request\",\"message\":\"invalid client-request message\",\"details\":{\"issues\":[{\"code\":\"invalid_value\",\"values\":[\"client-request\"],\"path\":[\"type\"],\"message\":\"Invalid input: expected \\\"client-request\\\"\"},{\"expected\":\"string\",\"code\":\"invalid_type\",\"path\":[\"rpcId\"],\"message\":\"Invalid input: expected string, received undefined\"},{\"expected\":\"string\",\"code\":\"invalid_type\",\"path\":[\"method\"],\"message\":\"Inval"
+ },
+ "errors": [],
+ "consoleLog": []
+}

@@ -1,0 +1,281 @@
+﻿[
+  {
+    "id": "dsh-token-pet@0.4.2",
+    "name": "dsh-token-pet",
+    "version": "0.4.2",
+    "size": 19141639,
+    "unpackedSize": 25228180,
+    "shasum": "3fe75ccdd3c5f129c20337663a3357584d19f006",
+    "integrity": "sha512-+8eAE8PmjITyPVTY7X0vjvCIc6ct5XfQA7g2kIrByrWNAEx6PVrsrnxQJX4j6yvuVEsC2g5rdUHjkAg4B0Df0Q==",
+    "filename": "dsh-token-pet-0.4.2.tgz",
+    "files": [
+      {
+        "path": "CHANGELOG.md",
+        "size": 17548,
+        "mode": 420
+      },
+      {
+        "path": "LICENSE",
+        "size": 1078,
+        "mode": 420
+      },
+      {
+        "path": "README.en.md",
+        "size": 10755,
+        "mode": 420
+      },
+      {
+        "path": "README.md",
+        "size": 18769,
+        "mode": 420
+      },
+      {
+        "path": "client/client.js",
+        "size": 23054338,
+        "mode": 420
+      },
+      {
+        "path": "cordis.patch.yml",
+        "size": 377,
+        "mode": 420
+      },
+      {
+        "path": "docs/media/action-archive.webp",
+        "size": 7662,
+        "mode": 420
+      },
+      {
+        "path": "docs/media/action-click.webp",
+        "size": 7212,
+        "mode": 420
+      },
+      {
+        "path": "docs/media/action-digesting.webp",
+        "size": 7426,
+        "mode": 420
+      },
+      {
+        "path": "docs/media/action-eating.webp",
+        "size": 5470,
+        "mode": 420
+      },
+      {
+        "path": "docs/media/action-evolve.webp",
+        "size": 8470,
+        "mode": 420
+      },
+      {
+        "path": "docs/media/action-idle.webp",
+        "size": 6968,
+        "mode": 420
+      },
+      {
+        "path": "docs/media/action-prompt-enhancing.webp",
+        "size": 8142,
+        "mode": 420
+      },
+      {
+        "path": "docs/media/action-prompt-ready.webp",
+        "size": 8178,
+        "mode": 420
+      },
+      {
+        "path": "docs/media/action-tool-failure.webp",
+        "size": 6920,
+        "mode": 420
+      },
+      {
+        "path": "docs/media/action-tool-success.webp",
+        "size": 7164,
+        "mode": 420
+      },
+      {
+        "path": "docs/media/action-warning.webp",
+        "size": 7996,
+        "mode": 420
+      },
+      {
+        "path": "docs/media/action-working.webp",
+        "size": 7106,
+        "mode": 420
+      },
+      {
+        "path": "docs/media/actions-demo.gif",
+        "size": 656258,
+        "mode": 420
+      },
+      {
+        "path": "docs/media/actions-overview.webp",
+        "size": 86644,
+        "mode": 420
+      },
+      {
+        "path": "docs/media/ui-dark-models.png",
+        "size": 134182,
+        "mode": 420
+      },
+      {
+        "path": "docs/media/ui-dark-overview.png",
+        "size": 169729,
+        "mode": 420
+      },
+      {
+        "path": "docs/media/ui-dark-panel.png",
+        "size": 158904,
+        "mode": 420
+      },
+      {
+        "path": "docs/media/ui-dark-prompt.png",
+        "size": 167549,
+        "mode": 420
+      },
+      {
+        "path": "docs/media/ui-dark-settings.png",
+        "size": 121183,
+        "mode": 420
+      },
+      {
+        "path": "docs/media/ui-light-overview.png",
+        "size": 143562,
+        "mode": 420
+      },
+      {
+        "path": "docs/media/ui-light-panel.png",
+        "size": 125569,
+        "mode": 420
+      },
+      {
+        "path": "docs/media/ui-light-settings.png",
+        "size": 97097,
+        "mode": 420
+      },
+      {
+        "path": "lib/baseline.d.ts",
+        "size": 2357,
+        "mode": 420
+      },
+      {
+        "path": "lib/baseline.js",
+        "size": 3016,
+        "mode": 420
+      },
+      {
+        "path": "lib/growth.d.ts",
+        "size": 2488,
+        "mode": 420
+      },
+      {
+        "path": "lib/growth.js",
+        "size": 3995,
+        "mode": 420
+      },
+      {
+        "path": "lib/hourly-trend-index.d.ts",
+        "size": 2769,
+        "mode": 420
+      },
+      {
+        "path": "lib/hourly-trend-index.js",
+        "size": 17579,
+        "mode": 420
+      },
+      {
+        "path": "lib/index-contract.d.ts",
+        "size": 2214,
+        "mode": 420
+      },
+      {
+        "path": "lib/index-contract.js",
+        "size": 345,
+        "mode": 420
+      },
+      {
+        "path": "lib/index.d.ts",
+        "size": 2255,
+        "mode": 420
+      },
+      {
+        "path": "lib/index.js",
+        "size": 70665,
+        "mode": 420
+      },
+      {
+        "path": "lib/lifetime-contract.d.ts",
+        "size": 305,
+        "mode": 420
+      },
+      {
+        "path": "lib/lifetime-contract.js",
+        "size": 148,
+        "mode": 420
+      },
+      {
+        "path": "lib/lifetime-ledger.d.ts",
+        "size": 1526,
+        "mode": 420
+      },
+      {
+        "path": "lib/lifetime-ledger.js",
+        "size": 20950,
+        "mode": 420
+      },
+      {
+        "path": "lib/prompt-optimizer.d.ts",
+        "size": 617,
+        "mode": 420
+      },
+      {
+        "path": "lib/prompt-optimizer.js",
+        "size": 3612,
+        "mode": 420
+      },
+      {
+        "path": "lib/prompt-route.d.ts",
+        "size": 346,
+        "mode": 420
+      },
+      {
+        "path": "lib/prompt-route.js",
+        "size": 403,
+        "mode": 420
+      },
+      {
+        "path": "lib/session-usage-index.d.ts",
+        "size": 1831,
+        "mode": 420
+      },
+      {
+        "path": "lib/session-usage-index.js",
+        "size": 9536,
+        "mode": 420
+      },
+      {
+        "path": "lib/stale-cache.d.ts",
+        "size": 810,
+        "mode": 420
+      },
+      {
+        "path": "lib/stale-cache.js",
+        "size": 1385,
+        "mode": 420
+      },
+      {
+        "path": "lib/usage.d.ts",
+        "size": 5684,
+        "mode": 420
+      },
+      {
+        "path": "lib/usage.js",
+        "size": 18380,
+        "mode": 420
+      },
+      {
+        "path": "package.json",
+        "size": 2708,
+        "mode": 420
+      }
+    ],
+    "entryCount": 53,
+    "bundled": []
+  }
+]

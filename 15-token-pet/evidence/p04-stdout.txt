@@ -1,0 +1,609 @@
+﻿{
+ "clicked": true,
+ "beforeCount": 41,
+ "after": [
+  {
+   "tag": "DIV",
+   "cls": "hHd-Xa_regionArea",
+   "role": null,
+   "text": "工作区 | workspace | 读数对照会话 | 48分钟 | 极端大用量会话 | 48分钟 | 未知模型名会话 | 48分钟 | 跨零点会话 | 10小时",
+   "rect": {
+    "x": 8,
+    "y": 164,
+    "w": 272,
+    "h": 780
+   }
+  },
+  {
+   "tag": "DIV",
+   "cls": "bhn1Oq_root",
+   "role": null,
+   "text": "工作区 | workspace | 读数对照会话 | 48分钟 | 极端大用量会话 | 48分钟 | 未知模型名会话 | 48分钟 | 跨零点会话 | 10小时",
+   "rect": {
+    "x": 12,
+    "y": 164,
+    "w": 268,
+    "h": 780
+   }
+  },
+  {
+   "tag": "DIV",
+   "cls": "bhn1Oq_listArea",
+   "role": null,
+   "text": "workspace | 读数对照会话 | 48分钟 | 极端大用量会话 | 48分钟 | 未知模型名会话 | 48分钟 | 跨零点会话 | 10小时",
+   "rect": {
+    "x": 8,
+    "y": 206,
+    "w": 272,
+    "h": 738
+   }
+  },
+  {
+   "tag": "DIV",
+   "cls": "bhn1Oq_treeBody bhn1Oq_wide",
+   "role": null,
+   "text": "workspace | 读数对照会话 | 48分钟 | 极端大用量会话 | 48分钟 | 未知模型名会话 | 48分钟 | 跨零点会话 | 10小时",
+   "rect": {
+    "x": 12,
+    "y": 206,
+    "w": 268,
+    "h": 738
+   }
+  },
+  {
+   "tag": "DIV",
+   "cls": "bhn1Oq_list",
+   "role": "tree",
+   "text": "workspace | 读数对照会话 | 48分钟 | 极端大用量会话 | 48分钟 | 未知模型名会话 | 48分钟 | 跨零点会话 | 10小时",
+   "rect": {
+    "x": 8,
+    "y": 206,
+    "w": 270,
+    "h": 738
+   }
+  },
+  {
+   "tag": "DIV",
+   "cls": "bhn1Oq_groupSection",
+   "role": null,
+   "text": "workspace | 读数对照会话 | 48分钟 | 极端大用量会话 | 48分钟 | 未知模型名会话 | 48分钟 | 跨零点会话 | 10小时",
+   "rect": {
+    "x": 12,
+    "y": 206,
+    "w": 256,
+    "h": 170
+   }
+  },
+  {
+   "tag": "SPAN",
+   "cls": "_root_38jqx_3",
+   "role": null,
+   "text": "极端大用量会话 | 48分钟",
+   "rect": {
+    "x": 12,
+    "y": 276,
+    "w": 256,
+    "h": 32
+   }
+  },
+  {
+   "tag": "DIV",
+   "cls": "YDXeBa_sessionRow",
+   "role": "treeitem",
+   "text": "极端大用量会话 | 48分钟",
+   "rect": {
+    "x": 12,
+    "y": 276,
+    "w": 256,
+    "h": 32
+   }
+  },
+  {
+   "tag": "SPAN",
+   "cls": "YDXeBa_title",
+   "role": null,
+   "text": "极端大用量会话",
+   "rect": {
+    "x": 40,
+    "y": 282,
+    "w": 182,
+    "h": 20
+   }
+  },
+  {
+   "tag": "SPAN",
+   "cls": "_root_38jqx_3",
+   "role": null,
+   "text": "未知模型名会话 | 48分钟",
+   "rect": {
+    "x": 12,
+    "y": 310,
+    "w": 256,
+    "h": 32
+   }
+  },
+  {
+   "tag": "DIV",
+   "cls": "YDXeBa_sessionRow",
+   "role": "treeitem",
+   "text": "未知模型名会话 | 48分钟",
+   "rect": {
+    "x": 12,
+    "y": 310,
+    "w": 256,
+    "h": 32
+   }
+  },
+  {
+   "tag": "SPAN",
+   "cls": "YDXeBa_title",
+   "role": null,
+   "text": "未知模型名会话",
+   "rect": {
+    "x": 40,
+    "y": 316,
+    "w": 182,
+    "h": 20
+   }
+  },
+  {
+   "tag": "DIV",
+   "cls": "EvIC1a_flowItem",
+   "role": null,
+   "text": "用量 44.8K tok | 09:35",
+   "rect": {
+    "x": 485,
+    "y": 413,
+    "w": 742,
+    "h": 32
+   }
+  },
+  {
+   "tag": "DIV",
+   "cls": "TS9iAW_root",
+   "role": null,
+   "text": "用量 44.8K tok | 09:35",
+   "rect": {
+    "x": 485,
+    "y": 413,
+    "w": 742,
+    "h": 32
+   }
+  },
+  {
+   "tag": "DIV",
+   "cls": "xzv4MW_actions TS9iAW_actions",
+   "role": null,
+   "text": "用量 44.8K tok | 09:35",
+   "rect": {
+    "x": 479,
+    "y": 417,
+    "w": 748,
+    "h": 28
+   }
+  },
+  {
+   "tag": "SPAN",
+   "cls": "xzv4MW_endInfo",
+   "role": null,
+   "text": "用量 44.8K tok | 09:35",
+   "rect": {
+    "x": 631,
+    "y": 417,
+    "w": 148,
+    "h": 28
+   }
+  },
+  {
+   "tag": "SPAN",
+   "cls": "Q51KRG_root",
+   "role": null,
+   "text": "用量 44.8K tok",
+   "rect": {
+    "x": 631,
+    "y": 417,
+    "w": 112,
+    "h": 28
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "cls": "Q51KRG_trigger",
+   "role": null,
+   "text": "用量 44.8K tok",
+   "rect": {
+    "x": 631,
+    "y": 417,
+    "w": 112,
+    "h": 28
+   }
+  },
+  {
+   "tag": "SPAN",
+   "cls": "Q51KRG_label",
+   "role": null,
+   "text": "用量 44.8K tok",
+   "rect": {
+    "x": 658,
+    "y": 419,
+    "w": 77,
+    "h": 24
+   }
+  },
+  {
+   "tag": "DIV",
+   "cls": "EvIC1a_flowItem",
+   "role": null,
+   "text": "用量 50.4K tok | 09:35",
+   "rect": {
+    "x": 485,
+    "y": 772,
+    "w": 742,
+    "h": 32
+   }
+  },
+  {
+   "tag": "DIV",
+   "cls": "TS9iAW_root",
+   "role": null,
+   "text": "用量 50.4K tok | 09:35",
+   "rect": {
+    "x": 485,
+    "y": 772,
+    "w": 742,
+    "h": 32
+   }
+  },
+  {
+   "tag": "DIV",
+   "cls": "xzv4MW_actions TS9iAW_actions",
+   "role": null,
+   "text": "用量 50.4K tok | 09:35",
+   "rect": {
+    "x": 479,
+    "y": 776,
+    "w": 748,
+    "h": 28
+   }
+  },
+  {
+   "tag": "SPAN",
+   "cls": "xzv4MW_endInfo",
+   "role": null,
+   "text": "用量 50.4K tok | 09:35",
+   "rect": {
+    "x": 631,
+    "y": 776,
+    "w": 148,
+    "h": 28
+   }
+  },
+  {
+   "tag": "SPAN",
+   "cls": "Q51KRG_root",
+   "role": null,
+   "text": "用量 50.4K tok",
+   "rect": {
+    "x": 631,
+    "y": 776,
+    "w": 112,
+    "h": 28
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "cls": "Q51KRG_trigger",
+   "role": null,
+   "text": "用量 50.4K tok",
+   "rect": {
+    "x": 631,
+    "y": 776,
+    "w": 112,
+    "h": 28
+   }
+  },
+  {
+   "tag": "SPAN",
+   "cls": "Q51KRG_label",
+   "role": null,
+   "text": "用量 50.4K tok",
+   "rect": {
+    "x": 658,
+    "y": 778,
+    "w": 77,
+    "h": 24
+   }
+  },
+  {
+   "tag": "DIV",
+   "cls": "uV2eYG_dock",
+   "role": null,
+   "text": "2 轮 2 步 | 95.2K tok·缓存命中 76% | 50%",
+   "rect": {
+    "x": 686,
+    "y": 970,
+    "w": 341,
+    "h": 26
+   }
+  },
+  {
+   "tag": "DIV",
+   "cls": "bOPqQW_root",
+   "role": null,
+   "text": "2 轮 2 步 | 95.2K tok·缓存命中 76%",
+   "rect": {
+    "x": 686,
+    "y": 974,
+    "w": 269,
+    "h": 22
+   }
+  },
+  {
+   "tag": "SPAN",
+   "cls": "bOPqQW_anchor",
+   "role": null,
+   "text": "95.2K tok·缓存命中 76%",
+   "rect": {
+    "x": 781,
+    "y": 974,
+    "w": 174,
+    "h": 22
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "cls": "bOPqQW_pill",
+   "role": null,
+   "text": "95.2K tok·缓存命中 76%",
+   "rect": {
+    "x": 781,
+    "y": 974,
+    "w": 174,
+    "h": 22
+   }
+  },
+  {
+   "tag": "SPAN",
+   "cls": "bOPqQW_label",
+   "role": null,
+   "text": "95.2K tok·缓存命中 76%",
+   "rect": {
+    "x": 809,
+    "y": 975,
+    "w": 138,
+    "h": 20
+   }
+  },
+  {
+   "tag": "SPAN",
+   "cls": "JObwrW_root",
+   "role": null,
+   "text": "50%",
+   "rect": {
+    "x": 967,
+    "y": 974,
+    "w": 61,
+    "h": 22
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "cls": "JObwrW_trigger",
+   "role": null,
+   "text": "50%",
+   "rect": {
+    "x": 967,
+    "y": 974,
+    "w": 61,
+    "h": 22
+   }
+  },
+  {
+   "tag": "SPAN",
+   "cls": "",
+   "role": null,
+   "text": "50%",
+   "rect": {
+    "x": 995,
+    "y": 975,
+    "w": 25,
+    "h": 20
+   }
+  },
+  {
+   "tag": "DIV",
+   "cls": "",
+   "role": null,
+   "text": "打招呼 | 上下文 50%",
+   "rect": {
+    "x": 1302,
+    "y": 782,
+    "w": 120,
+    "h": 200
+   }
+  },
+  {
+   "tag": "DIV",
+   "cls": "",
+   "role": null,
+   "text": "上下文 50%",
+   "rect": {
+    "x": 1326,
+    "y": 963,
+    "w": 73,
+    "h": 19
+   }
+  },
+  {
+   "tag": "DIV",
+   "cls": "",
+   "role": null,
+   "text": "用量小宠物 | ✦ 增强提示词 | 刷新 | − 收起",
+   "rect": {
+    "x": 24,
+    "y": 72,
+    "w": 500,
+    "h": 42
+   }
+  },
+  {
+   "tag": "SPAN",
+   "cls": "",
+   "role": null,
+   "text": "用量小宠物",
+   "rect": {
+    "x": 36,
+    "y": 85,
+    "w": 65,
+    "h": 17
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "cls": "",
+   "role": "tab",
+   "text": "模型",
+   "rect": {
+    "x": 196,
+    "y": 123,
+    "w": 157,
+    "h": 32
+   }
+  },
+  {
+   "tag": "DIV",
+   "cls": "",
+   "role": null,
+   "text": "当前上下文 | 模型未知 | 50% | 50k / 100k | 当前会话 | › 展开会话明细 | 2 轮次 | 4.0s | 尚未建立历史索引 | 首次建立索引",
+   "rect": {
+    "x": 37,
+    "y": 175,
+    "w": 469,
+    "h": 211
+   }
+  },
+  {
+   "tag": "DIV",
+   "cls": "",
+   "role": null,
+   "text": "当前上下文 | 模型未知",
+   "rect": {
+    "x": 49,
+    "y": 187,
+    "w": 445,
+    "h": 19
+   }
+  },
+  {
+   "tag": "SPAN",
+   "cls": "",
+   "role": null,
+   "text": "模型未知",
+   "rect": {
+    "x": 442,
+    "y": 187,
+    "w": 52,
+    "h": 19
+   }
+  },
+  {
+   "tag": "DIV",
+   "cls": "",
+   "role": null,
+   "text": "50% | 50k / 100k",
+   "rect": {
+    "x": 49,
+    "y": 213,
+    "w": 445,
+    "h": 24
+   }
+  },
+  {
+   "tag": "DIV",
+   "cls": "",
+   "role": null,
+   "text": "终身用量账本 · 0 个会话 | 0",
+   "rect": {
+    "x": 49,
+    "y": 426,
+    "w": 445,
+    "h": 33
+   }
+  },
+  {
+   "tag": "DIV",
+   "cls": "",
+   "role": null,
+   "text": "终身用量账本 · 0 个会话",
+   "rect": {
+    "x": 49,
+    "y": 433,
+    "w": 118,
+    "h": 18
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "cls": "",
+   "role": null,
+   "text": "› 展开账本分类",
+   "rect": {
+    "x": 49,
+    "y": 460,
+    "w": 70,
+    "h": 18
+   }
+  },
+  {
+   "tag": "DIV",
+   "cls": "",
+   "role": null,
+   "text": "用量最高的 5 个服务商与模型 | 终身累计",
+   "rect": {
+    "x": 49,
+    "y": 556,
+    "w": 445,
+    "h": 18
+   }
+  },
+  {
+   "tag": "DIV",
+   "cls": "",
+   "role": null,
+   "text": "暂无模型明细",
+   "rect": {
+    "x": 49,
+    "y": 574,
+    "w": 445,
+    "h": 46
+   }
+  },
+  {
+   "tag": "DIV",
+   "cls": "",
+   "role": null,
+   "text": "本日用量趋势 | 今日 | 近 7 日 | 近 30 日",
+   "rect": {
+    "x": 49,
+    "y": 654,
+    "w": 445,
+    "h": 20
+   }
+  },
+  {
+   "tag": "DIV",
+   "cls": "",
+   "role": null,
+   "text": "首次建立历史索引后显示趋势",
+   "rect": {
+    "x": 49,
+    "y": 674,
+    "w": 445,
+    "h": 46
+   }
+  },
+  {
+   "tag": "DIV",
+   "cls": "",
+   "role": null,
+   "text": "最耗 Token 的会话 | 来自持久化用量索

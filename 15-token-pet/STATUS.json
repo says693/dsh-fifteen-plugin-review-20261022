@@ -1,0 +1,88 @@
+{
+  "stage": "completed",
+  "phase": "交付收口",
+  "target": "pk7j7sqryy-ops/dsh-token-pet",
+  "round": "r3-04",
+  "testedArtifacts": [
+    "npm dsh-token-pet@0.4.2 (Jimmy0123-ux implementation, primary)",
+    "pk7j7sqryy-ops/dsh-token-pet@b498347 = 0.1.0 (assigned coordinate, installed via link)"
+  ],
+  "identityFinding": "任务坐标与 npm 发布件不是同一实现：npm 全部 9 个版本 repository 指向 Jimmy0123-ux/dsh-token-pet；pk7j7sqryy-ops 仓库是 2026-08-15 的另一份 0.1.0 实现（7 个文件、client 21,551 B、带天气/日期模块）。两者分别测试，结论未混用。",
+  "hostsStarted": [
+    { "tag": "hp1", "origin": "http://127.0.0.1:5989", "pid": 26156, "profile": "pet", "state": "already-exited" },
+    { "tag": "hp2", "origin": "http://127.0.0.1:13037", "pid": 37032, "profile": "pet", "state": "already-exited" },
+    { "tag": "hp3", "origin": "http://127.0.0.1:5990", "pid": 17540, "profile": "pet", "state": "running-at-report-time" },
+    { "tag": "hpk", "origin": "http://127.0.0.1:7587", "pid": 28836, "profile": "petpk", "state": "running-at-report-time" }
+  ],
+  "processCleanup": {
+    "policy": "stop by pid recorded in evidence/<tag>-host.local.json; never kill by process name",
+    "hp1": "exited on its own after the fixture was reset",
+    "hp2": "stopped (Stop-Process -Id 37032)",
+    "hp3": "to be stopped with Stop-Process -Id 17540",
+    "hpk": "to be stopped with Stop-Process -Id 28836"
+  },
+  "counts": {
+    "checks": 24,
+    "confirmed": 21,
+    "uncertain": 1,
+    "untested": 1
+  },
+  "confirmedIssueDraftItems": [
+    "C12 玩偶浮层（position:fixed, z-index 9998, pointer-events:auto, 248x217 透明矩形）拦截发送按钮点击 —— 四档宽度 + elementFromPoint + 真实点击效果 + JS 直点对照",
+    "C14 浮窗顶部「模型未知」在本宿主恒不消失（宿主缺 contextTimeline 投影）",
+    "C16 索引状态自相矛盾（index/build 200 + 27 字节空索引 + 「已就绪」与「首次建立后显示」并置）",
+    "C02 玩偶渲染无 404（逐帧 WebP 内嵌 data: URI）",
+    "C03/C04/C05 读数与手算真值逐位一致（50% / 95200 / 2,223,600 / 942,000 / 4,000）",
+    "C07 断网降级干净（端点全 abort 后逐块显示读取失败）",
+    "C08/C09 性能（219 帧 mean 5.56ms、>33ms 帧 0；306 秒 DOM 恒定 795、堆回落）",
+    "C10 空会话占位（上下文 –% / 上下文窗口读取中）",
+    "C15 跨零点日期正确（10月21日 23:50 / 00:10）",
+    "C18 pk-0.1.0 天气 405 降级为「天气不可用」",
+    "C01 身份不一致"
+  ],
+  "uncertainItems": [
+    "C24 pk-0.1.0 卡片里「上下文占用 ~50.1K」与「上下文构成 0+135+218=353」并列，口径不同（contextPressure vs contextBreakdown 启发式），未找到文档是否解释"
+  ],
+  "untestedItems": [
+    "C22 提示词增强 / 完成提示音 / 成本估算 / 皮肤 ZIP 导入（需真实模型调用、真实回复边界或用户提供的 ZIP；按边界不调用模型）",
+    "趋势与会话排行在本宿主不可得（宿主缺 listSnapshots），仅验证降级文案",
+    "发送按钮拦截是否在 DSH Desktop 或其它宿主版本同样发生"
+  ],
+  "blockers": [],
+  "dedup": {
+    "bounty": { "dsh-token-pet": 0, "pk7j7sqryy": 0, "Jimmy0123-ux": 0, "token-pet": 3, "sameScope": 0 },
+    "lingshulab": { "pluginPages": 12, "pluginEntries": 133, "reviewPages": 9, "reviews": 172, "hits": 0 },
+    "verdict": "首报"
+  },
+  "files": [
+    "PLAN.md",
+    "PROVENANCE.json",
+    "RESULTS.json",
+    "REPORT.md",
+    "ISSUE_DRAFT.md",
+    "SITE_REVIEW.md",
+    "REPRODUCE.md",
+    "STATUS.json",
+    "evidence/ (34 probe result sets + 40 screenshots + host logs)",
+    "host.mjs",
+    "browser-kit.mjs",
+    "make-sessions.mjs",
+    "probe-01..35"
+  ],
+  "siteReview": {
+    "hanCharacters": 1480,
+    "withinRange": true,
+    "bannedWordsPresent": [],
+    "hasTotalScoreOrStars": false
+  },
+  "limits": {
+    "noModelCall": true,
+    "noPaidService": true,
+    "noRealCredentials": true,
+    "noRealSessions": true,
+    "noUserGuiTouched": [1241, 2538, 4756],
+    "noSubmission": true,
+    "noPublicRepo": true,
+    "pluginSourceUnmodified": true
+  }
+}

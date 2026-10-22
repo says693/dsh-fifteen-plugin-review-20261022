@@ -1,0 +1,348 @@
+﻿{
+ "pill": {
+  "tag": "DIV",
+  "cls": "uV2eYG_dock",
+  "aria": null,
+  "text": "2 轮 2 步 | 95.2K tok·缓存命中 76% | 50%",
+  "chain": [
+   "div",
+   "div",
+   "InputBar",
+   "SessionMaybeEntryBody",
+   "SessionMaybeEntry",
+   "SlotErrorBoundary",
+   "div",
+   "SlotOutlet",
+   "div",
+   "div",
+   "div",
+   "SlotOutlet",
+   "div",
+   "div",
+   "div",
+   "ConversationContent",
+   "FactoryOccurrenceBody",
+   "FactoryOccurrence",
+   "FactoryErrorBoundary",
+   "FactoryOutlet",
+   "div",
+   "ConversationMainPanel",
+   "ConversationRoot",
+   "SessionMaybeEntryBody",
+   "SessionMaybeEntry",
+   "SlotErrorBoundary",
+   "div",
+   "SlotOutlet",
+   "ConversationPanel",
+   "RootEntry",
+   "SlotErrorBoundary",
+   "div",
+   "SlotOutlet",
+   "MainPanel",
+   "div",
+   "CenterColumn",
+   "div",
+   "AppFrame",
+   "RootEntry",
+   "SlotErrorBoundary",
+   "div",
+   "RootOutlet",
+   "ScopeProvider",
+   "RootStandardProvider",
+   "BootHandoff"
+  ]
+ },
+ "hud": {
+  "tag": "DIV",
+  "cls": "",
+  "aria": "用量小宠物，打招呼",
+  "text": "打招呼",
+  "chain": [
+   "div",
+   "PetSprite",
+   "div",
+   "div",
+   "TokenPetWindow",
+   "ErrorBoundary",
+   "(anon fn)",
+   "RootEntry",
+   "SlotErrorBoundary",
+   "div",
+   "SlotOutlet",
+   "div",
+   "div",
+   "AppFrame",
+   "RootEntry",
+   "SlotErrorBoundary",
+   "div",
+   "RootOutlet",
+   "ScopeProvider",
+   "RootStandardProvider",
+   "BootHandoff"
+  ]
+ },
+ "card": {
+  "tag": "DIV",
+  "cls": "",
+  "aria": null,
+  "text": "当前上下文 | 模型未知 | 50% | 50k / 100k | 当前会话 | › 展开会话明细 | 2 轮次 | 4.0s | 尚未建立历史索引 | 首次建立索引",
+  "chain": [
+   "div",
+   "div",
+   "main",
+   "div",
+   "ContextPanel",
+   "div",
+   "TokenPetWindow",
+   "ErrorBoundary",
+   "(anon fn)",
+   "RootEntry",
+   "SlotErrorBoundary",
+   "div",
+   "SlotOutlet",
+   "div",
+   "div",
+   "AppFrame",
+   "RootEntry",
+   "SlotErrorBoundary",
+   "div",
+   "RootOutlet",
+   "ScopeProvider",
+   "RootStandardProvider",
+   "BootHandoff"
+  ]
+ },
+ "styleLen": 2735,
+ "styleText": "\n    @keyframes dsh-pet-idle { 0%,100% { transform:translateY(0) } 50% { transform:translateY(-4px) } }\n     @keyframes dsh-pet-working { 0%,100% { transform:rotate(-3deg) } 50% { transform:rotate(3deg) } }\n     @keyframes dsh-pet-eating { 0%,100% { transform:scale(1) } 50% { transform:scale(1.08) } }\n     @keyframes dsh-pet-digesting { 0%,100% { transform:translateY(0) } 50% { transform:translateY(-3px) } }\n      @keyframes dsh-pet-click { 0%,100% { transform:scale(1) } 50% { transform:scale(1.12) } }\n     @keyframes dsh-pet-warning { 0%,100% { transform:translateX(0) } 25% { transform:translateX(-5px) } 75% { transform:translateX(5px) } }\n     @keyframes dsh-pet-evolve { 0% { transform:scale(.8);opacity:.5 } 60% { transform:scale(1.18);opacity:1 } 100% { transform:scale(1) } }\n     @keyframes dsh-pet-archive { from { opacity:1;transform:translateY(0) } to { opacity:.45;transform:translateY(8px) } }\n     @keyframes dsh-pet-tool-success { 0%,100% { transform:scale(1) } 50% { transform:translateY(-6px) scale(1.06) } }\n     @keyframes dsh-pet-tool-failure { 0%,100% { transform:rotate(0) } 35% { transform:rotate(-8deg) } 70% { transform:rotate(8deg) } }\n     @keyframes dsh-pet-prompt-",
+ "petOwnedCount": 79,
+ "petOwned": [
+  {
+   "tag": "DIV",
+   "cls": "",
+   "text": "打招呼 | 上下文 50%",
+   "rect": {
+    "x": 1302,
+    "y": 782,
+    "w": 120,
+    "h": 200
+   },
+   "chain": [
+    "div",
+    "div",
+    "TokenPetWindow",
+    "ErrorBoundary",
+    "(anon fn)",
+    "RootEntry"
+   ]
+  },
+  {
+   "tag": "DIV",
+   "cls": "",
+   "text": "打招呼",
+   "rect": {
+    "x": 1302,
+    "y": 782,
+    "w": 120,
+    "h": 175
+   },
+   "chain": [
+    "div",
+    "PetSprite",
+    "div",
+    "div",
+    "TokenPetWindow",
+    "ErrorBoundary"
+   ]
+  },
+  {
+   "tag": "SPAN",
+   "cls": "",
+   "text": "",
+   "rect": {
+    "x": 1314,
+    "y": 836,
+    "w": 97,
+    "h": 110
+   },
+   "chain": [
+    "span",
+    "div",
+    "PetSprite",
+    "div",
+    "div",
+    "TokenPetWindow"
+   ]
+  },
+  {
+   "tag": "DIV",
+   "cls": "",
+   "text": "",
+   "rect": {
+    "x": 1302,
+    "y": 782,
+    "w": 120,
+    "h": 175
+   },
+   "chain": [
+    "div",
+    "div",
+    "PetSprite",
+    "div",
+    "div",
+    "TokenPetWindow"
+   ]
+  },
+  {
+   "tag": "DIV",
+   "cls": "",
+   "text": "",
+   "rect": {
+    "x": 1242,
+    "y": 767,
+    "w": 241,
+    "h": 197
+   },
+   "chain": [
+    "div",
+    "div",
+    "div",
+    "PetSprite",
+    "div",
+    "div"
+   ]
+  },
+  {
+   "tag": "DIV",
+   "cls": "",
+   "text": "",
+   "rect": {
+    "x": 1242,
+    "y": 767,
+    "w": 241,
+    "h": 197
+   },
+   "chain": [
+    "div",
+    "PetActionPlayer",
+    "div",
+    "div",
+    "div",
+    "PetSprite"
+   ]
+  },
+  {
+   "tag": "DIV",
+   "cls": "",
+   "text": "",
+   "rect": {
+    "x": 1297,
+    "y": 767,
+    "w": 131,
+    "h": 197
+   },
+   "chain": [
+    "div",
+    "div",
+    "PetActionPlayer",
+    "div",
+    "div",
+    "div"
+   ]
+  },
+  {
+   "tag": "IMG",
+   "cls": "",
+   "text": "",
+   "rect": {
+    "x": 249,
+    "y": 767,
+    "w": 4192,
+    "h": 197
+   },
+   "chain": [
+    "img",
+    "div",
+    "div",
+    "PetActionPlayer",
+    "div",
+    "div"
+   ]
+  },
+  {
+   "tag": "DIV",
+   "cls": "",
+   "text": "",
+   "rect": {
+    "x": 1297,
+    "y": 767,
+    "w": 131,
+    "h": 197
+   },
+   "chain": [
+    "div",
+    "div",
+    "PetActionPlayer",
+    "div",
+    "div",
+    "div"
+   ]
+  },
+  {
+   "tag": "IMG",
+   "cls": "",
+   "text": "",
+   "rect": {
+    "x": -1061,
+    "y": 767,
+    "w": 4192,
+    "h": 197
+   },
+   "chain": [
+    "img",
+    "div",
+    "div",
+    "PetActionPlayer",
+    "div",
+    "div"
+   ]
+  },
+  {
+   "tag": "SPAN",
+   "cls": "",
+   "text": "打招呼",
+   "rect": {
+    "x": 1379,
+    "y": 794,
+    "w": 48,
+    "h": 20
+   },
+   "chain": [
+    "span",
+    "div",
+    "PetSprite",
+    "div",
+    "div",
+    "TokenPetWindow"
+   ]
+  },
+  {
+   "tag": "SPAN",
+   "cls": "",
+   "text": "",
+   "rect": {
+    "x": 1300,
+    "y": 824,
+    "w": 6,
+    "h": 6
+   },
+   "chain": [
+    "span",
+    "div",
+    "PetSprite",
+    "div",
+    "div",
+    "TokenPetWindow"
+   ]
+  }
+ ]
+}

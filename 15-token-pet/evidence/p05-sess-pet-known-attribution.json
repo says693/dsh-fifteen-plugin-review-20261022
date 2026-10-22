@@ -1,0 +1,692 @@
+{
+  "pill": {
+    "tag": "DIV",
+    "cls": "uV2eYG_dock",
+    "aria": null,
+    "text": "2 轮 2 步 | 95.2K tok·缓存命中 76% | 50%",
+    "chain": [
+      "div",
+      "div",
+      "InputBar",
+      "SessionMaybeEntryBody",
+      "SessionMaybeEntry",
+      "SlotErrorBoundary",
+      "div",
+      "SlotOutlet",
+      "div",
+      "div",
+      "div",
+      "SlotOutlet",
+      "div",
+      "div",
+      "div",
+      "ConversationContent",
+      "FactoryOccurrenceBody",
+      "FactoryOccurrence",
+      "FactoryErrorBoundary",
+      "FactoryOutlet",
+      "div",
+      "ConversationMainPanel",
+      "ConversationRoot",
+      "SessionMaybeEntryBody",
+      "SessionMaybeEntry",
+      "SlotErrorBoundary",
+      "div",
+      "SlotOutlet",
+      "ConversationPanel",
+      "RootEntry",
+      "SlotErrorBoundary",
+      "div",
+      "SlotOutlet",
+      "MainPanel",
+      "div",
+      "CenterColumn",
+      "div",
+      "AppFrame",
+      "RootEntry",
+      "SlotErrorBoundary",
+      "div",
+      "RootOutlet",
+      "ScopeProvider",
+      "RootStandardProvider",
+      "BootHandoff"
+    ]
+  },
+  "hud": {
+    "tag": "DIV",
+    "cls": "",
+    "aria": "用量小宠物，打招呼",
+    "text": "打招呼",
+    "chain": [
+      "div",
+      "PetSprite",
+      "div",
+      "div",
+      "TokenPetWindow",
+      "ErrorBoundary",
+      "(anon fn)",
+      "RootEntry",
+      "SlotErrorBoundary",
+      "div",
+      "SlotOutlet",
+      "div",
+      "div",
+      "AppFrame",
+      "RootEntry",
+      "SlotErrorBoundary",
+      "div",
+      "RootOutlet",
+      "ScopeProvider",
+      "RootStandardProvider",
+      "BootHandoff"
+    ]
+  },
+  "card": {
+    "tag": "DIV",
+    "cls": "",
+    "aria": null,
+    "text": "当前上下文 | 模型未知 | 50% | 50k / 100k | 当前会话 | › 展开会话明细 | 2 轮次 | 4.0s | 尚未建立历史索引 | 首次建立索引",
+    "chain": [
+      "div",
+      "div",
+      "main",
+      "div",
+      "ContextPanel",
+      "div",
+      "TokenPetWindow",
+      "ErrorBoundary",
+      "(anon fn)",
+      "RootEntry",
+      "SlotErrorBoundary",
+      "div",
+      "SlotOutlet",
+      "div",
+      "div",
+      "AppFrame",
+      "RootEntry",
+      "SlotErrorBoundary",
+      "div",
+      "RootOutlet",
+      "ScopeProvider",
+      "RootStandardProvider",
+      "BootHandoff"
+    ]
+  },
+  "styleLen": 2735,
+  "styleText": "\n    @keyframes dsh-pet-idle { 0%,100% { transform:translateY(0) } 50% { transform:translateY(-4px) } }\n     @keyframes dsh-pet-working { 0%,100% { transform:rotate(-3deg) } 50% { transform:rotate(3deg) } }\n     @keyframes dsh-pet-eating { 0%,100% { transform:scale(1) } 50% { transform:scale(1.08) } }\n     @keyframes dsh-pet-digesting { 0%,100% { transform:translateY(0) } 50% { transform:translateY(-3px) } }\n      @keyframes dsh-pet-click { 0%,100% { transform:scale(1) } 50% { transform:scale(1.12) } }\n     @keyframes dsh-pet-warning { 0%,100% { transform:translateX(0) } 25% { transform:translateX(-5px) } 75% { transform:translateX(5px) } }\n     @keyframes dsh-pet-evolve { 0% { transform:scale(.8);opacity:.5 } 60% { transform:scale(1.18);opacity:1 } 100% { transform:scale(1) } }\n     @keyframes dsh-pet-archive { from { opacity:1;transform:translateY(0) } to { opacity:.45;transform:translateY(8px) } }\n     @keyframes dsh-pet-tool-success { 0%,100% { transform:scale(1) } 50% { transform:translateY(-6px) scale(1.06) } }\n     @keyframes dsh-pet-tool-failure { 0%,100% { transform:rotate(0) } 35% { transform:rotate(-8deg) } 70% { transform:rotate(8deg) } }\n     @keyframes dsh-pet-prompt-enhancing { 0%,100% { transform:scale(1) } 50% { transform:scale(1.04) } }\n     @keyframes dsh-pet-prompt-ready { 0%,100% { transform:scale(1) } 50% { transform:scale(1.08) } }\n     @keyframes dsh-pet-prop-working { 0%,100% { transform:rotate(-1.5deg) translateY(0) } 50% { transform:rotate(1.5deg) translateY(2px) } }\n      @keyframes dsh-pet-token-feed { 0% { transform:translate(16px,-10px) scale(.7);opacity:0 } 35% { opacity:1 } 75% { transform:translate(-46px,34px) scale(.9);opacity:1 } 100% { transform:translate(-55px,38px) scale(.2);opacity:0 } }\n      @keyframes dsh-pet-digest { 0% { transform:rotate(0) scale(.8);opacity:.35 } 50% { transform:rotate(180deg) scale(1.12);opacity:.9 } 100% { transform:rotate(360deg) scale(.8);opacity:.35 } }\n      @keyframes dsh-pet-bubble-pop { 0% { transform:scale(.2);opacity:0 } 55% { transform:scale(1.18);opacity:1 } 100% { transform:scale(1);opacity:1 } }\n      @keyframes dsh-pet-heart-float { 0% { transform:translateY(12px) scale(.4);opacity:0 } 45% { opacity:1 } 100% { transform:translateY(-18px) scale(1.05);opacity:0 } }\n      @keyframes dsh-pet-evolve-ring { 0% { transform:scale(.5) rotate(0);opacity:0 } 55% { opacity:1 } 100% { transform:scale(1.18) rotate(180deg);opacity:0 } }\n      @keyframes dsh-pet-magic-orbit { 0% { transform:translate(0,0) rotate(0) } 25% { transform:translate(8px,-8px) rotate(90deg) } 50% { transform:translate(18px,2px) rotate(180deg) } 75% { transform:translate(8px,10px) rotate(270deg) } 100% { transform:translate(0,0) rotate(360deg) } }\n  ",
+  "petOwnedCount": 79,
+  "petOwned": [
+    {
+      "tag": "DIV",
+      "cls": "",
+      "text": "打招呼 | 上下文 50%",
+      "rect": {
+        "x": 1302,
+        "y": 782,
+        "w": 120,
+        "h": 200
+      },
+      "chain": [
+        "div",
+        "div",
+        "TokenPetWindow",
+        "ErrorBoundary",
+        "(anon fn)",
+        "RootEntry"
+      ]
+    },
+    {
+      "tag": "DIV",
+      "cls": "",
+      "text": "打招呼",
+      "rect": {
+        "x": 1302,
+        "y": 782,
+        "w": 120,
+        "h": 175
+      },
+      "chain": [
+        "div",
+        "PetSprite",
+        "div",
+        "div",
+        "TokenPetWindow",
+        "ErrorBoundary"
+      ]
+    },
+    {
+      "tag": "SPAN",
+      "cls": "",
+      "text": "",
+      "rect": {
+        "x": 1314,
+        "y": 836,
+        "w": 97,
+        "h": 110
+      },
+      "chain": [
+        "span",
+        "div",
+        "PetSprite",
+        "div",
+        "div",
+        "TokenPetWindow"
+      ]
+    },
+    {
+      "tag": "DIV",
+      "cls": "",
+      "text": "",
+      "rect": {
+        "x": 1302,
+        "y": 782,
+        "w": 120,
+        "h": 175
+      },
+      "chain": [
+        "div",
+        "div",
+        "PetSprite",
+        "div",
+        "div",
+        "TokenPetWindow"
+      ]
+    },
+    {
+      "tag": "DIV",
+      "cls": "",
+      "text": "",
+      "rect": {
+        "x": 1242,
+        "y": 767,
+        "w": 241,
+        "h": 197
+      },
+      "chain": [
+        "div",
+        "div",
+        "div",
+        "PetSprite",
+        "div",
+        "div"
+      ]
+    },
+    {
+      "tag": "DIV",
+      "cls": "",
+      "text": "",
+      "rect": {
+        "x": 1242,
+        "y": 767,
+        "w": 241,
+        "h": 197
+      },
+      "chain": [
+        "div",
+        "PetActionPlayer",
+        "div",
+        "div",
+        "div",
+        "PetSprite"
+      ]
+    },
+    {
+      "tag": "DIV",
+      "cls": "",
+      "text": "",
+      "rect": {
+        "x": 1297,
+        "y": 767,
+        "w": 131,
+        "h": 197
+      },
+      "chain": [
+        "div",
+        "div",
+        "PetActionPlayer",
+        "div",
+        "div",
+        "div"
+      ]
+    },
+    {
+      "tag": "IMG",
+      "cls": "",
+      "text": "",
+      "rect": {
+        "x": 249,
+        "y": 767,
+        "w": 4192,
+        "h": 197
+      },
+      "chain": [
+        "img",
+        "div",
+        "div",
+        "PetActionPlayer",
+        "div",
+        "div"
+      ]
+    },
+    {
+      "tag": "DIV",
+      "cls": "",
+      "text": "",
+      "rect": {
+        "x": 1297,
+        "y": 767,
+        "w": 131,
+        "h": 197
+      },
+      "chain": [
+        "div",
+        "div",
+        "PetActionPlayer",
+        "div",
+        "div",
+        "div"
+      ]
+    },
+    {
+      "tag": "IMG",
+      "cls": "",
+      "text": "",
+      "rect": {
+        "x": -1061,
+        "y": 767,
+        "w": 4192,
+        "h": 197
+      },
+      "chain": [
+        "img",
+        "div",
+        "div",
+        "PetActionPlayer",
+        "div",
+        "div"
+      ]
+    },
+    {
+      "tag": "SPAN",
+      "cls": "",
+      "text": "打招呼",
+      "rect": {
+        "x": 1379,
+        "y": 794,
+        "w": 48,
+        "h": 20
+      },
+      "chain": [
+        "span",
+        "div",
+        "PetSprite",
+        "div",
+        "div",
+        "TokenPetWindow"
+      ]
+    },
+    {
+      "tag": "SPAN",
+      "cls": "",
+      "text": "",
+      "rect": {
+        "x": 1300,
+        "y": 824,
+        "w": 6,
+        "h": 6
+      },
+      "chain": [
+        "span",
+        "div",
+        "PetSprite",
+        "div",
+        "div",
+        "TokenPetWindow"
+      ]
+    },
+    {
+      "tag": "SPAN",
+      "cls": "",
+      "text": "",
+      "rect": {
+        "x": 1324,
+        "y": 954,
+        "w": 77,
+        "h": 5
+      },
+      "chain": [
+        "span",
+        "div",
+        "PetSprite",
+        "div",
+        "div",
+        "TokenPetWindow"
+      ]
+    },
+    {
+      "tag": "SPAN",
+      "cls": "",
+      "text": "",
+      "rect": {
+        "x": 1324,
+        "y": 954,
+        "w": 70,
+        "h": 5
+      },
+      "chain": [
+        "span",
+        "span",
+        "div",
+        "PetSprite",
+        "div",
+        "div"
+      ]
+    },
+    {
+      "tag": "DIV",
+      "cls": "",
+      "text": "上下文 50%",
+      "rect": {
+        "x": 1326,
+        "y": 963,
+        "w": 73,
+        "h": 19
+      },
+      "chain": [
+        "div",
+        "div",
+        "div",
+        "TokenPetWindow",
+        "ErrorBoundary",
+        "(anon fn)"
+      ]
+    },
+    {
+      "tag": "DIV",
+      "cls": "",
+      "text": "用量小宠物 | ✦ 增强提示词 | 刷新 | − 收起",
+      "rect": {
+        "x": 24,
+        "y": 72,
+        "w": 500,
+        "h": 42
+      },
+      "chain": [
+        "div",
+        "div",
+        "TokenPetWindow",
+        "ErrorBoundary",
+        "(anon fn)",
+        "RootEntry"
+      ]
+    },
+    {
+      "tag": "SPAN",
+      "cls": "",
+      "text": "用量小宠物",
+      "rect": {
+        "x": 36,
+        "y": 85,
+        "w": 65,
+        "h": 17
+      },
+      "chain": [
+        "span",
+        "div",
+        "div",
+        "TokenPetWindow",
+        "ErrorBoundary",
+        "(anon fn)"
+      ]
+    },
+    {
+      "tag": "DIV",
+      "cls": "",
+      "text": "✦ 增强提示词 | 刷新 | − 收起",
+      "rect": {
+        "x": 326,
+        "y": 78,
+        "w": 186,
+        "h": 30
+      },
+      "chain": [
+        "div",
+        "div",
+        "div",
+        "TokenPetWindow",
+        "ErrorBoundary",
+        "(anon fn)"
+      ]
+    },
+    {
+      "tag": "BUTTON",
+      "cls": "",
+      "text": "✦ 增强提示词",
+      "rect": {
+        "x": 326,
+        "y": 78,
+        "w": 85,
+        "h": 30
+      },
+      "chain": [
+        "button",
+        "div",
+        "div",
+        "div",
+        "TokenPetWindow",
+        "ErrorBoundary"
+      ]
+    },
+    {
+      "tag": "BUTTON",
+      "cls": "",
+      "text": "刷新",
+      "rect": {
+        "x": 416,
+        "y": 78,
+        "w": 40,
+        "h": 30
+      },
+      "chain": [
+        "button",
+        "div",
+        "div",
+        "div",
+        "TokenPetWindow",
+        "ErrorBoundary"
+      ]
+    },
+    {
+      "tag": "BUTTON",
+      "cls": "",
+      "text": "− 收起",
+      "rect": {
+        "x": 461,
+        "y": 78,
+        "w": 51,
+        "h": 30
+      },
+      "chain": [
+        "button",
+        "div",
+        "div",
+        "div",
+        "TokenPetWindow",
+        "ErrorBoundary"
+      ]
+    },
+    {
+      "tag": "DIV",
+      "cls": "",
+      "text": "总览 | 模型 | 设置 | 当前上下文 | 模型未知 | 50% | 50k / 100k | 当前会话 | › 展开会话明细 | 2 轮次 | 4.0s | 尚未建立历史索引 ",
+      "rect": {
+        "x": 24,
+        "y": 114,
+        "w": 500,
+        "h": 578
+      },
+      "chain": [
+        "div",
+        "ContextPanel",
+        "div",
+        "TokenPetWindow",
+        "ErrorBoundary",
+        "(anon fn)"
+      ]
+    },
+    {
+      "tag": "BUTTON",
+      "cls": "",
+      "text": "总览",
+      "rect": {
+        "x": 35,
+        "y": 123,
+        "w": 157,
+        "h": 32
+      },
+      "chain": [
+        "button",
+        "nav",
+        "div",
+        "ContextPanel",
+        "div",
+        "TokenPetWindow"
+      ]
+    },
+    {
+      "tag": "BUTTON",
+      "cls": "",
+      "text": "模型",
+      "rect": {
+        "x": 196,
+        "y": 123,
+        "w": 157,
+        "h": 32
+      },
+      "chain": [
+        "button",
+        "nav",
+        "div",
+        "ContextPanel",
+        "div",
+        "TokenPetWindow"
+      ]
+    },
+    {
+      "tag": "BUTTON",
+      "cls": "",
+      "text": "设置",
+      "rect": {
+        "x": 356,
+        "y": 123,
+        "w": 157,
+        "h": 32
+      },
+      "chain": [
+        "button",
+        "nav",
+        "div",
+        "ContextPanel",
+        "div",
+        "TokenPetWindow"
+      ]
+    },
+    {
+      "tag": "DIV",
+      "cls": "",
+      "text": "当前上下文 | 模型未知 | 50% | 50k / 100k | 当前会话 | › 展开会话明细 | 2 轮次 | 4.0s | 尚未建立历史索引 | 首次建立索引 | 跨会话累",
+      "rect": {
+        "x": 37,
+        "y": 175,
+        "w": 469,
+        "h": 672
+      },
+      "chain": [
+        "div",
+        "main",
+        "div",
+        "ContextPanel",
+        "div",
+        "TokenPetWindow"
+      ]
+    },
+    {
+      "tag": "DIV",
+      "cls": "",
+      "text": "当前上下文 | 模型未知 | 50% | 50k / 100k | 当前会话 | › 展开会话明细 | 2 轮次 | 4.0s | 尚未建立历史索引 | 首次建立索引",
+      "rect": {
+        "x": 37,
+        "y": 175,
+        "w": 469,
+        "h": 211
+      },
+      "chain": [
+        "div",
+        "div",
+        "main",
+        "div",
+        "ContextPanel",
+        "div"
+      ]
+    },
+    {
+      "tag": "DIV",
+      "cls": "",
+      "text": "当前上下文 | 模型未知",
+      "rect": {
+        "x": 49,
+        "y": 187,
+        "w": 445,
+        "h": 19
+      },
+      "chain": [
+        "div",
+        "section",
+        "div",
+        "div",
+        "main",
+        "div"
+      ]
+    },
+    {
+      "tag": "SPAN",
+      "cls": "",
+      "text": "模型未知",
+      "rect": {
+        "x": 442,
+        "y": 187,
+        "w": 52,
+        "h": 19
+      },
+      "chain": [
+        "span",
+        "div",
+        "section",
+        "div",
+        "div",
+        "main"
+      ]
+    },
+    {
+      "tag": "DIV",
+      "cls": "",
+      "text": "50% | 50k / 100k",
+      "rect": {
+        "x": 49,
+        "y": 213,
+        "w": 445,
+        "h": 24
+      },
+      "chain": [
+        "div",
+        "section",
+        "div",
+        "div",
+        "main",
+        "div"
+      ]
+    }
+  ],
+  "errors": [],
+  "consoleLog": []
+}

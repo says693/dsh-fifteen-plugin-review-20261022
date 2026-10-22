@@ -1,0 +1,338 @@
+﻿{
+ "results": {
+  "/token-pet/usage": {
+   "status": 200,
+   "json": {
+    "sessions": 6,
+    "totals": {
+     "uncachedInputTokens": 1245000,
+     "outputTokens": 32600,
+     "cacheReadTokens": 942000,
+     "cacheWriteTokens": 4000
+    },
+    "total": 2223600,
+    "byModel": [
+     {
+      "provider": "fixture-provider",
+      "model": "fixture-model-a",
+      "total": 2220400
+     },
+     {
+      "provider": "unknown-provider",
+      "model": "totally-unknown-model-xyz",
+      "total": 3200
+     }
+    ],
+    "days": [
+     "2026-10-22",
+     "2026-10-21"
+    ],
+    "byModelDay": [
+     {
+      "provider": "fixture-provider",
+      "model": "fixture-model-a",
+      "day": "2026-10-22",
+      "totals": {
+       "uncachedInputTokens": 1230000,
+       "outputTokens": 31600,
+       "cacheReadTokens": 912000,
+       "cacheWriteTokens": 2000
+      },
+      "total": 2175600
+     },
+     {
+      "provider": "unknown-provider",
+      "model": "totally-unknown-model-xyz",
+      "day": "2026-10-22",
+      "totals": {
+       "uncachedInputTokens": 3000,
+       "outputTokens": 200,
+       "cacheReadTokens": 0,
+       "cacheWriteTokens": 0
+      },
+      "total": 3200
+     },
+     {
+      "provider": "fixture-provider",
+      "model": "fixture-model-a",
+      "day": "2026-10-21",
+      "totals": {
+       "uncachedInputTokens": 12000,
+       "outputTokens": 800,
+       "cacheReadTokens": 30000,
+       "cacheWriteTokens": 2000
+      },
+      "total": 44800
+     }
+    ],
+    "baselineActive": false
+   },
+   "textHead": null
+  },
+  "/token-pet/usage/lifetime": {
+   "status": 200,
+   "json": {
+    "sessions": 4,
+    "totals": {
+     "uncachedInputTokens": 1245000,
+     "outputTokens": 32600,
+     "cacheReadTokens": 942000,
+     "cacheWriteTokens": 4000
+    },
+    "total": 2223600,
+    "byModelDay": [
+     {
+      "provider": "fixture-provider",
+      "model": "fixture-model-a",
+      "day": "2026-10-22",
+      "totals": {
+       "uncachedInputTokens": 1230000,
+       "outputTokens": 31600,
+       "cacheReadTokens": 912000,
+       "cacheWriteTokens": 2000
+      },
+      "total": 2175600
+     },
+     {
+      "provider": "unknown-provider",
+      "model": "totally-unknown-model-xyz",
+      "day": "2026-10-22",
+      "totals": {
+       "uncachedInputTokens": 3000,
+       "outputTokens": 200,
+       "cacheReadTokens": 0,
+       "cacheWriteTokens": 0
+      },
+      "total": 3200
+     },
+     {
+      "provider": "fixture-provider",
+      "model": "fixture-model-a",
+      "day": "2026-10-21",
+      "totals": {
+       "uncachedInputTokens": 12000,
+       "outputTokens": 800,
+       "cacheReadTokens": 30000,
+       "cacheWriteTokens": 2000
+      },
+      "total": 44800
+     }
+    ],
+    "models": [
+     {
+      "provider": "fixture-provider",
+      "model": "fixture-model-a",
+      "total": 2220400
+     },
+     {
+      "provider": "unknown-provider",
+      "model": "totally-unknown-model-xyz",
+      "total": 3200
+     }
+    ],
+    "days": [
+     "2026-10-22",
+     "2026-10-21"
+    ],
+    "refreshFailed": 0,
+    "refreshListed": 6,
+    "refreshing": false
+   },
+   "textHead": null
+  },
+  "/token-pet/usage/sessions?limit=8": {
+   "status": 200,
+   "json": {
+    "persisted": true,
+    "sessions": []
+   },
+   "textHead": null
+  },
+  "/token-pet/index/status": {
+   "status": 200,
+   "json": {
+    "status": "ready",
+    "persisted": true,
+    "usable": true,
+    "building": false,
+    "syncing": false,
+    "refreshing": false,
+    "listed": 6,
+    "closed": 0,
+    "live": 6,
+    "indexed": 0,
+    "pending": 0,
+    "path": "H:\\CODEX\\fifteen-plugin-reviews-20261022\\r3-04-token-pet\\isolated-home\\data\\dsh-token-pet\\session-usage-index.json",
+    "entries": 0,
+    "progress": {
+     "completed": 0,
+     "total": 0,
+     "indexed": 0,
+     "skipped": 0,
+     "failed": 0,
+     "pending": 0,
+     "status": "ready"
+    }
+   },
+   "textHead": null
+  },
+  "/token-pet/usage/trend/status": {
+   "status": 200,
+   "json": {
+    "health": "missing",
+    "updatedAt": null,
+    "operation": "idle",
+    "running": false,
+    "reconciling": false,
+    "rebuilding": false,
+    "repairing": false,
+    "repairCount": 0,
+    "path": "H:\\CODEX\\fifteen-plugin-reviews-20261022\\r3-04-token-pet\\isolated-home\\data\\dsh-token-pet\\hourly-trend-index.json",
+    "snapshotOnly": true,
+    "cancelSupported": false,
+    "lastResult": "unsupported",
+    "error": "sessionPersistence does not expose listSnapshots"
+   },
+   "textHead": null
+  },
+  "/token-pet/usage/trend?timeZone=Asia%2FShanghai": {
+   "status": 200,
+   "json": {
+    "date": "2026-10-22",
+    "timeZone": "Asia/Shanghai",
+    "sessions": 0,
+    "totals": {
+     "uncachedInputTokens": 0,
+     "outputTokens": 0,
+     "cacheReadTokens": 0,
+     "cacheWriteTokens": 0
+    },
+    "total": 0,
+    "byHour": [],
+    "refreshing": false
+   },
+   "textHead": null
+  }
+ },
+ "build": {
+  "status": 409,
+  "text": "{\"error\":\"usable index already exists; use /token-pet/index/sync\"}"
+ },
+ "after": {
+  "/token-pet/index/status": {
+   "status": 200,
+   "json": {
+    "status": "ready",
+    "persisted": true,
+    "usable": true,
+    "building": false,
+    "syncing": false,
+    "refreshing": false,
+    "listed": 6,
+    "closed": 0,
+    "live": 6,
+    "indexed": 0,
+    "pending": 0,
+    "path": "H:\\CODEX\\fifteen-plugin-reviews-20261022\\r3-04-token-pet\\isolated-home\\data\\dsh-token-pet\\session-usage-index.json",
+    "entries": 0,
+    "progress": {
+     "completed": 0,
+     "total": 0,
+     "indexed": 0,
+     "skipped": 0,
+     "failed": 0,
+     "pending": 0,
+     "status": "ready"
+    }
+   },
+   "textHead": null
+  },
+  "/token-pet/usage/sessions?limit=8": {
+   "status": 200,
+   "json": {
+    "persisted": true,
+    "sessions": []
+   },
+   "textHead": null
+  },
+  "/token-pet/usage/lifetime": {
+   "status": 200,
+   "json": {
+    "sessions": 4,
+    "totals": {
+     "uncachedInputTokens": 1245000,
+     "outputTokens": 32600,
+     "cacheReadTokens": 942000,
+     "cacheWriteTokens": 4000
+    },
+    "total": 2223600,
+    "byModelDay": [
+     {
+      "provider": "fixture-provider",
+      "model": "fixture-model-a",
+      "day": "2026-10-22",
+      "totals": {
+       "uncachedInputTokens": 1230000,
+       "outputTokens": 31600,
+       "cacheReadTokens": 912000,
+       "cacheWriteTokens": 2000
+      },
+      "total": 2175600
+     },
+     {
+      "provider": "unknown-provider",
+      "model": "totally-unknown-model-xyz",
+      "day": "2026-10-22",
+      "totals": {
+       "uncachedInputTokens": 3000,
+       "outputTokens": 200,
+       "cacheReadTokens": 0,
+       "cacheWriteTokens": 0
+      },
+      "total": 3200
+     },
+     {
+      "provider": "fixture-provider",
+      "model": "fixture-model-a",
+      "day": "2026-10-21",
+      "totals": {
+       "uncachedInputTokens": 12000,
+       "outputTokens": 800,
+       "cacheReadTokens": 30000,
+       "cacheWriteTokens": 2000
+      },
+      "total": 44800
+     }
+    ],
+    "models": [
+     {
+      "provider": "fixture-provider",
+      "model": "fixture-model-a",
+      "total": 2220400
+     },
+     {
+      "provider": "unknown-provider",
+      "model": "totally-unknown-model-xyz",
+      "total": 3200
+     }
+    ],
+    "days": [
+     "2026-10-22",
+     "2026-10-21"
+    ],
+    "refreshFailed": 0,
+    "refreshListed": 6,
+    "refreshing": false
+   },
+   "textHead": null
+  }
+ },
+ "errors": [],
+ "consoleLog": [
+  {
+   "type": "error",
+   "text": "Failed to load resource: the server responded with a status of 409 (Conflict)",
+   "utc": "2026-10-22T02:39:28.791Z"
+  }
+ ]
+}

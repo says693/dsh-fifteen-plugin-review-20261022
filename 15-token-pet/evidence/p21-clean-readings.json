@@ -1,0 +1,198 @@
+{
+  "out": [
+    {
+      "id": "sess-pet-known",
+      "closed": {
+        "chip": "上下文 50%",
+        "pill": "新会话 | Ctrl | + | Alt | + | N | 插件 | 工作区 | workspace | 读数对照会话 | 47分钟 | 未命名 | 47分钟 | 未命名 | 47分钟 | 未命名 | 47分钟 | 跨零点会话 | 10小时 | 设置 | 读数对照会话 | 对话 | 轨迹 | 第 1 轮：把这段话读一遍，告诉我大概多长。 | 10:04 | 已完成 | 已完成，用时 3秒 |  | 这是一段合成的示例内容，只用来把消息撑长，方便观察小部件读数是否会随着上下文变大而变化。这是一段合成的示例内容，只用来把消息撑长，方便观察小部件读数是否会随着上下文变大而变化。这是一段合成的示例内容，只用来把消息撑长，方便观察小部件读数是否会随着上下文变大而变化。这是一段合成的示例内容，只用来把消息撑长，方便观察小部件读数是否会随着上下文变大而变化。这是一段合成的示例内容，只用来把消息撑长，方便观察小部件读数是否会随着上下文变大而变化。这是一段合成的示例内容，只用来把消息撑长，方便观察小部件读数是否会随着上下文变大而变化。这是一段合成的示例内容，只用来把消息撑长，方便观察小部件读数是否会随着上下文变大而变化。这是一段合成的示例内容，只用来把消息撑长，方便观察小部件读数是否会随着上下文变大而变化。 |  | 用量 44.8K tok | 10:04 | 第 2 轮：再补充一句结论就行。 | 10:04 | 已完成 | 已完成，用时 3秒 |  | 这是一段合成的示例内容，只用来把消息撑长，方便观察小部件读数是否会随着上下文变大而变化。这是一段合成的示例内容，只用来把消息撑长，方便观察小部件读数是否会随着上下文变大而变化。这是一段合成的示例内容，只用来把消息撑长，方便观察小部件读数是否会随着上下文变大而变化。这是一段合成的示例内容，只用来把消息撑长，方便观察小部件读数是否会随着上下文变大而变化。这是一段合成的示例内容，只用来把消息撑长，方便观察小部件读数是否会随着上下文变大而变化。这是一段合成的示例内容，只用来把消息撑长，方便观察小部件读数是否会随着上下文变大而变化。这是一段合成的示例内容，只用来把消息撑长，方便观察小部件读数是否会随着上下文变大而变化。这是一段合成的示例内容，只用来把消息撑长，方便观察小部件读数是否会随着上下文变大而变化。 |  | 用量 50.4K tok | 10:04 | 发消息或创建任务, / 调用指令, @ 文件或对话 | 工作区内修改 | fixture-provider/fixture-model-a | 2 轮 2 步 | 95.2K tok·缓存命中 76% | 50%",
+        "hudLabel": "用量小宠物，空闲",
+        "hasError": false
+      },
+      "panel": {
+        "text": "用量小宠物 | ✦ 增强提示词 | 刷新 | − 收起 | 总览 | 模型 | 设置 | 当前上下文 | 模型未知 | 50% | 50k / 100k | 当前会话 | › 展开会话明细 | 2 轮次 | 4.0s | 尚未建立历史索引 | 首次建立索引 | 跨会话累计 | 终身用量账本 · 0 个会话 | 0 | › 展开账本分类 | 永久累计，不受当前会话切换或普通统计重置影响。 | 清空历史（不可恢复） | 用量最高的 5 个服务商与模型 | 终身累计 | 暂无模型明细 | 本日用量趋势 | 今日 | 近 7 日 | 近 30 日 | 首次建立历史索引后显示趋势 | 最耗 Token 的会话 | 来自持久化用量索引的会话合计 | 首次建立历史索引后显示 | ↘"
+      }
+    },
+    {
+      "id": "sess-pet-huge",
+      "closed": {
+        "chip": "上下文 100%",
+        "pill": "新会话 | Ctrl | + | Alt | + | N | 插件 | 工作区 | workspace | 读数对照会话 | 47分钟 | 极端大用量会话 | 47分钟 | 未命名 | 47分钟 | 未命名 | 47分钟 | 跨零点会话 | 10小时 | 设置 | 极端大用量会话 | 对话 | 轨迹 | 第 1 轮：这是一个用量异常大的合成会话。 | 10:04 | 已完成 | 已完成，用时 3秒 |  | 这是一段合成的示例内容，只用来把消息撑长，方便观察小部件读数是否会随着上下文变大而变化。这是一段合成的示例内容，只用来把消息撑长，方便观察小部件读数是否会随着上下文变大而变化。这是一段合成的示例内容，只用来把消息撑长，方便观察小部件读数是否会随着上下文变大而变化。这是一段合成的示例内容，只用来把消息撑长，方便观察小部件读数是否会随着上下文变大而变化。 |  | 用量 2M tok | 10:04 | 发消息或创建任务, / 调用指令, @ 文件或对话 | 工作区内修改 | fixture-provider/fixture-model-a | 1 轮 1 步 | 2M tok·缓存命中 40% | 100%",
+        "hudLabel": "用量小宠物，空闲",
+        "hasError": false
+      },
+      "panel": {
+        "text": "用量小宠物 | ✦ 增强提示词 | 刷新 | − 收起 | 总览 | 模型 | 设置 | 当前上下文 | 模型未知 | 100% | 2.0M / 100k | 当前会话 | › 展开会话明细 | 1 轮次 | 2.0s | 尚未建立历史索引 | 首次建立索引 | 跨会话累计 | 终身用量账本 · 0 个会话 | 0 | › 展开账本分类 | 永久累计，不受当前会话切换或普通统计重置影响。 | 清空历史（不可恢复） | 用量最高的 5 个服务商与模型 | 终身累计 | 暂无模型明细 | 本日用量趋势 | 今日 | 近 7 日 | 近 30 日 | 首次建立历史索引后显示趋势 | 最耗 Token 的会话 | 来自持久化用量索引的会话合计 | 首次建立历史索引后显示 | ↘"
+      }
+    },
+    {
+      "id": "sess-pet-unknown",
+      "closed": {
+        "chip": "上下文 3%",
+        "pill": "新会话 | Ctrl | + | Alt | + | N | 插件 | 工作区 | workspace | 读数对照会话 | 47分钟 | 极端大用量会话 | 47分钟 | 未知模型名会话 | 47分钟 | 未命名 | 47分钟 | 跨零点会话 | 10小时 | 设置 | 未知模型名会话 | 对话 | 轨迹 | 第 1 轮：这个会话的模型名不在任何价格表里。 | 10:04 | 已完成 | 已完成，用时 3秒 |  | 这是一段合成的示例内容，只用来把消息撑长，方便观察小部件读数是否会随着上下文变大而变化。这是一段合成的示例内容，只用来把消息撑长，方便观察小部件读数是否会随着上下文变大而变化。这是一段合成的示例内容，只用来把消息撑长，方便观察小部件读数是否会随着上下文变大而变化。 |  | 用量 3.2K tok | 10:04 | 发消息或创建任务, / 调用指令, @ 文件或对话 | 工作区内修改 | unknown-provider/totally-unknown-model-xyz | 1 轮 1 步 | 3.2K tok·缓存命中 0% | 3%",
+        "hudLabel": "用量小宠物，空闲",
+        "hasError": false
+      },
+      "panel": {
+        "text": "用量小宠物 | ✦ 增强提示词 | 刷新 | − 收起 | 总览 | 模型 | 设置 | 当前上下文 | 模型未知 | 3% | 3.0k / 100k | 当前会话 | › 展开会话明细 | 1 轮次 | 2.0s | 尚未建立历史索引 | 首次建立索引 | 跨会话累计 | 终身用量账本 · 0 个会话 | 0 | › 展开账本分类 | 永久累计，不受当前会话切换或普通统计重置影响。 | 清空历史（不可恢复） | 用量最高的 5 个服务商与模型 | 终身累计 | 暂无模型明细 | 本日用量趋势 | 今日 | 近 7 日 | 近 30 日 | 首次建立历史索引后显示趋势 | 最耗 Token 的会话 | 来自持久化用量索引的会话合计 | 首次建立历史索引后显示 | ↘"
+      }
+    },
+    {
+      "id": "sess-pet-empty",
+      "closed": {
+        "chip": "上下文 –%",
+        "pill": null,
+        "hudLabel": "用量小宠物，空闲",
+        "hasError": false
+      },
+      "panel": {
+        "text": "用量小宠物 | ✦ 增强提示词 | 刷新 | − 收起 | 总览 | 模型 | 设置 | 当前上下文 | 模型未知 | — | 上下文窗口读取中 | 当前会话 | › 展开会话明细 | 0 轮次 | 0ms | 尚未建立历史索引 | 首次建立索引 | 跨会话累计 | 终身用量账本 · 0 个会话 | 0 | › 展开账本分类 | 永久累计，不受当前会话切换或普通统计重置影响。 | 清空历史（不可恢复） | 用量最高的 5 个服务商与模型 | 终身累计 | 暂无模型明细 | 本日用量趋势 | 今日 | 近 7 日 | 近 30 日 | 首次建立历史索引后显示趋势 | 最耗 Token 的会话 | 来自持久化用量索引的会话合计 | 首次建立历史索引后显示 | ↘"
+      }
+    },
+    {
+      "id": "sess-pet-midnight",
+      "closed": {
+        "chip": "上下文 50%",
+        "pill": "新会话 | Ctrl | + | Alt | + | N | 插件 | 工作区 | workspace | 读数对照会话 | 47分钟 | 极端大用量会话 | 47分钟 | 未知模型名会话 | 47分钟 | 跨零点会话 | 10小时 | 设置 | 跨零点会话 | 对话 | 轨迹 | 第 1 轮：这一轮发生在零点之前。 | 10月21日 23:50 | 已完成 | 已完成，用时 3秒 |  | 这是一段合成的示例内容，只用来把消息撑长，方便观察小部件读数是否会随着上下文变大而变化。这是一段合成的示例内容，只用来把消息撑长，方便观察小部件读数是否会随着上下文变大而变化。这是一段合成的示例内容，只用来把消息撑长，方便观察小部件读数是否会随着上下文变大而变化。 |  | 用量 44.8K tok | 10月21日 23:50 | 第 2 轮：这一轮发生在零点之后。 | 00:10 | 已完成 | 已完成，用时 3秒 |  | 这是一段合成的示例内容，只用来把消息撑长，方便观察小部件读数是否会随着上下文变大而变化。这是一段合成的示例内容，只用来把消息撑长，方便观察小部件读数是否会随着上下文变大而变化。这是一段合成的示例内容，只用来把消息撑长，方便观察小部件读数是否会随着上下文变大而变化。 |  | 用量 50.4K tok | 00:10 | 发消息或创建任务, / 调用指令, @ 文件或对话 | 工作区内修改 | fixture-provider/fixture-model-a | 2 轮 2 步 | 95.2K tok·缓存命中 76% | 50%",
+        "hudLabel": "用量小宠物，空闲",
+        "hasError": false
+      },
+      "panel": {
+        "text": "用量小宠物 | ✦ 增强提示词 | 刷新 | − 收起 | 总览 | 模型 | 设置 | 当前上下文 | 模型未知 | 50% | 50k / 100k | 当前会话 | › 展开会话明细 | 2 轮次 | 4.0s | 尚未建立历史索引 | 首次建立索引 | 跨会话累计 | 终身用量账本 · 0 个会话 | 0 | › 展开账本分类 | 永久累计，不受当前会话切换或普通统计重置影响。 | 清空历史（不可恢复） | 用量最高的 5 个服务商与模型 | 终身累计 | 暂无模型明细 | 本日用量趋势 | 今日 | 近 7 日 | 近 30 日 | 首次建立历史索引后显示趋势 | 最耗 Token 的会话 | 来自持久化用量索引的会话合计 | 首次建立历史索引后显示 | ↘"
+      }
+    }
+  ],
+  "errors": [],
+  "consoleLog": [],
+  "net": [
+    {
+      "path": "/plugins/??@deepseek-ai/dsh-client-ui-open-in-app/client.js,@deepseek-ai/dsh-api-gateway/client.js,@deepseek-ai/dsh-api-job-controller/client.js,@deepseek-ai/dsh-api-terminal-controller/client.js,@deepseek-ai/dsh-api-workspace-files/client.js,@deepseek-ai/dsh-client-ui-settings-account/client.js,@deepseek-ai/dsh-client-hmr/client.js,@deepseek-ai/dsh-cordis-client-runner/client.js,@deepseek-ai/dsh-client-ui-theme/client.js,@deepseek-ai/dsh-client-locale/client.js,@deepseek-ai/dsh-client-shortcuts/client.js,@deepseek-ai/dsh-client-ui-shortcuts/client.js,@deepseek-ai/dsh-client-ui-layout/client.js,@deepseek-ai/dsh-client-ui-renderer/client.js,@deepseek-ai/dsh-client-ui-session/client.js,@deepseek-ai/dsh-client-resources/client.js,@deepseek-ai/dsh-client-ui-sidebar/client.js,@deepseek-ai/dsh-client-ui-sidebar-right/client.js,@deepseek-ai/dsh-client-ui-sidebar-documentpreview/client.js,@deepseek-ai/dsh-client-ui-sidebar-terminal/client.js,@deepseek-ai/dsh-client-ui-sidebar-files/client.js,@deepseek-ai/dsh-client-ui-settings/client.js,@deepseek-ai/dsh-client-ui-settings-general/client.js,@deepseek-ai/dsh-client-ui-settings-models/client.js,@deepseek-ai/dsh-client-ui-plugin-manager/client.js,@deepseek-ai/dsh-client-ui-settings-plugin-inventory/client.js,@deepseek-ai/dsh-client-ui-conversation/client.js,@deepseek-ai/dsh-client-ui-approval/client.js,@deepseek-ai/dsh-client-ui-chat/client.js,@deepseek-ai/dsh-client-ui-brand-official/client.js,@deepseek-ai/dsh-client-ui-attachment/client.js,@deepseek-ai/dsh-client-ui-tool/client.js,@deepseek-ai/dsh-client-ui-cordis/client.js,@deepseek-ai/dsh-client-ui-workspace/client.js,@deepseek-ai/dsh-client-ui-workflow-run/client.js,@deepseek-ai/dsh-client-ui-input-trigger/client.js,@deepseek-ai/dsh-client-ui-commands/client.js,@deepseek-ai/dsh-client-ui-skill/client.js,@deepseek-ai/dsh-client-ui-subagent/client.js,@deepseek-ai/dsh-client-ui-reference/client.js,@deepseek-ai/dsh-client-ui-jobs/client.js,@deepseek-ai/dsh-client-ui-goal/client.js,@deepseek-ai/dsh-client-ui-message-feedback/client.js,@deepseek-ai/dsh-client-ui-model-selection/client.js,@deepseek-ai/dsh-client-ui-permission-presets/client.js,@deepseek-ai/dsh-client-ui-agent-preset/client.js,@deepseek-ai/dsh-client-ui-settings-session-log/client.js,@deepseek-ai/dsh-client-ui-settings-plugins/client.js,@deepseek-ai/dsh-client-ui-settings-shell/client.js,@deepseek-ai/dsh-client-ui-settings-agent-loop/client.js,@deepseek-ai/dsh-client-ui-settings-subagent/client.js,@deepseek-ai/dsh-client-ui-settings-web-search/client.js,@deepseek-ai/dsh-client-ui-plan/client.js,@deepseek-ai/dsh-client-ui-user-questions/client.js,@deepseek-ai/dsh-client-ui-trajectory/client.js,dsh-token-pet/client.js,@deepseek-ai/dsh-session-log-export/client.js,@deepseek-ai/dsh-client-file-upload/client.js&rev=9137897d2738",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/plugins/??@deepseek-ai/dsh-client-ui-open-in-app/client.js,@deepseek-ai/dsh-api-gateway/client.js,@deepseek-ai/dsh-api-job-controller/client.js,@deepseek-ai/dsh-api-terminal-controller/client.js,@deepseek-ai/dsh-api-workspace-files/client.js,@deepseek-ai/dsh-client-ui-settings-account/client.js,@deepseek-ai/dsh-client-hmr/client.js,@deepseek-ai/dsh-cordis-client-runner/client.js,@deepseek-ai/dsh-client-ui-theme/client.js,@deepseek-ai/dsh-client-locale/client.js,@deepseek-ai/dsh-client-shortcuts/client.js,@deepseek-ai/dsh-client-ui-shortcuts/client.js,@deepseek-ai/dsh-client-ui-layout/client.js,@deepseek-ai/dsh-client-ui-renderer/client.js,@deepseek-ai/dsh-client-ui-session/client.js,@deepseek-ai/dsh-client-resources/client.js,@deepseek-ai/dsh-client-ui-sidebar/client.js,@deepseek-ai/dsh-client-ui-sidebar-right/client.js,@deepseek-ai/dsh-client-ui-sidebar-documentpreview/client.js,@deepseek-ai/dsh-client-ui-sidebar-terminal/client.js,@deepseek-ai/dsh-client-ui-sidebar-files/client.js,@deepseek-ai/dsh-client-ui-settings/client.js,@deepseek-ai/dsh-client-ui-settings-general/client.js,@deepseek-ai/dsh-client-ui-settings-models/client.js,@deepseek-ai/dsh-client-ui-plugin-manager/client.js,@deepseek-ai/dsh-client-ui-settings-plugin-inventory/client.js,@deepseek-ai/dsh-client-ui-conversation/client.js,@deepseek-ai/dsh-client-ui-approval/client.js,@deepseek-ai/dsh-client-ui-chat/client.js,@deepseek-ai/dsh-client-ui-brand-official/client.js,@deepseek-ai/dsh-client-ui-attachment/client.js,@deepseek-ai/dsh-client-ui-tool/client.js,@deepseek-ai/dsh-client-ui-cordis/client.js,@deepseek-ai/dsh-client-ui-workspace/client.js,@deepseek-ai/dsh-client-ui-workflow-run/client.js,@deepseek-ai/dsh-client-ui-input-trigger/client.js,@deepseek-ai/dsh-client-ui-commands/client.js,@deepseek-ai/dsh-client-ui-skill/client.js,@deepseek-ai/dsh-client-ui-subagent/client.js,@deepseek-ai/dsh-client-ui-reference/client.js,@deepseek-ai/dsh-client-ui-jobs/client.js,@deepseek-ai/dsh-client-ui-goal/client.js,@deepseek-ai/dsh-client-ui-message-feedback/client.js,@deepseek-ai/dsh-client-ui-model-selection/client.js,@deepseek-ai/dsh-client-ui-permission-presets/client.js,@deepseek-ai/dsh-client-ui-agent-preset/client.js,@deepseek-ai/dsh-client-ui-settings-session-log/client.js,@deepseek-ai/dsh-client-ui-settings-plugins/client.js,@deepseek-ai/dsh-client-ui-settings-shell/client.js,@deepseek-ai/dsh-client-ui-settings-agent-loop/client.js,@deepseek-ai/dsh-client-ui-settings-subagent/client.js,@deepseek-ai/dsh-client-ui-settings-web-search/client.js,@deepseek-ai/dsh-client-ui-plan/client.js,@deepseek-ai/dsh-client-ui-user-questions/client.js,@deepseek-ai/dsh-client-ui-trajectory/client.js,dsh-token-pet/client.js,@deepseek-ai/dsh-session-log-export/client.js,@deepseek-ai/dsh-client-file-upload/client.js&rev=9137897d2738",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/token-pet/index/status",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/token-pet/usage/sessions?limit=8",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/token-pet/usage/lifetime",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/token-pet/index/status",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/plugins/??@deepseek-ai/dsh-client-ui-open-in-app/client.js,@deepseek-ai/dsh-api-gateway/client.js,@deepseek-ai/dsh-api-job-controller/client.js,@deepseek-ai/dsh-api-terminal-controller/client.js,@deepseek-ai/dsh-api-workspace-files/client.js,@deepseek-ai/dsh-client-ui-settings-account/client.js,@deepseek-ai/dsh-client-hmr/client.js,@deepseek-ai/dsh-cordis-client-runner/client.js,@deepseek-ai/dsh-client-ui-theme/client.js,@deepseek-ai/dsh-client-locale/client.js,@deepseek-ai/dsh-client-shortcuts/client.js,@deepseek-ai/dsh-client-ui-shortcuts/client.js,@deepseek-ai/dsh-client-ui-layout/client.js,@deepseek-ai/dsh-client-ui-renderer/client.js,@deepseek-ai/dsh-client-ui-session/client.js,@deepseek-ai/dsh-client-resources/client.js,@deepseek-ai/dsh-client-ui-sidebar/client.js,@deepseek-ai/dsh-client-ui-sidebar-right/client.js,@deepseek-ai/dsh-client-ui-sidebar-documentpreview/client.js,@deepseek-ai/dsh-client-ui-sidebar-terminal/client.js,@deepseek-ai/dsh-client-ui-sidebar-files/client.js,@deepseek-ai/dsh-client-ui-settings/client.js,@deepseek-ai/dsh-client-ui-settings-general/client.js,@deepseek-ai/dsh-client-ui-settings-models/client.js,@deepseek-ai/dsh-client-ui-plugin-manager/client.js,@deepseek-ai/dsh-client-ui-settings-plugin-inventory/client.js,@deepseek-ai/dsh-client-ui-conversation/client.js,@deepseek-ai/dsh-client-ui-approval/client.js,@deepseek-ai/dsh-client-ui-chat/client.js,@deepseek-ai/dsh-client-ui-brand-official/client.js,@deepseek-ai/dsh-client-ui-attachment/client.js,@deepseek-ai/dsh-client-ui-tool/client.js,@deepseek-ai/dsh-client-ui-cordis/client.js,@deepseek-ai/dsh-client-ui-workspace/client.js,@deepseek-ai/dsh-client-ui-workflow-run/client.js,@deepseek-ai/dsh-client-ui-input-trigger/client.js,@deepseek-ai/dsh-client-ui-commands/client.js,@deepseek-ai/dsh-client-ui-skill/client.js,@deepseek-ai/dsh-client-ui-subagent/client.js,@deepseek-ai/dsh-client-ui-reference/client.js,@deepseek-ai/dsh-client-ui-jobs/client.js,@deepseek-ai/dsh-client-ui-goal/client.js,@deepseek-ai/dsh-client-ui-message-feedback/client.js,@deepseek-ai/dsh-client-ui-model-selection/client.js,@deepseek-ai/dsh-client-ui-permission-presets/client.js,@deepseek-ai/dsh-client-ui-agent-preset/client.js,@deepseek-ai/dsh-client-ui-settings-session-log/client.js,@deepseek-ai/dsh-client-ui-settings-plugins/client.js,@deepseek-ai/dsh-client-ui-settings-shell/client.js,@deepseek-ai/dsh-client-ui-settings-agent-loop/client.js,@deepseek-ai/dsh-client-ui-settings-subagent/client.js,@deepseek-ai/dsh-client-ui-settings-web-search/client.js,@deepseek-ai/dsh-client-ui-plan/client.js,@deepseek-ai/dsh-client-ui-user-questions/client.js,@deepseek-ai/dsh-client-ui-trajectory/client.js,dsh-token-pet/client.js,@deepseek-ai/dsh-session-log-export/client.js,@deepseek-ai/dsh-client-file-upload/client.js&rev=9137897d2738",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/token-pet/index/status",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/token-pet/usage/sessions?limit=8",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/token-pet/usage/lifetime",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/token-pet/index/status",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/plugins/??@deepseek-ai/dsh-client-ui-open-in-app/client.js,@deepseek-ai/dsh-api-gateway/client.js,@deepseek-ai/dsh-api-job-controller/client.js,@deepseek-ai/dsh-api-terminal-controller/client.js,@deepseek-ai/dsh-api-workspace-files/client.js,@deepseek-ai/dsh-client-ui-settings-account/client.js,@deepseek-ai/dsh-client-hmr/client.js,@deepseek-ai/dsh-cordis-client-runner/client.js,@deepseek-ai/dsh-client-ui-theme/client.js,@deepseek-ai/dsh-client-locale/client.js,@deepseek-ai/dsh-client-shortcuts/client.js,@deepseek-ai/dsh-client-ui-shortcuts/client.js,@deepseek-ai/dsh-client-ui-layout/client.js,@deepseek-ai/dsh-client-ui-renderer/client.js,@deepseek-ai/dsh-client-ui-session/client.js,@deepseek-ai/dsh-client-resources/client.js,@deepseek-ai/dsh-client-ui-sidebar/client.js,@deepseek-ai/dsh-client-ui-sidebar-right/client.js,@deepseek-ai/dsh-client-ui-sidebar-documentpreview/client.js,@deepseek-ai/dsh-client-ui-sidebar-terminal/client.js,@deepseek-ai/dsh-client-ui-sidebar-files/client.js,@deepseek-ai/dsh-client-ui-settings/client.js,@deepseek-ai/dsh-client-ui-settings-general/client.js,@deepseek-ai/dsh-client-ui-settings-models/client.js,@deepseek-ai/dsh-client-ui-plugin-manager/client.js,@deepseek-ai/dsh-client-ui-settings-plugin-inventory/client.js,@deepseek-ai/dsh-client-ui-conversation/client.js,@deepseek-ai/dsh-client-ui-approval/client.js,@deepseek-ai/dsh-client-ui-chat/client.js,@deepseek-ai/dsh-client-ui-brand-official/client.js,@deepseek-ai/dsh-client-ui-attachment/client.js,@deepseek-ai/dsh-client-ui-tool/client.js,@deepseek-ai/dsh-client-ui-cordis/client.js,@deepseek-ai/dsh-client-ui-workspace/client.js,@deepseek-ai/dsh-client-ui-workflow-run/client.js,@deepseek-ai/dsh-client-ui-input-trigger/client.js,@deepseek-ai/dsh-client-ui-commands/client.js,@deepseek-ai/dsh-client-ui-skill/client.js,@deepseek-ai/dsh-client-ui-subagent/client.js,@deepseek-ai/dsh-client-ui-reference/client.js,@deepseek-ai/dsh-client-ui-jobs/client.js,@deepseek-ai/dsh-client-ui-goal/client.js,@deepseek-ai/dsh-client-ui-message-feedback/client.js,@deepseek-ai/dsh-client-ui-model-selection/client.js,@deepseek-ai/dsh-client-ui-permission-presets/client.js,@deepseek-ai/dsh-client-ui-agent-preset/client.js,@deepseek-ai/dsh-client-ui-settings-session-log/client.js,@deepseek-ai/dsh-client-ui-settings-plugins/client.js,@deepseek-ai/dsh-client-ui-settings-shell/client.js,@deepseek-ai/dsh-client-ui-settings-agent-loop/client.js,@deepseek-ai/dsh-client-ui-settings-subagent/client.js,@deepseek-ai/dsh-client-ui-settings-web-search/client.js,@deepseek-ai/dsh-client-ui-plan/client.js,@deepseek-ai/dsh-client-ui-user-questions/client.js,@deepseek-ai/dsh-client-ui-trajectory/client.js,dsh-token-pet/client.js,@deepseek-ai/dsh-session-log-export/client.js,@deepseek-ai/dsh-client-file-upload/client.js&rev=9137897d2738",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/token-pet/index/status",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/token-pet/usage/sessions?limit=8",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/token-pet/usage/lifetime",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/token-pet/index/status",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/plugins/??@deepseek-ai/dsh-client-ui-open-in-app/client.js,@deepseek-ai/dsh-api-gateway/client.js,@deepseek-ai/dsh-api-job-controller/client.js,@deepseek-ai/dsh-api-terminal-controller/client.js,@deepseek-ai/dsh-api-workspace-files/client.js,@deepseek-ai/dsh-client-ui-settings-account/client.js,@deepseek-ai/dsh-client-hmr/client.js,@deepseek-ai/dsh-cordis-client-runner/client.js,@deepseek-ai/dsh-client-ui-theme/client.js,@deepseek-ai/dsh-client-locale/client.js,@deepseek-ai/dsh-client-shortcuts/client.js,@deepseek-ai/dsh-client-ui-shortcuts/client.js,@deepseek-ai/dsh-client-ui-layout/client.js,@deepseek-ai/dsh-client-ui-renderer/client.js,@deepseek-ai/dsh-client-ui-session/client.js,@deepseek-ai/dsh-client-resources/client.js,@deepseek-ai/dsh-client-ui-sidebar/client.js,@deepseek-ai/dsh-client-ui-sidebar-right/client.js,@deepseek-ai/dsh-client-ui-sidebar-documentpreview/client.js,@deepseek-ai/dsh-client-ui-sidebar-terminal/client.js,@deepseek-ai/dsh-client-ui-sidebar-files/client.js,@deepseek-ai/dsh-client-ui-settings/client.js,@deepseek-ai/dsh-client-ui-settings-general/client.js,@deepseek-ai/dsh-client-ui-settings-models/client.js,@deepseek-ai/dsh-client-ui-plugin-manager/client.js,@deepseek-ai/dsh-client-ui-settings-plugin-inventory/client.js,@deepseek-ai/dsh-client-ui-conversation/client.js,@deepseek-ai/dsh-client-ui-approval/client.js,@deepseek-ai/dsh-client-ui-chat/client.js,@deepseek-ai/dsh-client-ui-brand-official/client.js,@deepseek-ai/dsh-client-ui-attachment/client.js,@deepseek-ai/dsh-client-ui-tool/client.js,@deepseek-ai/dsh-client-ui-cordis/client.js,@deepseek-ai/dsh-client-ui-workspace/client.js,@deepseek-ai/dsh-client-ui-workflow-run/client.js,@deepseek-ai/dsh-client-ui-input-trigger/client.js,@deepseek-ai/dsh-client-ui-commands/client.js,@deepseek-ai/dsh-client-ui-skill/client.js,@deepseek-ai/dsh-client-ui-subagent/client.js,@deepseek-ai/dsh-client-ui-reference/client.js,@deepseek-ai/dsh-client-ui-jobs/client.js,@deepseek-ai/dsh-client-ui-goal/client.js,@deepseek-ai/dsh-client-ui-message-feedback/client.js,@deepseek-ai/dsh-client-ui-model-selection/client.js,@deepseek-ai/dsh-client-ui-permission-presets/client.js,@deepseek-ai/dsh-client-ui-agent-preset/client.js,@deepseek-ai/dsh-client-ui-settings-session-log/client.js,@deepseek-ai/dsh-client-ui-settings-plugins/client.js,@deepseek-ai/dsh-client-ui-settings-shell/client.js,@deepseek-ai/dsh-client-ui-settings-agent-loop/client.js,@deepseek-ai/dsh-client-ui-settings-subagent/client.js,@deepseek-ai/dsh-client-ui-settings-web-search/client.js,@deepseek-ai/dsh-client-ui-plan/client.js,@deepseek-ai/dsh-client-ui-user-questions/client.js,@deepseek-ai/dsh-client-ui-trajectory/client.js,dsh-token-pet/client.js,@deepseek-ai/dsh-session-log-export/client.js,@deepseek-ai/dsh-client-file-upload/client.js&rev=9137897d2738",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/token-pet/index/status",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/token-pet/usage/sessions?limit=8",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/token-pet/usage/lifetime",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/token-pet/index/status",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/plugins/??@deepseek-ai/dsh-client-ui-open-in-app/client.js,@deepseek-ai/dsh-api-gateway/client.js,@deepseek-ai/dsh-api-job-controller/client.js,@deepseek-ai/dsh-api-terminal-controller/client.js,@deepseek-ai/dsh-api-workspace-files/client.js,@deepseek-ai/dsh-client-ui-settings-account/client.js,@deepseek-ai/dsh-client-hmr/client.js,@deepseek-ai/dsh-cordis-client-runner/client.js,@deepseek-ai/dsh-client-ui-theme/client.js,@deepseek-ai/dsh-client-locale/client.js,@deepseek-ai/dsh-client-shortcuts/client.js,@deepseek-ai/dsh-client-ui-shortcuts/client.js,@deepseek-ai/dsh-client-ui-layout/client.js,@deepseek-ai/dsh-client-ui-renderer/client.js,@deepseek-ai/dsh-client-ui-session/client.js,@deepseek-ai/dsh-client-resources/client.js,@deepseek-ai/dsh-client-ui-sidebar/client.js,@deepseek-ai/dsh-client-ui-sidebar-right/client.js,@deepseek-ai/dsh-client-ui-sidebar-documentpreview/client.js,@deepseek-ai/dsh-client-ui-sidebar-terminal/client.js,@deepseek-ai/dsh-client-ui-sidebar-files/client.js,@deepseek-ai/dsh-client-ui-settings/client.js,@deepseek-ai/dsh-client-ui-settings-general/client.js,@deepseek-ai/dsh-client-ui-settings-models/client.js,@deepseek-ai/dsh-client-ui-plugin-manager/client.js,@deepseek-ai/dsh-client-ui-settings-plugin-inventory/client.js,@deepseek-ai/dsh-client-ui-conversation/client.js,@deepseek-ai/dsh-client-ui-approval/client.js,@deepseek-ai/dsh-client-ui-chat/client.js,@deepseek-ai/dsh-client-ui-brand-official/client.js,@deepseek-ai/dsh-client-ui-attachment/client.js,@deepseek-ai/dsh-client-ui-tool/client.js,@deepseek-ai/dsh-client-ui-cordis/client.js,@deepseek-ai/dsh-client-ui-workspace/client.js,@deepseek-ai/dsh-client-ui-workflow-run/client.js,@deepseek-ai/dsh-client-ui-input-trigger/client.js,@deepseek-ai/dsh-client-ui-commands/client.js,@deepseek-ai/dsh-client-ui-skill/client.js,@deepseek-ai/dsh-client-ui-subagent/client.js,@deepseek-ai/dsh-client-ui-reference/client.js,@deepseek-ai/dsh-client-ui-jobs/client.js,@deepseek-ai/dsh-client-ui-goal/client.js,@deepseek-ai/dsh-client-ui-message-feedback/client.js,@deepseek-ai/dsh-client-ui-model-selection/client.js,@deepseek-ai/dsh-client-ui-permission-presets/client.js,@deepseek-ai/dsh-client-ui-agent-preset/client.js,@deepseek-ai/dsh-client-ui-settings-session-log/client.js,@deepseek-ai/dsh-client-ui-settings-plugins/client.js,@deepseek-ai/dsh-client-ui-settings-shell/client.js,@deepseek-ai/dsh-client-ui-settings-agent-loop/client.js,@deepseek-ai/dsh-client-ui-settings-subagent/client.js,@deepseek-ai/dsh-client-ui-settings-web-search/client.js,@deepseek-ai/dsh-client-ui-plan/client.js,@deepseek-ai/dsh-client-ui-user-questions/client.js,@deepseek-ai/dsh-client-ui-trajectory/client.js,dsh-token-pet/client.js,@deepseek-ai/dsh-session-log-export/client.js,@deepseek-ai/dsh-client-file-upload/client.js&rev=9137897d2738",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/token-pet/index/status",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/token-pet/usage/sessions?limit=8",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/token-pet/usage/lifetime",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/token-pet/index/status",
+      "method": "GET",
+      "status": 200
+    }
+  ]
+}

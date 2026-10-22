@@ -1,0 +1,236 @@
+[
+  {
+    "width": 1440,
+    "hud": {
+      "x": 1302,
+      "y": 682,
+      "w": 120,
+      "h": 175,
+      "right": 1422,
+      "bottom": 857
+    },
+    "send": {
+      "x": 1202,
+      "y": 828,
+      "w": 34,
+      "h": 34,
+      "right": 1236,
+      "bottom": 862
+    },
+    "sendHit": {
+      "tag": "DIV",
+      "cls": "",
+      "chain": [
+        "div",
+        "TokenPetWindow",
+        "ErrorBoundary",
+        "RootEntry",
+        "SlotErrorBoundary",
+        "div",
+        "SlotOutlet",
+        "div"
+      ]
+    },
+    "sendIsCovered": true,
+    "zIndex": "auto",
+    "hudParentZ": "auto",
+    "errors": 0,
+    "consoleCount": 0,
+    "external": []
+  },
+  {
+    "width": 1200,
+    "hud": {
+      "x": 1062,
+      "y": 682,
+      "w": 120,
+      "h": 175,
+      "right": 1182,
+      "bottom": 857
+    },
+    "send": {
+      "x": 1051,
+      "y": 828,
+      "w": 34,
+      "h": 34,
+      "right": 1085,
+      "bottom": 862
+    },
+    "sendHit": {
+      "tag": "DIV",
+      "cls": "",
+      "chain": [
+        "div",
+        "div",
+        "TokenPetWindow",
+        "ErrorBoundary",
+        "RootEntry",
+        "SlotErrorBoundary",
+        "div",
+        "SlotOutlet"
+      ]
+    },
+    "sendIsCovered": true,
+    "zIndex": "auto",
+    "hudParentZ": "auto",
+    "errors": 0,
+    "consoleCount": 0,
+    "external": []
+  },
+  {
+    "width": 1100,
+    "hud": {
+      "x": 962,
+      "y": 682,
+      "w": 120,
+      "h": 175,
+      "right": 1082,
+      "bottom": 857
+    },
+    "send": {
+      "x": 1001,
+      "y": 828,
+      "w": 34,
+      "h": 34,
+      "right": 1035,
+      "bottom": 862
+    },
+    "sendHit": {
+      "tag": "DIV",
+      "cls": "",
+      "chain": [
+        "div",
+        "div",
+        "TokenPetWindow",
+        "ErrorBoundary",
+        "RootEntry",
+        "SlotErrorBoundary",
+        "div",
+        "SlotOutlet"
+      ]
+    },
+    "sendIsCovered": true,
+    "zIndex": "auto",
+    "hudParentZ": "auto",
+    "errors": 0,
+    "consoleCount": 0,
+    "external": []
+  },
+  {
+    "width": 1000,
+    "hud": {
+      "x": 862,
+      "y": 682,
+      "w": 120,
+      "h": 175,
+      "right": 982,
+      "bottom": 857
+    },
+    "send": {
+      "x": 839,
+      "y": 828,
+      "w": 34,
+      "h": 34,
+      "right": 873,
+      "bottom": 862
+    },
+    "sendHit": {
+      "tag": "DIV",
+      "cls": "",
+      "chain": [
+        "div",
+        "TokenPetWindow",
+        "ErrorBoundary",
+        "RootEntry",
+        "SlotErrorBoundary",
+        "div",
+        "SlotOutlet",
+        "div"
+      ]
+    },
+    "sendIsCovered": true,
+    "zIndex": "auto",
+    "hudParentZ": "auto",
+    "errors": 0,
+    "consoleCount": 0,
+    "external": []
+  },
+  {
+    "width": 760,
+    "hud": {
+      "x": 622,
+      "y": 682,
+      "w": 120,
+      "h": 175,
+      "right": 742,
+      "bottom": 857
+    },
+    "send": {
+      "x": 695,
+      "y": 828,
+      "w": 34,
+      "h": 34,
+      "right": 729,
+      "bottom": 862
+    },
+    "sendHit": {
+      "tag": "DIV",
+      "cls": "",
+      "chain": [
+        "div",
+        "div",
+        "TokenPetWindow",
+        "ErrorBoundary",
+        "RootEntry",
+        "SlotErrorBoundary",
+        "div",
+        "SlotOutlet"
+      ]
+    },
+    "sendIsCovered": true,
+    "zIndex": "auto",
+    "hudParentZ": "auto",
+    "errors": 0,
+    "consoleCount": 0,
+    "external": []
+  },
+  {
+    "width": 600,
+    "hud": {
+      "x": 462,
+      "y": 682,
+      "w": 120,
+      "h": 175,
+      "right": 582,
+      "bottom": 857
+    },
+    "send": {
+      "x": 535,
+      "y": 828,
+      "w": 34,
+      "h": 34,
+      "right": 569,
+      "bottom": 862
+    },
+    "sendHit": {
+      "tag": "DIV",
+      "cls": "",
+      "chain": [
+        "div",
+        "div",
+        "TokenPetWindow",
+        "ErrorBoundary",
+        "RootEntry",
+        "SlotErrorBoundary",
+        "div",
+        "SlotOutlet"
+      ]
+    },
+    "sendIsCovered": true,
+    "zIndex": "auto",
+    "hudParentZ": "auto",
+    "errors": 0,
+    "consoleCount": 0,
+    "external": []
+  }
+]

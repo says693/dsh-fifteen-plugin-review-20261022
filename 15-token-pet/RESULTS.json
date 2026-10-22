@@ -1,0 +1,232 @@
+{
+  "target": "pk7j7sqryy-ops/dsh-token-pet",
+  "round": "r3-04",
+  "testedArtifact": "npm dsh-token-pet@0.4.2 (Jimmy0123-ux implementation) + pk7j7sqryy-ops@b498347 (0.1.0) as the assigned coordinate",
+  "host": "@deepseek-ai/dsh 0.2.0-rc.2",
+  "browser": "Edge 155.0.4283.62 headless via Playwright 1.64.1",
+  "checkedAt": "2026-10-22T11:15:00+08:00",
+  "checks": [
+    {
+      "id": "C01",
+      "area": "身份核对",
+      "expected": "任务书坐标与 npm 发布件是同一个实现",
+      "actual": "不是。npm 全部 9 个版本的 repository 都指向 Jimmy0123-ux/dsh-token-pet；任务给的 pk7j7sqryy-ops/dsh-token-pet@b498347 是 2026-08-15 的另一份实现（0.1.0，仅 7 个文件、client bundle 21,551 字节、作者字段 pk7j7sqryy-ops），且它自己宣称有天气/日期模块，而 0.4.2 完全没有。",
+      "evidence": ["evidence/step01-npm-view.json", "evidence/npm-versions-repository.txt", "evidence/pk0.1.0-manifest.txt"],
+      "verdict": "confirmed"
+    },
+    {
+      "id": "C02",
+      "area": "B1 会话头部小部件是否出现 / 玩偶是否渲染",
+      "artifact": "npm 0.4.2",
+      "expected": "会话打开后头部/底部出现小部件，玩偶有图像",
+      "actual": "出现。玩偶 HUD 是一个 div，aria-label「用量小宠物，空闲」，rect 120×175 固定在右下角；头部/底部另有插件 chip「上下文 50%」（73×19）。玩偶是逐帧 WebP 条带（data: URI，naturalWidth 11520×540，1.85 MB base64 内联）+ 一张 data:image/png 备用帧，页面内 img 全部 complete=true、naturalWidth>0，网络里没有任何图片请求，因此不存在图片/动画资源 404。",
+      "evidence": ["evidence/p01-boot.json", "evidence/p01-boot.png", "evidence/p24-dock-ownership.json"],
+      "verdict": "confirmed"
+    },
+    {
+      "id": "C03",
+      "area": "B2 上下文占用读数是否与宿主真实值一致",
+      "artifact": "npm 0.4.2",
+      "expected": "percent = (projectedTokens ?? pressureTokens)/contextWindow，与手算一致",
+      "actual": "一致。sess-pet-known 手算 pressureTokens=9000+41000+0=50000、窗口 100000 → 50%；插件 chip 显示「上下文 50%」，浮窗卡片「50% | 50k / 100k」。sess-pet-unknown 手算 3000/100000=3% → 显示「3% | 3.0k / 100k」。sess-pet-huge 手算 2000000/100000=2000% → 显示「100% | 2.0M / 100k」，与源码 Math.min(100,...) 的夹取一致。",
+      "evidence": ["evidence/p21-clean-readings.json", "evidence/p21-sess-pet-known.png", "evidence/p21-sess-pet-huge.png", "evidence/p21-sess-pet-unknown.png", "evidence/p35-reload-recovery.json"],
+      "reloadBehaviour": "硬刷新后 chip 会在 2 秒内从占位解析成真实百分比：3 次独立重载全部在 t=2s 得到「上下文 50%」，pageerror 0、console error 0。早期探针见到的持续「上下文 –%」来自被污染/空会话状态，不是读数缺陷。",
+      "verdict": "confirmed"
+    },
+    {
+      "id": "C04",
+      "area": "B2 会话累计读数是否与手算一致",
+      "artifact": "npm 0.4.2",
+      "expected": "四桶之和 = 手算 tokenUsage 累计",
+      "actual": "一致。known 手算 12000+9000+800+400+30000+41000+2000 = 95200；展开「会话明细」显示「21k 输入 / 1.2k 输出 / 71k 缓存读 / 2.0k 缓存写」，四者相加 21000+1200+71000+2000 = 95200。huge 展开展示「1.2M 输入 / 32k 输出 / 942k 缓存读 / 4.0k 缓存写」，与账本三行逐项相等（缓存读 942000、缓存写 4000 精确相同）。",
+      "evidence": ["evidence/p22-ledger-and-degrade.json", "evidence/p22-expanded.png"],
+      "verdict": "confirmed"
+    },
+    {
+      "id": "C05",
+      "area": "B3 构成明细可否展开 + 数值自洽",
+      "artifact": "npm 0.4.2",
+      "expected": "明细可展开，各项相加等于总量",
+      "actual": "可展开且自洽。点「› 展开会话明细」（按钮 70×18）后出现四桶 + 「工具调用 0 / 轮次 2 / 步数 2 / 模型耗时 4.0s」；点「› 展开账本分类」后出现「终身用量账本 · 4 个会话 | 2.2M」与四桶「1.2M 输入 / 33k 输出 / 942k 缓存读 / 4.0k 缓存写」。账本头部 2.2M 与四桶之和 2,223,600 相符，与接口 /token-pet/usage 返回的 total=2223600 逐位相同。",
+      "evidence": ["evidence/p08-expand2.json", "evidence/p08-ledger-detail.png", "evidence/p16-endpoints.json"],
+      "verdict": "confirmed"
+    },
+    {
+      "id": "C06",
+      "area": "B4 天气/日期模块",
+      "artifact": "npm 0.4.2",
+      "expected": "若存在，说明数据来源与失败降级",
+      "actual": "0.4.2 根本没有天气或日期模块：在 23 MB client.js 里用 node 逐串统计，「天气/weather/气温/temperature/greeting/日期」命中 0 次；运行期页面文本也无相关字样，全程无任何外部网络请求（route 只放行 127.0.0.1，external 列表为空）。与之相对，pk 0.1.0 有真天气模块（见 C13）。",
+      "evidence": ["evidence/p17-performance.json", "evidence/p01-boot.json"],
+      "verdict": "confirmed"
+    },
+    {
+      "id": "C07",
+      "area": "B4 断网/接口不可达时的降级",
+      "artifact": "npm 0.4.2",
+      "expected": "不崩、有占位或明确失败文案",
+      "actual": "降级干净。把 /token-pet/** 全部 abort 后冷启动：玩偶仍在、chip 仍显示「上下文 50%」（来自本地投影，不依赖插件后台），浮窗逐块给出「索引读取失败；现有终身用量账本不受影响 | 重试」「终身用量账本 · 读取失败」「会话排行读取失败」；连点两次「刷新」文案稳定不变、不转圈、无未捕获异常（pageerror=0），控制台只有 7 条 net::ERR_FAILED（被 abort 的资源本身）。",
+      "evidence": ["evidence/p23-offline.json", "evidence/p23-panel-offline.png"],
+      "verdict": "confirmed"
+    },
+    {
+      "id": "C08",
+      "area": "B5 滚动与切换会话的帧时间",
+      "artifact": "npm 0.4.2",
+      "expected": "无掉帧",
+      "actual": "无掉帧。1440×900 下滚动 40 次、采样 219 帧：mean 5.56 ms、p50 5.60 ms、p95 5.70 ms、max 7.40 ms，>33 ms 帧 0 个、>50 ms 帧 0 个、longtask 0 条（约 180 fps 的 rAF 采样，远在 60 Hz 阈值内）。",
+      "evidence": ["evidence/p17-performance.json"],
+      "verdict": "confirmed"
+    },
+    {
+      "id": "C09",
+      "area": "B5 长开 5 分钟是否泄漏",
+      "artifact": "npm 0.4.2",
+      "expected": "节点数不增长",
+      "actual": "不增长。切换会话 20 次后节点数 853 → 795（下降）；随后每 30 秒采样 11 次（共 306 秒）：节点数恒定 795、img 数恒定 4、style 数恒定 141，JS 堆 96.9 MB → 90.7 MB（GC 后回落，无单调上升）。",
+      "evidence": ["evidence/p17-performance.json"],
+      "verdict": "confirmed"
+    },
+    {
+      "id": "C10",
+      "area": "B6 空会话表现",
+      "artifact": "npm 0.4.2",
+      "expected": "有明确占位，不崩、不假报 0%",
+      "actual": "占位明确。chip 显示「上下文 –%」，浮窗卡片显示「— | 上下文窗口读取中」「0 轮次 | 0ms」；pageerror 0、console error 0。没有出现 0% 或 NaN 冒充真实读数。",
+      "evidence": ["evidence/p21-clean-readings.json", "evidence/p21-sess-pet-empty.png"],
+      "verdict": "confirmed"
+    },
+    {
+      "id": "C11",
+      "area": "B7 窄窗与深色主题",
+      "artifact": "npm 0.4.2",
+      "expected": "1000/760/600 可读、不遮挡",
+      "actual": "可读。chip 在 4 档宽度都显示「上下文 50%」，颜色 rgb(232,234,242) on rgba(24,26,38,0.96)、11px，深浅两主题下均为高对比深色胶囊；浮窗固定 500×620，600 宽时 x=24..524 仍在视口内；文档无横向滚动。",
+      "evidence": ["evidence/p10-narrow.json", "evidence/p09-responsive.json", "evidence/p10-760-dark.png"],
+      "verdict": "confirmed"
+    },
+    {
+      "id": "C12",
+      "area": "B7 玩偶遮挡发送按钮（重点）",
+      "artifact": "npm 0.4.2",
+      "expected": "浮层不拦截输入区交互",
+      "actual": "确认拦截。玩偶 HUD 矩形 {x:1302,y:682,w:120,h:175} 与发送按钮 {x:1202,y:828,w:34,h:34} 相交 20×29 px；发送按钮中心 (1219,845) 处 document.elementFromPoint 命中的是插件 portal 根（position:fixed、z-index:9998、pointer-events:auto、rect 248×217 @ (1174,665) 的透明矩形，React 链含 TokenPetWindow）；真实鼠标点击该点后玩偶 aria-label 从「用量小宠物，空闲」变为「用量小宠物，打招呼」且浮窗被打开，而草稿仍在 composer 里未发出；同样操作在 1440/1000/760/600 四档宽度全部复现。用 b.click() 绕过命中测试即能正常发送（草稿被清空、消息数 8→13），说明按钮本身没坏，是浮层吃掉了点击。浮窗打开时该点仍命中 TokenPetWindow。网格采样：视口内 550 个 10 px 采样点落在插件浮层上，其中 346 个（63%）在可见玩偶 120×175 之外。",
+      "evidence": ["evidence/p12-hit-test.json", "evidence/p12-click-effect.json", "evidence/p13-send-interception.json", "evidence/p13-after-send-click.png", "evidence/p14-send-intercept-widths.json", "evidence/p25-overlay-map.json"],
+      "verdict": "confirmed"
+    },
+    {
+      "id": "C13",
+      "area": "B8 极端大用量（异常 1）",
+      "artifact": "npm 0.4.2",
+      "expected": "不溢出、不崩、不显示 >100%",
+      "actual": "稳。2,030,000 tokens / 100000 窗口显示「100% | 2.0M / 100k」，夹取正确，卡片与药丸无溢出、无换行错位。",
+      "evidence": ["evidence/p21-sess-pet-huge.png", "evidence/p21-clean-readings.json"],
+      "verdict": "confirmed"
+    },
+    {
+      "id": "C14",
+      "area": "B8 未知模型名（异常 2）",
+      "artifact": "npm 0.4.2",
+      "expected": "不崩、不显示错价格",
+      "actual": "不崩。unknown-provider/totally-unknown-model-xyz 在账本与模型页都正确显示原名与 3.2k，成本默认关闭故不涉及价格。但浮窗顶部卡片固定写「模型未知」——该字段只取 useProjection('contextTimeline')，而本宿主只提供 contextPressure/contextBreakdown/tokenUsage/sessionStats 四个投影（全盘搜 key: "contextTimeline" 命中 0），所以这一行在本宿主恒为「模型未知」，即使模型名在数据层是已知的。",
+      "evidence": ["evidence/p21-sess-pet-unknown.png", "evidence/p22-ledger-and-degrade.json", "evidence/p26-projections.txt"],
+      "verdict": "confirmed"
+    },
+    {
+      "id": "C15",
+      "area": "B8 跨零点日期（异常 3）",
+      "artifact": "npm 0.4.2",
+      "expected": "两条消息分属两天",
+      "actual": "正确。跨零会话两条消息时间戳显示为「10月21日 23:50」与「00:10」，分属两天且当天条不带日期，符合常见聊天界面习惯。",
+      "evidence": ["evidence/p21-clean-readings.json", "evidence/p21-sess-pet-midnight.png"],
+      "verdict": "confirmed"
+    },
+    {
+      "id": "C16",
+      "area": "索引与趋势的降级文案",
+      "artifact": "npm 0.4.2",
+      "expected": "状态一致、不互相矛盾",
+      "actual": "存在自相矛盾。点「首次建立索引」→ POST /token-pet/index/build 200，UI 变「索引已就绪 · 0 个已索引」，落盘 session-usage-index.json 仅 27 字节（空索引）；但同一屏「最耗 Token 的会话」仍写「首次建立历史索引后显示」，趋势卡写「暂无趋势数据」。设置页同时明写「维护状态：当前宿主的会话持久化接口不支持趋势索引 / 失败：sessionPersistence does not expose listSnapshots」——降级本身是设计好的，但「已就绪」与「首次建立后显示」并置会让新手以为还没建好。",
+      "evidence": ["evidence/p22-ledger-and-degrade.json", "evidence/p22-after-build.png", "evidence/p16-endpoints.json"],
+      "verdict": "confirmed"
+    },
+    {
+      "id": "C17",
+      "area": "pk7j7sqryy-ops 0.1.0 主体渲染",
+      "artifact": "pk 0.1.0 @b498347",
+      "expected": "会话头部右上角出现玩偶药丸，点开有卡片",
+      "actual": "出现。合进 client 请求 200；注入 style[data-plugin=dsh-token-pet]（5584 字符）；折叠态 .tkp-root 72×32 @ (1284,10) 显示「50%」+ 内联 SVG 玩偶；点开后 .tkp-card 306×374 @ (1050,52)，内容「Token 泡泡 ✕ / 📅 10月22日·周四 / 🌡️ 天气不可用 / 上下文占用 50% ~50.1K / 100K / 本会话累计 合计 95.2K（输入 21K、输出 1.2K、缓存读 71K、缓存写 2K）/ 上下文构成 系统提示 0、工具定义 135、消息内容 218 / 状态不错，继续冲～」。",
+      "evidence": ["evidence/p29-pk-widget.json", "evidence/p29-pk-open.png", "evidence/p28-pk-norender.json"],
+      "verdict": "confirmed"
+    },
+    {
+      "id": "C18",
+      "area": "pk 0.1.0 天气模块数据来源与失败降级",
+      "artifact": "pk 0.1.0 @b498347",
+      "expected": "说明来源；失败时有降级",
+      "actual": "来源是 ipwho.is（IP 定位）+ api.open-meteo.com（当前天气 + 3 天 daily），带 30 分钟缓存，优先 web.fetch、回退 shell+curl。本宿主上 POST /token-pet/weather 返回 405 Method Not Allowed，卡片降级成「🌡️ 天气不可用」，不抛错、不空白、不阻塞其它数据。日期「10月22日 · 周四」由浏览器本地时间算出，零网络。",
+      "evidence": ["evidence/p29-pk-widget.json", "evidence/p29-pk-open.png", "evidence/p34-pk-math.json"],
+      "verdict": "confirmed"
+    },
+    {
+      "id": "C19",
+      "area": "pk 0.1.0 极端大用量 / 窄窗",
+      "artifact": "pk 0.1.0 @b498347",
+      "expected": "不溢出、窄窗可用",
+      "actual": "稳。2,030,000 tokens → 药丸 79×32「100%」，卡片「100% | ~2M / 100K」，四桶 1.2M+30K+800K+0 与「合计 2M」一致；306 宽卡片在 1440/760/600 都完整在视口内（600 时 x=210..516），无横向滚动。",
+      "evidence": ["evidence/p31-sess-pet-huge-1440.json", "evidence/p31-sess-pet-huge-760.json", "evidence/p31-sess-pet-huge-600.json"],
+      "verdict": "confirmed"
+    },
+    {
+      "id": "C20",
+      "area": "pk 0.1.0 空会话与跨零点",
+      "artifact": "pk 0.1.0 @b498347",
+      "expected": "空会话有明确表现；跨零点日期正确",
+      "actual": "空会话下整块 .tkp-root 不存在（但 style 标签仍在，说明插件已加载、只是该会话不渲染），宿主头部同样不显示它；跨零会话的两条消息时间为「10月21日 23:50」与「00:10」，正确跨天。",
+      "evidence": ["evidence/p33-pk-empty-compare.json", "evidence/p32-pk-fixtures.json"],
+      "verdict": "confirmed"
+    },
+    {
+      "id": "C21",
+      "area": "被代理的数值口径（缓存命中率）",
+      "artifact": "npm 0.4.2",
+      "expected": "确认「缓存命中 76%」归属",
+      "actual": "不属本插件。该文案所在节点的 React 链是 span>UsagePill>div>StatsPills>SessionEntry（宿主），「2 轮 2 步」是 span>TimePill（宿主）；插件 bundle 里「命中」出现 0 次。因此这一读数不计入本插件结论。",
+      "evidence": ["evidence/p24-dock-ownership.json"],
+      "verdict": "confirmed"
+    },
+    {
+      "id": "C22",
+      "area": "提示词增强 / 提示音 / 成本估算 / 皮肤 ZIP",
+      "artifact": "npm 0.4.2",
+      "expected": "验证可用性",
+      "actual": "未测。提示词增强需要真实模型调用；提示音需要真实回复边界；成本估算默认关闭且需要可计费会话；皮肤 ZIP 需要用户提供的 ZIP。按边界要求不调用任何模型、不产生费用。",
+      "evidence": ["evidence/p06-panel-tabs.json"],
+      "verdict": "untested"
+    },
+    {
+      "id": "C23",
+      "area": "趋势与会话排行",
+      "artifact": "npm 0.4.2",
+      "expected": "有真实数据",
+      "actual": "不可得。本宿主 dsh-session-persistence-jsonl 不暴露 listSnapshots，/token-pet/usage/trend/status 返回 lastResult=unsupported、error="sessionPersistence does not expose listSnapshots"，/token-pet/usage/sessions 返回空数组。插件如实展示为「暂无趋势数据 / 会话排行读取失败」，未伪造数据。",
+      "evidence": ["evidence/p16-endpoints.json"],
+      "verdict": "confirmed"
+    },
+    {
+      "id": "C24",
+      "area": "「上下文构成」与「上下文占用」两个数字的关系",
+      "artifact": "pk 0.1.0 @b498347",
+      "expected": "同卡片并列时口径可分辨",
+      "actual": "不确定（口径不同但并列易误读）。pk 卡片里「上下文占用 ~50.1K」与「上下文构成 系统提示 0 + 工具定义 135 + 消息内容 218 = 353」同屏出现，相差两个数量级。前者来自 contextPressure（provider 回报），后者来自 contextBreakdown（宿主按 4 字符/token 的启发式估算），两者本就不同源；但没有单位/口径说明，新手会以为构成加起来应当等于占用。未定位到插件文档是否解释过这一点，记为不确定。",
+      "evidence": ["evidence/p34-pk-math.json", "evidence/p29-pk-open.png"],
+      "verdict": "uncertain"
+    }
+  ],
+  "summary": {
+    "confirmed": 21,
+    "uncertain": 1,
+    "untested": 1,
+    "headline": "npm 0.4.2 的读数与宿主真值逐项对得上（50%/95.2K/2.2M/942k 全部手算一致、5 分钟零泄漏），但它的玩偶浮层用一个 248×217 的透明 fixed 容器盖住了发送按钮，真实点击会被吃掉；任务坐标 pk7j7sqryy-ops 的 0.1.0 是另一份实现，能正常渲染并正确降级天气不可用。"
+  }
+}

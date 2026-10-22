@@ -1,0 +1,11 @@
+{
+  "before": "用量小宠物，空闲",
+  "after": {
+    "label": "用量小宠物，打招呼",
+    "activeTag": "DIV",
+    "activeCls": "",
+    "panelOpen": true
+  },
+  "errors": [],
+  "consoleLog": []
+}

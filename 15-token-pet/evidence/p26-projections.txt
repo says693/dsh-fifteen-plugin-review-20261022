@@ -1,0 +1,15 @@
+﻿Host projection definitions found under @deepseek-ai (searched for the key: "name" literal in each package lib/index.js)
+checked at 2026-10-22T11:22:02.8536241+08:00
+
+contextPressure      => dsh-token-meter
+contextBreakdown     => dsh-token-meter
+tokenUsage           => dsh-token-meter
+sessionStats         => dsh-session-stats
+contextTimeline      => (NOT PROVIDED BY HOST)
+todayUsageBuckets    => (NOT PROVIDED BY HOST)
+
+Plugin side (dsh-token-pet@0.4.2 client.js buildPetView):
+  model    = timeline?.model     where timeline = useProjection('contextTimeline')
+  provider = timeline?.provider  -> both undefined when the host has no contextTimeline
+  percent  = occupancyPercent(pressure) = clamp(0,100,(projectedTokens ?? pressureTokens)/contextWindow*100)
+  cumulative = projections.cumulative (host endpoint /token-pet/usage), else session tokenUsage
