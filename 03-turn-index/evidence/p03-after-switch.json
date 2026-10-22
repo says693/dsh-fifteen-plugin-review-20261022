@@ -1,0 +1,215 @@
+{
+  "target": "sess-ti-six",
+  "after": {
+    "url": "http://127.0.0.1:2122/",
+    "viewport": {
+      "w": 1440,
+      "h": 1000,
+      "dpr": 1
+    },
+    "doc": {
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "overflowX": false
+    },
+    "panel": null,
+    "list": null,
+    "items": [],
+    "activeKeys": [],
+    "activeCount": 0,
+    "scrollport": {
+      "rect": {
+        "x": 280,
+        "y": 76,
+        "w": 1158,
+        "h": 924,
+        "top": 76,
+        "bottom": 1000,
+        "left": 280,
+        "right": 1438
+      },
+      "scrollTop": 1720,
+      "scrollHeight": 2644,
+      "clientHeight": 924
+    },
+    "flowRows": [
+      {
+        "kind": "user",
+        "key": "13:input-messageu-001",
+        "top": -1628,
+        "h": 76
+      },
+      {
+        "kind": "turn-process",
+        "key": "12:turn-process1",
+        "top": -1536,
+        "h": 33
+      },
+      {
+        "kind": "assistant-step",
+        "key": "14:assistant-step1:1",
+        "top": -1487,
+        "h": 224
+      },
+      {
+        "kind": "turn-tail",
+        "key": "9:turn-tail1",
+        "top": -1251,
+        "h": 32
+      },
+      {
+        "kind": "user",
+        "key": "13:input-messageu-002",
+        "top": -1213,
+        "h": 76
+      },
+      {
+        "kind": "turn-process",
+        "key": "12:turn-process2",
+        "top": -1121,
+        "h": 33
+      },
+      {
+        "kind": "assistant-step",
+        "key": "14:assistant-step2:1",
+        "top": -1072,
+        "h": 224
+      },
+      {
+        "kind": "turn-tail",
+        "key": "9:turn-tail2",
+        "top": -836,
+        "h": 32
+      },
+      {
+        "kind": "user",
+        "key": "13:input-messageu-003",
+        "top": -798,
+        "h": 76
+      },
+      {
+        "kind": "turn-process",
+        "key": "12:turn-process3",
+        "top": -706,
+        "h": 33
+      },
+      {
+        "kind": "assistant-step",
+        "key": "14:assistant-step3:1",
+        "top": -657,
+        "h": 224
+      },
+      {
+        "kind": "turn-tail",
+        "key": "9:turn-tail3",
+        "top": -421,
+        "h": 32
+      },
+      {
+        "kind": "user",
+        "key": "13:input-messageu-004",
+        "top": -383,
+        "h": 76
+      },
+      {
+        "kind": "turn-process",
+        "key": "12:turn-process4",
+        "top": -291,
+        "h": 33
+      },
+      {
+        "kind": "assistant-step",
+        "key": "14:assistant-step4:1",
+        "top": -242,
+        "h": 224
+      },
+      {
+        "kind": "turn-tail",
+        "key": "9:turn-tail4",
+        "top": -6,
+        "h": 32
+      },
+      {
+        "kind": "user",
+        "key": "13:input-messageu-005",
+        "top": 32,
+        "h": 76
+      },
+      {
+        "kind": "turn-process",
+        "key": "12:turn-process5",
+        "top": 124,
+        "h": 33
+      },
+      {
+        "kind": "assistant-step",
+        "key": "14:assistant-step5:1",
+        "top": 173,
+        "h": 224
+      },
+      {
+        "kind": "turn-tail",
+        "key": "9:turn-tail5",
+        "top": 409,
+        "h": 32
+      },
+      {
+        "kind": "user",
+        "key": "13:input-messageu-006",
+        "top": 447,
+        "h": 76
+      },
+      {
+        "kind": "turn-process",
+        "key": "12:turn-process6",
+        "top": 539,
+        "h": 33
+      },
+      {
+        "kind": "assistant-step",
+        "key": "14:assistant-step6:1",
+        "top": 588,
+        "h": 224
+      },
+      {
+        "kind": "turn-tail",
+        "key": "9:turn-tail6",
+        "top": 824,
+        "h": 32
+      }
+    ],
+    "userRowCount": 6,
+    "steeringRowCount": 0,
+    "storage": {
+      "dsh.sessions.current": "{\"sessionId\":\"sess-ti-six\"}",
+      "dsh.sidebar-right.v1.sess-ti-six": "{\"bySession\":{\"sess-ti-six\":{\"layout\":{\"nodes\":{\"pane1\":{\"kind\":\"pane\",\"id\":\"pane1\",\"host\":\"dock\",\"tabs\":[]}},\"tabs\":{},\"rootId\":\"pane1\",\"floats\":[],\"activePaneId\":\"pane1\",\"expanded\":false,\"mode\":\"push\"},\"minted\":1}}}",
+      "dsh.sidebar-right.v1.session-cded7315-a936-41eb-a3db-96e7a8c6eac8": "{\"bySession\":{\"session-cded7315-a936-41eb-a3db-96e7a8c6eac8\":{\"layout\":{\"nodes\":{\"pane1\":{\"kind\":\"pane\",\"id\":\"pane1\",\"host\":\"dock\",\"tabs\":[]}},\"tabs\":{},\"rootId\":\"pane1\",\"floats\":[],\"activePaneId\":\"pane1\",\"expanded\":false,\"mode\":\"push\"},\"minted\":1}}}",
+      "dsh.workspace.view.v5": "{\"groupBy\":\"workspace\",\"orderBy\":\"updated\",\"groupExpansion\":{\"3d66859e-4425-4721-afaf-24874aee434a\":true},\"sessionOrderByAccount\":{},\"archivedFilter\":\"default\"}"
+    },
+    "shellOverlay": {
+      "x": 0,
+      "y": 0,
+      "w": 1440,
+      "h": 1000,
+      "top": 0,
+      "bottom": 1000,
+      "left": 0,
+      "right": 1440
+    },
+    "chatColumn": {
+      "x": 485,
+      "y": -1628,
+      "w": 742,
+      "h": 2484,
+      "top": -1628,
+      "bottom": 856,
+      "left": 485,
+      "right": 1228
+    },
+    "bodyText": "新会话\nCtrl\n+\nAlt\n+\nN\n插件\n工作区\nworkspace\n六轮标准会话\n1小时\n未命名\n1小时\n未命名\n1小时\n未命名\n1小时\n未命名\n1小时\n设置\n六轮标准会话\n对话\n轨迹\n第 1 轮：帮我看一下这个项目的目录结构。\n07:58\n已完成\n已完成，用时 5秒\n\n第 1 段：第一轮 的说明文字，用来把这一轮撑高，方便观察滚动高亮是否跟得上。\n\n第 2 段：第一轮 的说明文字，用来把这一轮撑高，方便观察滚动高亮是否跟得上。\n\n第 3 段：第一轮 的说明文字，用来把这一轮撑高，方便观察滚动高亮是否跟得上。\n\n第 4 段：第一轮 的说明文字，用来把这一轮撑高，方便观察滚动高亮是否跟得上。\n\n第 5 段：第一轮 的说明文字，用来把这一轮撑高，方便观察滚动高亮是否跟得上。\n\n第 6 段：第一轮 的说明文字，用来把这一轮撑高，方便观察滚动高亮是否跟得上。\n\n07:58\n第 2 轮：把 README 里的安装步骤整理成清单。\n07:58\n已完成\n已完成，用时 5秒\n\n第 1 段：第二轮 的说明文字，用来把这一轮撑高，方便观察滚动高亮是否跟得上。\n\n第 2 段：第二轮 的说明文字，用来把这一轮撑高，方便观察滚动高亮是否跟得上。\n\n第 3 段：第二轮 的说明文字，用来把这一轮撑高，方便观察滚动高亮是否跟得上。\n\n第 4 段：第二轮 的说明文字，用来把这一轮撑高，方便观察滚动高亮是否跟得上"
+  },
+  "tiRoot2": null,
+  "errors": [],
+  "consoleLog": [],
+  "storageCurrent": "{\"sessionId\":\"sess-ti-six\"}"
+}

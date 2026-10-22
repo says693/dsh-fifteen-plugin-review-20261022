@@ -1,0 +1,1550 @@
+﻿[
+    {
+        "reviewId":  "01a1612a-1438-704a-a30d-ae5cb660c7d6",
+        "pluginId":  "01a151f5-93bd-7a8c-8fd0-0afdb7b5ac45",
+        "sourceKind":  "community",
+        "title":  "dsh-slack 0.3.4 试跑：频道超过 20 页会少报（判定：还说不准）",
+        "revisionId":  "01a1612a-ab65-7332-8859-b57f71f174b0",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-22T01:12:34.627Z"
+    },
+    {
+        "reviewId":  "01a16113-becb-76c8-8d9b-7234ee55fa96",
+        "pluginId":  "01a15a0a-d3e6-758a-9586-aecf982256be",
+        "sourceKind":  "community",
+        "title":  "@sunwindy/dsh-tool-baixiaochun 0.2.1 标准测评：装与不装都是 15/25，插件没多干成活（判定：没啥差别）",
+        "revisionId":  "01a16129-be58-7fdc-ab04-19227b026181",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-22T01:11:34.548Z"
+    },
+    {
+        "reviewId":  "01a15f3d-3cb0-74e0-a4b0-8b0379fb02cc",
+        "pluginId":  "01a154a0-6a17-71d3-bbc9-7cd81a6b83d9",
+        "sourceKind":  "community",
+        "title":  "dsh-orb 0.1.9 测评",
+        "revisionId":  "01a15f3d-7da3-7d40-80d1-85af41b42135",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-21T16:13:57.656Z"
+    },
+    {
+        "reviewId":  "01a15f3c-57fa-751c-b979-a00978b64f86",
+        "pluginId":  "01a1547e-46d3-714a-9eb9-108ad8ce1b0f",
+        "sourceKind":  "community",
+        "title":  "dsh-bili-scroll 0.1.7 测评",
+        "revisionId":  "01a15f3d-0a67-7a5e-9225-240d77e55bf5",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-21T16:13:27.614Z"
+    },
+    {
+        "reviewId":  "01a15f30-cc2b-75a5-b850-77ff8ec00c1c",
+        "pluginId":  "01a14edf-99df-7c0b-8af3-0c7e72c53e64",
+        "sourceKind":  "community",
+        "title":  "@hyzyn/dsh-docker 0.13.3：真机实测 16 个任务，装与不装都答对；省调用、省数据，但没多干成活",
+        "revisionId":  "01a15f34-abfa-7dac-9cd3-c9c05a0eac97",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-21T16:04:17.296Z"
+    },
+    {
+        "reviewId":  "01a15f1a-8ad1-792b-9c12-7296bd673d41",
+        "pluginId":  "01a154b4-f88d-7e21-b357-d9595a437299",
+        "sourceKind":  "community",
+        "title":  "honcho-dsh-memory 0.1.2 测评",
+        "revisionId":  "01a15f1a-cf33-7631-952b-0ef56e128403",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-21T15:36:03.666Z"
+    },
+    {
+        "reviewId":  "01a15ef9-a13c-7592-b16d-dfa395b4a06e",
+        "pluginId":  "01a15205-fe9c-7e11-86d7-53af2f959e58",
+        "sourceKind":  "community",
+        "title":  "【安全面快测】dsh-plugin-iot-thinking 0.1.0（判定：还说不准·能力未测）：已补的配置桥门禁挡不住 DNS rebinding，恶意网页可把 reasoning 原文改道到攻击者端点并关归档（P1）",
+        "revisionId":  "01a15efa-5ee1-7aa5-b582-6e6d84ee0c6e",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-21T15:00:31.901Z"
+    },
+    {
+        "reviewId":  "01a15ef6-fcbc-7b3f-854d-a76e17d6737b",
+        "pluginId":  "01a154bd-d0d4-7331-af64-dc83f259a580",
+        "sourceKind":  "community",
+        "title":  "【安全面快测】dsh-normify 0.5.4（判定：还说不准·能力未测）：9 个写入点全部跟随符号链接，clone 被投毒仓库后默认参数 build 即覆盖工作区外文件并可写进 ~/.bashrc 执行（P1）",
+        "revisionId":  "01a15ef7-a96c-7c9f-ba26-3d523b75690c",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-21T14:57:31.719Z"
+    },
+    {
+        "reviewId":  "01a15ef2-56d1-7960-a6a0-d61b39aa1810",
+        "pluginId":  "01a154b3-9a03-75e0-8981-d839e4e33164",
+        "sourceKind":  "community",
+        "title":  "【安全面快测】graph-memory 1.6.0-beta.17（判定：还说不准·能力未测）：跨项目自动召回把旧问答原文（含第三方指令与用户贴过的凭据）以 user 角色注入新会话，且可伪造 [USER] 行（P2）；未发现 P0/P1",
+        "revisionId":  "01a15ef3-adc0-7ad0-9d93-143ebcf4a1a5",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-21T14:53:11.448Z"
+    },
+    {
+        "reviewId":  "01a15eef-9be9-7ff3-99b3-cd1f102f0d65",
+        "pluginId":  "01a154b6-d996-75e0-bfdc-06ff4ddc8c78",
+        "sourceKind":  "community",
+        "title":  "【安全面快测】@local/dsh-memory 0.5.2（GIN0076/cross-session-memory）（判定：还说不准·能力未测）：mem_recall 会话检索不带工作区过滤，跨工作区回吐他人会话原文（P1）",
+        "revisionId":  "01a15ef1-4fc2-7a2b-a2b1-429c156da46a",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-21T14:50:41.288Z"
+    },
+    {
+        "reviewId":  "01a15eea-cd05-7c50-9d37-ea5d7a1ffe03",
+        "pluginId":  "01a154b4-0d0e-750a-9924-45f38549246b",
+        "sourceKind":  "community",
+        "title":  "【安全面快测】memory-eternal 0.10.52（判定：还说不准·能力未测）：网页用 sandbox iframe 发出 Origin:null 绕过同源闸门，跨站写入记忆库（P1，真实浏览器）；无凭据 POST /config 把任意句子注入每个会话 system prompt 并删掉审核红线（P1）；沉淀不脱敏、召回无包裹（P2）",
+        "revisionId":  "01a15eeb-fecd-7c13-9a4b-f1e801d1ccb8",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-21T14:44:50.982Z"
+    },
+    {
+        "reviewId":  "01a15ee0-144c-7a32-a184-2006ae6286fc",
+        "pluginId":  "01a15ecb-7a0d-7574-9901-5dad9a523435",
+        "sourceKind":  "community",
+        "title":  "dsh-file-mentions 1.2.3 测评：路径判断接口从无到有，最后一步没测成",
+        "revisionId":  "01a15ee6-b458-7e89-ba6b-fff093ece3f3",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-21T14:39:00.658Z"
+    },
+    {
+        "reviewId":  "01a15ee3-32ad-7541-bcd1-c793764b7aba",
+        "pluginId":  "01a15c5c-ffad-7cd0-b3ce-610945a36d8e",
+        "sourceKind":  "community",
+        "title":  "【安全面快测】dsh-claude-style 0.17.0（判定：还说不准·能力未测）：会话搜索把全部对话明文（含粘贴的密钥）以 0644 复制到缓存，绕开宿主会话库的 0700/0600 保护（P2）",
+        "revisionId":  "01a15ee4-3223-7b15-8083-78943124ff0b",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-21T14:36:20.479Z"
+    },
+    {
+        "reviewId":  "01a15ee2-3d35-79e8-8f46-fa230b829d50",
+        "pluginId":  "01a15d25-4a78-7f74-a25a-127e84fd7001",
+        "sourceKind":  "community",
+        "title":  "【安全面快测】dsh-purge-community 1.6.38（判定：还说不准·能力未测）：21 条 `/dsh-purge/*` 与 `/redteam/api` 零宿主鉴权，无凭据即可改写每轮会话的系统提示词注入源、删掉整个 `rules/`，DNS rebinding 可达（P1）",
+        "revisionId":  "01a15ee2-cb5e-76eb-baf6-63a8c5b9725f",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-21T14:34:50.150Z"
+    },
+    {
+        "reviewId":  "01a15ee0-01c6-786f-9932-84e3d9dc6d61",
+        "pluginId":  "01a15e5d-4d1b-7b15-9303-f33b8f407455",
+        "sourceKind":  "community",
+        "title":  "【安全面快测】dsh-ego-browser 0.8.6（判定：还说不准·能力未测）：ego 子进程继承全量 process.env，复活宿主已剔除的 DEEPSEEK_API_KEY/TOKEN/DSH_*，受网页驱动的 agent 可读出外发（P1）；/ego/api 设置网关无宿主鉴权，可写 chromePath/egoCliArgs 升级为代码执行（P1）",
+        "revisionId":  "01a15ee1-4dfe-7702-994b-6e707fbe99e0",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-21T14:33:10.033Z"
+    },
+    {
+        "reviewId":  "01a15ece-65f0-7278-b086-b8a845ead4af",
+        "pluginId":  "01a15ecb-912c-7122-a2a4-6d3be155092b",
+        "sourceKind":  "community",
+        "title":  "dsh-agent-instructions 0.4.18 实测：预算读数逐字节对得上，但同名 .disabled 已存在时点「暂停」不改文件却报成功",
+        "revisionId":  "01a15ece-7e7a-7766-9ddb-bcf67be226f3",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-21T14:12:39.075Z"
+    },
+    {
+        "reviewId":  "01a15ece-2e0c-73af-89ca-9a7b1263dc58",
+        "pluginId":  "01a15ecb-7a0d-7574-9901-5dad9a523435",
+        "sourceKind":  "community",
+        "title":  "dsh-file-mentions 1.2.3 实测：反引号里的路径点得动，裸路径只认绝对与 ~，相对路径完全不装饰",
+        "revisionId":  "01a15ece-43b3-7d22-ac0e-443b6d925531",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-21T14:12:19.039Z"
+    },
+    {
+        "reviewId":  "01a15ecd-9f38-7221-84e2-33240c07c227",
+        "pluginId":  "01a15ecb-6239-7c0c-9c9e-cec11ef558a1",
+        "sourceKind":  "community",
+        "title":  "dsh-ui-hub 0.1.0 实测：三态显隐、按住显示与撤销上限都按文档工作，本轮没找到可复现缺陷",
+        "revisionId":  "01a15ecd-b48b-7237-8ff4-f44bd48aff12",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-21T14:11:48.997Z"
+    },
+    {
+        "reviewId":  "01a15ec4-bc3d-7140-b84b-518df2d4e605",
+        "pluginId":  "01a15e5d-4d1b-7b15-9303-f33b8f407455",
+        "sourceKind":  "community",
+        "title":  "装上就能用：DSH 0.2.1 上，这个插件把真浏览器交给了 agent。",
+        "revisionId":  "01a15ec6-1c61-74e9-92a6-ac378c33d374",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-21T14:03:28.567Z"
+    },
+    {
+        "reviewId":  "01a15e7b-148e-7147-9184-9b0708b243f1",
+        "pluginId":  "01a151f5-b725-7e5c-9482-acd5c1b5e4d2",
+        "sourceKind":  "community",
+        "title":  "dsh-voice 0.3.7 标准测评：装与不装 8/10 vs 10/10，但那 8 分不是插件挣的（判定：还说不准）",
+        "revisionId":  "01a15e7d-299e-78bd-9533-401263d527ca",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-21T12:43:44.281Z"
+    },
+    {
+        "reviewId":  "01a15e78-9f80-7923-8665-305b1a0956a5",
+        "pluginId":  "01a15c5c-ffad-7cd0-b3ce-610945a36d8e",
+        "sourceKind":  "community",
+        "title":  "dsh-claude-style 0.17.0 实测：换掉网页的样子",
+        "revisionId":  "01a15e7b-0b7b-7bf0-be43-2f52d2542394",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-21T12:41:34.154Z"
+    },
+    {
+        "reviewId":  "01a15e2e-bba9-70b3-b78b-94e6c1696520",
+        "pluginId":  "01a15e2e-4e59-7b70-8e53-f8d531e64a46",
+        "sourceKind":  "community",
+        "title":  "【测评报告】dsh-we-whalegirl：微信/QQ 鲸鱼娘机器人的控制面——发现控制接口不设跨站检查，恶意网页可替你启停机器人、甚至借你的账号发消息（P1，实测坐实；判定：还说不准）",
+        "revisionId":  "01a15e3d-f263-73cb-921a-5368d0fbf78d",
+        "revisionNumber":  2,
+        "publishedAt":  "2026-10-21T11:34:40.863Z"
+    },
+    {
+        "reviewId":  "01a15d88-4645-7611-9f3d-698237945929",
+        "pluginId":  "01a15d2c-9adb-79ce-918c-c1c2dfccccaa",
+        "sourceKind":  "community",
+        "title":  "dsh-workflow-lite 0.6.0：8 项交互与运行状态问题复核",
+        "revisionId":  "01a15e37-1a0d-7fa0-aa2c-dc42cbd6f07e",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-21T11:27:20.454Z"
+    },
+    {
+        "reviewId":  "01a15d64-7f64-73b4-9d61-cf3ac173cd37",
+        "pluginId":  "01a14e30-55ca-78f2-955b-eb974b6ca4c7",
+        "sourceKind":  "community",
+        "title":  "dsh-plugin-wallpaper-engine 1.3.3：保存反馈、滑块与预览的前端复核",
+        "revisionId":  "01a15e36-b100-74f6-833b-a8be0f2772ae",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-21T11:26:50.410Z"
+    },
+    {
+        "reviewId":  "01a15e35-6874-7d08-b17c-b99c3a2a7ba2",
+        "pluginId":  "01a151f5-5e81-7b7a-a433-2467f2a09b11",
+        "sourceKind":  "community",
+        "title":  "dsh-hyperframes 0.7.0：Windows 真实宿主与工作台功能复核（历史补录）",
+        "revisionId":  "01a15e35-7449-7427-8e46-c628753c9452",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-21T11:25:30.312Z"
+    },
+    {
+        "reviewId":  "01a15e22-a6da-78aa-b4bb-f1c5b2988dda",
+        "pluginId":  "01a154e4-386e-7e51-b6b9-7fbcc747937f",
+        "sourceKind":  "community",
+        "title":  "feiyu-memory 0.2.0 测评",
+        "revisionId":  "01a15e23-0acb-7104-9b51-332e5f09dec9",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-21T11:05:18.598Z"
+    },
+    {
+        "reviewId":  "01a15e13-3d95-7e0e-852c-77e5b7cee4a9",
+        "pluginId":  "01a14edf-94c8-7231-9a12-dc61bd958e20",
+        "sourceKind":  "community",
+        "title":  "@hyzyn/dsh-plugin-kit 0.1.56 测评",
+        "revisionId":  "01a15e13-b1f8-72a3-8086-e1e009ac7816",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-21T10:48:37.693Z"
+    },
+    {
+        "reviewId":  "01a15e0e-e8b4-7e8f-97bb-118acfd27bff",
+        "pluginId":  "01a15747-daa5-759f-a17d-21be53f4d042",
+        "sourceKind":  "community",
+        "title":  "dsh-flomo 0.2.2 测评",
+        "revisionId":  "01a15e0f-15e4-7913-b3b4-3041e6c35725",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-21T10:43:37.415Z"
+    },
+    {
+        "reviewId":  "01a15e09-91df-7519-82e0-c31a84522049",
+        "pluginId":  "01a1570f-7bed-76e1-9089-ad9150549809",
+        "sourceKind":  "community",
+        "title":  "billion-context 0.1.203 测评",
+        "revisionId":  "01a15e09-debf-7d42-b19c-8c635940f5d4",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-21T10:37:57.116Z"
+    },
+    {
+        "reviewId":  "01a15e07-e9af-7ad8-8f82-a781628586a3",
+        "pluginId":  "01a15748-0730-7539-a90e-b28590271ee0",
+        "sourceKind":  "community",
+        "title":  "qmd-autosearch 0.1.2 测评",
+        "revisionId":  "01a15e08-1853-7fa6-b03a-2b00be188a29",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-21T10:35:56.986Z"
+    },
+    {
+        "reviewId":  "01a15e06-3430-7b02-a91a-692b53c63582",
+        "pluginId":  "01a15719-441d-790f-8380-60e297e43bdb",
+        "sourceKind":  "community",
+        "title":  "@zseven-w/dsh-noema 0.1.0-rc.6 实测：10 题对 8 题，但会把两个服务的端口搞混",
+        "revisionId":  "01a15e07-5106-725d-98ab-e51ceb8fff69",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-21T10:35:06.921Z"
+    },
+    {
+        "reviewId":  "01a15d89-34b1-740f-a83c-a8b7e7fe56e2",
+        "pluginId":  "01a15d58-3f5b-711f-bbf1-2d4f84ac8c88",
+        "sourceKind":  "community",
+        "title":  "【安全面快测】@dsh-external/dsh-super-injector 0.3.5（判定：还说不准·能力未测）： 兼容门槛 0 项未满足、出网与凭据面干净；自愈日志被同一告警刷满 94% 且运行期间 无退避（P2）、0.3.5 的两个可用性缺陷靠部署巧合绕开（P2）",
+        "revisionId":  "01a15de9-5ecf-758f-b715-afe3b8ee8146",
+        "revisionNumber":  2,
+        "publishedAt":  "2026-10-21T10:02:25.089Z"
+    },
+    {
+        "reviewId":  "01a15de1-80c4-70e4-947f-d6fd3723051e",
+        "pluginId":  "01a14edf-967b-7e9d-9f74-77c931d9cff1",
+        "sourceKind":  "community",
+        "title":  "dsh-all 0.1.65 测评",
+        "revisionId":  "01a15de1-c3cd-73d0-8df6-9631da30fa45",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-21T09:54:04.611Z"
+    },
+    {
+        "reviewId":  "01a15ddf-3bfa-7796-abf1-dde486355665",
+        "pluginId":  "01a15713-5efa-746d-a518-38a589193cac",
+        "sourceKind":  "community",
+        "title":  "dsh-mnemon 0.5.34 测评",
+        "revisionId":  "01a15de0-1b02-72fc-8c1b-62573000e9cc",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-21T09:52:14.504Z"
+    },
+    {
+        "reviewId":  "01a15dde-59c9-74f7-bd9c-889d82a1d69a",
+        "pluginId":  "01a157d7-f316-7992-a0a1-2ae91985957f",
+        "sourceKind":  "community",
+        "title":  "dsh-pack 0.2.0 测评",
+        "revisionId":  "01a15ddf-22c1-7987-8497-2ca741efc933",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-21T09:51:14.438Z"
+    },
+    {
+        "reviewId":  "01a15dd6-4b18-7654-bbb8-e8791d893f59",
+        "pluginId":  "01a15dd5-dffb-783b-a34e-f331bf825726",
+        "sourceKind":  "community",
+        "title":  "【测评报告】dsh-plugin-shop 0.9.0：插件商店——真机实测确认好用；浏览/安装/更新一条龙，目录带抢注防护与人工裁决；1813 项自带测试全绿（判定：真有用）",
+        "revisionId":  "01a15dd7-46e8-7547-9b88-7ee4e358bd18",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-21T09:42:33.983Z"
+    },
+    {
+        "reviewId":  "01a15dc5-5189-7105-b0b1-7016b4b18d46",
+        "pluginId":  "01a154b6-a8e0-7ccb-b0d5-367c47cc46a5",
+        "sourceKind":  "community",
+        "title":  "dsh-native-memory 0.2.0 测评",
+        "revisionId":  "01a15dc5-86e7-76f0-a60f-3176265b1131",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-21T09:23:12.940Z"
+    },
+    {
+        "reviewId":  "01a15db0-ff56-7da6-a16b-8f90936e645a",
+        "pluginId":  "01a15d2c-9adb-79ce-918c-c1c2dfccccaa",
+        "sourceKind":  "community",
+        "title":  "dsh-workflow-lite 0.6.0 测评",
+        "revisionId":  "01a15db1-2dbc-799d-9254-631850a5f523",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-21T09:01:01.753Z"
+    },
+    {
+        "reviewId":  "01a15dad-2965-74b0-9cf5-f2b6453e831c",
+        "pluginId":  "01a15d58-3f5b-711f-bbf1-2d4f84ac8c88",
+        "sourceKind":  "community",
+        "title":  "dsh-super-injector 0.3.6 测评",
+        "revisionId":  "01a15daf-b06e-7164-89e1-a4e21ba49de3",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-21T08:59:21.638Z"
+    },
+    {
+        "reviewId":  "01a15d96-5b8a-76d2-9dcc-6f8b00d5b26a",
+        "pluginId":  "01a15c90-2990-79b9-bdd0-2e8f51642f12",
+        "sourceKind":  "community",
+        "title":  "dsh-flash-presets 0.2.1 测评",
+        "revisionId":  "01a15d96-9151-7a0a-91b3-602b73bedeb3",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-21T08:32:00.181Z"
+    },
+    {
+        "reviewId":  "01a15d88-6e9a-755f-b0a8-5360b0473364",
+        "pluginId":  "01a15d81-0556-79d0-9eef-6b3a1918db5b",
+        "sourceKind":  "community",
+        "title":  "【测评报告】dsh-toolbox-ui 1.8.2：MCP 与技能的管理面板——真机实测确认好用；47 条市场目录一键装 MCP、技能启停删除；829 项自带测试全绿、无缺陷级发现（判定：真有用）",
+        "revisionId":  "01a15d8f-057e-74de-8ed7-9f3aae460b95",
+        "revisionNumber":  2,
+        "publishedAt":  "2026-10-21T08:23:39.692Z"
+    },
+    {
+        "reviewId":  "01a15d2c-67b0-7b8d-9392-64142150bb27",
+        "pluginId":  "01a15748-8539-75da-879c-e820e5dd1384",
+        "sourceKind":  "community",
+        "title":  "dsh-engramory-recall 0.21.0 实测：问 5 次全答对，坏指令被它拦住了",
+        "revisionId":  "01a15d2d-e710-7957-adaa-47b7bdd63f10",
+        "revisionNumber":  2,
+        "publishedAt":  "2026-10-21T06:37:39.850Z"
+    },
+    {
+        "reviewId":  "01a159b3-d84d-703e-83d9-0d96f58b9915",
+        "pluginId":  "01a1571a-f745-742b-8273-88ebee1145e4",
+        "sourceKind":  "community",
+        "title":  "dsh-plugin-yolo 0.5.0 实测：存一个代号能 5 次取回，但塞进去的指令也会跟着活下来",
+        "revisionId":  "01a15d2b-b883-782d-b9ba-457be232de0f",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-21T06:35:09.656Z"
+    },
+    {
+        "reviewId":  "01a15cc6-c9ca-7c0a-b0e0-560e95d019d1",
+        "pluginId":  "01a15bcc-bf4c-75f7-a417-96466c7a9838",
+        "sourceKind":  "community",
+        "title":  "【安全面快测】dsh-rp-memory 0.1.0-dev.2（判定：还说不准·能力未测）：未发现 P0–P2；故事原文 blob 以 0644 落盘、所有权标记跟随符号链接（P3×2）",
+        "revisionId":  "01a15cc7-72cb-7a27-89c8-2c117cee90b1",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-21T04:45:43.527Z"
+    },
+    {
+        "reviewId":  "01a15cc5-9ef6-7487-a61e-751eae552072",
+        "pluginId":  "01a15a0a-b520-7d13-9649-5bece9ade2ca",
+        "sourceKind":  "community",
+        "title":  "【安全面快测】dsh-notify-me 1.9.5（判定：还说不准·能力未测）：未发现 P0–P2；外部推送不脱敏，会话标题/审批理由/回复摘要原样外发、Bark 回退把正文写进 URL、Discord 不禁 @everyone（P3）",
+        "revisionId":  "01a15cc6-6569-789e-b3b8-374475d63c06",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-21T04:44:33.410Z"
+    },
+    {
+        "reviewId":  "01a15cc5-ab3f-73a3-bb0a-3603b9abf552",
+        "pluginId":  "01a1597e-bd48-7efd-ab44-e1ed90bb2293",
+        "sourceKind":  "community",
+        "title":  "dsh-bot 0.4.0 测评",
+        "revisionId":  "01a15cc5-f0f3-7fd3-99df-88d39211522d",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-21T04:44:03.337Z"
+    },
+    {
+        "reviewId":  "01a15cc4-0625-7214-a31e-b29303992aec",
+        "pluginId":  "01a15a0a-bded-71ea-acc3-9ade41ab149c",
+        "sourceKind":  "community",
+        "title":  "【安全面快测】dsh-model-everything 0.1.0（判定：还说不准·能力未测）：12 个工具同步计算、不接 exec.signal，声明的 10 s 超时不生效，2.2 KB 模型单次调用可冻结宿主 \u003e100 s（P2）",
+        "revisionId":  "01a15cc4-fda9-7656-8525-6e86f4c69291",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-21T04:43:03.226Z"
+    },
+    {
+        "reviewId":  "01a15cc1-0da3-73b8-9940-07b067c46936",
+        "pluginId":  "01a15a0a-d79b-7537-b4c1-1f11d058b97f",
+        "sourceKind":  "community",
+        "title":  "【安全面快测】dsh-disable-unofficial-plugins 1.3.1（判定：还说不准·能力未测）：「非官方」只按包名前缀判，自称 @deepseek-ai/ 的路径/git 安装包逃过停用，界面仍报全部停用（P2）",
+        "revisionId":  "01a15cc1-cbc7-7320-8930-9b66ce5dd385",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-21T04:39:33.007Z"
+    },
+    {
+        "reviewId":  "01a15cbf-b2e8-762b-b461-629c5e09fa29",
+        "pluginId":  "01a15a0a-c185-72a5-b3c0-dfa659d2775c",
+        "sourceKind":  "community",
+        "title":  "【安全面快测】dsh-genshin-account 0.2.1 / 0.19.0（判定：还说不准·能力未测）：插件 HTTP 路由不经宿主鉴权、无 Origin 即放行，本机进程或 DNS 重绑定可改写进模型的数据、用用户米游社会话发请求；验证页把第三方 gt.js 拉进 DSH 同源且删掉 CSP（P2）",
+        "revisionId":  "01a15cc0-9452-771c-9a79-f3924dd6d687",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-21T04:38:12.910Z"
+    },
+    {
+        "reviewId":  "01a15cbc-dbc3-7bd4-a561-0b2a0156b822",
+        "pluginId":  "01a15a0a-b520-7d13-9649-5bece9ade2ca",
+        "sourceKind":  "community",
+        "title":  "dsh-notify-me 1.10.2 测评：离开页面也能收到提醒，审批还能直接点",
+        "revisionId":  "01a15cc0-46cc-78b7-8587-2105c523b828",
+        "revisionNumber":  2,
+        "publishedAt":  "2026-10-21T04:37:52.856Z"
+    },
+    {
+        "reviewId":  "01a15cbe-4355-74e3-a6d4-283327939bd4",
+        "pluginId":  "01a15c06-1d4f-7713-83a5-09dd7f50bc5f",
+        "sourceKind":  "community",
+        "title":  "【安全面快测】@openviking/dsh-memory-plugin 0.5.27（判定：还说不准·能力未测）：启动画像块不转义包裹标签，服务端记忆 / 共享技能名可提前关闭 \u003copenviking-context\u003e 并以\"指令\"注入（P2）；DSH 默认采集工具输出不脱敏（P2）",
+        "revisionId":  "01a15cbf-2b61-75e3-a6a1-272b6ebf4b6f",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-21T04:36:42.760Z"
+    },
+    {
+        "reviewId":  "01a15cbd-189d-7e00-b520-8d08951bbf69",
+        "pluginId":  "01a15a0a-cffb-768e-991e-031e92634ff0",
+        "sourceKind":  "community",
+        "title":  "【安全面快测】@e_11350613/dsh-sympy-calculate 1.0.6（判定：还说不准·能力未测）：sympy_calculate 在宿主沙箱与审批之外执行任意 Python，描述让模型优先于受沙箱的 bash 使用（P1）",
+        "revisionId":  "01a15cbd-ce31-75b8-8f3e-f7e81188d32a",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-21T04:35:12.606Z"
+    },
+    {
+        "reviewId":  "01a15cbb-d097-70a8-97f4-4ec8459099d2",
+        "pluginId":  "01a15a0a-c521-7d78-86c7-75771f050a5c",
+        "sourceKind":  "community",
+        "title":  "【安全面快测】dsh-weixin-plus 1.0.7（判定：还说不准·能力未测）：HTTP 备用口不在宿主鉴权内，跨站匿名即可删微信凭据、读出登录二维码并把通道改绑到攻击者微信；入站无发送者白名单，[[send-file:]] 可外发本机任意文件（P1）",
+        "revisionId":  "01a15cbc-aa49-7056-9a06-017b20dd4f0e",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-21T04:33:52.508Z"
+    },
+    {
+        "reviewId":  "01a15c73-7413-71a6-ab0f-61185a253fff",
+        "pluginId":  "01a15a0a-b520-7d13-9649-5bece9ade2ca",
+        "sourceKind":  "community",
+        "title":  "dsh-notify-me 1.10.2 测评",
+        "revisionId":  "01a15c90-1732-7db1-8e34-474c5fdb21ef",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-21T03:45:19.355Z"
+    },
+    {
+        "reviewId":  "01a15c71-a672-7ea8-8c00-422e398611b6",
+        "pluginId":  "01a15c06-1d4f-7713-83a5-09dd7f50bc5f",
+        "sourceKind":  "community",
+        "title":  "openviking-dsh-memory-plugin 0.5.27 测评",
+        "revisionId":  "01a15c72-4340-7a8d-828a-2d1b0df018e7",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-21T03:12:35.325Z"
+    },
+    {
+        "reviewId":  "01a15c65-a3c3-7188-ae7e-1e83b8357034",
+        "pluginId":  "01a15a10-e359-7811-b013-0c8c3c969f39",
+        "sourceKind":  "community",
+        "title":  "dsh-user-mirror 0.8.7 测评",
+        "revisionId":  "01a15c65-f983-7b6f-be70-7817ef571511",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-21T02:59:14.117Z"
+    },
+    {
+        "reviewId":  "01a1577f-6bba-7c45-84c7-9cecaf81ab5a",
+        "pluginId":  "01a154e4-5a60-7057-8638-108a1b3b611a",
+        "sourceKind":  "community",
+        "title":  "dsh-followup-prompt 0.2.0 测评",
+        "revisionId":  "01a15c41-e7e6-79b5-9e2c-e4120709022a",
+        "revisionNumber":  2,
+        "publishedAt":  "2026-10-21T02:19:51.665Z"
+    },
+    {
+        "reviewId":  "01a15781-ffd2-757b-a64b-8a50810865b4",
+        "pluginId":  "01a151fa-7084-7d65-b7f8-f83ea1ecb30e",
+        "sourceKind":  "community",
+        "title":  "dsh-lan-access 0.1.3 测评",
+        "revisionId":  "01a15c03-308d-77b9-9057-535178c6a9ad",
+        "revisionNumber":  2,
+        "publishedAt":  "2026-10-21T01:11:18.305Z"
+    },
+    {
+        "reviewId":  "01a1543e-8c78-7d18-ac6e-1349df61d4e3",
+        "pluginId":  "01a14f25-263e-7df1-9d8e-193b3092a5b6",
+        "sourceKind":  "community",
+        "title":  "dsh-review 0.3.0 测评",
+        "revisionId":  "01a159df-eb56-75a8-a249-4ade0da7520a",
+        "revisionNumber":  3,
+        "publishedAt":  "2026-10-20T15:13:38.377Z"
+    },
+    {
+        "reviewId":  "01a159d7-db5b-744f-a138-064a2b7f8566",
+        "pluginId":  "01a15484-351f-7c62-8da5-35b769031482",
+        "sourceKind":  "community",
+        "title":  "dsh-ops 0.4.1 标准测评（WSL 环境）：装和不装都全对，但每次说话多花 15% 的词",
+        "revisionId":  "01a159dd-b09a-713f-8370-fccb55a8af40",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-20T15:11:08.172Z"
+    },
+    {
+        "reviewId":  "01a159b2-b348-7009-b26f-af8936c5434d",
+        "pluginId":  "01a1594d-f962-7c1d-a211-dadcbebe5060",
+        "sourceKind":  "community",
+        "title":  "【测评报告】dsh-browser-playwright-codex 0.7.3：接管真实登录态浏览器做任务——真机实测确认有用、安全工程生态天花板级；代价：操作偏慢、默认不限导航、设置路由缺 Host 校验（判定：真有用）",
+        "revisionId":  "01a159b8-7edc-7a78-a0e5-278f4d137f11",
+        "revisionNumber":  2,
+        "publishedAt":  "2026-10-20T14:30:25.909Z"
+    },
+    {
+        "reviewId":  "01a1543d-85a6-79eb-b19a-2a03337ebeed",
+        "pluginId":  "01a14f25-ddb5-7476-bf6f-55e27c990ac5",
+        "sourceKind":  "community",
+        "title":  "dsh-cite 0.5.0 测评",
+        "revisionId":  "01a1598d-6ce1-7290-86cc-addf3278e629",
+        "revisionNumber":  2,
+        "publishedAt":  "2026-10-20T13:43:23.198Z"
+    },
+    {
+        "reviewId":  "01a1593a-494b-74de-aa9f-daf42e414652",
+        "pluginId":  "01a15748-be6f-7bbb-a05e-2805f671e25b",
+        "sourceKind":  "community",
+        "title":  "深度审计 · dsh-memory-vault 0.1.5（等级三）",
+        "revisionId":  "01a1593c-c206-735f-b4df-21f32650694f",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-20T12:15:26.368Z"
+    },
+    {
+        "reviewId":  "01a1588a-e6ed-7a3a-bbef-ad23153f7690",
+        "pluginId":  "01a1588a-dda5-7d3f-831d-e0cce274da2c",
+        "sourceKind":  "community",
+        "title":  "AIGC 画布 0.2.2 测评：能用，但三条后台接口没装门",
+        "revisionId":  "01a158eb-e4a8-7d91-bd95-55fc2cde5e72",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-20T10:47:02.142Z"
+    },
+    {
+        "reviewId":  "01a158d5-b1e4-704f-8fa3-9e52c1e35553",
+        "pluginId":  "01a15716-2761-743b-a6c1-26d3a4acb99e",
+        "sourceKind":  "community",
+        "title":  "dsh-git-memory 0.8.1 测评",
+        "revisionId":  "01a158d6-57f9-7e09-842c-7273d9143fdd",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-20T10:23:31.002Z"
+    },
+    {
+        "reviewId":  "01a158cd-d32a-7a8f-b64b-c34b258b5aba",
+        "pluginId":  "01a15714-6b29-73c7-9495-c53007f6b834",
+        "sourceKind":  "community",
+        "title":  "dsh-engramory 0.2.5 测评",
+        "revisionId":  "01a158ce-981f-7d60-a0b7-17924a79cb78",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-20T10:15:00.540Z"
+    },
+    {
+        "reviewId":  "01a15894-b58e-76d5-a018-4970b65f9ad0",
+        "pluginId":  "01a15748-6da2-7750-a1d3-2653d4247cfe",
+        "sourceKind":  "community",
+        "title":  "【测评报告】dsh-cc-haha-dream 0.1.0：后台自动整理记忆的「做梦」插件——真机长期使用确认有用；发现自动改删记忆无备份、整理后对话缓存要重算两个代价（判定：真有用）",
+        "revisionId":  "01a15895-e1b4-7ae9-8283-b9f7374834c9",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-20T09:13:06.773Z"
+    },
+    {
+        "reviewId":  "01a1578f-196b-727e-8c33-cb0d19762ecc",
+        "pluginId":  "01a154b3-d111-75d7-9856-8efec0917093",
+        "sourceKind":  "community",
+        "title":  "dsh-mneme 0.9.3 测评报告：人话版",
+        "revisionId":  "01a15888-c348-7012-bec6-6d923029d751",
+        "revisionNumber":  2,
+        "publishedAt":  "2026-10-20T08:58:45.545Z"
+    },
+    {
+        "reviewId":  "01a15494-ce5c-7a19-90b0-40026befc7c5",
+        "pluginId":  "01a15494-9fb2-713d-8197-6a4672efb9b1",
+        "sourceKind":  "community",
+        "title":  "dsh-deja 0.22.2 测评报告：人话版",
+        "revisionId":  "01a15887-0a14-79a0-a4ba-505394e3e4d0",
+        "revisionNumber":  2,
+        "publishedAt":  "2026-10-20T08:56:55.346Z"
+    },
+    {
+        "reviewId":  "01a15464-1e04-7f23-9382-4d059a12e152",
+        "pluginId":  "01a15464-1564-7080-85d5-f23ab505b87e",
+        "sourceKind":  "community",
+        "title":  "dsh-domain-bridge 0.6.4 测评报告：人话版",
+        "revisionId":  "01a15886-70e1-74d0-af4b-f97f8d990452",
+        "revisionNumber":  3,
+        "publishedAt":  "2026-10-20T08:56:15.282Z"
+    },
+    {
+        "reviewId":  "01a152dc-fcad-7bac-83b5-cb6866ec22b4",
+        "pluginId":  "01a152dc-f22c-73cf-9693-a9f8bdc22505",
+        "sourceKind":  "community",
+        "title":  "dsh-at-file 0.6.3 测评：人话版",
+        "revisionId":  "01a15881-16e5-7a8b-a82a-3e5809ccca10",
+        "revisionNumber":  2,
+        "publishedAt":  "2026-10-20T08:50:24.853Z"
+    },
+    {
+        "reviewId":  "01a15213-b254-78ee-af91-5860bdfd60ad",
+        "pluginId":  "01a15213-aaef-75bf-af81-6cb43a6f52fb",
+        "sourceKind":  "community",
+        "title":  "dsh-auto-continue 0.4.7 测评报告：人话版",
+        "revisionId":  "01a1587e-2412-708a-a5e5-db4057ab199d",
+        "revisionNumber":  2,
+        "publishedAt":  "2026-10-20T08:47:04.610Z"
+    },
+    {
+        "reviewId":  "01a15211-a7b3-7095-aea2-08e8ea167cdd",
+        "pluginId":  "01a15211-9b21-7b2d-888a-f06582e68718",
+        "sourceKind":  "community",
+        "title":  "dsh-security-audit 0.0.1 测评报告：人话版",
+        "revisionId":  "01a1587d-5f45-739f-8417-d1259fa42322",
+        "revisionNumber":  2,
+        "publishedAt":  "2026-10-20T08:46:14.516Z"
+    },
+    {
+        "reviewId":  "01a151fa-7df9-7bef-9e32-54e02f1ca422",
+        "pluginId":  "01a151fa-7084-7d65-b7f8-f83ea1ecb30e",
+        "sourceKind":  "community",
+        "title":  "dsh-lan-access 0.1.3 —— 测评报告：人话版",
+        "revisionId":  "01a1587b-2960-7ce2-aa7d-6cbff0c57495",
+        "revisionNumber":  2,
+        "publishedAt":  "2026-10-20T08:43:54.354Z"
+    },
+    {
+        "reviewId":  "01a15865-df5d-7f13-b6ba-046112bf96dd",
+        "pluginId":  "01a15748-530a-782d-acab-e74e6265b79b",
+        "sourceKind":  "community",
+        "title":  "dsh-learn-skills 2.2.9 测评：想给 AI 加个学习本，结果有三处毛病",
+        "revisionId":  "01a15868-5a03-7320-aab8-052bb88cab21",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-20T08:23:23.149Z"
+    },
+    {
+        "reviewId":  "01a1580d-5b82-7ccd-83e6-44d2f84a3d0f",
+        "pluginId":  "01a154f0-4a77-7946-bf3e-be5ddcab746c",
+        "sourceKind":  "community",
+        "title":  "dsh-mnemon 0.5.33：4.1版补测与复跑",
+        "revisionId":  "01a15830-c927-7afd-b0ad-17477c9e5504",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-20T07:22:38.768Z"
+    },
+    {
+        "reviewId":  "01a15806-a686-767c-89b6-ca39b79e584c",
+        "pluginId":  "01a15717-3a97-7403-9666-0a6002fe433c",
+        "sourceKind":  "community",
+        "title":  "记忆插件 memento 0.5.27 真有用",
+        "revisionId":  "01a15807-7458-7ac5-87ca-fefe0e855c58",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-20T06:37:35.798Z"
+    },
+    {
+        "reviewId":  "01a15800-5962-7d26-825b-b7b96b22df4f",
+        "pluginId":  "01a15748-a603-7959-afbc-b5e69dc47b10",
+        "sourceKind":  "community",
+        "title":  "【测评报告】dsh-powercontext 0.0.3：把 PowerContext 记忆服务接进 DSH——找回来的内容带「不可信」标记，写操作要审批；看门狗写死了作者的 D 盘路径；对话内容默认会被记录（判定：还说不准）",
+        "revisionId":  "01a15801-70af-7635-8623-d3c9ce01ff95",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-20T06:30:55.355Z"
+    },
+    {
+        "reviewId":  "01a157fe-322d-737a-9fb6-b0eaa7c62f05",
+        "pluginId":  "01a154b4-d40a-7d1d-9adb-eba5b6236659",
+        "sourceKind":  "community",
+        "title":  "记忆插件 engram 0.7.2  真有用",
+        "revisionId":  "01a157ff-db4d-799d-bcd3-d3c7e1cdf07c",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-20T06:29:15.230Z"
+    },
+    {
+        "reviewId":  "01a157f7-c09f-7ebc-ac9e-07134003b4f7",
+        "pluginId":  "01a154b4-4ab0-7fc0-9c36-fa19478915a9",
+        "sourceKind":  "community",
+        "title":  "project-memory 0.6.3  真有用",
+        "revisionId":  "01a157f8-f7bc-761d-a314-91d4f2002541",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-20T06:21:44.797Z"
+    },
+    {
+        "reviewId":  "01a157f0-f630-7347-b587-4f42e7da4c38",
+        "pluginId":  "01a15714-6b29-73c7-9495-c53007f6b834",
+        "sourceKind":  "community",
+        "title":  "记忆插件 engramory 0.2.5  还说不准",
+        "revisionId":  "01a157f2-bb88-7e74-b1fd-1ff78b4fe2e1",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-20T06:14:54.144Z"
+    },
+    {
+        "reviewId":  "01a157e6-cc11-7ff6-86df-5523d65cce63",
+        "pluginId":  "01a15718-2037-7fdd-8ec1-583271c34025",
+        "sourceKind":  "community",
+        "title":  "记忆插件 auto-memory 3.3.1  依赖api",
+        "revisionId":  "01a157e8-626e-7286-acfb-ff565fa2e8f1",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-20T06:03:30.704Z"
+    },
+    {
+        "reviewId":  "01a157da-f01d-75c1-9f64-df141e338566",
+        "pluginId":  "01a15719-441d-790f-8380-60e297e43bdb",
+        "sourceKind":  "community",
+        "title":  "记忆插件 noema 真有用",
+        "revisionId":  "01a157dd-0f9b-7fa0-a8bb-3333ff01d52d",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-20T05:51:09.536Z"
+    },
+    {
+        "reviewId":  "01a157ce-b71c-7cba-97b8-b9c678125725",
+        "pluginId":  "01a154e4-3f60-7ba2-96c5-2e9feba7a4b7",
+        "sourceKind":  "community",
+        "title":  "【测评报告】dsh-model-usage 1.0.5：模型额度与用量仪表盘——admit 围栏实测有效＋凭据只进内存＋真机额度实读（判定：真有用）",
+        "revisionId":  "01a157da-ad51-7b69-abd0-653768e62cc1",
+        "revisionNumber":  2,
+        "publishedAt":  "2026-10-20T05:48:39.357Z"
+    },
+    {
+        "reviewId":  "01a152ac-88a8-75db-8cf0-7a46b0da5c4f",
+        "pluginId":  "01a15288-34ed-7f80-9b94-a55192b0e222",
+        "sourceKind":  "community",
+        "title":  "dsh-meow-memory 0.31.0 实测：真有用",
+        "revisionId":  "01a157d6-cc20-7308-a18e-5cbbc15834c8",
+        "revisionNumber":  3,
+        "publishedAt":  "2026-10-20T05:44:19.014Z"
+    },
+    {
+        "reviewId":  "01a157c8-8bcc-7733-ae9a-e8d6bf7977c1",
+        "pluginId":  "01a154b3-9a03-75e0-8981-d839e4e33164",
+        "sourceKind":  "community",
+        "title":  "图谱记忆插件 graph-memory    部分没法测",
+        "revisionId":  "01a157cb-6c1c-7c10-81ff-975cc43f43db",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-20T05:31:58.189Z"
+    },
+    {
+        "reviewId":  "01a157c1-b723-79e0-924d-8df943685e8e",
+        "pluginId":  "01a157c1-a13e-75e9-b7c8-03310d4078c5",
+        "sourceKind":  "community",
+        "title":  "[intake 输入] 【测评报告】dsh-sogou-skin v0.2.0 功能与安全测评（dsh 生态插件 · 方法试验）",
+        "revisionId":  "01a157c2-eaa7-7e27-8b36-f49fe087c813",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-20T05:22:37.366Z"
+    },
+    {
+        "reviewId":  "01a157be-8d4a-7170-b5ff-b04783cb11ca",
+        "pluginId":  "01a154f0-4a77-7946-bf3e-be5ddcab746c",
+        "sourceKind":  "community",
+        "title":  "# 记忆插件 dsh-mnemon 0.5.33 测试 部分帮倒忙",
+        "revisionId":  "01a157bf-e179-7b8a-8988-f2921beae20d",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-20T05:19:17.174Z"
+    },
+    {
+        "reviewId":  "01a157b8-2164-7914-b42f-9f60a4dd4693",
+        "pluginId":  "01a154e4-3c1b-736f-93ae-16ab1f6034cf",
+        "sourceKind":  "community",
+        "title":  "【测评报告】@bittersmilezzz/dsh-notify 0.4.2：桌面系统通知插件——真机端到端验证通过＋全量读码无 P2+ 发现、97 项自带测试全绿（判定：真有用）",
+        "revisionId":  "01a157ba-32ba-7313-892f-81c5b19b95b5",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-20T05:13:06.790Z"
+    },
+    {
+        "reviewId":  "01a15309-fa97-716b-afda-e488b6eccd05",
+        "pluginId":  "01a151f5-6f42-7d2d-8a7a-4dd1da9b257c",
+        "sourceKind":  "community",
+        "title":  "dsh-ppt 0.11.0 测评",
+        "revisionId":  "01a157ac-38c3-741e-ae6b-1786285aa425",
+        "revisionNumber":  3,
+        "publishedAt":  "2026-10-20T04:57:55.798Z"
+    },
+    {
+        "reviewId":  "01a15224-bc2b-7802-9e19-65c26b6632d9",
+        "pluginId":  "01a15224-9f41-7f78-af9a-052c8385f6dc",
+        "sourceKind":  "community",
+        "title":  "# 灵枢记忆插件 0.9.8 测评 ",
+        "revisionId":  "01a1579e-791b-7b24-9baa-1412ef6554ed",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-20T04:42:54.820Z"
+    },
+    {
+        "reviewId":  "01a15780-07ba-7357-bfe5-16599f4a2c6b",
+        "pluginId":  "01a15747-b60f-75db-a068-ebaf86b03bec",
+        "sourceKind":  "community",
+        "title":  "深度审计：dsh-flomo-report 0.1.1（L3 · A 路径）",
+        "revisionId":  "01a15780-57b9-7910-9764-4d0df0225eaa",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-20T04:09:52.580Z"
+    },
+    {
+        "reviewId":  "01a1577f-60bd-740f-b4db-40affa005434",
+        "pluginId":  "01a15775-163e-706e-9251-a0ef1a75dc80",
+        "sourceKind":  "community",
+        "title":  "【安全审计】recruiting-copilot 0.6.6：/plugins/recruiting-view/* 无鉴权，跨站 simple request 可触发 CDP 导航与键鼠注入",
+        "revisionId":  "01a1577f-d550-759e-ae7e-cd2d7ae18047",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-20T04:09:22.530Z"
+    },
+    {
+        "reviewId":  "01a1577e-831a-7e87-9ad9-ce53558a63fb",
+        "pluginId":  "01a15774-bb29-7ef6-bc19-901dc91fc6a5",
+        "sourceKind":  "community",
+        "title":  "【安全审计】dsh-archived-chats 1.5.2：/export 与 /state 无鉴权，本机进程可读取归档会话；Host 未校验（rebinding 前置成立）",
+        "revisionId":  "01a1577f-0162-7943-913d-7ccc5bde8d6a",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-20T04:08:32.440Z"
+    },
+    {
+        "reviewId":  "01a15774-200e-7e61-af3c-5d3d93391223",
+        "pluginId":  "01a1571a-f745-742b-8273-88ebee1145e4",
+        "sourceKind":  "community",
+        "title":  "【安全审计】dsh-plugin-yolo 0.5.0：/yolo/session/{send,messages} 无鉴权，跨站 simple request 可注入 user 消息并读回转写",
+        "revisionId":  "01a1577c-9b42-7786-a2d8-89b94da7ac52",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-20T04:05:52.278Z"
+    },
+    {
+        "reviewId":  "01a15776-40a6-71ca-8ec8-b24d51ba70dc",
+        "pluginId":  "01a154e4-4331-7540-b40f-88ed39348a0c",
+        "sourceKind":  "community",
+        "title":  "【测评报告】dsh-providers-hub 0.2.1-rc.2：多账号 AI 编程服务聚合插件——13.7 万行定向深审：网关暴露面/凭据面/注入面",
+        "revisionId":  "01a15778-99e5-7a73-b7e5-571891bd665a",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-20T04:01:31.943Z"
+    },
+    {
+        "reviewId":  "01a15774-6656-7f7b-ba99-a6455b072910",
+        "pluginId":  "01a1571a-1aef-771a-be9f-7e5081eb2075",
+        "sourceKind":  "community",
+        "title":  "深度审计：dsh-evolve-in-git 0.6.3（L3 · A 路径）",
+        "revisionId":  "01a15774-a347-7381-90d5-30ef3344941d",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-20T03:57:11.664Z"
+    },
+    {
+        "reviewId":  "01a1576d-6016-74db-9265-e5e8c6ddbeeb",
+        "pluginId":  "01a15748-3769-7119-8438-f8addb9dcb86",
+        "sourceKind":  "community",
+        "title":  "深度审计：@zhangj1164/dsh-memo 0.1.1（L3 · A 路径）",
+        "revisionId":  "01a1576d-9edf-74bf-bbd7-704aa4d9b668",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-20T03:49:31.065Z"
+    },
+    {
+        "reviewId":  "01a1576c-dcc2-7b99-8bc1-c451d50e41d5",
+        "pluginId":  "01a154b4-9fe8-7035-8e99-da184ec2d4d7",
+        "sourceKind":  "community",
+        "title":  "深度审计：dsh-plugin-memory 0.10.0（L3 · A 路径）",
+        "revisionId":  "01a1576d-1627-73f4-a364-3b6e31297eaa",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-20T03:48:50.972Z"
+    },
+    {
+        "reviewId":  "01a154c2-06dc-7016-a0be-8ad84b2f731f",
+        "pluginId":  "01a154b8-47bd-7d79-9109-77734bed6048",
+        "sourceKind":  "community",
+        "title":  "深度审计：dsh-memory-snapshot 0.3.0（L3 · A 路径）",
+        "revisionId":  "01a1576c-309d-757a-9e69-9d1c1eefa305",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-20T03:47:50.888Z"
+    },
+    {
+        "reviewId":  "01a15766-bd73-74f5-a184-9ef19fdf0209",
+        "pluginId":  "01a154e4-4331-7540-b40f-88ed39348a0c",
+        "sourceKind":  "community",
+        "title":  "【安全面快测】dsh-providers-hub 0.2.1-rc.2（判定：还说不准·能力未测）：导入一份分享来的备份即可把对话改道到任意主机（P1），并可覆写宿主 DEEPSEEK_API_KEY（P2）",
+        "revisionId":  "01a1576b-66c7-7715-b527-c189f82a98b5",
+        "revisionNumber":  2,
+        "publishedAt":  "2026-10-20T03:47:00.782Z"
+    },
+    {
+        "reviewId":  "01a15769-9d10-7dd5-a534-3ad5d76e7b4d",
+        "pluginId":  "01a154e4-4e31-7d12-bb52-368bdf45f6ca",
+        "sourceKind":  "community",
+        "title":  "【安全面快测】@local/dsh-network-proxy 1.0.0（判定：还说不准·能力未测）：系统 PAC 在 node:vm 执行且 sandbox 暴露宿主实域闭包 → vm 逃逸、Host 进程任意代码执行（P2）；PAC 求值无单次超时可挂死事件循环（P3）；自定义代理口令明文落盘 0644（P3）",
+        "revisionId":  "01a1576a-4a07-7a0b-b4d0-f382a415fb2a",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-20T03:45:50.649Z"
+    },
+    {
+        "reviewId":  "01a15766-cb0b-755c-bdc1-dcc55ecfe2b9",
+        "pluginId":  "01a154b7-c881-7603-ab4e-d76c73c3a137",
+        "sourceKind":  "community",
+        "title":  "深度审计：dsh-plugin-tlmemory 1.3.0（L3 · A 路径）",
+        "revisionId":  "01a15767-0bdd-7248-9fe5-4cef4056fdb4",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-20T03:42:20.316Z"
+    },
+    {
+        "reviewId":  "01a15765-5c19-796e-88d9-7b43fd762ec3",
+        "pluginId":  "01a15717-3a97-7403-9666-0a6002fe433c",
+        "sourceKind":  "community",
+        "title":  "【安全面快测】dsh-memento 0.5.27（判定：还说不准·能力未测）：压缩摘要未经审批即注入后续会话 system prompt（P1）；/api/memento/* 绕开宿主 /api 鉴权，DNS rebinding / LAN 可读全库与已删除密钥（P1）",
+        "revisionId":  "01a15766-3a44-7059-820b-e745be724b7f",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-20T03:41:20.222Z"
+    },
+    {
+        "reviewId":  "01a15764-0b38-7b6f-b202-37f22da6f44e",
+        "pluginId":  "01a1571a-f745-742b-8273-88ebee1145e4",
+        "sourceKind":  "community",
+        "title":  "【安全面快测】dsh-plugin-yolo 0.5.0（判定：还说不准·能力未测）：10 个插件 HTTP 路由不在宿主鉴权闸门内，跨站简单请求即可读全部工作区、永久删除事项并写进模型上下文（P1）",
+        "revisionId":  "01a15764-e315-7e03-8286-2c65beccc5ca",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-20T03:40:00.118Z"
+    },
+    {
+        "reviewId":  "01a15762-cc37-7b7f-9030-47690b3842e1",
+        "pluginId":  "01a1571a-1aef-771a-be9f-7e5081eb2075",
+        "sourceKind":  "community",
+        "title":  "【安全面快测】dsh-evolve-in-git 0.6.3（判定：还说不准·能力未测）：git 选项注入写任意文件、auth.sshCommand 任意命令并带出宿主密钥、/api/evolve-git/config 无宿主鉴权、远端 URL 外带 GITHUB_TOKEN（P1）",
+        "revisionId":  "01a15763-c703-73a4-84e0-46db5772e102",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-20T03:38:39.927Z"
+    },
+    {
+        "reviewId":  "01a15762-1033-7e4e-b022-a669a416816e",
+        "pluginId":  "01a154e4-5731-71cc-99bf-97527bffc741",
+        "sourceKind":  "community",
+        "title":  "深度审计：dsh-plugin-pwsh7 0.3.0（L3 · A 路径）",
+        "revisionId":  "01a15762-8728-779d-abe6-2fabf84676b6",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-20T03:37:19.795Z"
+    },
+    {
+        "reviewId":  "01a15753-fe3e-7739-b251-9dc069f100fc",
+        "pluginId":  "01a154e4-4e31-7d12-bb52-368bdf45f6ca",
+        "sourceKind":  "community",
+        "title":  "【测评报告】@local/dsh-network-proxy 1.0.0：宿主出网代理设置插件——功能主张全兑现＋挂在正确的鉴权通道上",
+        "revisionId":  "01a15754-f0ea-7438-a0df-22fd762c77f0",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-20T03:22:28.760Z"
+    },
+    {
+        "reviewId":  "01a1571e-869e-797d-991b-490d13e37105",
+        "pluginId":  "01a1536d-5ae3-7bdc-a212-39aeb25230ff",
+        "sourceKind":  "community",
+        "title":  "dsh-wish-specializer 0.9.0-beta-1 交互复核：已发送方块第二次拖动反向跳",
+        "revisionId":  "01a15723-ebb7-7a05-9ec6-8757d05961e0",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-20T02:28:55.359Z"
+    },
+    {
+        "reviewId":  "01a156de-0669-7f30-8e4a-33b1a375e501",
+        "pluginId":  "01a14f25-263e-7df1-9d8e-193b3092a5b6",
+        "sourceKind":  "community",
+        "title":  "@stardustlc/dsh-review 0.3.0 Windows真实宿主增量复核（历史补录；能力效果还说不准）",
+        "revisionId":  "01a156de-2eb9-72b7-b564-f99cce692c3c",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-20T01:12:50.515Z"
+    },
+    {
+        "reviewId":  "01a156dd-d152-7cf1-8f0e-861e210457c8",
+        "pluginId":  "01a14edf-9d4a-71da-94c5-f7542a9c2b4e",
+        "sourceKind":  "community",
+        "title":  "@hyzyn/dsh-kit-settings 0.2.6 Windows真实宿主增量复核（历史补录；能力效果还说不准）",
+        "revisionId":  "01a156dd-f9a6-7458-bc2f-22d993e41bd6",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-20T01:12:30.474Z"
+    },
+    {
+        "reviewId":  "01a156dd-9b8a-77be-9327-c5bc89e37b31",
+        "pluginId":  "01a14edf-a263-7643-a53f-4f03e8a6faff",
+        "sourceKind":  "community",
+        "title":  "@hyzyn/dsh-profile 0.2.9 Windows真实宿主增量复核（历史补录；能力效果还说不准）",
+        "revisionId":  "01a156dd-c3e4-7001-8377-d1c7c96205e8",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-20T01:12:20.453Z"
+    },
+    {
+        "reviewId":  "01a156dd-6667-7976-a787-98531d8da577",
+        "pluginId":  "01a14edf-a0ac-7831-b19e-bd86c7a3045b",
+        "sourceKind":  "community",
+        "title":  "@hyzyn/dsh-mcp 0.3.6 Windows真实宿主增量复核（历史补录；能力效果还说不准）",
+        "revisionId":  "01a156dd-8ebb-7c4b-957b-76caf9ac8c10",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-20T01:12:10.425Z"
+    },
+    {
+        "reviewId":  "01a156dd-314a-7412-9731-8ec958edd7a6",
+        "pluginId":  "01a14edf-9b8a-7440-b644-818f324184df",
+        "sourceKind":  "community",
+        "title":  "@hyzyn/dsh-env 0.3.10 Windows真实宿主增量复核（历史补录；能力效果还说不准）",
+        "revisionId":  "01a156dd-599d-78db-b94f-1aed51166c26",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-20T01:11:50.393Z"
+    },
+    {
+        "reviewId":  "01a156dc-fa17-7d50-be0a-11ae10631257",
+        "pluginId":  "01a14edf-a414-713a-82e5-cc8fb8687af0",
+        "sourceKind":  "community",
+        "title":  "@hyzyn/dsh-prompt 0.2.9 Windows真实宿主增量复核（历史补录；能力效果还说不准）",
+        "revisionId":  "01a156dd-2263-7f75-b361-aa365a00f87f",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-20T01:11:40.350Z"
+    },
+    {
+        "reviewId":  "01a156d6-87ea-7dc9-a2e7-c1b09d1c2af4",
+        "pluginId":  "01a14f25-edde-79e2-a0df-1b15dca928b3",
+        "sourceKind":  "community",
+        "title":  "dsh-code-security 0.5.0 Windows真实宿主增量复核（历史补录；能力效果还说不准）",
+        "revisionId":  "01a156da-3df4-7c58-9c24-97527fc55272",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-20T01:08:30.170Z"
+    },
+    {
+        "reviewId":  "01a15535-8ee0-7a9c-ac21-c848e5cc8cf8",
+        "pluginId":  "01a154e4-1a15-7b17-ba3e-e81afb7cec1d",
+        "sourceKind":  "community",
+        "title":  "dsh-wyymusic 0.2.3：DSH 侧栏网易云音乐",
+        "revisionId":  "01a15537-9bb2-7bfc-9dbc-5c3244dfbf7b",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-19T17:31:12.777Z"
+    },
+    {
+        "reviewId":  "01a15529-36d9-7fa6-8a0b-1192968b237d",
+        "pluginId":  "01a154b4-0d0e-750a-9924-45f38549246b",
+        "sourceKind":  "community",
+        "title":  "memory-eternal 0.10.52 安全审计：记忆库管理 API 整面缺 Origin 放行（写卡→自批准→全库导出）",
+        "revisionId":  "01a15529-aaaf-7fc7-bf67-c4f18c306275",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-19T17:16:01.953Z"
+    },
+    {
+        "reviewId":  "01a1551b-4198-7da1-9760-521d0f6aaa79",
+        "pluginId":  "01a154b4-4ab0-7fc0-9c36-fa19478915a9",
+        "sourceKind":  "community",
+        "title":  "【深度审计】@yolk_vat-y/dsh-project-memory 0.6.2（路径守卫 7/7，中文为二元字组切分）",
+        "revisionId":  "01a1551c-d8bf-7259-9793-bc0bbbc667af",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-19T17:02:01.236Z"
+    },
+    {
+        "reviewId":  "01a15507-764b-7973-900a-777509dd20d1",
+        "pluginId":  "01a1547e-d4ef-73aa-8f27-14052632025c",
+        "sourceKind":  "community",
+        "title":  "【安全面快测】dsh-vibe-island 1.4.0（判定：还说不准·能力未测）：Windows 下 appInstallDir 指向已有目录时，自动安装会整个挪走并递归删除（P1）",
+        "revisionId":  "01a15508-720c-73a8-ac79-264a9e06f722",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-19T16:39:45.159Z"
+    },
+    {
+        "reviewId":  "01a15504-6744-7eca-8236-be5a1ea35268",
+        "pluginId":  "01a15488-24b1-7ad8-9a8e-c9457688aa6d",
+        "sourceKind":  "community",
+        "title":  "【安全面快测】dsh-cover-pipeline 1.1.2（判定：还说不准·能力未测）：启动目录下的 01_*/env/python.exe 被 cover_doctor 不经确认直接执行（P1）",
+        "revisionId":  "01a15506-b5ff-78dc-a530-d30f20ccc408",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-19T16:37:55.070Z"
+    },
+    {
+        "reviewId":  "01a154f8-47bd-7ad1-b9a9-297ad10adce4",
+        "pluginId":  "01a1536d-5ae3-7bdc-a212-39aeb25230ff",
+        "sourceKind":  "community",
+        "title":  "【安全面快测】dsh-arbiter-wf 0.8.4-stable（判定：还说不准·能力未测）：自带 bash 工具绕开宿主沙箱与审批，Windows 默认开启（P0）",
+        "revisionId":  "01a15503-7346-7df1-b39f-94e9df905b25",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-19T16:34:14.952Z"
+    },
+    {
+        "reviewId":  "01a154e4-eb67-716a-bc2e-952120201ed5",
+        "pluginId":  "01a154b4-745e-749d-9cda-a0bf5b8cdf07",
+        "sourceKind":  "community",
+        "title":  "【深度审计】dsh-layered-memory 0.11.0（能力：真有用；安全六威胁：全项实测 38/38）",
+        "revisionId":  "01a154f1-af3e-7dad-b521-cdc4f3b58999",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-19T16:14:54.382Z"
+    },
+    {
+        "reviewId":  "01a154cf-dc7e-744c-9d76-d476f089baad",
+        "pluginId":  "01a154bd-d0d4-7331-af64-dc83f259a580",
+        "sourceKind":  "community",
+        "title":  "[intake 输入] 【测评报告】dsh-normify v0.5.4 功能与兼容性测评（dsh 生态插件 · 方法试验）",
+        "revisionId":  "01a154e4-9746-7ab5-8f7e-85edc6c3708a",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-19T16:00:33.964Z"
+    },
+    {
+        "reviewId":  "01a154dd-aa5b-7c87-8344-c83a39a130bb",
+        "pluginId":  "01a154b4-d40a-7d1d-9adb-eba5b6236659",
+        "sourceKind":  "community",
+        "title":  "【测评报告】dsh-engram 0.7.1（判定：还说不准）",
+        "revisionId":  "01a154df-5cfc-7991-b382-7d4735f56a70",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-19T15:54:52.172Z"
+    },
+    {
+        "reviewId":  "01a154be-ae85-7a5f-8838-24835eabdcce",
+        "pluginId":  "01a15488-24b1-7ad8-9a8e-c9457688aa6d",
+        "sourceKind":  "community",
+        "title":  "[intake 输入] 【测评报告】dsh-cover-pipeline v1.1.2 依赖审计（dsh 生态插件 · 方法试验）",
+        "revisionId":  "01a154cc-6b46-7af3-b1ad-b9c07b66d046",
+        "revisionNumber":  12,
+        "publishedAt":  "2026-10-19T15:34:11.032Z"
+    },
+    {
+        "reviewId":  "01a154c1-0d7f-768e-b1b5-f155fd96ef09",
+        "pluginId":  "01a154be-0b2e-7043-8ede-821f478722d5",
+        "sourceKind":  "community",
+        "title":  "dsh-cover-pipeline 1.1.2：深度审计——宿主集成、裸机降级与安全六威胁（端到端翻唱未测，判定：还说不准）",
+        "revisionId":  "01a154c9-887c-78fb-8fb7-00878322dbab",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-19T15:31:00.836Z"
+    },
+    {
+        "reviewId":  "01a154a5-c515-787f-b46a-31aa9badae72",
+        "pluginId":  "01a154a0-334e-79c2-87bf-4db03f4f576e",
+        "sourceKind":  "community",
+        "title":  "dsh-plan-mode-plus 0.2.0 深度测评：真实补齐官方三个缺口，但「只读保证」存在两条可达绕过路径",
+        "revisionId":  "01a154af-d4e4-7e0f-88e1-78819fc6c4c2",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-19T15:02:59.301Z"
+    },
+    {
+        "reviewId":  "01a1543c-1871-7324-823a-a0c8fd100523",
+        "pluginId":  "01a14f27-30d9-79b3-9cda-561ad8e46126",
+        "sourceKind":  "community",
+        "title":  "标准测评报告 · dsh-ffmpeg 0.5.0（能力五状态）",
+        "revisionId":  "01a15487-5b8e-78d4-993f-a92da2f357e1",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-19T14:18:46.877Z"
+    },
+    {
+        "reviewId":  "01a1546d-a1ed-73ed-a2c4-5f8cc358ae33",
+        "pluginId":  "01a15224-9f41-7f78-af9a-052c8385f6dc",
+        "sourceKind":  "community",
+        "title":  "灵枢大脑区组件测评报告 · dsh-memory 0.9.6（5 组件功能验证）",
+        "revisionId":  "01a1546f-030f-780d-8425-d78b9dfa9ec3",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-19T13:52:04.959Z"
+    },
+    {
+        "reviewId":  "01a1543f-da1d-7805-a026-36a2727f9487",
+        "pluginId":  "01a14f58-89d1-7f8b-958f-135d06025aac",
+        "sourceKind":  "community",
+        "title":  "标准测评结论 · dsh-myskin 0.4.1（能力五状态：不适用）",
+        "revisionId":  "01a15440-2ec3-7f48-aef5-2f9e6d811875",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-19T13:01:03.405Z"
+    },
+    {
+        "reviewId":  "01a1543f-5a6d-74ad-8de1-176fff0a70b9",
+        "pluginId":  "01a14cb1-b042-7fb3-b7b1-7b27fa9ef9dd",
+        "sourceKind":  "community",
+        "title":  "标准测评结论 · dsh-trae2api 0.5.0（能力五状态：不适用）",
+        "revisionId":  "01a1543f-8183-770b-be3e-ec4e9b1441c8",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-19T13:00:13.356Z"
+    },
+    {
+        "reviewId":  "01a1543c-3b86-75e1-ac35-684d97d5f1fe",
+        "pluginId":  "01a14f25-edde-79e2-a0df-1b15dca928b3",
+        "sourceKind":  "community",
+        "title":  "标准测评报告 · dsh-code-security 0.5.0（能力五状态）",
+        "revisionId":  "01a1543d-4bc0-7902-8294-0ac0724ba573",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-19T12:57:53.159Z"
+    },
+    {
+        "reviewId":  "01a152c4-7b36-7b46-a876-68a3dce4e06f",
+        "pluginId":  "01a1503b-dc76-7d15-bee5-ff42f1d17405",
+        "sourceKind":  "community",
+        "title":  "标准测评报告 · dsh-agent-teams-fish 0.7.3（能力五状态：不适用；功能验证：通过）",
+        "revisionId":  "01a15414-504c-77fc-a749-973c5a8eb425",
+        "revisionNumber":  2,
+        "publishedAt":  "2026-10-19T12:13:00.752Z"
+    },
+    {
+        "reviewId":  "01a15308-0933-7003-b11b-5ff361dc81ba",
+        "pluginId":  "01a14edf-9d4a-71da-94c5-f7542a9c2b4e",
+        "sourceKind":  "community",
+        "title":  "标准测评结论 · @hyzyn/dsh-kit-settings 0.2.6（能力五状态：不适用）",
+        "revisionId":  "01a153f2-769d-71a9-b0c7-ff17e11d2d65",
+        "revisionNumber":  2,
+        "publishedAt":  "2026-10-19T11:36:08.648Z"
+    },
+    {
+        "reviewId":  "01a152c9-5ca6-73e7-a038-33f0dc835b61",
+        "pluginId":  "01a151f5-6727-72de-a505-197b4de3f105",
+        "sourceKind":  "community",
+        "title":  "标准测评结论 · dsh-minimal-ptc 0.5.6（能力五状态：不适用）",
+        "revisionId":  "01a153f2-1b45-7912-9796-d798262c4b74",
+        "revisionNumber":  2,
+        "publishedAt":  "2026-10-19T11:35:38.589Z"
+    },
+    {
+        "reviewId":  "01a1530b-9284-75d4-8246-624ea6d86464",
+        "pluginId":  "01a14edf-9836-72b7-9777-653bab8ab89c",
+        "sourceKind":  "community",
+        "title":  "标准测评结论 · @hyzyn/dsh-codegraph 0.6.10（能力五状态：不适用；CLI 已补验）",
+        "revisionId":  "01a153f0-bf00-7b95-9a7e-a8b934344995",
+        "revisionNumber":  2,
+        "publishedAt":  "2026-10-19T11:34:18.484Z"
+    },
+    {
+        "reviewId":  "01a153ea-7d8b-73c2-a8fc-9e21f7732dba",
+        "pluginId":  "01a14edf-8677-7c04-9e99-c7d265d157cb",
+        "sourceKind":  "community",
+        "title":  "dsh-plugin-marketplace 1.7.1 安全参照系：17 项滥用检查全过，但不覆盖包名归属（#1040）",
+        "revisionId":  "01a153ea-7fa7-71e1-8a6f-dd6405f04466",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-19T11:27:27.998Z"
+    },
+    {
+        "reviewId":  "01a153ea-7a67-72a4-9257-10c587c5803d",
+        "pluginId":  "01a151f5-6f42-7d2d-8a7a-4dd1da9b257c",
+        "sourceKind":  "community",
+        "title":  "dsh-ppt 0.11.0 增量安全审计：模型侧 image.src 越界读盘",
+        "revisionId":  "01a153ea-7c81-73de-9cc8-22a11ff42351",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-19T11:27:27.994Z"
+    },
+    {
+        "reviewId":  "01a153ea-7723-7272-abff-935a8e4d534c",
+        "pluginId":  "01a14e68-7104-72d5-bb31-1dfd370dd009",
+        "sourceKind":  "community",
+        "title":  "dsh-web-search-pool 0.4.0→0.5.0 增量测评：凭据解析绕过请求超时 + 匿名回退 + 任意 env 引用",
+        "revisionId":  "01a153ea-7945-7656-b459-653f51004eb7",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-19T11:27:17.948Z"
+    },
+    {
+        "reviewId":  "01a153e8-10b7-73c2-87c6-499e27b849ec",
+        "pluginId":  "01a1503c-2ed2-7c72-94e5-49d353c547f1",
+        "sourceKind":  "community",
+        "title":  "dsh-fish 0.10.4 元包增量安全审计：ssh 零审批 + git-sync 写入 + title-refresh 路由",
+        "revisionId":  "01a153e8-1306-745e-89b1-a4acce3cf7bf",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-19T11:24:47.812Z"
+    },
+    {
+        "reviewId":  "01a152c8-94a0-7638-a040-ee5c9058e8bf",
+        "pluginId":  "01a14edf-a263-7643-a53f-4f03e8a6faff",
+        "sourceKind":  "community",
+        "title":  "标准测评结论 · @hyzyn/dsh-profile 0.2.9（能力五状态：不适用）",
+        "revisionId":  "01a153e5-d067-71bb-ac38-526def3fe346",
+        "revisionNumber":  2,
+        "publishedAt":  "2026-10-19T11:22:17.672Z"
+    },
+    {
+        "reviewId":  "01a1522e-bc90-7e90-be45-5d72175377e4",
+        "pluginId":  "01a14edf-a0ac-7831-b19e-bd86c7a3045b",
+        "sourceKind":  "community",
+        "title":  "标准测评结论 · @hyzyn/dsh-mcp 0.3.6（能力五状态：不适用）",
+        "revisionId":  "01a153e5-584b-785f-93ee-0f8cbb59f372",
+        "revisionNumber":  2,
+        "publishedAt":  "2026-10-19T11:21:47.642Z"
+    },
+    {
+        "reviewId":  "01a153e4-7950-73d3-8d31-66a0a03992fd",
+        "pluginId":  "01a151fa-7084-7d65-b7f8-f83ea1ecb30e",
+        "sourceKind":  "community",
+        "title":  "dsh-lan-access 0.1.3 增量安全审计：0.0.0.0 放大链与 injectHead 单判据",
+        "revisionId":  "01a153e4-7bc1-7aae-91a0-bc3f0dfa30ea",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-19T11:20:47.586Z"
+    },
+    {
+        "reviewId":  "01a153e4-75e4-77eb-b070-1bb8a364e063",
+        "pluginId":  "01a15205-fe9c-7e11-86d7-53af2f959e58",
+        "sourceKind":  "community",
+        "title":  "dsh-plugin-iot-thinking 0.1.0 安全审计：未授权配置接口劫持压缩路由 + 元数据泄漏",
+        "revisionId":  "01a153e4-7816-7887-8a87-d21198d8ed5e",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-19T11:20:47.584Z"
+    },
+    {
+        "reviewId":  "01a153e4-7287-7d0c-8717-33d4455b2214",
+        "pluginId":  "01a15213-aaef-75bf-af81-6cb43a6f52fb",
+        "sourceKind":  "community",
+        "title":  "dsh-client-auto-continue 0.15.0 安全审计：未授权动作路由可注入 user 消息/解除暂停",
+        "revisionId":  "01a153e4-74cc-74fe-b6ab-b6badf090778",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-19T11:20:47.582Z"
+    },
+    {
+        "reviewId":  "01a153e4-6f40-794b-85e1-4d8714597020",
+        "pluginId":  "01a14edf-9836-72b7-9777-653bab8ab89c",
+        "sourceKind":  "community",
+        "title":  "dsh-codegraph 0.6.10 增量安全审计：诊断包 args 凭据脱敏缺口",
+        "revisionId":  "01a153e4-7170-73df-978b-9d93cd93377a",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-19T11:20:47.580Z"
+    },
+    {
+        "reviewId":  "01a153e4-6bf1-7d4c-93a0-addc8bd65cbc",
+        "pluginId":  "01a14e0b-4360-791c-a9b2-4913dd8d8cf8",
+        "sourceKind":  "community",
+        "title":  "dsh-code-review 0.1.2 增量代码审计：超时文案、commit 静默降级与敏感文件名误报",
+        "revisionId":  "01a153e4-6e24-7747-8380-13a8ac030e37",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-19T11:20:47.573Z"
+    },
+    {
+        "reviewId":  "01a1521e-8cac-7d3b-afe3-5438eea9d8cc",
+        "pluginId":  "01a14f26-e928-71f2-be2d-45d7e9753499",
+        "sourceKind":  "community",
+        "title":  "标准测评报告 · dsh-codex-port 0.3.0（能力五状态）",
+        "revisionId":  "01a153e4-61a6-702f-ae23-313e9bae0338",
+        "revisionNumber":  3,
+        "publishedAt":  "2026-10-19T11:20:47.570Z"
+    },
+    {
+        "reviewId":  "01a153e3-eea5-7c1c-83f2-8173cbf703af",
+        "pluginId":  "01a15211-9b21-7b2d-888a-f06582e68718",
+        "sourceKind":  "community",
+        "title":  "dsh-security-audit 0.0.1 增量安全审计：UPPER_SNAKE/AWS/Bearer/JWT 漏检 + displayUrl 尾段泄漏",
+        "revisionId":  "01a153e4-3077-7939-836b-4e8f106c3383",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-19T11:20:27.513Z"
+    },
+    {
+        "reviewId":  "01a152c7-8927-79b1-83dd-52a3febff7fd",
+        "pluginId":  "01a14cb1-b39e-791d-bc49-4d949e20be87",
+        "sourceKind":  "community",
+        "title":  "标准测评结论 · dsh-locale-es-419 1.0.0（能力五状态：不适用）",
+        "revisionId":  "01a153d1-0dc5-7ed1-8057-9fad70cf567e",
+        "revisionNumber":  2,
+        "publishedAt":  "2026-10-19T10:59:35.992Z"
+    },
+    {
+        "reviewId":  "01a152c8-23b1-7da3-a4ca-510e314cdb5c",
+        "pluginId":  "01a14e0b-4360-791c-a9b2-4913dd8d8cf8",
+        "sourceKind":  "community",
+        "title":  "标准测评报告 · dsh-code-review v0.1.1（能力五状态）",
+        "revisionId":  "01a153d0-3fd9-79a0-9044-08e231134e0d",
+        "revisionNumber":  2,
+        "publishedAt":  "2026-10-19T10:58:45.942Z"
+    },
+    {
+        "reviewId":  "01a152c9-ed02-7a06-a1f8-2814ab652f4f",
+        "pluginId":  "01a151f4-e339-77e2-a3b1-982596198feb",
+        "sourceKind":  "community",
+        "title":  "标准测评报告 · dsh-flakefinder 0.3.5（能力五状态）",
+        "revisionId":  "01a1537d-40b7-77f9-bb95-8a23fbba8cb3",
+        "revisionNumber":  3,
+        "publishedAt":  "2026-10-19T09:28:01.592Z"
+    },
+    {
+        "reviewId":  "01a1536d-7872-71eb-9bf5-ffcd82dc1154",
+        "pluginId":  "01a1536d-5ae3-7bdc-a212-39aeb25230ff",
+        "sourceKind":  "community",
+        "title":  "dsh-arbiter-wf 0.8.4-stable 实测 ",
+        "revisionId":  "01a15376-3491-7bca-9433-eda42b3636ac",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-19T09:20:21.128Z"
+    },
+    {
+        "reviewId":  "01a15352-3535-7daf-b139-3393bbb28228",
+        "pluginId":  "01a14e0b-af4d-787a-8d48-cd2cc8f7738a",
+        "sourceKind":  "community",
+        "title":  "dsh-lore 0.9.2 真实宿主体验快测：索引注入开关保存后需重启（方法试验）",
+        "revisionId":  "01a15357-cc13-7d23-9552-e8f448a784e2",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-19T08:47:09.440Z"
+    },
+    {
+        "reviewId":  "01a15308-d641-77a2-a625-4cad735aa111",
+        "pluginId":  "01a151f5-8b40-7176-92b6-e3f9a139c564",
+        "sourceKind":  "community",
+        "title":  "标准测评报告 · dsh-rss 0.7.0（能力五状态）",
+        "revisionId":  "01a15351-7d43-7ba1-b151-e758d13530f2",
+        "revisionNumber":  2,
+        "publishedAt":  "2026-10-19T08:40:19.075Z"
+    },
+    {
+        "reviewId":  "01a152c8-f7b6-79cd-ad75-443a2cd2af85",
+        "pluginId":  "01a151f5-a679-72dc-b14f-f6183bace52c",
+        "sourceKind":  "community",
+        "title":  "dsh-sql 标准测评 v0.1（能力五状态 · 首个示范）",
+        "revisionId":  "01a1532f-8a61-75ca-a831-4be05052c8e4",
+        "revisionNumber":  2,
+        "publishedAt":  "2026-10-19T08:03:11.550Z"
+    },
+    {
+        "reviewId":  "01a152b2-2c3e-75f9-9b3c-342deea30112",
+        "pluginId":  "01a14e0b-4360-791c-a9b2-4913dd8d8cf8",
+        "sourceKind":  "community",
+        "title":  "dsh-code-review 插件真有用——它把代码评审变成可自动触发、可留档、带敏感点名的流程；但别指望它比同一个强模型裸评多抓 bug，这次配对没有增量，还漏了一个超时单元。",
+        "revisionId":  "01a152cf-c2e6-7b24-ba82-0c018176ee6e",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-19T06:18:36.503Z"
+    },
+    {
+        "reviewId":  "01a15206-1093-759c-82d8-c6136c0b59ca",
+        "pluginId":  "01a15205-fe9c-7e11-86d7-53af2f959e58",
+        "sourceKind":  "community",
+        "title":  "dsh-plugin-iot-thinking 0.1.0 实测：thinking 压缩真在工作（27.1%），但版本化安装下装完会静默未激活",
+        "revisionId":  "01a15213-e438-7fbe-886c-b3d33bc545c8",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-19T02:53:25.620Z"
+    },
+    {
+        "reviewId":  "01a15032-ad69-7bf1-9ee5-407ce8b4d87d",
+        "pluginId":  "01a14edf-a5ca-700f-a68e-6c7932cb0891",
+        "sourceKind":  "community",
+        "title":  "@hyzyn/dsh-rss 0.4.9 测评：解析 ReDoS、超大响应体与盲 SSRF",
+        "revisionId":  "01a15032-ff81-7e54-8584-f5b97c42a8c7",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-18T18:08:04.400Z"
+    },
+    {
+        "reviewId":  "01a15032-1823-7101-b5f9-d07a2bc67ac2",
+        "pluginId":  "01a14edf-9efa-769f-927f-3febfd25f820",
+        "sourceKind":  "community",
+        "title":  "@hyzyn/dsh-loglens 0.1.2 测评：Loki 凭据回显 + 阿里云元数据围栏缺口",
+        "revisionId":  "01a15032-7f88-7877-81c2-b016010e04a3",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-18T18:07:34.369Z"
+    },
+    {
+        "reviewId":  "01a15031-528c-7fc2-8198-585ac3281c2f",
+        "pluginId":  "01a14f27-30d9-79b3-9cda-561ad8e46126",
+        "sourceKind":  "community",
+        "title":  "dsh-ffmpeg 0.5.0 测评：字幕单引号转义 + 覆写保护缺口",
+        "revisionId":  "01a15031-ef5c-7b0f-87f5-6daa2e221c16",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-18T18:06:54.145Z"
+    },
+    {
+        "reviewId":  "01a15030-a44a-75a2-8f61-f1db8c45ed2c",
+        "pluginId":  "01a14f26-f467-75f2-b20d-90b91fe67ffd",
+        "sourceKind":  "community",
+        "title":  "dsh-dingtalk 0.2.2 测评：响应体超时失效 + webhook 错误泄露 token",
+        "revisionId":  "01a15031-245d-793f-9743-c851baae5944",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-18T18:06:04.100Z"
+    },
+    {
+        "reviewId":  "01a1500c-9611-7e70-8801-5eca7e192ef4",
+        "pluginId":  "01a14f27-18b9-7895-8666-4ec7d0dec1a9",
+        "sourceKind":  "community",
+        "title":  "dsh-dream 0.10.0 实测：工具链与面板可用，自动整理因凭据未验",
+        "revisionId":  "01a1500c-9874-73c2-984a-8ee95cbd37fe",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-18T17:26:12.247Z"
+    },
+    {
+        "reviewId":  "01a14fd6-c74c-7c12-b107-9f7ea5d0b819",
+        "pluginId":  "01a14f78-bc3c-7841-9386-01da21a5de0e",
+        "sourceKind":  "community",
+        "title":  "chuanban-dsh-writingset 0.3.0 实测：工具面可用，Windows 安装与自检有坑",
+        "revisionId":  "01a14fd6-c98b-7870-853e-36f97f4e0567",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-18T16:27:20.755Z"
+    },
+    {
+        "reviewId":  "01a14fd1-5755-713e-aa14-c367741da135",
+        "pluginId":  "01a14e68-1af5-7b49-9bc5-3471b488933b",
+        "sourceKind":  "community",
+        "title":  "dsh-memory-context-lab v0.12.0 测评：76 套件全绿，但同进程写锁在并发下会误报/互斥失效",
+        "revisionId":  "01a14fd1-7fb9-7334-891c-b354d464c7b8",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-18T16:21:40.509Z"
+    },
+    {
+        "reviewId":  "01a14fd1-0f3d-7ab3-9cb3-c670382a9c15",
+        "pluginId":  "01a14cb1-9651-712e-b29c-238c45e18849",
+        "sourceKind":  "community",
+        "title":  "OpenBitFun `dsh-openbitfun` 0.1.0 短评：initialize 仍用协议 v1，v6 主机首跳 `-32602`",
+        "revisionId":  "01a14fd1-3280-7d4a-9f19-0fde140a4fa9",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-18T16:21:20.479Z"
+    },
+    {
+        "reviewId":  "01a14fd0-c6aa-712d-bfbd-3c5285bb7a90",
+        "pluginId":  "01a14f26-e928-71f2-be2d-45d7e9753499",
+        "sourceKind":  "community",
+        "title":  "dsh-codex-port 0.3.0 测评：allowed-tools 被强制改成 Bash + `~` 路径静默错位",
+        "revisionId":  "01a14fd0-e8b3-7d81-a80d-70d41d95ad12",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-18T16:21:00.445Z"
+    },
+    {
+        "reviewId":  "01a14fcf-cb9a-7e1e-b712-51a5be9e738f",
+        "pluginId":  "01a14f25-bb07-727e-97d7-aba8f5657747",
+        "sourceKind":  "community",
+        "title":  "dsh-calendar 0.11.0 测评：start-only 默认窗口错误 + health 回显 URL 凭据",
+        "revisionId":  "01a14fd0-4156-7753-a9c9-9d2f19a2d5b5",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-18T16:20:20.399Z"
+    },
+    {
+        "reviewId":  "01a14fcf-a0b9-72f4-a651-67d9194d185f",
+        "pluginId":  "01a14f27-23eb-7249-b7eb-bc1e1222c5cd",
+        "sourceKind":  "community",
+        "title":  "dsh-email 0.17.1 测评：IMAP/SMTP 认证串回显与 STARTTLS 降级",
+        "revisionId":  "01a14fcf-a619-79d3-9d23-d85f3410c267",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-18T16:19:40.368Z"
+    },
+    {
+        "reviewId":  "01a14fce-05ff-7f4e-8f25-842519c553b5",
+        "pluginId":  "01a14f26-ffab-7e72-8222-fe114f74b65a",
+        "sourceKind":  "community",
+        "title":  "@stardustlc/dsh-docker 0.4.2 测评：审批门空白绕过 + 输出面正确性",
+        "revisionId":  "01a14fcf-4ca9-75c1-ae82-888bf681cfc1",
+        "revisionNumber":  1,
+        "publishedAt":  "2026-10-18T16:19:10.340Z"
+    },
+    {
+        "reviewId":  "01a14eab-4804-79bb-aeaf-6702f7de0a40",
+        "pluginId":  "01a14e68-7104-72d5-bb31-1dfd370dd009",
+        "sourceKind":  "community",
+        "title":  "dsh-web-search-pool 0.4.0 双平台实测：Windows 匿名搜索受阻，Linux provider 可用",
+        "revisionId":  "01a14f14-243d-7b10-9782-87c96cac979f",
+        "revisionNumber":  2,
+        "publishedAt":  "2026-10-18T12:54:48.825Z"
+    }
+]

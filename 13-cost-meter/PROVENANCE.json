@@ -1,0 +1,123 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-22T01:56Z",
+  "target": {
+    "repo": "Sttrevens/dsh-cost-meter",
+    "repoUrl": "https://github.com/Sttrevens/dsh-cost-meter",
+    "author": { "npmMaintainer": "steven-wu <quacleswoo@gmail.com>", "licenseCopyright": "Sttrevens" },
+    "displayName": "dsh-cost-meter",
+    "description": "dsh plugin: live USD cost badge (whole-session + per-turn) from provider token usage and a configurable pricing table.",
+    "keywords": ["deepseek", "deepseek-harness", "dsh", "plugin", "cost", "token", "usage", "pricing"],
+    "license": "MIT",
+    "licenseFile": { "path": "LICENSE", "sha256": "5d5b3a22e1e8e14a600bf3fdf025eae33494563f5a70c478a2c8950c22d81178" },
+    "sourceCommit": "9f8a924f2496856f671a508aca44bff7d3377770",
+    "sourceCommitRelation": "npm package gitHead equals ASSIGNMENT.json source_commit — the published tarball was built from that commit"
+  },
+  "artifact": {
+    "kind": "npm tarball (published dist)",
+    "spec": "@steven-wu/dsh-cost-meter@0.1.0-rc.3",
+    "shasum": "6ebd7cba8e57ff4870687ac4f503afa834df875b",
+    "integrity": "sha512-ZLvTNe2YoeKkK5BVXutIoJUqMxuRvrczgCj6aDYLsM5zG4+av4vkAcdIlSyT8gJLWhowHx3VL7WJFJ1TRRTJ1g==",
+    "tarballSha1Verified": "6ebd7cba8e57ff4870687ac4f503afa834df875b",
+    "tarballSha256": "261525a7a88ebe2e8f61dc366db603c03e79d2ce7e166852ce4a51d4a3ef7c2d",
+    "tarballFile": "steven-wu-dsh-cost-meter-0.1.0-rc.3.tgz",
+    "fileCount": 8,
+    "unpackedSize": 21780,
+    "publishedAt": "2026-08-17T05:40:07.338Z",
+    "registry": "https://mirrors.cloud.tencent.com/npm (npm view), unpacked from `npm pack`",
+    "fileHashesSha256": {
+      "cordis.patch.yml": "9601a02688e9a8936f24b1670235b4832c5aad8bd14a5ef8bd9fb8f84dd6f710",
+      "LICENSE": "5d5b3a22e1e8e14a600bf3fdf025eae33494563f5a70c478a2c8950c22d81178",
+      "package.json": "02e8ad23eebff67b5785b522989a23eca0a85afed8d7d0e5b5e55cafac9b97d5",
+      "README.md": "370b7da93da5198e63234f9fe87deb3f79287d6559428eb539bcadb434c65e3a",
+      "lib/client.d.ts": "d7012edc67f426ea8741ca2abc44f6465b9641c2c4f8a6ca26a7ebb125f702ef",
+      "lib/client.js": "1029b3bbd8324be6e6ec6f449059bd8dc2e1fb89a7f5bfb12744099420447b34",
+      "lib/index.d.ts": "1a913902761afa97ec2dc11f72dfd3e098cadf961b802107885fbd33116f2bc6",
+      "lib/index.js": "9a9367ca5d27d01fc3082a919d5cefeba7def89ec20de082f1563132a28069a6"
+    },
+    "integrityCheck": "sha1 of the downloaded tarball equals the registry shasum; npm reported the same shasum and integrity on pack as `npm view` did"
+  },
+  "host": {
+    "package": "@deepseek-ai/dsh",
+    "version": "0.2.0-rc.2",
+    "cliPath": "C:\Users\USER\\AppData\\Roaming\\npm\\node_modules\\@deepseek-ai\\dsh\\lib\\bin.js",
+    "invocation": "--profile cm --host 127.0.0.1 --port 0 --no-open",
+    "relatedHostPackages": {
+      "@deepseek-ai/dsh-session-projection": "0.2.0-rc.2",
+      "@deepseek-ai/dsh-client-ui-conversation": "0.2.0-rc.2",
+      "@deepseek-ai/cordis": "4.0.4"
+    },
+    "hostModelCatalog": {
+      "source": "GET /api/session/modelCatalog on the isolated host",
+      "provider": "deepseek-official",
+      "defaultModel": "deepseek-flash",
+      "models": ["deepseek-flash", "deepseek-v4-pro"]
+    }
+  },
+  "browser": {
+    "engine": "Microsoft Edge",
+    "executable": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
+    "driver": "Playwright 1.64.1 (read-only reference at H:\\CODEX\\dsh-code-security-review-20261019\\tooling\\node_modules\\playwright\\index.mjs)",
+    "mode": "headless, isolated context, service workers blocked, non-local hosts aborted",
+    "viewports": ["1440x1000", "1000x800", "760x800", "600x800"],
+    "colorSchemes": ["light", "dark"]
+  },
+  "pricingBasis": {
+    "pluginDefaultTable": {
+      "source": "lib/index.js DEFAULT_PRICING (read from the published tarball)",
+      "currency": "USD",
+      "per": 1000000,
+      "default": { "input": 0.6525, "output": 1.9575, "cacheRead": 0.02175, "cacheWrite": 0 },
+      "models": {
+        "deepseek-official/deepseek-v4-pro": { "input": 0.6525, "output": 1.9575, "cacheRead": 0.02175, "cacheWrite": 0 },
+        "deepseek-official/deepseek-v4-flash": { "input": 0.2175, "output": 0.6525, "cacheRead": 0.00725, "cacheWrite": 0 }
+      },
+      "selfDescribedBasis": "source comment: '2026-08-17 DeepSeek 涨价（峰谷分时）：空闲时段为高峰的一半。此处按空闲时段报价…沿用 pi 既有汇率 1 元 ≈ $0.145'"
+    },
+    "officialTable": {
+      "source": "https://api-docs.deepseek.com/quick_start/pricing",
+      "fetchedAt": "2026-10-22T01:48Z",
+      "offPeakUsdPer1M": {
+        "deepseek-flash": { "inputCacheHit": 0.003, "inputCacheMiss": 0.15, "output": 0.6 },
+        "deepseek-v4-pro": { "inputCacheHit": 0.022, "inputCacheMiss": 0.66, "output": 1.98 }
+      },
+      "peakMultiplier": 2,
+      "peakHoursUtc": "01:00-04:00 and 06:00-10:00, Monday-Friday, excluding Chinese public holidays",
+      "noteOnNames": "the official page states `deepseek-flash` is the model name and the legacy `deepseek-v4-flash` is retired and billed at the Flash price"
+    }
+  },
+  "fixtures": {
+    "generator": "make-sessions.mjs",
+    "persistenceBackend": "official @deepseek-ai/dsh-session-persistence-jsonl (zstd), no model calls",
+    "sessions": [
+      { "id": "sess-cm-main", "purpose": "3 turns, normal usage, v4-pro", "expectedSessionLabel": "$0.0346" },
+      { "id": "sess-cm-nousage", "purpose": "assistant/message with no usage field at all", "expectedPriced": false },
+      { "id": "sess-cm-zerousage", "purpose": "usage present but every bucket zero", "expectedPriced": false },
+      { "id": "sess-cm-tiny", "purpose": "1 input token", "expectedLabel": "$0.00000" },
+      { "id": "sess-cm-huge", "purpose": "48M/12M/9.6M/2M tokens", "expectedLabel": "$55.02" },
+      { "id": "sess-cm-unknown", "purpose": "provider+model absent from the price table", "expectedLabel": "$2.61" },
+      { "id": "sess-cm-flash", "purpose": "the plugin's own deepseek-v4-flash key", "expectedLabel": "$0.0545" }
+    ],
+    "costIncurred": "none — no model was called, no balance or API key was read"
+  },
+  "cleanup": {
+    "hostProcesses": [
+      { "tag": "h1", "pid": 21492, "stopped": true, "method": "Stop-Process by pid from evidence/h1-host.local.json" },
+      { "tag": "h2", "pid": 36480, "stopped": true, "method": "Stop-Process by pid from evidence/h2-host.local.json" }
+    ],
+    "strayFiles": [
+      {
+        "path": "C:\Users\USER\\.dsh\\cost-pricing.json",
+        "createdBy": "my own probe-06 run without DSH_HOME (the plugin writes default pricing on first boot by design)",
+        "verifiedMineBy": "creation timestamp 2026-10-22 09:44:03 matched the run; no such file existed in the pre-run directory listing",
+        "action": "removed; copy kept at evidence/stray-created-by-my-probe-cost-pricing.json",
+        "laterRuns": "DSH_COST_PRICING pinned inside the task dir; verified absent after every subsequent run"
+      }
+    ]
+  },
+  "tools": {
+    "node": "v24.19.0",
+    "npm": "11.17.0",
+    "os": "Windows 10 10.0.19045"
+  }
+}

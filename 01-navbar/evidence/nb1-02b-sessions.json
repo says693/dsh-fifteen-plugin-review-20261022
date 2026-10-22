@@ -1,0 +1,246 @@
+{
+  "labels": [
+    {
+      "i": 0,
+      "text": "workspace"
+    },
+    {
+      "i": 1,
+      "text": "新会话"
+    },
+    {
+      "i": 2,
+      "text": "未命名 2分钟"
+    },
+    {
+      "i": 3,
+      "text": "未命名 2分钟"
+    },
+    {
+      "i": 4,
+      "text": "未命名 2分钟"
+    },
+    {
+      "i": 5,
+      "text": "未命名 2分钟"
+    },
+    {
+      "i": 6,
+      "text": "未命名 2分钟"
+    }
+  ],
+  "results": [
+    {
+      "index": 0,
+      "label": "workspace",
+      "clicked": true,
+      "hasFlow": false,
+      "scrollTop": null,
+      "scrollHeight": null,
+      "clientHeight": null,
+      "allRows": 0,
+      "userRows": 0,
+      "navDisplay": "none",
+      "navRect": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "navLeft": "",
+      "dots": 0,
+      "dotLabels": [],
+      "dotRect0": null,
+      "dotRectLast": null,
+      "activeCount": 0,
+      "activeIdx": -1,
+      "mores": 0,
+      "loadOlderVisible": false,
+      "textHead": "新会话 Ctrl + Alt + N 插件 工作区 workspace 设置 探索未至之境 预览版 workspace 标准模式 描述你想要构建的内容, / 调用指令, @ 文件或对话 工作区内修改 DeepSeek-V41-Flash High"
+    },
+    {
+      "index": 1,
+      "label": "新会话",
+      "clicked": false,
+      "hasFlow": false,
+      "scrollTop": null,
+      "scrollHeight": null,
+      "clientHeight": null,
+      "allRows": 0,
+      "userRows": 0,
+      "navDisplay": "none",
+      "navRect": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "navLeft": "",
+      "dots": 0,
+      "dotLabels": [],
+      "dotRect0": null,
+      "dotRectLast": null,
+      "activeCount": 0,
+      "activeIdx": -1,
+      "mores": 0,
+      "loadOlderVisible": false,
+      "textHead": "新会话 Ctrl + Alt + N 插件 工作区 workspace 设置 探索未至之境 预览版 workspace 标准模式 描述你想要构建的内容, / 调用指令, @ 文件或对话 工作区内修改 DeepSeek-V41-Flash High"
+    },
+    {
+      "index": 2,
+      "label": "未命名 2分钟",
+      "clicked": false,
+      "hasFlow": false,
+      "scrollTop": null,
+      "scrollHeight": null,
+      "clientHeight": null,
+      "allRows": 0,
+      "userRows": 0,
+      "navDisplay": "none",
+      "navRect": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "navLeft": "",
+      "dots": 0,
+      "dotLabels": [],
+      "dotRect0": null,
+      "dotRectLast": null,
+      "activeCount": 0,
+      "activeIdx": -1,
+      "mores": 0,
+      "loadOlderVisible": false,
+      "textHead": "新会话 Ctrl + Alt + N 插件 工作区 workspace 设置 探索未至之境 预览版 workspace 标准模式 描述你想要构建的内容, / 调用指令, @ 文件或对话 工作区内修改 DeepSeek-V41-Flash High"
+    },
+    {
+      "index": 3,
+      "label": "未命名 2分钟",
+      "clicked": false,
+      "hasFlow": false,
+      "scrollTop": null,
+      "scrollHeight": null,
+      "clientHeight": null,
+      "allRows": 0,
+      "userRows": 0,
+      "navDisplay": "none",
+      "navRect": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "navLeft": "",
+      "dots": 0,
+      "dotLabels": [],
+      "dotRect0": null,
+      "dotRectLast": null,
+      "activeCount": 0,
+      "activeIdx": -1,
+      "mores": 0,
+      "loadOlderVisible": false,
+      "textHead": "新会话 Ctrl + Alt + N 插件 工作区 workspace 设置 探索未至之境 预览版 workspace 标准模式 描述你想要构建的内容, / 调用指令, @ 文件或对话 工作区内修改 DeepSeek-V41-Flash High"
+    },
+    {
+      "index": 4,
+      "label": "未命名 2分钟",
+      "clicked": false,
+      "hasFlow": false,
+      "scrollTop": null,
+      "scrollHeight": null,
+      "clientHeight": null,
+      "allRows": 0,
+      "userRows": 0,
+      "navDisplay": "none",
+      "navRect": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "navLeft": "",
+      "dots": 0,
+      "dotLabels": [],
+      "dotRect0": null,
+      "dotRectLast": null,
+      "activeCount": 0,
+      "activeIdx": -1,
+      "mores": 0,
+      "loadOlderVisible": false,
+      "textHead": "新会话 Ctrl + Alt + N 插件 工作区 workspace 设置 探索未至之境 预览版 workspace 标准模式 描述你想要构建的内容, / 调用指令, @ 文件或对话 工作区内修改 DeepSeek-V41-Flash High"
+    },
+    {
+      "index": 5,
+      "label": "未命名 2分钟",
+      "clicked": false,
+      "hasFlow": false,
+      "scrollTop": null,
+      "scrollHeight": null,
+      "clientHeight": null,
+      "allRows": 0,
+      "userRows": 0,
+      "navDisplay": "none",
+      "navRect": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "navLeft": "",
+      "dots": 0,
+      "dotLabels": [],
+      "dotRect0": null,
+      "dotRectLast": null,
+      "activeCount": 0,
+      "activeIdx": -1,
+      "mores": 0,
+      "loadOlderVisible": false,
+      "textHead": "新会话 Ctrl + Alt + N 插件 工作区 workspace 设置 探索未至之境 预览版 workspace 标准模式 描述你想要构建的内容, / 调用指令, @ 文件或对话 工作区内修改 DeepSeek-V41-Flash High"
+    },
+    {
+      "index": 6,
+      "label": "未命名 2分钟",
+      "clicked": false,
+      "hasFlow": false,
+      "scrollTop": null,
+      "scrollHeight": null,
+      "clientHeight": null,
+      "allRows": 0,
+      "userRows": 0,
+      "navDisplay": "none",
+      "navRect": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "navLeft": "",
+      "dots": 0,
+      "dotLabels": [],
+      "dotRect0": null,
+      "dotRectLast": null,
+      "activeCount": 0,
+      "activeIdx": -1,
+      "mores": 0,
+      "loadOlderVisible": false,
+      "textHead": "新会话 Ctrl + Alt + N 插件 工作区 workspace 设置 探索未至之境 预览版 workspace 标准模式 描述你想要构建的内容, / 调用指令, @ 文件或对话 工作区内修改 DeepSeek-V41-Flash High"
+    }
+  ],
+  "errors": [],
+  "consoleLog": []
+}

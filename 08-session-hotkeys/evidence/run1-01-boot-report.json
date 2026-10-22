@@ -1,0 +1,227 @@
+{
+  "host": {
+    "pid": 29524,
+    "url": "http://127.0.0.1:2280/?token=REDACTED",
+    "profile": "shk",
+    "utc": "2026-10-22T00:59:17.245Z"
+  },
+  "utc": "2026-10-22T01:00:00.964Z",
+  "before": {
+    "url": "http://127.0.0.1:2280/",
+    "origin": "http://127.0.0.1:2280",
+    "rowCount": 1,
+    "rows": [
+      {
+        "key": "session:session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e",
+        "sel": "true",
+        "text": "新会话"
+      }
+    ],
+    "activeKey": "session:session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e",
+    "activeText": "新会话",
+    "activeElement": {
+      "tag": "H2",
+      "role": null,
+      "aria": null,
+      "cls": "jLrgrW_title",
+      "id": ""
+    },
+    "toast": null,
+    "toastText": null,
+    "panelPresent": false,
+    "confirmDialog": true,
+    "storageKeys": [
+      "dsh.session-hotkeys.dsvHidden",
+      "dsh.sessions.current",
+      "dsh.workspace.view.v5",
+      "dsh.sidebar-right.v1.session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e"
+    ],
+    "ls": {
+      "dsh.session-hotkeys.dsvHidden": "0",
+      "dsh.sessions.current": "{\"sessionId\":\"session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e\"}",
+      "dsh.workspace.view.v5": "{\"groupBy\":\"workspace\",\"orderBy\":\"updated\",\"groupExpansion\":{\"194af2d3-53e4-4f7e-b44f-e51c135ab047\":true},\"sessionOrderByAccount\":{},\"archivedFilter\":\"default\"}",
+      "dsh.sidebar-right.v1.session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e": "{\"bySession\":{\"session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e\":{\"layout\":{\"nodes\":{\"pane1\":{\"kind\":\"pane\",\"id\":\"pane1\",\"host\":\"dock\",\"tabs\":[]}},\"tabs\":{},\"rootId\":\"pane1\",\"floats\":[],\"activePaneId\":\"pane1\",\"expanded\":false,\"mode\":\"push\"},\"minted\":1}}}"
+    },
+    "sessionInputValue": null,
+    "sessionInputFocused": null
+  },
+  "injected": {
+    "shkElementCount": 1,
+    "shkClasses": [
+      "shk-pinbtn"
+    ],
+    "scripts": [],
+    "perfEntries": [
+      "http://127.0.0.1:2280/plugins/??@deepseek-ai/dsh-client-ui-open-in-app/client.js,@deepseek-ai/dsh-api-gateway/client.js,@deepseek-ai/dsh-api-job-controller/client.js,@deepseek-ai/dsh-api-terminal-controller/client.js,@deepseek-ai/dsh-api-workspace-files/client.js,@deepseek-ai/dsh-client-ui-settings-account/client.js,@deepseek-ai/dsh-client-hmr/client.js,@deepseek-ai/dsh-cordis-client-runner/client.js,@deepseek-ai/dsh-client-ui-theme/client.js,@deepseek-ai/dsh-client-locale/client.js,@deepseek-ai/dsh-client-shortcuts/client.js,@deepseek-ai/dsh-client-ui-shortcuts/client.js,@deepseek-ai/dsh-client-ui-layout/client.js,@deepseek-ai/dsh-client-ui-renderer/client.js,@deepseek-ai/dsh-client-ui-session/client.js,@deepseek-ai/dsh-client-resources/client.js,@deepseek-ai/dsh-client-ui-sidebar/client.js,@deepseek-ai/dsh-client-ui-sidebar-right/client.js,@deepseek-ai/dsh-client-ui-sidebar-documentpreview/client.js,@deepseek-ai/dsh-client-ui-sidebar-terminal/client.js,@deepseek-ai/dsh-client-ui-sidebar-files/client.js,@deepseek-ai/dsh-client-ui-settings/client.js,@deepseek-ai/dsh-client-ui-settings-general/client.js,@deepseek-ai/dsh-client-ui-settings-models/client.js,@deepseek-ai/dsh-client-ui-plugin-manager/client.js,@deepseek-ai/dsh-client-ui-settings-plugin-inventory/client.js,@deepseek-ai/dsh-client-ui-conversation/client.js,@deepseek-ai/dsh-client-ui-approval/client.js,@deepseek-ai/dsh-client-ui-chat/client.js,@deepseek-ai/dsh-client-ui-brand-official/client.js,@deepseek-ai/dsh-client-ui-attachment/client.js,@deepseek-ai/dsh-client-ui-tool/client.js,@deepseek-ai/dsh-client-ui-cordis/client.js,@deepseek-ai/dsh-client-ui-workspace/client.js,@deepseek-ai/dsh-client-ui-workflow-run/client.js,@deepseek-ai/dsh-client-ui-input-trigger/client.js,@deepseek-ai/dsh-client-ui-commands/client.js,@deepseek-ai/dsh-client-ui-skill/client.js,@deepseek-ai/dsh-client-ui-subagent/client.js,@deepseek-ai/dsh-client-ui-reference/client.js,@deepseek-ai/dsh-client-ui-jobs/client.js,@deepseek-ai/dsh-client-ui-goal/client.js,@deepseek-ai/dsh-client-ui-message-feedback/client.js,@deepseek-ai/dsh-client-ui-model-selection/client.js,@deepseek-ai/dsh-client-ui-permission-presets/client.js,@deepseek-ai/dsh-client-ui-agent-preset/client.js,@deepseek-ai/dsh-client-ui-settings-session-log/client.js,@deepseek-ai/dsh-client-ui-settings-plugins/client.js,@deepseek-ai/dsh-client-ui-settings-shell/client.js,@deepseek-ai/dsh-client-ui-settings-agent-loop/client.js,@deepseek-ai/dsh-client-ui-settings-subagent/client.js,@deepseek-ai/dsh-client-ui-settings-web-search/client.js,@deepseek-ai/dsh-client-ui-plan/client.js,@deepseek-ai/dsh-client-ui-user-questions/client.js,@deepseek-ai/dsh-client-ui-trajectory/client.js,dsh-session-hotkeys/client.js,@deepseek-ai/dsh-session-log-export/client.js,@deepseek-ai/dsh-client-file-upload/client.js&rev=bc4c0327223d"
+    ]
+  },
+  "sessions": {
+    "bodyTextHasNoSessions": false
+  },
+  "errors": [],
+  "consoleLog": [],
+  "network": [
+    {
+      "path": "/plugins/",
+      "method": "GET",
+      "status": 200,
+      "utc": "2026-10-22T00:59:57.410Z"
+    },
+    {
+      "path": "/plugins/",
+      "method": "GET",
+      "status": 200,
+      "utc": "2026-10-22T00:59:57.421Z"
+    },
+    {
+      "path": "/assets/index-5SrrfWpU.js",
+      "method": "GET",
+      "status": 200,
+      "utc": "2026-10-22T00:59:57.438Z"
+    },
+    {
+      "path": "/assets/vendor-CCJJTK99.js",
+      "method": "GET",
+      "status": 200,
+      "utc": "2026-10-22T00:59:57.443Z"
+    },
+    {
+      "path": "/plugins/",
+      "method": "GET",
+      "status": 200,
+      "utc": "2026-10-22T00:59:57.606Z"
+    },
+    {
+      "path": "/api/settings/describe",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T00:59:57.930Z"
+    },
+    {
+      "path": "/api/dynamicCordisRunner/syncInspectManifest",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T00:59:57.931Z"
+    },
+    {
+      "path": "/api/credentials/describe",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T00:59:57.931Z"
+    },
+    {
+      "path": "/api/dynamicCordisRunner/inventory",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T00:59:57.931Z"
+    },
+    {
+      "path": "/api/session/modelCatalog",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T00:59:57.931Z"
+    },
+    {
+      "path": "/plugins/events",
+      "method": "GET",
+      "status": 200,
+      "utc": "2026-10-22T00:59:57.940Z"
+    },
+    {
+      "path": "/api/agentPresets/list",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T00:59:57.956Z"
+    },
+    {
+      "path": "/api/credentials/describe",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T00:59:57.957Z"
+    },
+    {
+      "path": "/api/permissionPresets/catalog",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T00:59:57.968Z"
+    },
+    {
+      "path": "/api/dynamicCordisRunner/inventory",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T00:59:57.968Z"
+    },
+    {
+      "path": "/api/agentPresets/list",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T00:59:57.970Z"
+    },
+    {
+      "path": "/api/session/list",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T00:59:57.970Z"
+    },
+    {
+      "path": "/api/agentPresets/list",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T00:59:57.988Z"
+    },
+    {
+      "path": "/api/session/modelCatalog",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T00:59:58.005Z"
+    },
+    {
+      "path": "/api/settings/describe",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T00:59:58.006Z"
+    },
+    {
+      "path": "/api/dynamicCordisRunner/syncInspectManifest",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T00:59:58.006Z"
+    },
+    {
+      "path": "/api/credentials/describe",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T00:59:58.016Z"
+    },
+    {
+      "path": "/api/workspace/initializeDefault",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T00:59:58.333Z"
+    },
+    {
+      "path": "/api/session/create",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T00:59:58.374Z"
+    },
+    {
+      "path": "/api/agentPresets/list",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T00:59:58.421Z"
+    },
+    {
+      "path": "/api/commands/list",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T00:59:58.429Z"
+    },
+    {
+      "path": "/api/skills/list",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T00:59:58.438Z"
+    }
+  ]
+}

@@ -1,0 +1,133 @@
+{
+  "object": {
+    "name": "dsh-turn-index",
+    "version": "0.1.1",
+    "author": "Simon314620",
+    "author_npm_user": "simon314620 <918283620@qq.com>",
+    "repository": "https://github.com/Simon314620/dsh-turn-index",
+    "source_commit": "a324ecde201a219448c23c1c8bbd872bdab512b4",
+    "npm_gitHead": "a324ecde201a219448c23c1c8bbd872bdab512b4",
+    "gitHead_matches_source_commit": true,
+    "license": "MIT",
+    "license_sha256": "16c756cdb45674aa4136e8a0121bfe0961fbbafab042891416d2a9cb6aee3bea",
+    "install_source": "npm 发布件（registry tarball），非源码目录安装",
+    "tested_artifact": "dsh-turn-index@0.1.1 npm tarball",
+    "source_compare": "解包后的 lib/client.js 与固定提交 a324ecd 为同一份代码（gitHead 字段一致），未单独 clone 仓库"
+  },
+  "package_integrity": {
+    "tarball": "dsh-turn-index-0.1.1.tgz",
+    "tarball_bytes": 13367,
+    "shasum_sha1": "755dda4ddfde9eabfa503ceeffc8dd7492339eb5",
+    "shasum_matches_registry": true,
+    "integrity_sha512_b64": "sha512-6WN7SojM9j81qm27XgV4lw/6R1PPBMWH9+al/kDSWUYgaKFtnIxwp3d8kzWZaWL8RiVxzUNE71mODlj8YAjz0Q==",
+    "sha256_tarball": "dd9bb98959c7c07e2ba3029b9e7834b65349fe80fec3fa69c975cd5272e2317a",
+    "sha512_hex_tarball": "e9637b4a88ccf63f35aa6dbb5e0578970ffa4753cf04c587f7e6a5fe40d259462068a16d9c8c70a7777c9335996962fc462571cd4344ef598e0e58fc6008f3d1",
+    "file_count": 11,
+    "unpacked_size": 39366,
+    "files": {
+      "lib/client.js": {
+        "bytes": 28416,
+        "sha256": "e376927d272e2f8fece9f8a3eb79c268d68ac4a555c124222309de7aab288e3a"
+      },
+      "lib/index.js": {
+        "bytes": 595,
+        "sha256": "ec0b59d3617845b5f19de5399bdb9d5a31d3df598b5ba176e13d4c573b0212b5"
+      },
+      "lib/invariant.js": {
+        "bytes": 664,
+        "sha256": "30cbd53595eb2eaa8711d5e83f455407e12d709d8a3020bc81e1ea040c170e07"
+      },
+      "package.json": {
+        "bytes": 1677,
+        "sha256": "cdccefed41d4c17aec69218f2dbfebafa2061cfd198f2e7c9c17fefa1c08fcbe"
+      },
+      "README.md": {
+        "bytes": 5198,
+        "sha256": "2998e2718c38a3ae8f11f9133a6025e8e5d40a0ccafff5b7e9a4ac12c970af67"
+      }
+    },
+    "npm_view_snapshot": "evidence/npm-view-0.1.1.json",
+    "npm_pack_log": "evidence/npm-pack.log"
+  },
+  "host": {
+    "package": "@deepseek-ai/dsh",
+    "version": "0.2.0-rc.2",
+    "bin": "C:/Users/32621/AppData/Roaming/npm/node_modules/@deepseek-ai/dsh/lib/bin.js",
+    "profile": "web",
+    "args": ["--profile", "web", "--host", "127.0.0.1", "--port", "0", "--no-open"],
+    "isolation": {
+      "DSH_HOME": "isolated-home",
+      "HOME": "isolated-home/user-home",
+      "USERPROFILE": "isolated-home/user-home",
+      "APPDATA": "isolated-home/appdata",
+      "LOCALAPPDATA": "isolated-home/localappdata",
+      "npm_config_cache": "temp/npm-cache",
+      "note": "全部指向本任务目录；未读写用户日常配置与真实会话"
+    },
+    "instances": [
+      { "tag": "h1", "origin": "http://127.0.0.1:2122", "pid": 27400, "stopped": true },
+      { "tag": "h2", "origin": "http://127.0.0.1:14959", "pid": 36368, "stopped": true },
+      { "tag": "h3", "origin": "http://127.0.0.1:7924", "pid": 7468, "stopped": true, "purpose": "冷重启重建" }
+    ],
+    "user_gui_untouched": "未访问 1241 / 2538 / 4756 任一端口"
+  },
+  "browser": {
+    "engine": "Microsoft Edge",
+    "version": "155.0.4283.62",
+    "executable": "C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe",
+    "driver": "Playwright 1.64.1",
+    "driver_module": "H:/CODEX/dsh-code-security-review-20261019/tooling/node_modules/playwright/index.mjs",
+    "mode": "headless, 独立 context, 路由仅放行 127.0.0.1/localhost/[::1]",
+    "viewports_tested": [1440, 1000, 760, 600]
+  },
+  "runtime": {
+    "os": "Microsoft Windows 11 家庭版 中文版 10.0.26200",
+    "node": "v24.19.0",
+    "npm": "11.16.0（随 node 分发；实际安装由 dsh 内置 pnpm 11.7.0 执行）",
+    "timezone": "Asia/Shanghai"
+  },
+  "fixtures": {
+    "builder": "make-sessions.mjs（官方 @deepseek-ai/dsh-session-persistence-jsonl 写入）",
+    "sessions": [
+      { "id": "sess-ti-zero", "turns": 0, "purpose": "0 轮空会话" },
+      { "id": "sess-ti-one", "turns": 1, "purpose": "1 轮最小会话" },
+      { "id": "sess-ti-six", "turns": 6, "purpose": "6 轮标准会话（第 3 轮带 steering）" },
+      { "id": "sess-ti-twenty", "turns": 20, "purpose": "20 轮长会话" },
+      { "id": "sess-ti-long", "turns": 3, "purpose": "第 2 轮用户消息 4000+ 字" }
+    ],
+    "note": "合成会话只有手写文本与 assistant/message 事件，不含真实模型生成过程；不得当作真实模型输出引用"
+  },
+  "probe_instrument": {
+    "name": "dsh-probe-ti",
+    "role": "只读探针（不改被测源码），装在隔离 profile 的 shell.overlay 座位里读取宿主真实 API",
+    "location": "probe-plugin/",
+    "installed_via": "dsh plugin --profile web add file:<任务目录>/probe-plugin",
+    "not_the_object_under_test": true
+  },
+  "dedup": {
+    "checked_at": "2026-10-22T09:12:00+08:00",
+    "review_site": {
+      "url": "https://review.lingshulab.com",
+      "method": "?q= 不生效，逐页拉全量 /reviews?page=1..9 后本地正则扫描",
+      "pages_crawled": 9,
+      "unique_review_links": 170,
+      "pattern": "turn-index|Simon314620|轮次索引",
+      "hits": 0
+    },
+    "bounty_issues": {
+      "url": "https://github.com/FuRongJun-1999/dsh-bounty/issues",
+      "method": "REST issues 分页 10 页（1000 条，第 11 页 422 需 cursor）+ search API 精确查询",
+      "issues_scanned": 1000,
+      "search_queries": {
+        "turn-index": { "total": 53, "relevant": 0, "note": "分词命中，均为 dsh-mnemon/dsh-proof 等无关条目" },
+        "turnindex": { "total": 0, "relevant": 0 },
+        "\"turn index\"": { "total": 4, "relevant": 0 },
+        "Simon314620": { "total": 0, "relevant": 0 },
+        "轮次索引": { "total": 267, "relevant": 0 }
+      },
+      "hits": 0
+    },
+    "verdict": "两站均查清，无同插件/同作者的既有稿件"
+  },
+  "generated_at": "2026-10-22T09:20:00+08:00"
+}

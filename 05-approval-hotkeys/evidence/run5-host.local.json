@@ -1,0 +1,11 @@
+{
+  "pid": 33884,
+  "url": "http://127.0.0.1:14228/?token=REDACTED",
+  "profile": "ah",
+  "utc": "2026-10-22T01:18:55.950Z",
+  "env": [
+    "DEEPSEEK_BASE_URL",
+    "DEEPSEEK_API_KEY",
+    "DSH_PERMISSION_MODE"
+  ]
+}

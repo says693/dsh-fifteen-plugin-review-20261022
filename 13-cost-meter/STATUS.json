@@ -1,0 +1,61 @@
+{
+  "dir": "r3-03-cost-meter",
+  "round": "r3",
+  "target": "Sttrevens/dsh-cost-meter",
+  "version": "@steven-wu/dsh-cost-meter@0.1.0-rc.3",
+  "stage": "completed",
+  "status": "completed",
+  "completedAt": "2026-10-22T01:58Z",
+  "blocked": false,
+  "blockReason": null,
+  "deliverables": {
+    "PLAN.md": "present",
+    "PROVENANCE.json": "present",
+    "evidence/": "present",
+    "RESULTS.json": "present",
+    "REPORT.md": "present",
+    "ISSUE_DRAFT.md": "present",
+    "SITE_REVIEW.md": "present",
+    "REPRODUCE.md": "present",
+    "STATUS.json": "present"
+  },
+  "harness": {
+    "host": "@deepseek-ai/dsh 0.2.0-rc.2",
+    "isolatedProfile": "cm",
+    "browser": "Edge headless via Playwright 1.64.1",
+    "portPolicy": "port 0 only; never 1241 / 2538 / 4756",
+    "modelCallsMade": 0,
+    "realCostIncurred": "none",
+    "realSecretsRead": "none"
+  },
+  "checks": { "confirmed": 4, "uncertain": 2, "untested": 3 },
+  "keyFindings": [
+    "P0: neither badge ever renders on host 0.2.0-rc.2 — projection registration uses schema/view while the host reads stateSchema/wire, so the client view is never produced (badgeCount 0 across every sample).",
+    "Fold and persistence are correct: the projection cache holds a sessionCost row with priced=true; only the client view is dropped.",
+    "P1: host default model id deepseek-flash is absent from the price table, so it silently falls back to the v4-pro default row: 1M in + 1M out computes $2.61 vs the official off-peak $0.75 (~3.48x).",
+    "P2: a 1-token turn formats as $0.00000, indistinguishable from a free turn.",
+    "Install is rejected by default (peerDependencies ^0.1.0-rc.6 vs host 0.2.0-rc.2); needs allow-version --accept-risk."
+  ],
+  "dedupe": {
+    "reviewSite": { "queriedAt": "2026-10-22T01:49Z", "itemsScanned": 172, "pluginsScanned": 20, "sameScopeHits": 0, "result": "first report" },
+    "githubBounty": { "queriedAt": "2026-10-22T01:54Z", "itemsScanned": 1000, "sameScopeHits": 0, "nearMisses": [{ "number": 880, "why": "context-token measurement batch, not cost display" }], "result": "first report" }
+  },
+  "processes": {
+    "h1": { "pid": 21492, "stopped": true },
+    "h2": { "pid": 36480, "stopped": true },
+    "allStopped": true
+  },
+  "cleanup": {
+    "strayFileRemoved": "C:\Users\USER\\.dsh\\cost-pricing.json (written by my own probe; verified by creation time; copy kept in evidence/)",
+    "verifiedAbsentAfter": true
+  },
+  "selfCorrections": [
+    "make-sessions.mjs sessionTotal accumulated the wrong keys (printed 0); fixed to sum u.input/u.output/u.cacheRead/u.cacheWrite.",
+    "Synthetic sessions were rejected as corrupt until request/header gained data.reason (initial|change) and non-empty provider/model.",
+    "probe-06 first run omitted DSH_HOME and let the plugin write default pricing into the real user home; removed after timestamp verification, DSH_COST_PRICING pinned for all later runs."
+  ],
+  "notes": [
+    "All amounts are computed from a price table against synthetic token counts; no model was called, so they are not a bill.",
+    "Hover behaviour, badge layout at narrow widths, and dark-theme readability could not be observed because no badge renders; they are marked untested rather than passed."
+  ]
+}

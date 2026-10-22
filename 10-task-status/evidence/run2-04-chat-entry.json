@@ -1,0 +1,158 @@
+{
+  "utc": "2026-10-22T01:37:00.094Z",
+  "steps": [
+    {
+      "label": "00-landing",
+      "hasChatFlow": false,
+      "barCount": 0,
+      "chatFlowChildCount": 0,
+      "bodyTextLen": 380,
+      "bodyTextHead": "新会话\nCtrl\n+\nAlt\n+\nN\n插件\n工作区\n默认工作区\n新会话\n设置\n探索未至之境\n预览版\n默认工作区\n标准模式\n描述你想要构建的内容, / 调用指令, @ 文件或对话\n工作区内修改\nDeepSeek-V41-Flash\nHigh\n预览版说明\n\nDeepSeek Harness 目前的 0.2 版本仍处于预览阶段，还有许多地方需要持续改进和打磨，希望听取广大开发者和用户的反馈建议。现在，新的桌面端面向广泛用户，开发者相关的进阶功能可在配置中开启使用。预计 DeepSeek Harness 的产品功能以及插件 API 都会继续快速迭代、持续演化，并逐渐趋于稳定。\n\n我们期待与全球用户和开"
+    },
+    {
+      "label": "01-after-dismiss",
+      "hasChatFlow": false,
+      "barCount": 0,
+      "chatFlowChildCount": 0,
+      "bodyTextLen": 182,
+      "bodyTextHead": "新会话\nCtrl\n+\nAlt\n+\nN\n插件\n工作区\n默认工作区\n新会话\n设置\n探索未至之境\n预览版\n默认工作区\n标准模式\n描述你想要构建的内容, / 调用指令, @ 文件或对话\n工作区内修改\nDeepSeek-V41-Flash\nHigh\n添加一个 API Key 开始使用\n\n配置 DeepSeek 官方模型，即可开始使用。\n\nAPI 密钥\n稍后配置\n保存并继续"
+    },
+    {
+      "label": "02-after-new-session",
+      "hasChatFlow": false,
+      "barCount": 0,
+      "chatFlowChildCount": 0,
+      "bodyTextLen": 182,
+      "bodyTextHead": "新会话\nCtrl\n+\nAlt\n+\nN\n插件\n工作区\n默认工作区\n新会话\n设置\n探索未至之境\n预览版\n默认工作区\n标准模式\n描述你想要构建的内容, / 调用指令, @ 文件或对话\n工作区内修改\nDeepSeek-V41-Flash\nHigh\n添加一个 API Key 开始使用\n\n配置 DeepSeek 官方模型，即可开始使用。\n\nAPI 密钥\n稍后配置\n保存并继续"
+    },
+    {
+      "label": "03-after-open-row",
+      "hasChatFlow": false,
+      "barCount": 0,
+      "chatFlowChildCount": 0,
+      "bodyTextLen": 182,
+      "bodyTextHead": "新会话\nCtrl\n+\nAlt\n+\nN\n插件\n工作区\n默认工作区\n新会话\n设置\n探索未至之境\n预览版\n默认工作区\n标准模式\n描述你想要构建的内容, / 调用指令, @ 文件或对话\n工作区内修改\nDeepSeek-V41-Flash\nHigh\n添加一个 API Key 开始使用\n\n配置 DeepSeek 官方模型，即可开始使用。\n\nAPI 密钥\n稍后配置\n保存并继续"
+    },
+    {
+      "label": "04-final",
+      "hasChatFlow": false,
+      "barCount": 0,
+      "chatFlowChildCount": 0,
+      "bodyTextLen": 182,
+      "bodyTextHead": "新会话\nCtrl\n+\nAlt\n+\nN\n插件\n工作区\n默认工作区\n新会话\n设置\n探索未至之境\n预览版\n默认工作区\n标准模式\n描述你想要构建的内容, / 调用指令, @ 文件或对话\n工作区内修改\nDeepSeek-V41-Flash\nHigh\n添加一个 API Key 开始使用\n\n配置 DeepSeek 官方模型，即可开始使用。\n\nAPI 密钥\n稍后配置\n保存并继续"
+    }
+  ],
+  "buttons": [
+    {
+      "text": "新建会话",
+      "aria": "新建会话",
+      "cls": "hHd-Xa_brand hHd-Xa_wide"
+    },
+    {
+      "text": "收起侧边栏",
+      "aria": "收起侧边栏",
+      "cls": "hHd-Xa_iconButton hHd-Xa_toggle"
+    },
+    {
+      "text": "新会话\nCtrl\n+\nAlt\n+\nN",
+      "aria": "新建会话",
+      "cls": "hHd-Xa_newSession"
+    },
+    {
+      "text": "插件",
+      "aria": "插件",
+      "cls": "hHd-Xa_panelRow"
+    },
+    {
+      "text": "搜索会话",
+      "aria": "搜索会话",
+      "cls": "bhn1Oq_searchButton"
+    },
+    {
+      "text": "视图选项",
+      "aria": "视图选项",
+      "cls": "bhn1Oq_iconButton bhn1Oq_wide"
+    },
+    {
+      "text": "添加工作区",
+      "aria": "添加工作区",
+      "cls": "bhn1Oq_iconButton"
+    },
+    {
+      "text": "设置",
+      "aria": "设置",
+      "cls": "VOzbGW_trigger"
+    },
+    {
+      "text": "打开右侧边栏",
+      "aria": "打开右侧边栏",
+      "cls": "_button_1rv3m_2 _ghost_1rv3m_45 _sm_1rv3m_28 _1kL4"
+    },
+    {
+      "text": "默认工作区",
+      "aria": "选择工作区",
+      "cls": "pXSMma_workspace"
+    },
+    {
+      "text": "标准模式",
+      "aria": null,
+      "cls": "cubgiG_seat"
+    },
+    {
+      "text": "添加文件或调用指令",
+      "aria": "添加文件或调用指令",
+      "cls": "uV2eYG_add"
+    },
+    {
+      "text": "工作区内修改",
+      "aria": "访问模式，当前：工作区内修改",
+      "cls": "iWlSmW_trigger"
+    },
+    {
+      "text": "DeepSeek-V41-Flash\nHigh",
+      "aria": "选择模型，当前 DeepSeek-V41-Flash，推理等级 High",
+      "cls": "_7KE1Ra_trigger"
+    },
+    {
+      "text": "发送消息",
+      "aria": "发送消息",
+      "cls": "uV2eYG_primary"
+    },
+    {
+      "text": "新标签页",
+      "aria": "新标签页",
+      "cls": "_addTab_6nhg2_449"
+    },
+    {
+      "text": "分栏",
+      "aria": "分栏",
+      "cls": "_iconButton_6nhg2_511"
+    },
+    {
+      "text": "全屏",
+      "aria": "全屏",
+      "cls": "P3OORG_iconButton"
+    },
+    {
+      "text": "收起右侧边栏",
+      "aria": "收起右侧边栏",
+      "cls": "P3OORG_iconButton"
+    },
+    {
+      "text": "继续",
+      "aria": null,
+      "cls": "_button_1rv3m_2 _primary_1rv3m_36 _md_1rv3m_23 t1T"
+    }
+  ],
+  "dismissed": "继续",
+  "verdict": {
+    "hasChatFlow": false,
+    "barCount": 0,
+    "buttons": 20,
+    "dismissed": "继续"
+  },
+  "errors": [],
+  "consoleLog": [],
+  "dialogs": [],
+  "taskPolls": 51
+}

@@ -1,0 +1,91 @@
+﻿{
+  "maxScroll": 1720,
+  "scrollSteps": [
+    {
+      "t": 0,
+      "actual": 0,
+      "active": [],
+      "panel": false
+    },
+    {
+      "t": 172,
+      "actual": 172,
+      "active": [],
+      "panel": false
+    },
+    {
+      "t": 344,
+      "actual": 344,
+      "active": [],
+      "panel": false
+    },
+    {
+      "t": 516,
+      "actual": 516,
+      "active": [],
+      "panel": false
+    },
+    {
+      "t": 688,
+      "actual": 688,
+      "active": [],
+      "panel": false
+    },
+    {
+      "t": 860,
+      "actual": 860,
+      "active": [],
+      "panel": false
+    },
+    {
+      "t": 1032,
+      "actual": 1032,
+      "active": [],
+      "panel": false
+    },
+    {
+      "t": 1204,
+      "actual": 1204,
+      "active": [],
+      "panel": false
+    },
+    {
+      "t": 1376,
+      "actual": 1376,
+      "active": [],
+      "panel": false
+    },
+    {
+      "t": 1548,
+      "actual": 1548,
+      "active": [],
+      "panel": false
+    },
+    {
+      "t": 1720,
+      "actual": 1720,
+      "active": [],
+      "panel": false
+    }
+  ],
+  "clickAttempt": {
+    "itemCount": 0,
+    "clicked": false
+  },
+  "collapseAttempt": {
+    "hasToggle": false,
+    "collapsed": null
+  },
+  "rapidOk": 10,
+  "rapidPanelEver": false,
+  "panelPresentBefore": false,
+  "panelPresentAfter": false,
+  "storageKeys": [
+    "dsh.sessions.current",
+    "dsh.sidebar-right.v1.sess-ti-six",
+    "dsh.sidebar-right.v1.session-cded7315-a936-41eb-a3db-96e7a8c6eac8",
+    "dsh.workspace.view.v5"
+  ],
+  "errors": [],
+  "consoleLog": []
+}

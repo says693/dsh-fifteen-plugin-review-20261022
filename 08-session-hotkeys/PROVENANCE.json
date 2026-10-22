@@ -1,0 +1,150 @@
+{
+  "plugin": {
+    "name": "dsh-session-hotkeys",
+    "version_tested": "1.9.5",
+    "tested_artifact": "npm published tarball (NOT the repository HEAD)",
+    "npm": "https://www.npmjs.com/package/dsh-session-hotkeys",
+    "registry_latest": "1.9.5",
+    "published_utc": "2026-10-01T08:54:52.434Z",
+    "author": "Captain Americano <william.yemao@gmail.com>",
+    "npm_user": "yeyeyeyeshifu",
+    "repository": "https://github.com/YEYEYEYESHIFU/dsh-session-hotkeys",
+    "license": "MIT",
+    "license_file": "source/pkg/package/LICENSE (1089 bytes)",
+    "install_channel": "local directory link from the unpacked npm tarball, installed with `dsh plugin --profile shk add <dir>`"
+  },
+  "version_discrepancy_note": {
+    "tested": "npm 1.9.5 (shasum + integrity re-verified locally)",
+    "npm_gitHead": "8281a396704cb55e128f18571901cc385ef72703",
+    "assignment_source_commit": "d1f38ebc5128a7b8fada47f0472207c2d5260393",
+    "repo_head_version_per_assignment": "1.9.2",
+    "conclusion": "The tested artifact is the npm release 1.9.5. The repository commit d1f38ebc... given in the assignment is used only for cross-checking; it is NOT the tested build, and repository HEAD (1.9.2) differs from the published 1.9.5. No claim in this review is about repository HEAD."
+  },
+  "integrity": {
+    "tarball": "temp/dsh-session-hotkeys-1.9.5.tgz",
+    "tarball_bytes": 53690,
+    "registry_shasum": "1d7500442ea03345b3d234db46fb703a34169c58",
+    "local_sha1": "1d7500442ea03345b3d234db46fb703a34169c58",
+    "shasum_match": true,
+    "registry_integrity": "sha512-e9CkjPW+KWM1l066wY/McsgCQEV9+0bmm9oboe6xb3B1wGSCQsXZkTwj5dIE3QHrgssRfJtyYqcqlKFGQnd91Q==",
+    "local_integrity_sha512_base64": "sha512-e9CkjPW+KWM1l066wY/McsgCQEV9+0bmm9oboe6xb3B1wGSCQsXZkTwj5dIE3QHrgssRfJtyYqcqlKFGQnd91Q==",
+    "integrity_match": true,
+    "unpacked_size_registry": 189903,
+    "file_count": 7,
+    "evidence": ["evidence/npm-pack.txt", "evidence/hashes.txt", "temp/npm-view.json"]
+  },
+  "file_sha256": {
+    "package.json": "78e596824629f3808befaece89ddc01b1a385e94c370b13932916f91a31f175c",
+    "lib/client.js": "2f63ec967d3aa6139e9e41ce3734a6047cf6648e56038cc42c15a2221f9b7f08",
+    "lib/index.js": "41ada662f922430035f6436fe579057324ebc72625dafc8cd19cd7935b7f12dc",
+    "cordis.patch.yml": "05a97d3e962f6d86ea7920d3b2a20d2bdf313b2ed7370824051f83d2caab3b03",
+    "README.md": "955c25880872fce778e63f04d9f59aa95ab07eda355ea8f327c96595ec4b3ebe",
+    "CHANGELOG.md": "9b7abac065ce49b3cc814ce1f8e202052d294345d1831edebf2f5f179340fd86",
+    "LICENSE": "f0d0e861e9043e3cd71ce59320313c0d6e22b4a345e35e5f226666a0658c4799"
+  },
+  "package_metadata": {
+    "type": "module",
+    "main": "lib/index.js",
+    "exports": { ".": "./lib/index.js", "./client": "./lib/client.js", "./package.json": "./package.json" },
+    "dsh.bundle.patch": "./cordis.patch.yml",
+    "dsh.client.platform": "web",
+    "dsh.client.immediately": true,
+    "dsh.client.inject": ["@deepseek-ai/dsh-client-ui-layout", "@deepseek-ai/dsh-client-ui-sidebar"],
+    "peerDependencies": {
+      "react": "^18.2.0",
+      "@deepseek-ai/dsh-client-ui-layout": "^0.1.1-rc.2 || ^0.2.0-rc.2",
+      "@deepseek-ai/dsh-client-ui-sidebar": "^0.1.1-rc.2 || ^0.2.0-rc.2"
+    },
+    "host_side_entry": "lib/index.js exports an empty apply() — the package has no host-side behaviour; all logic is in lib/client.js"
+  },
+  "host": {
+    "package": "@deepseek-ai/dsh",
+    "version": "0.2.0-rc.2",
+    "bin": "C:/Users/32621/AppData/Roaming/npm/node_modules/@deepseek-ai/dsh/lib/bin.js",
+    "profile": "shk",
+    "profile_bundles": ["@deepseek-ai/dsh-base", "@deepseek-ai/dsh-web-app", "dsh-session-hotkeys"],
+    "launch_flags": "--profile shk --host 127.0.0.1 --port 0 --no-open (evidence runs) and --port 23456 for the cold-restart test",
+    "origins_observed": [
+      "http://127.0.0.1:2280 (main evidence runs, --port 0)",
+      "http://127.0.0.1:23456 (cold-restart test, fixed port so the origin stays stable)"
+    ],
+    "profile_init_note": "`dsh --profile shk --from-default-profile web --dump-config` was needed first: a bare `dsh plugin --profile <new> add` initialises a profile with only @deepseek-ai/dsh-base, and a web host needs @deepseek-ai/dsh-web-app. This is CLI profile initialisation, not a plugin defect."
+  },
+  "isolation": {
+    "task_root": "H:/CODEX/fifteen-plugin-reviews-20261022/r2-03-session-hotkeys",
+    "DSH_HOME": "isolated-home/",
+    "HOME": "isolated-home/user-home",
+    "USERPROFILE": "isolated-home/user-home",
+    "APPDATA": "isolated-home/appdata",
+    "LOCALAPPDATA": "isolated-home/localappdata",
+    "npm_config_cache": "temp/npm-cache",
+    "browser_profile": "temp/browser-profile (Playwright launchPersistentContext, only for the cold-restart test)",
+    "workspace_cwd": "fixtures/workspace",
+    "user_daily_gui_touched": false,
+    "user_gui_ports_avoided": [1241, 2538, 4756],
+    "api_key_entered": false,
+    "onboarding_dismissed_with": "稍后配置 (configure later) — no key was typed, read or stored"
+  },
+  "tools": {
+    "node": "v24.19.0",
+    "pnpm": "11.7.0 (bundled with the dsh CLI)",
+    "playwright": "1.64.1 (H:/CODEX/dsh-code-security-review-20261019/tooling/node_modules/playwright/index.mjs, referenced read-only)",
+    "browser": "Microsoft Edge (Playwright headless, executablePath C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe)",
+    "os": "Windows x64",
+    "network_policy": "context.route allows only 127.0.0.1 / localhost / [::1]"
+  },
+  "fixtures": {
+    "note": "All sessions in this review were created inside the isolated DSH_HOME by the host itself. No user data was read or copied.",
+    "sessions_observed": [
+      "session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e (renamed 周记·第一篇; first message sent)",
+      "session-b82a64e0-a6be-45a6-a240-f057d74ca6e0 (created by the plugin's Alt+N once the current session was non-blank)",
+      "session-56ebc9f3-d112-4da0-a27d-999be30f65c6 (created during the cold-restart test)"
+    ],
+    "workspace_id": "194af2d3-53e4-4f7e-b44f-e51c135ab047"
+  },
+  "timing": {
+    "session_started_local": "2026-10-22T08:56:23+08:00",
+    "first_host_ready_utc": "2026-10-22T00:59:17Z",
+    "last_evidence_written_utc": "2026-10-22T01:15:07Z",
+    "timezone": "Asia/Shanghai (+08:00)"
+  },
+  "duplicate_check": {
+    "checked_utc": "2026-10-22T01:15:07Z",
+    "conclusion": "两站都查清，无同范围重复：GitHub dsh-bounty 按 dsh-session-hotkeys / YEYEYEYESHIFU / session-hotkeys 均 0 命中（按「会话快捷键」得 8 条，均为其他插件）；review.lingshulab.com 全量 172 条本地扫描 0 命中。",
+    "sites": [
+      {
+        "site": "https://github.com/FuRongJun-1999/dsh-bounty/issues",
+        "method": "GitHub search API, repo-scoped issue search (api.github.com/search/issues?q=<q> repo:FuRongJun-1999/dsh-bounty)",
+        "queries": [
+          {"q": "dsh-session-hotkeys", "total_count": 0, "same_scope_hits": 0},
+          {"q": "YEYEYEYESHIFU", "total_count": 0, "same_scope_hits": 0},
+          {"q": "session-hotkeys", "total_count": 0, "same_scope_hits": 0},
+          {"q": "会话快捷键", "total_count": 8, "same_scope_hits": 0, "note": "all 8 are other plugins: dsh-spotlight #1428, dsh-orb #1473, @sunwindy/dsh-tool-baixiaochun #1481, dsh-notify-me #1351, dsh-roleplay #668, dsh-sticky-note #1426, dsh-plannotator #658, chuanban-dsh-writingset #990"}
+        ],
+        "status": "checked_clear",
+        "evidence": "evidence/dupcheck-github.json"
+      },
+      {
+        "site": "https://review.lingshulab.com",
+        "method": "the site's ?q= parameter does not filter server-side, so the whole public index was pulled via /api/reviews (9 pages x 20, total 172) and scanned locally",
+        "index_total": 172,
+        "pages_fetched": 9,
+        "page_size": 20,
+        "queries": ["dsh-session-hotkeys", "session-hotkeys", "YEYEYEYESHIFU", "会话快捷键"],
+        "scan_pattern": "dsh-session-hotkeys|session-hotkeys|YEYEYEYESHIFU|会话快捷键 over the full review record JSON",
+        "same_scope_hits": 0,
+        "status": "checked_clear",
+        "evidence": "evidence/dupcheck-lingshulab.json"
+      }
+    ]
+  },
+  "processes": {
+    "hosts_created": [
+      {"tag": "run1", "origin": "http://127.0.0.1:2280", "pid": 29524, "stopped": true},
+      {"tag": "run2-host1", "origin": "http://127.0.0.1:23456", "pid": 33384, "stopped": true},
+      {"tag": "run2-host2", "origin": "http://127.0.0.1:23456", "pid": 30624, "stopped": true}
+    ],
+    "browsers": "all Playwright headless instances closed at the end of each script",
+    "final_check": "no listener on 2280 or 23456; no node process with --profile shk; the user's own GUI on 4756 (pid 21508) was never touched"
+  }
+}

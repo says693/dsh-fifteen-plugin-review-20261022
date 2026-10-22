@@ -1,0 +1,56 @@
+{
+  "rows": 25,
+  "visible": 4,
+  "hoverLog": [
+    {
+      "row": "第 21 段：这是长会话的第 21 条提问，用来检查右侧小圆点会不会挤成一团。 ",
+      "timeHoverRoot": 0,
+      "navDisplay": "none",
+      "dots": 0,
+      "hoverAttrs": [
+        "class,data-chat-anchor-key,data-chat-flow-key,data-chat-paging-anchor,data-chat-node-key,data-chat-flow-kind,data-chat-turn",
+        "class,data-chat-anchor-key,data-chat-flow-key,data-chat-paging-anchor,data-chat-node-key,data-chat-flow-kind,data-chat-turn",
+        "class,data-chat-anchor-key,data-chat-flow-key,data-chat-paging-anchor,data-chat-node-key,data-chat-flow-kind,data-chat-turn"
+      ]
+    },
+    {
+      "row": "第 22 段：这是长会话的第 22 条提问，用来检查右侧小圆点会不会挤成一团。 ",
+      "timeHoverRoot": 0,
+      "navDisplay": "none",
+      "dots": 0,
+      "hoverAttrs": [
+        "class,data-chat-anchor-key,data-chat-flow-key,data-chat-paging-anchor,data-chat-node-key,data-chat-flow-kind,data-chat-turn",
+        "class,data-chat-anchor-key,data-chat-flow-key,data-chat-paging-anchor,data-chat-node-key,data-chat-flow-kind,data-chat-turn",
+        "class,data-chat-anchor-key,data-chat-flow-key,data-chat-paging-anchor,data-chat-node-key,data-chat-flow-kind,data-chat-turn"
+      ]
+    },
+    {
+      "row": "第 23 段：这是长会话的第 23 条提问，用来检查右侧小圆点会不会挤成一团。 ",
+      "timeHoverRoot": 0,
+      "navDisplay": "none",
+      "dots": 0,
+      "hoverAttrs": [
+        "class,data-chat-anchor-key,data-chat-flow-key,data-chat-paging-anchor,data-chat-node-key,data-chat-flow-kind,data-chat-turn",
+        "class,data-chat-anchor-key,data-chat-flow-key,data-chat-paging-anchor,data-chat-node-key,data-chat-flow-kind,data-chat-turn",
+        "class,data-chat-anchor-key,data-chat-flow-key,data-chat-paging-anchor,data-chat-node-key,data-chat-flow-kind,data-chat-turn"
+      ]
+    },
+    {
+      "row": "第 24 段：这是长会话的第 24 条提问，用来检查右侧小圆点会不会挤成一团。 ",
+      "timeHoverRoot": 0,
+      "navDisplay": "none",
+      "dots": 0,
+      "hoverAttrs": [
+        "class,data-chat-anchor-key,data-chat-flow-key,data-chat-paging-anchor,data-chat-node-key,data-chat-flow-kind,data-chat-turn",
+        "class,data-chat-anchor-key,data-chat-flow-key,data-chat-paging-anchor,data-chat-node-key,data-chat-flow-kind,data-chat-turn",
+        "class,data-chat-anchor-key,data-chat-flow-key,data-chat-paging-anchor,data-chat-node-key,data-chat-flow-kind,data-chat-turn"
+      ]
+    }
+  ],
+  "afterTail": {
+    "timeHoverRoot": 0,
+    "dots": 0
+  },
+  "errors": [],
+  "consoleLog": []
+}

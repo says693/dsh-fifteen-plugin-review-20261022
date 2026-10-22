@@ -1,0 +1,93 @@
+{
+  "origin": {
+    "current": "http://127.0.0.1:5315",
+    "previous": [
+      "http://127.0.0.1:9798",
+      "http://127.0.0.1:4133"
+    ]
+  },
+  "rows": [
+    {
+      "key": "workspace:ac1753c6-dd89-451b-a529-74e44357e9e6",
+      "text": "workspace"
+    },
+    {
+      "key": "session:session-5a0b261b-2264-4e16-83c7-237905f1d656",
+      "text": "新会话"
+    },
+    {
+      "key": "session:sess-rov-tool",
+      "text": "未命名 45分钟"
+    },
+    {
+      "key": "session:sess-rov-multi",
+      "text": "ROV 多轮对照 1小时"
+    },
+    {
+      "key": "session:sess-rov-long",
+      "text": "ROV 超长回复 1小时"
+    },
+    {
+      "key": "session:sess-rov-one",
+      "text": "ROV 单轮长回复 1小时"
+    }
+  ],
+  "storageAtFreshOrigin": {
+    "keys": [
+      "dsh.workspace.view.v5",
+      "dsh.sessions.current",
+      "dsh.sidebar-right.v1.session-5a0b261b-2264-4e16-83c7-237905f1d656"
+    ],
+    "rov": null
+  },
+  "opened": true,
+  "afterOpen": {
+    "current": "{\"sessionId\":\"sess-rov-tool\"}",
+    "selected": "session:sess-rov-tool",
+    "kinds": {},
+    "toolNodes": [],
+    "subcalls": 0,
+    "flowText": "历史加载失败：stored session \"sess-rov-tool\" is corrupt: session \"sess-rov-tool\": stored log is corrupt: SessionFormatError: step/end leaves unresolved tool call call-1 (raw log: H:\\CODEX\\fifteen-plugin-reviews-20261022\\r1-04-result-only-view\\isolated-home\\dsh\\sessions\\--H-CODEX-fifteen-plugin-reviews-20261022-r1-04-result-only-view-fixtures-workspace--\\sess-rov-tool\\session.v4.jsonl.zstd)（gateway/intern",
+    "flowLen": 403
+  },
+  "toggle": {
+    "off": {
+      "pressed": "false",
+      "stored": null,
+      "styleTags": 0,
+      "think": [],
+      "tool": [],
+      "kinds": {},
+      "flowText": "历史加载失败：stored session \"sess-rov-tool\" is corrupt: session \"sess-rov-tool\": stored log is corrupt: SessionFormatError: step/end leaves unresolved tool call call-1 (raw log: H:\\CODEX\\fifteen-plugin-reviews-20261022\\r1-04-result-only-view\\isolated-home\\dsh\\sessions\\--H-CODEX-fifteen-plugin-reviews-20261022-r1-04-result-only-view-fixtures-workspace--\\sess-rov-tool\\session.v4.jsonl.zstd)（gateway/internal）",
+      "flowLen": 403
+    },
+    "on": {
+      "pressed": "true",
+      "stored": null,
+      "styleTags": 1,
+      "think": [],
+      "tool": [],
+      "kinds": {},
+      "flowText": "历史加载失败：stored session \"sess-rov-tool\" is corrupt: session \"sess-rov-tool\": stored log is corrupt: SessionFormatError: step/end leaves unresolved tool call call-1 (raw log: H:\\CODEX\\fifteen-plugin-reviews-20261022\\r1-04-result-only-view\\isolated-home\\dsh\\sessions\\--H-CODEX-fifteen-plugin-reviews-20261022-r1-04-result-only-view-fixtures-workspace--\\sess-rov-tool\\session.v4.jsonl.zstd)（gateway/internal）",
+      "flowLen": 403
+    },
+    "off2": {
+      "pressed": "false",
+      "stored": null,
+      "styleTags": 0,
+      "think": [],
+      "tool": [],
+      "kinds": {},
+      "flowText": "历史加载失败：stored session \"sess-rov-tool\" is corrupt: session \"sess-rov-tool\": stored log is corrupt: SessionFormatError: step/end leaves unresolved tool call call-1 (raw log: H:\\CODEX\\fifteen-plugin-reviews-20261022\\r1-04-result-only-view\\isolated-home\\dsh\\sessions\\--H-CODEX-fifteen-plugin-reviews-20261022-r1-04-result-only-view-fixtures-workspace--\\sess-rov-tool\\session.v4.jsonl.zstd)（gateway/internal）",
+      "flowLen": 403
+    },
+    "identical": true,
+    "answerKeptOn": false,
+    "answerKeptOff": false,
+    "toolHiddenOn": false,
+    "thinkHiddenOn": false,
+    "toolVisibleOff": false
+  },
+  "errors": [],
+  "consoleLog": []
+}

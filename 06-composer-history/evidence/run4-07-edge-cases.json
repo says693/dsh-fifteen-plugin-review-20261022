@@ -1,0 +1,83 @@
+{
+  "H1": {
+    "freshProfile": "temp\\fresh-oBaLoN",
+    "beforeUp": {
+      "text": "",
+      "caret": null,
+      "len": 0,
+      "entries": null,
+      "rawLen": 0,
+      "session": "{\"sessionId\":\"session-cc7e3400-8dbe-45a8-bfac-419ca5001c13\"}"
+    },
+    "afterUpEmpty": {
+      "text": "",
+      "caret": 0,
+      "len": 0,
+      "entries": null,
+      "rawLen": 0,
+      "session": "{\"sessionId\":\"session-cc7e3400-8dbe-45a8-bfac-419ca5001c13\"}"
+    },
+    "capAfterUp": [
+      {
+        "phase": "capture",
+        "key": "ArrowUp",
+        "preventedNow": false,
+        "text": ""
+      }
+    ],
+    "afterTypingThenUp": {
+      "text": "空历史下打的字",
+      "caret": 0,
+      "len": 7,
+      "entries": null,
+      "rawLen": 0,
+      "session": "{\"sessionId\":\"session-cc7e3400-8dbe-45a8-bfac-419ca5001c13\"}"
+    },
+    "capAfterUp2": [
+      {
+        "phase": "capture",
+        "key": "ArrowUp",
+        "preventedNow": false,
+        "text": "空历史下打的字"
+      }
+    ],
+    "errors": [],
+    "storageKeys": []
+  },
+  "H2": {
+    "beforeKeys": [
+      "text",
+      "caret",
+      "len",
+      "entries",
+      "rawLen",
+      "session"
+    ],
+    "beforeEntryCount": 3,
+    "afterInjectCount": 4,
+    "injectedLen": 20000,
+    "after120ms": {
+      "text": "第三条历史：再检查一遍错别字",
+      "len": 14
+    },
+    "settledLen": null,
+    "settledCaret": null,
+    "elapsedMsToSettle": 5434,
+    "rawLen": null,
+    "errorCount": 0
+  },
+  "H4": {
+    "overlayOnCorrupt": {
+      "found": true,
+      "status": "3 entries",
+      "rows": 3
+    },
+    "afterCorruptUp": {
+      "text": "第三条历史：再检查一遍错别字",
+      "caret": 14,
+      "len": 14
+    },
+    "rawStillCorrupt": "{not json at all",
+    "errors": []
+  }
+}

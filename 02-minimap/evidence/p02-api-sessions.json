@@ -1,0 +1,18 @@
+{
+  "api": {
+    "/api/sessions": {
+      "status": 404,
+      "body": "not found"
+    },
+    "/api/sessions?limit=50": {
+      "status": 404,
+      "body": "not found"
+    }
+  },
+  "nodes": [],
+  "listDom": {
+    "sidebarFound": true,
+    "items": []
+  },
+  "errors": []
+}

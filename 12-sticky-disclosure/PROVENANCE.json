@@ -1,0 +1,132 @@
+{
+  "schema": "provenance/v1",
+  "generated_at": "2026-10-22T10:20:00+08:00",
+  "generated_by": "evidence-transcription-pass (no new probes, no host, no browser)",
+  "target": {
+    "repo": "Han-1413141/dsh-sticky-disclosure",
+    "repo_url": "https://github.com/Han-1413141/dsh-sticky-disclosure",
+    "package_name": "dsh-sticky-disclosure",
+    "version": "1.0.1",
+    "license": "MIT",
+    "license_file": "temp/repo/LICENSE",
+    "commit": "d844605756b9d4c2f5e723ee67ea0f65476d7085",
+    "commit_author": "Miao miao <577524791@qq.com>",
+    "commit_date": "Fri Oct 2 12:32:20 2026 +0800",
+    "commit_subject": "docs: add marketplace screenshots and direct release installation",
+    "install_mode": "local-directory link (pnpm link:) into isolated profile `sdweb`",
+    "install_evidence": "evidence/02-plugin-add.txt",
+    "install_line": "+ dsh-sticky-disclosure link:H:/CODEX/fifteen-plugin-reviews-20261022/r3-02-sticky-disclosure/temp/repo"
+  },
+  "distribution_note": {
+    "npm_published": false,
+    "statement": "npm 无发布件；本报告全部结论只覆盖固定提交 d844605756b9d4c2f5e723ee67ea0f65476d7085 的源码树，**未测发布包**。",
+    "npm_check": {
+      "command": "npm view dsh-sticky-disclosure version",
+      "result": "E404 no such package",
+      "exit_code": 1,
+      "recorded_in": "PLAN.md（原始 stdout/stderr 未单独落盘到 evidence/，本次转录不补造输出）",
+      "verified": false
+    }
+  },
+  "source_hashes": {
+    "algorithm": "sha256",
+    "note": "对本地已 checkout 到固定提交的 temp/repo 计算，命令 Get-FileHash -Algorithm SHA256",
+    "files": {
+      "package.json": "c3cb0e6555c745982a43204f35b6083cc91595c3610e378df40c9ea7572f9add",
+      "lib/index.js": "4beb92bfefcb9d89a5c5d16e2e72aa383d4e2a6e193de5317d2d3deb7d726373",
+      "lib/client.js": "35f677d2b7a924a7863c8e1ca7cbca7c70905fdfc5173c40009de67643601749",
+      "cordis.patch.yml": "044d0a01eb8166978b5355b4f3f5ebca3bb05d8620876d37af78fa7cc3312ff3",
+      "LICENSE": "bf5bdfd4495059d1258f34116dbffc217b9e3dd9bc782fef16d1c5bfc4d3f2cd",
+      "README.md": "b5766e7c5388bab53f53389313bf950e5d0b6619a45738c21b1042241fe32331"
+    },
+    "git_worktree_clean": true
+  },
+  "toolchain": {
+    "host": {
+      "package": "@deepseek-ai/dsh",
+      "version": "0.2.0-rc.2",
+      "bin": "C:/Users/32621/AppData/Roaming/npm/node_modules/@deepseek-ai/dsh/lib/bin.js",
+      "argv": ["--profile", "sdweb", "--host", "127.0.0.1", "--port", "0", "--no-open"]
+    },
+    "node": "v24.19.0",
+    "browser": {
+      "name": "Microsoft Edge",
+      "version": "155.0.4283.62",
+      "driver": "Playwright 1.64.1 (headless, isolated context, local-address-only)",
+      "playwright_module": "H:/CODEX/dsh-code-security-review-20261019/tooling/node_modules/playwright/index.mjs (read-only reference)"
+    },
+    "pnpm": "11.7.0 (invoked by dsh plugin add)"
+  },
+  "isolation": {
+    "task_root": "H:/CODEX/fifteen-plugin-reviews-20261022/r3-02-sticky-disclosure",
+    "env_overrides": {
+      "DSH_HOME": "isolated-home",
+      "HOME": "isolated-home/user-home",
+      "USERPROFILE": "isolated-home/user-home",
+      "APPDATA": "isolated-home/appdata",
+      "LOCALAPPDATA": "isolated-home/localappdata",
+      "XDG_CACHE_HOME": "isolated-home/cache",
+      "XDG_CONFIG_HOME": "isolated-home/config",
+      "XDG_DATA_HOME": "isolated-home/data",
+      "npm_config_cache": "temp/npm-cache",
+      "DSH_TELEMETRY_DISABLED": "1"
+    },
+    "host_cwd": "fixtures/workspace",
+    "user_gui_untouched": true,
+    "user_gui_ports_avoided": [1241, 2538, 4756],
+    "real_secrets_read": false,
+    "plugin_source_modified": false
+  },
+  "host_run": {
+    "label": "run01",
+    "pid": 2024,
+    "origin": "http://127.0.0.1:9578",
+    "port_mode": "0 (OS-assigned)",
+    "profile": "sdweb",
+    "started_utc": "2026-10-22T01:32:21.447Z",
+    "evidence": ["evidence/run01-host.local.json", "evidence/run01-host.stdout.txt", "evidence/04-host-boot.txt"],
+    "stderr_bytes": 0
+  },
+  "synthetic_sessions": {
+    "author": "hand-written fixtures via official dsh-session-persistence-jsonl (format v4, zstd), no model call",
+    "script": "make-sessions.mjs",
+    "ids": {
+      "sess-sd-zero": { "turns": 0, "events": 1, "purpose": "0 个可折叠块的异常对照" },
+      "sess-sd-one": { "turns": 1, "events": 9, "purpose": "最小单轮" },
+      "sess-sd-six": { "turns": 6, "events": 49, "purpose": "主样本：6 个 turn-process + 6 个 Think + 6 个工具卡 = 18 行" },
+      "sess-sd-many": { "turns": 20, "events": 161, "purpose": "40+ 块异常对照：60 行 / 40 个可折叠" }
+    },
+    "evidence": ["evidence/03-make-sessions.txt", "evidence/03c-make-sessions.txt"]
+  },
+  "evidence_inventory": {
+    "count": 68,
+    "dir": "evidence/",
+    "encoding_note": "*.txt 为 UTF-16LE，需按 Default/UTF-16 读取；*.json 为 UTF-8",
+    "time_span_utc": ["2026-10-22T01:32:21Z", "2026-10-22T01:47:17Z"]
+  },
+  "dedup_check": {
+    "checked_at": "2026-10-22T02:2xZ (Asia/Shanghai 10:2x)",
+    "github_bounty": {
+      "url": "https://api.github.com/search/issues?q=dsh-sticky-disclosure+repo:FuRongJun-1999/dsh-bounty",
+      "total_count": 0,
+      "items": [],
+      "verdict": "无同范围重复（该仓内无该插件条目）"
+    },
+    "review_site": {
+      "url": "https://review.lingshulab.com/",
+      "catalog_total": 133,
+      "reviews_total": 172,
+      "reviews_pages": 9,
+      "pages_scanned": [1],
+      "query_param_note": "?q= 服务端不过滤，需拉全量本地扫描；本次只扫了首页最新评测 25 条与 /reviews 第 1 页 20 条，未拉全 9 页",
+      "hits_for_target": 0,
+      "verdict": "未查清（未拉全量分页）"
+    },
+    "first_report_claim": "不主张首报"
+  },
+  "provenance_limits": [
+    "npm 404 的原始命令输出未单独落盘到 evidence/，本次转录不补造，只标注 PLAN.md 记载",
+    "评测站查重只覆盖第 1 页，不构成全量查清",
+    "全部读数来自一次宿主实例（run01，pid 2024）与一个浏览器 context 家族，未做跨机器复验"
+  ]
+}

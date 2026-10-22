@@ -1,0 +1,52 @@
+{
+  "stage": "completed",
+  "state": "completed",
+  "blockers": [],
+  "object": "@weibaohui/dsh-settings-ui@0.2.10",
+  "task_dir": "H:/CODEX/fifteen-plugin-reviews-20261022/r3-01-settings-ui",
+  "files": [
+    "PLAN.md",
+    "PROVENANCE.json",
+    "RESULTS.json",
+    "REPORT.md",
+    "ISSUE_DRAFT.md",
+    "SITE_REVIEW.md",
+    "REPRODUCE.md",
+    "STATUS.json",
+    "evidence/"
+  ],
+  "evidence_count": 118,
+  "summary": {
+    "confirmed": 4,
+    "uncertain": 2,
+    "untested": 3,
+    "confirmed_defects": 4
+  },
+  "confirmed_defects": [
+    { "id": "S4a", "severity": "medium", "title": "自定义宽高输入框键盘无法清空重输（type=number 不支持 selection API）" },
+    { "id": "S4b", "severity": "low", "title": "数值只有下界没有上界，脏值落进 profile" },
+    { "id": "S18", "severity": "low", "title": "滑块与两个色板缺少可访问名称，chip 组无 radiogroup" },
+    { "id": "S19", "severity": "low", "title": "npm 发布件不含 LICENSE 文本" }
+  ],
+  "fixes_applied": [
+    {
+      "file": "RESULTS.json",
+      "line": 243,
+      "issue": "checks[] 中 S13 的 actual 字段内联了 HTTP 400 响应体，内层双引号未转义，导致 JSON 解析在 position 13533 处失败",
+      "fix": "把 `{\"error\":\"invalid JSON body: ...\"}` 的内层引号转义为 \\\"，读数与结构未改",
+      "verified": "node fs.readFileSync(utf8) + JSON.parse 通过，checks=32，environment_notes=3"
+    }
+  ],
+  "dedup": {
+    "review_site_hits": 0,
+    "bounty_issues_hits": 0,
+    "verdict": "两站均查清，无同插件/同作者既有稿件"
+  },
+  "cleanup": {
+    "hosts_stopped": true,
+    "pids": [29232, 20288, 34428],
+    "ports_verified_closed": [1530, 3067, 10932, 2379],
+    "user_gui_untouched": true
+  },
+  "generated_at": "2026-10-22T10:20:00+08:00"
+}

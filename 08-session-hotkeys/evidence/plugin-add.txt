@@ -1,0 +1,16 @@
+﻿
+dependencies:
++ dsh-session-hotkeys link:H:/CODEX/fifteen-plugin-reviews-20261022/r2-03-session-hotkeys/source/pkg/package
+
+Already up to date
+Done in 410ms using pnpm v11.7.0
+[WARN] Request took 19373ms: https://registry.npmjs.org/pnpm
+
+   ╭──────────────────────────────────────────╮
+   │                                          │
+   │   Update available! 11.7.0 → 12.14.0.    │
+   │   Changelog: https://pnpm.io/v/12.14.0   │
+   │     To update, run: pnpm add -g pnpm     │
+   │                                          │
+   ╰──────────────────────────────────────────╯
+

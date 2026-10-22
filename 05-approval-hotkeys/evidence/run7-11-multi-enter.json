@@ -1,0 +1,510 @@
+{
+  "utc": "2026-10-22T01:29:53.008Z",
+  "host": {
+    "pid": 18068,
+    "url": "http://127.0.0.1:6400/?token=REDACTED",
+    "profile": "ah",
+    "utc": "2026-10-22T01:27:35.269Z",
+    "env": [
+      "DEEPSEEK_BASE_URL",
+      "DEEPSEEK_API_KEY",
+      "DSH_PERMISSION_MODE"
+    ]
+  },
+  "runs": [
+    {
+      "name": "P1_singleEnter_thenMeasureNext",
+      "firstPanel": {
+        "keys": [
+          "approval:2"
+        ],
+        "texts": [
+          "等待审批 允许本次操作使用 danger-full-access 权限：The test needs to write outside the workspace once. Write-Output \"approved-by-hotkey"
+        ]
+      },
+      "nextPanel": {
+        "afterMs": 625,
+        "key": "approval:3",
+        "text": "等待审批 允许本次操作使用 danger-full-access 权限：The test needs to write outside the workspace once. Write-Output \"approved-by-hotkey"
+      },
+      "samples": [
+        {
+          "ms": 1,
+          "keys": []
+        },
+        {
+          "ms": 314,
+          "keys": []
+        },
+        {
+          "ms": 625,
+          "keys": [
+            "approval:3"
+          ]
+        }
+      ],
+      "events": [
+        {
+          "t": 5341,
+          "kind": "keydown",
+          "detail": {
+            "key": "Enter",
+            "dp": false,
+            "target": "BODY"
+          }
+        },
+        {
+          "t": 5341,
+          "kind": "click",
+          "detail": {
+            "text": "允许一次"
+          }
+        },
+        {
+          "t": 5343,
+          "kind": "panels",
+          "detail": {
+            "keys": [
+              "approval:2"
+            ]
+          }
+        },
+        {
+          "t": 5347,
+          "kind": "panels",
+          "detail": {
+            "keys": []
+          }
+        },
+        {
+          "t": 5481,
+          "kind": "panels",
+          "detail": {
+            "keys": []
+          }
+        },
+        {
+          "t": 5904,
+          "kind": "panels",
+          "detail": {
+            "keys": []
+          }
+        },
+        {
+          "t": 5911,
+          "kind": "panels",
+          "detail": {
+            "keys": []
+          }
+        },
+        {
+          "t": 5920,
+          "kind": "panels",
+          "detail": {
+            "keys": [
+              "approval:3"
+            ]
+          }
+        },
+        {
+          "t": 6008,
+          "kind": "panels",
+          "detail": {
+            "keys": [
+              "approval:3"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "P2_doubleEnter_300ms",
+      "firstPanel": {
+        "keys": [
+          "approval:5"
+        ]
+      },
+      "events": [
+        {
+          "t": 10096,
+          "kind": "keydown",
+          "detail": {
+            "key": "Enter",
+            "dp": false,
+            "target": "BODY"
+          }
+        },
+        {
+          "t": 10096,
+          "kind": "click",
+          "detail": {
+            "text": "允许一次"
+          }
+        },
+        {
+          "t": 10098,
+          "kind": "panels",
+          "detail": {
+            "keys": [
+              "approval:5"
+            ]
+          }
+        },
+        {
+          "t": 10101,
+          "kind": "panels",
+          "detail": {
+            "keys": []
+          }
+        },
+        {
+          "t": 10235,
+          "kind": "panels",
+          "detail": {
+            "keys": []
+          }
+        },
+        {
+          "t": 10409,
+          "kind": "keydown",
+          "detail": {
+            "key": "Enter",
+            "dp": false,
+            "target": "BODY"
+          }
+        },
+        {
+          "t": 10650,
+          "kind": "panels",
+          "detail": {
+            "keys": []
+          }
+        },
+        {
+          "t": 10657,
+          "kind": "panels",
+          "detail": {
+            "keys": []
+          }
+        },
+        {
+          "t": 10666,
+          "kind": "panels",
+          "detail": {
+            "keys": [
+              "approval:6"
+            ]
+          }
+        },
+        {
+          "t": 10753,
+          "kind": "panels",
+          "detail": {
+            "keys": [
+              "approval:6"
+            ]
+          }
+        }
+      ],
+      "state": {
+        "keys": [
+          "approval:6"
+        ],
+        "count": 1,
+        "texts": [
+          "等待审批 允许本次操作使用 danger-full-access 权限：The test needs to write outside the workspace once. Write-Output \"approved-by-hotkey"
+        ]
+      }
+    },
+    {
+      "name": "P3_doubleEnter_120ms",
+      "firstPanel": {
+        "keys": [
+          "approval:8"
+        ]
+      },
+      "events": [
+        {
+          "t": 16499,
+          "kind": "keydown",
+          "detail": {
+            "key": "Enter",
+            "dp": false,
+            "target": "BODY"
+          }
+        },
+        {
+          "t": 16499,
+          "kind": "click",
+          "detail": {
+            "text": "允许一次"
+          }
+        },
+        {
+          "t": 16501,
+          "kind": "panels",
+          "detail": {
+            "keys": [
+              "approval:8"
+            ]
+          }
+        },
+        {
+          "t": 16504,
+          "kind": "panels",
+          "detail": {
+            "keys": []
+          }
+        },
+        {
+          "t": 16639,
+          "kind": "panels",
+          "detail": {
+            "keys": []
+          }
+        },
+        {
+          "t": 16639,
+          "kind": "keydown",
+          "detail": {
+            "key": "Enter",
+            "dp": false,
+            "target": "BODY"
+          }
+        },
+        {
+          "t": 17061,
+          "kind": "panels",
+          "detail": {
+            "keys": []
+          }
+        },
+        {
+          "t": 17068,
+          "kind": "panels",
+          "detail": {
+            "keys": []
+          }
+        },
+        {
+          "t": 17077,
+          "kind": "panels",
+          "detail": {
+            "keys": [
+              "approval:9"
+            ]
+          }
+        },
+        {
+          "t": 17168,
+          "kind": "panels",
+          "detail": {
+            "keys": [
+              "approval:9"
+            ]
+          }
+        }
+      ],
+      "state": {
+        "keys": [
+          "approval:9"
+        ],
+        "count": 1,
+        "texts": [
+          "等待审批 允许本次操作使用 danger-full-access 权限：The test needs to write outside the workspace once. Write-Output \"approved-by-hotkey"
+        ]
+      }
+    },
+    {
+      "name": "P4_fiveEnter_200ms",
+      "firstPanel": {
+        "keys": [
+          "approval:11"
+        ]
+      },
+      "events": [
+        {
+          "t": 22912,
+          "kind": "keydown",
+          "detail": {
+            "key": "Enter",
+            "dp": false,
+            "target": "BODY"
+          }
+        },
+        {
+          "t": 22912,
+          "kind": "click",
+          "detail": {
+            "text": "允许一次"
+          }
+        },
+        {
+          "t": 22915,
+          "kind": "panels",
+          "detail": {
+            "keys": [
+              "approval:11"
+            ]
+          }
+        },
+        {
+          "t": 22921,
+          "kind": "panels",
+          "detail": {
+            "keys": []
+          }
+        },
+        {
+          "t": 23064,
+          "kind": "panels",
+          "detail": {
+            "keys": []
+          }
+        },
+        {
+          "t": 23140,
+          "kind": "keydown",
+          "detail": {
+            "key": "Enter",
+            "dp": false,
+            "target": "BODY"
+          }
+        },
+        {
+          "t": 23359,
+          "kind": "keydown",
+          "detail": {
+            "key": "Enter",
+            "dp": false,
+            "target": "BODY"
+          }
+        },
+        {
+          "t": 23561,
+          "kind": "keydown",
+          "detail": {
+            "key": "Enter",
+            "dp": false,
+            "target": "BODY"
+          }
+        },
+        {
+          "t": 23675,
+          "kind": "panels",
+          "detail": {
+            "keys": []
+          }
+        },
+        {
+          "t": 23684,
+          "kind": "panels",
+          "detail": {
+            "keys": []
+          }
+        },
+        {
+          "t": 23696,
+          "kind": "panels",
+          "detail": {
+            "keys": [
+              "approval:12"
+            ]
+          }
+        },
+        {
+          "t": 23779,
+          "kind": "panels",
+          "detail": {
+            "keys": [
+              "approval:12"
+            ]
+          }
+        },
+        {
+          "t": 23781,
+          "kind": "keydown",
+          "detail": {
+            "key": "Enter",
+            "dp": false,
+            "target": "BODY"
+          }
+        },
+        {
+          "t": 23781,
+          "kind": "click",
+          "detail": {
+            "text": "允许一次"
+          }
+        },
+        {
+          "t": 23783,
+          "kind": "panels",
+          "detail": {
+            "keys": [
+              "approval:12"
+            ]
+          }
+        },
+        {
+          "t": 23787,
+          "kind": "panels",
+          "detail": {
+            "keys": []
+          }
+        },
+        {
+          "t": 23889,
+          "kind": "panels",
+          "detail": {
+            "keys": []
+          }
+        },
+        {
+          "t": 24423,
+          "kind": "panels",
+          "detail": {
+            "keys": []
+          }
+        },
+        {
+          "t": 24429,
+          "kind": "panels",
+          "detail": {
+            "keys": []
+          }
+        },
+        {
+          "t": 24438,
+          "kind": "panels",
+          "detail": {
+            "keys": [
+              "approval:13"
+            ]
+          }
+        },
+        {
+          "t": 24528,
+          "kind": "panels",
+          "detail": {
+            "keys": [
+              "approval:13"
+            ]
+          }
+        }
+      ],
+      "state": {
+        "keys": [
+          "approval:13"
+        ],
+        "count": 1,
+        "texts": [
+          "等待审批 允许本次操作使用 danger-full-access 权限：The test needs to write outside the workspace once. Write-Output \"approved-by-hotkey"
+        ]
+      }
+    }
+  ],
+  "failures": [],
+  "errors": [],
+  "consoleLog": []
+}

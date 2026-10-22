@@ -1,0 +1,295 @@
+{
+  "plugin": "dsh-session-pin",
+  "version_reviewed": "0.7.19 (npm tarball, shasum f551e6123d41cdab62ce7aefac8e6bd11d65b6b3, integrity verified)",
+  "host": "@deepseek-ai/dsh 0.2.0-rc.2, Edge via Playwright 1.64.1 headless, Windows x64",
+  "verdict_legend": {
+    "confirmed": "在真实宿主 + 真实浏览器里复现过，读数与预期一致或不一致都已定位到具体行为",
+    "uncertain": "观察到现象但未定位成因，或读数受测试环境影响无法归因",
+    "untested": "本轮未测"
+  },
+  "summary": {
+    "checks_total": 29,
+    "confirmed": 25,
+    "uncertain": 2,
+    "untested": 2,
+    "confirmed_mismatches": 8,
+    "note": "25 条 confirmed 里有 8 条是「实测与 README 描述不一致」：E1 导航条点击关面板、J2 置顶后归档不清理、G1 /goto 不触发、H1 工作区行无置顶控件、H2 面板行点击不切会话、F1 health 恒为空、C2 置顶不前移、B3 会话头置顶按钮不渲染；另有 K1 每次置顶 404（有降级，属噪音）。其余 16 条为正向确认（安装完整性、控件出现、置顶/取色/Shift 清除/取消置顶回原位、刷新与冷重启保留、多置顶、看板分组、过滤、窄窗布局、与宿主搜索/分组互不干扰、权限面）。uncertain 2 条为 D4（视图回放被 E1 挡住）与 F2（health 内容层未见非空读数）；untested 2 条为 G2（/goto 多命中与无命中分支被 G1 阻断）与 N1（桌面端/远端浏览器）。"
+  },
+  "checks": [
+    {
+      "id": "A1",
+      "area": "安装面",
+      "check": "npm 发布件 0.7.19 完整性与可安装性",
+      "expected": "sha1/sha512 与 registry 一致；`dsh plugin add` 成功；profile bundles 含 dsh-session-pin",
+      "actual": "computed sha1 = f551e6123d41cdab62ce7aefac8e6bd11d65b6b3 = dist.shasum；computed sha512(base64) = RedQtH6hiVyRYDHA3BocPzsju/4gL8Reb6eMnKanwQIGpCEKscO6WagZbKAa1aos4YAlzaqXj7DHL9r+j0aVYg== = dist.integrity；tarball 132926 字节 / 14 文件 / unpacked 504916；安装 exit 0，bundles 变为 [@deepseek-ai/dsh-base, @deepseek-ai/dsh-web-app, dsh-session-pin]。pnpm 打印 peer 依赖 WARN 但未阻断，无需 allow-version。",
+      "evidence": ["evidence/npm-view-0.7.19.json", "evidence/hashes.json", "evidence/install-add.txt", "isolated-home/profiles/pin/package.json"],
+      "status": "confirmed"
+    },
+    {
+      "id": "B1",
+      "area": "入口",
+      "check": "侧栏会话行是否出现 [pin][swatch] 控件",
+      "expected": "每条会话行 hover 后出现置顶按钮与取色按钮",
+      "actual": "有标题的会话行出现 span.__dsh-session-pin-row-controls__（34x16），内含 button.__dsh-session-pin-badge__（16x16，title=置顶会话）与 button.__dsh-session-pin-swatch__（16x16，title=更换行颜色）。空白未发消息的「新会话」行没有控件（badge=false），发过一条消息后出现。控件常驻 DOM（opacity 1/visible/flex），靠 CSS 的 :hover 才显形。",
+      "evidence": ["evidence/run1-08-sessions.json", "evidence/run1-10-pin-basic.json", "evidence/run1-08-sessions.png"],
+      "status": "confirmed"
+    },
+    {
+      "id": "B2",
+      "area": "入口",
+      "check": "侧栏底部「已置顶的会话」按钮与面板",
+      "expected": "按钮存在，点击开面板",
+      "actual": "button.__dsh-session-pin-footer__ rect(12,916,256,28)，aria-label=已置顶的会话；点击后面板 div.__dsh-session-pin-panel__ 出现，role=dialog aria-label=已置顶的会话，rect(1130,48,298,205)，含「会话」段头与「▾ 未分组 (5)」组头。置顶数 >0 时按钮文本带计数「已置顶的会话 (5)」。",
+      "evidence": ["evidence/run1-31-panel.json", "evidence/run1-31-panel.png", "evidence/run1-80-81-anomalies.json"],
+      "status": "confirmed"
+    },
+    {
+      "id": "B3",
+      "area": "入口",
+      "check": "会话头部置顶按钮（README 的四类置顶界面之一）",
+      "expected": "会话头出现 button.__dsh-session-pin-header__",
+      "actual": "两次独立会话上下文里 querySelector('button.__dsh-session-pin-header__') 均为 null。槽位 conversation.session.header.actions 在 DOM 中存在（[data-slot] 列表包含它），但插件未在该槽渲染出按钮。",
+      "evidence": ["evidence/run1-39-panel-click.json", "evidence/run1-44-panel-nav.json", "evidence/run2-02-03-header-order.json"],
+      "status": "confirmed",
+      "note": "与 README「a pin toggle in the session header」不一致。未定位到是槽注册失败还是渲染条件不满足。"
+    },
+    {
+      "id": "C1",
+      "area": "置顶",
+      "check": "点击置顶按钮后置顶态是否正确",
+      "expected": "badge 加 __dsh-session-pin-pinned__、aria-pressed=true、title 变「取消置顶」",
+      "actual": "点第 6 行（海洋塑料）后该行 badge aria-pressed 由 false 变 true、title 变「取消置顶」；再点第 3 行，两行同时 pinned=true。置顶态可叠加无冲突。",
+      "evidence": ["evidence/run1-10-pin-basic.json", "evidence/run1-11-after-pin-second.png"],
+      "status": "confirmed"
+    },
+    {
+      "id": "C2",
+      "area": "置顶",
+      "check": "置顶后行顺序是否变化（这是「置顶」的核心承诺）",
+      "expected": "README: pinned session moves to the front of its account；Manual 排序下稳定",
+      "actual": "orderBy=updated 下：置顶最末行后其 y 仍为 378，未前移；再置顶第 3 行，y 仍 276。切到 orderBy=manual（localStorage dsh.workspace.view.v5 的 orderBy 确认为 manual）后重测：把所有 pin 清空再置顶最末行，该行 y 仍 378，其它行 y 不变；置顶中间行同样不前移。三次不同序列均未观察到前移。",
+      "evidence": ["evidence/run1-10-pin-basic.json", "evidence/run1-28-manual-seq.json", "evidence/run2-02-03-header-order.json", "evidence/run2-03-manual-pin-last.png"],
+      "status": "confirmed",
+      "note": "与 README 的「Two pin levels — a pinned session to the front of its account」不一致。宿主 0.2.0-rc.2 上 workspace/insertSessionBefore 返回 200，但列表未重排；未定位是 reorderMoves 判据（head 全部等于 present 才跳过）还是宿主侧未采用该插入结果。"
+    },
+    {
+      "id": "C3",
+      "area": "配色",
+      "check": "取色块循环色板、行配色变化",
+      "expected": "点击后行加背景 tint + 左侧 3px 色条，data-color 变 c0..c7",
+      "actual": "第一次点：data-color=c0，行 background 变 rgba(249,115,22,0.1)；第二次点：c1，background 变 rgba(234,179,8,0.1)，box-shadow 出现 `rgb(234,179,8) 3px 0px 0px 0px inset`（左侧色条）。读数与 README 的「left accent bar plus a translucent tint」一致。",
+      "evidence": ["evidence/run1-10-pin-basic.json", "evidence/run1-12-after-color1.png", "evidence/run1-13-after-color2.png"],
+      "status": "confirmed"
+    },
+    {
+      "id": "C4",
+      "area": "配色",
+      "check": "Shift+点击清除颜色",
+      "expected": "颜色清空、tint 与色条消失、置顶态保留",
+      "actual": "对 data-color=c1 的行 Shift+点击后：data-color=null、background=rgba(0,0,0,0)、box-shadow=none，同时 badge aria-pressed 仍为 true。符合 README「Shift+click clears」。",
+      "evidence": ["evidence/run2-02-03-header-order.json", "evidence/run2-02-header-color.png"],
+      "status": "confirmed"
+    },
+    {
+      "id": "C5",
+      "area": "置顶",
+      "check": "取消置顶后是否回原位、排序是否稳定",
+      "expected": "取消后行回到原位置，其它行相对顺序不变",
+      "actual": "把 5 条全部置顶后逐条取消，行 key 序列与基线完全一致（orderRestored=true），y 坐标 242/276/310/344/378 逐项复原。颜色不受取消置顶影响（c1 仍留在该行）。",
+      "evidence": ["evidence/run1-24-manual-sequence.json", "evidence/run1-28-manual-seq.json", "evidence/run1-27-manual-unpinned.png"],
+      "status": "confirmed"
+    },
+    {
+      "id": "D1",
+      "area": "看板",
+      "check": "+ board 建看板、重命名/删除按钮",
+      "expected": "chips 出现新看板，带 ✎ 与 ✕",
+      "actual": "nav bar 的 + board 弹 prompt（本轮用 window.prompt 替换为固定名）后：chips 由 [All, + board, + view] 变为 [All, 复习, ✎, ✕, + board, + view]。连续建同名看板会得到两个都叫「复习」的看板（board 与 board-2），代码不做同名去重。",
+      "evidence": ["evidence/run1-63-65-boards-tags-views.json", "evidence/run2-01-cold-restart.json"],
+      "status": "confirmed"
+    },
+    {
+      "id": "D2",
+      "area": "看板",
+      "check": "把已置顶会话归到某看板，面板按看板分组",
+      "expected": "组头从「未分组」变「看板名 (n)」，行带 data-board",
+      "actual": "在面板内点 ⋯ 开编辑器，select 选项为 [未分组, 复习(board), 复习(board-2)]；选 board + 标签填「考试,复习」+ 点保存后：该行 data-board=board、data-tags=\"考试 复习\"，组头变为 [▾ 复习 (1), ▾ 未分组 (4)]，面板保持打开。刷新后分组结构保留。",
+      "evidence": ["evidence/run3-01-assign-board.json", "evidence/run3-01-assign-board.png", "evidence/run3-02-03-filter-archive.json"],
+      "status": "confirmed"
+    },
+    {
+      "id": "D3",
+      "area": "标签/过滤",
+      "check": "过滤输入框按文字过滤、清空恢复",
+      "expected": "只显示名字匹配的行；清空后全部显示",
+      "actual": "在 input.__dsh-session-pin-nav__input 输入「请假」后 5 行里 2 行 display 不为 none（/goto 请假、写一封给班主任的请假邮件），其余 3 行 none；清空后 5 行全部恢复。侧栏 [role=treeitem] 不受影响（仍 6 条）。",
+      "evidence": ["evidence/run1-60-62-narrow-filter.json", "evidence/run1-62-filter.png"],
+      "status": "confirmed"
+    },
+    {
+      "id": "D4",
+      "area": "已存视图",
+      "check": "+ view 保存过滤为命名视图、点视图回放",
+      "expected": "chips 出现视图名，点击后按存下的过滤条件筛选",
+      "actual": "+ view 后 chips 新增「考试」（来自 #考试 过滤），cordis.patch.yml 的 session-pin.config.views 里出现 {id: view-…, name: 考试, text: \"#考试\", tags: [考试]}。但「点视图回放」这一步没能取到干净读数：点 nav bar 上任何 chip 都会先把面板关掉（见 E1），面板关掉后行不可见，无法在同一屏内观察筛选结果。",
+      "evidence": ["evidence/run1-63-65-boards-tags-views.json", "isolated-home/profiles/pin/cordis.patch.yml"],
+      "status": "uncertain",
+      "note": "视图写入（数据层）已确认；视图回放（交互层）被 E1 缺陷挡住，无法在真实点击路径下验证。"
+    },
+    {
+      "id": "E1",
+      "area": "缺陷（交互）",
+      "check": "点击导航条（看板 chip / 过滤输入框 / +view）是否会关掉「已置顶」面板",
+      "expected": "面板应保持打开，以便边看列表边筛选/切看板",
+      "actual": "三次独立对照：①点过滤输入框 → panelOpen 由 true 变 false，document.activeElement 变 null，随后 type 的文本没进去（value 仍为空）；②点 All chip → panelOpen 变 false；③点面板内部的 ⋯ 管理按钮 → panelOpen 仍 true、编辑器正常出现（阳性对照）。根因可对到源码：nav bar 由 document.createElement 挂在 document.body（client.js:1163-1166），而 PinPanel 在 open 时注册 document 级 capture click 监听，目标不在 panelRef 内就 setOpen(false)（client.js:1682-1688）——nav bar 永远不在面板内。",
+      "evidence": ["evidence/run1-72-74-panel-close.json", "evidence/run1-72-nav-click.png", "evidence/run1-73-chip-click.png", "evidence/run1-74-manage-in-panel.png"],
+      "status": "confirmed",
+      "note": "这条使 README 宣称的 boards / tags / views 三个能力在正常鼠标操作路径下不可用。数据层仍能写入（patch yml 可读到 boards/views），所以是 UI 点击路径缺陷而非存储缺陷。"
+    },
+    {
+      "id": "F1",
+      "area": "健康摘要",
+      "check": "已置顶行是否显示 `N msgs · you|ai · 相对时间`",
+      "expected": "有消息的会话应显示计数与方向",
+      "actual": "5 条已置顶行全部有 span.__dsh-session-pin-nav__health，但 innerText 恒为空字符串（多次重开面板、逐条切会话、折叠再展开后重读仍为空）。会话区可见真实消息（含用户消息「帮我整理一份关于海洋塑料污染的读书笔记提纲」与「你好，请简单介绍一下你自己」）。",
+      "evidence": ["evidence/run1-85-health-precise.json", "evidence/run1-85-health-precise.png", "evidence/run1-82-83-health-reload.json"],
+      "status": "confirmed",
+      "note": "源码 summarizeHealth 只统计 user/message 与 assistant/message；healthFor 走 c.sessions.binding(id).session.getSnapshot().nodes，未绑定的会话返回 undefined → 文本为空。观察到的是「所有行都空」，与 README「each pinned session row appends a read-only … line」不一致；但未能确认是绑定从未建立还是节点 kind 不匹配，成因部分记 uncertain。"
+    },
+    {
+      "id": "F2",
+      "area": "健康摘要",
+      "check": "health 读数的可信度（是否只统计计数与方向、不含正文）",
+      "expected": "只出计数与方向，不泄露消息正文",
+      "actual": "本轮没取到非空 health 文本，因此无法验证其内容是否只含计数与方向。源码层面 summarizeHealth 只累加 messages 与 lastDirection、取 event.time 最大值，模板 `${messages} msgs · ${you|ai} · ${relative}`，不含正文，并过 sanitizeLabel(200 字)。",
+      "evidence": ["temp/pkg/package/lib/client.js (summarizeHealth 206-223, refreshHealth 996-1013)"],
+      "status": "uncertain",
+      "note": "源码可对上「只统计不读正文」，但因为没有非空 UI 读数，不能算 UI 层已验证。"
+    },
+    {
+      "id": "G1",
+      "area": "/goto",
+      "check": "在输入框输入 `/goto <关键词>` 后回车是否跳转",
+      "expected": "唯一命中切到该会话；多命中列清单；无命中给说明",
+      "actual": "在 composer 里输入 `/goto 请假` 回车：输入框被清空、当前会话仍为 session-6854de43…（localStorage dsh.sessions.current 未变）、无 alert/dialog。该会话标题最终变成「/goto 请假」，会话日志里没有任何该文本的事件（会话 zstd 日志只有 1 条 session 头事件）。根因可对到源码：onKeydown 要求 event.target instanceof HTMLTextAreaElement 且 closest('[data-input-scroll]')（client.js:1181-1184），而 0.2.0-rc.2 的 composer 是 div[contenteditable=true][data-composer-input]（实测 tag=DIV、isTextarea=false、closestScroll=true）→ 条件不成立直接 return。对照：对同一 contenteditable 直接 dispatch KeyboardEvent Enter，defaultPrevented=true（被宿主自身处理），插件未介入。",
+      "evidence": ["evidence/run1-48-49-ws-goto.json", "evidence/run1-41-43-nav-goto.json", "evidence/run1-49-goto.png", "evidence/run1-44-panel-nav.json"],
+      "status": "confirmed",
+      "note": "「命令行不进入模型」这一条在本次观察里成立（会话日志无该文本），但那是「命令根本没被识别」的结果，不能算 README 承诺的兑现。"
+    },
+    {
+      "id": "G2",
+      "area": "/goto",
+      "check": "多命中与无命中分支",
+      "expected": "多命中弹 prompt 列出候选；无命中弹说明",
+      "actual": "两个分支都没能触发（因为 G1 的入口条件不成立，alert 从未出现）。源码里这两个分支用 window.alert 实现（client.js:1196-1199）。",
+      "evidence": ["temp/pkg/package/lib/client.js (onKeydown 1181-1201)"],
+      "status": "untested",
+      "note": "被 G1 阻断，本轮无法在真实 UI 上验证这两个分支。"
+    },
+    {
+      "id": "H1",
+      "area": "工作区置顶",
+      "check": "工作区行是否出现置顶控件、能否置顶工作区",
+      "expected": "README: pin whole workspaces；a pinned workspace moves to the front of the workspace list",
+      "actual": "工作区行 div[role=treeitem][aria-expanded] 内 querySelector('[class*=__dsh-session-pin-badge__]') 为 null；hover 后该行只有宿主自带的两个按钮（工作区操作 / 在该工作区新建会话），没有 [pin][swatch]。DOM 里工作区标题在一个 span.YDXeBa_projectText 与 span.YDXeBa_title 中，而源码 workspaceIdFor 用「取行内第一个非空且能在 workspaces 快照 title 里命中的 span」匹配（client.js:1302-1307），实测未命中。因此工作区级置顶完全不可用。",
+      "evidence": ["evidence/run1-48-49-ws-goto.json", "evidence/run1-50-ws-health-detail.json", "evidence/run1-51-52-ws-health-multi.json"],
+      "status": "confirmed",
+      "note": "同页会话行的控件正常，可排除「整个 overlay 没跑起来」。"
+    },
+    {
+      "id": "H2",
+      "area": "已置顶面板",
+      "check": "点面板里的行是否切到该会话",
+      "expected": "README: Click-to-open — clicking a pinned row … opens the session in the current window",
+      "actual": "把当前会话切到 A（session-08fbbad4，靠侧栏行点击，cur 确实变成 A），再打开面板点第一行 B（session-3c8badf3，写一封给班主任的请假邮件）：cur 仍为 A、侧栏 aria-selected 仍为 A、会话头标题仍为 A 的标题。重复两次（probe-39、probe-44）结果一致。对照：同一 context 内用侧栏行点击 A 时 cur 与侧栏选中都立刻切换，且会话头出现「把这周的错题整理成表格 标准模式 对话 轨迹」。",
+      "evidence": ["evidence/run1-44-panel-nav.json", "evidence/run1-39-panel-click.json", "evidence/run1-41-43-nav-goto.json", "evidence/run1-44-panel-nav-distinct.png"],
+      "status": "confirmed",
+      "note": "面板行 openRow → openSession → c.sessions.retain(id,{source:'gateway'})；未定位 retain 在该基线是否生效。侧栏可切换说明不是整体导航能力缺失。"
+    },
+    {
+      "id": "I1",
+      "area": "持久化",
+      "check": "刷新后置顶与颜色是否保留、存在哪里",
+      "expected": "刷新后置顶态与颜色逐项保留",
+      "actual": "page.reload 后 5 条置顶仍在（aria-pressed=true），c1 颜色的行仍带 rgba(234,179,8,0.1) 背景与 inset 色条。存储位置：localStorage 里没有任何含 pin 的键；状态写在宿主设置，即 isolated-home/profiles/pin/cordis.patch.yml 的 `- id: session-pin` 下（pinned 数组、colors 映射、boards、views）。这与 README「durable per profile」一致。",
+      "evidence": ["evidence/run1-14-reload.json", "evidence/run1-82-83-health-reload.json", "isolated-home/profiles/pin/cordis.patch.yml"],
+      "status": "confirmed"
+    },
+    {
+      "id": "I2",
+      "area": "持久化",
+      "check": "冷重启（新 origin）后置顶与颜色是否保留",
+      "expected": "新 origin 下仍保留（因为主存储不在 localStorage）",
+      "actual": "停自建宿主（pid 26176/2428）后以同参数重启，origin 由 http://127.0.0.1:8677 变为 http://127.0.0.1:7552。全新 headless context 打开后：4 条置顶 aria-pressed=true、c1 颜色的行仍为 rgba(234,179,8,0.1) + inset 色条、footer 仍显示「已置顶的会话 (5)」、看板 chips 与视图仍在。storage 为空对象（localStorage 无 pin 键）。",
+      "evidence": ["evidence/run2-01-cold-restart.json", "evidence/run2-01-after-cold-restart.png", "evidence/run2-host.local.json"],
+      "status": "confirmed",
+      "note": "与本批上一个插件（依赖 localStorage 的）相反：port 0 改 origin 不影响本插件，因为它的主存储是宿主 settings。"
+    },
+    {
+      "id": "J1",
+      "area": "异常",
+      "check": "异常一：一次置顶多个会话",
+      "expected": "按 maxPins（默认 0=不限）全部置顶，不报错",
+      "actual": "连点 5 条会话的置顶按钮：5 条全部 aria-pressed=true，footer 变「已置顶的会话 (5)」，面板 5 行、组头「▾ 未分组 (5)」。没有报错、没有上限拒绝（maxPins 默认 0）。",
+      "evidence": ["evidence/run1-80-81-anomalies.json", "evidence/run1-80-many-pin.png"],
+      "status": "confirmed"
+    },
+    {
+      "id": "J2",
+      "area": "异常",
+      "check": "异常二：置顶后删除（归档）该会话，pin 是否按 pruneStale 清理",
+      "expected": "README: pruneStale=true 时 Drop pins and colors for entities absent from a ready list",
+      "actual": "把已置顶的会话用宿主「归档会话」按钮归档后：侧栏不再显示该会话，但 footer 仍显示「已置顶的会话 (5)」（侧栏只剩 4 条会话）。刷新整页后重新开面板，被归档的会话（/goto 请假、帮我整理一份关于海洋塑料污）仍出现在已置顶面板里。两次独立复现（run1 归档 /goto 请假；run3 归档海洋塑料），刷新后都还在，patch yml 的 pinned 数组也仍保留这些 id。",
+      "evidence": ["evidence/run1-80-81-anomalies.json", "evidence/run1-82-83-health-reload.json", "evidence/run3-02-03-filter-archive.json", "evidence/run1-83-reload-prune.png"],
+      "status": "confirmed",
+      "note": "源码 onListChange 里 pruneStale 分支用 list.ids 作为 live 集合（client.js:634-648）；归档会话是否从 list.ids 移除取决于宿主语义，实测归档后侧栏不显示但 pin 未被剪枝，用户看到的是「一个点不动的幽灵条目」。"
+    },
+    {
+      "id": "K1",
+      "area": "网络/控制台",
+      "check": "每次置顶是否产生失败的 RPC",
+      "expected": "置顶走 session.setPinned，成功或安静降级",
+      "actual": "每次置顶/取消置顶都发 POST /api/session.setPinned，返回 404；随后自动降级发 POST /api/settings/mutate（200，ns=session-pin、op=set、path=[\"pinned\"]），状态最终正确。控制台因此每次置顶留一条 `Failed to load resource: 404`。一次会话内记录到 4 条 404。",
+      "evidence": ["evidence/run1-40-rpc-trace.json", "evidence/run2-02-03-header-order.json"],
+      "status": "confirmed",
+      "note": "功能不受影响（有降级路径），属噪音加依赖降级，不应写成「置顶不生效」。"
+    },
+    {
+      "id": "L1",
+      "area": "窄窗口",
+      "check": "窄视口下面板/导航条/底栏是否溢出或不可用",
+      "expected": "不产生横向溢出，控件仍可点到",
+      "actual": "1440/1100/900/760/640 五档：documentElement.scrollWidth 始终不大于 clientWidth（无横向溢出）。1440 时 panel(1130,48,298,205)、nav(846,48,294,92)、footer(12,916,256,28)；1100 时 nav 右移到 (506,48)；900 起宿主把侧栏收成 55px 图标栏，插件 footer 缩成 30x28、行内 badge 数为 0（因为会话行本身被折叠不可见），面板与 nav 仍完整可见且右对齐。回到 1440 后 badge 恢复为 5。",
+      "evidence": ["evidence/run1-60-62-narrow-filter.json", "evidence/run1-61-narrow-900.png", "evidence/run1-61-narrow-640.png"],
+      "status": "confirmed",
+      "note": "900 以下看不到行内 pin 控件是宿主把侧栏折叠成图标栏所致，不是插件布局错误；面板与 nav 自身不溢出。"
+    },
+    {
+      "id": "L2",
+      "area": "侧栏原有分组/搜索",
+      "check": "插件过滤与侧栏原有分组/搜索是否冲突",
+      "expected": "两者互不影响",
+      "actual": "插件过滤只改面板行的 style.display，侧栏 [role=treeitem] 仍为 6 条（含工作区行与 5 条会话）；宿主自带的「搜索会话名称」输入框（rect 41,174,196）独立存在、值不受插件过滤影响；宿主的视图选项菜单（按工作区/按工作区树/单列表、手动排序/最近更新、归档过滤）与插件 chips 各自独立渲染。未观察到互相覆盖。",
+      "evidence": ["evidence/run1-60-62-narrow-filter.json", "evidence/run1-22-menu.json"],
+      "status": "confirmed"
+    },
+    {
+      "id": "M1",
+      "area": "权限/数据面",
+      "check": "README 声明的权限与数据边界是否与发布件一致",
+      "expected": "permissions = browser:local-storage / settings:read / settings:write；无模型流量",
+      "actual": "package.json 的 dshWorkshop.permissions 恰为这三项；插件不发模型请求（本轮所有 LLM 失败均为宿主缺 DEEPSEEK_API_KEY，且发生在会话消息而非插件路径）。补一句：数据主要落在宿主 settings（profile patch），localStorage 只在拿不到 settings 入口时作降级——比 README 的措辞更强。",
+      "evidence": ["evidence/npm-view-0.7.19.json", "isolated-home/profiles/pin/cordis.patch.yml"],
+      "status": "confirmed"
+    },
+    {
+      "id": "N1",
+      "area": "未做",
+      "check": "桌面端（Electron）与远端浏览器行为",
+      "expected": "—",
+      "actual": "本轮只在 web profile、本机回环下验证，未测桌面壳与远端浏览器降级（README 说远端浏览器回落 localStorage）。",
+      "evidence": [],
+      "status": "untested"
+    }
+  ]
+}

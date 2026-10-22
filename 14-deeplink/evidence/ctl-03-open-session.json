@@ -1,0 +1,60 @@
+{
+  "host": "http://127.0.0.1:12294",
+  "removed": [
+    "/^稍后配置$/"
+  ],
+  "before": {
+    "url": "http://127.0.0.1:12294/",
+    "tree": [
+      "beta|sel=null|exp=true",
+      "新会话|sel=true|exp=null",
+      "未命名 1小时|sel=false|exp=null",
+      "alpha|sel=null|exp=false"
+    ]
+  },
+  "expanded": true,
+  "afterExpand": {
+    "tree": [
+      "beta|sel=null|exp=true",
+      "新会话|sel=true|exp=null",
+      "未命名 1小时|sel=false|exp=null",
+      "alpha|sel=null|exp=true",
+      "未命名 1小时|sel=false|exp=null",
+      "未命名 1小时|sel=false|exp=null"
+    ]
+  },
+  "clicked": "新会话",
+  "afterClick": {
+    "url": "http://127.0.0.1:12294/",
+    "chatFlow": [],
+    "flowKinds": [],
+    "userRows": 0,
+    "text": "新会话 Ctrl + Alt + N 插件 工作区 beta 新会话 未命名 1小时 alpha 未命名 1小时 未命名 1小时 设置 探索未至之境 预览版 beta 标准模式 描述你想要构建的内容, / 调用指令, @ 文件或对话 工作区内修改 DeepSeek-V41-Flash High",
+    "tree": [
+      "beta|sel=null",
+      "新会话|sel=true",
+      "未命名 1小时|sel=false",
+      "alpha|sel=null",
+      "未命名 1小时|sel=false",
+      "未命名 1小时|sel=false"
+    ]
+  },
+  "clickedBeta": null,
+  "afterBeta": {
+    "url": "http://127.0.0.1:12294/",
+    "chatFlow": [],
+    "flowKinds": [],
+    "userRows": 0,
+    "text": "新会话 Ctrl + Alt + N 插件 工作区 beta 新会话 未命名 1小时 alpha 未命名 1小时 未命名 1小时 设置 探索未至之境 预览版 beta 标准模式 描述你想要构建的内容, / 调用指令, @ 文件或对话 工作区内修改 DeepSeek-V41-Flash High",
+    "tree": [
+      "beta|sel=null",
+      "新会话|sel=true",
+      "未命名 1小时|sel=false",
+      "alpha|sel=null",
+      "未命名 1小时|sel=false",
+      "未命名 1小时|sel=false"
+    ]
+  },
+  "errors": [],
+  "consoleLog": []
+}

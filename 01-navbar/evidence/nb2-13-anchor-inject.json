@@ -1,0 +1,81 @@
+{
+  "baseline": {
+    "styleTag": true,
+    "styleLen": 5466,
+    "navExists": true,
+    "navDisplay": "none",
+    "navAria": "用户消息导航",
+    "previewExists": true,
+    "pinButtons": 25,
+    "loadOlderBtns": 0,
+    "dots": 0,
+    "userRowMarkerCounts": {
+      "timeHoverRoot": 0,
+      "chatFlowKindUser": 25,
+      "actionsSlots": 25
+    },
+    "assistantActionButtons": [
+      [
+        "复制",
+        "精选",
+        "好的回答",
+        "有问题的回答",
+        "在新对话中分支"
+      ],
+      [
+        "复制",
+        "精选",
+        "好的回答",
+        "有问题的回答",
+        "在新对话中分支"
+      ],
+      [
+        "复制",
+        "精选",
+        "好的回答",
+        "有问题的回答",
+        "在新对话中分支"
+      ]
+    ]
+  },
+  "injected": {
+    "marked": 25,
+    "rows": 25
+  },
+  "afterInject": {
+    "navDisplay": "none",
+    "navRect": {
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "top": 0,
+      "bottom": 0
+    },
+    "navLeft": "1240px",
+    "dots": 0,
+    "dotLabels": [],
+    "activeIdx": -1,
+    "activeCount": 0,
+    "mores": 0,
+    "loadOlderVisible": false,
+    "dotRects": [],
+    "navScroll": {
+      "sh": 0,
+      "ch": 0
+    },
+    "docOverflowX": false,
+    "flowRect": {
+      "x": 485,
+      "y": -4543,
+      "w": 742,
+      "h": 5399,
+      "top": -4543,
+      "bottom": 856
+    }
+  },
+  "jump": null,
+  "hover": null,
+  "errors": [],
+  "consoleLog": []
+}

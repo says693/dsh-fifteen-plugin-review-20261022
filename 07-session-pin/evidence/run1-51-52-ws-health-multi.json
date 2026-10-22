@@ -1,0 +1,83 @@
+{
+  "wsApi": {
+    "status": 404,
+    "body": "\"SyntaxError: Unexpected token 'o', \\\"not found\\\" is not valid JSON\""
+  },
+  "wsDisplay": {
+    "titleSpan": "默认工作区",
+    "badge": false
+  },
+  "afterSend": {
+    "cur": "session-08fbbad4-a5f0-4e61-8e44-49b911727022",
+    "turnNodes": 12,
+    "bodyText": "新会话 Ctrl + Alt + N 插件 工作区 默认工作区 帮我整理一份关于海洋塑料污 刚刚 /goto 请假 1分钟 把这周的错题整理成表格 2分钟 写一封给班主任的请假邮件 13分钟 比较两个版本的实验数据差异 13分钟 已置顶的会话 (3) 设置 帮我整理一份关于海洋塑料污 标准模式 对话 轨迹 帮我整理一份关于海洋塑料污染的读书笔记提纲 09:04 处理失败 处理失败 本轮运行失败ll"
+  },
+  "healthWithMsg": [
+    {
+      "t": "写一封给班主任的请假邮件",
+      "h": "",
+      "raw": "<span class=\"__dsh-session-pin-nav__health\"></span>"
+    },
+    {
+      "t": "帮我整理一份关于海洋塑料污",
+      "h": "",
+      "raw": "<span class=\"__dsh-session-pin-nav__health\"></span>"
+    },
+    {
+      "t": "把这周的错题整理成表格",
+      "h": "",
+      "raw": "<span class=\"__dsh-session-pin-nav__health\"></span>"
+    }
+  ],
+  "multiPin": {
+    "attempt": {
+      "rows": 5,
+      "clicked": 2
+    },
+    "state": {
+      "rows": [
+        {
+          "t": "帮我整理一份关于海洋塑料污 刚刚",
+          "pin": "true"
+        },
+        {
+          "t": "/goto 请假 1分钟",
+          "pin": "false"
+        },
+        {
+          "t": "把这周的错题整理成表格 2分钟",
+          "pin": "true"
+        },
+        {
+          "t": "写一封给班主任的请假邮件 13分钟",
+          "pin": "true"
+        },
+        {
+          "t": "比较两个版本的实验数据差异 13分钟",
+          "pin": "true"
+        }
+      ],
+      "panelRows": [],
+      "groups": []
+    }
+  },
+  "errors": [],
+  "console": [
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "utc": "2026-10-22T01:18:04.394Z"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "utc": "2026-10-22T01:18:12.275Z"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "utc": "2026-10-22T01:18:12.277Z"
+    }
+  ],
+  "dialogs": []
+}

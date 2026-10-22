@@ -1,0 +1,26 @@
+{
+  "maskRect": {
+    "x": 0,
+    "y": 0,
+    "w": 1440,
+    "h": 1000
+  },
+  "maskParentHtml": "<div class=\"_root_o6lrb_6\" role=\"presentation\"><div class=\"_mask_o6lrb_18\" aria-hidden=\"true\"></div><div tabindex=\"-1\" class=\"_dialog_o6lrb_33 jLrgrW_dialog\" role=\"dialog\" aria-modal=\"true\" aria-label=\"预览版说明\"><div class=\"jLrgrW_content\"><h2 class=\"jLrgrW_title\" tabindex=\"-1\">预览版说明</h2><div class=\"jLrgrW_body\"><div class=\"t1T8VW_copy\"><p>DeepSeek Harness 目前的 0.2 版本仍处于预览阶段，还有许多地方需要持续改进和打磨，希望听取广大开发者和用户的反馈建议。现在，新的桌面端面向广泛用户，开发者相关的进阶功能可在配置中开启使用。预计 DeepSeek Harness 的产品功能以及插件 API 都会继续快速迭代、持续演化，并逐渐趋于稳定。</p><p>我们期待与全球用户和开发者一起，在开源、可复用、可组合的基础设施之上，共同探索智能上限。欢迎大家用 DeepSeek Harness 将想法变成现实，与社区一起丰富插件生态。</p></div><div class=\"t1T8VW_actions\"><button type=\"button\" class=\"_button_1rv3m_2 _primary_1rv3m_36 _md_1rv3m_23 t1T8VW_primary\">继续</button></div></div></div></div></div>",
+  "rootHtml": "<div class=\"_root_o6lrb_6\" role=\"presentation\"><div class=\"_mask_o6lrb_18\" aria-hidden=\"true\"></div><div tabindex=\"-1\" class=\"_dialog_o6lrb_33 jLrgrW_dialog\" role=\"dialog\" aria-modal=\"true\" aria-label=\"预览版说明\"><div class=\"jLrgrW_content\"><h2 class=\"jLrgrW_title\" tabindex=\"-1\">预览版说明</h2><div class=\"jLrgrW_body\"><div class=\"t1T8VW_copy\"><p>DeepSeek Harness 目前的 0.2 版本仍处于预览阶段，还有许多地方需要持续改进和打磨，希望听取广大开发者和用户的反馈建议。现在，新的桌面端面向广泛用户，开发者相关的进阶功能可在配置中开启使用。预计 DeepSeek Harness 的产品功能以及插件 API 都会继续快速迭代、持续演化，并逐渐趋于稳定。</p><p>我们期待与全球用户和开发者一起，在开源、可复用、可组合的基础设施之上，共同探索智能上限。欢迎大家用 DeepSeek Harness 将想法变成现实，与社区一起丰富插件生态。</p></div><div class=\"t1T8VW_actions\"><button type=\"button\" class=\"_button_1rv3m_2 _primary_1rv3m_36 _md_1rv3m_23 t1T8VW_primary\">继续</button></div></div></div></div></div>",
+  "allRoots": [
+    {
+      "cls": "_stripTabs_6nhg2_257",
+      "html": "<div class=\"_stripTabs_6nhg2_257\" role=\"presentation\" data-dockkit-strip-tabs=\"pane1\"></div>"
+    },
+    {
+      "cls": "_root_o6lrb_6",
+      "html": "<div class=\"_root_o6lrb_6\" role=\"presentation\"><div class=\"_mask_o6lrb_18\" aria-hidden=\"true\"></div><div tabindex=\"-1\" class=\"_dialog_o6lrb_33 jLrgrW_dialog\" role=\"dialog\" aria-modal=\"true\" aria-label=\"预览版说明\"><div class=\"jLrgrW_content\"><h2 class=\"jLrgrW_title\" tabindex=\"-1\">预览版说明</h2><div class=\"jL"
+    }
+  ],
+  "anyDialog": [
+    {
+      "cls": "_dialog_o6lrb_33 jLrgrW_dialog",
+      "text": "预览版说明 DeepSeek Harness 目前的 0.2 版本仍处于预览阶段，还有许多地方需要持续改进和打磨，希望听取广大开发者和用户的反馈建议。现在，新的桌面端面向广泛用户，开发者相关的进阶功能可在配置中开启使用。预计 DeepSeek Harness 的产品功能以及插件 API 都会继续快速迭代、持续演化，并逐渐趋于稳定。 我们期待与全球用户和开发者一起，在开源、可复用、可组合的基础设施之上，共同探索智能上限。欢迎大家用 DeepSeek Harness 将想法变成现实，与社区一起丰富插件生态。 继续"
+    }
+  ]
+}

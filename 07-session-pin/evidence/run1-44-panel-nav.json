@@ -1,0 +1,54 @@
+{
+  "composer": {
+    "tags": {
+      "outer": "DIV",
+      "cls": "uV2eYG_input",
+      "inner": [],
+      "html": "<div contenteditable=\"true\" role=\"textbox\" aria-multiline=\"true\" data-composer-input=\"true\" class=\"uV2eYG_input\" data-phase=\"plain\" data-placeholder=\"描述你想要构建的内容, / 调用指令, @ 文件或对话\" aria-label=\"描述你想要构建的内容, / 调用指令, @ 文件或对话\" data-lexical-editor=\"true\" style=\"user-select: text; white-space: pre-wrap; word-break: break-word;\"></div>",
+      "textareasInComposer": 0,
+      "allTextareas": 0,
+      "dataInputScroll": true
+    }
+  },
+  "pinA": "session:session-08fbbad4-a5f0-4e61-8e44-49b911727022",
+  "pinB": "session:session-3c8badf3-ce48-4e15-aae2-be9723a30ae1",
+  "currentAfterSidebarA": "session-08fbbad4-a5f0-4e61-8e44-49b911727022",
+  "panelRows": [
+    {
+      "t": "写一封给班主任的请假邮件",
+      "id": "session-3c8badf3-ce48-4e15-aae2-be9723a30ae1"
+    },
+    {
+      "t": "帮我整理一份关于海洋塑料污",
+      "id": "session-08fbbad4-a5f0-4e61-8e44-49b911727022"
+    },
+    {
+      "t": "把这周的错题整理成表格",
+      "id": "session-36dafaf6-2551-4cb7-a7a0-5a148681f143"
+    }
+  ],
+  "targetIdx": 0,
+  "afterPanelClickB": {
+    "clicked": {
+      "t": "写一封给班主任的请假邮件",
+      "id": "session-3c8badf3-ce48-4e15-aae2-be9723a30ae1"
+    },
+    "cur": "session-08fbbad4-a5f0-4e61-8e44-49b911727022",
+    "sel": [
+      "session:session-08fbbad4-a5f0-4e61-8e44-49b911727022"
+    ]
+  },
+  "headerSlotHtml": {
+    "html": "<div class=\"wSkVaW_titleRow\"><div class=\"wSkVaW_titleCluster\"><nav class=\"wSkVaW_crumbs\" aria-label=\"会话层级\"><span class=\"wSkVaW_crumbSeg\"><span class=\"wSkVaW_crumb wSkVaW_crumbCurrent\">帮我整理一份关于海洋塑料污</span><div data-slot=\"conversation.session.header.lineage\" style=\"display: contents;\"></div></span></nav><div class=\"wSkVaW_headerActions\"><div data-slot=\"conversation.session.header.actions\" style=\"display: contents;\"><span class=\"SVAs4q_label\" title=\"处理代码、文件和资料，适合大多数任务。Agent 会按需使用检索、编辑和终端等工具。\"><svg width=\"14\" height=\"14\" class=\"SVAs4q_icon\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" aria-hidden=\"true\" stroke-width=\"1\"><path d=\"M6.51867 12.3282C7.29816 12.6011 8.16475 12.6514 9.02269 12.4216C9.57879 12.2726 10.0784 12.0185 10.5087 11.6888C10.7819 12.0555 11.1606 12.3304 11.5913 12.4805C10.9688 13.029 10.2149 13.4478 9.35911 13.6771C8.13946 14.0038 6.90632 13.8971 5.82126 13.4533C6.15821 13.1562 6.4021 12.7652 6.51867 12.3282ZM9.17629 2.89409C11.1101 3.34433 12.739 4.81872 13.2889 6.87043C13.4219 7.3665 13.4811 7.8649 13.4774 8.35466C13.0924 8.13213 12.6422 8.01837 12.1741 8.05276L12.1711 8.05257C12.1539 7.77199 12.109 7.48889 12.0334 7.20684C11.6363 5.72533 10.50",
+    "hasPinBtn": true
+  },
+  "errors": [],
+  "console": [
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "utc": "2026-10-22T01:15:41.283Z"
+    }
+  ],
+  "dialogs": []
+}

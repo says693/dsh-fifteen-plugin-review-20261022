@@ -1,0 +1,118 @@
+{
+  "target": "qyw233/dsh-deeplink",
+  "row": "r3-05",
+  "stage": "completed",
+  "state": "completed",
+  "artifact": {
+    "version": "0.6.1",
+    "commit": "fffa63a8906c962625d79ab62469e2ce03aee9b9",
+    "license": "MIT",
+    "install": "本地目录（file: 依赖）",
+    "npm_published": false,
+    "release_package_tested": false,
+    "note": "npm 无发布件（registry 404 / 镜像 404 / search 无同名包）——「未测发布包」"
+  },
+  "host": {
+    "package": "@deepseek-ai/dsh",
+    "version": "0.2.0-rc.2",
+    "port": 0,
+    "profiles": [
+      "dl（装插件）",
+      "ctl（对照，不装插件）"
+    ]
+  },
+  "browser": {
+    "engine": "Microsoft Edge",
+    "version": "155.0.4283.62",
+    "mode": "headless via Playwright，独立 context，只放行本机地址"
+  },
+  "blockers": [],
+  "processes": {
+    "started": [
+      {
+        "tag": "ctl",
+        "pid": 29192,
+        "origin": "http://127.0.0.1:12294"
+      },
+      {
+        "tag": "dl",
+        "pid": 1824,
+        "origin": "http://127.0.0.1:2690"
+      }
+    ],
+    "stopped": true,
+    "stopped_how": "按 evidence/*-host.local.json 里的 pid 逐个 Stop-Process",
+    "user_gui_untouched": [
+      1241,
+      2538,
+      4756
+    ]
+  },
+  "counts": {
+    "evidence_files": 70,
+    "checks_confirmed": 9,
+    "checks_uncertain": 2,
+    "checks_untested": 3,
+    "stderr_only_items": 2
+  },
+  "files": [
+    "PLAN.md",
+    "PROVENANCE.json",
+    "RESULTS.json",
+    "REPORT.md",
+    "ISSUE_DRAFT.md",
+    "SITE_REVIEW.md",
+    "REPRODUCE.md",
+    "STATUS.json",
+    "evidence/",
+    "make-fixtures.mjs",
+    "host.mjs",
+    "browser-kit.mjs",
+    "page-lib.mjs",
+    "probe-01-control.mjs",
+    "probe-02-tree.mjs",
+    "probe-03-control-open.mjs",
+    "probe-03b-modal.mjs",
+    "probe-04-rows.mjs",
+    "probe-05-matrix.mjs",
+    "probe-06-diag.mjs",
+    "probe-07-trace.mjs",
+    "probe-08-urlshapes.mjs",
+    "probe-09-authed.mjs",
+    "probe-10-follow-settings.mjs",
+    "probe-11-anomalies.mjs",
+    "probe-12-follow.mjs"
+  ],
+  "site_review": {
+    "written": true,
+    "cjk_chars": 1485,
+    "forbidden_words_clean": true,
+    "no_score_no_stars": true
+  },
+  "dedup": {
+    "review_site": {
+      "checked": true,
+      "unique_reviews_scanned": 172,
+      "hits": 0
+    },
+    "bounty_issues": {
+      "checked": true,
+      "queries": [
+        "deeplink",
+        "qyw233",
+        "deep-link",
+        "深链"
+      ],
+      "hits": 0
+    },
+    "verdict": "两站查清，无重复；可写首报"
+  },
+  "issue_draft_confirmed_items": [
+    "宿主 ?token= 鉴权会把根路径请求 303 到 / 并丢弃全部 query，深链参数在插件运行前就没了（7/7 URL 形状一致）",
+    "绕过鉴权后 ?session= 触发 TypeError: sessions.open is not a function，?workspace= 触发 TypeError: workspaces.connectWorkspace is not a function，两种情况下当前会话都不变",
+    "插件已被加载（__DSH_BOOT__ 含该包、注入 style 857 字符），但「插件配置」里的深链卡片不渲染（注册 settings.plugin.item，本版消费 plugins.item）",
+    "无效 id（不存在/格式错/超长/非法编码）回落干净：无 pageerror、无白屏，console.warn 文案可检索",
+    "空参数视为无参数、重复参数取第一个、两参数同时出现时 session 优先、jump=0 时确实不处理深链、syncUrl 会消费 session 且保留未知参数"
+  ],
+  "updated_at": "2026-10-22T10:45:00+08:00"
+}

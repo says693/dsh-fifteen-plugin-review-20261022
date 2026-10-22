@@ -1,0 +1,16 @@
+{
+  "before": {
+    "timeHoverRoot": 0,
+    "hoverish": []
+  },
+  "userRowRects": 25,
+  "hovered": 0,
+  "after": {
+    "timeHoverRoot": 0,
+    "navDisplay": "none",
+    "dots": 0,
+    "anyHoverAttr": 0
+  },
+  "consoleLog": [],
+  "errors": []
+}

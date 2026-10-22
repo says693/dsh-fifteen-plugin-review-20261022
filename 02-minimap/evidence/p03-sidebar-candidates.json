@@ -1,0 +1,60 @@
+{
+  "dom": [
+    {
+      "tag": "DIV",
+      "cls": "YDXeBa_sessionRow",
+      "attrs": {
+        "data-row-key": "session:sess-mm-three",
+        "role": "treeitem",
+        "aria-selected": "false",
+        "draggable": "true"
+      },
+      "text": "未命名\n1小时"
+    },
+    {
+      "tag": "DIV",
+      "cls": "YDXeBa_sessionRow",
+      "attrs": {
+        "data-row-key": "session:sess-mm-tiny",
+        "role": "treeitem",
+        "aria-selected": "false",
+        "draggable": "true"
+      },
+      "text": "未命名\n1小时"
+    },
+    {
+      "tag": "DIV",
+      "cls": "YDXeBa_sessionRow",
+      "attrs": {
+        "data-row-key": "session:sess-mm-empty",
+        "role": "treeitem",
+        "aria-selected": "false",
+        "draggable": "true"
+      },
+      "text": "未命名\n1小时"
+    },
+    {
+      "tag": "DIV",
+      "cls": "YDXeBa_sessionRow",
+      "attrs": {
+        "data-row-key": "session:sess-mm-long",
+        "role": "treeitem",
+        "aria-selected": "false",
+        "draggable": "true"
+      },
+      "text": "未命名\n1小时"
+    },
+    {
+      "tag": "DIV",
+      "cls": "YDXeBa_sessionRow",
+      "attrs": {
+        "data-row-key": "session:sess-mm-mixed",
+        "role": "treeitem",
+        "aria-selected": "false",
+        "draggable": "true"
+      },
+      "text": "未命名\n1小时"
+    }
+  ],
+  "errors": []
+}

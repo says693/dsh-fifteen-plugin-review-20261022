@@ -1,0 +1,216 @@
+{
+  "utc": "2026-10-22T01:45:08.550Z",
+  "host": {
+    "pid": 5536,
+    "url": "http://127.0.0.1:5462/?token=REDACTED",
+    "profile": "ah",
+    "utc": "2026-10-22T01:42:12.964Z",
+    "env": [
+      "DEEPSEEK_BASE_URL",
+      "DEEPSEEK_API_KEY",
+      "DSH_PERMISSION_MODE"
+    ]
+  },
+  "tests": {
+    "A_inputFocus_Esc": {
+      "panelBefore": [
+        "approval:2"
+      ],
+      "focus": {
+        "cls": "bhn1Oq_searchInput",
+        "isActive": true,
+        "w": 4,
+        "h": 20
+      },
+      "editable": [
+        "INPUT.bhn1Oq_searchInput(w=4)"
+      ],
+      "events": [
+        {
+          "t": 5548,
+          "kind": "keydown-capture",
+          "detail": {
+            "key": "Escape",
+            "dp": false,
+            "target": "INPUT.bhn1Oq_searchInput"
+          }
+        },
+        {
+          "t": 5548,
+          "kind": "keydown-bubble",
+          "detail": {
+            "key": "Escape",
+            "dp": false,
+            "target": "INPUT.bhn1Oq_searchInput"
+          }
+        }
+      ],
+      "panelAfter": [
+        "approval:2"
+      ],
+      "activeAfter": "INPUT.bhn1Oq_searchInput"
+    },
+    "B_inputFocus_Enter": {
+      "panelBefore": [
+        "approval:2"
+      ],
+      "focus": {
+        "isActive": true
+      },
+      "events": [
+        {
+          "t": 6518,
+          "kind": "keydown-capture",
+          "detail": {
+            "key": "Enter",
+            "dp": false,
+            "target": "INPUT.bhn1Oq_searchInput"
+          }
+        },
+        {
+          "t": 6518,
+          "kind": "keydown-bubble",
+          "detail": {
+            "key": "Enter",
+            "dp": false,
+            "target": "INPUT.bhn1Oq_searchInput"
+          }
+        }
+      ],
+      "panelAfter": [
+        "approval:2"
+      ]
+    },
+    "C_burst_enter_250ms": {
+      "firstPanel": [
+        "approval:5"
+      ],
+      "events": [
+        {
+          "t": 12041,
+          "kind": "keydown-capture",
+          "detail": {
+            "key": "Enter",
+            "dp": false,
+            "target": "BODY."
+          }
+        },
+        {
+          "t": 12041,
+          "kind": "click",
+          "detail": {
+            "text": "允许一次",
+            "disabled": false
+          }
+        },
+        {
+          "t": 12043,
+          "kind": "panels",
+          "detail": {
+            "keys": [
+              "approval:5"
+            ]
+          }
+        },
+        {
+          "t": 12046,
+          "kind": "panels",
+          "detail": {
+            "keys": []
+          }
+        },
+        {
+          "t": 12046,
+          "kind": "keydown-bubble",
+          "detail": {
+            "key": "Enter",
+            "dp": true,
+            "target": "BODY."
+          }
+        },
+        {
+          "t": 12178,
+          "kind": "panels",
+          "detail": {
+            "keys": []
+          }
+        },
+        {
+          "t": 12316,
+          "kind": "keydown-capture",
+          "detail": {
+            "key": "Enter",
+            "dp": false,
+            "target": "BODY."
+          }
+        },
+        {
+          "t": 12317,
+          "kind": "keydown-bubble",
+          "detail": {
+            "key": "Enter",
+            "dp": false,
+            "target": "BODY."
+          }
+        },
+        {
+          "t": 12582,
+          "kind": "keydown-capture",
+          "detail": {
+            "key": "Enter",
+            "dp": false,
+            "target": "BODY."
+          }
+        },
+        {
+          "t": 12582,
+          "kind": "keydown-bubble",
+          "detail": {
+            "key": "Enter",
+            "dp": false,
+            "target": "BODY."
+          }
+        },
+        {
+          "t": 12590,
+          "kind": "panels",
+          "detail": {
+            "keys": []
+          }
+        },
+        {
+          "t": 12594,
+          "kind": "panels",
+          "detail": {
+            "keys": []
+          }
+        },
+        {
+          "t": 12604,
+          "kind": "panels",
+          "detail": {
+            "keys": [
+              "approval:6"
+            ]
+          }
+        },
+        {
+          "t": 12693,
+          "kind": "panels",
+          "detail": {
+            "keys": [
+              "approval:6"
+            ]
+          }
+        }
+      ],
+      "panelAfter": [
+        "approval:6"
+      ],
+      "pressCount": 3
+    }
+  },
+  "failures": [],
+  "errors": [],
+  "consoleLog": []
+}

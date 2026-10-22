@@ -1,0 +1,33 @@
+﻿node.exe : npm notice
+所在位置 行:1 字符: 1
++ & "C:\Program Files/node.exe" "C:\Program Files/node_modules/npm/bin/ ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (npm notice:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+npm notice package: dsh-milestone@0.7.2
+npm notice Tarball Contents
+npm notice 1.1kB LICENSE
+npm notice 13.8kB README.md
+npm notice 2.1kB assets/demo.svg
+npm notice 975B assets/logo.svg
+npm notice 270B cordis.patch.yml
+npm notice 235.4kB lib/client.js
+npm notice 7.6kB lib/index.js
+npm notice 2.8kB package.json
+npm notice Tarball Details
+npm notice name: dsh-milestone
+npm notice version: 0.7.2
+npm notice filename: dsh-milestone-0.7.2.tgz
+npm notice package size: 74.0 kB
+npm notice unpacked size: 264.2 kB
+npm notice shasum: 05bff0576f22c73f89c62a46d167559876bb814b
+npm notice integrity: sha512-F/mWJyfPObZLc[...]1SbIA5Vln8J6Q==
+npm notice total files: 8
+npm notice
+dsh-milestone-0.7.2.tgz
+npm notice
+npm notice New major version of npm available! 11.17.0 -> 12.2.1
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.1
+npm notice To update run: npm install -g npm@12.2.1
+npm notice

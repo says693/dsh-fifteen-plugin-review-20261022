@@ -1,0 +1,440 @@
+{
+  "utc": "2026-10-22T01:34:07.304Z",
+  "repo": "FuRongJun-1999/dsh-bounty",
+  "queries": [
+    {
+      "q": "dsh-approval-hotkeys",
+      "status": 200,
+      "total": 0,
+      "items": []
+    },
+    {
+      "q": "approval-hotkeys",
+      "status": 200,
+      "total": 0,
+      "items": []
+    },
+    {
+      "q": "SiriLee",
+      "status": 200,
+      "total": 1,
+      "items": [
+        {
+          "number": 987,
+          "title": "[intake 输入] 【测评报告】dsh-edit-approval 0.5.0 安全快测：默认只拦 write/edit，bash 门默认关闭、run_code/pwsh/str_replace_editor 不在名单，审批可绕（P1）",
+          "state": "closed",
+          "created": "2026-10-18T14:56:29Z",
+          "user": "WASD258-jpg",
+          "url": "https://github.com/FuRongJun-1999/dsh-bounty/issues/987"
+        }
+      ]
+    },
+    {
+      "q": "approval",
+      "status": 200,
+      "total": 65,
+      "items": [
+        {
+          "number": 1393,
+          "title": "【intake 输入】@duke-dsh-plugins/dsh-agent-approval@1.11.4 插件测评：五维读数（3/5 维）＋可复跑证据",
+          "state": "closed",
+          "created": "2026-10-21T08:20:47Z",
+          "user": "rinDBeans",
+          "url": "https://github.com/FuRongJun-1999/dsh-bounty/issues/1393"
+        },
+        {
+          "number": 1335,
+          "title": "[intake 输入] 【测评报告】dsh-approval-gate 0.5.2：审批规则接口零鉴权，未认证即可清空危险词与硬风险类别并落盘",
+          "state": "closed",
+          "created": "2026-10-21T03:38:05Z",
+          "user": "zxp996",
+          "url": "https://github.com/FuRongJun-1999/dsh-bounty/issues/1335"
+        },
+        {
+          "number": 987,
+          "title": "[intake 输入] 【测评报告】dsh-edit-approval 0.5.0 安全快测：默认只拦 write/edit，bash 门默认关闭、run_code/pwsh/str_replace_editor 不在名单，审批可绕（P1）",
+          "state": "closed",
+          "created": "2026-10-18T14:56:29Z",
+          "user": "WASD258-jpg",
+          "url": "https://github.com/FuRongJun-1999/dsh-bounty/issues/987"
+        },
+        {
+          "number": 832,
+          "title": "[intake 输入] 【测评报告】dsh-auto-classifier 0.1.14 安全快测：auto 档默认 allow 的分类器可被 bash/重定向/代码工具/approval 绕过，无人工取得 danger-full-access（P0）",
+          "state": "closed",
+          "created": "2026-10-17T12:20:25Z",
+          "user": "WASD258-jpg",
+          "url": "https://github.com/FuRongJun-1999/dsh-bounty/issues/832"
+        },
+        {
+          "number": 650,
+          "title": "【测评报告】dsh-approval-llm（Letter2025）体验快测（工作流 · 方法试验）：dsh 0.2.0-rc.2 上自带 42/42 绿，审核端点各类故障一律转人工、未见 fail-open；但 maxArgsChars 截断只留前缀不转人工——危险命令藏在 4000 字符后即可绕过审核；另有 allowlist 压过 humanOnlyList 等小项",
+          "state": "closed",
+          "created": "2026-10-16T00:29:34Z",
+          "user": "Liyang1145",
+          "url": "https://github.com/FuRongJun-1999/dsh-bounty/issues/650"
+        },
+        {
+          "number": 946,
+          "title": "[intake 输入][test/Windows] /delete、/archive 卡片按钮按序号寻址，旧卡片点击删错会话（P2）＋ `[task-sentinel]` 子串触发且无 duty 守卫，local 模式回复外泄飞书（P3）＋ 审批/ask id 跨重启复用，过期按钮可批新请求（P3）＋ chat_id 模式不校验按钮操作者（P4）＋ 单 pending 时裸肯定词被审批解析优先吞掉（P4）＋ feishu_send_file 前缀围栏不抗符号链接（P4）",
+          "state": "closed",
+          "created": "2026-10-18T07:34:32Z",
+          "user": "EQRS",
+          "url": "https://github.com/FuRongJun-1999/dsh-bounty/issues/946"
+        },
+        {
+          "number": 1187,
+          "title": "[intake 输入] 【测评报告】dsh-im-bridge@0.1.0（BiBoyang）体验快测＋安全面：把 0.0.1-rc 宿主核心包写进 dependencies，装上后 dsh 0.2.0-rc.2 web 起不来；绕开后微信注入与 turn 推送在 0.2 上失效；批准应答不绑定 approval id、单字母 `y` 即放行",
+          "state": "closed",
+          "created": "2026-10-19T17:16:32Z",
+          "user": "Liyang1145",
+          "url": "https://github.com/FuRongJun-1999/dsh-bounty/issues/1187"
+        },
+        {
+          "number": 804,
+          "title": "[intake 输入] 【测评报告】dsh-Almost_Full_Access 1.2.0 安全快测：rm -rf ~ / $HOME / ../ 判定为安全、零审批直接执行（P0）",
+          "state": "closed",
+          "created": "2026-10-17T09:03:56Z",
+          "user": "WASD258-jpg",
+          "url": "https://github.com/FuRongJun-1999/dsh-bounty/issues/804"
+        },
+        {
+          "number": 1010,
+          "title": "[intake 输入] 【测评报告】dsh-email 0.17.1 体验快测＋安全面（邮件 · 本地 IMAP/SMTP 端到端 · 方法试验）：缺 MOVE+UIDPLUS 时移动邮件会永久删除无关邮件（P1）",
+          "state": "closed",
+          "created": "2026-10-18T17:16:50Z",
+          "user": "LarryE135",
+          "url": "https://github.com/FuRongJun-1999/dsh-bounty/issues/1010"
+        },
+        {
+          "number": 1253,
+          "title": "[intake 输入] 【测评报告】dsh-native-memory 0.2.0（@98c4a49）「写入需审批」专项核实（安全面首评）：审批门本身 fail-closed、跨工作区隔离未发现问题，但审批面板只给 120 字摘要，最长 2000 字的事实 / 240 字的常驻档案条目尾部不经人眼就入库并注入后续会话，改 tags、按 id 覆盖、删档案条目时摘要不显示改动（P1）；默认开启的 compaction guard 把工具输出里的第三方文本不经审批注入后续 24h 系统提示（P2）…",
+          "state": "closed",
+          "created": "2026-10-20T10:41:21Z",
+          "user": "LarryE135",
+          "url": "https://github.com/FuRongJun-1999/dsh-bounty/issues/1253"
+        },
+        {
+          "number": 1043,
+          "title": "[intake 输入] 【测评报告】@stardustlc/dsh-docker 0.4.2 增量安全快测（容器管理 · 真实 DSH 工具管线 · 方法试验）：「完全权限」预设下 docker_exec / stop / restart / rm 被一律自动拒绝且自检仍显示审批门 ✅（P1）",
+          "state": "closed",
+          "created": "2026-10-19T05:45:37Z",
+          "user": "LarryE135",
+          "url": "https://github.com/FuRongJun-1999/dsh-bounty/issues/1043"
+        },
+        {
+          "number": 997,
+          "title": "【intake 输入】dsh-email 0.17.1 测评：IMAP/SMTP 认证串回显与 STARTTLS 降级（F1/F2 P2，F3 P3）",
+          "state": "closed",
+          "created": "2026-10-18T16:26:14Z",
+          "user": "aroejony-cell",
+          "url": "https://github.com/FuRongJun-1999/dsh-bounty/issues/997"
+        },
+        {
+          "number": 1032,
+          "title": "标准测评报告 · dsh-agent-teams-fish 0.7.3（能力五状态：不适用；功能验证：通过）",
+          "state": "closed",
+          "created": "2026-10-19T05:36:19Z",
+          "user": "EQRS",
+          "url": "https://github.com/FuRongJun-1999/dsh-bounty/issues/1032"
+        },
+        {
+          "number": 1462,
+          "title": "[intake 输入] 【测评报告】@local/dsh-memory 0.5.2 安全快测（GIN0076/cross-session-memory · 跨会话记忆 · 直驱真实模块＋真实宿主 session-query · 本地隔离）：mem_recall 会话检索不带工作区过滤，跨工作区回吐他人会话原文（P1）",
+          "state": "closed",
+          "created": "2026-10-21T14:28:43Z",
+          "user": "cyd471",
+          "url": "https://github.com/FuRongJun-1999/dsh-bounty/issues/1462"
+        },
+        {
+          "number": 1372,
+          "title": "【intake 输入】@a9i5k4/dsh-ark9canvas@0.4.1 插件测评：五维读数（4/5 维）＋可复跑证据",
+          "state": "closed",
+          "created": "2026-10-21T08:20:09Z",
+          "user": "rinDBeans",
+          "url": "https://github.com/FuRongJun-1999/dsh-bounty/issues/1372"
+        },
+        {
+          "number": 1143,
+          "title": "[intake 输入] 【测评报告】dsh-arbiter-wf 0.8.4-stable 安全快测（仲裁工作流 · 直驱真实模块 · 本地隔离）：插件自带的 `bash` 工具完全绕开宿主沙箱与审批（写/删工作区外文件、带着 `DEEPSEEK_API_KEY` 进子进程），Windows 上默认开（P0）",
+          "state": "closed",
+          "created": "2026-10-19T16:26:40Z",
+          "user": "cyd471",
+          "url": "https://github.com/FuRongJun-1999/dsh-bounty/issues/1143"
+        },
+        {
+          "number": 1343,
+          "title": "[intake 输入] 【测评报告】@e_11350613/dsh-sympy-calculate 1.0.6 安全快测（SymPy 脚本执行工具 · 直驱真实 apply/execute + 真实宿主超时策略 · 方法试验）：sympy_calculate 在宿主沙箱与审批之外执行任意 Python，且描述让模型优先于受沙箱的 bash 使用（P1）",
+          "state": "closed",
+          "created": "2026-10-21T04:11:55Z",
+          "user": "cyd471",
+          "url": "https://github.com/FuRongJun-1999/dsh-bounty/issues/1343"
+        },
+        {
+          "number": 1203,
+          "title": "[intake 输入] 【测评报告】dsh-memento 0.5.27 安全快测（记忆 · 安全与护栏 · 直驱真实模块＋真实宿主 web 组件 · 本地隔离）：压缩摘要未经审批即注入后续会话 system prompt（P1）；/api/memento/* 以 exact 路由绕开宿主 /api 鉴权，无 cookie / DNS rebinding / LAN 可读全库与\"已删除\"密钥（P1）",
+          "state": "closed",
+          "created": "2026-10-20T03:35:35Z",
+          "user": "cyd471",
+          "url": "https://github.com/FuRongJun-1999/dsh-bounty/issues/1203"
+        },
+        {
+          "number": 1333,
+          "title": "[intake 输入] 【安全快测】dsh-plugin-security-review 1.8.1（73ab864bbc76）：安全审批插件**自己的审批面零鉴权**——`GET /security-gate/approvals/pending` 无校验泄露待批代码指纹，`POST /decide` 无校验且读 body 不看 `Content-Type`，恶意网页一次 `text/plain` 跨站 POST 即可替用户点「同意」，并且 `approveTrusted`…",
+          "state": "closed",
+          "created": "2026-10-21T03:14:30Z",
+          "user": "yangyuq99",
+          "url": "https://github.com/FuRongJun-1999/dsh-bounty/issues/1333"
+        },
+        {
+          "number": 1054,
+          "title": "[intake 输入] 【测评报告】dsh-sql 0.4.5 Linux 安全面测评（SQLite / 真实 PostgreSQL 17 + MariaDB 11.8 · 方法试验）：PostgreSQL 下用「'\\'」让只读校验与服务器对字符串边界的理解错位，readOnly=true 仍执行 DELETE / DROP TABLE / UPDATE 且不弹审批（P0）",
+          "state": "closed",
+          "created": "2026-10-19T10:11:12Z",
+          "user": "LarryE135",
+          "url": "https://github.com/FuRongJun-1999/dsh-bounty/issues/1054"
+        },
+        {
+          "number": 1201,
+          "title": "[intake 输入] 【测评报告】dsh-evolve-in-git 0.6.3 安全快测（Git 记忆/进化插件 · 直驱真实 lib · 本地隔离）：git 选项注入写任意文件、auth.sshCommand 任意命令并带出宿主密钥、/api/evolve-git/config 无宿主鉴权、远端 URL 外带 GITHUB_TOKEN（P1）",
+          "state": "closed",
+          "created": "2026-10-20T03:32:38Z",
+          "user": "cyd471",
+          "url": "https://github.com/FuRongJun-1999/dsh-bounty/issues/1201"
+        },
+        {
+          "number": 1061,
+          "title": "[intake 输入] 【测评报告】@fish-under-sea/dsh-fish 0.10.4 安全快测（13 合 1 插件聚合包 · Linux · 本地 mock · 方法试验）：skill-lens-fish 的 /skill-lens/api 不查任何来源、root 由请求体指定，跨站头 + 无 cookie 即可读私钥、改 ~/.bashrc（P0）；ssh-fish 不校验主机密钥，把存储的密码交给同地址的冒充服务器（P1）；git-sync「一键同步」不跑密钥体检，精确命中 .credentials.yaml 的值照样推到远端（P1）；video-preview-fish 未知 sessionId 时信任请求自带的 cwd，可读任意文件（P1）",
+          "state": "closed",
+          "created": "2026-10-19T10:27:05Z",
+          "user": "LarryE135",
+          "url": "https://github.com/FuRongJun-1999/dsh-bounty/issues/1061"
+        },
+        {
+          "number": 1464,
+          "title": "[intake 输入] 【测评报告】dsh-normify 0.5.4 安全快测（归一化框架图构建器 · 直驱发布件真实模块＋mock 宿主 · 本地隔离）：9 个写入点全部跟随符号链接，clone 被投毒仓库后一次默认参数 normify_build 即覆盖工作区外文件、可写进 ~/.bashrc 执行命令，上游在修的 PR 覆盖不到（P1）",
+          "state": "closed",
+          "created": "2026-10-21T14:30:20Z",
+          "user": "cyd471",
+          "url": "https://github.com/FuRongJun-1999/dsh-bounty/issues/1464"
+        },
+        {
+          "number": 1402,
+          "title": "[intake 输入] 【测评报告】dsh-orb-cordis 0.1.9 发布版实测：Windows 11 真实安装/首跑通过，跨 profile 浮动会话复用（P2）",
+          "state": "closed",
+          "created": "2026-10-21T09:12:40Z",
+          "user": "zijinmengxi",
+          "url": "https://github.com/FuRongJun-1999/dsh-bounty/issues/1402"
+        },
+        {
+          "number": 1208,
+          "title": "深度审计：@zhangj1164/dsh-memo 0.1.1（L3 · A 路径）",
+          "state": "closed",
+          "created": "2026-10-20T03:50:48Z",
+          "user": "EQRS",
+          "url": "https://github.com/FuRongJun-1999/dsh-bounty/issues/1208"
+        },
+        {
+          "number": 1473,
+          "title": "深度审计 · dsh-orb 0.1.9（等级三）",
+          "state": "open",
+          "created": "2026-10-21T16:14:15Z",
+          "user": "EQRS",
+          "url": "https://github.com/FuRongJun-1999/dsh-bounty/issues/1473"
+        },
+        {
+          "number": 1109,
+          "title": "[intake 输入] @mazov2love/dsh-remote-control@1.0.0：`dsh_other` 的 `settings` 操作可把远端会话权限改为 `danger-full-access`，无对端人工确认",
+          "state": "closed",
+          "created": "2026-10-19T13:54:32Z",
+          "user": "WASD258-jpg",
+          "url": "https://github.com/FuRongJun-1999/dsh-bounty/issues/1109"
+        },
+        {
+          "number": 1351,
+          "title": "[intake 输入] 【测评报告】dsh-notify-me 1.10.2 测评",
+          "state": "closed",
+          "created": "2026-10-21T04:32:53Z",
+          "user": "WTStarMark",
+          "url": "https://github.com/FuRongJun-1999/dsh-bounty/issues/1351"
+        },
+        {
+          "number": 1276,
+          "title": "[intake 输入] dsh-netshell 0.6.1：`/netshell/rpc` 零鉴权，跨站 POST 一句 `local.connect` 即拉起本机 shell，内置 Guard 规则可被 shell 语法绕过（P0）",
+          "state": "closed",
+          "created": "2026-10-20T11:38:04Z",
+          "user": "WASD258-jpg",
+          "url": "https://github.com/FuRongJun-1999/dsh-bounty/issues/1276"
+        },
+        {
+          "number": 1205,
+          "title": "[intake 输入] 【测评报告】@local/dsh-network-proxy 1.0.0 安全快测（HTTP 代理偏好 · 直驱真实模块 · 本地隔离）：系统 PAC 脚本在 node:vm 里跑且 sandbox 暴露宿主闭包 → vm 逃逸、Host 进程任意代码执行（读宿主密钥/任意文件，绕开 approval/sandbox）；求值无单次超时可挂死事件循环；自定义代理口令明文落盘 0644（P2+P3×2）",
+          "state": "closed",
+          "created": "2026-10-20T03:37:12Z",
+          "user": "cyd471",
+          "url": "https://github.com/FuRongJun-1999/dsh-bounty/issues/1205"
+        },
+        {
+          "number": 1341,
+          "title": "[intake 输入] dsh-pilot v0.5.14 安全测评：`%TEMP%` 里公开源码哈希命名的缓存 DLL 被无条件 `Add-Type -Path` 加载并调用——同用户写入即在该插件的常驻 PowerShell 工人（真键鼠效水器）里执行代码",
+          "state": "closed",
+          "created": "2026-10-21T04:05:07Z",
+          "user": "aroejony-cell",
+          "url": "https://github.com/FuRongJun-1999/dsh-bounty/issues/1341"
+        },
+        {
+          "number": 1096,
+          "title": "[intake 输入] dsh-perm-guard@0.4.2：PROTECTED 路径匹配漏掉 `.`，`~/.bashrc` / `~/.gitconfig` / `~/.npmrc` 不在受保护集合内，审批门直接放行登录/命令钩子",
+          "state": "closed",
+          "created": "2026-10-19T13:35:24Z",
+          "user": "WASD258-jpg",
+          "url": "https://github.com/FuRongJun-1999/dsh-bounty/issues/1096"
+        },
+        {
+          "number": 1418,
+          "title": "深度审计 · @hyzyn/dsh-plugin-kit 0.1.56（等级三）",
+          "state": "closed",
+          "created": "2026-10-21T10:48:50Z",
+          "user": "EQRS",
+          "url": "https://github.com/FuRongJun-1999/dsh-bounty/issues/1418"
+        },
+        {
+          "number": 1058,
+          "title": "[intake 输入] 【测评报告】dsh-minimal-ptc 0.5.6（stardustlc）安全快测（极简提示词 + PTC 编排 · 方法试验）：`complete: true` 人格吞掉宿主为本预设挂的全部工具提示段，计划模式指令不进 system prompt（P1）",
+          "state": "closed",
+          "created": "2026-10-19T10:11:20Z",
+          "user": "LarryE135",
+          "url": "https://github.com/FuRongJun-1999/dsh-bounty/issues/1058"
+        },
+        {
+          "number": 1392,
+          "title": "【intake 输入】@dnalec/dsh-auto-approve@0.4.1 插件测评：五维读数（4/5 维）＋可复跑证据",
+          "state": "closed",
+          "created": "2026-10-21T08:20:44Z",
+          "user": "rinDBeans",
+          "url": "https://github.com/FuRongJun-1999/dsh-bounty/issues/1392"
+        },
+        {
+          "number": 669,
+          "title": "【测评报告】mstar-harness（btspoony）体验快测（工作流 · 方法试验）：装载与 8 命令/24 技能/7 工具就位，但首轮静默卡死、模型 0 请求（source kind 'plugin' 被宿主拒收，改一行恢复）；两个 SDD 工具越出工作区读写",
+          "state": "closed",
+          "created": "2026-10-16T00:49:11Z",
+          "user": "Liyang1145",
+          "url": "https://github.com/FuRongJun-1999/dsh-bounty/issues/669"
+        },
+        {
+          "number": 1403,
+          "title": "深度审计 · dsh-native-memory 0.2.0（等级三）",
+          "state": "closed",
+          "created": "2026-10-21T09:23:34Z",
+          "user": "EQRS",
+          "url": "https://github.com/FuRongJun-1999/dsh-bounty/issues/1403"
+        },
+        {
+          "number": 1347,
+          "title": "[intake 输入] 【测评报告】dsh-model-everything 0.1.0 安全快测（建模校验工具集 · 直驱真实模块 · 本地隔离）：12 个工具同步占满宿主事件循环、不接 exec.signal，声明的 10 s 超时从不生效（2.2 KB 模型单次调用冻结宿主 >100 s）（P2）",
+          "state": "closed",
+          "created": "2026-10-21T04:14:01Z",
+          "user": "cyd471",
+          "url": "https://github.com/FuRongJun-1999/dsh-bounty/issues/1347"
+        },
+        {
+          "number": 1313,
+          "title": "[intake 输入] 【测评报告】dsh-ops 0.4.1 标准测评（WSL/Linux 腿）：配对 D=0，但每次调用固定开销 +15% tokens，ops 工具使用率 5.9%；附 S7 判据缺陷（修正后方向转负）",
+          "state": "closed",
+          "created": "2026-10-20T14:47:50Z",
+          "user": "ybyz2",
+          "url": "https://github.com/FuRongJun-1999/dsh-bounty/issues/1313"
+        },
+        {
+          "number": 1342,
+          "title": "[intake 输入] 【测评报告】dsh-weixin-plus 1.0.7 安全快测（微信通道 · 真实 SDK 轮询 + 真实宿主 WebServer · 本地隔离）：HTTP 备用口不在宿主鉴权内，跨站匿名即可删微信凭据、读出登录二维码并把通道改绑到攻击者微信；入站无发送者白名单，`[[send-file:]]` 可外发本机任意文件（P1）",
+          "state": "closed",
+          "created": "2026-10-21T04:11:26Z",
+          "user": "cyd471",
+          "url": "https://github.com/FuRongJun-1999/dsh-bounty/issues/1342"
+        },
+        {
+          "number": 1348,
+          "title": "[intake 输入] 【测评报告】dsh-notify-me 1.9.5 安全快测（系统通知 + 外部推送 · 直驱真实 bundle · 本地隔离 · 首评）：未发现 P0–P2；外部推送不脱敏——会话标题/模型写的审批理由/回复摘要里的路径与密钥原样发往 Discord/Bark/Gotify，Bark 回退把正文写进 URL 路径，Discord 不禁 @everyone（P3）",
+          "state": "closed",
+          "created": "2026-10-21T04:15:05Z",
+          "user": "cyd471",
+          "url": "https://github.com/FuRongJun-1999/dsh-bounty/issues/1348"
+        },
+        {
+          "number": 1130,
+          "title": "[intake 输入] dsh-im-connect@1.0.8：群聊分支丢弃发送者白名单，群内任意陌生人可直接驱动本机 DSH agent（另：actor 未登记时任意群成员可代批）",
+          "state": "closed",
+          "created": "2026-10-19T14:30:05Z",
+          "user": "WASD258-jpg",
+          "url": "https://github.com/FuRongJun-1999/dsh-bounty/issues/1130"
+        },
+        {
+          "number": 653,
+          "title": "【测评报告】dsh-doublecheck（PerryLink）体验快测（工作流 · 方法试验）：dsh 0.2.0-rc.2 上自带 227/227 绿，block 档能拦首次 edit/write，但默认 remind 档只提醒；红/绿证据可伪造（`[exit code: 0]`、`|| true`）让红测试报 verified；strict 正则多转义一层、`test/../src` 绕过红门",
+          "state": "closed",
+          "created": "2026-10-16T00:32:41Z",
+          "user": "Liyang1145",
+          "url": "https://github.com/FuRongJun-1999/dsh-bounty/issues/653"
+        },
+        {
+          "number": 1460,
+          "title": "[intake 输入] 【测评报告】dsh-claude-style 0.17.0 安全快测（主题皮肤 · 宿主路由/会话搜索/出站 · 直驱真实模块 · 本地隔离）：会话搜索把全部对话明文（含粘贴的密钥）以 0644 复制到缓存，绕开宿主会话库的 0700/0600 保护（P2）",
+          "state": "closed",
+          "created": "2026-10-21T14:26:50Z",
+          "user": "cyd471",
+          "url": "https://github.com/FuRongJun-1999/dsh-bounty/issues/1460"
+        },
+        {
+          "number": 1459,
+          "title": "[intake 输入] 【测评报告】dsh-purge-community 1.6.38 安全快测（破甲插件 · 宿主路由鉴权/删除围栏 · 直驱真实模块 · 本地隔离）：21 条 `/dsh-purge/*` 与 `/redteam/api` 零宿主鉴权，无凭据即可改写每轮会话的系统提示词注入源、删掉整个 `rules/`，且 DNS rebinding 可达（P1）",
+          "state": "closed",
+          "created": "2026-10-21T14:26:08Z",
+          "user": "cyd471",
+          "url": "https://github.com/FuRongJun-1999/dsh-bounty/issues/1459"
+        },
+        {
+          "number": 980,
+          "title": "[intake 输入] 【测评报告】dsh-movein-permissions 0.2.7 安全快测：deny/ask 前缀规则不裁剪前导空白，terminal_* 的 command/input 加一个空格即可绕过 rm -rf / git push 拦截（P0）",
+          "state": "closed",
+          "created": "2026-10-18T14:27:51Z",
+          "user": "WASD258-jpg",
+          "url": "https://github.com/FuRongJun-1999/dsh-bounty/issues/980"
+        },
+        {
+          "number": 647,
+          "title": "【测评报告】dsh_workflow（icetomoyo）体验快测（工作流 · 方法试验，附 0.1.7 上游 #5 复现）：dsh 0.2.0-rc.2 拒装、豁免后自带 179/179 绿；查出 4 个缺陷：宿主崩溃后 run 永远 running、wf.parallel([]) 让 run 失败、同名保存后静默不可达、暂停期间墙钟照计被超时杀掉",
+          "state": "closed",
+          "created": "2026-10-16T00:26:28Z",
+          "user": "Liyang1145",
+          "url": "https://github.com/FuRongJun-1999/dsh-bounty/issues/647"
+        },
+        {
+          "number": 1377,
+          "title": "【intake 输入】@adenxie/dsh-vercel@0.4.0 插件测评：五维读数（5/5 维）＋可复跑证据",
+          "state": "closed",
+          "created": "2026-10-21T08:20:15Z",
+          "user": "rinDBeans",
+          "url": "https://github.com/FuRongJun-1999/dsh-bounty/issues/1377"
+        },
+        {
+          "number": 1318,
+          "title": "[intake 输入] 【测评报告】dsh-dream 0.1.0（yihefeikong-rgb / CC-HAHA autoDream 复刻）Linux 安全与边界测评（首评）：做梦期间 dsh-memory 的并发修改被整条覆盖、不报冲突（P2）；会话原文无定界拼进做梦提示词且 delete 不设上限，memory_dream 一次可清空全部作用域（P2）；1 小时锁过期与 agentTimeoutMs 无上限可致并发做梦（P2）；路径穿越 9 例全拦",
+          "state": "closed",
+          "created": "2026-10-20T16:40:19Z",
+          "user": "LarryE135",
+          "url": "https://github.com/FuRongJun-1999/dsh-bounty/issues/1318"
+        },
+        {
+          "number": 988,
+          "title": "[intake 输入] 【测评报告】dsh-review 0.3.0 体验快测（代码评审 / PR · 方法试验）",
+          "state": "closed",
+          "created": "2026-10-18T15:19:51Z",
+          "user": "EQRS",
+          "url": "https://github.com/FuRongJun-1999/dsh-bounty/issues/988"
+        }
+      ]
+    }
+  ]
+}

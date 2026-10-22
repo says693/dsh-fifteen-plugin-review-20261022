@@ -1,0 +1,265 @@
+{
+  "object": "@vlln/dsh-navbar@0.4.0",
+  "repo": "vlln/dsh-navbar",
+  "sourceCommit": "e53adfc8c837ebcb4b6a52c2c4baf7cb6e8b795e",
+  "testedArtefact": "npm-published 0.4.0",
+  "host": "@deepseek-ai/dsh 0.2.0-rc.2",
+  "browser": "Edge 155.0.4283.62 + Playwright 1.64.1 (headless)",
+  "checkedAt": "2026-10-22",
+  "fourStateLegend": {
+    "confirmed": "在真实宿主 + 真实浏览器里观察到读数，有 evidence/ 证据",
+    "untested": "没有条件测（缺环境/缺数据/被上游限制挡住）",
+    "uncertain": "观察到现象但没能定位成因，或读数受注入手段影响不能直接当原生行为",
+    "not-applicable": "不适用"
+  },
+  "results": [
+    {
+      "id": "A1",
+      "area": "身份与发布件",
+      "check": "npm 发布件与元数据的 shasum / integrity 是否一致；包内文件与 LICENSE",
+      "expected": "shasum 与 integrity 与 npm view 一致；LICENSE 存在且为 MIT",
+      "actual": "npm pack 返回的 shasum=48eb0592ba6bb94e7c55813c2ff388ca661a1496、integrity=sha512-XCkyXxRU… 与 npm view 完全一致；7 个文件；LICENSE 为 MIT，版权行 `Copyright (c) 2026 Sam Gao (vlln)`；无 postinstall 脚本；tarball sha256=72886A23…",
+      "evidence": ["evidence/install-01-add-npm.txt", "evidence/install-04-add-npm-final.txt", "PROVENANCE.json"],
+      "state": "confirmed"
+    },
+    {
+      "id": "A2",
+      "area": "安装面",
+      "check": "`dsh plugin --profile navbar add @vlln/dsh-navbar@0.4.0` 能否装进隔离 profile",
+      "expected": "EXIT=0；profile 的 dependencies 与 dsh.profile.bundles 出现该包；node_modules 解出文件",
+      "actual": "EXIT=0，pnpm 11.7.0 装 1 个包（448ms）；package.json dependencies 写入 \"@vlln/dsh-navbar\": \"0.4.0\"；bundles 由 [dsh-base, dsh-web-app] 追加为 [dsh-base, dsh-web-app, @vlln/dsh-navbar]；node_modules 下 7 个文件齐全。只有 peerDependencies WARN（@deepseek-ai/cordis ^4.0.1），**未触发 allow-version 豁免**",
+      "evidence": ["evidence/install-04-add-npm-final.txt", "evidence/install-02-add-webapp.txt"],
+      "state": "confirmed"
+    },
+    {
+      "id": "A3",
+      "area": "安装面（非插件缺陷）",
+      "check": "单独安装官方 @deepseek-ai/dsh-web-app 到该 profile 是否被拒",
+      "expected": "—",
+      "actual": "被拒：`Plugin @deepseek-ai/dsh-web-app@0.0.1-rc.1 is incompatible with dsh 0.2.0-rc.2`，EXIT=1，nothing was installed，提示需 allow-version --accept-risk。改用 `dsh --profile navbar --from-default-profile web --dump-config` 生成含 dsh-web-app 的 profile 后正常。属宿主包布局问题，**不计为插件缺陷**",
+      "evidence": ["evidence/install-02-add-webapp.txt", "evidence/install-03-from-web-template.txt"],
+      "state": "confirmed"
+    },
+    {
+      "id": "B1",
+      "area": "加载面",
+      "check": "插件是否被宿主加载并挂载 DOM",
+      "expected": "页面出现 style#dsh-navbar-style、nav[data-dsh-navbar]、div[data-vlln-preview]",
+      "actual": "三者均存在：style 内容长度 5466 字符；nav 的 aria-label=\"用户消息导航\"；preview 元素存在且 display:none（未悬停时的正常态）",
+      "evidence": ["evidence/nb2-13-anchor-inject.json", "evidence/nb2-01-boot.json"],
+      "state": "confirmed"
+    },
+    {
+      "id": "B2",
+      "area": "加载面",
+      "check": "插件的 assistant-actions 槽（精选按钮）是否真的渲染进消息动作栏",
+      "expected": "每条 assistant 消息动作栏出现 📌 「精选」按钮",
+      "actual": "25 条消息共 25 个 button[data-vlln-pin-button]；动作栏按钮序列为 复制 / 精选 / 好的回答 / 有问题的回答 / 在新对话中分支，精选位于复制之后，与 README 一致",
+      "evidence": ["evidence/nb2-13-anchor-inject.json"],
+      "state": "confirmed"
+    },
+    {
+      "id": "B3",
+      "area": "重点 1：导航条是否出现、节点数是否对应",
+      "check": "原生状态（不做任何 DOM 注入）下，打开有 25 条 user 消息的会话，导航条是否出现、节点数是否等于消息数",
+      "expected": "导航条在对话页右侧出现，节点数与 user 消息数一一对应",
+      "actual": "**导航条不出现**。25 条 user 行（[data-chat-flow-kind=user]，其中 25 个含 bubble 子元素）、8 条会话同样 8 行、1 条会话 1 行；但 `[data-time-hover-root]` 计数恒为 0，插件 nav 的 computedStyle.display 恒为 \"none\"，dots=0。原因是本机 dsh 0.2.0-rc.2 的 chat 客户端**完全不产出 data-time-hover-root 属性**（在 dsh-client-ui-chat/lib/client.js 与整份 dsh 安装里检索该字符串，0 命中），而这是插件唯一的数据来源（README：`driven only by official anchor attributes (data-time-hover-root, on user rows since 0806)`）",
+      "evidence": ["evidence/nb2-18-edges.json", "evidence/nb2-10-rendered-dom.json", "evidence/nb2-11-hover-anchor.json", "evidence/nb2-12-hover-top.json"],
+      "state": "confirmed"
+    },
+    {
+      "id": "B4",
+      "area": "重点 1（补锚点后）",
+      "check": "把 data-time-hover-root 补到 user 行上（只改 DOM、不改插件源码）后，节点数是否与消息数对应",
+      "expected": "节点数与 user 行数对应（超过 11 条走滑动窗口）",
+      "actual": "nav display 变 flex；长会话中段 dots=11 + mores=2（首尾各一省略点）；顶部段 dots=6 + mores=1；底部段 dots=9 + mores=1。滑动窗口 WINDOW=11 生效，节点以当前 active 为中心展开，标签形如 `user #17（点击跳转）`",
+      "evidence": ["evidence/nb2-14-anchor-inject2.json", "evidence/nb2-21-visual.json"],
+      "state": "confirmed"
+    },
+    {
+      "id": "B5",
+      "area": "重点 1（位置）",
+      "check": "导航条是否贴在对话区右侧、是否压住正文",
+      "expected": "贴在对话流右侧、不遮挡正文",
+      "actual": "1440 宽下 nav rect x=1240 w=40，对话流 flow.right=1228，差值 12px（等于源码 `flow.right + 12`）；nav 与 flow 无重叠",
+      "evidence": ["evidence/nb2-21-visual.json", "evidence/nb2-19-jump-narrow.json"],
+      "state": "confirmed"
+    },
+    {
+      "id": "C1",
+      "area": "重点 2：点击跳转",
+      "check": "点击节点能否真的跳到对应消息（用消息正文比对话，不用索引）",
+      "expected": "点击后滚动到该节点代表的那条消息，且目标行顶端与滚动容器顶端对齐",
+      "actual": "6/6 命中。逐个节点先用悬停预览读出它代表哪条消息，再点击、读滚动容器顶部第一条 user 行的正文：预览「第 21 段」→ 跳转后顶部行也是「第 21 段」，与容器顶差值 0px；22/23/24/25/26 段同样 delta=0。scrollTop 逐次递增 46→261→476→691→906→1121。active 也切到被点的那个节点",
+      "evidence": ["evidence/nb2-20-semantic-jump.json", "evidence/nb2-19-jump-narrow.json"],
+      "state": "confirmed"
+    },
+    {
+      "id": "C2",
+      "area": "重点 2（对照）",
+      "check": "同一动作在滑动窗口不同段位是否也命中",
+      "expected": "任意段位点击都命中",
+      "actual": "从底部/中段点击也命中，但**标签里的编号是窗口内序号语义**：底部段点第 1 个点（label 写作 user #17）落到「第 21 段」——因为该会话历史窗口只加载了 21—45 段（官方「加载更早」未展开），插件按已加载 user 行编号。属历史分页语义，非跳转错误",
+      "evidence": ["evidence/nb2-19-jump-narrow.json", "evidence/nb2-14-anchor-inject2.json"],
+      "state": "uncertain"
+    },
+    {
+      "id": "D1",
+      "area": "重点 3：滚动高亮",
+      "check": "滚动时当前节点是否高亮、是否唯一",
+      "expected": "任何滚动位置都只有 1 个 active，且落在「视口内最靠上的 user 行」",
+      "actual": "active 唯一（activeCount 恒为 1）。但**高亮会卡住不动**：从底部向上滚 12 次采样，step1 active=20（期望 20 ✓）、step2=18（✓），step3—6 一直停在 18（期望 16/13/11/9 ✗），step7 起恢复（6、4、2、1 ✓）。同一现象在 scrollTop 直赋值时复现：0.45/0.6/0.75 三档卡在 active=7（期望 11/14/17）。卡住期间 scrollTop 一直在变（3135→2635→2135→1635）",
+      "evidence": ["evidence/nb2-17-wheel-up.json", "evidence/nb2-15-comprehensive.json"],
+      "state": "confirmed"
+    },
+    {
+      "id": "D2",
+      "area": "重点 3（跟手性）",
+      "check": "滚动到高亮变化之间的延迟",
+      "expected": "跟手，无肉眼可感延迟",
+      "actual": "未做逐帧计时。观察到的形态是「连续快速滚动时高亮跳着更新、并在中间段整段不动」，与「延迟」不是同一现象；具体成因（IntersectionObserver 回调节流 / render 内 builtRows 早退 / activeIndex 比对短路）未定位，不硬写成因",
+      "state": "uncertain"
+    },
+    {
+      "id": "E1",
+      "area": "重点 4：长会话密度",
+      "check": "45 条会话下节点密度、间距、是否重叠",
+      "expected": "节点不重叠、条不溢出视口",
+      "actual": "相邻节点 top 差 17px（427/444/461），等于 CSS gap 10 + 高 7；nav 整体 rect 高 251（11 点 + 2 省略点）、y=375、bottom=626，视口高 1000，未溢出；节点串内滚动 scrollHeight 等于 clientHeight（无内部滚动条）",
+      "evidence": ["evidence/nb2-21-visual.json", "evidence/nb2-19-jump-narrow.json"],
+      "state": "confirmed"
+    },
+    {
+      "id": "E2",
+      "area": "重点 4（滑动窗口）",
+      "check": "超过 11 条时窗口是否以当前 active 为中心滑动",
+      "expected": "窗口随阅读位置滑动，两端出现省略点",
+      "actual": "中段 dots=11+mores=2；顶部 dots=6+mores=1；底部 dots=9+mores=1；窗口首尾编号随滚动变化（7—17 → 15—25 → 17—25）",
+      "evidence": ["evidence/nb2-14-anchor-inject2.json", "evidence/nb2-15-comprehensive.json"],
+      "state": "confirmed"
+    },
+    {
+      "id": "F1",
+      "area": "重点 5：窄窗口",
+      "check": "1000 / 760 / 600 宽下导航条是否被裁或遮挡正文",
+      "expected": "不裁切、不遮挡",
+      "actual": "1000 宽：nav x=877，flow.right=865，不重叠（overlap 0px）。760 宽：nav x=712，flow.right=721，**重叠 9px**。600 宽：nav x=552，flow.right=561，**重叠 9px**。三档都没有横向溢出（scrollWidth==clientWidth），nav 右边界也都在视口内（600 宽时 right=592<600）",
+      "evidence": ["evidence/nb2-19-jump-narrow.json", "evidence/nb2-15-comprehensive.json", "evidence/nb2-19-narrow-760.png", "evidence/nb2-19-narrow-600.png"],
+      "state": "confirmed"
+    },
+    {
+      "id": "G1",
+      "area": "重点 6：刷新",
+      "check": "刷新后导航条是否重建",
+      "expected": "刷新后重新出现、节点数与刷新前一致",
+      "actual": "**原生状态下无法验证重建**——因为原生本来就不出现（见 B3）。补锚点后刷新：锚点随 DOM 重建而消失（timeHoverRoot 归零），再次补锚点后 dots 由 11 变 9（窗口按新 active 重算）。能确认的是插件本身在页面重新加载后仍完成 style/nav/preview 挂载与 pin 按钮渲染",
+      "evidence": ["evidence/nb2-15-comprehensive.json"],
+      "state": "untested"
+    },
+    {
+      "id": "G2",
+      "area": "重点 6：冷重启",
+      "check": "停宿主再起，导航条是否重建、pin 是否保留",
+      "expected": "重建；pin 走 localStorage 按 sessionId 保留",
+      "actual": "宿主确实经历冷重启（nb1 pid→停止→nb2 新端口 13846），重启后同一批会话可打开、插件脚本重新注入、pin 按钮再次渲染 25 个。但「导航条重建」与「pin 跨重启保留」都依赖原生锚点可见才有意义，故整体记未测；pin 的 localStorage 键 `dsh-navbar:pins:<sessionId>` 已在页面 localStorage 观察到命名空间，未做写入/读回往返",
+      "evidence": ["evidence/nb2-01-boot.json", "evidence/nb1-host.local.json", "evidence/nb2-host.local.json"],
+      "state": "untested"
+    },
+    {
+      "id": "H1",
+      "area": "重点 7：0 条消息",
+      "check": "空会话（0 轮）下导航条状态",
+      "expected": "不出现，无控制台错误",
+      "actual": "空会话不进侧栏列表（当前侧栏 7 项：workspace、新会话、5 个会话；0 轮会话不生成条目），无法打开。最接近的对照是「只有标题的会话」——打开后 nav display:none、dots=0、控制台 0 error",
+      "evidence": ["evidence/nb2-18-edges.json", "evidence/make-sessions-08.txt"],
+      "state": "confirmed"
+    },
+    {
+      "id": "H2",
+      "area": "重点 7：1 条消息",
+      "check": "只有 1 条 user 消息时导航条是否隐藏",
+      "expected": "隐藏（源码 rows.length < 2）",
+      "actual": "navExists=true、navDisplay=\"none\"、navChildren=0、dots=0、timeHoverRoot=0，控制台 0 error —— 与 README「fewer than 2 user messages 自动隐藏」一致",
+      "evidence": ["evidence/nb2-18-edges.json", "evidence/nb2-18-edge-2.png"],
+      "state": "confirmed"
+    },
+    {
+      "id": "H3",
+      "area": "重点 7：超长消息",
+      "check": "单条 6720 字消息的悬停预览是否 6 行截断",
+      "expected": "预览卡 6 行截断（README/源码 -webkit-line-clamp:6）",
+      "actual": "**未截断**。preview computedStyle.webkitLineClamp 确实是 \"6\"，但实测 preview 高度 7462px、scrollHeight 7462 === clientHeight 7462（truncated=false），文本长度 6720 —— 卡片被撑成一整屏高，line-clamp 未生效",
+      "evidence": ["evidence/nb2-15-comprehensive.json", "evidence/nb2-15-ultra-hover.png"],
+      "state": "confirmed"
+    },
+    {
+      "id": "H4",
+      "area": "重点 7：快速连点",
+      "check": "100ms 内连点 5 个不同节点是否报错或状态错乱",
+      "expected": "不报错，最终落点稳定",
+      "actual": "无 pageerror、控制台 0 error、最终 scrollTop=1336、activeCount=1、activeUser=7、最终落点与第 5 次点击一致（nearest=7）。连续点击过程中 active 一度停在 17 不动（与 D1 同一卡顿现象），但最终收敛正确",
+      "evidence": ["evidence/nb2-19-jump-narrow.json", "evidence/nb2-15-comprehensive.json"],
+      "state": "confirmed"
+    },
+    {
+      "id": "H5",
+      "area": "重点 7：悬停预览",
+      "check": "悬停节点是否出现预览卡、内容是否是那条消息",
+      "expected": "出现、内容对应、6 行截断（普通长度消息）",
+      "actual": "display:block；内容对应（点第 5 个点显示「第 27 段：这是长会话的第 27 条提问…」）；lineClamp=6；普通长度消息下卡片尺寸正常",
+      "evidence": ["evidence/nb2-21-visual.json", "evidence/nb2-21-hover-preview.png"],
+      "state": "confirmed"
+    },
+    {
+      "id": "H6",
+      "area": "重点 7：滚轮切换",
+      "check": "光标在条上滚轮是否切换一条且不滚动对话区",
+      "expected": "切换一条、对话区不滚",
+      "actual": "滚轮一次后 scrollTop 0→261、active 0→1（切换一条）。README 承诺「blocking conversation-area scrolling」（阻止对话区滚动）——实测对话区 scrollTop 确实从 0 变为 261，即**对话区被带着滚了一段**，与「阻止对话区滚动」的表述不完全一致；但滚动的正是跳转目标所需位移，语义上属于「按条跳转而非自由滚动」",
+      "evidence": ["evidence/nb2-14-anchor-inject2.json"],
+      "state": "uncertain"
+    },
+    {
+      "id": "I1",
+      "area": "上游契约（关键前提）",
+      "check": "宿主是否仍提供插件依赖的 data-time-hover-root 锚点",
+      "expected": "160.0-rc 之后 user 行带 data-time-hover-root",
+      "actual": "本机 dsh 0.2.0-rc.2 全量检索该字符串 0 命中；实际 user 行携带的是 `data-chat-flow-kind=\"user\"`、`data-chat-anchor-key`、`data-chat-turn`，气泡类名 `Sixlwa_bubble`。插件 README 自己写的是「on user rows since 0806」，说明它锚定的是 08-06 前后的宿主契约；宿主契约已变化。这是「导航条在本机完全不出现」的唯一原因，也是最需要维护者知道的一条",
+      "evidence": ["evidence/nb2-10-rendered-dom.json", "evidence/nb2-11-hover-anchor.json", "evidence/nb2-12-hover-top.json"],
+      "state": "confirmed"
+    },
+    {
+      "id": "I2",
+      "area": "夹具排障（非插件缺陷）",
+      "check": "合成会话是否会被宿主判 corrupt / 对话页不渲染",
+      "expected": "—",
+      "actual": "踩到三处，均已定位并修正：①envelope 必须是 {seq,time}，写成 {seq,at} 报 `released v2 row 0 lacks required field time`；②turn/step 编号从 1 起（nextTurn=nextStep=1），从 0 起报 `turn/start does not open the expected turn`；③turn/end 必须带 `data.reason:{kind:'completed'}`，否则宿主 chat 客户端读 `location.turn.end?.data.reason.kind` 时抛 `Cannot read properties of undefined (reading 'kind')`，**整条对话渲染中断**（表现为对话页空白、轨迹页正常）。用无插件 profile（nbctl）做对照，同样复现 ③，证明是夹具问题不是插件干扰",
+      "evidence": ["evidence/make-sessions-03.txt", "evidence/make-sessions-05.txt", "evidence/make-sessions-08.txt", "evidence/nbctl-09-variants.json", "evidence/nb2-08-traffic.json"],
+      "state": "confirmed"
+    },
+    {
+      "id": "I3",
+      "area": "方法限制",
+      "check": "补锚点后的读数能否代表原生行为",
+      "expected": "—",
+      "actual": "不能完全代表。补 data-time-hover-root 只补了「取数入口」，插件其余逻辑（position、computeActive、滑动窗口、jumpToRow、预览、pin）都按源码原样跑；但由于该属性在原生环境不存在，**B4/C1/E1/E2/H5/H6 的读数应理解为「插件逻辑正确性」而非「用户开箱即可用」**。已据此把 G1/G2 记为 untested",
+      "state": "uncertain"
+    },
+    {
+      "id": "J1",
+      "area": "查重",
+      "check": "两站是否已有同范围评测/悬赏",
+      "expected": "无重复才可写首报",
+      "actual": "review.lingshulab.com 拉全量 172 条评测（4 页×50）+ 133 个收录插件（3 页），本地正则扫 navbar|vlln 命中 0；github.com/FuRongJun-1999/dsh-bounty 搜索 dsh-navbar=0、navbar=0、vlln=2（#656 dsh-loop、#569 whale-girl，均非本插件）。两站均无同范围重复",
+      "evidence": ["evidence/dedup-reviews-all.json", "evidence/dedup-plugins-all.json", "PROVENANCE.json"],
+      "state": "confirmed"
+    }
+  ],
+  "summary": {
+    "total": 27,
+    "confirmed": 21,
+    "uncertain": 4,
+    "untested": 2,
+    "notApplicable": 0
+  }
+}

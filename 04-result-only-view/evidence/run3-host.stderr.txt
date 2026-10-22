@@ -1,0 +1,20 @@
+dsh: warning: 4 entries did not activate
+workspace (@deepseek-ai/dsh-workspace): StorageError: unit 'workspace': file is not valid JSON
+    at parse (file:///C:/Users/32621/AppData/Roaming/npm/node_modules/@deepseek-ai/dsh/node_modules/@deepseek-ai/dsh-storage-json/lib/index.js:96:9)
+    at openSingleUnit (file:///C:/Users/32621/AppData/Roaming/npm/node_modules/@deepseek-ai/dsh/node_modules/@deepseek-ai/dsh-storage-json/lib/index.js:190:6)
+    at async JsonStorageBackend.openUnit (file:///C:/Users/32621/AppData/Roaming/npm/node_modules/@deepseek-ai/dsh/node_modules/@deepseek-ai/dsh-storage-json/lib/index.js:575:111)
+    at async DomainFacility.open (file:///C:/Users/32621/AppData/Roaming/npm/node_modules/@deepseek-ai/dsh/node_modules/@deepseek-ai/dsh-storage-domain/lib/index.js:362:17)
+    at async [cordis.init] (file:///C:/Users/32621/AppData/Roaming/npm/node_modules/@deepseek-ai/dsh/node_modules/@deepseek-ai/dsh-workspace/lib/index.js:378:18)
+    at async Fiber._reload (file:///C:/Users/32621/AppData/Roaming/npm/node_modules/@deepseek-ai/dsh/node_modules/@deepseek-ai/cordis/lib/index.js:1356:5)
+SyntaxError: Unexpected token '﻿', "﻿{
+    "u"... is not valid JSON
+    at JSON.parse (<anonymous>)
+    at parse (file:///C:/Users/32621/AppData/Roaming/npm/node_modules/@deepseek-ai/dsh/node_modules/@deepseek-ai/dsh-storage-json/lib/index.js:94:19)
+    at openSingleUnit (file:///C:/Users/32621/AppData/Roaming/npm/node_modules/@deepseek-ai/dsh/node_modules/@deepseek-ai/dsh-storage-json/lib/index.js:190:6)
+    at async JsonStorageBackend.openUnit (file:///C:/Users/32621/AppData/Roaming/npm/node_modules/@deepseek-ai/dsh/node_modules/@deepseek-ai/dsh-storage-json/lib/index.js:575:111)
+    at async DomainFacility.open (file:///C:/Users/32621/AppData/Roaming/npm/node_modules/@deepseek-ai/dsh/node_modules/@deepseek-ai/dsh-storage-domain/lib/index.js:362:17)
+    at async [cordis.init] (file:///C:/Users/32621/AppData/Roaming/npm/node_modules/@deepseek-ai/dsh/node_modules/@deepseek-ai/dsh-workspace/lib/index.js:378:18)
+    at async Fiber._reload (file:///C:/Users/32621/AppData/Roaming/npm/node_modules/@deepseek-ai/dsh/node_modules/@deepseek-ai/cordis/lib/index.js:1356:5)
+session-controller (@deepseek-ai/dsh-api-session-controller): pending (waiting for service: workspaceRegistry)
+workspace-controller (@deepseek-ai/dsh-api-workspace-controller): pending (waiting for service: workspaceRegistry)
+ui-deliverables (@deepseek-ai/dsh-client-ui-deliverables): pending (waiting for service: sessionController)

@@ -1,0 +1,184 @@
+{
+  "object": {
+    "name": "@weibaohui/dsh-settings-ui",
+    "short_name": "dsh-settings-ui",
+    "version": "0.2.10",
+    "author_repo": "weibaohui/dsh-settings-ui",
+    "repository": "https://github.com/weibaohui/dsh-settings-ui",
+    "bugs": "https://github.com/weibaohui/dsh-settings-ui/issues",
+    "source_commit_specified": "f0e79f9dc551d108405082d197581c952bd09c73",
+    "source_commit_date": "2026-10-09T09:11:14Z",
+    "source_commit_message": "Add MIT LICENSE file",
+    "npm_gitHead": "51180fdbe96829210bf60c2a1b35f0ccc3e4e4cd",
+    "npm_gitHead_date": "2026-09-30T06:30:50Z",
+    "npm_gitHead_message": "release: 0.2.10 — 选择器改用稳定属性 [data-shortcut-modal=settings] 修复 desktop 面板 hash 错配 (VOzbGW→Dws9Sa 致 CSS 命中 0 元素)，engines.dsh 提升到 >=0.2.0-rc.2",
+    "gitHead_vs_source_commit": "不同。npm gitHead 51180fdb 是 0.2.10 的发布提交（2026-09-30）；任务指定的 f0e79f9 是其后 2026-10-09 的「补 LICENSE」提交。两者之间只有 LICENSE 与发布工作流相关改动。",
+    "source_compare_result": "已逐文件核对：发布件 tarball 的 client/bundle.js、src/index.js、package.json、README.md、cordis.patch.yml 五份文件，与固定提交 f0e79f9 的同路径文件 **sha256 完全一致**（见下表）。因此发布件即待测代码，不存在发布件与源码分叉。",
+    "license": "MIT",
+    "license_file_in_repo": true,
+    "license_sha256": "8f466caa0d7f2244d1ac0d4ec523692c9c8e5f509fcdd89b974b82988c736807",
+    "license_file_in_tarball": false,
+    "license_note": "package.json 声明 \"license\": \"MIT\"，仓库根目录在固定提交里有 LICENSE（1066 字节，MIT License / Copyright (c) 2026 weibaohui）；但 npm 发布件只含 5 个文件，**不含 LICENSE 文件**（files 字段为 src/client/cordis.patch.yml）。这是元数据与实物不一致，不是安全缺陷。",
+    "install_source": "npm 发布件（registry tarball），非源码目录安装",
+    "tested_artifact": "@weibaohui/dsh-settings-ui@0.2.10 npm tarball"
+  },
+  "package_integrity": {
+    "tarball": "weibaohui-dsh-settings-ui-0.2.10.tgz",
+    "tarball_bytes": 13373,
+    "shasum_sha1": "1be422ae19a42072906fc6a3f26095eb2a796a93",
+    "shasum_matches_registry": true,
+    "integrity_sha512_b64": "sha512-o/YWP3yB3ABlCR537SNA68HPgcc/xmdM/OKaJ3AXWCDLxEWEWm4OyiUqFezQ8Alxm//PeAE1loGDbT4LBR6Baw==",
+    "integrity_matches_registry": true,
+    "sha256_tarball": "f60fc48f445f1199ddfab52728da9e13c069a4b6672467610d489c906aa9a69f",
+    "registry": "https://mirrors.cloud.tencent.com/npm/@weibaohui/dsh-settings-ui/-/dsh-settings-ui-0.2.10.tgz（npm view 返回的 dist.tarball）",
+    "file_count": 5,
+    "unpacked_size": 35152,
+    "files": {
+      "client/bundle.js": {
+        "bytes": 14270,
+        "sha256": "df1cb08ab9e92f427fdf346fb65f0873b3e91f791569c6aef3cc78cdd0efff72",
+        "matches_commit_f0e79f9": true
+      },
+      "src/index.js": {
+        "bytes": 14685,
+        "sha256": "8d9924aa19585196e50d85394cc256f055544ec2a871392a7c4e9e58a7d8f3f3",
+        "matches_commit_f0e79f9": true
+      },
+      "package.json": {
+        "bytes": 1373,
+        "sha256": "230b1163cbb06798224c28d693487ab60df434c2dede31e431dbd29a1ee6d363",
+        "matches_commit_f0e79f9": true
+      },
+      "README.md": {
+        "bytes": 4300,
+        "sha256": "08b31cf093aecfb7a0614c2f95a429ee6f39144408ffcb69cc4086f40dd25d10",
+        "matches_commit_f0e79f9": true
+      },
+      "cordis.patch.yml": {
+        "bytes": 524,
+        "sha256": "59c1b718c7bb97c7ad770710bd6ce99fc709a3333cf7283af4ffcb12709954bb",
+        "matches_commit_f0e79f9": true
+      }
+    },
+    "npm_view_snapshot": "evidence/npm-view-0.2.10.json",
+    "npm_pack_log": "evidence/npm-pack.log",
+    "pnpm_lock_in_profile": "isolated-home/profiles/su/pnpm-lock.yaml 记录了同一 integrity，安装期校验通过"
+  },
+  "engines": {
+    "node": ">=22.5",
+    "dsh": ">=0.2.0-rc.2",
+    "note": "本插件**有**宿主版本约束（与同批多数插件不同）；宿主 0.2.0-rc.2 正好满足下界。"
+  },
+  "host": {
+    "package": "@deepseek-ai/dsh",
+    "version": "0.2.0-rc.2",
+    "bin": "C:/Users/32621/AppData/Roaming/npm/node_modules/@deepseek-ai/dsh/lib/bin.js",
+    "args": ["--profile", "<name>", "--host", "127.0.0.1", "--port", "0", "--no-open"],
+    "profile_setup": "先 `dsh --profile su --from-default-profile web --dump-config` 派生完整 web profile（bundles: @deepseek-ai/dsh-base + @deepseek-ai/dsh-web-app），再 `dsh plugin --profile su add @weibaohui/dsh-settings-ui@0.2.10`。同批已踩坑：直接用 `dsh plugin --profile <新名> add` 建出的 profile 只含 dsh-base，宿主 boot 后不打印 URL。",
+    "isolation": {
+      "DSH_HOME": "isolated-home",
+      "HOME": "isolated-home/user-home",
+      "USERPROFILE": "isolated-home/user-home",
+      "APPDATA": "isolated-home/appdata",
+      "LOCALAPPDATA": "isolated-home/localappdata",
+      "XDG_CACHE_HOME": "isolated-home/cache",
+      "XDG_CONFIG_HOME": "isolated-home/config",
+      "XDG_DATA_HOME": "isolated-home/data",
+      "npm_config_cache": "temp/npm-cache",
+      "note": "全部指向本任务目录；未读写用户日常配置与真实会话"
+    },
+    "instances": [
+      { "tag": "h1", "profile": "su", "origin": "http://127.0.0.1:3067", "pid": 29232, "stopped": true, "purpose": "主测（尺寸/透明度/背景/持久化/恢复默认/窄视口/异常）" },
+      { "tag": "h2", "profile": "su", "origin": "http://127.0.0.1:10932", "pid": 20288, "stopped": true, "purpose": "冷重启对照（新进程新端口，同 profile）" },
+      { "tag": "h3", "profile": "su2", "origin": "http://127.0.0.1:2379", "pid": 34428, "stopped": true, "purpose": "跨 profile 隔离对照" }
+    ],
+    "first_failed_start": {
+      "tag": "h1-first-attempt",
+      "pid": 36788,
+      "origin": "http://127.0.0.1:1530",
+      "failure": "pwsh Start-Job 起的宿主随父 shell 退出被回收，后续 probe 报 ERR_CONNECTION_REFUSED",
+      "resolution": "改用 Start-Process -PassThru 独立进程，未重试同一原因两次以上",
+      "counted_as": "驱动脚本失败，不计入插件缺陷"
+    },
+    "user_gui_untouched": "未访问 1241 / 2538 / 4756 任一端口；收尾时 4756 仍在监听（属用户 GUI）"
+  },
+  "browser": {
+    "engine": "Microsoft Edge",
+    "version": "155.0.4283.62",
+    "executable": "C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe",
+    "driver": "Playwright 1.64.1",
+    "driver_module": "H:/CODEX/dsh-code-security-review-20261019/tooling/node_modules/playwright/index.mjs",
+    "mode": "headless，独立 context，路由仅放行 127.0.0.1 / localhost / [::1]，serviceWorkers 屏蔽",
+    "viewports_tested": [[1440, 1000], [1000, 900], [760, 900], [600, 800]],
+    "color_schemes_tested": ["light", "dark（通过宿主设置里的「深色」按钮切换）"]
+  },
+  "runtime": {
+    "os": "Microsoft Windows 11 家庭版 中文版 10.0.26200",
+    "node": "v24.19.0",
+    "package_manager_for_plugin": "pnpm 11.7.0（由 dsh plugin 内置调用）",
+    "timezone": "Asia/Shanghai"
+  },
+  "plugin_surface_observed": {
+    "entry": "原生设置窗口左侧导航「设置界面」（settings.section 座位，order 96）",
+    "controls": [
+      "窗口大小：默认（800×800）/ 大（1080×780）/ 特大（1280×960）/ 全屏 / 自定义",
+      "背景不透明度：range 30–100，step 5",
+      "背景：主题默认 / 纯色（浅色主题、暗色主题各一个 color input）",
+      "恢复默认"
+    ],
+    "not_present_in_0_2_10": {
+      "floating_ball": "不存在。全文档关键词扫描（悬浮/floating/floater/floatball/fab）0 命中；几何扫描（fixed|absolute + 30–90px 正方 + 圆角≥半径一半）0 命中；插件注入的 DOM 只有两个 <style> 标签。源码 client/bundle.js 与 src/index.js 均无悬浮球组件。README 也未提。",
+      "image_background": "已下线。UI 无图片/上传入口、无 input[type=file]；API PUT bgMode:'image' 实测被 normalizeBgMode 回落成 'default'；源码注释写「图片背景已下线」。"
+    }
+  },
+  "persistence_mechanism": {
+    "not_localstorage": true,
+    "localstorage_keys_observed": ["dsh.workspace.view.v5", "dsh.sidebar-right.v1.session-<uuid>", "dsh.sessions.current"],
+    "actual": "宿主侧 settings 文档，经 GET /dsh-settings-ui/api/status 与 PUT /dsh-settings-ui/api/settings 读写；落盘在 profile 的 cordis.patch.yml",
+    "disk_path": "isolated-home/profiles/su/cordis.patch.yml",
+    "disk_shape": "- id: dsh-settings-ui\\n  name: \"@weibaohui/dsh-settings-ui\"\\n  config:\\n    size: large\\n    customWidth: 4820\\n    ...",
+    "note": "任务书里「设置保存位置（本机浏览器）」的预设与实测不符；实际是按 dsh profile 保存在宿主侧，因此换浏览器不丢、换 profile 不串。"
+  },
+  "dedup": {
+    "checked_at": "2026-10-22T09:47:00+08:00",
+    "review_site": {
+      "url": "https://review.lingshulab.com/reviews",
+      "method": "?q= 不生效，逐页拉 /reviews?page=1..9 全量后本地正则扫描",
+      "pages_crawled": 9,
+      "unique_review_links": 172,
+      "keywords": ["dsh-settings-ui", "weibaohui", "设置界面自定义", "settings-ui"],
+      "hits": 0,
+      "evidence": ["evidence/dedup-review-links.txt", "evidence/dedup-review-body.html"]
+    },
+    "bounty_issues": {
+      "url": "https://github.com/FuRongJun-1999/dsh-bounty/issues",
+      "method": "REST issues 分页 10 页 × 100 条 = 1000 条落盘后本地扫描 + search API 精确查询",
+      "issues_scanned": 1000,
+      "keywords_local": {
+        "settings-ui": 0,
+        "weibaohui": 0,
+        "@weibaohui": 0,
+        "设置界面": 0,
+        "设置窗口": 0,
+        "背景透明度": 0,
+        "悬浮球": 0
+      },
+      "search_api": {
+        "weibaohui": { "total": 0 },
+        "settings-ui": { "total": 48, "relevant": 0, "note": "分词命中，均为 dsh-kit-settings / dsh-myskin / dsh-plugin-wallpaper-engine 等其它插件，无同插件同作者条目" },
+        "\"设置界面\"": { "total": 8, "relevant": 0 },
+        "\"settings window\"": { "total": 3, "relevant": 0 }
+      },
+      "hits": 0,
+      "evidence": ["evidence/dedup-bounty-issues.json"]
+    },
+    "verdict": "两站均查清，无同插件/同作者的既有稿件 → 首报"
+  },
+  "process_cleanup": {
+    "stopped_by_local_json_pid": true,
+    "pids_stopped": [29232, 20288, 34428],
+    "ports_verified_closed": [1530, 3067, 10932, 2379],
+    "not_killed_by_name": "未按 node/msedge 进程名批量杀；未触碰其它 agent 的宿主与浏览器"
+  },
+  "generated_at": "2026-10-22T09:48:00+08:00"
+}

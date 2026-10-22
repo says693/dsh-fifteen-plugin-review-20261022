@@ -1,0 +1,168 @@
+{
+  "schema": "dsh-plugin-review/status/v1",
+  "subject": "dsh-result-only-view@1.7.0 (npm published)",
+  "repo_diff_check": "YEYEYEYESHIFU/dsh-result-only-view @ 47cfe87 (1.6.4, source diff only)",
+  "stage": "completed",
+  "state": "completed",
+  "round": "r1",
+  "slot": "r1-04-result-only-view",
+  "updated_at": "2026-10-22T01:32:00+08:00",
+  "deliverables": [
+    {
+      "name": "PLAN.md",
+      "path": "PLAN.md",
+      "bytes": 6320,
+      "done": true
+    },
+    {
+      "name": "PROVENANCE.json",
+      "path": "PROVENANCE.json",
+      "done": true
+    },
+    {
+      "name": "evidence/",
+      "path": "evidence/",
+      "done": true,
+      "file_count": 80
+    },
+    {
+      "name": "RESULTS.json",
+      "path": "RESULTS.json",
+      "done": true
+    },
+    {
+      "name": "REPORT.md",
+      "path": "REPORT.md",
+      "done": true
+    },
+    {
+      "name": "ISSUE_DRAFT.md",
+      "path": "ISSUE_DRAFT.md",
+      "done": true,
+      "target": "YEYEYEYESHIFU/dsh-result-only-view"
+    },
+    {
+      "name": "SITE_REVIEW.md",
+      "path": "SITE_REVIEW.md",
+      "done": true,
+      "cjk_chars": 1500
+    },
+    {
+      "name": "REPRODUCE.md",
+      "path": "REPRODUCE.md",
+      "done": true
+    },
+    {
+      "name": "STATUS.json",
+      "path": "STATUS.json",
+      "done": true
+    }
+  ],
+  "counts": {
+    "checks_total": 29,
+    "confirmed": 25,
+    "uncertain": 1,
+    "untested": 3,
+    "confirmed_defects": 0
+  },
+  "confirmed_defects": [],
+  "not_confirmed": {
+    "uncertain": [
+      {
+        "id": "4d",
+        "what": "冷重启后开关状态保留",
+        "why": "--port 0 每次换 origin，localStorage 按 origin 隔离；同一 origin 内 reload 已验证正常，跨 origin 无法归因，未用固定端口复测"
+      }
+    ],
+    "untested": [
+      {
+        "id": "2d",
+        "what": "工具调用卡是否被隐藏",
+        "why": "三次合成会话均被宿主格式校验拒绝（unresolved tool call / toolCallId mismatch / no advertised tool lifecycle），同因三次按纪律停止"
+      },
+      {
+        "id": "2e",
+        "what": "ask_user_question / cordis_run 白名单卡片不被隐藏",
+        "why": "本轮会话里没有这两类卡片，无观测对象"
+      },
+      {
+        "id": "6a",
+        "what": "0 轮会话下的开关表现",
+        "why": "空会话即使登记进 workspace.json 的 sessionIds，侧栏也不显示，点不进去"
+      }
+    ]
+  },
+  "dedup": {
+    "checked_at_utc": "2026-10-22T01:17:35Z",
+    "review_lingshulab_com": {
+      "total_scanned": 172,
+      "hits": 0
+    },
+    "github_FuRongJun_1999_dsh_bounty": {
+      "same_plugin_hits": 0,
+      "note": "YEYEYEYESHIFU 0 条；其余关键词的 total 是分词误命中，逐条比对标题后同插件为 0"
+    },
+    "conclusion": "两站均查清，无同范围重复，可写首报"
+  },
+  "processes": {
+    "self_started_hosts": [
+      {
+        "tag": "run1",
+        "pid": 13324,
+        "origin": "http://127.0.0.1:9798",
+        "stopped": true
+      },
+      {
+        "tag": "run2",
+        "pid": 37028,
+        "origin": "http://127.0.0.1:4133",
+        "stopped": true
+      },
+      {
+        "tag": "run3",
+        "pid": 3552,
+        "origin": "http://127.0.0.1:11114",
+        "stopped": true
+      },
+      {
+        "tag": "run4",
+        "pid": 3520,
+        "origin": "http://127.0.0.1:5315",
+        "stopped": true
+      },
+      {
+        "tag": "run5",
+        "pid": 24896,
+        "origin": "http://127.0.0.1:12495",
+        "stopped": true
+      }
+    ],
+    "all_stopped": true,
+    "ports_verified_free": [
+      9798,
+      4133,
+      11114,
+      5315,
+      12495
+    ],
+    "others_untouched": "同机其他 agent 的 host.mjs 进程（r1-01 pin / r2-01 composer-history run5,run6 / r1-01 navbar）未触碰",
+    "user_gui_untouched": [
+      1241,
+      2538,
+      4756
+    ]
+  },
+  "blocked": null,
+  "boundaries_observed": [
+    "不投稿、不上传、不新建公开仓库、不跟帖、不改线上记录",
+    "不改插件源码（发布件原样装进隔离 profile）",
+    "不再派子 agent",
+    "不调用付费模型、不使用真实第三方账号、不读真实密钥或登录态",
+    "只清理自己创建的 5 个宿主进程"
+  ],
+  "notes": [
+    "probe-03（evidence/run1-03-core.json）因选择器取错控件作废，仅作过程留痕，不用于任何结论。",
+    "本轮 confirmed 缺陷 0 条：主路径（开关、隐藏、保留、还原、刷新、切会话、长内容、多轮、两个异常）全部与 README 描述一致，且无控制台报错。",
+    "ISSUE_DRAFT.md 已明确写出「没有可提交的缺陷条目」，只适合作正面复核记录。"
+  ]
+}

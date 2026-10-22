@@ -1,0 +1,308 @@
+{
+  "utc": "2026-10-22T01:26:18.302Z",
+  "host": {
+    "pid": 27076,
+    "url": "http://127.0.0.1:5072/?token=REDACTED",
+    "profile": "ah0",
+    "utc": "2026-10-22T01:22:03.836Z",
+    "env": [
+      "DEEPSEEK_BASE_URL",
+      "DEEPSEEK_API_KEY",
+      "DSH_PERMISSION_MODE"
+    ]
+  },
+  "tests": {
+    "A'_noPanel_bodyFocus": {
+      "active": "BODY.",
+      "events": [
+        {
+          "t": 7681,
+          "kind": "keydown-capture",
+          "detail": {
+            "key": "Enter",
+            "dp": false,
+            "repeat": false,
+            "composing": false,
+            "target": "BODY."
+          }
+        },
+        {
+          "t": 7681,
+          "kind": "keydown-bubble",
+          "detail": {
+            "key": "Enter",
+            "dp": false,
+            "repeat": false,
+            "composing": false,
+            "target": "BODY."
+          }
+        },
+        {
+          "t": 7992,
+          "kind": "keydown-capture",
+          "detail": {
+            "key": "Escape",
+            "dp": false,
+            "repeat": false,
+            "composing": false,
+            "target": "BODY."
+          }
+        },
+        {
+          "t": 7992,
+          "kind": "keydown-bubble",
+          "detail": {
+            "key": "Escape",
+            "dp": false,
+            "repeat": false,
+            "composing": false,
+            "target": "BODY."
+          }
+        }
+      ],
+      "after": {
+        "panelCount": 0,
+        "keys": [],
+        "buttons": [],
+        "focusWithinPanel": false,
+        "active": "BODY.",
+        "tail": "请执行需要越权审批 | 9分钟 | 展开其余 4 个会话 | 设置 | 探索未至之境 | 预览版 | 默认工作区 | 标准模式 | 描述你想要构建的内容, / 调用指令, @ 文件或对话 | 工作区内修改 | DeepSeek-V41-Flash | High"
+      }
+    },
+    "B'_panel_bodyEnter": {
+      "panel": {
+        "panelCount": 1,
+        "keys": [
+          "approval:2"
+        ],
+        "buttons": [
+          [
+            "拒绝",
+            "允许一次"
+          ]
+        ],
+        "focusWithinPanel": false,
+        "active": "BODY.",
+        "tail": "允许本次操作使用 danger-full-access 权限：The test needs to write outside the workspace once. | Write-Output \"approved-by-hotkey\" | 拒绝 | 允许一次"
+      },
+      "events": [
+        {
+          "t": 9142,
+          "kind": "keydown-capture",
+          "detail": {
+            "key": "Enter",
+            "dp": false,
+            "repeat": false,
+            "composing": false,
+            "target": "BODY."
+          }
+        },
+        {
+          "t": 9142,
+          "kind": "keydown-bubble",
+          "detail": {
+            "key": "Enter",
+            "dp": false,
+            "repeat": false,
+            "composing": false,
+            "target": "BODY."
+          }
+        }
+      ],
+      "after": {
+        "panelCount": 1,
+        "keys": [
+          "approval:2"
+        ],
+        "buttons": [
+          [
+            "拒绝",
+            "允许一次"
+          ]
+        ],
+        "focusWithinPanel": false,
+        "active": "BODY.",
+        "tail": "允许本次操作使用 danger-full-access 权限：The test needs to write outside the workspace once. | Write-Output \"approved-by-hotkey\" | 拒绝 | 允许一次"
+      }
+    },
+    "C'_panel_bodyEsc": {
+      "panel": {
+        "panelCount": 1,
+        "keys": [
+          "approval:3"
+        ],
+        "buttons": [
+          [
+            "拒绝",
+            "允许一次"
+          ]
+        ],
+        "focusWithinPanel": false,
+        "active": "BODY.",
+        "tail": "允许本次操作使用 danger-full-access 权限：The test needs to write outside the workspace once. | Write-Output \"approved-by-hotkey\" | 拒绝 | 允许一次"
+      },
+      "events": [
+        {
+          "t": 12360,
+          "kind": "keydown-capture",
+          "detail": {
+            "key": "Escape",
+            "dp": false,
+            "repeat": false,
+            "composing": false,
+            "target": "BODY."
+          }
+        },
+        {
+          "t": 12360,
+          "kind": "keydown-bubble",
+          "detail": {
+            "key": "Escape",
+            "dp": false,
+            "repeat": false,
+            "composing": false,
+            "target": "BODY."
+          }
+        }
+      ],
+      "after": {
+        "panelCount": 1,
+        "keys": [
+          "approval:3"
+        ],
+        "buttons": [
+          [
+            "拒绝",
+            "允许一次"
+          ]
+        ],
+        "focusWithinPanel": false,
+        "active": "BODY.",
+        "tail": "允许本次操作使用 danger-full-access 权限：The test needs to write outside the workspace once. | Write-Output \"approved-by-hotkey\" | 拒绝 | 允许一次"
+      }
+    },
+    "D'_panel_focusInside_enter": {
+      "panel": {
+        "panelCount": 1,
+        "keys": [
+          "approval:4"
+        ],
+        "buttons": [
+          [
+            "拒绝",
+            "允许一次"
+          ]
+        ],
+        "focusWithinPanel": false,
+        "active": "BODY.",
+        "tail": "允许本次操作使用 danger-full-access 权限：The test needs to write outside the workspace once. | Write-Output \"approved-by-hotkey\" | 拒绝 | 允许一次"
+      },
+      "focus": {
+        "active": "DIV.mna1RW_body",
+        "inPanel": true
+      },
+      "events": [
+        {
+          "t": 15547,
+          "kind": "keydown-capture",
+          "detail": {
+            "key": "Enter",
+            "dp": false,
+            "repeat": false,
+            "composing": false,
+            "target": "DIV.mna1RW_body"
+          }
+        }
+      ],
+      "after": {
+        "panelCount": 0,
+        "keys": [],
+        "buttons": [],
+        "focusWithinPanel": false,
+        "active": "BODY.",
+        "tail": " | 用量 45 tok | 09:26 | 发消息或创建任务, / 调用指令, @ 文件或对话 | 工作区内修改 | DeepSeek-V41-Flash | High | 3 轮 6 步·18750 tok/s | 135 tok·缓存命中 0% | 0%"
+      }
+    },
+    "E'_panel_buttonFocus_enter": {
+      "panel": {
+        "panelCount": 1,
+        "keys": [
+          "approval:5"
+        ],
+        "buttons": [
+          [
+            "拒绝",
+            "允许一次"
+          ]
+        ],
+        "focusWithinPanel": false,
+        "active": "BODY.",
+        "tail": "允许本次操作使用 danger-full-access 权限：The test needs to write outside the workspace once. | Write-Output \"approved-by-hotkey\" | 拒绝 | 允许一次"
+      },
+      "focus": {
+        "text": "",
+        "isActive": true
+      },
+      "events": [
+        {
+          "t": 18736,
+          "kind": "keydown-capture",
+          "detail": {
+            "key": "Enter",
+            "dp": false,
+            "repeat": false,
+            "composing": false,
+            "target": "BUTTON.hHd-Xa_brand hHd-Xa_wide"
+          }
+        },
+        {
+          "t": 18736,
+          "kind": "keydown-bubble",
+          "detail": {
+            "key": "Enter",
+            "dp": false,
+            "repeat": false,
+            "composing": false,
+            "target": "BUTTON.hHd-Xa_brand hHd-Xa_wide"
+          }
+        },
+        {
+          "t": 18737,
+          "kind": "click",
+          "detail": {
+            "text": ""
+          }
+        }
+      ],
+      "after": {
+        "panelCount": 0,
+        "keys": [],
+        "buttons": [],
+        "focusWithinPanel": false,
+        "active": "DIV.uV2eYG_input",
+        "tail": "请执行需要越权审批 | 9分钟 | 展开其余 4 个会话 | 设置 | 探索未至之境 | 预览版 | 默认工作区 | 标准模式 | 描述你想要构建的内容, / 调用指令, @ 文件或对话 | 工作区内修改 | DeepSeek-V41-Flash | High"
+      }
+    }
+  },
+  "failures": [],
+  "pluginAbsent": {
+    "scriptSrcHasHotkeys": false,
+    "pluginListHas": false
+  },
+  "errors": [],
+  "consoleLog": [
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "utc": "2026-10-22T01:26:18.323Z"
+    }
+  ],
+  "finalState": {
+    "panelCount": 0,
+    "keys": [],
+    "buttons": [],
+    "focusWithinPanel": false,
+    "active": "DIV.uV2eYG_input",
+    "tail": "请执行需要越权审批 | 9分钟 | 展开其余 4 个会话 | 设置 | 探索未至之境 | 预览版 | 默认工作区 | 标准模式 | 描述你想要构建的内容, / 调用指令, @ 文件或对话 | 工作区内修改 | DeepSeek-V41-Flash | High"
+  }
+}

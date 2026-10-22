@@ -1,0 +1,245 @@
+{
+  "typing": [
+    {
+      "typed": "9",
+      "value": "4809",
+      "tweak": "[data-shortcut-modal=\"settings\"][role=\"dialog\"]{width:min(4809px, calc(100vw - 48px));height:min(400px, calc(100vh - 48px));background-color:var(--dsw-alias-bg-layer-2)}"
+    },
+    {
+      "typed": "0",
+      "value": "48090",
+      "tweak": "[data-shortcut-modal=\"settings\"][role=\"dialog\"]{width:min(48090px, calc(100vw - 48px));height:min(400px, calc(100vh - 48px));background-color:var(--dsw-alias-bg-layer-2)}"
+    },
+    {
+      "typed": "0",
+      "value": "480900",
+      "tweak": "[data-shortcut-modal=\"settings\"][role=\"dialog\"]{width:min(480900px, calc(100vw - 48px));height:min(400px, calc(100vh - 48px));background-color:var(--dsw-alias-bg-layer-2)}"
+    }
+  ],
+  "alternates": {},
+  "start": {
+    "panelPresent": true,
+    "panelRect": {
+      "x": 480,
+      "y": 300,
+      "w": 480,
+      "h": 400,
+      "right": 960,
+      "bottom": 700
+    },
+    "panelStyle": {
+      "width": "480px",
+      "height": "400px",
+      "maxWidth": "1392px",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "borderRadius": "28px",
+      "overflow": "hidden"
+    },
+    "secPresent": true,
+    "secRect": {
+      "x": 692,
+      "y": 354,
+      "w": 244,
+      "h": 315,
+      "right": 936,
+      "bottom": 669
+    },
+    "chips": [
+      {
+        "text": "默认（800×800）",
+        "on": false,
+        "pressed": "false"
+      },
+      {
+        "text": "大（1080×780）",
+        "on": false,
+        "pressed": "false"
+      },
+      {
+        "text": "特大（1280×960）",
+        "on": false,
+        "pressed": "false"
+      },
+      {
+        "text": "全屏",
+        "on": false,
+        "pressed": "false"
+      },
+      {
+        "text": "自定义",
+        "on": true,
+        "pressed": "true"
+      },
+      {
+        "text": "主题默认",
+        "on": true,
+        "pressed": "true"
+      },
+      {
+        "text": "纯色",
+        "on": false,
+        "pressed": "false"
+      },
+      {
+        "text": "恢复默认",
+        "on": false,
+        "pressed": null
+      }
+    ],
+    "nums": [
+      {
+        "value": "480",
+        "min": "480",
+        "max": ""
+      },
+      {
+        "value": "400",
+        "min": "360",
+        "max": ""
+      }
+    ],
+    "range": {
+      "value": "100",
+      "min": "30",
+      "max": "100"
+    },
+    "rangeLabel": [
+      "100%"
+    ],
+    "colors": [],
+    "footText": "恢复默认\n改动即时生效；纯色按亮/暗主题各存一色，切换自动跟随；随 dsh profile 保存",
+    "flash": "",
+    "err": "",
+    "tweakCss": "[data-shortcut-modal=\"settings\"][role=\"dialog\"]{width:min(480px, calc(100vw - 48px));height:min(400px, calc(100vh - 48px));background-color:var(--dsw-alias-bg-layer-2)}",
+    "tweakLen": 168,
+    "dark": false,
+    "docOverflowX": false,
+    "storageKeys": [
+      "dsh.workspace.view.v5",
+      "dsh.sidebar-right.v1.session-2706f68c-a82a-4dfc-95b3-f4abb3626af2",
+      "dsh.sessions.current"
+    ]
+  },
+  "afterClear": {
+    "value": "480"
+  },
+  "afterTyping900": {
+    "panelPresent": true,
+    "panelRect": {
+      "x": 24,
+      "y": 300,
+      "w": 1392,
+      "h": 400,
+      "right": 1416,
+      "bottom": 700
+    },
+    "panelStyle": {
+      "width": "1392px",
+      "height": "400px",
+      "maxWidth": "1392px",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "borderRadius": "28px",
+      "overflow": "hidden"
+    },
+    "secPresent": true,
+    "secRect": {
+      "x": 236,
+      "y": 354,
+      "w": 560,
+      "h": 234,
+      "right": 796,
+      "bottom": 588
+    },
+    "chips": [
+      {
+        "text": "默认（800×800）",
+        "on": false,
+        "pressed": "false"
+      },
+      {
+        "text": "大（1080×780）",
+        "on": false,
+        "pressed": "false"
+      },
+      {
+        "text": "特大（1280×960）",
+        "on": false,
+        "pressed": "false"
+      },
+      {
+        "text": "全屏",
+        "on": false,
+        "pressed": "false"
+      },
+      {
+        "text": "自定义",
+        "on": true,
+        "pressed": "true"
+      },
+      {
+        "text": "主题默认",
+        "on": true,
+        "pressed": "true"
+      },
+      {
+        "text": "纯色",
+        "on": false,
+        "pressed": "false"
+      },
+      {
+        "text": "恢复默认",
+        "on": false,
+        "pressed": null
+      }
+    ],
+    "nums": [
+      {
+        "value": "480900",
+        "min": "480",
+        "max": ""
+      },
+      {
+        "value": "400",
+        "min": "360",
+        "max": ""
+      }
+    ],
+    "range": {
+      "value": "100",
+      "min": "30",
+      "max": "100"
+    },
+    "rangeLabel": [
+      "100%"
+    ],
+    "colors": [],
+    "footText": "恢复默认\n改动即时生效；纯色按亮/暗主题各存一色，切换自动跟随；随 dsh profile 保存",
+    "flash": "",
+    "err": "",
+    "tweakCss": "[data-shortcut-modal=\"settings\"][role=\"dialog\"]{width:min(480900px, calc(100vw - 48px));height:min(400px, calc(100vh - 48px));background-color:var(--dsw-alias-bg-layer-2)}",
+    "tweakLen": 171,
+    "dark": false,
+    "docOverflowX": false,
+    "storageKeys": [
+      "dsh.workspace.view.v5",
+      "dsh.sidebar-right.v1.session-2706f68c-a82a-4dfc-95b3-f4abb3626af2",
+      "dsh.sessions.current"
+    ]
+  },
+  "afterTyping700": {
+    "value": "480700"
+  },
+  "arrowUp": {
+    "before": "480",
+    "after": "482"
+  },
+  "appendAtEnd": {
+    "value": "4820",
+    "api": null
+  },
+  "statusAfterAppend": {
+    "status": 200,
+    "body": "{\"settings\":{\"size\":\"custom\",\"customWidth\":4820,\"customHeight\":400,\"opacity\":100,\"bgMode\":\"default\",\"bgColorLight\":\"#eef1f5\",\"bgColorDark\":\"#1e2a38\"}}"
+  },
+  "errors": []
+}

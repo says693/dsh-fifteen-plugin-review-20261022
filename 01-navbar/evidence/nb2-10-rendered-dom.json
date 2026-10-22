@@ -1,0 +1,296 @@
+{
+  "flowKids": 101,
+  "flowRect": {
+    "x": 485,
+    "y": -4543,
+    "w": 742,
+    "h": 5399
+  },
+  "kids": [
+    {
+      "i": 0,
+      "tag": "DIV",
+      "cls": "EvIC1a_older",
+      "attrs": {
+        "class": "EvIC1a_older"
+      },
+      "rect": {
+        "x": 485,
+        "y": -4543,
+        "w": 742,
+        "h": 24
+      },
+      "text": "加载更早",
+      "bubble": false,
+      "descendantsWithTimeHoverRoot": 0
+    },
+    {
+      "i": 1,
+      "tag": "DIV",
+      "cls": "EvIC1a_flowItem",
+      "attrs": {
+        "class": "EvIC1a_flowItem",
+        "data-chat-anchor-key": "13:input-messagesess-nav-long45-u20",
+        "data-chat-flow-key": "13:input-messagesess-nav-long45-u20",
+        "data-chat-paging-anchor": "true",
+        "data-chat-node-key": "13:input-messagesess-nav-long45-u20",
+        "data-chat-flow-kind": "user",
+        "data-chat-turn": "21"
+      },
+      "rect": {
+        "x": 485,
+        "y": -4513,
+        "w": 742,
+        "h": 76
+      },
+      "text": "第 21 段：这是长会话的第 21 条提问，用来检查右侧小圆点会不会挤成一团。 09:14",
+      "bubble": true,
+      "descendantsWithTimeHoverRoot": 0
+    },
+    {
+      "i": 2,
+      "tag": "DIV",
+      "cls": "EvIC1a_flowItem",
+      "attrs": {
+        "class": "EvIC1a_flowItem",
+        "data-chat-anchor-key": "12:turn-process21",
+        "data-chat-flow-key": "12:turn-process21",
+        "data-chat-node-key": "12:turn-process21",
+        "data-chat-flow-kind": "turn-process",
+        "data-chat-turn": "21"
+      },
+      "rect": {
+        "x": 485,
+        "y": -4421,
+        "w": 742,
+        "h": 33
+      },
+      "text": "已完成 已完成，用时 1秒",
+      "bubble": false,
+      "descendantsWithTimeHoverRoot": 0
+    },
+    {
+      "i": 3,
+      "tag": "DIV",
+      "cls": "EvIC1a_flowItem",
+      "attrs": {
+        "class": "EvIC1a_flowItem",
+        "data-chat-anchor-key": "14:assistant-step21:1",
+        "data-chat-flow-key": "14:assistant-step21:1",
+        "data-chat-paging-anchor": "true",
+        "data-chat-node-key": "14:assistant-step21:1",
+        "data-chat-group-part": "response",
+        "data-chat-flow-kind": "assistant-step",
+        "data-chat-turn": "21",
+        "data-turn-process-answer": "true"
+      },
+      "rect": {
+        "x": 485,
+        "y": -4372,
+        "w": 742,
+        "h": 24
+      },
+      "text": "第 21 段的回答。这里放一段普通长度的回复，让每条回合都有实际高度。",
+      "bubble": false,
+      "descendantsWithTimeHoverRoot": 0
+    },
+    {
+      "i": 4,
+      "tag": "DIV",
+      "cls": "EvIC1a_flowItem",
+      "attrs": {
+        "class": "EvIC1a_flowItem",
+        "data-chat-anchor-key": "9:turn-tail21",
+        "data-chat-flow-key": "9:turn-tail21",
+        "data-chat-paging-anchor": "true",
+        "data-chat-node-key": "9:turn-tail21",
+        "data-chat-flow-kind": "turn-tail",
+        "data-chat-turn": "21"
+      },
+      "rect": {
+        "x": 485,
+        "y": -4336,
+        "w": 742,
+        "h": 32
+      },
+      "text": "09:14",
+      "bubble": false,
+      "descendantsWithTimeHoverRoot": 0
+    },
+    {
+      "i": 5,
+      "tag": "DIV",
+      "cls": "EvIC1a_flowItem",
+      "attrs": {
+        "class": "EvIC1a_flowItem",
+        "data-chat-anchor-key": "13:input-messagesess-nav-long45-u21",
+        "data-chat-flow-key": "13:input-messagesess-nav-long45-u21",
+        "data-chat-paging-anchor": "true",
+        "data-chat-node-key": "13:input-messagesess-nav-long45-u21",
+        "data-chat-flow-kind": "user",
+        "data-chat-turn": "22"
+      },
+      "rect": {
+        "x": 485,
+        "y": -4298,
+        "w": 742,
+        "h": 76
+      },
+      "text": "第 22 段：这是长会话的第 22 条提问，用来检查右侧小圆点会不会挤成一团。 09:14",
+      "bubble": true,
+      "descendantsWithTimeHoverRoot": 0
+    },
+    {
+      "i": 6,
+      "tag": "DIV",
+      "cls": "EvIC1a_flowItem",
+      "attrs": {
+        "class": "EvIC1a_flowItem",
+        "data-chat-anchor-key": "12:turn-process22",
+        "data-chat-flow-key": "12:turn-process22",
+        "data-chat-node-key": "12:turn-process22",
+        "data-chat-flow-kind": "turn-process",
+        "data-chat-turn": "22"
+      },
+      "rect": {
+        "x": 485,
+        "y": -4206,
+        "w": 742,
+        "h": 33
+      },
+      "text": "已完成 已完成，用时 1秒",
+      "bubble": false,
+      "descendantsWithTimeHoverRoot": 0
+    },
+    {
+      "i": 7,
+      "tag": "DIV",
+      "cls": "EvIC1a_flowItem",
+      "attrs": {
+        "class": "EvIC1a_flowItem",
+        "data-chat-anchor-key": "14:assistant-step22:1",
+        "data-chat-flow-key": "14:assistant-step22:1",
+        "data-chat-paging-anchor": "true",
+        "data-chat-node-key": "14:assistant-step22:1",
+        "data-chat-group-part": "response",
+        "data-chat-flow-kind": "assistant-step",
+        "data-chat-turn": "22",
+        "data-turn-process-answer": "true"
+      },
+      "rect": {
+        "x": 485,
+        "y": -4157,
+        "w": 742,
+        "h": 24
+      },
+      "text": "第 22 段的回答。这里放一段普通长度的回复，让每条回合都有实际高度。",
+      "bubble": false,
+      "descendantsWithTimeHoverRoot": 0
+    },
+    {
+      "i": 8,
+      "tag": "DIV",
+      "cls": "EvIC1a_flowItem",
+      "attrs": {
+        "class": "EvIC1a_flowItem",
+        "data-chat-anchor-key": "9:turn-tail22",
+        "data-chat-flow-key": "9:turn-tail22",
+        "data-chat-paging-anchor": "true",
+        "data-chat-node-key": "9:turn-tail22",
+        "data-chat-flow-kind": "turn-tail",
+        "data-chat-turn": "22"
+      },
+      "rect": {
+        "x": 485,
+        "y": -4121,
+        "w": 742,
+        "h": 32
+      },
+      "text": "09:14",
+      "bubble": false,
+      "descendantsWithTimeHoverRoot": 0
+    },
+    {
+      "i": 9,
+      "tag": "DIV",
+      "cls": "EvIC1a_flowItem",
+      "attrs": {
+        "class": "EvIC1a_flowItem",
+        "data-chat-anchor-key": "13:input-messagesess-nav-long45-u22",
+        "data-chat-flow-key": "13:input-messagesess-nav-long45-u22",
+        "data-chat-paging-anchor": "true",
+        "data-chat-node-key": "13:input-messagesess-nav-long45-u22",
+        "data-chat-flow-kind": "user",
+        "data-chat-turn": "23"
+      },
+      "rect": {
+        "x": 485,
+        "y": -4083,
+        "w": 742,
+        "h": 76
+      },
+      "text": "第 23 段：这是长会话的第 23 条提问，用来检查右侧小圆点会不会挤成一团。 09:14",
+      "bubble": true,
+      "descendantsWithTimeHoverRoot": 0
+    },
+    {
+      "i": 10,
+      "tag": "DIV",
+      "cls": "EvIC1a_flowItem",
+      "attrs": {
+        "class": "EvIC1a_flowItem",
+        "data-chat-anchor-key": "12:turn-process23",
+        "data-chat-flow-key": "12:turn-process23",
+        "data-chat-node-key": "12:turn-process23",
+        "data-chat-flow-kind": "turn-process",
+        "data-chat-turn": "23"
+      },
+      "rect": {
+        "x": 485,
+        "y": -3991,
+        "w": 742,
+        "h": 33
+      },
+      "text": "已完成 已完成，用时 1秒",
+      "bubble": false,
+      "descendantsWithTimeHoverRoot": 0
+    },
+    {
+      "i": 11,
+      "tag": "DIV",
+      "cls": "EvIC1a_flowItem",
+      "attrs": {
+        "class": "EvIC1a_flowItem",
+        "data-chat-anchor-key": "14:assistant-step23:1",
+        "data-chat-flow-key": "14:assistant-step23:1",
+        "data-chat-paging-anchor": "true",
+        "data-chat-node-key": "14:assistant-step23:1",
+        "data-chat-group-part": "response",
+        "data-chat-flow-kind": "assistant-step",
+        "data-chat-turn": "23",
+        "data-turn-process-answer": "true"
+      },
+      "rect": {
+        "x": 485,
+        "y": -3942,
+        "w": 742,
+        "h": 24
+      },
+      "text": "第 23 段的回答。这里放一段普通长度的回复，让每条回合都有实际高度。",
+      "bubble": false,
+      "descendantsWithTimeHoverRoot": 0
+    }
+  ],
+  "attrTotals": {
+    "data-time-hover-root": 0,
+    "data-chat-flow-kind": 100,
+    "data-chat-anchor-key": 100,
+    "data-turn-tail": 25,
+    "data-chat-row": 0,
+    "data-message-id": 0,
+    "data-chat-turn": 100
+  },
+  "bubbleClasses": [
+    "Sixlwa_bubble"
+  ]
+}

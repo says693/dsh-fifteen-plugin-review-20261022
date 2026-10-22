@@ -1,0 +1,222 @@
+{
+  "object": "dsh-turn-index@0.1.1 (Simon314620/dsh-turn-index @ a324ecd)",
+  "host": "@deepseek-ai/dsh 0.2.0-rc.2",
+  "browser": "Edge 155.0.4283.62 headless via Playwright 1.64.1",
+  "executed_at": "2026-10-22T09:00:00+08:00 ~ 2026-10-22T09:22:00+08:00",
+  "summary": {
+    "checks_total": 22,
+    "confirmed": 15,
+    "untested": 6,
+    "uncertain": 1,
+    "confirmed_note": "confirmed 指「该读数已实测确认」，不等于「插件行为符合预期」——其中 B1/B1b/B1c/B1d 是缺陷确认，F1/F2/F3/I1 是「会话数据齐备但面板缺席」这一事实确认",
+    "headline": "插件装上、client bundle 执行了（样式与 locale 都注入成功），但右侧轮次索引面板在 0/1/6/20/超长五种会话、四档视口、三次刷新与一次冷重启下**从未出现**。根因已定位到取当前会话 id 的那一行。"
+  },
+  "checks": [
+    {
+      "id": "A1",
+      "item": "npm 发布件安装（dsh plugin --profile web add dsh-turn-index@0.1.1）",
+      "expected": "命令成功，profile 依赖与 bundles 里出现 dsh-turn-index",
+      "actual": "exit 0；profile package.json 的 dependencies 加了 \"dsh-turn-index\": \"0.1.1\"，dsh.profile.bundles 追加 \"dsh-turn-index\"",
+      "evidence": ["evidence/install-01-add.txt", "evidence/../isolated-home/profiles/web/package.json"],
+      "state": "confirmed",
+      "verdict": "符合预期"
+    },
+    {
+      "id": "A2",
+      "item": "宿主是否识别并加载插件",
+      "expected": "宿主「插件」页把 dsh-turn-index 列为已安装",
+      "actual": "插件页「已安装 1」下出现 dsh-turn-index 与其描述；boot manifest 里存在 {\"id\":\"dsh-turn-index\",\"url\":\"plugins/??dsh-turn-index/client.js&rev=2a624d65dbe1\",\"inject\":[]}",
+      "evidence": ["evidence/p06-plugins.json", "evidence/p06-plugins.png", "evidence/p02-diag.json"],
+      "state": "confirmed",
+      "verdict": "符合预期"
+    },
+    {
+      "id": "A3",
+      "item": "client bundle 是否在浏览器里真的执行",
+      "expected": "apply() 里的 injectCss() 生效，页面出现插件样式标签",
+      "actual": "document.querySelector('style[data-plugin-css=\"dsh-turn-index/styles\"]') 存在；<style data-plugin> 列表末尾是 \"dsh-turn-index\"；三次 reload 后 styleTags 恒为 1（无重复注入）",
+      "evidence": ["evidence/p02-diag.json", "evidence/p04-watch.json", "evidence/p12-reload.json"],
+      "state": "confirmed",
+      "verdict": "符合预期 —— 这条同时否掉了「插件完全没生效」的说法"
+    },
+    {
+      "id": "B1",
+      "item": "安装后右侧是否出现轮次索引面板",
+      "expected": "右侧出现 .dsh_ti_root 面板（README：「刷新页面即可在右侧看到索引栏」）",
+      "actual": "1440 宽下 document.querySelector('.dsh_ti_root') === null；document.querySelectorAll('[class*=\"dsh_ti\"]').length === 0；[data-slot=\"shell.overlay\"] 的 children.length === 1（且那 1 个是本轮加的只读探针，不是被测插件）",
+      "evidence": ["evidence/p01-boot.json", "evidence/p04-watch.json", "evidence/p07-scan.json", "evidence/p09-run.txt", "evidence/p01-boot.png", "evidence/p07-scan-1440.png"],
+      "state": "confirmed",
+      "verdict": "缺陷 —— 面板从不渲染"
+    },
+    {
+      "id": "B1b",
+      "item": "面板缺席是否只是渲染慢/竞态",
+      "expected": "若只是慢，等待后应出现",
+      "actual": "21 次 250ms 采样 + MutationObserver 连续观察 5 秒，everPresent=false；三次 reload、一次冷重启（换新宿主实例与新端口）后读数不变",
+      "evidence": ["evidence/p04-watch.json", "evidence/p12-reload.json", "evidence/p13-cold-restart.json"],
+      "state": "confirmed",
+      "verdict": "排除竞态 —— 稳定缺席"
+    },
+    {
+      "id": "B1c",
+      "item": "面板缺席的成因（是否组件抛错被吞）",
+      "expected": "若是抛错，应能看到页面错误或 data-slot-error / data-factory-error 占位",
+      "actual": "addInitScript 捕获 window error / unhandledrejection / console.error，全空；pageerror=[]；DOM 无 [data-slot-error]、无 [data-factory-error]。⇒ 组件是「返回了 null」而不是「抛错」",
+      "evidence": ["evidence/p05-run.txt", "evidence/p07-scan.json"],
+      "state": "confirmed",
+      "verdict": "排除抛错路径"
+    },
+    {
+      "id": "B1d",
+      "item": "「返回 null」的具体取值来源",
+      "expected": "lib/client.js:292 取 s.current 后，:388 对 undefined 直接 return null",
+      "actual": "只读探针（dsh-probe-ti，同样挂在 shell.overlay）读数：useSessions(s=>s.current) 返回 undefined（currentIsUndefined=true）；useSessions(s=>s) 返回 {ids, byId, phase, projectionsBySession}——**没有 current 字段**；ctx.sessions 自有键为 [rootCtx, searchResultLimit, list, manager, scopes, retainObservers, scopeDrops, closed]，也无 current；sessions.binding('session-cded7315-…') 返回 object（活绑定可取），sessions.binding(undefined) 返回 undefined",
+      "evidence": ["evidence/p09-run.txt", "evidence/p09-probe.png", "probe-plugin/lib/client.js"],
+      "state": "confirmed",
+      "verdict": "根因 —— 0.2.0-rc.2 的 SessionListState 不提供 current，插件用 s.current 取当前会话恒得 undefined"
+    },
+    {
+      "id": "B2",
+      "item": "条目数是否与轮次一一对应",
+      "expected": "6 轮会话应出现 6 条（第 3 轮另有 1 条 steering 缩进项）",
+      "actual": "面板不存在，条目数恒为 0；同会话聊天流 [data-chat-flow-kind=\"user\"] 计数为 6，scrollHeight 2644 —— 数据侧齐备，索引侧无对象",
+      "evidence": ["evidence/p10-boundary.json", "evidence/p11-scroll.json", "evidence/p10-sess-ti-six.png"],
+      "state": "untested",
+      "verdict": "无可观测对象，不能判符合或不符合"
+    },
+    {
+      "id": "C1",
+      "item": "滚动时当前轮是否高亮、是否跟手",
+      "expected": "0→max 分段滚动，每次应有且仅有一个 data-active 条目且对应可见轮",
+      "actual": "11 步（0/172/344/…/1720）scrollTop 每步精确命中目标值，但每步 activeItemKeys=[]、panelPresent=false",
+      "evidence": ["evidence/p11-scroll.json", "evidence/p11-scroll-mid.png"],
+      "state": "untested",
+      "verdict": "滚动容器正常可滚，但无条目可高亮 —— 不能写成「高亮不跟手」"
+    },
+    {
+      "id": "C2",
+      "item": "是否漏高亮 / 多高亮",
+      "expected": "任一位置 active 数量为 1",
+      "actual": "active 数量恒为 0，属「无对象」而非「漏高亮」",
+      "evidence": ["evidence/p11-scroll.json"],
+      "state": "untested",
+      "verdict": "无法区分"
+    },
+    {
+      "id": "D1",
+      "item": "点击条目是否跳到该轮开头",
+      "expected": "点击第 k 条后目标行相对滚动容器 top 偏移接近 0",
+      "actual": "document.querySelectorAll('.dsh_ti_item,.dsh_ti_dot') 计数为 0，无可点击对象",
+      "evidence": ["evidence/p11-scroll.json"],
+      "state": "untested",
+      "verdict": "无对象"
+    },
+    {
+      "id": "E1",
+      "item": "折叠/展开控件是否存在、是否保留状态",
+      "expected": "面板头部应有 .dsh_ti_toggle，折叠状态存 localStorage 键 dsh-turn-index:pref",
+      "actual": ".dsh_ti_toggle 不存在；data-collapsed 读数 null；localStorage 里没有任何 dsh-turn-index 前缀键（三次 reload + 冷重启后一致）",
+      "evidence": ["evidence/p11-scroll.json", "evidence/p12-reload.json", "evidence/p13-cold-restart.json"],
+      "state": "untested",
+      "verdict": "控件随面板一起缺席，无法验证「是否保留」"
+    },
+    {
+      "id": "F1",
+      "item": "0 轮（空会话）边界",
+      "expected": "面板出现并显示空态「还没有轮次」，或不出现但不报错",
+      "actual": "sess-ti-zero：userRows=0、scrollHeight=960、panelPresent=false、emptyStateText=null、console 无错误",
+      "evidence": ["evidence/p10-boundary.json", "evidence/p10-sess-ti-zero.png"],
+      "state": "confirmed",
+      "verdict": "行为与「面板根本不渲染」一致；空态文案未被验证到（面板不存在）"
+    },
+    {
+      "id": "F2",
+      "item": "1 轮边界",
+      "expected": "出现 1 条且高亮恒为它",
+      "actual": "sess-ti-one：userRows=1、panelPresent=false、itemCount=0",
+      "evidence": ["evidence/p10-boundary.json", "evidence/p10-sess-ti-one.png"],
+      "state": "confirmed",
+      "verdict": "面板缺席（与多轮时一致，说明不是「条目太少而不显示」）"
+    },
+    {
+      "id": "F3",
+      "item": "多条（6 / 20 轮）边界",
+      "expected": "条目数与轮次相当；20 轮时索引列表自身可滚动",
+      "actual": "sess-ti-six：userRows=6、scrollHeight=2644；sess-ti-twenty：userRows=20、scrollHeight=6054；两者 panelPresent 均 false、itemCount 均 0",
+      "evidence": ["evidence/p10-boundary.json", "evidence/p10-sess-ti-twenty.png"],
+      "state": "confirmed",
+      "verdict": "面板缺席与轮次数量无关"
+    },
+    {
+      "id": "G1",
+      "item": "刷新后重建",
+      "expected": "reload 后条目数与顺序一致、无重复",
+      "actual": "连续 3 次 reload：styleTags=1、anyTi=0、panel=false、overlaySeatChildren=1、prefKeys=[]、userRows=6、scrollHeight=2644 —— 三次完全一致",
+      "evidence": ["evidence/p12-reload.json", "evidence/p12-reload-0.png"],
+      "state": "confirmed",
+      "verdict": "稳定（无可重建的对象）；无重复条目，因为从来没有条目"
+    },
+    {
+      "id": "G2",
+      "item": "冷重启后重建",
+      "expected": "换新宿主实例后会话回放，索引应重建同样条目",
+      "actual": "停 h2 起 h3（新端口 7924）后打开：styleTags=1、panel=false、anyTi=0、probeVisible=true、prefKeys=[]；切到 sess-ti-six 后 userRows=6、panelPresent=false",
+      "evidence": ["evidence/p13-cold-restart.json", "evidence/p13-cold-restart.png", "evidence/h3-host.local.json"],
+      "state": "confirmed",
+      "verdict": "冷重启后同样缺席"
+    },
+    {
+      "id": "H1",
+      "item": "与宿主已有侧栏是否重叠（1440 宽）",
+      "expected": "索引栏不遮挡宿主已有右侧轮次导轨与输入框",
+      "actual": "宿主自带轮次导轨实测 rect={x:1393,y:443,w:28,h:62}（7 个 mark）；按插件 CSS 推算的面板 rect={x:1188,width:232,top:80,bottom:1004}，两者相交面积 1674 px²；面板 bottom=1004 超出视口底 1000，即与 [data-composer-seat]（y=872,h=128）在纵向重叠",
+      "evidence": ["evidence/p14-rail.json", "evidence/p14-rail-1440.png", "evidence/p14-run.txt"],
+      "state": "uncertain",
+      "verdict": "几何推算，非实测 —— 面板从未渲染，不能写成「已确认遮挡」"
+    },
+    {
+      "id": "H2",
+      "item": "窄窗口 1000 / 760 / 600 是否遮挡溢出",
+      "expected": "≤1024px 自动收成 44px 窄条；不产生横向滚动条",
+      "actual": "三档实测：docOverflowX=false、scrollWidth 分别 1000/760/600；宿主导轨 rect 为 0×0（已收起）；插件窄条模式无法观测（面板不存在）",
+      "evidence": ["evidence/p07-scan.json", "evidence/p14-rail.json", "evidence/p07-scan-1000.png", "evidence/p07-scan-760.png", "evidence/p07-scan-600.png"],
+      "state": "untested",
+      "verdict": "文档未溢出是宿主自身行为，与插件无关；插件的窄条降级无法验证"
+    },
+    {
+      "id": "I1",
+      "item": "异常：超长单轮（4000+ 字用户消息）",
+      "expected": "面板仍可用、条目文本按 2 行截断、跳转仍命中",
+      "actual": "sess-ti-long：第 2 轮用户消息 4000+ 字，userRows=3、scrollHeight=3733、panelPresent=false、itemCount=0；无错误",
+      "evidence": ["evidence/p10-boundary.json", "evidence/p10-sess-ti-long.png"],
+      "state": "confirmed",
+      "verdict": "超长单轮不会额外引发错误，但也没有面板可观察截断与跳转 —— 异常项本身未能测到"
+    },
+    {
+      "id": "I2",
+      "item": "异常：快速来回滚动 10 次",
+      "expected": "active 收敛正确、不卡死、不抛错",
+      "actual": "10 次在 0 与 max(1720) 之间跳变全部执行，trace 长度 10，panel 始终 false；pageerror=[]、console error/warning=[]",
+      "evidence": ["evidence/p11-scroll.json", "evidence/p11-after.png"],
+      "state": "confirmed",
+      "verdict": "无异常、无崩溃；同样没有高亮对象可判「是否错乱」"
+    },
+    {
+      "id": "J1",
+      "item": "README 声明的支持版本与实际宿主",
+      "expected": "README Compatibility 声明支持 DSH 0.1.0-rc.6（最后验证 2026-08-14）",
+      "actual": "package.json 无 engines 字段、peerDependencies 只列可选 react，**没有任何宿主版本约束**，因此 0.2.0-rc.2 可以照装（exit 0），不会像其他插件那样被 peer 拒绝",
+      "evidence": ["evidence/../temp/pkg/package/package.json", "evidence/install-01-add.txt"],
+      "state": "confirmed",
+      "verdict": "装得上但跑不出界面 —— 缺少宿主版本声明，用户无法在安装阶段得到提示"
+    }
+  ],
+  "not_done": [
+    "0.1.0-rc.6 宿主上是否同样失效（本轮只有 0.2.0-rc.2，未回测旧宿主）",
+    "真实模型生成的多轮会话（本轮用官方持久化库合成会话，无真实生成过程）",
+    "轨迹视图下的「目标不在当前视图」兜底提示与「切回对话」按钮（面板不存在，无法触发）",
+    "「加载更早的轮次」分页（面板不存在，无法触发）",
+    "双语文案切换（locale 已注册但面板不存在，文案不可见）",
+    "details 面板打开时的左移避让（依赖面板存在）"
+  ]
+}

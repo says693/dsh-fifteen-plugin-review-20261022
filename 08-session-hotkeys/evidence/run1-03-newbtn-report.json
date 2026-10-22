@@ -1,0 +1,219 @@
+{
+  "utc": "2026-10-22T01:00:46.063Z",
+  "start": {
+    "url": "http://127.0.0.1:2280/",
+    "origin": "http://127.0.0.1:2280",
+    "rowCount": 1,
+    "rows": [
+      {
+        "key": "session:session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e",
+        "sel": "true",
+        "text": "新会话"
+      }
+    ],
+    "activeKey": "session:session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e",
+    "activeText": "新会话",
+    "activeElement": {
+      "tag": "H2",
+      "role": null,
+      "aria": null,
+      "cls": "jLrgrW_title",
+      "id": ""
+    },
+    "toast": null,
+    "toastText": null,
+    "panelPresent": false,
+    "confirmDialog": true,
+    "storageKeys": [
+      "dsh.session-hotkeys.dsvHidden",
+      "dsh.sessions.current",
+      "dsh.workspace.view.v5",
+      "dsh.sidebar-right.v1.session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e"
+    ],
+    "ls": {
+      "dsh.session-hotkeys.dsvHidden": "0",
+      "dsh.sessions.current": "{\"sessionId\":\"session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e\"}",
+      "dsh.workspace.view.v5": "{\"groupBy\":\"workspace\",\"orderBy\":\"updated\",\"groupExpansion\":{\"194af2d3-53e4-4f7e-b44f-e51c135ab047\":true},\"sessionOrderByAccount\":{},\"archivedFilter\":\"default\"}",
+      "dsh.sidebar-right.v1.session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e": "{\"bySession\":{\"session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e\":{\"layout\":{\"nodes\":{\"pane1\":{\"kind\":\"pane\",\"id\":\"pane1\",\"host\":\"dock\",\"tabs\":[]}},\"tabs\":{},\"rootId\":\"pane1\",\"floats\":[],\"activePaneId\":\"pane1\",\"expanded\":false,\"mode\":\"push\"},\"minted\":1}}}"
+    },
+    "sessionInputValue": null,
+    "sessionInputFocused": null
+  },
+  "buttons": [
+    {
+      "text": "",
+      "aria": "新建会话",
+      "title": null,
+      "cls": "hHd-Xa_brand hHd-Xa_wide"
+    },
+    {
+      "text": "",
+      "aria": "收起侧边栏",
+      "title": null,
+      "cls": "hHd-Xa_iconButton hHd-Xa_toggle"
+    },
+    {
+      "text": "新会话 Ctrl + Alt + N",
+      "aria": "新建会话",
+      "title": null,
+      "cls": "hHd-Xa_newSession"
+    },
+    {
+      "text": "插件",
+      "aria": "插件",
+      "title": null,
+      "cls": "hHd-Xa_panelRow"
+    },
+    {
+      "text": "",
+      "aria": "搜索会话",
+      "title": null,
+      "cls": "bhn1Oq_searchButton"
+    },
+    {
+      "text": "",
+      "aria": "视图选项",
+      "title": null,
+      "cls": "bhn1Oq_iconButton bhn1Oq_wide"
+    },
+    {
+      "text": "",
+      "aria": "添加工作区",
+      "title": null,
+      "cls": "bhn1Oq_iconButton"
+    },
+    {
+      "text": "",
+      "aria": "会话快捷键",
+      "title": "会话快捷键面板（键位可在面板「按键」页自定义）",
+      "cls": "shk-pinbtn"
+    },
+    {
+      "text": "设置",
+      "aria": "设置",
+      "title": null,
+      "cls": "VOzbGW_trigger"
+    },
+    {
+      "text": "",
+      "aria": "打开右侧边栏",
+      "title": null,
+      "cls": "_button_1rv3m_2 _ghost_1rv3m_45 _sm_1rv3m_28 _1kL45W_button"
+    },
+    {
+      "text": "默认工作区",
+      "aria": "选择工作区",
+      "title": null,
+      "cls": "pXSMma_workspace"
+    },
+    {
+      "text": "标准模式",
+      "aria": null,
+      "title": "选择新任务使用的 Agent 预设",
+      "cls": "cubgiG_seat"
+    },
+    {
+      "text": "",
+      "aria": "添加文件或调用指令",
+      "title": null,
+      "cls": "uV2eYG_add"
+    },
+    {
+      "text": "工作区内修改",
+      "aria": "访问模式，当前：工作区内修改",
+      "title": null,
+      "cls": "iWlSmW_trigger"
+    },
+    {
+      "text": "DeepSeek-V41-Flash High",
+      "aria": "选择模型，当前 DeepSeek-V41-Flash，推理等级 High",
+      "title": "DeepSeek-V41-Flash · High",
+      "cls": "_7KE1Ra_trigger"
+    },
+    {
+      "text": "",
+      "aria": "发送消息",
+      "title": null,
+      "cls": "uV2eYG_primary"
+    },
+    {
+      "text": "",
+      "aria": "新标签页",
+      "title": null,
+      "cls": "_addTab_6nhg2_449"
+    },
+    {
+      "text": "",
+      "aria": "分栏",
+      "title": null,
+      "cls": "_iconButton_6nhg2_511"
+    },
+    {
+      "text": "",
+      "aria": "全屏",
+      "title": null,
+      "cls": "P3OORG_iconButton"
+    },
+    {
+      "text": "",
+      "aria": "收起右侧边栏",
+      "title": null,
+      "cls": "P3OORG_iconButton"
+    },
+    {
+      "text": "继续",
+      "aria": null,
+      "title": null,
+      "cls": "_button_1rv3m_2 _primary_1rv3m_36 _md_1rv3m_23 t1T8VW_primary"
+    }
+  ],
+  "clicked": {
+    "found": true,
+    "desc": {
+      "text": "",
+      "aria": "新建会话",
+      "title": "",
+      "cls": "hHd-Xa_brand hHd-Xa_wide"
+    }
+  },
+  "afterHostClick": {
+    "url": "http://127.0.0.1:2280/",
+    "origin": "http://127.0.0.1:2280",
+    "rowCount": 1,
+    "rows": [
+      {
+        "key": "session:session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e",
+        "sel": "true",
+        "text": "新会话"
+      }
+    ],
+    "activeKey": "session:session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e",
+    "activeText": "新会话",
+    "activeElement": {
+      "tag": "H2",
+      "role": null,
+      "aria": null,
+      "cls": "jLrgrW_title",
+      "id": ""
+    },
+    "toast": null,
+    "toastText": null,
+    "panelPresent": false,
+    "confirmDialog": true,
+    "storageKeys": [
+      "dsh.session-hotkeys.dsvHidden",
+      "dsh.sessions.current",
+      "dsh.workspace.view.v5",
+      "dsh.sidebar-right.v1.session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e"
+    ],
+    "ls": {
+      "dsh.session-hotkeys.dsvHidden": "0",
+      "dsh.sessions.current": "{\"sessionId\":\"session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e\"}",
+      "dsh.workspace.view.v5": "{\"groupBy\":\"workspace\",\"orderBy\":\"updated\",\"groupExpansion\":{\"194af2d3-53e4-4f7e-b44f-e51c135ab047\":true},\"sessionOrderByAccount\":{},\"archivedFilter\":\"default\"}",
+      "dsh.sidebar-right.v1.session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e": "{\"bySession\":{\"session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e\":{\"layout\":{\"nodes\":{\"pane1\":{\"kind\":\"pane\",\"id\":\"pane1\",\"host\":\"dock\",\"tabs\":[]}},\"tabs\":{},\"rootId\":\"pane1\",\"floats\":[],\"activePaneId\":\"pane1\",\"expanded\":false,\"mode\":\"push\"},\"minted\":1}}}"
+    },
+    "sessionInputValue": null,
+    "sessionInputFocused": null
+  },
+  "errors": []
+}

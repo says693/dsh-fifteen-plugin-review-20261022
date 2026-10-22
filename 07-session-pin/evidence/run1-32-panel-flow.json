@@ -1,0 +1,119 @@
+{
+  "panelInitial": {
+    "text": "会话 ▾ 未分组 (2) 帮我整理一份关于海洋塑料污 ⋯ 写一封给班主任的请假邮件 ⋯",
+    "rows": [
+      {
+        "t": "帮我整理一份关于海洋塑料污 ⋯",
+        "health": "",
+        "tags": "",
+        "id": "session-08fbbad4-a5f0-4e61-8e44-49b911727022"
+      },
+      {
+        "t": "写一封给班主任的请假邮件 ⋯",
+        "health": "",
+        "tags": "",
+        "id": "session-3c8badf3-ce48-4e15-aae2-be9723a30ae1"
+      }
+    ],
+    "inputs": [],
+    "groups": [
+      "▾ 未分组 (2)"
+    ],
+    "buttons": [
+      {
+        "t": "▾\n未分组 (2)",
+        "aria": null
+      },
+      {
+        "t": "⋯",
+        "aria": "归组或设置标签"
+      },
+      {
+        "t": "⋯",
+        "aria": "归组或设置标签"
+      }
+    ]
+  },
+  "navClick": {
+    "before": "{\"sessionId\":\"session-6854de43-b6df-467b-a967-80a0bddadba9\"}",
+    "after": "{\"sessionId\":\"session-6854de43-b6df-467b-a967-80a0bddadba9\"}"
+  },
+  "panelAfterNav": {
+    "text": "会话 ▾ 未分组 (2) 帮我整理一份关于海洋塑料污 ⋯ 写一封给班主任的请假邮件 ⋯",
+    "rows": [
+      {
+        "t": "帮我整理一份关于海洋塑料污 ⋯",
+        "health": "",
+        "tags": "",
+        "id": "session-08fbbad4-a5f0-4e61-8e44-49b911727022"
+      },
+      {
+        "t": "写一封给班主任的请假邮件 ⋯",
+        "health": "",
+        "tags": "",
+        "id": "session-3c8badf3-ce48-4e15-aae2-be9723a30ae1"
+      }
+    ],
+    "inputs": [],
+    "groups": [
+      "▾ 未分组 (2)"
+    ],
+    "buttons": [
+      {
+        "t": "▾\n未分组 (2)",
+        "aria": null
+      },
+      {
+        "t": "⋯",
+        "aria": "归组或设置标签"
+      },
+      {
+        "t": "⋯",
+        "aria": "归组或设置标签"
+      }
+    ]
+  },
+  "manage": {
+    "open": true,
+    "dom": {
+      "found": false,
+      "html": [
+        "<div class=\"__dsh-session-pin-panel__\" role=\"dialog\" aria-label=\"已置顶的会话\"><div class=\"__dsh-session-pin-panel-section__\">会话</div><button type=\"button\" class=\"__dsh-session-pin-panel-group__\" aria-expanded=\"true\"><span class=\"__dsh-session-pin-panel-group-toggle__\">▾</span><span>未分组 (2)</span></button><div class=\"__dsh-session-pin-panel-row__\" role=\"button\" tabindex=\"0\" title=\"帮我整理一份关于海洋塑料污\" data-id=\"session-08fbbad4-a5f0-4e61-8e44-49b911727022\" data-title=\"帮我整理一份关于海洋塑料污\" data-tags=\"\" data-session-id=\"session-08fbbad4-a5f0-4e61-8e44-49b911727022\"><span><svg viewBox=\"0 0 24 24\" width=\"14\" height=\"14\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M12 17v5\"></path><path d=\"M9 10.76a2 2 0 0 1-1.11 1.79l-1.78.9A2 2 0 0 0 5 15.24V16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-.76a2 2 0 0 0-1.11-1.79l-1.78-.9A2 2 0 0 1 15 10.76V7a1 1 0 0 1 1-1 2 2 0 0 0 0-4H8a2 2 0 0 0 0 4 1 1 0 0 1 1 1z\"></path></svg></span><span class=\"__dsh-session-pin-panel-dot__\"></span><span>帮我整理一份关于海洋塑料污</span><button type=\"button\" class=\"__dsh-session-pin-manage__\" title=\"归组或设置标签\" aria-label=\"归组或设置标签\">⋯</button><span class=\"__dsh-session-pin-nav__health\"></span></div><div class=\"__dsh-session-pin-editor__\"><label>分组</label><select><option value=\"\">未分组</option></select><label>标签</label><input value=\"\"><div style=\"display: flex; gap: 4px;\"><button type=\"button\" aria-label=\"保存\">✓</button><button type=\"button\" aria-label=\"关闭\">✕</button></div></div><div class=\"__dsh-session-pin-panel-row__\" role=\"button\" tabindex=\"0\" title=\"写一封给班主任的请假邮件\" data-id=\"session-3c8badf3-ce48-4e15-aae2-be9723a30ae1\" data-title=\"写一封给班主任的请假邮件\" data-tags=\"\" data-session-id=\"session-3c8badf3-ce48-4e15-aae2-be9723a30ae1\"><span><svg viewBox=\"0 0 24 24\" width=\"14\" height=\"14\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M12 17v5\"></path><path d=\"M9 10.76a2 2 0 0 1-1.11 1.79l-1.78.9A2 2 0 0 0 5 15.24V16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-.76a2 2 0 0 0-1.11-1.79l-1.78-.9A2 2 0 0 1 15 10.76V7a1 1 0 0 1 1-1 2 2 0 0 0 0-4H8a2 2 0 0 0 0 4 1 1 0 0 1 1 1z\"></path></svg></span><span class=\"__dsh-session-pin-panel-dot__\"></span><span>写一封给班主任的请假邮件</span><button type=\"button\" class=\"__dsh-session-pin-manage__\" title=\"归组或设置标签\" aria-label=\"归组或设置标签\">⋯</button><span class=\"__dsh-session-pin-nav__health\"></span></div></div>",
+        "<div class=\"__dsh-session-pin-editor__\"><label>分组</label><select><option value=\"\">未分组</option></select><label>标签</label><input value=\"\"><div style=\"display: flex; gap: 4px;\"><button type=\"button\" aria-label=\"保存\">✓</button><button type=\"button\" aria-label=\"关闭\">✕</button></div></div>",
+        "<div class=\"__dsh-session-pin-nav__\" style=\"display: flex;\"><div class=\"__dsh-session-pin-nav__chips\"><span class=\"__dsh-session-pin-nav__chipwrap\"><button type=\"button\" class=\"__dsh-session-pin-nav-chip__ __dsh-session-pin-nav-chip-active__\">All</button></span><button type=\"button\" class=\"__dsh-session-pin-nav-chip__\">+ board</button></div><input class=\"__dsh-session-pin-nav__input\" placeholder=\"filter: text, #tag\"><div class=\"__dsh-session-pin-nav__chips\"><button type=\"button\" class=\"__dsh-session-pin-nav-chip__\">+ view</button></div></div>"
+      ],
+      "inputs": [
+        {
+          "tag": "INPUT",
+          "type": "text",
+          "ph": "搜索会话名称",
+          "val": "",
+          "aria": null
+        },
+        {
+          "tag": "SELECT",
+          "type": "select-one",
+          "val": "",
+          "aria": null
+        },
+        {
+          "tag": "INPUT",
+          "type": "text",
+          "ph": "",
+          "val": "",
+          "aria": null
+        },
+        {
+          "tag": "INPUT",
+          "type": "text",
+          "ph": "filter: text, #tag",
+          "val": "",
+          "aria": null
+        }
+      ]
+    }
+  },
+  "errors": [],
+  "console": [],
+  "dialogs": []
+}

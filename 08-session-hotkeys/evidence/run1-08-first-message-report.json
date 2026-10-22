@@ -1,0 +1,99 @@
+{
+  "utc": "2026-10-22T01:03:58.038Z",
+  "t0": {
+    "n": 1,
+    "rows": [
+      {
+        "k": "session:session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e",
+        "t": "新会话",
+        "sel": "true"
+      }
+    ],
+    "active": "session:session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e",
+    "toast": null,
+    "lsCurrent": "{\"sessionId\":\"session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e\"}"
+  },
+  "composerFound": false,
+  "t1": {
+    "n": 1,
+    "rows": [
+      {
+        "k": "session:session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e",
+        "t": "新会话",
+        "sel": "true"
+      }
+    ],
+    "active": "session:session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e",
+    "toast": null,
+    "lsCurrent": "{\"sessionId\":\"session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e\"}"
+  },
+  "presses": [
+    {
+      "i": 0,
+      "before": 1,
+      "after": 1,
+      "keysAfter": [
+        "session:session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e"
+      ],
+      "titlesAfter": [
+        "新会话"
+      ],
+      "toast": null
+    },
+    {
+      "i": 1,
+      "before": 1,
+      "after": 1,
+      "keysAfter": [
+        "session:session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e"
+      ],
+      "titlesAfter": [
+        "新会话"
+      ],
+      "toast": null
+    },
+    {
+      "i": 2,
+      "before": 1,
+      "after": 1,
+      "keysAfter": [
+        "session:session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e"
+      ],
+      "titlesAfter": [
+        "新会话"
+      ],
+      "toast": null
+    }
+  ],
+  "t2": {
+    "n": 1,
+    "rows": [
+      {
+        "k": "session:session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e",
+        "t": "新会话",
+        "sel": "true"
+      }
+    ],
+    "active": "session:session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e",
+    "toast": null,
+    "lsCurrent": "{\"sessionId\":\"session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e\"}"
+  },
+  "reqs": [
+    {
+      "path": "/api/session/create",
+      "method": "POST",
+      "post": "{\"type\":\"client-request\",\"rpcId\":\"06bfd63f-6996-4f9a-be94-3ecc45c44b5a\",\"method\":\"session/create\",\"payload\":{\"args\":{\"request\":{\"workspaceId\":\"194af2d3-53e4-4f7e-b44f-e51c135ab047\",\"sessionId\":\"session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e\"}}}}"
+    },
+    {
+      "path": "/api/session/create",
+      "method": "POST",
+      "post": "{\"type\":\"client-request\",\"rpcId\":\"d7855a1c-8bd9-4b14-92be-7fed45fb78e8\",\"method\":\"session/create\",\"payload\":{\"args\":{\"request\":{\"workspaceId\":\"194af2d3-53e4-4f7e-b44f-e51c135ab047\",\"sessionId\":\"session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e\"}}}}"
+    },
+    {
+      "path": "/api/session/create",
+      "method": "POST",
+      "post": "{\"type\":\"client-request\",\"rpcId\":\"79496e57-d304-4640-9e45-9bf6e027899c\",\"method\":\"session/create\",\"payload\":{\"args\":{\"request\":{\"workspaceId\":\"194af2d3-53e4-4f7e-b44f-e51c135ab047\",\"sessionId\":\"session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e\"}}}}"
+    }
+  ],
+  "errors": []
+}

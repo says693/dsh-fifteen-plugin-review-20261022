@@ -1,0 +1,114 @@
+{
+  "object": {
+    "name": "@dsh-community/dsh-deeplink",
+    "repo": "qyw233/dsh-deeplink",
+    "author": "qyw233",
+    "version": "0.6.1",
+    "license": "MIT",
+    "license_sha256": "008d11ebaf44cc7b185137aad7e6b22eaacf7992d66440b19a8ee82f3e73095d",
+    "source_commit": "fffa63a8906c962625d79ab62469e2ce03aee9b9",
+    "commit_verified_how": "codeload.github.com/qyw233/dsh-deeplink/tar.gz/<commit> 下载成功（HTTP 200，9012 字节），解包目录名即该 commit",
+    "npm_published_artifact": "无",
+    "npm_check": {
+      "registry_package_url": "https://registry.npmjs.org/@dsh-community%2Fdsh-deeplink",
+      "registry_status": 404,
+      "mirror_check": "https://mirrors.cloud.tencent.com/npm/@dsh-community%2fdsh-deeplink -> E404 no such package available",
+      "search_api": "https://registry.npmjs.org/-/v1/search?text=dsh-deeplink&size=20 -> 无同名包（返回的是 electron-deeplink 等无关包）",
+      "checked_at": "2026-10-22T10:15:30+08:00"
+    },
+    "tested_artifact": "本地目录安装（file: 依赖），非 npm 发布件 —— 本报告为「未测发布包」",
+    "install_source": "dsh plugin --profile dl add file:<任务目录>/source/dsh-deeplink",
+    "files": {
+      "tarball": {
+        "path": "temp/dsh-deeplink-fffa63a.tar.gz",
+        "bytes": 9012,
+        "sha256": "30ae5d73aad7128c8a16025f2b1f26427c102ae7d10aeac0fd96b1cfa0fb228f"
+      },
+      "source/dsh-deeplink/package.json": { "bytes": 647, "sha256": "36f57f7320e64698e8bc4fa8cb6b119de816fd9de925225a1ce9b014e37ddc49" },
+      "source/dsh-deeplink/lib/client.js": { "bytes": 10194, "sha256": "d94b5f2fee269c204c303c7d6e551312e8094232de24698057ffd74949f2d744" },
+      "source/dsh-deeplink/lib/index.js": { "bytes": 3008, "sha256": "463a4ead53be27c2183f094d09b1754404e680322afd87291879eafa6e1d9bbd" },
+      "source/dsh-deeplink/README.md": { "bytes": 8971, "sha256": "cfea16c52adbc70231a31daa2bd51cd8f6c1f9ce98eeb4768ff2799435e5457f" },
+      "source/dsh-deeplink/LICENSE": { "bytes": 1083, "sha256": "008d11ebaf44cc7b185137aad7e6b22eaacf7992d66440b19a8ee82f3e73095d" },
+      "source/dsh-deeplink/cordis.patch.yml": { "bytes": 416, "sha256": "8bed42110b39d6fdbbfe727df4c18c9397ed265e0b82a23c456fa12620c64b12" }
+    },
+    "source_read_only": "未改插件源码；source/dsh-deeplink 为解包原件"
+  },
+  "host": {
+    "package": "@deepseek-ai/dsh",
+    "version": "0.2.0-rc.2",
+    "bin": "C:/Users/32621/AppData/Roaming/npm/node_modules/@deepseek-ai/dsh/lib/bin.js",
+    "args": ["--profile", "dl", "--host", "127.0.0.1", "--port", "0", "--no-open"],
+    "profile_derivation": "dsh --profile dl --from-default-profile web --dump-config，再 dsh plugin --profile dl add file:<dir>（直接 add 新 profile 会缺 @deepseek-ai/dsh-web-app → boot EXIT 1 且 stdout/stderr 全空）",
+    "control_profile": "ctl（只 dsh-base + dsh-web-app，不装被测插件），用于隔离夹具问题与插件问题",
+    "instances": [
+      { "tag": "ctl", "origin": "http://127.0.0.1:12294", "pid": 29192, "stopped": true, "purpose": "对照：不装插件" },
+      { "tag": "dl", "origin": "http://127.0.0.1:2690", "pid": 1824, "stopped": true, "purpose": "装插件" }
+    ],
+    "isolation": {
+      "DSH_HOME": "isolated-home",
+      "HOME": "isolated-home/user-home",
+      "USERPROFILE": "isolated-home/user-home",
+      "APPDATA": "isolated-home/appdata",
+      "LOCALAPPDATA": "isolated-home/localappdata",
+      "XDG_CACHE_HOME": "isolated-home/cache",
+      "XDG_CONFIG_HOME": "isolated-home/config",
+      "XDG_DATA_HOME": "isolated-home/data",
+      "npm_config_cache": "temp/npm-cache",
+      "note": "全部指向本任务目录；未读写用户日常配置、真实会话或真实工作区"
+    },
+    "user_gui_untouched": "全程未访问 1241 / 2538 / 4756；端口用 --port 0 由系统分配"
+  },
+  "browser": {
+    "engine": "Microsoft Edge",
+    "version": "155.0.4283.62",
+    "executable": "C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe",
+    "driver": "Playwright（只读引用 H:/CODEX/dsh-code-security-review-20261019/tooling/node_modules/playwright/index.mjs）",
+    "mode": "headless，独立 context，context.route 只放行 127.0.0.1/localhost/[::1]",
+    "viewports_tested": [1440, 760, 600],
+    "color_schemes_tested": ["light", "dark"]
+  },
+  "runtime": {
+    "os": "Microsoft Windows 11 家庭版 中文版 10.0.26200",
+    "node": "v24.19.0",
+    "timezone": "Asia/Shanghai"
+  },
+  "fixtures": {
+    "builder": "make-fixtures.mjs（官方 @deepseek-ai/dsh-session-persistence-jsonl，compression zstd）",
+    "event_contract": "envelope {seq,time}；turn/step 从 1 起；turn/end 带 data.reason:{kind:'completed'}",
+    "workspaces": [
+      { "id": "7529e9de-4bfc-4528-92e9-9ea05c755f53", "title": "alpha", "path": "fixtures/alpha", "sessions": ["sess-dl-alpha-two", "sess-dl-alpha-one"] },
+      { "id": "ee73cda6-f6fe-44b6-b772-dabdbafe22e8", "title": "beta", "path": "fixtures/beta", "sessions": ["sess-dl-beta-one"] }
+    ],
+    "sessions": [
+      { "id": "sess-dl-alpha-one", "turns": 1, "blueprint": "chatFlowKids=4, userRows=1" },
+      { "id": "sess-dl-alpha-two", "turns": 3, "blueprint": "chatFlowKids=12, userRows=3" },
+      { "id": "sess-dl-beta-one", "turns": 1, "blueprint": "chatFlowKids=4, userRows=1" }
+    ],
+    "note": "合成会话只有手写文本事件，不含真实模型生成过程；不得当作真实模型输出引用"
+  },
+  "dedup": {
+    "checked_at": "2026-10-22T10:41:00+08:00",
+    "review_site": {
+      "url": "https://review.lingshulab.com",
+      "method": "?q= 服务端不生效；逐页拉 /api/reviews?page=1..9（pageSize 由服务端固定为 20），本地正则扫描全量标题",
+      "pages_crawled": 9,
+      "unique_reviews": 172,
+      "patterns": ["deeplink", "deep[-_ ]?link", "深链", "qyw233", "?session=", "?workspace="],
+      "hits": 0,
+      "raw": "evidence/dedup-review-site.json"
+    },
+    "bounty_issues": {
+      "url": "https://github.com/FuRongJun-1999/dsh-bounty/issues",
+      "method": "GitHub search API（repo 限定 + 关键词）+ 逐条看标题",
+      "queries": {
+        "deeplink": { "total": 0 },
+        "qyw233": { "total": 0 },
+        "deep-link": { "total": 2, "relevant": 0, "note": "#1221 dsh-notify、#837 dsh-message-edit，与深链无关" },
+        "深链": { "total": 177, "returned": 177, "relevant": 0, "note": "分词命中，标题里无任何 deeplink/deep-link/qyw233" }
+      },
+      "hits": 0
+    },
+    "verdict": "两站均查清，无同插件/同作者的既有稿件；可写首报"
+  },
+  "generated_at": "2026-10-22T10:42:00+08:00"
+}

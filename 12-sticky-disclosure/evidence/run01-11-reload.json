@@ -1,0 +1,70 @@
+{
+  "phases": [
+    {
+      "note": "before reload (3 expanded)",
+      "at": "2026-10-22T01:47:09.048Z",
+      "rows": 18,
+      "expanded": 3,
+      "pillPresent": true,
+      "countAttr": "3",
+      "countText": "·3",
+      "text": "全部收起 ·3",
+      "plugin": 3,
+      "hotkey": "Ctrl+Alt+C",
+      "dockChips": 2,
+      "storage": null
+    },
+    {
+      "note": "after reload",
+      "at": "2026-10-22T01:47:13.728Z",
+      "rows": 18,
+      "expanded": 0,
+      "pillPresent": true,
+      "countAttr": "0",
+      "countText": "",
+      "text": "全部收起",
+      "plugin": 0,
+      "hotkey": "Ctrl+Alt+C",
+      "dockChips": 0,
+      "storage": null
+    },
+    {
+      "note": "re-expanded 2 after reload",
+      "at": "2026-10-22T01:47:16.243Z",
+      "rows": 18,
+      "expanded": 2,
+      "pillPresent": true,
+      "countAttr": "2",
+      "countText": "·2",
+      "text": "全部收起 ·2",
+      "plugin": 2,
+      "hotkey": "Ctrl+Alt+C",
+      "dockChips": 2,
+      "storage": null
+    },
+    {
+      "note": "hotkey collapse after reload",
+      "at": "2026-10-22T01:47:17.161Z",
+      "rows": 18,
+      "expanded": 2,
+      "pillPresent": true,
+      "countAttr": "2",
+      "countText": "·2",
+      "text": "全部收起 ·2",
+      "plugin": 2,
+      "hotkey": "Ctrl+Alt+C",
+      "dockChips": 2,
+      "storage": null
+    }
+  ],
+  "summary": {
+    "beforeReloadExpanded": 3,
+    "afterReloadExpanded": 0,
+    "stateRemembered": false,
+    "hotkeyPersisted": "Ctrl+Alt+C",
+    "reExpanded": 2,
+    "afterHotkeyCollapse": 2
+  },
+  "errors": [],
+  "consoleErr": []
+}

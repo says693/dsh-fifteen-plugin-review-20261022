@@ -1,0 +1,87 @@
+{
+  "object": {
+    "name": "dsh-navbar",
+    "npmPackage": "@vlln/dsh-navbar",
+    "version": "0.4.0",
+    "repo": "vlln/dsh-navbar",
+    "sourceCommit": "e53adfc8c837ebcb4b6a52c2c4baf7cb6e8b795e",
+    "npmGitHead": "502253836f49bf73d55f1d525bd191b1b1c27c38",
+    "license": "MIT",
+    "licenseCopyright": "Copyright (c) 2026 Sam Gao (vlln)",
+    "maintainer": "vlln <vlln@qq.com>",
+    "homepage": "https://github.com/vlln/dsh-navbar#readme",
+    "testedArtefact": "npm 发布件 0.4.0（优先测发布件）",
+    "sourceRole": "仓库固定提交仅作源码对照，未从该提交安装"
+  },
+  "packageIntegrity": {
+    "registry": "https://registry.npmjs.org（本机 npm 经腾讯镜像回源）",
+    "shasum": "48eb0592ba6bb94e7c55813c2ff388ca661a1496",
+    "integrity": "sha512-XCkyXxRUbBaOIghvFjKdi3y0BHC9UADpO5H4+e0oQdcG87CUjPLbmPRsCRs8qDwviKd100oyjDcskgI6/wdN1g==",
+    "shasumVerifiedByNpmPack": true,
+    "integrityVerifiedByNpmPack": true,
+    "tarball": "vlln-dsh-navbar-0.4.0.tgz",
+    "tarballSha256": "72886A2376C09E202A830029BEB5503CE4710A9B208BACCA8759C2D41A61C908",
+    "size": 14463,
+    "unpackedSize": 40472,
+    "fileCount": 7,
+    "installScripts": "无 postinstall/preinstall 脚本",
+    "files": [
+      { "path": "LICENSE", "size": 1071, "sha256": "A229B4FC5FCF6BFAC2F57643D673FE2A87C72BF743DC0DEF0B638E171C710945" },
+      { "path": "README.md", "size": 5401, "sha256": "C54724C121BF852962C289AD21462BE8148E16D47DED3E39051DCB21C268598D" },
+      { "path": "README.zh.md", "size": 4366, "sha256": "7A40617BDAD277486B3500AC4431C2B74E9C27D665B5760FA20C3E20CFD37BC2" },
+      { "path": "cordis.patch.yml", "size": 144, "sha256": "59226A4C32635450F47C03C46F26392C65CFFD24A40F1481FD3A5A81403D7BC0" },
+      { "path": "lib/client.js", "size": 28231, "sha256": "86590909219B57FD21607617BBD43263225C467298F1A56BB0A30889EC78054B" },
+      { "path": "lib/index.mjs", "size": 86, "sha256": "06DB569CFC07F2ED3D42A17F04618C7A85D6295B0F2C2056A5A9964D757211F8" },
+      { "path": "package.json", "size": 1173, "sha256": "B85184A484978D6F66B1C1C66953183F2CE761BD54F3AFD1383E7EA6C98DEB68" }
+    ]
+  },
+  "host": {
+    "package": "@deepseek-ai/dsh",
+    "version": "0.2.0-rc.2",
+    "bin": "C:/Users/32621/AppData/Roaming/npm/node_modules/@deepseek-ai/dsh/lib/bin.js",
+    "profile": "navbar",
+    "profileBundles": ["@deepseek-ai/dsh-base", "@deepseek-ai/dsh-web-app", "@vlln/dsh-navbar"],
+    "flags": "--host 127.0.0.1 --port 0 --no-open",
+    "isolation": "DSH_HOME / HOME / USERPROFILE / APPDATA / LOCALAPPDATA / XDG_* / npm_config_cache 全部指向任务目录"
+  },
+  "browser": {
+    "engine": "Microsoft Edge",
+    "version": "155.0.4283.62",
+    "driver": "Playwright 1.64.1",
+    "driverPath": "H:/CODEX/dsh-code-security-review-20261019/tooling/node_modules/playwright/index.mjs（只读引用）",
+    "mode": "headless 独立 context，路由只放行 127.0.0.1/localhost/[::1]",
+    "viewports": ["1440x1000", "1000x900", "760x900", "600x900"]
+  },
+  "node": "v24.19.0",
+  "fixtures": {
+    "method": "官方 @deepseek-ai/dsh-session-persistence-jsonl 在隔离 DSH_HOME 下写合成会话（不调用模型、不读真实会话）",
+    "sessions": [
+      { "id": "sess-nav-long45", "turns": 45, "purpose": "长会话密度/滑动窗口/滚动高亮/点击跳转" },
+      { "id": "sess-nav-ultra", "turns": 3, "purpose": "超长用户消息（预览截断）" },
+      { "id": "sess-nav-single", "turns": 1, "purpose": "单条消息应隐藏" },
+      { "id": "sess-nav-zero", "turns": 0, "purpose": "空会话" },
+      { "id": "sess-nav-eight", "turns": 8, "purpose": "少于窗口阈值对照" }
+    ]
+  },
+  "dedup": {
+    "checkedAt": "2026-10-22T09:25:00+08:00",
+    "reviewSite": {
+      "url": "https://review.lingshulab.com",
+      "method": "拉全量列表本地扫描（?q= 服务端不过滤）",
+      "reviewsScanned": 172,
+      "pluginsScanned": 133,
+      "hits": 0,
+      "evidence": ["evidence/dedup-reviews-all.json", "evidence/dedup-plugins-all.json"]
+    },
+    "bountyRepo": {
+      "url": "https://github.com/FuRongJun-1999/dsh-bounty/issues",
+      "method": "GitHub 搜索 API：dsh-navbar / navbar / vlln",
+      "queries": { "dsh-navbar": 0, "navbar": 0, "vlln": 2 },
+      "vllnHits": ["#656 dsh-loop（vlln）", "#569 whale-girl（vlln）"],
+      "sameScopeDuplicate": false
+    },
+    "conclusion": "两站均无同范围重复，可写首报"
+  },
+  "generatedAt": "2026-10-22T09:30:00+08:00",
+  "session": "session-529cc4fc-897b-4a41-a2bf-f0e54c91411f"
+}

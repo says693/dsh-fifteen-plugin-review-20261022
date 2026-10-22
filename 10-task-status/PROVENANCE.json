@@ -1,0 +1,198 @@
+{
+  "schema": "provenance/v1",
+  "generated_at": "2026-10-22T02:05:00Z",
+  "generated_at_local": "2026-10-22T10:05:00+08:00",
+  "note": "本文件由已有 evidence/ 转写而成；未重新起宿主、未跑浏览器、未开新探针。所有字段均可在 evidence/ 下找到对应读数。",
+
+  "artifact": {
+    "name": "@vlln/dsh-task-status",
+    "version": "0.3.1",
+    "kind": "npm 发布件（不是本地源码直装）",
+    "description": "后台任务状态条——对话输入区上方的任务进度 UI（官方 dock 槽 + Node 轮询路由）",
+    "repository": "vlln/dsh-task-status",
+    "repository_url": "https://github.com/vlln/dsh-task-status",
+    "registry_reported_repository_url": "git+https://github.com/vlln/+process.argv[1]+.git",
+    "registry_repository_url_anomaly": "npm 元数据里 repository / homepage / bugs 三个 URL 都把仓库名写成了未展开的模板字面量 `+process.argv[1]+`，不是 vlln/dsh-task-status。看起来是发布脚本里拼 URL 时漏了模板求值。不影响安装，但会让人从 npm 页点不回仓库。",
+    "publisher": "vlln <vlln@qq.com>",
+    "maintainers": ["vlln <vlln@qq.com>"],
+    "license": "MIT",
+    "license_copyright": "Copyright (c) 2026 Sam Gao (vlln)",
+    "published_at": "2026-08-19T16:47:24.241Z",
+    "registry_versions_available": ["0.3.1"],
+    "dist_tag_latest": "0.3.1",
+    "npm_gitHead": "849d73a5a862b332634fc4b987174122bbd953bb",
+    "evidence": [
+      "evidence/01-npm-view.json",
+      "evidence/02-npm-pack.json",
+      "evidence/03-meta.json"
+    ]
+  },
+
+  "source_commit": {
+    "repo": "vlln/dsh-task-status",
+    "commit": "3751096f38eeb52df85b2cfae15a239d4197d643",
+    "commit_date": "2026-10-03T16:54:00Z",
+    "commit_message": "docs: 归档说明——官方已内置后台任务 UI，本插件冻结",
+    "repo_pushed_at": "2026-10-03T16:54:03Z",
+    "repo_stars": 8,
+    "repo_default_branch": "main",
+    "repo_license": "MIT",
+    "repo_http_status": 200,
+    "commit_http_status": 200,
+    "note": "发布件 0.3.1 的 gitHead 是 849d73a…，早于固定提交 3751096…。固定提交是仓库当前的 HEAD（归档说明），发布件内容与之的差异未逐文件比对，故源码对照只用于读插件声明的工作方式。",
+    "evidence": ["evidence/03-meta.json"]
+  },
+
+  "package_hashes": {
+    "tarball_file": "temp/vlln-dsh-task-status-0.3.1.tgz",
+    "tarball_bytes": 15676,
+    "tarball_unpacked_bytes": 47324,
+    "tarball_file_count": 10,
+    "sha1": "62c1deb97fc38a9bc2e749ebf6d987ce3c64b935",
+    "sha256": "21f7c6489ab05ececfdf592a7c31f3fa5e7c8bd070c70bfce7ae461ee2d8b65e",
+    "sha512_b64": "sha512-rNIzEOFRYeCzvxCDWQED8KxWtFXescGvsDDDT4GPM2r9rvoicQIHDnzm6SDCzKE2q/MZx4Sw3M6JBUByFVcYlA==",
+    "match_shasum": true,
+    "match_integrity": true,
+    "signature_keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U",
+    "signature_present": true,
+    "evidence": ["evidence/02-npm-pack.json", "evidence/03-meta.json"]
+  },
+
+  "unpacked_file_hashes_sha256": {
+    "lib/index.mjs": "1259241793fc15713c368bbba45936869e17e76720578c0efc110acc482552f3",
+    "lib/client.js": "22cfe484cb5d497fb5f3497f20b7a5ebe024f765c0a3097b86819fafe2fc9c96",
+    "LICENSE": "c54724c121bf852962c289ad21462be8148e16d47ded3e39051dcb21c268598d",
+    "cordis.patch.yml": "409d09b70221bd3035f388bcda142f776eaa1e5aea4482a05218b370f27f05b0",
+    "note": "对 temp/unpack/package/ 下的解包副本现算；该副本就是 05-plugin-add.log 里 link: 安装的那一份。"
+  },
+
+  "package_contents": [
+    "LICENSE", "README.md", "cordis.patch.yml",
+    "lib/client.js", "lib/index.d.mts", "lib/index.mjs",
+    "package.json", "src/client/task-status.tsx", "src/index.d.mts", "src/index.mjs"
+  ],
+
+  "host": {
+    "package": "@deepseek-ai/dsh",
+    "version": "0.2.0-rc.2",
+    "version_source": "C:\Users\USER\\AppData\\Roaming\\npm\\node_modules\\@deepseek-ai\\dsh\\package.json 的 version 字段",
+    "entry": "C:\Users\USER\\AppData\\Roaming\\npm\\node_modules\\@deepseek-ai\\dsh\\lib\\bin.js",
+    "launch_args": ["--profile", "ts2", "--host", "127.0.0.1", "--port", "0", "--no-open"],
+    "profiles_used": ["ts2"],
+    "profile_bundles": ["@deepseek-ai/dsh-base", "@deepseek-ai/dsh-web-app", "@vlln/dsh-task-status（本插件）", "dsh-probe-ts（自建测评探针）"],
+    "instances": [
+      {"tag": "run1", "origin": "http://127.0.0.1:6481", "pid": 13516, "started_utc": "2026-10-22T01:31:31.649Z", "evidence": "evidence/run1-host.local.json"},
+      {"tag": "run2", "origin": "http://127.0.0.1:3917", "pid": 31056, "started_utc": "2026-10-22T01:35:30.925Z", "evidence": "evidence/run2-host.local.json"},
+      {"tag": "run3", "origin": "http://127.0.0.1:14623", "pid": 35880, "started_utc": "2026-10-22T01:40:15.324Z", "evidence": "evidence/run3-host.local.json"},
+      {"tag": "run4", "origin": "http://127.0.0.1:14928", "pid": 32704, "started_utc": "2026-10-22T01:43:20.517Z", "evidence": "evidence/run4-host.local.json"},
+      {"tag": "run5", "origin": "http://127.0.0.1:8798", "pid": 14996, "started_utc": "2026-10-22T01:48:33.086Z", "evidence": "evidence/run5-host.local.json"},
+      {"tag": "run6", "origin": "http://127.0.0.1:6725", "pid": 32536, "started_utc": "2026-10-22T02:05:52.000Z", "purpose": "验证镜像补丁后的 ctx.jobs.read 返回形状（/probe-ts/readshape）", "evidence": "evidence/run6-host.local.json"}
+    ],
+    "port_policy": "一律 --port 0，由宿主自选端口；六个实例端口互不相同。",
+    "process_cleanup": "六个实例全部按 evidence/*-host.local.json 里的 pid 停掉；6481/3917/14623/14928/8798/6725 六个端口复查均无监听。"
+  },
+
+  "browser": {
+    "engine": "Microsoft Edge",
+    "version": "155.0.4283.62",
+    "version_source": "msedge.exe 的 FileVersion / ProductVersion（现场核对）",
+    "executable": "C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe",
+    "driver": "Playwright 1.64.1（只读引用 H:/CODEX/dsh-code-security-review-20261019/tooling/node_modules/playwright/index.mjs）",
+    "mode": "headless，独立 context，serviceWorkers: 'block'，deviceScaleFactor: 1，colorScheme: light",
+    "network_policy": "context.route 只放行 hostname 属于 127.0.0.1 / localhost / [::1] 的请求，其余 abort",
+    "viewports_probed": ["1440x1000", "900x800", "640x700"],
+    "evidence": ["ASSIGNMENT.json", "evidence/run2-03-v1-visibility.json", "evidence/run5-12-final-matrix.json"]
+  },
+
+  "isolation": {
+    "task_root": "H:\\CODEX\\fifteen-plugin-reviews-20261022\\r2-05-task-status",
+    "DSH_HOME": "isolated-home",
+    "HOME": "isolated-home/user-home",
+    "USERPROFILE": "isolated-home/user-home",
+    "APPDATA": "isolated-home/appdata",
+    "LOCALAPPDATA": "isolated-home/localappdata",
+    "XDG_CACHE_HOME": "isolated-home/cache",
+    "XDG_CONFIG_HOME": "isolated-home/config",
+    "XDG_DATA_HOME": "isolated-home/data",
+    "npm_config_cache": "temp/npm-cache",
+    "DSH_TELEMETRY_DISABLED": "1",
+    "host_cwd": "fixtures/workspace",
+    "fixture_workspace_id": "ws-fixtures-task-status",
+    "fixture_workspace_path": "fixtures/workspace",
+    "synthetic_session_id": "sess-ts-task",
+    "env_source": "evidence/06-probe-add.log 同源的 host.mjs 第 14-31 行",
+    "boundaries_observed": [
+      "未读写日常 DSH 配置、真实会话、真实工作区",
+      "未访问用户正在使用的 DSH Web GUI（127.0.0.1 的 1241 / 2538 / 4756）",
+      "未使用真实密钥；页面停在「添加一个 API Key 开始使用」，全程未填",
+      "未修改被测插件源码；探针是独立包 dsh-probe-ts，只装进隔离 profile"
+    ]
+  },
+
+  "tooling": {
+    "node": "与宿主同版本运行时（host.mjs 用 process.execPath 派生宿主进程）",
+    "npm": "12.0.2（发布件 _npmVersion）",
+    "pnpm": "11.7.0（evidence/05-plugin-add.log、06-probe-add.log）",
+    "probe_package": {
+      "name": "dsh-probe-ts",
+      "path": "probe/",
+      "role": "把宿主 ctx.jobs 暴露成 HTTP 的测评探针；不是被测插件，也不是兜底实现",
+      "files": ["probe/package.json", "probe/cordis.patch.yml", "probe/lib/index.js"],
+      "evidence": ["evidence/06-probe-add.log"]
+    }
+  },
+
+  "test_window": {
+    "first_read_utc": "2026-10-22T01:32:42.250Z",
+    "last_read_utc": "2026-10-22T02:12:18Z",
+    "local_timezone": "Asia/Shanghai (UTC+8)",
+    "local_span": "2026-10-22 09:32 – 10:12"
+  },
+
+  "evidence_inventory": {
+    "directory": "evidence/",
+    "file_count": 75,
+    "by_extension": {"json": 25, "log": 4, "txt": 12, "png": 33},
+    "brief_said": 62,
+    "discrepancy_note": "派单口径写 62 个文件，实际目录含 75 个。多出的 13 个分两批：run5 收尾 8 个（run5-12-final-matrix.json + run5-final-*.png 七张），run6 收尾 5 个（run6-host.local.json、run6-host.stdout.txt、run6-host.stderr.txt、run6-13-readshape.json、14-dedup.json）。本文件集按实际数量记录，不以派单数字为准。"
+  },
+
+  "dedup": {
+    "checked_at_utc": "2026-10-22T02:12:18Z",
+    "checked_at_local": "2026-10-22T10:12:18+08:00",
+    "site1": {
+      "name": "review.lingshulab.com",
+      "method": "?q= 服务端不过滤，改为拉全量后本地正则扫描",
+      "reviews_api": "/api/reviews?page=N&page_size=50",
+      "reviews_scanned": 172,
+      "reviews_total_reported": 172,
+      "reviews_pages": 4,
+      "plugins_api": "/api/plugins?page=N&page_size=50",
+      "plugins_scanned": 133,
+      "patterns": ["dsh-task-status", "vlln", "task[- ]?status", "任务状态条"],
+      "hits_reviews": 0,
+      "hits_plugins": 0
+    },
+    "site2": {
+      "name": "github.com/FuRongJun-1999/dsh-bounty (issues)",
+      "method": "api.github.com/search/issues?q=<kw> repo:FuRongJun-1999/dsh-bounty",
+      "queries": [
+        {"q": "dsh-task-status", "total": 35, "same_plugin_hits": 0, "note": "命中 dsh-task-dag、dsh-task-planner、dsh-plugin-notify、dsh-memory 等其他插件"},
+        {"q": "vlln", "total": 2, "same_plugin_hits": 0, "note": "#656 dsh-loop（vlln）、#569 vlln/whale-girl —— 同作者其他插件"},
+        {"q": "task-status", "total": 35, "same_plugin_hits": 0},
+        {"q": "任务状态条", "total": 401, "same_plugin_hits": 0}
+      ]
+    },
+    "same_scope_hits": 0,
+    "conclusion": "两站均无同范围重复，可写首报",
+    "evidence": ["evidence/14-dedup.json", "dedup.mjs"]
+  },
+
+  "provenance_limits": [
+    "npm 元数据里的仓库 URL 异常（+process.argv[1]+）只记录，未推断作者意图",
+    "发布件 gitHead 849d73a… 与固定提交 3751096… 的逐文件差异未比对",
+    "运行时结论全部来自 npm 发布件 0.3.1；源码提交仅用于读实现机理",
+    "只能造出进程内合成任务（kind=probe），造不出模型侧产出的 bash/agent 任务——web profile 的 tool-jobs 被置 disabled，且全程未填 API Key",
+    "V2–V7 的 DOM 层读数（tail 增长、多任务排列、结束清理、窄窗布局、刷新重建）因状态条从未渲染而无法取得，一律记 untested"
+  ]
+}

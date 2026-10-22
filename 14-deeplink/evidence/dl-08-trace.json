@@ -1,0 +1,95 @@
+{
+  "host": "http://127.0.0.1:2690",
+  "requested": "http://127.0.0.1:2690/?token=REDACTED&session=sess-dl-alpha-two",
+  "timeline": [
+    {
+      "label": "domcontentloaded",
+      "at": 1792636039708,
+      "search": "",
+      "href": "http://127.0.0.1:2690/",
+      "storage": {},
+      "deeplinkStyle": false,
+      "moduleLoaderMode": "live"
+    },
+    {
+      "label": "+300ms",
+      "at": 1792636040137,
+      "search": "",
+      "href": "http://127.0.0.1:2690/",
+      "storage": {
+        "dsh.workspace.view.v5": "{\"groupBy\":\"workspace\",\"orderBy\":\"updated\",\"groupExpansion\":{},\"sessionOrderByAccount\":{},\"archivedFilter\":\"default\"}"
+      },
+      "deeplinkStyle": true,
+      "moduleLoaderMode": "live"
+    },
+    {
+      "label": "+1s",
+      "at": 1792636040851,
+      "search": "",
+      "href": "http://127.0.0.1:2690/",
+      "storage": {
+        "dsh.workspace.view.v5": "{\"groupBy\":\"workspace\",\"orderBy\":\"updated\",\"groupExpansion\":{\"ee73cda6-f6fe-44b6-b772-dabdbafe22e8\":true},\"sessionOrderByAccount\":{},\"archivedFilter\":\"default\"}",
+        "dsh.sessions.current": "{\"sessionId\":\"session-e9ea570e-d88f-4e06-ada9-d954cdb0874b\"}",
+        "dsh.sidebar-right.v1.session-e9ea570e-d88f-4e06-ada9-d954cdb0874b": "{\"bySession\":{\"session-e9ea570e-d88f-4e06-ada9-d954cdb0874b\":{\"layout\":{\"nodes\":{\"pane1\":{\"kind\":\"pane\",\"id\":\"pane1\",\"host\":\"dock\",\"tabs\":[]}},\"tabs\":{},\"rootId\":\"pane1\",\"floats\":[],\"activePaneId\":\"pane1\",\"expanded\":false,\"mode\":\"push\"},\"minted\":1}}}"
+      },
+      "deeplinkStyle": true,
+      "moduleLoaderMode": "live"
+    },
+    {
+      "label": "+2s",
+      "at": 1792636041859,
+      "search": "",
+      "href": "http://127.0.0.1:2690/",
+      "storage": {
+        "dsh.workspace.view.v5": "{\"groupBy\":\"workspace\",\"orderBy\":\"updated\",\"groupExpansion\":{\"ee73cda6-f6fe-44b6-b772-dabdbafe22e8\":true},\"sessionOrderByAccount\":{},\"archivedFilter\":\"default\"}",
+        "dsh.sessions.current": "{\"sessionId\":\"session-e9ea570e-d88f-4e06-ada9-d954cdb0874b\"}",
+        "dsh.sidebar-right.v1.session-e9ea570e-d88f-4e06-ada9-d954cdb0874b": "{\"bySession\":{\"session-e9ea570e-d88f-4e06-ada9-d954cdb0874b\":{\"layout\":{\"nodes\":{\"pane1\":{\"kind\":\"pane\",\"id\":\"pane1\",\"host\":\"dock\",\"tabs\":[]}},\"tabs\":{},\"rootId\":\"pane1\",\"floats\":[],\"activePaneId\":\"pane1\",\"expanded\":false,\"mode\":\"push\"},\"minted\":1}}}"
+      },
+      "deeplinkStyle": true,
+      "moduleLoaderMode": "live"
+    },
+    {
+      "label": "+4s",
+      "at": 1792636043869,
+      "search": "",
+      "href": "http://127.0.0.1:2690/",
+      "storage": {
+        "dsh.workspace.view.v5": "{\"groupBy\":\"workspace\",\"orderBy\":\"updated\",\"groupExpansion\":{\"ee73cda6-f6fe-44b6-b772-dabdbafe22e8\":true},\"sessionOrderByAccount\":{},\"archivedFilter\":\"default\"}",
+        "dsh.sessions.current": "{\"sessionId\":\"session-e9ea570e-d88f-4e06-ada9-d954cdb0874b\"}",
+        "dsh.sidebar-right.v1.session-e9ea570e-d88f-4e06-ada9-d954cdb0874b": "{\"bySession\":{\"session-e9ea570e-d88f-4e06-ada9-d954cdb0874b\":{\"layout\":{\"nodes\":{\"pane1\":{\"kind\":\"pane\",\"id\":\"pane1\",\"host\":\"dock\",\"tabs\":[]}},\"tabs\":{},\"rootId\":\"pane1\",\"floats\":[],\"activePaneId\":\"pane1\",\"expanded\":false,\"mode\":\"push\"},\"minted\":1}}}"
+      },
+      "deeplinkStyle": true,
+      "moduleLoaderMode": "live"
+    }
+  ],
+  "trace": {
+    "urlAtScriptStart": "http://127.0.0.1:2690/",
+    "search": [
+      {
+        "t": "init",
+        "search": ""
+      }
+    ],
+    "historyCalls": [
+      {
+        "t": 1792636040037,
+        "fn": "replaceState",
+        "url": "/",
+        "searchAfter": ""
+      }
+    ],
+    "warns": []
+  },
+  "dom": {
+    "selected": "session:session-e9ea570e-d88f-4e06-ada9-d954cdb0874b",
+    "selectedText": "新会话",
+    "rows": [
+      "workspace:ee73cda6-f6fe-44b6-b772-dabdbafe22e8",
+      "session:session-e9ea570e-d88f-4e06-ada9-d954cdb0874b",
+      "session:sess-dl-beta-one",
+      "workspace:7529e9de-4bfc-4528-92e9-9ea05c755f53"
+    ],
+    "chatFlowKids": 0
+  },
+  "errs": []
+}

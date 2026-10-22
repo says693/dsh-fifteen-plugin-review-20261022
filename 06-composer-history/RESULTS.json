@@ -1,0 +1,303 @@
+{
+  "subject": "dsh-composer-history@0.8.15 (PerryLink/dsh-composer-history)",
+  "host": "@deepseek-ai/dsh 0.2.0-rc.2",
+  "summary": {
+    "total": 32,
+    "confirmed": 27,
+    "uncertain": 3,
+    "untested": 2,
+    "confirmedDefects": 0,
+    "note": "全部检查项都在真实宿主 + 真实 Edge(Playwright) 里取读数；未发现可提交的功能缺陷。早期三条疑似缺陷（Esc 不关搜索浮层、超长条目召回不出现、草稿召回不生效）经复测确认都是探针判据错误，已在对应条目里写明纠正依据。"
+  },
+  "checks": [
+    {
+      "id": "A1",
+      "title": "npm 发布件可安装进隔离 profile",
+      "expect": "`dsh plugin --profile chist add <tgz>` 返回 0，profile 出现插件行",
+      "actual": "EXIT=0；输出 `+ dsh-composer-history file:.../dsh-composer-history-0.8.15.tgz`；`--dump-config` 末尾出现 `- id: composer-history / name: dsh-composer-history`；profiles/chist 下有 cordis.patch.yml、cordis.yml、package.json、pnpm-lock.yaml、pnpm-workspace.yaml、node_modules。带 peer 依赖 WARN 但不阻断，未使用 allow-version 豁免。",
+      "state": "confirmed",
+      "evidence": ["evidence/step03-plugin-add.log", "evidence/step04-dump-config.txt"]
+    },
+    {
+      "id": "A2",
+      "title": "发布件哈希与许可证与 npm 元数据一致",
+      "expect": "本地重算的 shasum / integrity 与 registry 声明逐字相同；LICENSE 为 Apache-2.0",
+      "actual": "SHA1 9ae4a6636a733f7624c53354aa5173063ec8d814 = dist.shasum；sha512-B3/Ria…（base64） = dist.integrity；LICENSE 11357 字节、首行 `Apache License`、sha256 c71d239d…；package.json 里 license 字段为 Apache-2.0；dist 带 SLSA provenance attestation。",
+      "state": "confirmed",
+      "evidence": ["evidence/step01-npm-view.json", "evidence/step06-file-hashes.json"]
+    },
+    {
+      "id": "A3",
+      "title": "插件在真实宿主里确实被激活",
+      "expect": "键盘行为与 localStorage 写入真实发生（不是只装不跑）",
+      "actual": "页面加载后 window 上注册 capture 阶段 keydown；空草稿按 ↑ 得到历史条目（见 B1）；发送消息后 localStorage 出现 `dsh.composer-history.v1` 与 `.insights.v1`。注意该插件不注入独立 `style[data-plugin]` 节点，不能以样式缺失判未加载。",
+      "state": "confirmed",
+      "evidence": ["evidence/p01-run.txt", "evidence/run4-02-send.json"]
+    },
+    {
+      "id": "B1",
+      "title": "空草稿按 ↑ 召回最新一条，光标到末尾",
+      "expect": "草稿变最新条目，caret = 文本长度",
+      "actual": "历史 [第一条…, 第二条…, 第三条…]，空草稿 caret 0 按 ↑ → 草稿 `第三条历史：再检查一遍错别字`，caret 14（= 长度），capture 阶段该 keydown defaultPrevented=true。",
+      "state": "confirmed",
+      "evidence": ["evidence/run4-05-recall-matrix.json", "evidence/run4-09-up-hold.png"]
+    },
+    {
+      "id": "B2",
+      "title": "连续按 ↑ 逐条回溯，到最老一条停住不动",
+      "expect": "第三条 → 第二条 → 第一条 → 停在第一条不再变化（README 的 hold 语义）",
+      "actual": "连按序列：`第二条`(caret 13) → `第一条`(caret 13) → `第一条`(caret 0) → `第一条`(caret 0) → `第一条`(caret 0)。到最老条后文本零变化、caret 归 0，未清空草稿、未抛错。",
+      "state": "confirmed",
+      "evidence": ["evidence/run4-05-recall-matrix.json", "evidence/run4-09-up-hold.png"]
+    },
+    {
+      "id": "B3",
+      "title": "半途草稿被 stash，↓ 回到最新条时逐字还原",
+      "expect": "草稿先被保护，一路 ↓ 回到最新条再按 ↓ 时原样还原，含光标位置",
+      "actual": "草稿 `还没写完的草稿`（caret 0）按 ↑ → 变 `第三条历史`（caret 14，defaultPrevented=true）；再按 ↓ → `第二条`(13) → `第三条`(14) → 再按 ↓ → 逐字还原 `还没写完的草稿`。",
+      "state": "confirmed",
+      "evidence": ["evidence/run4-06-search-reload.json", "evidence/run4-10-down-restore.png"]
+    },
+    {
+      "id": "B4",
+      "title": "浏览中按 Esc 还原 stash 的草稿",
+      "expect": "Esc 退出浏览并还原草稿（restoreOnEscape 默认 true）",
+      "actual": "草稿 `用 Esc 试的草稿` → ↑（得第二条）→ ↑（得第一条，caret 13）→ Esc → 草稿逐字还原 `用 Esc 试的草稿`，caret 0。",
+      "state": "confirmed",
+      "evidence": ["evidence/run4-05-recall-matrix.json", "evidence/run4-11-escape.png"]
+    },
+    {
+      "id": "B5",
+      "title": "多行草稿里光标不在首行时 ↑ 放行；回到首行才召回",
+      "expect": "光标在第二行 → 交给浏览器移动光标（upAtLogicalEdge 不成立）；光标在第一行 → 召回",
+      "actual": "两行草稿 `第一行\\n第二行`：caret 6（第二行）按 ↑ → 文本不变、caret 3、defaultPrevented=false；把 caret 移到 0（第一行）按 ↑ → 召回 `第三条历史`（caret 14）。",
+      "state": "confirmed",
+      "evidence": ["evidence/run4-05-recall-matrix.json", "evidence/run4-12-multiline-second.png"]
+    },
+    {
+      "id": "C1",
+      "title": "Ctrl+R 打开反搜浮层且不刷新页面",
+      "expect": "浮层出现；页面不重载（浏览器 reload 被吃掉）",
+      "actual": "输入区聚焦按 Control+r：浮层 `__dsh-composer-history-search__` 出现，display:flex、rect 784×226、status `3 entries`、首行 aria-selected=true、焦点进入浮层 INPUT；注入的 `window.__reloadMark` 仍为 `alive`（未刷新）。capture 阶段 Control 键 defaultPrevented=false、r 键 defaultPrevented=true —— 只吞 r。",
+      "state": "confirmed",
+      "evidence": ["evidence/run5-14-esc-display.json", "evidence/run5-15-case-longentry.json", "evidence/run4-15-ctrlr-open.png"]
+    },
+    {
+      "id": "C2",
+      "title": "查询词过滤 + 匹配子串高亮",
+      "expect": "只留匹配行，匹配片段用 mark 高亮，状态文案给出命中数",
+      "actual": "输入 `第三` → 只剩 1 行（第三条历史），aria-selected 落在它上面；改输入 `历史` → 3 行全出、status `3 matches`、三个 `<mark>` 依次为 `历史`/`历史`/`历史`。",
+      "state": "confirmed",
+      "evidence": ["evidence/run4-06-search-reload.json", "evidence/run4-16-ctrlr-filter.png"]
+    },
+    {
+      "id": "C3",
+      "title": "浮层内 ↑/↓ 选择循环与边界",
+      "expect": "↓ 到底回到首行，↑ 到顶回到末行",
+      "actual": "选中序列 Follow ↓：第一条 → 第二条 → 第三条 → 回到第一条；再按 ↑：第一条 → 第三条。两端都成环。",
+      "state": "confirmed",
+      "evidence": ["evidence/run4-06-search-reload.json", "evidence/run4-17-ctrlr-cycle.png"]
+    },
+    {
+      "id": "C4",
+      "title": "Enter 取词写进草稿、光标到末尾、浮层关闭",
+      "expect": "草稿变成选中行文本，caret 到末尾，浮层隐藏",
+      "actual": "选中 `第一条历史：给周记起个开头` 按 Enter → 草稿变成该文本，浮层 display:none、rect 0×0、aria-expanded=false，焦点回到 composer。",
+      "state": "confirmed",
+      "evidence": ["evidence/run5-14-esc-display.json", "evidence/run4-18-ctrlr-pick.png"]
+    },
+    {
+      "id": "C5",
+      "title": "Esc 取消反搜，浮层关闭且草稿不被改写",
+      "expect": "浮层隐藏；草稿保持原样",
+      "actual": "浮层打开时按 Esc → display:none、rect 0×0、aria-expanded=false、焦点回 composer DIV；草稿仍为空未被改写。归因读数：真实 Esc 时 capture 阶段 defaultPrevented=false、浮层 root 的 keydown 监听读到 defaultPrevented=true、input 自身监听 false —— 拦截发生在 root 的冒泡监听（search-overlay.ts Escape 分支），与源码一致。",
+      "state": "confirmed",
+      "evidence": ["evidence/run5-14-esc-display.json", "evidence/run5-13-esc-attribution.json"],
+      "correction": "早期 probe-06/12/13 曾判「Esc 关不掉浮层」，原因是把 `querySelector` 非空当可见判据 —— 该浮层节点常驻 DOM、只切换 display。改为读 getComputedStyle(display) 与 getBoundingClientRect 后，判据为 display:none + rect 0×0。属探针缺陷，不是插件缺陷。"
+    },
+    {
+      "id": "C6",
+      "title": "搜索大小写策略（searchCaseSensitive 默认 false）",
+      "expect": "大小写不敏感命中",
+      "actual": "条目含 `Hello there, this is Draft ONE` 与 `hello again from draft two`：输入小写 `hello` → status `2 matches`、两个 mark 分别为 `Hello` 与 `hello`；输入大写 `HELLO` → 同样 `2 matches`、mark 仍按原文大小写显示。",
+      "state": "confirmed",
+      "evidence": ["evidence/run5-15-case-longentry.json"]
+    },
+    {
+      "id": "C7",
+      "title": "无匹配时浮层不崩、Esc 后草稿不被污染",
+      "expect": "空列表 + 空状态文案；取消后草稿仍为空",
+      "actual": "输入 `zzzz-no-match` → rows=[]、marks=[]、status 为空字符串；按 Esc 后草稿 innerText 仍为空、len 0。0 pageerror。",
+      "state": "confirmed",
+      "evidence": ["evidence/run5-15-case-longentry.json"]
+    },
+    {
+      "id": "D1",
+      "title": "工作区级回忆不跨工作区渗透",
+      "expect": "工作区 B 里召回不到工作区 A 的消息",
+      "actual": "cwd=fixtures/workspace-b 的宿主（origin 127.0.0.1:8975）用独立浏览器 profile 打开：localStorage 里没有任何 composer-history 键、空草稿按 ↑ 无反应；在 B 里发一条 `丙工作区独有的句子-只在workspace-b发过` 后 entries 恰为 1 条，连按 5 次 ↑ 都只召回这一条。工作区 A 的 4 条历史没有出现。",
+      "state": "confirmed",
+      "evidence": ["evidence/run5-11-coldrestart-workspace-b.json", "evidence/run6-31-workspace-b.png"],
+      "caveat": "该隔离来自 localStorage 按 origin 隔离（两个宿主端口不同），不能单独归因为「插件做了工作区级过滤」。插件存储本身是单键、不带工作区维度。"
+    },
+    {
+      "id": "D2",
+      "title": "historyScope='workspace' 时并入同工作区其他会话",
+      "expect": "把 historyScope 从 session 改成 workspace 后，召回里出现同工作区其他会话的条目",
+      "actual": "未执行。该配置需改 profile 的 Config 并重启宿主；本轮未做，不宣称其行为。",
+      "state": "untested",
+      "evidence": [],
+      "missing": "改 profile 配置 + 重启 + 双会话对照读数"
+    },
+    {
+      "id": "D3",
+      "title": "默认配置下持久化历史跨会话共享（观察，非缺陷）",
+      "expect": "README 声明 persisted history「survives page reloads and reaches across sessions」",
+      "actual": "同一 origin 内，在会话 B 发的 `乙会话专属的句子-只在B里发过` 在会话 A 里按 ↑ 第一条就能召回到（entries 4 条含该文本）。这与 README 的跨会话声明一致，属设计行为，不记缺陷。",
+      "state": "confirmed",
+      "evidence": ["evidence/run4-10-cross-session.json", "evidence/run5-15-case-longentry.json"]
+    },
+    {
+      "id": "E1",
+      "title": "连按 ↑ 超过历史条数时停在最老条（边界）",
+      "expect": "不越界、不清空、不报错",
+      "actual": "3 条历史连按 6 次 ↑：第 3 次起恒为 `第一条历史`，caret 保持 0，文本零变化；0 pageerror。",
+      "state": "confirmed",
+      "evidence": ["evidence/run4-05-recall-matrix.json"]
+    },
+    {
+      "id": "E2",
+      "title": "↓ 越过最新条后回到 IDLE 并继续放行",
+      "expect": "还原草稿后，再按 ↓ 交给浏览器（纯光标移动）",
+      "actual": "浏览到最老条后按 ↓ 走回 `第二条` → `第三条` → 再按 ↓ 还原 stash 草稿；再按 ↓ 时 defaultPrevented=false、文本不变。",
+      "state": "confirmed",
+      "evidence": ["evidence/run4-06-search-reload.json"]
+    },
+    {
+      "id": "F1",
+      "title": "多行草稿的上下边界与召回不冲突",
+      "expect": "首行 ↑ 召回、末行 ↓ 还原、中间行都放行",
+      "actual": "两行草稿：caret 在第二行按 ↑ 放行（见 B5）；caret 在第一行按 ↑ 召回；浏览态下 caret 在末行按 ↓ 还原草稿。",
+      "state": "confirmed",
+      "evidence": ["evidence/run4-05-recall-matrix.json", "evidence/run4-12-multiline-second.png"]
+    },
+    {
+      "id": "F2",
+      "title": "Shift+Enter 换行仍由宿主处理",
+      "expect": "插入换行，不被插件拦截",
+      "actual": "输入 `甲` → Shift+Enter → 输入 `乙`，草稿为 `甲\\n乙`（len 3，caret 2）。",
+      "state": "confirmed",
+      "evidence": ["evidence/run4-05-recall-matrix.json", "evidence/run4-13-shift-enter.png"]
+    },
+    {
+      "id": "F3",
+      "title": "Shift/Alt + ↑ 一律放行（不召回）",
+      "expect": "带修饰键的箭头不触发历史",
+      "actual": "历史非空时，草稿 `修饰键测试`（caret 0）：Shift+↑ 后文本仍为 `修饰键测试`、caret 0、defaultPrevented=false；Alt+↑ 同样不变、defaultPrevented=false。",
+      "state": "confirmed",
+      "evidence": ["evidence/run4-05-recall-matrix.json"]
+    },
+    {
+      "id": "F4",
+      "title": "Ctrl+↑ 按 enableCtrlAlias 默认等效裸 ↑",
+      "expect": "Ctrl+↑ 也召回（默认 true）",
+      "actual": "空草稿 caret 0 按 Ctrl+↑ → 草稿变 `第三条历史：再检查一遍错别字`，caret 14。",
+      "state": "confirmed",
+      "evidence": ["evidence/run4-05-recall-matrix.json"]
+    },
+    {
+      "id": "G1",
+      "title": "历史落盘位置与数据形状",
+      "expect": "浏览器 localStorage 单键 `dsh.composer-history.v1`，形如 {v:1, entries:[...]}",
+      "actual": "发 3 条消息后 localStorage 出现 `dsh.composer-history.v1` = `{\"v\":1,\"entries\":[\"第一条历史：给周记起个开头\",\"第二条历史：把结尾写暖一点\",\"第三条历史：再检查一遍错别字\"]}`（rawLen 86）；另有 `dsh.composer-history.insights.v1` = {v:1, records:[{text, sessions:[…], uses:1, lastUsedAt}]}。宿主磁盘上没有对应历史文件。",
+      "state": "confirmed",
+      "evidence": ["evidence/run4-02-send.json", "evidence/run4-06-search-reload.json"]
+    },
+    {
+      "id": "G2",
+      "title": "页面刷新后历史保留且仍可召回",
+      "expect": "reload 后 entries 不变、↑ 仍召回同一条",
+      "actual": "page.reload 后 entries 仍 3 条、`window.__reloadMark` 变为 null（确认真刷新）；空草稿按 ↑ 得 `第三条历史：再检查一遍错别字`。",
+      "state": "confirmed",
+      "evidence": ["evidence/run4-06-search-reload.json", "evidence/run4-20-after-reload.png"]
+    },
+    {
+      "id": "G3",
+      "title": "宿主冷重启（同 origin）后历史保留",
+      "expect": "换宿主进程、origin 不变时 entries 不变、仍可召回",
+      "actual": "先 job_kill 掉 run4（pid 20832），再以 `--port 5470` 固定端口重启 run5（pid 33680），用同一 browser-profile-a 打开：origin 仍为 http://127.0.0.1:5470，entries 仍 4 条（rawLen 86），`dsh.composer-history.v1` 与 `.insights.v1` 都在，空草稿按 ↑ 得 `乙会话专属的句子-只在B里发过`。",
+      "state": "confirmed",
+      "evidence": ["evidence/run5-11-coldrestart-workspace-b.json", "evidence/run5-30-cold-restart.png"],
+      "note": "必须用固定端口做这条；`--port 0` 会换 origin，localStorage 按 origin 隔离，那种测法无法区分「插件没保留」与「换了 origin」。本轮两种都跑过：port 0 下 origin 从 5470 变 8975，存储读不到，属环境限制，不记缺陷。"
+    },
+    {
+      "id": "H1",
+      "title": "空历史时 ↑ 放行（不吞键、不污染草稿）",
+      "expect": "全新存储下按 ↑ 无副作用，事件不被拦截",
+      "actual": "mkdtemp 新建 userDataDir 的干净 profile：localStorage 无任何 composer-history 键；空草稿按 ↑ → 文本仍空、len 0、caret 0、capture 阶段 defaultPrevented=false；再打字 `空历史下打的字` 后按 ↑ 仍原样保留、仍 defaultPrevented=false。与 README「no history → pass」一致。",
+      "state": "confirmed",
+      "evidence": ["evidence/run4-07-edge-cases.json", "evidence/run4-21-empty-history.png"]
+    },
+    {
+      "id": "H2",
+      "title": "超长历史条目（20014 字符）召回不卡顿、不截断",
+      "expect": "整条召回，长度与存储一致，耗时可接受",
+      "actual": "向 `dsh.composer-history.v1` 注入一条 20014 字条目（存储长度序列 [13,13,14,15,30,26,20014]）；空草稿连按 ↑ 三次：26 字（settle 10ms）→ 30 字（6ms）→ 20014 字（14ms），长度一次到位；随后打字追加 2 字变 20016（输入区仍可用）；按 Esc 还原为 1 字。0 pageerror。",
+      "state": "confirmed",
+      "evidence": ["evidence/run5-16-long-entry-walk.json", "evidence/run5-15-case-longentry.json"],
+      "correction": "早期 probe-07 曾判「超长条目召回不出现」，原因是只等了 5000ms 且只用「第一次采样长度」判断；改为逐次 ↑ 走到该条并按长度收敛（连续两次采样相同）后，读数正常。属探针等待策略问题。"
+    },
+    {
+      "id": "H3",
+      "title": "粘贴多行后按 ↑：末行放行、首行召回整段",
+      "expect": "光标在末行时交还给浏览器；移到首行才召回并 stash 整段粘贴内容",
+      "actual": "粘贴 `粘贴第一行\\n粘贴第二行\\n粘贴第三行`（len 20）；caret 在末行按 ↑ → 文本不变、capture 与 bubble 两阶段 defaultPrevented 均 false；把 caret 移到首行按 ↑ → 召回 `第三条历史：再检查一遍错别字`（caret 14）、capture 阶段 defaultPrevented=true。",
+      "state": "confirmed",
+      "evidence": ["evidence/run4-06-search-reload.json", "evidence/run4-19-paste-multiline.png"]
+    },
+    {
+      "id": "H4",
+      "title": "损坏的 localStorage payload 读时静默回落，召回不崩",
+      "expect": "坏 JSON 不影响召回；页面不抛错",
+      "actual": "把 `dsh.composer-history.v1` 写成 `{not json at all` 后：Ctrl+R 浮层仍能打开并列出 3 条（来自会话节点，不依赖损坏存储），按 ↑ 仍召回 `第三条历史`（caret 14），0 pageerror；损坏原始字符串仍原样留在 localStorage 未被改写（源码 loadEntries 只承诺读时回落，不承诺重写）。",
+      "state": "confirmed",
+      "evidence": ["evidence/run4-07-edge-cases.json", "evidence/run4-23-corrupt-store.png"]
+    },
+    {
+      "id": "I1",
+      "title": "宿主 profile 初始化缺 dsh-web-app（安装面记录，非插件缺陷）",
+      "expect": "宿主能起 web server",
+      "actual": "`dsh plugin --profile chist add` 首次生成的 package.json 里 dsh.profile.bundles 只有 dsh-base 与插件两行，缺 @deepseek-ai/dsh-web-app；此时宿主启动即退（EXIT 1、stdout 与 stderr 均 0 字节、无监听端口）。补成三行后正常。官方包目录里 dsh-web-app 是存在的，属 profile 初始化行为。",
+      "state": "confirmed",
+      "evidence": ["evidence/run2-host.stdout.txt", "evidence/step05-profile-before-bundles-fix.json"],
+      "scope": "installation/environment, not a plugin defect"
+    },
+    {
+      "id": "I2",
+      "title": "焦点不在输入区时 Ctrl+R 是否被吞（对照）",
+      "expect": "输入区外不应被插件接管，浏览器行为保留",
+      "actual": "把焦点停在侧栏 [role=treeitem] 上按 Control+r：capture 阶段读到的 r 键 defaultPrevented=false（未被吞）。但同一次里浮层节点仍在页面中（前一步遗留的打开态），因此「浮层是否因这次按键而打开」这一层无法从本次读数区分，只能确认按键未被吞。",
+      "state": "uncertain",
+      "evidence": ["evidence/run5-13-esc-attribution.json"],
+      "whyUncertain": "对照实验开始时浮层已处于打开态（早期用节点存在性判据导致未清理），无法把「浮层出现」归因到这次按键；需要先把浮层关掉再测才能定案。"
+    },
+    {
+      "id": "J1",
+      "title": "搜索浮层取词后焦点归属",
+      "expect": "Enter 取词后焦点回到输入区，可直接继续打字",
+      "actual": "Enter 取词后浮层 display:none、active element 为 composer 的 DIV；随后直接键盘输入可正常进入草稿（在 H2 的后续步骤里打字成功追加 2 字）。但未单独测「取词后立刻连打一串字符且含 ↑」的组合。",
+      "state": "uncertain",
+      "evidence": ["evidence/run5-14-esc-display.json", "evidence/run5-16-long-entry-walk.json"],
+      "whyUncertain": "只验证了单次追加输入，没有覆盖取词后立即按 ↑ 的组合行为。"
+    },
+    {
+      "id": "J2",
+      "title": "侧栏会话列表在 1440 宽下只渲染工作区行",
+      "expect": "侧栏能看到多个会话以切换",
+      "actual": "1440×1000 下 `[role=treeitem]` 只有 1 条（默认工作区）；把视口缩到 1100 触发侧栏展开后才出现会话行，恢复 1440 后又只剩工作区行。这是宿主侧栏的响应式折叠行为，不是插件行为，但会限制「跨会话召回」类断言的取证方式。",
+      "state": "confirmed",
+      "evidence": ["evidence/run4-10-cross-session.json"],
+      "scope": "host UI behavior, not a plugin defect"
+    }
+  ]
+}

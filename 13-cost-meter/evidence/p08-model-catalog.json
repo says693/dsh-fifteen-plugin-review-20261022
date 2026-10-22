@@ -1,0 +1,153 @@
+{
+  "captured": [
+    {
+      "path": "/api/credentials/describe",
+      "status": 200,
+      "body": "{\"type\":\"server-response\",\"rpcId\":\"b529bcd7-5f6b-4c47-a451-6fde6dddea08\",\"result\":{\"ok\":true,\"value\":{\"DEEPSEEK_API_KEY\":{\"configured\":false,\"writable\":true}}}}"
+    },
+    {
+      "path": "/api/session/modelCatalog",
+      "status": 200,
+      "body": "{\"type\":\"server-response\",\"rpcId\":\"603ed4a0-ccfe-471e-8b09-4740ae61499b\",\"result\":{\"ok\":true,\"value\":{\"default\":{\"provider\":\"deepseek-official\",\"model\":\"deepseek-flash\"},\"routableProviders\":[\"deepseek-official\"],\"groups\":[{\"id\":\"deepseek-official\",\"name\":\"DeepSeek\",\"models\":[{\"id\":\"deepseek-flash\",\"name\":\"DeepSeek-V41-Flash\",\"reasoning\":{\"efforts\":[{\"id\":\"off\",\"name\":\"Off\",\"description\":\"Use for simple tasks that do not need reasoning.\"},{\"id\":\"low\",\"name\":\"Low\",\"description\":\"Prefer for routine or latency-sensitive tasks.\"},{\"id\":\"high\",\"name\":\"High\",\"description\":\"The default balance for most tasks.\"},{\"id\":\"max\",\"name\":\"Max\",\"description\":\"Reserve for the hardest quality-first tasks.\"}],\"defaultEffort\":\"high\"}},{\"id\":\"deepseek-v4-pro\",\"name\":\"DeepSeek-V4-Pro\",\"description\":\"Stronger agentic coding, knowledge, and difficult reasoning; suited to complex or quality-critical tasks at higher cost.\",\"reasoning\":{\"efforts\":[{\"id\":\"off\",\"name\":\"Off\",\"description\":\"Use for simple tasks that do not need reasoning.\"},{\"id\":\"low\",\"name\":\"Low\",\"description\":\"Prefer for routine or latency-sensitive tasks.\"},{\"id\":\"high\",\"name\":\"High\",\"description\":\"The default balance for most tasks.\"},{\"id\":\"max\",\"name\":\"Max\",\"description\":\"Reserve for the hardest quality-first tasks.\"}],\"defaultEffort\":\"high\"}}]}],\"failures\":[]}}}"
+    },
+    {
+      "path": "/api/session/modelCatalog",
+      "status": 200,
+      "body": "{\"type\":\"server-response\",\"rpcId\":\"f3ebd0d8-b7e3-4dcb-8c74-8af87cb652d6\",\"result\":{\"ok\":true,\"value\":{\"default\":{\"provider\":\"deepseek-official\",\"model\":\"deepseek-flash\"},\"routableProviders\":[\"deepseek-official\"],\"groups\":[{\"id\":\"deepseek-official\",\"name\":\"DeepSeek\",\"models\":[{\"id\":\"deepseek-flash\",\"name\":\"DeepSeek-V41-Flash\",\"reasoning\":{\"efforts\":[{\"id\":\"off\",\"name\":\"Off\",\"description\":\"Use for simple tasks that do not need reasoning.\"},{\"id\":\"low\",\"name\":\"Low\",\"description\":\"Prefer for routine or latency-sensitive tasks.\"},{\"id\":\"high\",\"name\":\"High\",\"description\":\"The default balance for most tasks.\"},{\"id\":\"max\",\"name\":\"Max\",\"description\":\"Reserve for the hardest quality-first tasks.\"}],\"defaultEffort\":\"high\"}},{\"id\":\"deepseek-v4-pro\",\"name\":\"DeepSeek-V4-Pro\",\"description\":\"Stronger agentic coding, knowledge, and difficult reasoning; suited to complex or quality-critical tasks at higher cost.\",\"reasoning\":{\"efforts\":[{\"id\":\"off\",\"name\":\"Off\",\"description\":\"Use for simple tasks that do not need reasoning.\"},{\"id\":\"low\",\"name\":\"Low\",\"description\":\"Prefer for routine or latency-sensitive tasks.\"},{\"id\":\"high\",\"name\":\"High\",\"description\":\"The default balance for most tasks.\"},{\"id\":\"max\",\"name\":\"Max\",\"description\":\"Reserve for the hardest quality-first tasks.\"}],\"defaultEffort\":\"high\"}}]}],\"failures\":[]}}}"
+    },
+    {
+      "path": "/api/credentials/describe",
+      "status": 200,
+      "body": "{\"type\":\"server-response\",\"rpcId\":\"1d3b7c9f-d306-4d8e-bb99-52f265294a44\",\"result\":{\"ok\":true,\"value\":{\"DEEPSEEK_API_KEY\":{\"configured\":false,\"writable\":true}}}}"
+    },
+    {
+      "path": "/api/credentials/describe",
+      "status": 200,
+      "body": "{\"type\":\"server-response\",\"rpcId\":\"1aed08f0-28fb-46cc-836c-3f39f03b7f26\",\"result\":{\"ok\":true,\"value\":{\"DEEPSEEK_API_KEY\":{\"configured\":false,\"writable\":true}}}}"
+    }
+  ],
+  "ids": [
+    {
+      "from": "/api/session/modelCatalog",
+      "path": "$.result.value.default.provider",
+      "value": "deepseek-official"
+    },
+    {
+      "from": "/api/session/modelCatalog",
+      "path": "$.result.value.default.model",
+      "value": "deepseek-flash"
+    },
+    {
+      "from": "/api/session/modelCatalog",
+      "path": "$.result.value.groups[0].id",
+      "value": "deepseek-official"
+    },
+    {
+      "from": "/api/session/modelCatalog",
+      "path": "$.result.value.groups[0].name",
+      "value": "DeepSeek"
+    },
+    {
+      "from": "/api/session/modelCatalog",
+      "path": "$.result.value.groups[0].models[0].id",
+      "value": "deepseek-flash"
+    },
+    {
+      "from": "/api/session/modelCatalog",
+      "path": "$.result.value.groups[0].models[0].name",
+      "value": "DeepSeek-V41-Flash"
+    },
+    {
+      "from": "/api/session/modelCatalog",
+      "path": "$.result.value.groups[0].models[0].reasoning.efforts[0].id",
+      "value": "off"
+    },
+    {
+      "from": "/api/session/modelCatalog",
+      "path": "$.result.value.groups[0].models[0].reasoning.efforts[0].name",
+      "value": "Off"
+    },
+    {
+      "from": "/api/session/modelCatalog",
+      "path": "$.result.value.groups[0].models[0].reasoning.efforts[1].id",
+      "value": "low"
+    },
+    {
+      "from": "/api/session/modelCatalog",
+      "path": "$.result.value.groups[0].models[0].reasoning.efforts[1].name",
+      "value": "Low"
+    },
+    {
+      "from": "/api/session/modelCatalog",
+      "path": "$.result.value.groups[0].models[0].reasoning.efforts[2].id",
+      "value": "high"
+    },
+    {
+      "from": "/api/session/modelCatalog",
+      "path": "$.result.value.groups[0].models[0].reasoning.efforts[2].name",
+      "value": "High"
+    },
+    {
+      "from": "/api/session/modelCatalog",
+      "path": "$.result.value.groups[0].models[0].reasoning.efforts[3].id",
+      "value": "max"
+    },
+    {
+      "from": "/api/session/modelCatalog",
+      "path": "$.result.value.groups[0].models[0].reasoning.efforts[3].name",
+      "value": "Max"
+    },
+    {
+      "from": "/api/session/modelCatalog",
+      "path": "$.result.value.groups[0].models[1].id",
+      "value": "deepseek-v4-pro"
+    },
+    {
+      "from": "/api/session/modelCatalog",
+      "path": "$.result.value.groups[0].models[1].name",
+      "value": "DeepSeek-V4-Pro"
+    },
+    {
+      "from": "/api/session/modelCatalog",
+      "path": "$.result.value.groups[0].models[1].reasoning.efforts[0].id",
+      "value": "off"
+    },
+    {
+      "from": "/api/session/modelCatalog",
+      "path": "$.result.value.groups[0].models[1].reasoning.efforts[0].name",
+      "value": "Off"
+    },
+    {
+      "from": "/api/session/modelCatalog",
+      "path": "$.result.value.groups[0].models[1].reasoning.efforts[1].id",
+      "value": "low"
+    },
+    {
+      "from": "/api/session/modelCatalog",
+      "path": "$.result.value.groups[0].models[1].reasoning.efforts[1].name",
+      "value": "Low"
+    },
+    {
+      "from": "/api/session/modelCatalog",
+      "path": "$.result.value.groups[0].models[1].reasoning.efforts[2].id",
+      "value": "high"
+    },
+    {
+      "from": "/api/session/modelCatalog",
+      "path": "$.result.value.groups[0].models[1].reasoning.efforts[2].name",
+      "value": "High"
+    },
+    {
+      "from": "/api/session/modelCatalog",
+      "path": "$.result.value.groups[0].models[1].reasoning.efforts[3].id",
+      "value": "max"
+    },
+    {
+      "from": "/api/session/modelCatalog",
+      "path": "$.result.value.groups[0].models[1].reasoning.efforts[3].name",
+      "value": "Max"
+    }
+  ],
+  "errors": [],
+  "consoleLog": []
+}

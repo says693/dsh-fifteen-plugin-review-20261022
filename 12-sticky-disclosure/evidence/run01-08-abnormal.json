@@ -1,0 +1,52 @@
+{
+  "cases": {
+    "zero": {
+      "rows": 0,
+      "expanded": 0,
+      "pill": {
+        "present": true,
+        "countAttr": "0",
+        "countText": "",
+        "text": "全部收起",
+        "rect": {
+          "x": 1286,
+          "y": 952,
+          "w": 96,
+          "h": 32,
+          "visible": true
+        },
+        "pluginExpanded": 0
+      },
+      "bodyText": "探索未至之境 预览版 workspace 描述你想要构建的内容, / 调用指令, @ 文件或对话 工作区内修改 DeepSeek-V41-Flash High",
+      "clickOk": true,
+      "afterClick": {
+        "expanded": 0,
+        "pill": "0"
+      }
+    },
+    "many": {
+      "rows": 60,
+      "think": 20,
+      "tool": 20,
+      "turnProcess": 20,
+      "attempted": 60,
+      "expanded": 19,
+      "pillAttr": "19",
+      "pillText": "·19",
+      "agree": true,
+      "expandMs": 45126,
+      "dockChips": 15,
+      "afterClick": {
+        "expanded": 0,
+        "pillAttr": "0",
+        "pillText": "",
+        "plugin": 0,
+        "clickMs": 17
+      },
+      "leftover": []
+    }
+  },
+  "steps": [],
+  "errors": [],
+  "consoleErr": []
+}

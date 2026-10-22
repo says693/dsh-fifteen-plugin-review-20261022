@@ -1,0 +1,164 @@
+{
+  "utc": "2026-10-22T01:45:50.330Z",
+  "steps": [
+    {
+      "label": "00",
+      "hasChatFlow": false,
+      "barCount": 0,
+      "flowKids": 0,
+      "bodyTextLen": 200,
+      "bodyHead": "新会话\nCtrl\n+\nAlt\n+\nN\n插件\n工作区\n默认工作区\nts-fixtures\n新会话\n设置\n探索未至之境\n预览版\nts-fixtures\n标准模式\n描述你想要构建的内容, / 调用指令, @ 文件或对话\n工作区内修改\nDeepSeek-V41-Flash\nHigh\n添加一个 API Key 开始使用\n\n配置 DeepSeek 官方模型，即可开始使用。\n\nAPI 密钥\n稍后配置\n保存并继续"
+    },
+    {
+      "label": "01-expanded-workspace",
+      "hasChatFlow": false,
+      "barCount": 0,
+      "flowKids": 0,
+      "bodyTextLen": 200,
+      "bodyHead": "新会话\nCtrl\n+\nAlt\n+\nN\n插件\n工作区\n默认工作区\nts-fixtures\n新会话\n设置\n探索未至之境\n预览版\nts-fixtures\n标准模式\n描述你想要构建的内容, / 调用指令, @ 文件或对话\n工作区内修改\nDeepSeek-V41-Flash\nHigh\n添加一个 API Key 开始使用\n\n配置 DeepSeek 官方模型，即可开始使用。\n\nAPI 密钥\n稍后配置\n保存并继续"
+    },
+    {
+      "label": "02-opened-session",
+      "hasChatFlow": false,
+      "barCount": 0,
+      "flowKids": 0,
+      "bodyTextLen": 200,
+      "bodyHead": "新会话\nCtrl\n+\nAlt\n+\nN\n插件\n工作区\n默认工作区\nts-fixtures\n新会话\n设置\n探索未至之境\n预览版\nts-fixtures\n标准模式\n描述你想要构建的内容, / 调用指令, @ 文件或对话\n工作区内修改\nDeepSeek-V41-Flash\nHigh\n添加一个 API Key 开始使用\n\n配置 DeepSeek 官方模型，即可开始使用。\n\nAPI 密钥\n稍后配置\n保存并继续"
+    },
+    {
+      "label": "03-fallback",
+      "hasChatFlow": false,
+      "barCount": 0,
+      "flowKids": 0,
+      "bodyTextLen": 200,
+      "bodyHead": "新会话\nCtrl\n+\nAlt\n+\nN\n插件\n工作区\n默认工作区\nts-fixtures\n新会话\n设置\n探索未至之境\n预览版\nts-fixtures\n标准模式\n描述你想要构建的内容, / 调用指令, @ 文件或对话\n工作区内修改\nDeepSeek-V41-Flash\nHigh\n添加一个 API Key 开始使用\n\n配置 DeepSeek 官方模型，即可开始使用。\n\nAPI 密钥\n稍后配置\n保存并继续"
+    },
+    {
+      "label": "04-final",
+      "hasChatFlow": false,
+      "barCount": 0,
+      "flowKids": 0,
+      "bodyTextLen": 200,
+      "bodyHead": "新会话\nCtrl\n+\nAlt\n+\nN\n插件\n工作区\n默认工作区\nts-fixtures\n新会话\n设置\n探索未至之境\n预览版\nts-fixtures\n标准模式\n描述你想要构建的内容, / 调用指令, @ 文件或对话\n工作区内修改\nDeepSeek-V41-Flash\nHigh\n添加一个 API Key 开始使用\n\n配置 DeepSeek 官方模型，即可开始使用。\n\nAPI 密钥\n稍后配置\n保存并继续"
+    }
+  ],
+  "host": {
+    "origin": "http://127.0.0.1:14928",
+    "pid": 32704
+  },
+  "rows0": [
+    {
+      "text": "默认工作区",
+      "sel": null,
+      "exp": "false",
+      "rect": {
+        "x": 12,
+        "y": 206,
+        "w": 256,
+        "h": 34
+      }
+    },
+    {
+      "text": "ts-fixtures",
+      "sel": null,
+      "exp": "true",
+      "rect": {
+        "x": 12,
+        "y": 244,
+        "w": 256,
+        "h": 34
+      }
+    },
+    {
+      "text": "新会话",
+      "sel": "true",
+      "exp": null,
+      "rect": {
+        "x": 12,
+        "y": 280,
+        "w": 256,
+        "h": 32
+      }
+    }
+  ],
+  "rows1": [
+    {
+      "text": "默认工作区",
+      "sel": null,
+      "exp": "false",
+      "rect": {
+        "x": 12,
+        "y": 206,
+        "w": 256,
+        "h": 34
+      }
+    },
+    {
+      "text": "ts-fixtures",
+      "sel": null,
+      "exp": "true",
+      "rect": {
+        "x": 12,
+        "y": 244,
+        "w": 256,
+        "h": 34
+      }
+    },
+    {
+      "text": "新会话",
+      "sel": "true",
+      "exp": null,
+      "rect": {
+        "x": 12,
+        "y": 280,
+        "w": 256,
+        "h": 32
+      }
+    }
+  ],
+  "rows2": [
+    {
+      "text": "默认工作区",
+      "sel": null,
+      "exp": "false",
+      "rect": {
+        "x": 12,
+        "y": 206,
+        "w": 256,
+        "h": 34
+      }
+    },
+    {
+      "text": "ts-fixtures",
+      "sel": null,
+      "exp": "true",
+      "rect": {
+        "x": 12,
+        "y": 244,
+        "w": 256,
+        "h": 34
+      }
+    },
+    {
+      "text": "新会话",
+      "sel": "true",
+      "exp": null,
+      "rect": {
+        "x": 12,
+        "y": 280,
+        "w": 256,
+        "h": 32
+      }
+    }
+  ],
+  "verdict": {
+    "hasChatFlow": false,
+    "barCount": 0,
+    "flowKids": 0,
+    "clicked": null,
+    "clicked2": null,
+    "polls": 28
+  },
+  "errors": [],
+  "consoleLog": []
+}

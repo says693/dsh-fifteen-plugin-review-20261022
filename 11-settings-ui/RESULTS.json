@@ -1,0 +1,355 @@
+{
+  "object": "@weibaohui/dsh-settings-ui@0.2.10",
+  "tested_at": "2026-10-22T09:25:00+08:00 .. 2026-10-22T09:46:00+08:00",
+  "host": "@deepseek-ai/dsh 0.2.0-rc.2",
+  "browser": "Edge 155.0.4283.62 / Playwright 1.64.1 headless",
+  "install_source": "npm 发布件",
+  "publish_artifact_verified": {
+    "shasum_sha1_matches_registry": true,
+    "integrity_sha512_matches_registry": true,
+    "files_byte_identical_to_commit_f0e79f9": true,
+    "license_declared": "MIT",
+    "license_file_shipped_in_tarball": false
+  },
+  "summary": {
+    "confirmed": 4,
+    "uncertain": 2,
+    "untested": 3,
+    "no_defect_observations": 6
+  },
+  "checks": [
+    {
+      "id": "S1",
+      "area": "入口可见性",
+      "expected": "设置窗口左侧导航出现「设置界面」，点进去渲染出插件 section",
+      "actual": "出现，且是第 5 项（通用设置 / 模型 / 内置插件 / Agent 预设 / 设置界面 / 打开配置文件）。点进去后渲染出 5 个尺寸 chip、1 个不透明度滑块、2 个背景 chip、恢复默认按钮与提示文案。截图为证。",
+      "reading": "nav items = [通用设置, 模型, 内置插件, Agent 预设, 设置界面, 打开配置文件]; .su-sec 存在; .su-chip 计数 8",
+      "evidence": ["evidence/p03b-open.json", "evidence/p04-sizes.json", "evidence/p04-00-base.png"],
+      "status": "confirmed",
+      "defect": false
+    },
+    {
+      "id": "S1b",
+      "area": "首启阻断",
+      "expected": "点宿主左下「设置」按钮即可打开设置窗口",
+      "actual": "首次启动时宿主的「添加一个 API Key」引导弹窗挡在前面，点「设置」按钮无任何反应；点掉弹窗里的「稍后配置」后才能打开。这是宿主自身行为，非插件问题，但会直接影响新手第一次找到插件入口。",
+      "reading": "dialog role=dialog class=jLrgrW_dialog text='添加一个 API Key 开始使用'; 点「设置」后 dialogs 仍只有它; 点「稍后配置」后 settingsSel=true",
+      "evidence": ["evidence/p03-run.txt", "evidence/p03b-run.txt"],
+      "status": "confirmed",
+      "defect": false,
+      "note": "宿主行为，记为可用性背景信息，不计入插件缺陷"
+    },
+    {
+      "id": "S2",
+      "area": "全屏",
+      "expected": "面板 width=100vw、height=100vh、border-radius:0，即时生效不关窗",
+      "actual": "即时生效。1440×1000 视口下面板 rect = 0,0,1440,1000；computed width=1440px height=1000px max-width:none border-radius:0px",
+      "reading": "rect={x:0,y:0,w:1440,h:1000}; style={width:'1440px',height:'1000px',maxWidth:'none',borderRadius:'0px'}; tweakLen=149",
+      "evidence": ["evidence/p04-sizes.json", "evidence/p04-size-E585A8E5B18F.png"],
+      "status": "confirmed",
+      "defect": false
+    },
+    {
+      "id": "S3",
+      "area": "预置尺寸",
+      "expected": "大=1080×780，特大=1280×960，且高度有 calc(100vh-48px) 上限",
+      "actual": "大：rect 1080×780 完全命中。特大：CSS 声明 960 高，但 1000 高视口下被 `height:min(960px, calc(100vh - 48px))` 夹到 952，实际 rect 1280×952 —— 这是设计中的视口自适应，不是缺陷。",
+      "reading": "large rect={x:180,y:110,w:1080,h:780}; xlarge rect={x:80,y:24,w:1280,h:952} styleH='952px'",
+      "evidence": ["evidence/p04-sizes.json", "evidence/p04-size-E5A4A7EFBC88.png", "evidence/p04-size-E789B9E5A4A7.png"],
+      "status": "confirmed",
+      "defect": false
+    },
+    {
+      "id": "S3b",
+      "area": "全屏与预置的互斥/还原",
+      "expected": "从全屏切回默认能干净还原",
+      "actual": "干净还原：全屏 → 默认 800×800，tweakLen 149 → 0（buildCss 在默认全不透明全主题色时返回空串，style 标签被清空），无残留声明。",
+      "reading": "全屏 tweakLen=149 → 默认 tweakLen=0; rect 回到 {x:320,y:100,w:800,h:800}",
+      "evidence": ["evidence/p04-sizes.json"],
+      "status": "confirmed",
+      "defect": false
+    },
+    {
+      "id": "S4",
+      "area": "自定义宽高（正常值）",
+      "expected": "输入 900×600，面板变成 900×600",
+      "actual": "**做不到**。输入框无法正常输入（见 S4a），只能用粘贴或方向键。用粘贴 900 后落库 customWidth:900，面板 rect 变成 min(900px, calc(100vw-48px)) = 900 宽。功能本身是好的，但入口坏了。",
+      "reading": "paste 900 → input.value='900', api customWidth=900；paste 1024 → '1024'",
+      "evidence": ["evidence/p19-input-rootcause.json", "evidence/p19-run.txt"],
+      "status": "confirmed",
+      "defect": false,
+      "note": "功能实现正确，阻碍在输入控件；缺陷单列在 S4a"
+    },
+    {
+      "id": "S4a",
+      "area": "自定义宽高输入框",
+      "expected": "点进输入框，全选删除，敲 900，得到 900",
+      "actual": "**键盘无法清空、只能追加**。输入框是 `<input type=\"number\">`，浏览器对 type=number 不支持 selection API：`setSelectionRange` 直接抛 `InvalidStateError: The input element's type ('number') does not support selection.`，`selectionStart/selectionEnd` 恒为 null。所以 Ctrl+A 在这个输入框上不产生可替换选区，每个新数字都被接到已有值的末尾。实测链：1280 → Ctrl+A+Delete → 480（被 min 夹到下界）→ 敲 9 → 4809 → 敲 0 → 48090 → 敲 0 → 480900。全选后直接打「900」得到 48000。高度栏同样：960 → 敲 600 → 360600。",
+      "reading": "1280 →(Ctrl+A,Delete) 480 →(+9) 4809 →(+0) 48090 →(+0) 480900；Ctrl+A 后 selection=[null,null]；setSelectionRange 抛 InvalidStateError；高度 960 → 360600",
+      "evidence": ["evidence/p06-typing.json", "evidence/p15-typing-anomaly.json", "evidence/p19-input-rootcause.json", "evidence/p19-run.txt", "evidence/p15-typing-result.png"],
+      "status": "confirmed",
+      "defect": true,
+      "severity": "medium",
+      "impact": "自定义宽高这个功能实际上没法用键盘输入。用户想设 900×600，只能先按方向键凑、或从别处复制粘贴。而且每次按键都会立即 PUT 一次、写盘一次，脏值一路落进 profile。"
+    },
+    {
+      "id": "S4b",
+      "area": "自定义宽高（非法值）",
+      "expected": "0 / 负数 / 超大 应被夹到合理区间并给出可见反馈",
+      "actual": "下界被夹住了，上界没有。输入 0 或 1 → 得到 480×360（正确，Math.max 生效）。但输入 -100 → 得到 **480100**（减号被吞，值被拼在 480 后面）。输入 99999 → 得到 **4809999**。落库侧同样无上限：customWidth 48000、customHeight 360600 都原样写进 cordis.patch.yml。面板之所以没被撑破，是因为 CSS 用了 `width:min(Xpx, calc(100vw - 48px))`。",
+      "reading": "输入 0 → nums [480,360]; 输入 -100 → [480100, 36050]; 输入 99999 → [4809999, 3609999]; api customWidth=48000 customHeight=360600 落盘",
+      "evidence": ["evidence/p05-custom.json", "evidence/p15-typing-anomaly.json", "evidence/p19-input-rootcause.json"],
+      "status": "confirmed",
+      "defect": true,
+      "severity": "low",
+      "impact": "数值会变成荒唐的数字并写进 profile。因为 CSS 有 min() 兜底，视觉上没有立刻炸，但下次打开设置窗口会看到一个 4809999 的宽度值，而且用户没法用键盘把它改回去（见 S4a）——两个问题叠在一起会把人卡住。"
+    },
+    {
+      "id": "S5",
+      "area": "背景不透明度",
+      "expected": "拖到 70%，面板变半透明；拖回 100% 恢复正常",
+      "actual": "生效且即时。70% → computed background-color 变成 `color(srgb 1 1 1 / 0.7)`，注入的 CSS 为 `color-mix(in srgb, var(--dsw-alias-bg-layer-2) 70%, transparent)`；30% → 0.3；100% → 回到 rgb(255,255,255) 且注入 CSS 被清空。截图能看到聊天区文字透过设置面板。",
+      "reading": "opacity 70 → bg='color(srgb 1 1 1 / 0.7)' tweak=color-mix(...70%...); 30 → /0.3; 100 → bg='rgb(255, 255, 255)' tweak=''",
+      "evidence": ["evidence/p07-appearance.json", "evidence/p07-opacity-70.png", "evidence/p07-opacity-30.png", "evidence/p08-range-theme.json"],
+      "status": "confirmed",
+      "defect": false
+    },
+    {
+      "id": "S5b",
+      "area": "滑块交互方式",
+      "expected": "鼠标拖拽滑块能稳定改值",
+      "actual": "鼠标拖拽不稳定：同一次拖拽有时不触发 onChange，落到 100% 然后弹回。但**点轨道**和**键盘**都稳定：点最左 → 30%、点中点 → 65%、点最右 → 100%；Home → 30、ArrowRight 每次 +5、End → 100。",
+      "reading": "点击轨道 frac=0→30, 0.5→65, 1→100；键盘 Home→30, ArrowRight×1→35, ×2→40, ×4→45, End→100；拖拽用例中 target=50 时实际回到 100",
+      "evidence": ["evidence/p07-appearance.json", "evidence/p16-drag-range-narrow.json", "evidence/p08-range-theme.json"],
+      "status": "uncertain",
+      "defect": false,
+      "note": "拖拽不稳只在 headless 的合成鼠标事件下观察到，无法排除是我的驱动方式问题（Playwright 的 mouse.down/move/up 对 range 的原生拖拽模拟本身有已知局限）。因此标 uncertain，不写成缺陷。"
+    },
+    {
+      "id": "S6",
+      "area": "纯色背景",
+      "expected": "切「纯色」后色板出现，取色即改变面板背景",
+      "actual": "生效。切纯色 → 面板 background-color 变 rgb(238,241,245)（即 bgColorLight #eef1f5）；把浅色色板改成 #ff8800 → 面板变 rgb(255,136,0)，注入 CSS 变 `background-color:#ff8800`。两个色板（浅色主题 / 暗色主题）分开存，互不影响。",
+      "reading": "bgMode=color → bg='rgb(238, 241, 245)'; 色板改 #ff8800 → bg='rgb(255, 136, 0)' tweak='...{background-color:#ff8800}'; colors=['#ff8800','#1e2a38']",
+      "evidence": ["evidence/p07-appearance.json", "evidence/p07-bg-color-orange.png"],
+      "status": "confirmed",
+      "defect": false
+    },
+    {
+      "id": "S6b",
+      "area": "亮/暗主题各自一色 + 实时跟随",
+      "expected": "切深色后自动用暗色的那一色，不用刷新",
+      "actual": "确实实时跟随。设浅色=#ff8800、暗色保持 #1e2a38，切到深色后注入 CSS 立刻变成 `background-color:#1e2a38`，面板 bg 变 rgb(30,42,56)；切回浅色又变回 #ff8800。全程未刷新页面，靠 MutationObserver 监听 body[data-ds-dark-theme] 触发。",
+      "reading": "深色切换后 tweak='...{background-color:#1e2a38}' panelBg='rgb(30, 42, 56)'; 切回浅色 tweak='...{background-color:#ff8800}' panelBg='rgb(255, 136, 0)'",
+      "evidence": ["evidence/p08-range-theme.json", "evidence/p08-dark-panel.png", "evidence/p18-contrast-effective.json"],
+      "status": "confirmed",
+      "defect": false
+    },
+    {
+      "id": "S7",
+      "area": "关掉设置窗口再打开",
+      "expected": "设置仍在",
+      "actual": "仍在。Esc 关闭（panelPresent=false）→ 重开 → rect 1080×780、opacity=70、选中 chip「大」+「纯色」，与关闭前一致。",
+      "reading": "afterClose.panelPresent=false; afterReopen rect={w:1080,h:780} range='70'",
+      "evidence": ["evidence/p09-reload.json"],
+      "status": "confirmed",
+      "defect": false
+    },
+    {
+      "id": "S8",
+      "area": "整页刷新",
+      "expected": "刷新后设置还在",
+      "actual": "在，而且是**首帧就生效**：设成大 1080×780 + 70% + #ff8800 后刷新，页面刚起来 `#dsh-settings-ui-style` 里就已经是 `width:1080px;height:min(780px, calc(100vh - 48px));background-color:color-mix(in srgb, #ff8800 70%, transparent)`，不用先打开设置窗口。",
+      "reading": "afterReloadBoot.tweakOnBoot = 完整注入串（含 width:1080px 与 70% color-mix）; afterReload rect={w:1080,h:780} range='70'",
+      "evidence": ["evidence/p09-reload.json", "evidence/p09-after-reload.png"],
+      "status": "confirmed",
+      "defect": false
+    },
+    {
+      "id": "S8b",
+      "area": "换浏览器 / 清空浏览器数据",
+      "expected": "设置跟着 profile 走，换浏览器不丢",
+      "actual": "不丢。新开一个全新 browser context（localStorage 从空开始）打开同一宿主，`#dsh-settings-ui-style` 依然被注入成同样的 1080×780 + 70%，设置面板读数一致。",
+      "reading": "freshContext.tweakOnBoot = 同一条注入串; freshContextPanel.rect={w:1080,h:780} chips on=[大,纯色] rangeVal='70'",
+      "evidence": ["evidence/p09-reload.json"],
+      "status": "confirmed",
+      "defect": false
+    },
+    {
+      "id": "S8c",
+      "area": "保存到哪儿",
+      "expected": "任务书预设：保存到本机浏览器",
+      "actual": "**不是浏览器**。localStorage 里只有宿主的三个键（dsh.workspace.view.v5 / dsh.sidebar-right.v1.session-<uuid> / dsh.sessions.current），没有插件的任何键。真实位置是宿主 settings 文档，落盘在 `isolated-home/profiles/su/cordis.patch.yml` 的 `- id: dsh-settings-ui / config: {...}` 条目里。",
+      "reading": "localStorage keys = 3 个宿主键、0 个插件键; profiles/su/cordis.patch.yml 含 config: {size: large, customWidth: 4820, opacity: 70, bgMode: color, bgColorLight: \"#ff8800\", ...}",
+      "evidence": ["evidence/p09-reload.json", "evidence/p10-cold-restart-same-profile.json", "evidence/install-01-add.txt"],
+      "status": "confirmed",
+      "defect": false,
+      "note": "任务书预设与实测不符，报告里需纠正：这是设计选择（按 profile 保存），比存浏览器更可靠，但也意味着「换 profile 就换一套设置」。"
+    },
+    {
+      "id": "S9",
+      "area": "冷重启宿主",
+      "expected": "关掉宿主进程、重新起一个，设置还在",
+      "actual": "在。停掉 pid 29232、用新进程 pid 20288 在新端口 10932 起来，首帧注入串与重启前完全一致，面板 rect 1080×780、range=70、选中 chip 不变。",
+      "reading": "h2 bootState.tweakOnBoot = width:1080px ... 70% ...; panel.rect={w:1080,h:780} range='70' onChips=[大（1080×780）, 纯色]",
+      "evidence": ["evidence/p10-cold-restart-same-profile.json", "evidence/p10-run.txt"],
+      "status": "confirmed",
+      "defect": false
+    },
+    {
+      "id": "S9b",
+      "area": "换 profile 是否串味",
+      "expected": "换 profile 应当是干净的一套",
+      "actual": "干净。新建 su2 profile（同版本插件、同宿主）、起在 2379，`tweakOnBoot=null`、API 全返回默认值、面板 800×800 / 100% / 主题默认。",
+      "reading": "su2 bootState.tweakOnBoot=null; api='{\"settings\":{\"size\":\"default\",\"customWidth\":1280,...}}'; panel.rect={w:800,h:800} range='100'",
+      "evidence": ["evidence/p11-cross-profile-su2.json", "evidence/p11-run.txt"],
+      "status": "confirmed",
+      "defect": false
+    },
+    {
+      "id": "S10",
+      "area": "恢复默认",
+      "expected": "一键回到 800×800 / 100% / 主题默认，且干净",
+      "actual": "干净。点「恢复默认」→ 面板立刻回 800×800、range=100、选中「默认（800×800）」+「主题默认」、注入 CSS 被清空（tweakLen=0）、API 返回全默认。关窗重开、刷新、以及落盘文件都跟着回默认（cordis.patch.yml 里变回 size: default / opacity: 100 / bgMode: default）。",
+      "reading": "before rect={w:1080,h:780} range='70' tweak 非空 → after rect={w:800,h:800} range='100' tweak='' ; 落盘 config 全回默认",
+      "evidence": ["evidence/p12-reset.json", "evidence/p12-before-reset.png", "evidence/p12-after-reset.png"],
+      "status": "confirmed",
+      "defect": false
+    },
+    {
+      "id": "S11",
+      "area": "窄窗口 1000 / 760 / 600",
+      "expected": "面板不超出视口、内容不被裁、chips 不横向溢出",
+      "actual": "四档都正常。1440→1280×952、1000→952×852、760→712×852、600→552×752，全部 `outOfViewport=false`，chips 换行（600 宽下排成 4 行）无横向溢出，文档无横向滚动条。600 宽 + 全屏 → 600×800 铺满，无溢出无裁切。",
+      "reading": "vp1000 rect={w:952,h:852} chipRows=3; vp760 rect={w:712,h:852} chipRows=4; vp600 rect={w:552,h:752} overflowChips=[]; 600+全屏 rect={w:600,h:800} outOfViewport=false",
+      "evidence": ["evidence/p13-viewports.json", "evidence/p16-drag-range-narrow.json", "evidence/p13-vp-600x800.png", "evidence/p16-narrow-600-E9BB98E8AE.png"],
+      "status": "confirmed",
+      "defect": false
+    },
+    {
+      "id": "S12",
+      "area": "深色主题可读性",
+      "expected": "深色下文字可读，不出现黑底黑字",
+      "actual": "可读，而且对比度充足。深色+纯色 30% 时合成底色 #181b21，辅助标签（.su-label，opacity .6）有效色 #9fa1a4、对比度 6.64；说明文字（.su-hint，opacity .5）对比度 5.02；chip 对比度 16.48。最弱的一项在深色下反而比亮色更高（亮色默认态 .su-hint 只有 3.55）。",
+      "reading": "dark+30%: label 6.64 / k 7.57 / mut 8.58 / hint 5.02 / chip 16.48; dark+100%: label 5.99 / hint 4.63; light+default: label 4.94 / mut 7.08 / hint 3.55",
+      "evidence": ["evidence/p18-contrast-effective.json", "evidence/p17-contrast-viewport.json", "evidence/p17-dark-color-30.png"],
+      "status": "confirmed",
+      "defect": false
+    },
+    {
+      "id": "S13",
+      "area": "非法宽高的服务端校验",
+      "expected": "直接打 API 传越界值，应被拒或夹住",
+      "actual": "部分做对了。customWidth:-5 → 落库 480（夹到下界，正确）；opacity:0 → 落库 30（正确）；opacity:999 → 落库 100（正确）；size:'huge' → 被丢弃、保持原值（正确）；bgMode:'image' → 回落 'default'（正确）；非法 JSON body → HTTP 400 `{\"error\":\"invalid JSON body: Expected property name or '}' ...\"}`（正确）。但 customWidth 没有上限：99999 会原样接收。",
+      "reading": "negWidth 200 → customWidth 480; zeroOpacity 200 → 30; bigOpacity 200 → 100; badSize 200 → 保持原值; bgImage 200 → default; badJson 400",
+      "evidence": ["evidence/p05-custom.json"],
+      "status": "confirmed",
+      "defect": false
+    },
+    {
+      "id": "S13b",
+      "area": "非法颜色值",
+      "expected": "非 #RRGGBB 的值应被服务端拒收",
+      "actual": "服务端全收（200），前端再兜。传 'not-a-color'、'red;position:fixed;inset:0'、空串，三种都 200 原样落库。前端 `Section` 用 `/^#[0-9a-fA-F]{6}$/` 校验，不合规就显示 DEFAULTS；`buildCss` 里空串是 falsy 会回落主题色。实测注入的 CSS 里出现了 `background-color:red;position:fixed;inset:0`，但浏览器把整条声明判无效，面板 background-color 回落到主题色、position 仍是 relative，**没有观察到注入生效**。",
+      "reading": "PUT bgColorLight='red;position:fixed;inset:0' → 200 落库; 注入串 ...{background-color:red;position:fixed;inset:0}; 实测 panelBg 回落 rgb(44,44,46)、panelPosition='relative'、panelInset='0px/0px/0px/0px'",
+      "evidence": ["evidence/p15-typing-anomaly.json", "evidence/p15-invalid-color.png"],
+      "status": "uncertain",
+      "defect": false,
+      "note": "脏值能进 CSS 是真的（有读数），但**没找到能真正生效的构造**——浏览器在解析单条声明时遇到非法 token 会整条丢弃，所以我观察到的结果是无害的。要说它可利用，需要证明存在能穿过解析的构造；这一条我没有做到，因此不写成安全缺陷，只记为「服务端未做格式校验」这一层事实。"
+    },
+    {
+      "id": "S14",
+      "area": "悬浮球",
+      "expected": "任务书预设：应出现悬浮球、开关可用、观察遮挡",
+      "actual": "**0.2.10 里不存在这个功能**。全文档关键词扫描（悬浮 / floating / floater / floatball / fab）0 命中；几何扫描（fixed|absolute + 30–90px 近正方 + 圆角≥半径一半）0 命中；插件注入的 DOM 只有两个 <style> 标签。源码 client/bundle.js 与 src/index.js 都没有悬浮球组件，README 也没提。",
+      "reading": "keywordHits=[]; circleCandidates=[]; pluginRootNodes=2（都是 style）; README 无对应小节",
+      "evidence": ["evidence/p14-float-image.json", "evidence/p14-run.txt", "evidence/p14-float-image-check.png"],
+      "status": "confirmed",
+      "defect": false,
+      "note": "按「能力不存在」记录，不按「功能坏了」记。任务的预设与本版本不符。"
+    },
+    {
+      "id": "S15",
+      "area": "图片背景",
+      "expected": "任务书预设：应能设图片背景，并测加载失败",
+      "actual": "**该能力已下线**。UI 里无图片/上传入口、无 input[type=file]、section 文本无「图片」字样；API PUT bgMode:'image' 被 `normalizeBgMode` 回落成 'default'；源码注释明写「图片背景已下线」。因此「图片加载失败」这一条异常**没有可测对象**。",
+      "reading": "sectionText 无图片字样; hasFileInput=false; PUT bgMode:'image' → 返回 bgMode:'default'; tweakUsesBackgroundImage=false",
+      "evidence": ["evidence/p14-float-image.json", "evidence/p05-custom.json"],
+      "status": "confirmed",
+      "defect": false,
+      "note": "任务指定的异常项在 0.2.10 上不成立；README 的版本表也显示这是较早已移除的能力。"
+    },
+    {
+      "id": "S16",
+      "area": "设置窗口能否拖动",
+      "expected": "任务书预设：验证拖动与还原",
+      "actual": "拖不动，也不需要拖。面板 computed position=relative、transform=none、cursor=auto；在标题栏按住拖 200×120 后 rect 完全没变（320,100,800,800 → 320,100,800,800）。原因是面板本来就由宿主居中定位，插件改的是 width/height 而不是位置。",
+      "reading": "before={x:320,y:100,w:800,h:800} after={x:320,y:100,w:800,h:800} position='relative' transform='none'; moved=false",
+      "evidence": ["evidence/p16-drag-range-narrow.json", "evidence/p16-after-drag-attempt.png"],
+      "status": "confirmed",
+      "defect": false,
+      "note": "不是缺陷：插件没有承诺可拖动。按「无此能力」记录。"
+    },
+    {
+      "id": "S17",
+      "area": "控制台错误面",
+      "expected": "全流程无 pageerror / 无红色 console.error",
+      "actual": "全程 0 条。p01 到 p19 每个探针的 errors 与 consoleLog 都是空数组，设置 section 从不抛错，API 调用也没出现过非预期状态码。",
+      "reading": "所有 probe 的 errors.length=0, consoleLog=[]",
+      "evidence": ["evidence/p01-boot.json", "evidence/p04-sizes.json", "evidence/p07-appearance.json", "evidence/p19-input-rootcause.json"],
+      "status": "confirmed",
+      "defect": false
+    },
+    {
+      "id": "S18",
+      "area": "可访问性（键盘 + 屏幕阅读器）",
+      "expected": "控件可 Tab 到达、可键盘操作、有可读名称",
+      "actual": "键盘这一半做得好：chip 是原生 <button>、tabIndex=0、能 Tab 到达、Enter 能触发、带 aria-pressed=true/false。屏幕阅读器这一半有缺口：chip 组没有 role=\"radiogroup\"（只是个 div），不透明度滑块和两个颜色输入**都没有 aria-label / aria-labelledby / id**，读屏只会念「滑块」「颜色选择器」，念不出「背景不透明度」「浅色主题」。",
+      "reading": "chipsGroupRole=null; rangeLabel={ariaLabel:null, labelledby:null, id:''}; colorLabels 两个都 ariaLabel=null; chips 有 aria-pressed",
+      "evidence": ["evidence/p19-input-rootcause.json", "evidence/p19-a11y.png"],
+      "status": "confirmed",
+      "defect": true,
+      "severity": "low",
+      "impact": "用读屏的人听到三个「滑块」「颜色」控件，不知道该调哪个。视觉用户完全不受影响。"
+    },
+    {
+      "id": "S19",
+      "area": "发布件 LICENSE",
+      "expected": "npm 包应带上声明的 MIT 许可证文本",
+      "actual": "package.json 声明 MIT，仓库在固定提交里有 LICENSE（1066 字节，Copyright (c) 2026 weibaohui）；但 npm 发布件 `files` 只含 src / client / cordis.patch.yml，**tarball 里没有 LICENSE**。",
+      "reading": "tarball 5 个文件：README.md, client/bundle.js, cordis.patch.yml, package.json, src/index.js —— 无 LICENSE; 仓库 LICENSE sha256=8f466caa...",
+      "evidence": ["evidence/npm-pack.log", "evidence/npm-view-0.2.10.json"],
+      "status": "confirmed",
+      "defect": true,
+      "severity": "low",
+      "impact": "分发层面的元数据不完整；不影响运行，但下游若做许可证合规扫描会报缺失。"
+    },
+    {
+      "id": "U1",
+      "area": "0.1.x / 0.2.0 desktop 宿主回测",
+      "expected": "—",
+      "actual": "未测。本轮只有 0.2.0-rc.2 一个宿主，作者版本表里提到 0.1.7-rc.2 与 desktop 构建，我没有条件回测。",
+      "status": "untested",
+      "note": "不同宿主版本的 CSS 选择器行为可能不同；作者 0.2.10 的 release note 说正是因为 desktop 的 hash 变了才改用稳定属性选择器。"
+    },
+    {
+      "id": "U2",
+      "area": "真实模型对话下的表现",
+      "expected": "—",
+      "actual": "未测。我没有配置 API Key（也不允许用真实密钥），设置窗口里也没有任何和会话内容相关的项。插件只碰设置面板本身，因此这一项理论上不相干，但我确实没在真实对话流里跑过。",
+      "status": "untested"
+    },
+    {
+      "id": "U3",
+      "area": "滑块鼠标拖拽的稳定性",
+      "expected": "—",
+      "actual": "无法定性。headless 合成鼠标下拖拽时好时坏，无法排除是我的驱动方式局限（Playwright 对 range 的原生拖拽模拟本身有限制）。真人手动拖拽没有测。",
+      "status": "uncertain"
+    }
+  ],
+  "environment_notes": [
+    "首次启动宿主会弹「添加一个 API Key」引导弹窗，必须先点「稍后配置」才能打开设置窗口；这是宿主行为，不是插件缺陷，但会挡住新手第一次找入口。",
+    "启动宿主必须用 Start-Process 独立进程；pwsh 的 Start-Job 起的宿主会随父 shell 退出被回收（一次，未重试同一原因）。",
+    "新建 profile 必须先 `--from-default-profile web --dump-config` 派生，否则缺 dsh-web-app、宿主不打印 URL（同批已知坑）。"
+  ]
+}

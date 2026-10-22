@@ -1,0 +1,55 @@
+{
+  "schema": "status/v1",
+  "stage": "completed",
+  "state": "completed",
+  "blockers": [],
+  "target": "dsh-approval-hotkeys@0.2.0 (SiriLee/dsh-approval-hotkeys @ d6b16a1229a8dc23d83404e06173af067847c106)",
+  "host": "@deepseek-ai/dsh 0.2.0-rc.2",
+  "completed_utc": "2026-10-22T02:00:00Z",
+  "files": [
+    "PLAN.md",
+    "PROVENANCE.json",
+    "RESULTS.json",
+    "REPORT.md",
+    "ISSUE_DRAFT.md",
+    "SITE_REVIEW.md",
+    "REPRODUCE.md",
+    "STATUS.json"
+  ],
+  "evidence_count": 129,
+  "evidence_count_detail": {
+    "counting_rule": "按任务交接时的计数口径记为 129。当前磁盘上 Get-ChildItem -Recurse 实测为 137 个文件（顶层 128 + old/ 子目录 9），差异来自 old/ 里保留的早期 run1 失败批次（9 个文件）——它们按约定保留但不参与结论。",
+    "total_files_on_disk": 137,
+    "top_level": 128,
+    "old_subdir": 9,
+    "by_type": { "png": 68, "json": 33, "txt": 24, "jsonl": 7, "log": 3, "yml": 1 }
+  },
+  "checks": {
+    "total": 30,
+    "confirmed": 23,
+    "uncertain": 2,
+    "untested": 5,
+    "confirmed_defects": 2,
+    "defect_ids": ["C2", "G2"]
+  },
+  "uncertain_ids": ["B3", "I1"],
+  "untested_ids": ["H1", "H2", "H3", "I2", "H4"],
+  "dedup": {
+    "review_site": { "reviews_total": 172, "plugins_total": 133, "hits": 0 },
+    "bounty_repo": { "dsh-approval-hotkeys": 0, "approval-hotkeys": 0, "SiriLee": 1, "SiriLee_note": "#987 是 dsh-edit-approval，不同插件" },
+    "conclusion": "两站均无同范围重复，可写首报"
+  },
+  "boundaries_honored": [
+    "未起新宿主、未跑浏览器、未新开探针（本次只做证据转写）",
+    "未修改插件源码",
+    "未修改或删除 evidence/ 下任何文件",
+    "未上传、未投稿、未新建公开仓库",
+    "未读取真实密钥、未使用第三方账号、未调用付费模型",
+    "未访问用户正在使用的 DSH Web GUI"
+  ],
+  "processes": {
+    "created_by_this_task": 0,
+    "note": "本次为纯写作会话，未启动任何宿主或浏览器进程，无需清理"
+  },
+  "artifacts_note": "SITE_REVIEW.md 汉字 1485（[\u4e00-\u9fff] 计数），禁词扫描 0 命中；ISSUE_DRAFT.md 首行为标准 intake marker。"
+}

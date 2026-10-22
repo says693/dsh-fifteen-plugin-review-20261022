@@ -1,0 +1,144 @@
+{
+  "utc": "2026-10-22T01:07:27.731Z",
+  "seedThird": {
+    "afterMsg": {
+      "n": 2,
+      "rows": [
+        {
+          "k": "session:session-b82a64e0-a6be-45a6-a240-f057d74ca6e0",
+          "t": "新会话",
+          "sel": "true"
+        },
+        {
+          "k": "session:session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e",
+          "t": "周记·第一篇 刚刚",
+          "sel": "false"
+        }
+      ],
+      "active": "session:session-b82a64e0-a6be-45a6-a240-f057d74ca6e0",
+      "toast": null,
+      "focus": {
+        "tag": "INPUT",
+        "role": null,
+        "aria": "API 密钥",
+        "cls": "zGbnIq_input"
+      },
+      "panel": false,
+      "shk": [
+        "shk-pinbtn"
+      ]
+    },
+    "afterAltN": {
+      "n": 2,
+      "rows": [
+        {
+          "k": "session:session-b82a64e0-a6be-45a6-a240-f057d74ca6e0",
+          "t": "新会话",
+          "sel": "true"
+        },
+        {
+          "k": "session:session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e",
+          "t": "周记·第一篇 刚刚",
+          "sel": "false"
+        }
+      ],
+      "active": "session:session-b82a64e0-a6be-45a6-a240-f057d74ca6e0",
+      "toast": null,
+      "focus": {
+        "tag": "INPUT",
+        "role": null,
+        "aria": "API 密钥",
+        "cls": "zGbnIq_input"
+      },
+      "panel": false,
+      "shk": [
+        "shk-pinbtn"
+      ]
+    }
+  },
+  "positional": [
+    {
+      "key": "Alt+1",
+      "beforeActive": "session:session-b82a64e0-a6be-45a6-a240-f057d74ca6e0",
+      "afterActive": "session:session-b82a64e0-a6be-45a6-a240-f057d74ca6e0",
+      "changed": false,
+      "toast": "已在会话 1 · default-workspace",
+      "rowCount": 2
+    },
+    {
+      "key": "Alt+2",
+      "beforeActive": "session:session-b82a64e0-a6be-45a6-a240-f057d74ca6e0",
+      "afterActive": "session:session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e",
+      "changed": true,
+      "toast": "已切换到会话 2 · 周记·第一篇",
+      "rowCount": 1
+    },
+    {
+      "key": "Alt+3",
+      "beforeActive": "session:session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e",
+      "afterActive": "session:session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e",
+      "changed": false,
+      "toast": "第 3 个位置没有会话",
+      "rowCount": 1
+    },
+    {
+      "key": "Alt+5",
+      "beforeActive": "session:session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e",
+      "afterActive": "session:session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e",
+      "changed": false,
+      "toast": "第 5 个位置没有会话",
+      "rowCount": 1
+    }
+  ],
+  "arrows": [
+    {
+      "key": "Alt+ArrowDown",
+      "beforeActive": "session:session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e",
+      "afterActive": "session:session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e",
+      "changed": false,
+      "toast": "已切换到下一个会话 · 周记·第一篇"
+    },
+    {
+      "key": "Alt+ArrowDown",
+      "beforeActive": "session:session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e",
+      "afterActive": "session:session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e",
+      "changed": false,
+      "toast": "已切换到下一个会话 · 周记·第一篇"
+    },
+    {
+      "key": "Alt+ArrowUp",
+      "beforeActive": "session:session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e",
+      "afterActive": "session:session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e",
+      "changed": false,
+      "toast": "已切换到上一个会话 · 周记·第一篇"
+    }
+  ],
+  "rapid": {
+    "sequence": [
+      "2",
+      "3",
+      "1",
+      "2",
+      "3",
+      "1"
+    ],
+    "elapsedMs": 3793,
+    "finalActive": "session:session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e",
+    "finalToast": "已在会话 1 · 周记·第一篇",
+    "rowCount": 1,
+    "rows": [
+      {
+        "k": "session:session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e",
+        "t": "周记·第一篇 1分钟",
+        "sel": "true"
+      }
+    ]
+  },
+  "outOfRange": {
+    "key": "Alt+9",
+    "rowCount": 1,
+    "toast": "第 9 个位置没有会话",
+    "active": "session:session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e"
+  },
+  "errors": []
+}

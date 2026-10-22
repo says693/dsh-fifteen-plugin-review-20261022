@@ -1,0 +1,105 @@
+{
+  "utc": "2026-10-22T01:00:26.752Z",
+  "start": {
+    "url": "http://127.0.0.1:2280/",
+    "origin": "http://127.0.0.1:2280",
+    "rowCount": 1,
+    "rows": [
+      {
+        "key": "session:session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e",
+        "sel": "true",
+        "text": "新会话"
+      }
+    ],
+    "activeKey": "session:session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e",
+    "activeText": "新会话",
+    "activeElement": {
+      "tag": "H2",
+      "role": null,
+      "aria": null,
+      "cls": "jLrgrW_title",
+      "id": ""
+    },
+    "toast": null,
+    "toastText": null,
+    "panelPresent": false,
+    "confirmDialog": true,
+    "storageKeys": [
+      "dsh.session-hotkeys.dsvHidden",
+      "dsh.sessions.current",
+      "dsh.workspace.view.v5",
+      "dsh.sidebar-right.v1.session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e"
+    ],
+    "ls": {
+      "dsh.session-hotkeys.dsvHidden": "0",
+      "dsh.sessions.current": "{\"sessionId\":\"session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e\"}",
+      "dsh.workspace.view.v5": "{\"groupBy\":\"workspace\",\"orderBy\":\"updated\",\"groupExpansion\":{\"194af2d3-53e4-4f7e-b44f-e51c135ab047\":true},\"sessionOrderByAccount\":{},\"archivedFilter\":\"default\"}",
+      "dsh.sidebar-right.v1.session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e": "{\"bySession\":{\"session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e\":{\"layout\":{\"nodes\":{\"pane1\":{\"kind\":\"pane\",\"id\":\"pane1\",\"host\":\"dock\",\"tabs\":[]}},\"tabs\":{},\"rootId\":\"pane1\",\"floats\":[],\"activePaneId\":\"pane1\",\"expanded\":false,\"mode\":\"push\"},\"minted\":1}}}"
+    },
+    "sessionInputValue": null,
+    "sessionInputFocused": null
+  },
+  "newSessionPresses": [
+    {
+      "i": 0,
+      "rowCountBefore": 1,
+      "rowCountAfter": 1,
+      "toast": "新建会话",
+      "activeKey": "session:session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e"
+    },
+    {
+      "i": 1,
+      "rowCountBefore": 1,
+      "rowCountAfter": 1,
+      "toast": "新建会话",
+      "activeKey": "session:session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e"
+    },
+    {
+      "i": 2,
+      "rowCountBefore": 1,
+      "rowCountAfter": 1,
+      "toast": "新建会话",
+      "activeKey": "session:session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e"
+    }
+  ],
+  "mid": {
+    "url": "http://127.0.0.1:2280/",
+    "origin": "http://127.0.0.1:2280",
+    "rowCount": 1,
+    "rows": [
+      {
+        "key": "session:session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e",
+        "sel": "true",
+        "text": "新会话"
+      }
+    ],
+    "activeKey": "session:session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e",
+    "activeText": "新会话",
+    "activeElement": {
+      "tag": "H2",
+      "role": null,
+      "aria": null,
+      "cls": "jLrgrW_title",
+      "id": ""
+    },
+    "toast": null,
+    "toastText": "新建会话",
+    "panelPresent": false,
+    "confirmDialog": true,
+    "storageKeys": [
+      "dsh.session-hotkeys.dsvHidden",
+      "dsh.sessions.current",
+      "dsh.workspace.view.v5",
+      "dsh.sidebar-right.v1.session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e"
+    ],
+    "ls": {
+      "dsh.session-hotkeys.dsvHidden": "0",
+      "dsh.sessions.current": "{\"sessionId\":\"session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e\"}",
+      "dsh.workspace.view.v5": "{\"groupBy\":\"workspace\",\"orderBy\":\"updated\",\"groupExpansion\":{\"194af2d3-53e4-4f7e-b44f-e51c135ab047\":true},\"sessionOrderByAccount\":{},\"archivedFilter\":\"default\"}",
+      "dsh.sidebar-right.v1.session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e": "{\"bySession\":{\"session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e\":{\"layout\":{\"nodes\":{\"pane1\":{\"kind\":\"pane\",\"id\":\"pane1\",\"host\":\"dock\",\"tabs\":[]}},\"tabs\":{},\"rootId\":\"pane1\",\"floats\":[],\"activePaneId\":\"pane1\",\"expanded\":false,\"mode\":\"push\"},\"minted\":1}}}"
+    },
+    "sessionInputValue": null,
+    "sessionInputFocused": null
+  },
+  "errors": []
+}

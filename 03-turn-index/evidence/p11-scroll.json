@@ -1,0 +1,430 @@
+{
+  "maxScroll": 1720,
+  "steps": [
+    {
+      "target": 0,
+      "actual": 0,
+      "activeItemKeys": [],
+      "panelPresent": false,
+      "userRowTops": [
+        {
+          "key": "13:input-messageu-001",
+          "top": 92
+        },
+        {
+          "key": "13:input-messageu-002",
+          "top": 507
+        },
+        {
+          "key": "13:input-messageu-003",
+          "top": 922
+        },
+        {
+          "key": "13:input-messageu-004",
+          "top": 1337
+        },
+        {
+          "key": "13:input-messageu-005",
+          "top": 1752
+        },
+        {
+          "key": "13:input-messageu-006",
+          "top": 2167
+        }
+      ]
+    },
+    {
+      "target": 172,
+      "actual": 172,
+      "activeItemKeys": [],
+      "panelPresent": false,
+      "userRowTops": [
+        {
+          "key": "13:input-messageu-001",
+          "top": -80
+        },
+        {
+          "key": "13:input-messageu-002",
+          "top": 335
+        },
+        {
+          "key": "13:input-messageu-003",
+          "top": 750
+        },
+        {
+          "key": "13:input-messageu-004",
+          "top": 1165
+        },
+        {
+          "key": "13:input-messageu-005",
+          "top": 1580
+        },
+        {
+          "key": "13:input-messageu-006",
+          "top": 1995
+        }
+      ]
+    },
+    {
+      "target": 344,
+      "actual": 344,
+      "activeItemKeys": [],
+      "panelPresent": false,
+      "userRowTops": [
+        {
+          "key": "13:input-messageu-001",
+          "top": -252
+        },
+        {
+          "key": "13:input-messageu-002",
+          "top": 163
+        },
+        {
+          "key": "13:input-messageu-003",
+          "top": 578
+        },
+        {
+          "key": "13:input-messageu-004",
+          "top": 993
+        },
+        {
+          "key": "13:input-messageu-005",
+          "top": 1408
+        },
+        {
+          "key": "13:input-messageu-006",
+          "top": 1823
+        }
+      ]
+    },
+    {
+      "target": 516,
+      "actual": 516,
+      "activeItemKeys": [],
+      "panelPresent": false,
+      "userRowTops": [
+        {
+          "key": "13:input-messageu-001",
+          "top": -424
+        },
+        {
+          "key": "13:input-messageu-002",
+          "top": -9
+        },
+        {
+          "key": "13:input-messageu-003",
+          "top": 406
+        },
+        {
+          "key": "13:input-messageu-004",
+          "top": 821
+        },
+        {
+          "key": "13:input-messageu-005",
+          "top": 1236
+        },
+        {
+          "key": "13:input-messageu-006",
+          "top": 1651
+        }
+      ]
+    },
+    {
+      "target": 688,
+      "actual": 688,
+      "activeItemKeys": [],
+      "panelPresent": false,
+      "userRowTops": [
+        {
+          "key": "13:input-messageu-001",
+          "top": -596
+        },
+        {
+          "key": "13:input-messageu-002",
+          "top": -181
+        },
+        {
+          "key": "13:input-messageu-003",
+          "top": 234
+        },
+        {
+          "key": "13:input-messageu-004",
+          "top": 649
+        },
+        {
+          "key": "13:input-messageu-005",
+          "top": 1064
+        },
+        {
+          "key": "13:input-messageu-006",
+          "top": 1479
+        }
+      ]
+    },
+    {
+      "target": 860,
+      "actual": 860,
+      "activeItemKeys": [],
+      "panelPresent": false,
+      "userRowTops": [
+        {
+          "key": "13:input-messageu-001",
+          "top": -768
+        },
+        {
+          "key": "13:input-messageu-002",
+          "top": -353
+        },
+        {
+          "key": "13:input-messageu-003",
+          "top": 62
+        },
+        {
+          "key": "13:input-messageu-004",
+          "top": 477
+        },
+        {
+          "key": "13:input-messageu-005",
+          "top": 892
+        },
+        {
+          "key": "13:input-messageu-006",
+          "top": 1307
+        }
+      ]
+    },
+    {
+      "target": 1032,
+      "actual": 1032,
+      "activeItemKeys": [],
+      "panelPresent": false,
+      "userRowTops": [
+        {
+          "key": "13:input-messageu-001",
+          "top": -940
+        },
+        {
+          "key": "13:input-messageu-002",
+          "top": -525
+        },
+        {
+          "key": "13:input-messageu-003",
+          "top": -110
+        },
+        {
+          "key": "13:input-messageu-004",
+          "top": 305
+        },
+        {
+          "key": "13:input-messageu-005",
+          "top": 720
+        },
+        {
+          "key": "13:input-messageu-006",
+          "top": 1135
+        }
+      ]
+    },
+    {
+      "target": 1204,
+      "actual": 1204,
+      "activeItemKeys": [],
+      "panelPresent": false,
+      "userRowTops": [
+        {
+          "key": "13:input-messageu-001",
+          "top": -1112
+        },
+        {
+          "key": "13:input-messageu-002",
+          "top": -697
+        },
+        {
+          "key": "13:input-messageu-003",
+          "top": -282
+        },
+        {
+          "key": "13:input-messageu-004",
+          "top": 133
+        },
+        {
+          "key": "13:input-messageu-005",
+          "top": 548
+        },
+        {
+          "key": "13:input-messageu-006",
+          "top": 963
+        }
+      ]
+    },
+    {
+      "target": 1376,
+      "actual": 1376,
+      "activeItemKeys": [],
+      "panelPresent": false,
+      "userRowTops": [
+        {
+          "key": "13:input-messageu-001",
+          "top": -1284
+        },
+        {
+          "key": "13:input-messageu-002",
+          "top": -869
+        },
+        {
+          "key": "13:input-messageu-003",
+          "top": -454
+        },
+        {
+          "key": "13:input-messageu-004",
+          "top": -39
+        },
+        {
+          "key": "13:input-messageu-005",
+          "top": 376
+        },
+        {
+          "key": "13:input-messageu-006",
+          "top": 791
+        }
+      ]
+    },
+    {
+      "target": 1548,
+      "actual": 1548,
+      "activeItemKeys": [],
+      "panelPresent": false,
+      "userRowTops": [
+        {
+          "key": "13:input-messageu-001",
+          "top": -1456
+        },
+        {
+          "key": "13:input-messageu-002",
+          "top": -1041
+        },
+        {
+          "key": "13:input-messageu-003",
+          "top": -626
+        },
+        {
+          "key": "13:input-messageu-004",
+          "top": -211
+        },
+        {
+          "key": "13:input-messageu-005",
+          "top": 204
+        },
+        {
+          "key": "13:input-messageu-006",
+          "top": 619
+        }
+      ]
+    },
+    {
+      "target": 1720,
+      "actual": 1720,
+      "activeItemKeys": [],
+      "panelPresent": false,
+      "userRowTops": [
+        {
+          "key": "13:input-messageu-001",
+          "top": -1628
+        },
+        {
+          "key": "13:input-messageu-002",
+          "top": -1213
+        },
+        {
+          "key": "13:input-messageu-003",
+          "top": -798
+        },
+        {
+          "key": "13:input-messageu-004",
+          "top": -383
+        },
+        {
+          "key": "13:input-messageu-005",
+          "top": 32
+        },
+        {
+          "key": "13:input-messageu-006",
+          "top": 447
+        }
+      ]
+    }
+  ],
+  "clickAttempt": {
+    "itemCount": 0,
+    "clicked": false
+  },
+  "collapseAttempt": {
+    "hasToggle": false,
+    "collapsed": null
+  },
+  "rapid": {
+    "max": 1720,
+    "trace": [
+      {
+        "i": 0,
+        "scrollTop": 1720,
+        "panelPresent": false
+      },
+      {
+        "i": 1,
+        "scrollTop": 0,
+        "panelPresent": false
+      },
+      {
+        "i": 2,
+        "scrollTop": 1720,
+        "panelPresent": false
+      },
+      {
+        "i": 3,
+        "scrollTop": 0,
+        "panelPresent": false
+      },
+      {
+        "i": 4,
+        "scrollTop": 1720,
+        "panelPresent": false
+      },
+      {
+        "i": 5,
+        "scrollTop": 0,
+        "panelPresent": false
+      },
+      {
+        "i": 6,
+        "scrollTop": 1720,
+        "panelPresent": false
+      },
+      {
+        "i": 7,
+        "scrollTop": 0,
+        "panelPresent": false
+      },
+      {
+        "i": 8,
+        "scrollTop": 1720,
+        "panelPresent": false
+      },
+      {
+        "i": 9,
+        "scrollTop": 0,
+        "panelPresent": false
+      }
+    ]
+  },
+  "panelPresentBefore": false,
+  "panelPresentAfter": false,
+  "storage": {
+    "dsh.sessions.current": "{\"sessionId\":\"sess-ti-six\"}",
+    "dsh.sidebar-right.v1.sess-ti-six": "{\"bySession\":{\"sess-ti-six\":{\"layout\":{\"nodes\":{\"pane1\":{\"kind\":\"pane\",\"id\":\"pane1\",\"host\":\"dock\",\"tabs\":[]}},\"tabs\":{},\"rootId\":\"pane1\",\"floats\":[],\"activePaneId\":\"pane1\",\"expanded\":false,\"mode\":\"push\"},\"minted\":1}}}",
+    "dsh.sidebar-right.v1.session-cded7315-a936-41eb-a3db-96e7a8c6eac8": "{\"bySession\":{\"session-cded7315-a936-41eb-a3db-96e7a8c6eac8\":{\"layout\":{\"nodes\":{\"pane1\":{\"kind\":\"pane\",\"id\":\"pane1\",\"host\":\"dock\",\"tabs\":[]}},\"tabs\":{},\"rootId\":\"pane1\",\"floats\":[],\"activePaneId\":\"pane1\",\"expanded\":false,\"mode\":\"push\"},\"minted\":1}}}",
+    "dsh.workspace.view.v5": "{\"groupBy\":\"workspace\",\"orderBy\":\"updated\",\"groupExpansion\":{\"3d66859e-4425-4721-afaf-24874aee434a\":true},\"sessionOrderByAccount\":{},\"archivedFilter\":\"default\"}"
+  },
+  "errors": [],
+  "consoleLog": []
+}

@@ -1,0 +1,161 @@
+﻿{
+  "utc": "2026-10-22T01:05:40.276Z",
+  "overlay": {
+    "attempts": [
+      {
+        "i": 0,
+        "present": {
+          "count": 2,
+          "text": ""
+        },
+        "closed": {
+          "clicked": true,
+          "desc": {
+            "text": "继续",
+            "aria": null,
+            "cls": "_button_1rv3m_2 _primary_1rv3m_36 _md_1rv3m_23 t1T"
+          }
+        }
+      },
+      {
+        "i": 1,
+        "present": {
+          "count": 2,
+          "text": ""
+        },
+        "closed": {
+          "clicked": true,
+          "desc": {
+            "text": "保存并继续",
+            "aria": null,
+            "cls": "zGbnIq_primaryButton"
+          }
+        }
+      },
+      {
+        "i": 2,
+        "present": {
+          "count": 2,
+          "text": ""
+        },
+        "closed": {
+          "clicked": true,
+          "desc": {
+            "text": "保存并继续",
+            "aria": null,
+            "cls": "zGbnIq_primaryButton"
+          }
+        }
+      },
+      {
+        "i": 3,
+        "present": {
+          "count": 2,
+          "text": ""
+        },
+        "closed": {
+          "clicked": true,
+          "desc": {
+            "text": "保存并继续",
+            "aria": null,
+            "cls": "zGbnIq_primaryButton"
+          }
+        }
+      }
+    ],
+    "remaining": 1
+  },
+  "t0": {
+    "n": 1,
+    "rows": [
+      {
+        "k": "session:session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e",
+        "t": "新会话",
+        "sel": "true"
+      }
+    ],
+    "active": "session:session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e",
+    "toast": null
+  },
+  "composerFound": true,
+  "beforeSend": {
+    "text": "",
+    "focused": false
+  },
+  "t1": {
+    "n": 1,
+    "rows": [
+      {
+        "k": "session:session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e",
+        "t": "新会话",
+        "sel": "true"
+      }
+    ],
+    "active": "session:session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e",
+    "toast": null
+  },
+  "presses": [
+    {
+      "i": 0,
+      "before": 1,
+      "after": 1,
+      "keysAfter": [
+        "session:session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e"
+      ],
+      "titlesAfter": [
+        "新会话"
+      ],
+      "toast": null
+    },
+    {
+      "i": 1,
+      "before": 1,
+      "after": 1,
+      "keysAfter": [
+        "session:session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e"
+      ],
+      "titlesAfter": [
+        "新会话"
+      ],
+      "toast": null
+    },
+    {
+      "i": 2,
+      "before": 1,
+      "after": 1,
+      "keysAfter": [
+        "session:session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e"
+      ],
+      "titlesAfter": [
+        "新会话"
+      ],
+      "toast": null
+    }
+  ],
+  "t2": {
+    "n": 1,
+    "rows": [
+      {
+        "k": "session:session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e",
+        "t": "新会话",
+        "sel": "true"
+      }
+    ],
+    "active": "session:session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e",
+    "toast": null
+  },
+  "reqs": [
+    {
+      "path": "/api/session/create",
+      "post": "{\"type\":\"client-request\",\"rpcId\":\"3f770e4c-1682-46ea-bcce-4e5f4be68613\",\"method\":\"session/create\",\"payload\":{\"args\":{\"request\":{\"workspaceId\":\"194af2d3-53e4-4f7e-b44f-e51c135ab047\",\"sessionId\":\"session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e\"}}}}"
+    },
+    {
+      "path": "/api/session/create",
+      "post": "{\"type\":\"client-request\",\"rpcId\":\"1e95b05c-982a-447c-a71e-99ac19407683\",\"method\":\"session/create\",\"payload\":{\"args\":{\"request\":{\"workspaceId\":\"194af2d3-53e4-4f7e-b44f-e51c135ab047\",\"sessionId\":\"session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e\"}}}}"
+    },
+    {
+      "path": "/api/session/create",
+      "post": "{\"type\":\"client-request\",\"rpcId\":\"43096c1c-5ee1-4723-ab7e-49fbc847af51\",\"method\":\"session/create\",\"payload\":{\"args\":{\"request\":{\"workspaceId\":\"194af2d3-53e4-4f7e-b44f-e51c135ab047\",\"sessionId\":\"session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e\"}}}}"
+    }
+  ]
+}

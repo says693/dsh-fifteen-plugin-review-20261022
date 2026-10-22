@@ -1,0 +1,102 @@
+{
+  "task": "r1-01-navbar",
+  "round": "r1",
+  "object": "@vlln/dsh-navbar@0.4.0",
+  "repo": "vlln/dsh-navbar",
+  "sourceCommit": "e53adfc8c837ebcb4b6a52c2c4baf7cb6e8b795e",
+  "testedArtefact": "npm-published 0.4.0",
+  "state": "completed",
+  "stage": "收口完成：探测已停止，九件产出齐全，自建宿主与浏览器进程已全部停止",
+  "session": "session-529cc4fc-897b-4a41-a2bf-f0e54c91411f",
+  "generatedAt": "2026-10-22T09:35:00+08:00",
+  "deliverables": [
+    { "file": "PLAN.md", "status": "done", "note": "先写完成判据与 A–H 验证项，后执行" },
+    { "file": "PROVENANCE.json", "status": "done", "note": "身份/哈希/宿主/浏览器/夹具/查重" },
+    { "file": "evidence/", "status": "done", "note": "103 个文件：29 json + 18 txt + 56 png" },
+    { "file": "RESULTS.json", "status": "done", "note": "27 项：21 confirmed / 4 uncertain / 2 untested" },
+    { "file": "REPORT.md", "status": "done", "note": "先发现与影响，再步骤/环境/限制，无总分无评级" },
+    { "file": "ISSUE_DRAFT.md", "status": "done", "note": "intake 写法，marker {\"project\":\"bench\",\"target\":\"vlln/dsh-navbar\",\"form\":\"intake\"}，证据用相对文件名" },
+    { "file": "SITE_REVIEW.md", "status": "done", "note": "CJK 1498 字，场景开场、有温度、结尾给何时值得装，无总分星级、无内部行话" },
+    { "file": "REPRODUCE.md", "status": "done", "note": "含造会话三个必踩坑与补锚点写法" },
+    { "file": "STATUS.json", "status": "done", "note": "本文件" }
+  ],
+  "confirmedFindings": [
+    {
+      "id": "B3",
+      "severity": "high",
+      "title": "本机宿主不产出 data-time-hover-root，导航条原生恒不出现",
+      "readout": "25/8/1 条 user 行对应 timeHoverRoot=0、dots=0、nav display=none；整份 dsh 安装检索该属性 0 命中；补锚点后立刻 display:flex dots=11"
+    },
+    {
+      "id": "D1",
+      "severity": "medium",
+      "title": "滚动时当前节点高亮整段卡住",
+      "readout": "向上滚 step3—6 active 停在 18（期望 16/13/11/9），scrollTop 3135→2635→2135→1635 一直在变；直赋值时 0.45/0.6/0.75 停在 7（期望 11/14/17）；active 数量恒为 1"
+    },
+    {
+      "id": "H3",
+      "severity": "medium",
+      "title": "超长消息悬停预览未截断，撑成一整屏",
+      "readout": "6720 字消息 → preview height=7462px，scrollHeight===clientHeight===7462，truncated=false；webkitLineClamp 声明为 6"
+    },
+    {
+      "id": "F1",
+      "severity": "low",
+      "title": "窄窗（≤760）导航条与正文重叠 9px",
+      "readout": "760 宽 nav.x=712 vs flow.right=721（重叠 9px）；600 宽 nav.x=552 vs flow.right=561（重叠 9px）；1000 宽不重叠；无横向溢出"
+    }
+  ],
+  "workingFindings": [
+    "点击跳转语义命中 6/6（悬停预览文本 vs 跳转后滚动容器顶部行文本，delta=0px）",
+    "滑动窗口 WINDOW=11：中段 11 点 + 2 省略、顶部 6 点 + 1 省略、底部 9 点 + 1 省略",
+    "节点间距 17px（gap 10 + 高 7），nav 高 251 未溢出视口",
+    "位置 = flow.right + 12（1440 宽下 nav.x=1240 / flow.right=1228），不压正文",
+    "1 条消息时 display:none（与 rows.length<2 一致），控制台 0 error",
+    "快速连点 5 个节点无 pageerror，最终收敛到第 5 次点击目标",
+    "滚轮切换一条（scrollTop 0→261、active 0→1）",
+    "pin 按钮 25 个正常渲染进 assistant-actions 槽（复制/精选/好的回答/有问题的回答/在新对话中分支）"
+  ],
+  "untested": [
+    "刷新后导航条重建（原生本就不出现，测重建无意义）",
+    "冷重启后导航条重建与 pin 跨重启保留"
+  ],
+  "uncertain": [
+    "滚动高亮卡顿的成因未定位（IntersectionObserver 节流 / builtRows 早退 / activeIndex 短路均只是候选）",
+    "补锚点后的读数（B4/C1/E1/E2/H5/H6）代表插件逻辑正确性，不等于开箱可用",
+    "滑动窗口下节点 aria-label 编号是窗口内序号语义，与消息真实序号不同（历史分页所致）",
+    "README 说滚轮 blocking conversation-area scrolling，实测对话区 scrollTop 0→261（可能是措辞口径差异）"
+  ],
+  "notDone": [
+    "未测多会话切换时节点是否残留",
+    "未测深色主题与 prefers-reduced-motion",
+    "未测 pin 状态写入/读回往返"
+  ],
+  "dedup": {
+    "checkedAt": "2026-10-22T09:25:00+08:00",
+    "reviewSite": { "scanned": "172 条评测 + 133 个插件（全量本地扫描）", "hits": 0 },
+    "bountyRepo": { "queries": { "dsh-navbar": 0, "navbar": 0, "vlln": 2 }, "sameScopeDuplicate": false },
+    "conclusion": "两站均无同范围重复，可写首报"
+  },
+  "processes": {
+    "ownHostsStarted": [
+      { "tag": "nb1", "profile": "navbar", "port": 11911, "pid": "见 evidence/nb1-host.local.json", "stopped": true },
+      { "tag": "nbctl", "profile": "nbctl", "port": 2775, "pid": "见 evidence/nbctl-host.local.json", "stopped": true },
+      { "tag": "nb2", "profile": "navbar", "port": 13846, "pid": "见 evidence/nb2-host.local.json", "stopped": true }
+    ],
+    "verification": "Get-NetTCPConnection 查 11911/13846/2775 均无 Listen；Win32_Process 里 CommandLine 含 r1-01-navbar 的 node 进程数 = 0",
+    "userGuiUntouched": "未访问、未读取 1241 / 2538 / 4756 的任何 token/cookie/会话"
+  },
+  "blockers": [],
+  "boundaries": {
+    "submitted": false,
+    "uploaded": false,
+    "publicRepoCreated": false,
+    "pluginSourceModified": false,
+    "skillPackModified": false,
+    "subagentCreated": false,
+    "paidModelCalled": false,
+    "realSecretsRead": false
+  },
+  "siteReview": { "file": "SITE_REVIEW.md", "cjkChars": 1498, "withinRange": true, "bannedWordingHits": 0 },
+  "issueDraft": { "file": "ISSUE_DRAFT.md", "confirmedItems": 4, "marker": "{\"project\":\"bench\",\"target\":\"vlln/dsh-navbar\",\"form\":\"intake\"}" }
+}

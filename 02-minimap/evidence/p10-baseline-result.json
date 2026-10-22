@@ -1,0 +1,23 @@
+{
+  "mode": "baseline",
+  "opened": {
+    "found": true
+  },
+  "out": {
+    "log": {
+      "applyCalls": 0,
+      "specSeen": false,
+      "snapshots": [],
+      "shim": false,
+      "err": null
+    },
+    "seats": 0,
+    "anchors": 0,
+    "userRows": 8,
+    "railRect": null,
+    "seatDisplay": null,
+    "innerTransform": null
+  },
+  "errs": [],
+  "logs": []
+}

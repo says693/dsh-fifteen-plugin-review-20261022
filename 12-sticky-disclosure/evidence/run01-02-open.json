@@ -1,0 +1,156 @@
+{
+  "steps": [
+    "dismissed preview notice"
+  ],
+  "sidebar": {
+    "count": 4,
+    "items": [
+      {
+        "tag": "DIV",
+        "cls": "YDXeBa_sessionRow",
+        "role": "treeitem",
+        "ds": {
+          "data-row-key": "session:sess-sd-many"
+        },
+        "text": "未命名 1小时",
+        "rect": {
+          "x": 12,
+          "y": 276,
+          "w": 256,
+          "h": 32
+        }
+      },
+      {
+        "tag": "DIV",
+        "cls": "YDXeBa_sessionRow",
+        "role": "treeitem",
+        "ds": {
+          "data-row-key": "session:sess-sd-six"
+        },
+        "text": "未命名 1小时",
+        "rect": {
+          "x": 12,
+          "y": 310,
+          "w": 256,
+          "h": 32
+        }
+      },
+      {
+        "tag": "DIV",
+        "cls": "YDXeBa_sessionRow",
+        "role": "treeitem",
+        "ds": {
+          "data-row-key": "session:sess-sd-one"
+        },
+        "text": "未命名 1小时",
+        "rect": {
+          "x": 12,
+          "y": 344,
+          "w": 256,
+          "h": 32
+        }
+      },
+      {
+        "tag": "DIV",
+        "cls": "YDXeBa_sessionRow",
+        "role": "treeitem",
+        "ds": {
+          "data-row-key": "session:sess-sd-zero"
+        },
+        "text": "未命名 1小时",
+        "rect": {
+          "x": 12,
+          "y": 378,
+          "w": 256,
+          "h": 32
+        }
+      }
+    ]
+  },
+  "unnamedCount": 0,
+  "afterOpen": {
+    "url": "http://127.0.0.1:9578/",
+    "viewport": {
+      "w": 1440,
+      "h": 1000,
+      "dpr": 1
+    },
+    "media": {
+      "dark": false
+    },
+    "scrollport": {
+      "x": 280,
+      "y": 40,
+      "w": 1158,
+      "h": 960,
+      "visible": true
+    },
+    "counts": {
+      "rows": 0,
+      "expanded": 0,
+      "turnProcess": 0,
+      "disclosureRows": 0
+    },
+    "control": {
+      "rect": {
+        "x": 1286,
+        "y": 952,
+        "w": 96,
+        "h": 32,
+        "visible": true
+      },
+      "visible": true,
+      "text": "全部收起",
+      "countAttr": "0",
+      "countText": "",
+      "title": "收起全部展开区块 · Ctrl+Alt+C",
+      "aria": "收起全部展开区块",
+      "bg": "rgb(255, 255, 255)",
+      "color": "rgb(129, 133, 140)",
+      "border": "rgba(0, 0, 0, 0.12)",
+      "zIndex": "15"
+    },
+    "gear": {
+      "rect": {
+        "x": 1390,
+        "y": 952,
+        "w": 32,
+        "h": 32,
+        "visible": true
+      },
+      "visible": true,
+      "expanded": "false",
+      "title": "快捷键设置"
+    },
+    "panel": null,
+    "dock": null,
+    "chips": [],
+    "debug": {
+      "version": "1.0.1",
+      "expanded": 0,
+      "affixed": 0,
+      "hotkey": "Ctrl+Alt+C"
+    },
+    "storage": {
+      "dsh.workspace.view.v5": "{\"groupBy\":\"workspace\",\"orderBy\":\"updated\",\"groupExpansion\":{\"80c43f72-eb34-4b37-9d1b-2347e87a208e\":true},\"sessionOrderByAccount\":{},\"archivedFilter\":\"default\"}",
+      "dsh.sessions.current": "{\"sessionId\":\"session-ebb751e6-18f7-4e41-9868-513fa7f94786\"}",
+      "dsh.sidebar-right.v1.session-ebb751e6-18f7-4e41-9868-513fa7f94786": "{\"bySession\":{\"session-ebb751e6-18f7-4e41-9868-513fa7f94786\":{\"layout\":{\"nodes\":{\"pane1\":{\"kind\":\"pane\",\"id\":\"pane1\",\"host\":\"dock\",\"tabs\":[]}},\"tabs\":{},\"rootId\":\"pane1\",\"floats\":[],\"activePaneId\":\"pane1\",\"expanded\":false,\"mode\":\"push\"},\"minted\":1}}}"
+    },
+    "styleTag": true,
+    "expandedSamples": [],
+    "bodyText": "新会话\nCtrl\n+\nAlt\n+\nN\n插件\n工作区\nworkspace\n新会话\n未命名\n1小时\n未命名\n1小时\n未命名\n1小时\n未命名\n1小时\n设置\n探索未至之境\n预览版\nworkspace\n标准模式\n描述你想要构建的内容, / 调用指令, @ 文件或对话\n工作区内修改\nDeepSeek-V41-Flash\nHigh\n全部收起\n添加一个 API Key 开始使用\n\n配置 DeepSeek 官方模型，即可开始使用。\n\nAPI 密钥\n稍后配置\n保存并继续"
+  },
+  "afterOpenRaw": {
+    "scrollport": true,
+    "rows": 0,
+    "expanded": 0
+  },
+  "errors": [],
+  "console": [
+    {
+      "type": "info",
+      "text": "[dsh-sticky-disclosure] applied v1.0.1 — Ctrl+Alt+C collapses all expanded sections",
+      "utc": "2026-10-22T01:35:05.740Z"
+    }
+  ]
+}

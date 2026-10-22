@@ -1,0 +1,799 @@
+{
+  "entriesAtStart": [
+    "第一条历史：给周记起个开头",
+    "第二条历史：把结尾写暖一点",
+    "第三条历史：再检查一遍错别字"
+  ],
+  "B3": {
+    "draft": {
+      "text": "还没写完的草稿",
+      "caret": 7,
+      "len": 7,
+      "entries": [
+        "第一条历史：给周记起个开头",
+        "第二条历史：把结尾写暖一点",
+        "第三条历史：再检查一遍错别字"
+      ],
+      "session": "{\"sessionId\":\"session-3e3fc267-8605-4c27-a075-36ac7514eb43\"}",
+      "overlay": {
+        "found": false
+      },
+      "reloadMark": "alive"
+    },
+    "afterUp": {
+      "text": "第三条历史：再检查一遍错别字",
+      "caret": 14,
+      "len": 14,
+      "entries": [
+        "第一条历史：给周记起个开头",
+        "第二条历史：把结尾写暖一点",
+        "第三条历史：再检查一遍错别字"
+      ],
+      "session": "{\"sessionId\":\"session-3e3fc267-8605-4c27-a075-36ac7514eb43\"}",
+      "overlay": {
+        "found": false
+      },
+      "reloadMark": "alive"
+    },
+    "upCap": [
+      {
+        "phase": "capture",
+        "key": "ArrowUp",
+        "ctrl": false,
+        "shift": false,
+        "alt": false,
+        "preventedNow": true,
+        "text": "第三条历史：再检查一遍错别字"
+      }
+    ],
+    "afterDown1": {
+      "text": "还没写完的草稿",
+      "caret": 0,
+      "len": 7,
+      "entries": [
+        "第一条历史：给周记起个开头",
+        "第二条历史：把结尾写暖一点",
+        "第三条历史：再检查一遍错别字"
+      ],
+      "session": "{\"sessionId\":\"session-3e3fc267-8605-4c27-a075-36ac7514eb43\"}",
+      "overlay": {
+        "found": false
+      },
+      "reloadMark": "alive"
+    },
+    "down1Cap": [
+      {
+        "phase": "capture",
+        "key": "ArrowDown",
+        "ctrl": false,
+        "shift": false,
+        "alt": false,
+        "preventedNow": true,
+        "text": "还没写完的草稿"
+      }
+    ],
+    "afterDown2": {
+      "text": "还没写完的草稿",
+      "caret": 7,
+      "len": 7,
+      "entries": [
+        "第一条历史：给周记起个开头",
+        "第二条历史：把结尾写暖一点",
+        "第三条历史：再检查一遍错别字"
+      ],
+      "session": "{\"sessionId\":\"session-3e3fc267-8605-4c27-a075-36ac7514eb43\"}",
+      "overlay": {
+        "found": false
+      },
+      "reloadMark": "alive"
+    },
+    "down2Cap": [
+      {
+        "phase": "capture",
+        "key": "ArrowDown",
+        "ctrl": false,
+        "shift": false,
+        "alt": false,
+        "preventedNow": false,
+        "text": "还没写完的草稿"
+      },
+      {
+        "phase": "bubble",
+        "key": "ArrowDown",
+        "preventedNow": false
+      }
+    ]
+  },
+  "C1": {
+    "afterCtrlR": {
+      "text": "\n",
+      "caret": null,
+      "len": 1,
+      "entries": [
+        "第一条历史：给周记起个开头",
+        "第二条历史：把结尾写暖一点",
+        "第三条历史：再检查一遍错别字"
+      ],
+      "session": "{\"sessionId\":\"session-3e3fc267-8605-4c27-a075-36ac7514eb43\"}",
+      "overlay": {
+        "found": true,
+        "rows": [
+          {
+            "text": "第一条历史：给周记起个开头",
+            "selected": "true"
+          },
+          {
+            "text": "第二条历史：把结尾写暖一点",
+            "selected": "false"
+          },
+          {
+            "text": "第三条历史：再检查一遍错别字",
+            "selected": "false"
+          }
+        ],
+        "marks": [],
+        "query": "",
+        "status": "3 entries",
+        "empty": false
+      },
+      "reloadMark": "alive"
+    },
+    "cap": [
+      {
+        "phase": "capture",
+        "key": "Control",
+        "ctrl": true,
+        "shift": false,
+        "alt": false,
+        "preventedNow": false,
+        "text": "\n"
+      },
+      {
+        "phase": "bubble",
+        "key": "Control",
+        "preventedNow": false
+      },
+      {
+        "phase": "capture",
+        "key": "r",
+        "ctrl": true,
+        "shift": false,
+        "alt": false,
+        "preventedNow": true,
+        "text": "\n"
+      }
+    ]
+  },
+  "C2_filter3": {
+    "text": "\n",
+    "caret": null,
+    "len": 1,
+    "entries": [
+      "第一条历史：给周记起个开头",
+      "第二条历史：把结尾写暖一点",
+      "第三条历史：再检查一遍错别字"
+    ],
+    "session": "{\"sessionId\":\"session-3e3fc267-8605-4c27-a075-36ac7514eb43\"}",
+    "overlay": {
+      "found": true,
+      "rows": [
+        {
+          "text": "第三条历史：再检查一遍错别字",
+          "selected": "true"
+        }
+      ],
+      "marks": [
+        "第三"
+      ],
+      "query": "第三",
+      "status": "1 matches",
+      "empty": false
+    },
+    "reloadMark": "alive"
+  },
+  "C2_filterAll": {
+    "text": "\n",
+    "caret": null,
+    "len": 1,
+    "entries": [
+      "第一条历史：给周记起个开头",
+      "第二条历史：把结尾写暖一点",
+      "第三条历史：再检查一遍错别字"
+    ],
+    "session": "{\"sessionId\":\"session-3e3fc267-8605-4c27-a075-36ac7514eb43\"}",
+    "overlay": {
+      "found": true,
+      "rows": [
+        {
+          "text": "第一条历史：给周记起个开头",
+          "selected": "true"
+        },
+        {
+          "text": "第二条历史：把结尾写暖一点",
+          "selected": "false"
+        },
+        {
+          "text": "第三条历史：再检查一遍错别字",
+          "selected": "false"
+        }
+      ],
+      "marks": [
+        "历史",
+        "历史",
+        "历史"
+      ],
+      "query": "历史",
+      "status": "3 matches",
+      "empty": false
+    },
+    "reloadMark": "alive"
+  },
+  "C3_down1": {
+    "text": "\n",
+    "caret": null,
+    "len": 1,
+    "entries": [
+      "第一条历史：给周记起个开头",
+      "第二条历史：把结尾写暖一点",
+      "第三条历史：再检查一遍错别字"
+    ],
+    "session": "{\"sessionId\":\"session-3e3fc267-8605-4c27-a075-36ac7514eb43\"}",
+    "overlay": {
+      "found": true,
+      "rows": [
+        {
+          "text": "第一条历史：给周记起个开头",
+          "selected": "false"
+        },
+        {
+          "text": "第二条历史：把结尾写暖一点",
+          "selected": "true"
+        },
+        {
+          "text": "第三条历史：再检查一遍错别字",
+          "selected": "false"
+        }
+      ],
+      "marks": [
+        "历史",
+        "历史",
+        "历史"
+      ],
+      "query": "历史",
+      "status": "3 matches",
+      "empty": false
+    },
+    "reloadMark": "alive"
+  },
+  "C3_down2": {
+    "text": "\n",
+    "caret": null,
+    "len": 1,
+    "entries": [
+      "第一条历史：给周记起个开头",
+      "第二条历史：把结尾写暖一点",
+      "第三条历史：再检查一遍错别字"
+    ],
+    "session": "{\"sessionId\":\"session-3e3fc267-8605-4c27-a075-36ac7514eb43\"}",
+    "overlay": {
+      "found": true,
+      "rows": [
+        {
+          "text": "第一条历史：给周记起个开头",
+          "selected": "false"
+        },
+        {
+          "text": "第二条历史：把结尾写暖一点",
+          "selected": "false"
+        },
+        {
+          "text": "第三条历史：再检查一遍错别字",
+          "selected": "true"
+        }
+      ],
+      "marks": [
+        "历史",
+        "历史",
+        "历史"
+      ],
+      "query": "历史",
+      "status": "3 matches",
+      "empty": false
+    },
+    "reloadMark": "alive"
+  },
+  "C3_down3_wrap": {
+    "text": "\n",
+    "caret": null,
+    "len": 1,
+    "entries": [
+      "第一条历史：给周记起个开头",
+      "第二条历史：把结尾写暖一点",
+      "第三条历史：再检查一遍错别字"
+    ],
+    "session": "{\"sessionId\":\"session-3e3fc267-8605-4c27-a075-36ac7514eb43\"}",
+    "overlay": {
+      "found": true,
+      "rows": [
+        {
+          "text": "第一条历史：给周记起个开头",
+          "selected": "true"
+        },
+        {
+          "text": "第二条历史：把结尾写暖一点",
+          "selected": "false"
+        },
+        {
+          "text": "第三条历史：再检查一遍错别字",
+          "selected": "false"
+        }
+      ],
+      "marks": [
+        "历史",
+        "历史",
+        "历史"
+      ],
+      "query": "历史",
+      "status": "3 matches",
+      "empty": false
+    },
+    "reloadMark": "alive"
+  },
+  "C3_up1_wrap": {
+    "text": "\n",
+    "caret": null,
+    "len": 1,
+    "entries": [
+      "第一条历史：给周记起个开头",
+      "第二条历史：把结尾写暖一点",
+      "第三条历史：再检查一遍错别字"
+    ],
+    "session": "{\"sessionId\":\"session-3e3fc267-8605-4c27-a075-36ac7514eb43\"}",
+    "overlay": {
+      "found": true,
+      "rows": [
+        {
+          "text": "第一条历史：给周记起个开头",
+          "selected": "false"
+        },
+        {
+          "text": "第二条历史：把结尾写暖一点",
+          "selected": "false"
+        },
+        {
+          "text": "第三条历史：再检查一遍错别字",
+          "selected": "true"
+        }
+      ],
+      "marks": [
+        "历史",
+        "历史",
+        "历史"
+      ],
+      "query": "历史",
+      "status": "3 matches",
+      "empty": false
+    },
+    "reloadMark": "alive"
+  },
+  "C3_cap": [
+    {
+      "phase": "capture",
+      "key": "ArrowDown",
+      "ctrl": false,
+      "shift": false,
+      "alt": false,
+      "preventedNow": false,
+      "text": "\n"
+    },
+    {
+      "phase": "bubble",
+      "key": "ArrowDown",
+      "preventedNow": true
+    },
+    {
+      "phase": "capture",
+      "key": "ArrowDown",
+      "ctrl": false,
+      "shift": false,
+      "alt": false,
+      "preventedNow": false,
+      "text": "\n"
+    },
+    {
+      "phase": "bubble",
+      "key": "ArrowDown",
+      "preventedNow": true
+    },
+    {
+      "phase": "capture",
+      "key": "ArrowDown",
+      "ctrl": false,
+      "shift": false,
+      "alt": false,
+      "preventedNow": false,
+      "text": "\n"
+    },
+    {
+      "phase": "bubble",
+      "key": "ArrowDown",
+      "preventedNow": true
+    },
+    {
+      "phase": "capture",
+      "key": "ArrowUp",
+      "ctrl": false,
+      "shift": false,
+      "alt": false,
+      "preventedNow": false,
+      "text": "\n"
+    },
+    {
+      "phase": "bubble",
+      "key": "ArrowUp",
+      "preventedNow": true
+    }
+  ],
+  "C4_enter": {
+    "picked": "第三条历史：再检查一遍错别字",
+    "after": {
+      "text": "第三条历史：再检查一遍错别字",
+      "caret": 14,
+      "len": 14,
+      "entries": [
+        "第一条历史：给周记起个开头",
+        "第二条历史：把结尾写暖一点",
+        "第三条历史：再检查一遍错别字"
+      ],
+      "session": "{\"sessionId\":\"session-3e3fc267-8605-4c27-a075-36ac7514eb43\"}",
+      "overlay": {
+        "found": true,
+        "rows": [
+          {
+            "text": "第一条历史：给周记起个开头",
+            "selected": "false"
+          },
+          {
+            "text": "第二条历史：把结尾写暖一点",
+            "selected": "false"
+          },
+          {
+            "text": "第三条历史：再检查一遍错别字",
+            "selected": "true"
+          }
+        ],
+        "marks": [
+          "历史",
+          "历史",
+          "历史"
+        ],
+        "query": "历史",
+        "status": "3 matches",
+        "empty": false
+      },
+      "reloadMark": "alive"
+    }
+  },
+  "C5_open": true,
+  "C5_esc": {
+    "text": "搜索取消前的草稿",
+    "caret": 0,
+    "len": 8,
+    "entries": [
+      "第一条历史：给周记起个开头",
+      "第二条历史：把结尾写暖一点",
+      "第三条历史：再检查一遍错别字"
+    ],
+    "session": "{\"sessionId\":\"session-3e3fc267-8605-4c27-a075-36ac7514eb43\"}",
+    "overlay": {
+      "found": true,
+      "rows": [
+        {
+          "text": "第一条历史：给周记起个开头",
+          "selected": "true"
+        },
+        {
+          "text": "第二条历史：把结尾写暖一点",
+          "selected": "false"
+        },
+        {
+          "text": "第三条历史：再检查一遍错别字",
+          "selected": "false"
+        }
+      ],
+      "marks": [],
+      "query": "",
+      "status": "3 entries",
+      "empty": false
+    },
+    "reloadMark": "alive"
+  },
+  "H3": {
+    "pasted": {
+      "text": "粘贴第一行\n粘贴第二行\n粘贴第三行",
+      "caret": 17,
+      "len": 17,
+      "entries": [
+        "第一条历史：给周记起个开头",
+        "第二条历史：把结尾写暖一点",
+        "第三条历史：再检查一遍错别字"
+      ],
+      "session": "{\"sessionId\":\"session-3e3fc267-8605-4c27-a075-36ac7514eb43\"}",
+      "overlay": {
+        "found": true,
+        "rows": [
+          {
+            "text": "第一条历史：给周记起个开头",
+            "selected": "true"
+          },
+          {
+            "text": "第二条历史：把结尾写暖一点",
+            "selected": "false"
+          },
+          {
+            "text": "第三条历史：再检查一遍错别字",
+            "selected": "false"
+          }
+        ],
+        "marks": [],
+        "query": "",
+        "status": "3 entries",
+        "empty": false
+      },
+      "reloadMark": "alive"
+    },
+    "atEndUp": {
+      "text": "粘贴第一行\n粘贴第二行\n粘贴第三行",
+      "caret": 11,
+      "len": 17,
+      "entries": [
+        "第一条历史：给周记起个开头",
+        "第二条历史：把结尾写暖一点",
+        "第三条历史：再检查一遍错别字"
+      ],
+      "session": "{\"sessionId\":\"session-3e3fc267-8605-4c27-a075-36ac7514eb43\"}",
+      "overlay": {
+        "found": true,
+        "rows": [
+          {
+            "text": "第一条历史：给周记起个开头",
+            "selected": "true"
+          },
+          {
+            "text": "第二条历史：把结尾写暖一点",
+            "selected": "false"
+          },
+          {
+            "text": "第三条历史：再检查一遍错别字",
+            "selected": "false"
+          }
+        ],
+        "marks": [],
+        "query": "",
+        "status": "3 entries",
+        "empty": false
+      },
+      "reloadMark": "alive"
+    },
+    "cap": [
+      {
+        "phase": "capture",
+        "key": "ArrowUp",
+        "ctrl": false,
+        "shift": false,
+        "alt": false,
+        "preventedNow": false,
+        "text": "粘贴第一行\n粘贴第二行\n粘贴第三行"
+      },
+      {
+        "phase": "bubble",
+        "key": "ArrowUp",
+        "preventedNow": false
+      }
+    ],
+    "atStartUp": {
+      "text": "第三条历史：再检查一遍错别字",
+      "caret": 14,
+      "len": 14,
+      "entries": [
+        "第一条历史：给周记起个开头",
+        "第二条历史：把结尾写暖一点",
+        "第三条历史：再检查一遍错别字"
+      ],
+      "session": "{\"sessionId\":\"session-3e3fc267-8605-4c27-a075-36ac7514eb43\"}",
+      "overlay": {
+        "found": true,
+        "rows": [
+          {
+            "text": "第一条历史：给周记起个开头",
+            "selected": "true"
+          },
+          {
+            "text": "第二条历史：把结尾写暖一点",
+            "selected": "false"
+          },
+          {
+            "text": "第三条历史：再检查一遍错别字",
+            "selected": "false"
+          }
+        ],
+        "marks": [],
+        "query": "",
+        "status": "3 entries",
+        "empty": false
+      },
+      "reloadMark": "alive"
+    },
+    "atStartCap": [
+      {
+        "phase": "capture",
+        "key": "ArrowUp",
+        "ctrl": false,
+        "shift": false,
+        "alt": false,
+        "preventedNow": true,
+        "text": "第三条历史：再检查一遍错别字"
+      }
+    ]
+  },
+  "G": {
+    "beforeReload": {
+      "text": "第三条历史：再检查一遍错别字",
+      "caret": 14,
+      "len": 14,
+      "entries": [
+        "第一条历史：给周记起个开头",
+        "第二条历史：把结尾写暖一点",
+        "第三条历史：再检查一遍错别字"
+      ],
+      "session": "{\"sessionId\":\"session-3e3fc267-8605-4c27-a075-36ac7514eb43\"}",
+      "overlay": {
+        "found": true,
+        "rows": [
+          {
+            "text": "第一条历史：给周记起个开头",
+            "selected": "true"
+          },
+          {
+            "text": "第二条历史：把结尾写暖一点",
+            "selected": "false"
+          },
+          {
+            "text": "第三条历史：再检查一遍错别字",
+            "selected": "false"
+          }
+        ],
+        "marks": [],
+        "query": "",
+        "status": "3 entries",
+        "empty": false
+      },
+      "reloadMark": "alive"
+    },
+    "afterReload": {
+      "text": "第三条历史：再检查一遍错别字",
+      "caret": 0,
+      "len": 14,
+      "entries": [
+        "第一条历史：给周记起个开头",
+        "第二条历史：把结尾写暖一点",
+        "第三条历史：再检查一遍错别字"
+      ],
+      "session": "{\"sessionId\":\"session-3e3fc267-8605-4c27-a075-36ac7514eb43\"}",
+      "overlay": {
+        "found": false
+      },
+      "reloadMark": null
+    },
+    "recallAfterReload": {
+      "text": "第三条历史：再检查一遍错别字",
+      "caret": 14,
+      "len": 14,
+      "entries": [
+        "第一条历史：给周记起个开头",
+        "第二条历史：把结尾写暖一点",
+        "第三条历史：再检查一遍错别字"
+      ],
+      "session": "{\"sessionId\":\"session-3e3fc267-8605-4c27-a075-36ac7514eb43\"}",
+      "overlay": {
+        "found": false
+      },
+      "reloadMark": null
+    },
+    "cap": []
+  },
+  "errors": [],
+  "consoleLog": [],
+  "network": [
+    {
+      "path": "/plugins/events",
+      "method": "GET",
+      "status": 200,
+      "utc": "2026-10-22T01:08:39.059Z"
+    },
+    {
+      "path": "/api/agentPresets/list",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:08:39.062Z"
+    },
+    {
+      "path": "/api/permissionPresets/catalog",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:08:39.073Z"
+    },
+    {
+      "path": "/api/dynamicCordisRunner/inventory",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:08:39.073Z"
+    },
+    {
+      "path": "/api/agentPresets/list",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:08:39.075Z"
+    },
+    {
+      "path": "/api/agentPresets/list",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:08:39.075Z"
+    },
+    {
+      "path": "/api/session/modelCatalog",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:08:39.075Z"
+    },
+    {
+      "path": "/api/session/list",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:08:39.078Z"
+    },
+    {
+      "path": "/api/credentials/describe",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:08:39.078Z"
+    },
+    {
+      "path": "/api/settings/describe",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:08:39.119Z"
+    },
+    {
+      "path": "/api/dynamicCordisRunner/syncInspectManifest",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:08:39.119Z"
+    },
+    {
+      "path": "/api/agentPresets/list",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:08:39.123Z"
+    },
+    {
+      "path": "/api/commands/list",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:08:39.153Z"
+    },
+    {
+      "path": "/api/skills/list",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:08:39.154Z"
+    },
+    {
+      "path": "/api/credentials/describe",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:08:39.154Z"
+    }
+  ]
+}

@@ -1,0 +1,206 @@
+{
+  "plugin": "dsh-session-pin",
+  "version_reviewed": "0.7.19 (npm published tarball; sha1 f551e6123d41cdab62ce7aefac8e6bd11d65b6b3 matches dist.shasum, sha512 matches dist.integrity)",
+  "author": "PerryLink",
+  "license": "Apache-2.0",
+  "stage": "report",
+  "state": "completed",
+  "started_local": "2026-10-22T08:56:24+08:00",
+  "finished_local": "2026-10-22T09:45:00+08:00",
+  "timezone": "Asia/Shanghai",
+  "blockers": [],
+  "counts": {
+    "checks_total": 29,
+    "confirmed": 25,
+    "uncertain": 2,
+    "untested": 2,
+    "confirmed_mismatches": 8,
+    "issue_draft_submittable_items": 9,
+    "note": "确认了 8 条与 README 不一致的行为（导航条点击关面板、置顶不前移、置顶后归档不清理、/goto 不触发、工作区行无控件、面板行点击不切会话、health 恒为空、会话头按钮不渲染）+1 条噪音（每次置顶一条 404 但有降级）。ISSUE_DRAFT 主条目为导航条关面板（源码可定位、有阳性对照），另 7 条各附独立读数。"
+  },
+  "verified_areas": [
+    "安装面：发布件 sha1/sha512 双核对一致，14 文件 / unpacked 504916，安装 exit 0，bundles 正确",
+    "入口：会话行 [pin][swatch] 出现（34×16 容器 + 两个 16×16 按钮），空标题行不挂控件；footer「已置顶的会话」rect(12,916,256,28)；面板 rect(1130,48,298,205)",
+    "置顶态：aria-pressed 与 title 同步，可多条并存（5 条全置顶无报错，maxPins 默认 0）",
+    "配色：data-color c0→c1，背景 rgba(249,115,22,0.1)→rgba(234,179,8,0.1)，box-shadow rgb(234,179,8) 3px 0 0 0 inset",
+    "Shift+点击清色：data-color 消失、背景与色条清零、置顶态保留",
+    "取消置顶回原位：5 条全置顶后逐条取消，行 key 序列与基线一致，y 242/276/310/344/378 复原",
+    "持久化：状态写宿主设置（cordis.patch.yml 的 - id: session-pin 段），localStorage 无 pin 键；刷新保留；冷重启（8677→7552）后置顶/颜色/看板/视图全部保留",
+    "看板归组：面板内 ⋯ 选中看板 + 标签保存后 data-board/data-tags 正确，组头变「▾ 复习 (1)」「▾ 未分组 (4)」",
+    "过滤：输入「请假」后 5 行剩 2 行，清空恢复；侧栏 6 条树项不受影响",
+    "窄窗：1440/1100/900/760/640 五档无横向溢出，面板与导航条自身完整可见",
+    "与宿主互不干扰：宿主搜索框、视图选项菜单、归档过滤各自独立",
+    "权限面：dshWorkshop.permissions 恰为 browser:local-storage / settings:read / settings:write"
+  ],
+  "confirmed_mismatches": [
+    {
+      "id": "E1",
+      "summary": "点导航条任意位置（过滤输入框 / 看板 chip / +view）会关闭「已置顶」面板，使 boards/tags/views 在鼠标路径下不可用",
+      "root_cause": "nav bar 挂在 document.body，面板的 document 级 capture click 监听把非面板内目标一律 setOpen(false)（lib/client.js:1163-1166、1682-1688）",
+      "evidence": ["evidence/run1-72-74-panel-close.json", "evidence/run1-72-nav-click.png", "evidence/run1-74-manage-in-panel.png"]
+    },
+    {
+      "id": "C2",
+      "summary": "置顶后行不前移（orderBy=updated 与 manual 两种排序下均如此）",
+      "evidence": ["evidence/run1-10-pin-basic.json", "evidence/run1-28-manual-seq.json", "evidence/run2-02-03-header-order.json"]
+    },
+    {
+      "id": "J2",
+      "summary": "置顶后归档会话不清理，刷新后已置顶面板仍列出该会话（两次独立复现）",
+      "evidence": ["evidence/run1-80-81-anomalies.json", "evidence/run1-82-83-health-reload.json", "evidence/run3-02-03-filter-archive.json"]
+    },
+    {
+      "id": "G1",
+      "summary": "/goto 在 0.2.0-rc.2 上完全不触发（composer 是 contenteditable，插件要求 HTMLTextAreaElement）",
+      "root_cause": "lib/client.js:1181-1184",
+      "evidence": ["evidence/run1-48-49-ws-goto.json", "evidence/run1-49-goto.png"]
+    },
+    {
+      "id": "H1",
+      "summary": "工作区行没有 [pin][swatch] 控件，工作区级置顶不可用",
+      "root_cause": "workspaceIdFor 靠行内 span 文本匹配 workspaces 快照 title（lib/client.js:1302-1307），本底座未命中",
+      "evidence": ["evidence/run1-48-49-ws-goto.json", "evidence/run1-50-ws-health-detail.json"]
+    },
+    {
+      "id": "H2",
+      "summary": "点已置顶面板里的行不切换会话（侧栏点击可正常切换，作对照）",
+      "evidence": ["evidence/run1-44-panel-nav.json", "evidence/run1-39-panel-click.json"]
+    },
+    {
+      "id": "F1",
+      "summary": "健康摘要恒为空（5 行 4 次切会话 + 折叠展开 + 刷新后仍为空）",
+      "root_cause_candidate": "healthFor 走 c.sessions.binding(id)，未绑定返回 undefined（lib/client.js:2032-2041）；未确认绑定是否建立",
+      "evidence": ["evidence/run1-85-health-precise.json", "evidence/run1-82-83-health-reload.json"]
+    },
+    {
+      "id": "B3",
+      "summary": "会话头部置顶按钮不渲染（槽位 conversation.session.header.actions 存在但插件未产出按钮）",
+      "evidence": ["evidence/run1-44-panel-nav.json", "evidence/run2-02-03-header-order.json"]
+    },
+    {
+      "id": "K1",
+      "summary": "每次置顶 POST /api/session.setPinned 返回 404，降级到 settings/mutate 200（功能正常，属控制台噪音）",
+      "evidence": ["evidence/run1-40-rpc-trace.json"]
+    }
+  ],
+  "open_items": [
+    {
+      "item": "已存视图的回放",
+      "status": "uncertain",
+      "reason": "视图已成功写入（patch yml 可读），但点视图 chip 会先关面板（E1），无法在同一屏内观察筛选结果"
+    },
+    {
+      "item": "健康摘要内容层是否只含计数与方向",
+      "status": "uncertain",
+      "reason": "无任何非空 UI 读数；仅有源码依据（summarizeHealth 只数 messages 与 lastDirection，模板不含正文，过 sanitizeLabel）"
+    },
+    {
+      "item": "/goto 多命中列清单与无命中说明两个分支",
+      "status": "untested",
+      "reason": "被 G1 入口缺陷阻断，alert 从未触发"
+    },
+    {
+      "item": "桌面端（Electron）与远端浏览器降级行为",
+      "status": "untested",
+      "reason": "本轮只在 web profile、本机回环下验证"
+    },
+    {
+      "item": "置顶不前移的成因归属",
+      "status": "uncertain",
+      "reason": "reorderMoves 判据（client.js:357-364）与宿主未采用 insertSessionBefore 结果两种可能未区分"
+    },
+    {
+      "item": "面板行不切会话的成因归属",
+      "status": "uncertain",
+      "reason": "未定位 c.sessions.retain(id,{source:'gateway'}) 在本基线为何不生效"
+    }
+  ],
+  "processes": {
+    "hosts_created": [
+      {"tag": "run1", "origin": "http://127.0.0.1:8677", "wrapper_pid": 2428, "host_pid": 26176, "stopped": true},
+      {"tag": "run2", "origin": "http://127.0.0.1:7552", "wrapper_pid": 34296, "host_pid": 35184, "stopped": true},
+      {"tag": "run3", "origin": "http://127.0.0.1:5956", "wrapper_pid": 11412, "host_pid": 31088, "stopped": true}
+    ],
+    "browsers": "全部为脚本内 Playwright headless 实例，脚本结束即关闭",
+    "final_check": "无匹配 '--profile pin' 的 node 进程；8677 / 7552 / 5956 均无监听",
+    "other_agents_processes_untouched": true,
+    "user_daily_gui_touched": false
+  },
+  "duplicate_check": {
+    "github_dsh_bounty": {
+      "queries": ["dsh-session-pin (12)", "session-pin (12)", "session pin (12)", "PerryLink (12)"],
+      "same_scope_hits": 0,
+      "status": "checked_clear",
+      "note": "命中项均为其他插件测评，或记忆类安全报告里偶含 pin 子串"
+    },
+    "review_lingshulab": {
+      "method": "站内 ?q= 服务端不过滤，改拉 /api/reviews 全量 172 条（9 页 × 20）本地扫描",
+      "patterns": ["dsh-session-pin", "session-pin", "perrylink", "置顶"],
+      "same_scope_hits": 0,
+      "status": "checked_clear",
+      "evidence": "evidence/lingshulab-index-scan.json"
+    },
+    "conclusion": "两站都查清且无同范围重复，可按首报写"
+  },
+  "files": [
+    "PLAN.md",
+    "PROVENANCE.json",
+    "RESULTS.json",
+    "REPORT.md",
+    "ISSUE_DRAFT.md",
+    "SITE_REVIEW.md",
+    "REPRODUCE.md",
+    "STATUS.json",
+    "host.mjs",
+    "browser-kit.mjs",
+    "scan-lingshu.mjs",
+    "probe-01-boot.mjs",
+    "probe-02-dom.mjs",
+    "probe-03-rows.mjs",
+    "probe-04-mask.mjs",
+    "probe-05-hover.mjs",
+    "probe-07-sessions.mjs",
+    "probe-08-sessions.mjs",
+    "probe-10-pin-basic.mjs",
+    "probe-14-reload.mjs",
+    "probe-16-manual-order.mjs",
+    "probe-22-menu.mjs",
+    "probe-24-manual-seq.mjs",
+    "probe-28-manual-seq.mjs",
+    "probe-31-panel.mjs",
+    "probe-32-panel-flow.mjs",
+    "probe-35-nav-health.mjs",
+    "probe-37-nav.mjs",
+    "probe-38-editors.mjs",
+    "probe-39-panel-click.mjs",
+    "probe-40-rpc.mjs",
+    "probe-41-nav-goto.mjs",
+    "probe-44-panel-nav.mjs",
+    "probe-45-health-ws.mjs",
+    "probe-48-ws-goto.mjs",
+    "probe-50-ws-health.mjs",
+    "probe-51-ws-health-multi.mjs",
+    "probe-60-narrow.mjs",
+    "probe-63-boards.mjs",
+    "probe-66-boards.mjs",
+    "probe-69-assign.mjs",
+    "probe-71-state.mjs",
+    "probe-72-panel-close.mjs",
+    "probe-80-anomalies.mjs",
+    "probe-82-health-reload.mjs",
+    "probe-84-archived.mjs",
+    "probe-85-health-precise.mjs",
+    "probe-90-cold.mjs",
+    "probe-92-header-order.mjs",
+    "probe-95-assign-board.mjs",
+    "probe-96-filter-archive.mjs",
+    "evidence/ (原始命令输出、读数 json、截图 png)",
+    "isolated-home/ (隔离 DSH_HOME 与 profile pin)",
+    "temp/ (下载的 tgz、解包内容、npm cache)",
+    "fixtures/workspace (宿主 cwd)"
+  ],
+  "submission": {
+    "submitted": false,
+    "note": "未投稿、未跟帖、未上传、未建公开仓库、未改插件源码。已产出 ISSUE_DRAFT.md（9 条 confirmed 条目）与 SITE_REVIEW.md（1083 汉字，在 800–1500 区间内），投稿由主 agent 统一处理。"
+  }
+}

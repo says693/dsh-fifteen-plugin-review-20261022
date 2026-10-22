@@ -1,0 +1,37 @@
+{
+  "F1_paramAndUnknown": {
+    "search": "?keepme=1",
+    "href": "http://127.0.0.1:2690/?keepme=1",
+    "historyCalls": [
+      {
+        "fn": "replaceState",
+        "u": "/?keepme=1"
+      }
+    ],
+    "selected": "session:session-e9ea570e-d88f-4e06-ada9-d954cdb0874b",
+    "current": "{\"sessionId\":\"session-e9ea570e-d88f-4e06-ada9-d954cdb0874b\"}",
+    "flow": 0
+  },
+  "F2_manualClick": {
+    "search": "?keepme=1",
+    "href": "http://127.0.0.1:2690/?keepme=1",
+    "historyCalls": [],
+    "selected": "session:session-e9ea570e-d88f-4e06-ada9-d954cdb0874b",
+    "current": "{\"sessionId\":\"session-e9ea570e-d88f-4e06-ada9-d954cdb0874b\"}",
+    "flow": 0
+  },
+  "F3_afterReload": {
+    "search": "?keepme=1",
+    "href": "http://127.0.0.1:2690/?keepme=1",
+    "historyCalls": [
+      {
+        "fn": "replaceState",
+        "u": "/?keepme=1"
+      }
+    ],
+    "selected": "session:session-e9ea570e-d88f-4e06-ada9-d954cdb0874b",
+    "current": "{\"sessionId\":\"session-e9ea570e-d88f-4e06-ada9-d954cdb0874b\"}",
+    "flow": 0
+  },
+  "errs": []
+}

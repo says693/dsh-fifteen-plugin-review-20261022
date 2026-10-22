@@ -1,0 +1,65 @@
+{
+  "wsRow": [
+    {
+      "key": "workspace:101ac9c7-365b-4997-b465-7f91f41c472a",
+      "hasBadge": false,
+      "badgeCount": 2,
+      "html": "<div class=\"YDXeBa_projectRow\" data-row-key=\"workspace:101ac9c7-365b-4997-b465-7f91f41c472a\" role=\"treeitem\" aria-expanded=\"true\" draggable=\"true\"><span class=\"YDXeBa_slot YDXeBa_folder YDXeBa_folderActive\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" aria-hidden=\"true\" stroke-width=\"1\"><path d=\"M2.55912 7.93683C2.67584 7.49906 3.0723 7.19446 3.525"
+    }
+  ],
+  "wsAfterHover": {
+    "hasBadge": false,
+    "buttons": [
+      {
+        "aria": "工作区“默认工作区”的操作",
+        "cls": "YDXeBa_iconButton"
+      },
+      {
+        "aria": "在“默认工作区”中新建会话",
+        "cls": "YDXeBa_iconButton"
+      }
+    ]
+  },
+  "geom1440": {
+    "vw": 1440,
+    "panel": {
+      "x": 1130,
+      "y": 48,
+      "w": 298,
+      "h": 147,
+      "display": "block",
+      "opacity": "1"
+    },
+    "nav": {
+      "x": 846,
+      "y": 48,
+      "w": 294,
+      "h": 92,
+      "display": "flex",
+      "opacity": "1"
+    },
+    "navHtml": "<div class=\"__dsh-session-pin-nav__\" style=\"display: flex;\"><div class=\"__dsh-session-pin-nav__chips\"><span class=\"__dsh-session-pin-nav__chipwrap\"><button type=\"button\" class=\"__dsh-session-pin-nav-chip__ __dsh-session-pin-nav-chip-active__\">All</button></span><button type=\"button\" class=\"__dsh-session-pin-nav-chip__\">+ board</button></div><input class=\"__dsh-session-pin-nav__input\" placeholder=\"filter: text, #tag\"><div class=\"__dsh-session-pin-nav__chips\"><button type=\"button\" class=\"__dsh-session-pin-nav-chip__\">+ view</button></div></div>"
+  },
+  "composerKind": {
+    "tag": "DIV",
+    "isTextarea": false,
+    "closestScroll": true
+  },
+  "beforeEnter": {
+    "text": "/goto 请假",
+    "cur": "{\"sessionId\":\"session-6854de43-b6df-467b-a967-80a0bddadba9\"}"
+  },
+  "afterEnter": {
+    "text": "",
+    "cur": "{\"sessionId\":\"session-6854de43-b6df-467b-a967-80a0bddadba9\"}"
+  },
+  "gotoDialogs": [],
+  "dispatch": {
+    "defaultPrevented": true,
+    "notCancelled": false,
+    "tag": "DIV"
+  },
+  "dialogsAfterDispatch": [],
+  "errors": [],
+  "console": []
+}

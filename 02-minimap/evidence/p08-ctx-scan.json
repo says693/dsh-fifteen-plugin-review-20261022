@@ -1,0 +1,15 @@
+{
+  "out": {
+    "boot": {
+      "type": "object",
+      "keys": [
+        "rev",
+        "entries",
+        "batches"
+      ]
+    },
+    "found": [],
+    "scanned": 90
+  },
+  "errors": []
+}

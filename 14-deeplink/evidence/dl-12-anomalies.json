@@ -1,0 +1,123 @@
+{
+  "host": "http://127.0.0.1:2690",
+  "cases": [
+    {
+      "id": "E1-dup-session",
+      "query": "session=sess-dl-alpha-one&session=sess-dl-beta-one",
+      "status": 200,
+      "search": "",
+      "href": "http://127.0.0.1:2690/",
+      "selectedKey": "session:session-e9ea570e-d88f-4e06-ada9-d954cdb0874b",
+      "chatFlowKids": 0,
+      "bodyLen": 194,
+      "blank": false,
+      "storage": {
+        "dsh.sessions.current": "{\"sessionId\":\"session-e9ea570e-d88f-4e06-ada9-d954cdb0874b\"}"
+      },
+      "logs": [
+        {
+          "type": "error",
+          "text": "[client-store] subscriber failed: TypeError: sessions.open is not a function\n    at onSessionList (http://127.0.0.1:2690/plugins/??@deepseek-ai/dsh-client-ui-open-in-app/client.js,@deepseek-ai/dsh-api-gateway/client.js,@deepseek-ai/dsh-api-job-controller/client.js,@deepseek-ai/dsh-api-terminal-controller/client.js,@deepseek-ai/dsh-api-workspace-files/client.js,@deepseek-ai/dsh-client-ui-settings-account/client.js,@deepseek-ai/dsh-client-hmr/client.js,@deepseek-ai/dsh-cordis-client-runner/client.js,@deepseek-ai/dsh-client-ui-theme/client.js,@deepseek-ai/dsh-client-locale/client.js,@deepseek-ai/dsh-client-shortcuts/client.js,@deepseek-ai/dsh-client-ui-shortcuts/client.js,@deepseek-ai/dsh-client-ui-layout/client.js,@deepseek-ai/dsh-client-ui-renderer/client.js,@deepseek-ai/dsh-client-ui-session/client.js,@deepseek-ai/dsh-client-resources/client.js,@deepseek-ai/dsh-client-ui-sidebar/client.js,@deepseek-ai/dsh-client-ui-sidebar-right/client.js,@deepseek-ai/dsh-client-ui-sidebar-documentpreview/client.js,@deepseek-ai/dsh-client-ui-sidebar-terminal/client.js,@deepseek-ai/dsh-client-ui-sidebar-files/client.js,@deepseek-ai/dsh-client-ui-settings/client.js,@deepseek-ai/dsh-client-ui-settings"
+        }
+      ],
+      "errs": []
+    },
+    {
+      "id": "E2-bad-encoding",
+      "query": "session=%E0%A4%A",
+      "status": 200,
+      "search": "",
+      "href": "http://127.0.0.1:2690/",
+      "selectedKey": "session:session-e9ea570e-d88f-4e06-ada9-d954cdb0874b",
+      "chatFlowKids": 0,
+      "bodyLen": 194,
+      "blank": false,
+      "storage": {
+        "dsh.sessions.current": "{\"sessionId\":\"session-e9ea570e-d88f-4e06-ada9-d954cdb0874b\"}"
+      },
+      "logs": [
+        {
+          "type": "warning",
+          "text": "[dsh-deeplink] 会话 '�%A' 不在会话列表中，忽略深链参数"
+        }
+      ],
+      "errs": []
+    },
+    {
+      "id": "E3-long-id",
+      "query": "session=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx…",
+      "status": 200,
+      "search": "",
+      "href": "http://127.0.0.1:2690/",
+      "selectedKey": "session:session-e9ea570e-d88f-4e06-ada9-d954cdb0874b",
+      "chatFlowKids": 0,
+      "bodyLen": 194,
+      "blank": false,
+      "storage": {
+        "dsh.sessions.current": "{\"sessionId\":\"session-e9ea570e-d88f-4e06-ada9-d954cdb0874b\"}"
+      },
+      "logs": [
+        {
+          "type": "warning",
+          "text": "[dsh-deeplink] 会话 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+        }
+      ],
+      "errs": []
+    },
+    {
+      "id": "E4-both",
+      "query": "session=sess-dl-alpha-two&workspace=7529e9de-4bfc-4528-92e9-9ea05c755f53",
+      "status": 200,
+      "search": "",
+      "href": "http://127.0.0.1:2690/",
+      "selectedKey": "session:session-e9ea570e-d88f-4e06-ada9-d954cdb0874b",
+      "chatFlowKids": 0,
+      "bodyLen": 194,
+      "blank": false,
+      "storage": {
+        "dsh.sessions.current": "{\"sessionId\":\"session-e9ea570e-d88f-4e06-ada9-d954cdb0874b\"}"
+      },
+      "logs": [
+        {
+          "type": "error",
+          "text": "[client-store] subscriber failed: TypeError: sessions.open is not a function\n    at onSessionList (http://127.0.0.1:2690/plugins/??@deepseek-ai/dsh-client-ui-open-in-app/client.js,@deepseek-ai/dsh-api-gateway/client.js,@deepseek-ai/dsh-api-job-controller/client.js,@deepseek-ai/dsh-api-terminal-controller/client.js,@deepseek-ai/dsh-api-workspace-files/client.js,@deepseek-ai/dsh-client-ui-settings-account/client.js,@deepseek-ai/dsh-client-hmr/client.js,@deepseek-ai/dsh-cordis-client-runner/client.js,@deepseek-ai/dsh-client-ui-theme/client.js,@deepseek-ai/dsh-client-locale/client.js,@deepseek-ai/dsh-client-shortcuts/client.js,@deepseek-ai/dsh-client-ui-shortcuts/client.js,@deepseek-ai/dsh-client-ui-layout/client.js,@deepseek-ai/dsh-client-ui-renderer/client.js,@deepseek-ai/dsh-client-ui-session/client.js,@deepseek-ai/dsh-client-resources/client.js,@deepseek-ai/dsh-client-ui-sidebar/client.js,@deepseek-ai/dsh-client-ui-sidebar-right/client.js,@deepseek-ai/dsh-client-ui-sidebar-documentpreview/client.js,@deepseek-ai/dsh-client-ui-sidebar-terminal/client.js,@deepseek-ai/dsh-client-ui-sidebar-files/client.js,@deepseek-ai/dsh-client-ui-settings/client.js,@deepseek-ai/dsh-client-ui-settings"
+        }
+      ],
+      "errs": []
+    },
+    {
+      "id": "E5-jump-off",
+      "query": "session=sess-dl-alpha-two",
+      "status": 200,
+      "search": "",
+      "href": "http://127.0.0.1:2690/",
+      "selectedKey": "session:session-e9ea570e-d88f-4e06-ada9-d954cdb0874b",
+      "chatFlowKids": 0,
+      "bodyLen": 194,
+      "blank": false,
+      "storage": {
+        "dsh.sessions.current": "{\"sessionId\":\"session-e9ea570e-d88f-4e06-ada9-d954cdb0874b\"}",
+        "dsh-deeplink.jump": "0"
+      },
+      "logs": [],
+      "errs": []
+    },
+    {
+      "id": "E6-follow-off",
+      "query": "",
+      "status": 200,
+      "search": "",
+      "href": "http://127.0.0.1:2690/?",
+      "selectedKey": "session:session-e9ea570e-d88f-4e06-ada9-d954cdb0874b",
+      "chatFlowKids": 0,
+      "bodyLen": 194,
+      "blank": false,
+      "storage": {
+        "dsh-deeplink.follow": "0",
+        "dsh.sessions.current": "{\"sessionId\":\"session-e9ea570e-d88f-4e06-ada9-d954cdb0874b\"}"
+      },
+      "logs": [],
+      "errs": []
+    }
+  ]
+}

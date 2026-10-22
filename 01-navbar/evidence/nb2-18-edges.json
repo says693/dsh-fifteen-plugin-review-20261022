@@ -1,0 +1,84 @@
+[
+  {
+    "want": "/NB 空会话/",
+    "found": false,
+    "list": [
+      {
+        "i": 0,
+        "text": "workspace",
+        "x": 140,
+        "y": 223
+      },
+      {
+        "i": 1,
+        "text": "新会话",
+        "x": 140,
+        "y": 258
+      },
+      {
+        "i": 2,
+        "text": "NB 长会话 45 条 8分钟",
+        "x": 140,
+        "y": 292
+      },
+      {
+        "i": 3,
+        "text": "NB 八条对照 8分钟",
+        "x": 140,
+        "y": 326
+      },
+      {
+        "i": 4,
+        "text": "NB 超长消息 8分钟",
+        "x": 140,
+        "y": 360
+      },
+      {
+        "i": 5,
+        "text": "NB 只有一条 8分钟",
+        "x": 140,
+        "y": 394
+      },
+      {
+        "i": 6,
+        "text": "未命名 8分钟",
+        "x": 140,
+        "y": 428
+      }
+    ]
+  },
+  {
+    "want": "/NB 只有一条/",
+    "matched": "NB 只有一条 8分钟",
+    "found": true,
+    "navExists": true,
+    "navDisplay": "none",
+    "navChildren": 0,
+    "dots": 0,
+    "mores": 0,
+    "timeHoverRoot": 0,
+    "userKind": 1,
+    "flowKids": 4,
+    "flowText": "只有一条消息的会话。 09:14 已完成 已完成，用时 1秒 只有一条回复。 09:14",
+    "emptyHint": true,
+    "errors": 0,
+    "consoleLog": 0
+  },
+  {
+    "want": "/NB 八条对照/",
+    "matched": "NB 八条对照 8分钟",
+    "found": true,
+    "navExists": true,
+    "navDisplay": "none",
+    "navChildren": 0,
+    "dots": 0,
+    "mores": 0,
+    "timeHoverRoot": 0,
+    "userKind": 8,
+    "flowKids": 32,
+    "flowText": "第 1 条：八条消息的对照会话。 09:14 已完成 已完成，用时 1秒 第 1 条的回复。 09:14 第 2 条：八条消息的对照会话。 09:14 已完成 已完成，用时 1秒 第 2 条的回复。 ",
+    "emptyHint": true,
+    "errors": 0,
+    "consoleLog": 0
+  }
+]

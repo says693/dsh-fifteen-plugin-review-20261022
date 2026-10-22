@@ -1,0 +1,10 @@
+﻿✓ Lockfile passes supply-chain policies (verified 9m ago)
+Progress: resolved 1, reused 0, downloaded 0, added 0
+
+dependencies:
++ dsh-probe-ti file:H:/CODEX/fifteen-plugin-reviews-20261022/r1-03-turn-index/probe-plugin
+
+Packages: +1
++
+Progress: resolved 2, reused 1, downloaded 0, added 1, done
+Done in 476ms using pnpm v11.7.0

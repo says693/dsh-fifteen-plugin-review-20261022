@@ -1,0 +1,128 @@
+{
+  "pinClick": "session:session-3c8badf3-ce48-4e15-aae2-be9723a30ae1",
+  "rpcAfterPin": [
+    {
+      "url": "api/session.setPinned",
+      "body": "{\"type\":\"client-request\",\"rpcId\":\"1d37b5a7-689e-43df-94a4-030ce22f4488\",\"method\":\"session.setPinned\",\"payload\":{\"sessionId\":\"session-3c8badf3-ce48-4e15-aae2-be9723a30ae1\",\"pinned\":false}}",
+      "status": 404
+    },
+    {
+      "url": "api/settings/mutate",
+      "body": "{\"type\":\"client-request\",\"rpcId\":\"bcf49005-7884-493a-85e4-312ae544dc14\",\"method\":\"settings/mutate\",\"payload\":{\"args\":{\"ns\":\"session-pin\",\"ops\":[{\"op\":\"set\",\"path\":[\"pinned\"],\"value\":[\"session-36dafaf6",
+      "status": 200
+    },
+    {
+      "url": "api/llm/listProviders",
+      "body": "{\"type\":\"client-request\",\"rpcId\":\"06b03844-804c-4f28-925b-9f4deec4a49e\",\"method\":\"llm/listProviders\",\"payload\":{\"args\":{}}}",
+      "status": 200
+    },
+    {
+      "url": "api/llm/listConfigurableProviders",
+      "body": "{\"type\":\"client-request\",\"rpcId\":\"8a2881a7-92bc-4d5e-97da-fb6c4fed4cb5\",\"method\":\"llm/listConfigurableProviders\",\"payload\":{\"args\":{}}}",
+      "status": 200
+    },
+    {
+      "url": "api/session/modelCatalog",
+      "body": "{\"type\":\"client-request\",\"rpcId\":\"52564d4b-4c24-4939-a2d4-793b42b10447\",\"method\":\"session/modelCatalog\",\"payload\":{\"args\":{}}}",
+      "status": 200
+    },
+    {
+      "url": "api/settings/describe",
+      "body": "{\"type\":\"client-request\",\"rpcId\":\"7d3064ef-473f-4af3-8a7d-710f7f69b5f2\",\"method\":\"settings/describe\",\"payload\":{\"args\":{}}}",
+      "status": 200
+    },
+    {
+      "url": "api/settings/describe",
+      "body": "{\"type\":\"client-request\",\"rpcId\":\"632bc041-1d23-4918-a705-a8bb8de45bd8\",\"method\":\"settings/describe\",\"payload\":{\"args\":{}}}",
+      "status": 200
+    },
+    {
+      "url": "api/credentials/describe",
+      "body": "{\"type\":\"client-request\",\"rpcId\":\"253e869f-cb42-4b9d-8d96-f908f5f2013b\",\"method\":\"credentials/describe\",\"payload\":{\"args\":{\"refs\":[\"DEEPSEEK_API_KEY\"]}}}",
+      "status": 200
+    },
+    {
+      "url": "api/session/modelCatalog",
+      "body": "{\"type\":\"client-request\",\"rpcId\":\"fab06341-9371-473e-8a12-6a378ef4e61b\",\"method\":\"session/modelCatalog\",\"payload\":{\"args\":{}}}",
+      "status": 200
+    },
+    {
+      "url": "api/credentials/describe",
+      "body": "{\"type\":\"client-request\",\"rpcId\":\"82c46f81-ae13-4ec1-b2ed-92b302fe287b\",\"method\":\"credentials/describe\",\"payload\":{\"args\":{\"refs\":[\"DEEPSEEK_API_KEY\",\"AMAZON_BEDROCK_API_KEY\",\"ANT_LING_API_KEY\",\"ANTHR",
+      "status": 200
+    }
+  ],
+  "rpcAfterPanelClick": [
+    {
+      "url": "api/workspace/insertSessionBefore",
+      "body": "{\"type\":\"client-request\",\"rpcId\":\"4cab4755-b1e2-40e6-a5f5-4cda3feaaa4b\",\"method\":\"workspace/insertSessionBefore\",\"payload\":{\"args\":{\"request\":{\"workspaceId\":\"101ac9c7-365b-4997-b465-7f91f41c472a\",\"ses",
+      "status": 200
+    }
+  ],
+  "fails": [
+    {
+      "status": 404,
+      "url": "http://127.0.0.1:8677/api/session.setPinned",
+      "method": "POST"
+    }
+  ],
+  "cur": "{\"sessionId\":\"session-6854de43-b6df-467b-a967-80a0bddadba9\"}",
+  "headerSlot": {
+    "hasHeaderSlot": true,
+    "slots": [
+      "root",
+      "sidebar",
+      "sidebar.brand.mark",
+      "sidebar.brand.name",
+      "sidebar.panellist",
+      "sidebar.workspaces",
+      "sidebar.workspaces.directoryFlow",
+      "sidebar.session.row.leading",
+      "sidebar.workspaces.session.row.action",
+      "sidebar.session.row.leading",
+      "sidebar.workspaces.session.row.action",
+      "sidebar.session.row.leading",
+      "sidebar.workspaces.session.row.action",
+      "sidebar.session.row.leading",
+      "sidebar.workspaces.session.row.action",
+      "sidebar.footer.action",
+      "sidebar.settings",
+      "settings.launcher",
+      "settings.trigger",
+      "main",
+      "main.conversation",
+      "conversation.header",
+      "conversation.header.leading",
+      "conversation.session.header",
+      "conversation.session.header.corner",
+      "conversation.session",
+      "conversation.composer",
+      "conversation.hero.brand.mark",
+      "conversation.hero.workspace",
+      "conversation.hero.workspace.directoryFlow",
+      "conversation.hero.agentPreset",
+      "conversation.input.dock",
+      "conversation.composer.bar",
+      "conversation.input.overlay",
+      "conversation.input.attachments",
+      "conversation.input.permission",
+      "conversation.input.plan",
+      "conversation.input.left",
+      "conversation.input.right",
+      "conversation.input.model",
+      "conversation.input.activity",
+      "rightbar",
+      "rightbar.session",
+      "shell.overlay"
+    ]
+  },
+  "errors": [],
+  "console": [
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "utc": "2026-10-22T01:14:47.662Z"
+    }
+  ],
+  "dialogs": []
+}

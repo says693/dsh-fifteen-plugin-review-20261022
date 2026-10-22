@@ -1,0 +1,162 @@
+{
+  "meta": {
+    "object": "dsh-milestone@0.7.2 (SnowCrescenter-tech/dsh-milestone)",
+    "source_commit_compared": "3bdd8d1327f30b64a1119aeb62c752ef1e12c713",
+    "host": "@deepseek-ai/dsh 0.2.0-rc.2",
+    "browser": "Edge 155.0.4283.62 headless via Playwright 1.64.1",
+    "tested_at": "2026-10-22T01:41:00Z..2026-10-22T01:50:00Z",
+    "states": ["confirmed", "untested", "uncertain"],
+    "blocking_finding": "R1",
+    "note": "R1 is a hard blocker: the rail component throws during render, so every downstream behaviour (dot count, click jump, scroll highlight, long-session density, narrow window, dark theme, reload rebuild, 0/1-message boundaries, fast scroll) is measured against a rail that never mounts. Those items are reported as blocked-by-R1 / untested rather than as separate defects, because their own behaviour could not be observed."
+  },
+  "checks": [
+    {
+      "id": "R1",
+      "title": "Right-side dot timeline appears at all",
+      "expected": "A milestone rail with [data-rail-list] and N [data-rail-dot] renders inside the shell overlay when a conversation with user messages is open",
+      "actual": "Rail host element exists (8px wide, z-index 11, position absolute at x=276..284) but contains no list and zero dots; a fixed incompatibility notice appears at the bottom-right. The component throws TypeError: Cannot read properties of undefined (reading 'length') at MilestoneRail, which the plugin's own CompatBoundary catches and converts into 'rail disabled'.",
+      "reading": {
+        "rail_present": true,
+        "rail_rect": { "x": 276, "y": 0, "w": 8, "h": 1000 },
+        "rail_list_present": false,
+        "dot_count": 0,
+        "incompatible_notice_present": true,
+        "notice_text": "dsh-milestone 与当前 DSH 版本不兼容，已停用。请升级插件。 Incompatible with this DSH version — please update dsh-milestone.",
+        "notice_rect": { "x": 1100, "y": 892, "w": 326, "h": 94 },
+        "user_rows_on_screen_at_same_moment": 3,
+        "chat_anchor_rows_on_screen_at_same_moment": 12,
+        "page_errors": 0,
+        "console_errors": 2
+      },
+      "control_comparison": {
+        "profile": "ctl (same template, no plugin)",
+        "same_session_user_rows": 3,
+        "same_session_anchor_rows": 12,
+        "dot_count": 0,
+        "incompatible_notice_present": false,
+        "meaning": "the conversation itself renders identically with and without the plugin; the missing dots are the plugin's own failure, not a broken fixture"
+      },
+      "root_cause": {
+        "file": "src/client/MilestoneRail.tsx line 632 (fixed commit); shipped as lib/client.js",
+        "code": "const awaitingInput = (useSession(s => s.queue) as unknown[]).length > 0",
+        "why": "on DSH 0.2.0-rc.2 the session snapshot exposes `pendingInteraction`; `queue` is gone, so the selector resolves to undefined and `.length` throws",
+        "evidence": "evidence/p07-rootcause-queue.json (bundle snippet, exactly one `.queue)` occurrence, host .d.ts containing only pendingInteraction and no queue field)",
+        "proposed_fix_not_applied": "read pendingInteraction with a null guard, e.g. Boolean(useSession(s => s.pendingInteraction)); source was NOT modified"
+      },
+      "evidence": [
+        "evidence/ab-w3-api-session.json",
+        "evidence/ab-ctl-api-session.json",
+        "evidence/ab-w3-snapshot.json",
+        "evidence/ab-w3-incompatible.png",
+        "evidence/ab-w3-session-open.png",
+        "evidence/p07-rootcause-queue.json",
+        "evidence/ab-w3-probe.json"
+      ],
+      "state": "confirmed"
+    },
+    {
+      "id": "R1b",
+      "title": "Installation poisons the host's own core packages (environment layer, separate from R1)",
+      "expected": "Installing the plugin leaves the host's core packages at the host version",
+      "actual": "`dsh plugin --profile web add dsh-milestone` pulls @deepseek-ai/dsh-session@0.1.5-rc.2, dsh-session-projection@0.1.5-rc.2 and dsh-llm@0.1.5-rc.2 into the profile. The loader resolves the same-named bundle rows from the profile directory, so the older copies shadow the host's 0.2.0-rc.2. Result: 2 entries do not activate, the session gateway answers definition-unavailable, and the sidebar shows no sessions at all.",
+      "reading": {
+        "profile_web_node_modules": ["dsh-session@0.1.5-rc.2", "dsh-session-projection@0.1.5-rc.2", "dsh-llm@0.1.5-rc.2", "dsh-brand@0.1.5-rc.3"],
+        "host_versions": "all 0.2.0-rc.2",
+        "host_stderr_h3": "dsh: warning: 2 entries did not activate (typert-loader, image-offload)",
+        "side_effect": "session/list -> gateway/definition-unavailable; sidebar '暂无会话'; scrollHeight 1000 with 0 rows"
+      },
+      "mitigation_used": "pinned every core package back to 0.2.0-rc.2 via pnpm-workspace.yaml overrides in profile web3; after that the host boots with an empty stderr and the conversation renders normally",
+      "caveat": "this is an install-time compatibility problem caused by the plugin's dependency ranges, not a defect in its UI code; it is reported separately so it is not confused with R1",
+      "evidence": ["evidence/h3-host.stderr.txt", "evidence/p06-control-api.json", "evidence/ab-w3-probe.json", "evidence/install-01-add.txt"],
+      "state": "confirmed"
+    },
+    {
+      "id": "R2",
+      "title": "Dot count corresponds to the number of user messages",
+      "expected": "One dot per user message",
+      "actual": "Not measurable: zero dots exist. With the fixture that has 3 user messages visible on screen, dot count is 0.",
+      "reading": { "user_messages_visible": 3, "dots": 0 },
+      "state": "untested",
+      "blocked_by": "R1",
+      "evidence": ["evidence/ab-w3-api-session.json"]
+    },
+    {
+      "id": "R3",
+      "title": "Clicking a dot jumps to that message",
+      "expected": "scrollTop changes and the target user message enters the viewport",
+      "actual": "Not measurable: there are no dots to click.",
+      "state": "untested",
+      "blocked_by": "R1"
+    },
+    {
+      "id": "R4",
+      "title": "Current dot highlights while scrolling, keeps up with the wheel",
+      "expected": "The nearest question in the viewport lights up; the active index stays unique",
+      "actual": "Not measurable: no dots. Scrolling to 50% of a 4261px-tall conversation changed nothing (0 dots, 0 active).",
+      "reading": { "scroll_top_after": 0, "dots": 0, "active_dots": 0, "conversation_scroll_height": 4261 },
+      "state": "untested",
+      "blocked_by": "R1"
+    },
+    {
+      "id": "R5",
+      "title": "Long session (40+ user messages): density, spacing, no overlap",
+      "expected": "Dots evenly spaced, clickable, not overlapping",
+      "actual": "Not measurable: no dots. The 44-turn fixture exists on disk but the sidebar renders session titles as '未命名', so the 44-turn conversation was not opened; the long-session reading is therefore absent for two reasons (no dots, and the specific fixture was not reached).",
+      "reading": { "dots": 0, "fixture_present_on_disk": "sess-ms-fortyfour (44 turns)" },
+      "state": "untested",
+      "blocked_by": "R1"
+    },
+    {
+      "id": "R6",
+      "title": "Narrow windows 1000 / 760 / 600 and dark theme visibility, no covering of the text column",
+      "expected": "Rail stays visible and does not cover the conversation; readable in dark theme",
+      "actual": "At 1440px the rail host occupies x=276..284 (8px) and overlaps the conversation column by 4px, but it is empty. At 1000 / 760 / 600 the rail host is not even laid out (rail_rect null) while the incompatibility notice still renders. Dark theme at 600px behaves the same (notice present, 0 dots). No dot visibility question can be answered.",
+      "reading": {
+        "1440_light": { "rail_rect_w": 8, "overlap_px_with_conversation": 4, "dots": 0, "incompatible": true },
+        "1000_light": { "rail_rect": null, "dots": 0, "incompatible": true },
+        "760_light": { "rail_rect": null, "dots": 0, "incompatible": true },
+        "600_dark": { "rail_rect": null, "dots": 0, "incompatible": true, "dark_confirmed": true }
+      },
+      "state": "untested",
+      "blocked_by": "R1",
+      "evidence": ["evidence/ab-w3-long-1000-light.json", "evidence/ab-w3-long-760-light.json", "evidence/ab-w3-long-600-dark.json"]
+    },
+    {
+      "id": "R7",
+      "title": "Rebuild after refresh and after a cold host restart",
+      "expected": "The rail is rebuilt on reload; preferences survive",
+      "actual": "Reload ×1 reproduced the same state: 0 dots, list absent, incompatibility notice present. A second reload and a cold restart of the host were not run separately, so the preference-survival half is untested.",
+      "reading": { "after_reload": { "dots": 0, "rail_list": false, "incompatible": true } },
+      "state": "uncertain",
+      "blocked_by": "R1",
+      "evidence": ["evidence/ab-w3-long-1000-light.json"]
+    },
+    {
+      "id": "R8",
+      "title": "Boundary cases: 0 and 1 user messages",
+      "expected": "0 messages: nothing rendered, no error. 1 message: exactly one dot",
+      "actual": "Not measurable: the rail throws before it can decide how many dots to draw, so the 0-message and 1-message branches are never reached. Fixtures sess-ms-zero and sess-ms-one exist on disk.",
+      "state": "untested",
+      "blocked_by": "R1"
+    },
+    {
+      "id": "R9",
+      "title": "Fast scrolling on a very long conversation: no page errors, no freeze, active index unique",
+      "expected": "No pageerror, no stall, exactly one active dot",
+      "actual": "Not measurable as designed. One relevant observation: across every run the page reported 0 pageerrors, because the throw happens inside a React error boundary rather than escaping to window.onerror. The absence of pageerrors is therefore NOT evidence that the plugin is healthy.",
+      "reading": { "pageerrors_all_runs": 0, "console_errors_per_run": 2, "dots": 0 },
+      "state": "untested",
+      "blocked_by": "R1"
+    }
+  ],
+  "summary": {
+    "confirmed": 2,
+    "untested": 7,
+    "uncertain": 1,
+    "headline": "On DSH 0.2.0-rc.2 the rail never mounts: one unguarded session-snapshot field (`queue`) throws during render and the plugin's own compatibility boundary disables the whole timeline.",
+    "not_a_defect": [
+      "the empty conversation page seen in the earlier partial run was a fixture problem (synthetic events missing turn/end reason), not a plugin problem",
+      "the missing sessions in the sidebar after a plain install are the dependency-shadowing problem in R1b, which disappears once core packages are pinned to the host version"
+    ]
+  }
+}

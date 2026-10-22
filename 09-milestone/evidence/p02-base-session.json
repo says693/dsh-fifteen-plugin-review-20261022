@@ -1,0 +1,152 @@
+{
+  "tag": "h2",
+  "title": "六轮标准会话",
+  "opened": false,
+  "before": {
+    "url": "http://127.0.0.1:9081/",
+    "viewport": {
+      "w": 1440,
+      "h": 1000,
+      "dpr": 1
+    },
+    "dark": false,
+    "doc": {
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "overflowX": false
+    },
+    "rail": {
+      "present": true,
+      "rect": {
+        "x": 276,
+        "y": 0,
+        "w": 8,
+        "h": 1000,
+        "top": 0,
+        "bottom": 1000,
+        "left": 276,
+        "right": 284
+      },
+      "side": "sidebar",
+      "ariaLabel": null,
+      "bg": "rgba(0, 0, 0, 0)",
+      "opacity": "1",
+      "zIndex": "11",
+      "pointerEvents": "auto",
+      "position": "absolute",
+      "display": "block",
+      "visibility": "visible",
+      "incompatibleNotice": false,
+      "listRect": null,
+      "listScroll": null,
+      "toolbar": false
+    },
+    "dotCount": 0,
+    "dots": [],
+    "activeDots": [],
+    "scrollport": {
+      "rect": {
+        "x": 280,
+        "y": 40,
+        "w": 1158,
+        "h": 960,
+        "top": 40,
+        "bottom": 1000,
+        "left": 280,
+        "right": 1438
+      },
+      "scrollTop": 0,
+      "scrollHeight": 960,
+      "clientHeight": 960
+    },
+    "rows": [],
+    "userRowCount": 0,
+    "flowKinds": [],
+    "storage": {
+      "dsh.workspace.view.v5": "{\"groupBy\":\"workspace\",\"orderBy\":\"updated\",\"groupExpansion\":{\"ce9fddea-5d56-4bd1-9a8e-b4142aa3950e\":true},\"sessionOrderByAccount\":{},\"archivedFilter\":\"default\"}",
+      "dsh.sessions.current": "{\"sessionId\":\"session-edb4e8a7-141f-4b13-93b6-6ccde6ab99da\"}",
+      "dsh.sidebar-right.v1.session-edb4e8a7-141f-4b13-93b6-6ccde6ab99da": "{\"bySession\":{\"session-edb4e8a7-141f-4b13-93b6-6ccde6ab99da\":{\"layout\":{\"nodes\":{\"pane1\":{\"kind\":\"pane\",\"id\":\"pane1\",\"host\":\"dock\",\"tabs\":[]}},\"tabs\":{},\"rootId\":\"pane1\",\"floats\":[],\"activePaneId\":\"pane1\",\"expanded\":false,\"mode\":\"push\"},\"minted\":1}}}"
+    },
+    "bodyText": "新会话\nCtrl\n+\nAlt\n+\nN\n插件\n工作区\nworkspace\n新会话\n未命名\n1小时\n未命名\n1小时\n未命名\n1小时\n未命名\n1小时\n未命名\n1小时\n设置\n探索未至之境\n预览版\nworkspace\n标准模式\n描述你想要构建的内容, / 调用指令, @ 文件或对话\n工作区内修改\nDeepSeek-V41-Flash\nHigh\n预览版说明\n\nDeepSeek Harness 目前的 0.2 版本仍处于预览阶段，还有许多地方需要持续改进和打磨，希望听取广大开发者和用户的反馈建议。现在，新的桌面端面向广泛用户，开发者相关的进阶功能可在配置中开启使用。预计 DeepSeek Harness 的产品功能以及插件 API 都会继续快速迭代、持续演化，并逐渐趋于稳定。\n\n我们期待与全球用户和开发者一起，在开源、可复用、可组合的基础设施之上，共同探索智能上限。欢迎大家用 DeepSeek Harn"
+  },
+  "after": {
+    "url": "http://127.0.0.1:9081/",
+    "viewport": {
+      "w": 1440,
+      "h": 1000,
+      "dpr": 1
+    },
+    "dark": false,
+    "doc": {
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "overflowX": false
+    },
+    "rail": {
+      "present": true,
+      "rect": {
+        "x": 276,
+        "y": 0,
+        "w": 8,
+        "h": 1000,
+        "top": 0,
+        "bottom": 1000,
+        "left": 276,
+        "right": 284
+      },
+      "side": "sidebar",
+      "ariaLabel": null,
+      "bg": "rgba(0, 0, 0, 0)",
+      "opacity": "1",
+      "zIndex": "11",
+      "pointerEvents": "auto",
+      "position": "absolute",
+      "display": "block",
+      "visibility": "visible",
+      "incompatibleNotice": false,
+      "listRect": null,
+      "listScroll": null,
+      "toolbar": false
+    },
+    "dotCount": 0,
+    "dots": [],
+    "activeDots": [],
+    "scrollport": {
+      "rect": {
+        "x": 280,
+        "y": 40,
+        "w": 1158,
+        "h": 960,
+        "top": 40,
+        "bottom": 1000,
+        "left": 280,
+        "right": 1438
+      },
+      "scrollTop": 0,
+      "scrollHeight": 960,
+      "clientHeight": 960
+    },
+    "rows": [],
+    "userRowCount": 0,
+    "flowKinds": [],
+    "storage": {
+      "dsh.workspace.view.v5": "{\"groupBy\":\"workspace\",\"orderBy\":\"updated\",\"groupExpansion\":{\"ce9fddea-5d56-4bd1-9a8e-b4142aa3950e\":true},\"sessionOrderByAccount\":{},\"archivedFilter\":\"default\"}",
+      "dsh.sessions.current": "{\"sessionId\":\"session-edb4e8a7-141f-4b13-93b6-6ccde6ab99da\"}",
+      "dsh.sidebar-right.v1.session-edb4e8a7-141f-4b13-93b6-6ccde6ab99da": "{\"bySession\":{\"session-edb4e8a7-141f-4b13-93b6-6ccde6ab99da\":{\"layout\":{\"nodes\":{\"pane1\":{\"kind\":\"pane\",\"id\":\"pane1\",\"host\":\"dock\",\"tabs\":[]}},\"tabs\":{},\"rootId\":\"pane1\",\"floats\":[],\"activePaneId\":\"pane1\",\"expanded\":false,\"mode\":\"push\"},\"minted\":1}}}"
+    },
+    "bodyText": "新会话\nCtrl\n+\nAlt\n+\nN\n插件\n工作区\nworkspace\n新会话\n未命名\n1小时\n未命名\n1小时\n未命名\n1小时\n未命名\n1小时\n未命名\n1小时\n设置\n探索未至之境\n预览版\nworkspace\n标准模式\n描述你想要构建的内容, / 调用指令, @ 文件或对话\n工作区内修改\nDeepSeek-V41-Flash\nHigh\n预览版说明\n\nDeepSeek Harness 目前的 0.2 版本仍处于预览阶段，还有许多地方需要持续改进和打磨，希望听取广大开发者和用户的反馈建议。现在，新的桌面端面向广泛用户，开发者相关的进阶功能可在配置中开启使用。预计 DeepSeek Harness 的产品功能以及插件 API 都会继续快速迭代、持续演化，并逐渐趋于稳定。\n\n我们期待与全球用户和开发者一起，在开源、可复用、可组合的基础设施之上，共同探索智能上限。欢迎大家用 DeepSeek Harn"
+  },
+  "titles": [
+    "新会话",
+    "插件",
+    "workspace",
+    "未命名",
+    "设置",
+    "标准模式",
+    "工作区内修改",
+    "DeepSeek-V41-Flash",
+    "继续"
+  ],
+  "errors": [],
+  "consoleLog": []
+}

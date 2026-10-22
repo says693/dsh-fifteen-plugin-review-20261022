@@ -1,0 +1,656 @@
+{
+  "viewports": [
+    {
+      "vp": [
+        1440,
+        1000
+      ],
+      "probe": {
+        "panelPresent": true,
+        "panelRect": {
+          "x": 80,
+          "y": 24,
+          "w": 1280,
+          "h": 952,
+          "right": 1360,
+          "bottom": 976
+        },
+        "panelStyle": {
+          "width": "1280px",
+          "height": "952px",
+          "maxWidth": "1392px",
+          "backgroundColor": "rgb(255, 255, 255)",
+          "borderRadius": "28px",
+          "overflow": "hidden"
+        },
+        "secPresent": true,
+        "secRect": {
+          "x": 292,
+          "y": 78,
+          "w": 560,
+          "h": 202,
+          "right": 852,
+          "bottom": 280
+        },
+        "chips": [
+          {
+            "text": "默认（800×800）",
+            "on": false,
+            "pressed": "false"
+          },
+          {
+            "text": "大（1080×780）",
+            "on": false,
+            "pressed": "false"
+          },
+          {
+            "text": "特大（1280×960）",
+            "on": true,
+            "pressed": "true"
+          },
+          {
+            "text": "全屏",
+            "on": false,
+            "pressed": "false"
+          },
+          {
+            "text": "自定义",
+            "on": false,
+            "pressed": "false"
+          },
+          {
+            "text": "主题默认",
+            "on": true,
+            "pressed": "true"
+          },
+          {
+            "text": "纯色",
+            "on": false,
+            "pressed": "false"
+          },
+          {
+            "text": "恢复默认",
+            "on": false,
+            "pressed": null
+          }
+        ],
+        "nums": [],
+        "range": {
+          "value": "100",
+          "min": "30",
+          "max": "100"
+        },
+        "rangeLabel": [
+          "100%"
+        ],
+        "colors": [],
+        "footText": "恢复默认\n改动即时生效；纯色按亮/暗主题各存一色，切换自动跟随；随 dsh profile 保存",
+        "flash": "",
+        "err": "",
+        "tweakCss": "[data-shortcut-modal=\"settings\"][role=\"dialog\"]{width:1280px;height:min(960px, calc(100vh - 48px));background-color:var(--dsw-alias-bg-layer-2)}",
+        "tweakLen": 144,
+        "dark": false,
+        "docOverflowX": false,
+        "storageKeys": [
+          "dsh.workspace.view.v5",
+          "dsh.sidebar-right.v1.session-2706f68c-a82a-4dfc-95b3-f4abb3626af2",
+          "dsh.sessions.current"
+        ]
+      },
+      "extra": {
+        "navRect": {
+          "x": 80,
+          "y": 24,
+          "w": 188,
+          "h": 952,
+          "right": 268,
+          "bottom": 976
+        },
+        "secRect": {
+          "x": 292,
+          "y": 78,
+          "w": 560,
+          "h": 202,
+          "right": 852,
+          "bottom": 280
+        },
+        "chipCount": 8,
+        "overflowChips": [],
+        "panelOutOfViewport": false,
+        "panelRectRaw": {
+          "l": 80,
+          "t": 24,
+          "r": 1360,
+          "b": 976
+        },
+        "panelScroll": {
+          "scrollH": 952,
+          "clientH": 952,
+          "scrollW": 1280,
+          "clientW": 1280
+        },
+        "navScroll": {
+          "scrollH": 952,
+          "clientH": 952
+        },
+        "labelColor": "rgb(15, 17, 21)",
+        "panelBg": "rgb(255, 255, 255)"
+      }
+    },
+    {
+      "vp": [
+        1000,
+        900
+      ],
+      "probe": {
+        "panelPresent": true,
+        "panelRect": {
+          "x": 24,
+          "y": 24,
+          "w": 952,
+          "h": 852,
+          "right": 976,
+          "bottom": 876
+        },
+        "panelStyle": {
+          "width": "952px",
+          "height": "852px",
+          "maxWidth": "952px",
+          "backgroundColor": "rgb(255, 255, 255)",
+          "borderRadius": "28px",
+          "overflow": "hidden"
+        },
+        "secPresent": true,
+        "secRect": {
+          "x": 236,
+          "y": 78,
+          "w": 560,
+          "h": 202,
+          "right": 796,
+          "bottom": 280
+        },
+        "chips": [
+          {
+            "text": "默认（800×800）",
+            "on": false,
+            "pressed": "false"
+          },
+          {
+            "text": "大（1080×780）",
+            "on": false,
+            "pressed": "false"
+          },
+          {
+            "text": "特大（1280×960）",
+            "on": true,
+            "pressed": "true"
+          },
+          {
+            "text": "全屏",
+            "on": false,
+            "pressed": "false"
+          },
+          {
+            "text": "自定义",
+            "on": false,
+            "pressed": "false"
+          },
+          {
+            "text": "主题默认",
+            "on": true,
+            "pressed": "true"
+          },
+          {
+            "text": "纯色",
+            "on": false,
+            "pressed": "false"
+          },
+          {
+            "text": "恢复默认",
+            "on": false,
+            "pressed": null
+          }
+        ],
+        "nums": [],
+        "range": {
+          "value": "100",
+          "min": "30",
+          "max": "100"
+        },
+        "rangeLabel": [
+          "100%"
+        ],
+        "colors": [],
+        "footText": "恢复默认\n改动即时生效；纯色按亮/暗主题各存一色，切换自动跟随；随 dsh profile 保存",
+        "flash": "",
+        "err": "",
+        "tweakCss": "[data-shortcut-modal=\"settings\"][role=\"dialog\"]{width:1280px;height:min(960px, calc(100vh - 48px));background-color:var(--dsw-alias-bg-layer-2)}",
+        "tweakLen": 144,
+        "dark": false,
+        "docOverflowX": false,
+        "storageKeys": [
+          "dsh.workspace.view.v5",
+          "dsh.sidebar-right.v1.session-2706f68c-a82a-4dfc-95b3-f4abb3626af2",
+          "dsh.sessions.current"
+        ]
+      },
+      "extra": {
+        "navRect": {
+          "x": 24,
+          "y": 24,
+          "w": 188,
+          "h": 852,
+          "right": 212,
+          "bottom": 876
+        },
+        "secRect": {
+          "x": 236,
+          "y": 78,
+          "w": 560,
+          "h": 202,
+          "right": 796,
+          "bottom": 280
+        },
+        "chipCount": 8,
+        "overflowChips": [],
+        "panelOutOfViewport": false,
+        "panelRectRaw": {
+          "l": 24,
+          "t": 24,
+          "r": 976,
+          "b": 876
+        },
+        "panelScroll": {
+          "scrollH": 852,
+          "clientH": 852,
+          "scrollW": 952,
+          "clientW": 952
+        },
+        "navScroll": {
+          "scrollH": 852,
+          "clientH": 852
+        },
+        "labelColor": "rgb(15, 17, 21)",
+        "panelBg": "rgb(255, 255, 255)"
+      }
+    },
+    {
+      "vp": [
+        760,
+        900
+      ],
+      "probe": {
+        "panelPresent": true,
+        "panelRect": {
+          "x": 24,
+          "y": 24,
+          "w": 712,
+          "h": 852,
+          "right": 736,
+          "bottom": 876
+        },
+        "panelStyle": {
+          "width": "712px",
+          "height": "852px",
+          "maxWidth": "712px",
+          "backgroundColor": "rgb(255, 255, 255)",
+          "borderRadius": "28px",
+          "overflow": "hidden"
+        },
+        "secPresent": true,
+        "secRect": {
+          "x": 236,
+          "y": 78,
+          "w": 476,
+          "h": 232,
+          "right": 712,
+          "bottom": 310
+        },
+        "chips": [
+          {
+            "text": "默认（800×800）",
+            "on": false,
+            "pressed": "false"
+          },
+          {
+            "text": "大（1080×780）",
+            "on": false,
+            "pressed": "false"
+          },
+          {
+            "text": "特大（1280×960）",
+            "on": true,
+            "pressed": "true"
+          },
+          {
+            "text": "全屏",
+            "on": false,
+            "pressed": "false"
+          },
+          {
+            "text": "自定义",
+            "on": false,
+            "pressed": "false"
+          },
+          {
+            "text": "主题默认",
+            "on": true,
+            "pressed": "true"
+          },
+          {
+            "text": "纯色",
+            "on": false,
+            "pressed": "false"
+          },
+          {
+            "text": "恢复默认",
+            "on": false,
+            "pressed": null
+          }
+        ],
+        "nums": [],
+        "range": {
+          "value": "100",
+          "min": "30",
+          "max": "100"
+        },
+        "rangeLabel": [
+          "100%"
+        ],
+        "colors": [],
+        "footText": "恢复默认\n改动即时生效；纯色按亮/暗主题各存一色，切换自动跟随；随 dsh profile 保存",
+        "flash": "",
+        "err": "",
+        "tweakCss": "[data-shortcut-modal=\"settings\"][role=\"dialog\"]{width:1280px;height:min(960px, calc(100vh - 48px));background-color:var(--dsw-alias-bg-layer-2)}",
+        "tweakLen": 144,
+        "dark": false,
+        "docOverflowX": false,
+        "storageKeys": [
+          "dsh.workspace.view.v5",
+          "dsh.sidebar-right.v1.session-2706f68c-a82a-4dfc-95b3-f4abb3626af2",
+          "dsh.sessions.current"
+        ]
+      },
+      "extra": {
+        "navRect": {
+          "x": 24,
+          "y": 24,
+          "w": 188,
+          "h": 852,
+          "right": 212,
+          "bottom": 876
+        },
+        "secRect": {
+          "x": 236,
+          "y": 78,
+          "w": 476,
+          "h": 232,
+          "right": 712,
+          "bottom": 310
+        },
+        "chipCount": 8,
+        "overflowChips": [],
+        "panelOutOfViewport": false,
+        "panelRectRaw": {
+          "l": 24,
+          "t": 24,
+          "r": 736,
+          "b": 876
+        },
+        "panelScroll": {
+          "scrollH": 852,
+          "clientH": 852,
+          "scrollW": 712,
+          "clientW": 712
+        },
+        "navScroll": {
+          "scrollH": 852,
+          "clientH": 852
+        },
+        "labelColor": "rgb(15, 17, 21)",
+        "panelBg": "rgb(255, 255, 255)"
+      }
+    },
+    {
+      "vp": [
+        600,
+        800
+      ],
+      "probe": {
+        "panelPresent": true,
+        "panelRect": {
+          "x": 24,
+          "y": 24,
+          "w": 552,
+          "h": 752,
+          "right": 576,
+          "bottom": 776
+        },
+        "panelStyle": {
+          "width": "552px",
+          "height": "752px",
+          "maxWidth": "552px",
+          "backgroundColor": "rgb(255, 255, 255)",
+          "borderRadius": "28px",
+          "overflow": "hidden"
+        },
+        "secPresent": true,
+        "secRect": {
+          "x": 236,
+          "y": 78,
+          "w": 316,
+          "h": 238,
+          "right": 552,
+          "bottom": 316
+        },
+        "chips": [
+          {
+            "text": "默认（800×800）",
+            "on": false,
+            "pressed": "false"
+          },
+          {
+            "text": "大（1080×780）",
+            "on": false,
+            "pressed": "false"
+          },
+          {
+            "text": "特大（1280×960）",
+            "on": true,
+            "pressed": "true"
+          },
+          {
+            "text": "全屏",
+            "on": false,
+            "pressed": "false"
+          },
+          {
+            "text": "自定义",
+            "on": false,
+            "pressed": "false"
+          },
+          {
+            "text": "主题默认",
+            "on": true,
+            "pressed": "true"
+          },
+          {
+            "text": "纯色",
+            "on": false,
+            "pressed": "false"
+          },
+          {
+            "text": "恢复默认",
+            "on": false,
+            "pressed": null
+          }
+        ],
+        "nums": [],
+        "range": {
+          "value": "100",
+          "min": "30",
+          "max": "100"
+        },
+        "rangeLabel": [
+          "100%"
+        ],
+        "colors": [],
+        "footText": "恢复默认\n改动即时生效；纯色按亮/暗主题各存一色，切换自动跟随；随 dsh profile 保存",
+        "flash": "",
+        "err": "",
+        "tweakCss": "[data-shortcut-modal=\"settings\"][role=\"dialog\"]{width:1280px;height:min(960px, calc(100vh - 48px));background-color:var(--dsw-alias-bg-layer-2)}",
+        "tweakLen": 144,
+        "dark": false,
+        "docOverflowX": false,
+        "storageKeys": [
+          "dsh.workspace.view.v5",
+          "dsh.sidebar-right.v1.session-2706f68c-a82a-4dfc-95b3-f4abb3626af2",
+          "dsh.sessions.current"
+        ]
+      },
+      "extra": {
+        "navRect": {
+          "x": 24,
+          "y": 24,
+          "w": 188,
+          "h": 752,
+          "right": 212,
+          "bottom": 776
+        },
+        "secRect": {
+          "x": 236,
+          "y": 78,
+          "w": 316,
+          "h": 238,
+          "right": 552,
+          "bottom": 316
+        },
+        "chipCount": 8,
+        "overflowChips": [],
+        "panelOutOfViewport": false,
+        "panelRectRaw": {
+          "l": 24,
+          "t": 24,
+          "r": 576,
+          "b": 776
+        },
+        "panelScroll": {
+          "scrollH": 752,
+          "clientH": 752,
+          "scrollW": 552,
+          "clientW": 552
+        },
+        "navScroll": {
+          "scrollH": 752,
+          "clientH": 752
+        },
+        "labelColor": "rgb(15, 17, 21)",
+        "panelBg": "rgb(255, 255, 255)"
+      }
+    }
+  ],
+  "dark600": {
+    "panelPresent": true,
+    "panelRect": {
+      "x": 24,
+      "y": 24,
+      "w": 552,
+      "h": 752,
+      "right": 576,
+      "bottom": 776
+    },
+    "panelStyle": {
+      "width": "552px",
+      "height": "752px",
+      "maxWidth": "552px",
+      "backgroundColor": "rgb(44, 44, 46)",
+      "borderRadius": "28px",
+      "overflow": "hidden"
+    },
+    "secPresent": true,
+    "secRect": {
+      "x": 236,
+      "y": 78,
+      "w": 316,
+      "h": 238,
+      "right": 552,
+      "bottom": 316
+    },
+    "chips": [
+      {
+        "text": "默认（800×800）",
+        "on": false,
+        "pressed": "false"
+      },
+      {
+        "text": "大（1080×780）",
+        "on": false,
+        "pressed": "false"
+      },
+      {
+        "text": "特大（1280×960）",
+        "on": true,
+        "pressed": "true"
+      },
+      {
+        "text": "全屏",
+        "on": false,
+        "pressed": "false"
+      },
+      {
+        "text": "自定义",
+        "on": false,
+        "pressed": "false"
+      },
+      {
+        "text": "主题默认",
+        "on": true,
+        "pressed": "true"
+      },
+      {
+        "text": "纯色",
+        "on": false,
+        "pressed": "false"
+      },
+      {
+        "text": "恢复默认",
+        "on": false,
+        "pressed": null
+      }
+    ],
+    "nums": [],
+    "range": {
+      "value": "100",
+      "min": "30",
+      "max": "100"
+    },
+    "rangeLabel": [
+      "100%"
+    ],
+    "colors": [],
+    "footText": "恢复默认\n改动即时生效；纯色按亮/暗主题各存一色，切换自动跟随；随 dsh profile 保存",
+    "flash": "",
+    "err": "",
+    "tweakCss": "[data-shortcut-modal=\"settings\"][role=\"dialog\"]{width:1280px;height:min(960px, calc(100vh - 48px));background-color:var(--dsw-alias-bg-layer-2)}",
+    "tweakLen": 144,
+    "dark": true,
+    "docOverflowX": false,
+    "storageKeys": [
+      "dsh.workspace.view.v5",
+      "dsh.sidebar-right.v1.session-2706f68c-a82a-4dfc-95b3-f4abb3626af2",
+      "dsh.sessions.current"
+    ]
+  },
+  "dark600Extra": {
+    "dark": true,
+    "panelBg": "rgb(44, 44, 46)",
+    "labelColor": "rgb(249, 250, 251)",
+    "chipColor": "rgb(249, 250, 251)",
+    "chipBorder": "rgba(255, 255, 255, 0.12)",
+    "hintColor": "rgb(249, 250, 251)",
+    "hintOpacity": "0.5",
+    "labelOpacity": "0.6"
+  },
+  "consoleLog": [],
+  "errors": []
+}

@@ -1,0 +1,78 @@
+{
+  "utc": "2026-10-22T01:11:41.255Z",
+  "dismiss": {
+    "clicked": true
+  },
+  "masksAfterDismiss": 0,
+  "afterDismiss": {
+    "active": "session:session-b82a64e0-a6be-45a6-a240-f057d74ca6e0",
+    "n": 2,
+    "toast": null,
+    "focus": {
+      "tag": "BODY",
+      "role": null,
+      "aria": null,
+      "cls": ""
+    }
+  },
+  "focusBeforeArchive": {
+    "tag": "BODY",
+    "cls": ""
+  },
+  "archivedBefore": [],
+  "cardOpen": {
+    "found": true,
+    "visible": true,
+    "rect": {
+      "w": 382,
+      "h": 196
+    },
+    "text": "归档会话 default-workspace 归档不会删除日志，但浏览器端无法恢复会话。 取消 归档 Enter 确认 · Esc 取消 · ←→ 切换",
+    "focusMovedIntoCard": true,
+    "focusTag": "BUTTON",
+    "focusCls": "shk-confirm-btn shk-confirm-btn-danger",
+    "cardTabIndex": null,
+    "cardButtons": [
+      {
+        "t": "取消",
+        "focused": false
+      },
+      {
+        "t": "归档",
+        "focused": true
+      }
+    ]
+  },
+  "afterEscBodyFocus": {
+    "found": false
+  },
+  "archivedAfterEsc": [],
+  "stateAfterEsc": {
+    "active": "session:session-b82a64e0-a6be-45a6-a240-f057d74ca6e0",
+    "n": 2,
+    "toast": null,
+    "focus": {
+      "tag": "BODY",
+      "role": null,
+      "aria": null,
+      "cls": ""
+    }
+  },
+  "cancelClick": {
+    "found": false
+  },
+  "afterCancelClick": {
+    "stillVisible": false
+  },
+  "archivedAfterCancel": [],
+  "reopened": {
+    "visible": true,
+    "focusInCard": true,
+    "focusTag": "BUTTON"
+  },
+  "afterEscMouseClick": {
+    "stillVisible": true
+  },
+  "archivedEnd": [],
+  "errors": []
+}

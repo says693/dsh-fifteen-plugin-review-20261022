@@ -1,0 +1,14 @@
+﻿{
+    "queriedAt":  "2026-10-22T09:14:56.1090361+08:00",
+    "reviewsTotal":  172,
+    "reviewsScanned":  172,
+    "pluginsTotal":  133,
+    "pluginsScanned":  133,
+    "composerHistoryInReviews":  0,
+    "perryLinkPluginsInCatalog":  1,
+    "perryLinkPluginNames":  [
+                                 "dsh-memento"
+                             ],
+    "targetPluginListed":  false,
+    "note":  "?q= 服务端不过滤，故拉 /api/reviews 全量 4 页 172 条与 /api/plugins 全量 3 页 133 条本地扫描"
+}

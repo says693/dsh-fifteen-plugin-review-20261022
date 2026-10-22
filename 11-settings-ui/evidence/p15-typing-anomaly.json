@@ -1,0 +1,167 @@
+{
+  "typing": [],
+  "colorAnomaly": {
+    "putInvalid": {
+      "notAColor": {
+        "s": 200,
+        "t": "{\"ok\":true,\"settings\":{\"size\":\"custom\",\"customWidth\":48000,\"customHeight\":360600,\"opacity\":100,\"bgMode\":\"color\",\"bgColorLight\":\"not-a-color\",\"bgColorDark\":\"#1e2a38\"}}"
+      },
+      "cssInjection": {
+        "s": 200,
+        "t": "{\"ok\":true,\"settings\":{\"size\":\"custom\",\"customWidth\":48000,\"customHeight\":360600,\"opacity\":100,\"bgMode\":\"color\",\"bgColorLight\":\"red;position:fixed;inset:0\",\"bgColorDark\":\"#1e2a38\"}}"
+      },
+      "emptyString": {
+        "s": 200,
+        "t": "{\"ok\":true,\"settings\":{\"size\":\"custom\",\"customWidth\":48000,\"customHeight\":360600,\"opacity\":100,\"bgMode\":\"color\",\"bgColorLight\":\"\",\"bgColorDark\":\"#1e2a38\"}}"
+      },
+      "status": "{\"settings\":{\"size\":\"custom\",\"customWidth\":48000,\"customHeight\":360600,\"opacity\":100,\"bgMode\":\"color\",\"bgColorLight\":\"\",\"bgColorDark\":\"#1e2a38\"}}"
+    },
+    "afterInvalid": {
+      "tweak": "[data-shortcut-modal=\"settings\"][role=\"dialog\"]{width:min(48000px, calc(100vw - 48px));height:min(360600px, calc(100vh - 48px));background-color:var(--dsw-alias-bg-layer-2)}",
+      "panelBg": "rgb(44, 44, 46)",
+      "panelPosition": "relative",
+      "panelInset": "0px/0px/0px/0px",
+      "colorInputValues": [],
+      "panelRect": {
+        "x": 24,
+        "y": 24,
+        "w": 1392,
+        "h": 952
+      }
+    }
+  },
+  "startNums": [
+    "1280",
+    "960"
+  ],
+  "afterClearA": [
+    "480",
+    "960"
+  ],
+  "afterTypeA1": [
+    "4809",
+    "960"
+  ],
+  "afterTypeA2": [
+    "48090",
+    "960"
+  ],
+  "afterBackspaces": [
+    "480",
+    "960"
+  ],
+  "afterSelectAllType900": [
+    "48000",
+    "960"
+  ],
+  "afterCProbe": {
+    "panelPresent": true,
+    "panelRect": {
+      "x": 24,
+      "y": 24,
+      "w": 1392,
+      "h": 952,
+      "right": 1416,
+      "bottom": 976
+    },
+    "panelStyle": {
+      "width": "1392px",
+      "height": "952px",
+      "maxWidth": "1392px",
+      "backgroundColor": "rgb(44, 44, 46)",
+      "borderRadius": "28px",
+      "overflow": "hidden"
+    },
+    "secPresent": true,
+    "secRect": {
+      "x": 236,
+      "y": 78,
+      "w": 560,
+      "h": 234,
+      "right": 796,
+      "bottom": 312
+    },
+    "chips": [
+      {
+        "text": "默认（800×800）",
+        "on": false,
+        "pressed": "false"
+      },
+      {
+        "text": "大（1080×780）",
+        "on": false,
+        "pressed": "false"
+      },
+      {
+        "text": "特大（1280×960）",
+        "on": false,
+        "pressed": "false"
+      },
+      {
+        "text": "全屏",
+        "on": false,
+        "pressed": "false"
+      },
+      {
+        "text": "自定义",
+        "on": true,
+        "pressed": "true"
+      },
+      {
+        "text": "主题默认",
+        "on": true,
+        "pressed": "true"
+      },
+      {
+        "text": "纯色",
+        "on": false,
+        "pressed": "false"
+      },
+      {
+        "text": "恢复默认",
+        "on": false,
+        "pressed": null
+      }
+    ],
+    "nums": [
+      {
+        "value": "48000",
+        "min": "480",
+        "max": ""
+      },
+      {
+        "value": "960",
+        "min": "360",
+        "max": ""
+      }
+    ],
+    "range": {
+      "value": "100",
+      "min": "30",
+      "max": "100"
+    },
+    "rangeLabel": [
+      "100%"
+    ],
+    "colors": [],
+    "footText": "恢复默认\n改动即时生效；纯色按亮/暗主题各存一色，切换自动跟随；随 dsh profile 保存",
+    "flash": "",
+    "err": "",
+    "tweakCss": "[data-shortcut-modal=\"settings\"][role=\"dialog\"]{width:min(48000px, calc(100vw - 48px));height:min(960px, calc(100vh - 48px));background-color:var(--dsw-alias-bg-layer-2)}",
+    "tweakLen": 170,
+    "dark": true,
+    "docOverflowX": false,
+    "storageKeys": [
+      "dsh.workspace.view.v5",
+      "dsh.sidebar-right.v1.session-2706f68c-a82a-4dfc-95b3-f4abb3626af2",
+      "dsh.sessions.current"
+    ]
+  },
+  "heightAfter": [
+    "48000",
+    "360600"
+  ],
+  "statusAfterTyping": "{\"settings\":{\"size\":\"custom\",\"customWidth\":48000,\"customHeight\":360600,\"opacity\":100,\"bgMode\":\"default\",\"bgColorLight\":\"#eef1f5\",\"bgColorDark\":\"#1e2a38\"}}",
+  "errors": [],
+  "consoleLog": []
+}

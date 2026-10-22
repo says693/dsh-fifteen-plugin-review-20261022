@@ -1,0 +1,289 @@
+{
+  "host": "http://127.0.0.1:12294",
+  "before": {
+    "url": "http://127.0.0.1:12294/",
+    "treeitems": [
+      {
+        "text": "beta",
+        "selected": null,
+        "expanded": "true",
+        "level": null,
+        "rect": {
+          "x": 12,
+          "y": 206,
+          "w": 256,
+          "h": 34
+        },
+        "attrs": {
+          "class": "YDXeBa_projectRow",
+          "data-row-key": "workspace:ee73cda6-f6fe-44b6-b772-dabdbafe22e8",
+          "role": "treeitem",
+          "aria-expanded": "true",
+          "draggable": "true"
+        }
+      },
+      {
+        "text": "新会话",
+        "selected": "true",
+        "expanded": null,
+        "level": null,
+        "rect": {
+          "x": 12,
+          "y": 242,
+          "w": 256,
+          "h": 32
+        },
+        "attrs": {
+          "data-row-key": "session:session-935c2477-a159-4ad1-bd17-1ef223f3c7dc",
+          "class": "YDXeBa_sessionRow YDXeBa_selected",
+          "role": "treeitem",
+          "aria-selected": "true",
+          "draggable": "false"
+        }
+      },
+      {
+        "text": "未命名 1小时",
+        "selected": "false",
+        "expanded": null,
+        "level": null,
+        "rect": {
+          "x": 12,
+          "y": 276,
+          "w": 256,
+          "h": 32
+        },
+        "attrs": {
+          "data-row-key": "session:sess-dl-beta-one",
+          "class": "YDXeBa_sessionRow",
+          "role": "treeitem",
+          "aria-selected": "false",
+          "draggable": "true"
+        }
+      },
+      {
+        "text": "alpha",
+        "selected": null,
+        "expanded": "false",
+        "level": null,
+        "rect": {
+          "x": 12,
+          "y": 312,
+          "w": 256,
+          "h": 34
+        },
+        "attrs": {
+          "class": "YDXeBa_projectRow",
+          "data-row-key": "workspace:7529e9de-4bfc-4528-92e9-9ea05c755f53",
+          "role": "treeitem",
+          "aria-expanded": "false",
+          "draggable": "true"
+        }
+      }
+    ],
+    "sessionIdNodes": 0,
+    "chatFlow": [],
+    "flowKinds": [],
+    "text": "新会话 Ctrl + Alt + N 插件 工作区 beta 新会话 未命名 1小时 alpha 设置 探索未至之境 预览版 beta 标准模式 描述你想要构建的内容, / 调用指令, @ 文件或对话 工作区内修改 DeepSeek-V41-Flash High 预览版说明 DeepSeek Harness 目前的 0.2 版本仍处于预览阶段，还有许多地方需要持续改进和打磨，希望听取广大开发者和用户的反馈建议。现在，新的桌面端面向广泛用户，开发者相关的进阶功能可在配置中开启使用。预计 DeepSeek Harness 的产品功能以及插件 API 都会继续快速迭代、持续演化，并逐渐趋于稳定。 我们期待与全球用户和开发者一起，在开源、可复用、可组合的基础设施之上，共同探索智能上限。欢迎大家用 DeepSeek Harness 将想法变成现实，与社区一起丰富插件生态。 继续"
+  },
+  "expandedLog": [
+    {
+      "i": 0,
+      "txt": "beta",
+      "action": "skip",
+      "ariaExpanded": "true"
+    },
+    {
+      "i": 1,
+      "txt": "新会话",
+      "action": "skip",
+      "ariaExpanded": null
+    },
+    {
+      "i": 2,
+      "txt": "未命名 1小时",
+      "action": "skip",
+      "ariaExpanded": null
+    },
+    {
+      "i": 3,
+      "txt": "alpha",
+      "action": "clicked-expand"
+    }
+  ],
+  "afterExpand": {
+    "url": "http://127.0.0.1:12294/",
+    "treeitems": [
+      {
+        "text": "beta",
+        "selected": null,
+        "expanded": "true",
+        "level": null,
+        "rect": {
+          "x": 11,
+          "y": 206,
+          "w": 256,
+          "h": 34
+        },
+        "attrs": {
+          "class": "YDXeBa_projectRow",
+          "data-row-key": "workspace:ee73cda6-f6fe-44b6-b772-dabdbafe22e8",
+          "role": "treeitem",
+          "aria-expanded": "true",
+          "draggable": "true"
+        }
+      },
+      {
+        "text": "新会话",
+        "selected": "true",
+        "expanded": null,
+        "level": null,
+        "rect": {
+          "x": 11,
+          "y": 242,
+          "w": 256,
+          "h": 32
+        },
+        "attrs": {
+          "data-row-key": "session:session-935c2477-a159-4ad1-bd17-1ef223f3c7dc",
+          "class": "YDXeBa_sessionRow YDXeBa_selected",
+          "role": "treeitem",
+          "aria-selected": "true",
+          "draggable": "false"
+        }
+      },
+      {
+        "text": "未命名 1小时",
+        "selected": "false",
+        "expanded": null,
+        "level": null,
+        "rect": {
+          "x": 11,
+          "y": 276,
+          "w": 256,
+          "h": 32
+        },
+        "attrs": {
+          "data-row-key": "session:sess-dl-beta-one",
+          "class": "YDXeBa_sessionRow",
+          "role": "treeitem",
+          "aria-selected": "false",
+          "draggable": "true"
+        }
+      },
+      {
+        "text": "alpha",
+        "selected": null,
+        "expanded": "false",
+        "level": null,
+        "rect": {
+          "x": 11,
+          "y": 312,
+          "w": 256,
+          "h": 34
+        },
+        "attrs": {
+          "class": "YDXeBa_projectRow",
+          "data-row-key": "workspace:7529e9de-4bfc-4528-92e9-9ea05c755f53",
+          "role": "treeitem",
+          "aria-expanded": "false",
+          "draggable": "true"
+        }
+      }
+    ],
+    "sessionIdNodes": 0
+  },
+  "clickedText": "新会话",
+  "afterClick": {
+    "url": "http://127.0.0.1:12294/",
+    "treeitems": [
+      {
+        "text": "beta",
+        "selected": null,
+        "expanded": "true",
+        "level": null,
+        "rect": {
+          "x": 11,
+          "y": 206,
+          "w": 256,
+          "h": 34
+        },
+        "attrs": {
+          "class": "YDXeBa_projectRow",
+          "data-row-key": "workspace:ee73cda6-f6fe-44b6-b772-dabdbafe22e8",
+          "role": "treeitem",
+          "aria-expanded": "true",
+          "draggable": "true"
+        }
+      },
+      {
+        "text": "新会话",
+        "selected": "true",
+        "expanded": null,
+        "level": null,
+        "rect": {
+          "x": 11,
+          "y": 242,
+          "w": 256,
+          "h": 32
+        },
+        "attrs": {
+          "data-row-key": "session:session-935c2477-a159-4ad1-bd17-1ef223f3c7dc",
+          "class": "YDXeBa_sessionRow YDXeBa_selected",
+          "role": "treeitem",
+          "aria-selected": "true",
+          "draggable": "false"
+        }
+      },
+      {
+        "text": "未命名 1小时",
+        "selected": "false",
+        "expanded": null,
+        "level": null,
+        "rect": {
+          "x": 11,
+          "y": 276,
+          "w": 256,
+          "h": 32
+        },
+        "attrs": {
+          "data-row-key": "session:sess-dl-beta-one",
+          "class": "YDXeBa_sessionRow",
+          "role": "treeitem",
+          "aria-selected": "false",
+          "draggable": "true"
+        }
+      },
+      {
+        "text": "alpha",
+        "selected": null,
+        "expanded": "false",
+        "level": null,
+        "rect": {
+          "x": 11,
+          "y": 312,
+          "w": 256,
+          "h": 34
+        },
+        "attrs": {
+          "class": "YDXeBa_projectRow",
+          "data-row-key": "workspace:7529e9de-4bfc-4528-92e9-9ea05c755f53",
+          "role": "treeitem",
+          "aria-expanded": "false",
+          "draggable": "true"
+        }
+      }
+    ],
+    "sessionIdNodes": 0,
+    "chatFlow": [],
+    "flowKinds": [],
+    "text": "新会话 Ctrl + Alt + N 插件 工作区 beta 新会话 未命名 1小时 alpha 设置 探索未至之境 预览版 beta 标准模式 描述你想要构建的内容, / 调用指令, @ 文件或对话 工作区内修改 DeepSeek-V41-Flash High 预览版说明 DeepSeek Harness 目前的 0.2 版本仍处于预览阶段，还有许多地方需要持续改进和打磨，希望听取广大开发者和用户的反馈建议。现在，新的桌面端面向广泛用户，开发者相关的进阶功能可在配置中开启使用。预计 DeepSeek Harness 的产品功能以及插件 API 都会继续快速迭代、持续演化，并逐渐趋于稳定。 我们期待与全球用户和开发者一起，在开源、可复用、可组合的基础设施之上，共同探索智能上限。欢迎大家用 DeepSeek Harness 将想法变成现实，与社区一起丰富插件生态。 继续"
+  },
+  "errors": [],
+  "consoleLog": [],
+  "nav": [
+    {
+      "utc": "2026-10-22T02:20:44.861Z",
+      "url": "http://127.0.0.1:12294/"
+    }
+  ]
+}

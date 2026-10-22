@@ -1,0 +1,92 @@
+{
+  "utc": "2026-10-22T01:42:16.980Z",
+  "steps": [
+    {
+      "label": "00-landing",
+      "hasChatFlow": false,
+      "barCount": 0,
+      "flowKids": 0,
+      "flowTextLen": 0,
+      "bodyTextLen": 65
+    },
+    {
+      "label": "01-after-open-session",
+      "hasChatFlow": false,
+      "barCount": 0,
+      "flowKids": 0,
+      "flowTextLen": 0,
+      "bodyTextLen": 65
+    },
+    {
+      "label": "02-after-fallback-click",
+      "hasChatFlow": false,
+      "barCount": 0,
+      "flowKids": 0,
+      "flowTextLen": 0,
+      "bodyTextLen": 65
+    },
+    {
+      "label": "03-with-running-task-in-chat",
+      "hasChatFlow": false,
+      "barCount": 0,
+      "flowKids": 0,
+      "flowTextLen": 0,
+      "bodyTextLen": 65
+    },
+    {
+      "label": "04-after-bar-click",
+      "hasChatFlow": false,
+      "barCount": 0,
+      "flowKids": 0,
+      "flowTextLen": 0,
+      "bodyTextLen": 65
+    }
+  ],
+  "host": {
+    "origin": "http://127.0.0.1:14623",
+    "pid": 35880
+  },
+  "rows": [],
+  "clickedRow": null,
+  "startRes": {
+    "status": 200,
+    "body": "{\"id\":\"probe-1\",\"opts\":{\"mode\":\"long\",\"kind\":\"probe\",\"label\":\"r3-running\",\"lines\":120,\"intervalMs\":250,\"owner\":null}}"
+  },
+  "tasksRaw": {
+    "status": 200,
+    "body": "{\"tasks\":[{\"id\":\"probe-1\",\"kind\":\"probe\",\"label\":\"r3-running\",\"status\":\"running\",\"startedAt\":1792633344584}]}",
+    "count": 1,
+    "keys": [
+      "id",
+      "kind",
+      "label",
+      "status",
+      "startedAt"
+    ]
+  },
+  "barBeforeClick": 0,
+  "verdict": {
+    "hasChatFlow": false,
+    "barCountBaseline": 0,
+    "barCountWithRunning": 0,
+    "barCountAfterClick": 0,
+    "routeCount": 1,
+    "routeKeys": [
+      "id",
+      "kind",
+      "label",
+      "status",
+      "startedAt"
+    ],
+    "polls": 1,
+    "clickedRow": null
+  },
+  "errors": [],
+  "consoleLog": [
+    {
+      "type": "error",
+      "text": "[session-controller] control stream failed: RemoteError: typert gateway: session/control: active Service \"sessionController\" is unavailable\n    at RemoteStreamMuxClient.open (http://127.0.0.1:14623/plugins/??@deepseek-ai/dsh-client-ui-open-in-app/client.js,@deepseek-ai/dsh-api-gateway/client.js,@deepseek-ai/dsh-api-job-controller/client.js,@deepseek-ai/dsh-api-terminal-controller/client.js,@deepseek-ai/dsh-api-workspace-files/client.js,@deepseek-ai/dsh-client-ui-settings-account/client.js,@deepseek-ai/dsh-client-hmr/client.js,@deepseek-ai/dsh-cordis-client-runner/client.js,@deepseek-ai/dsh-client-ui-theme/client.js,@deepseek-ai/dsh-client-locale/client.js,@deepseek-ai/dsh-client-shortcuts/client.js,@deepseek-ai/dsh-client-ui-shortcuts/client.js,@deepseek-ai/dsh-client-ui-layout/client.js,@deepseek-ai/dsh-client-ui-renderer/client.js,@deepseek-ai/dsh-client-ui-session/client.js,@deepseek-ai/dsh-client-resources/client.js,@deepseek-ai/dsh-client-ui-sidebar/client.js,@deepseek-ai/dsh-client-ui-sidebar-right/client.js,@deepseek-ai/dsh-client-ui-sidebar-documentpreview/client.js,@deepseek-ai/dsh-client-ui-sidebar-terminal/client.js,@deepseek-ai/dsh-client-ui-sidebar-files/client.js,@deepseek-ai/dsh-client-ui-settings/client.js,@deepseek-ai/dsh-client-ui-settings-general/client.js,@deepseek-ai/dsh-client-ui-settings-models/client.js,@deepseek-ai/dsh-client-ui-plugin-manager/client.js,@deepseek-ai/dsh-client-ui-settings-plugin-inventory/client.js,@deepseek-ai/dsh-client-ui-conversation/client.js,@deepseek-ai/dsh-client-ui-approval/client.js,@deepseek-ai/dsh-client-ui-chat/client.js,@deepseek-ai/dsh-client-ui-brand-official/client.js,@deepseek-ai/dsh-client-ui-attachment/client.js,@deepseek-ai/dsh-client-ui-tool/client.js,@deepseek-ai/dsh-client-ui-cordis/client.js,@deepseek-ai/dsh-client-ui-workspace/client.js,@deepseek-ai/dsh-client-ui-workflow-run/client.js,@deepseek-ai/dsh-client-ui-input-trigger/client.js,@deepseek-ai/dsh-client-ui-commands/client.js,@deepseek-ai/dsh-client-ui-skill/client.js,@deepseek-ai/dsh-client-ui-subagent/client.js,@deepseek-ai/dsh-client-ui-reference/client.js,@deepseek-ai/dsh-client-ui-jobs/client.js,@deepseek-ai/dsh-client-ui-goal/client.js,@deepseek-ai/dsh-client-ui-message-feedback/client.js,@deepseek-ai/dsh-client-ui-model-selection/client.js,@deepseek-ai/dsh-client-ui-permission-presets/client.js,@deepseek-ai/dsh-client-ui-agent-preset/client.js,@deepseek-ai/dsh-client-ui-settings-session-log/client.js,@deepseek-ai/dsh-client-ui-settings-plugins/client.js,@deepseek-ai/dsh-client-ui-settings-shell/client.js,@deepseek-ai/dsh-client-ui-settings-agent-loop/client.js,@deepseek-ai/dsh-client-ui-settings-subagent/client.js,@deepseek-ai/dsh-client-ui-settings-web-search/client.js,@deepseek-ai/dsh-client-ui-plan/client.js,@deepseek-ai/dsh-client-ui-user-questions/client.js,@deepseek-ai/dsh-client-ui-trajectory/client.js,@vlln/dsh-task-status/client.js,@deepseek-ai/dsh-session-log-export/client.js,@deepseek-ai/dsh-client-file-upload/client.js&rev=edb69a1252a3:1305:41)",
+      "utc": "2026-10-22T01:42:18.453Z"
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "results": [
+    {
+      "pos": 0,
+      "labelAtClick": "user #1（点击跳转）",
+      "previewText": "第 21 段：这是长会话的第 21 条提问，用来检查右侧小圆点会不会挤成一团。",
+      "scrollTopAfter": 46,
+      "topRowText": "第 21 段：这是长会话的第 21 条提问，用来检查右侧小圆点会不会挤成一团。 09:1",
+      "topRowDelta": 0,
+      "semanticHit": true,
+      "activeLabelAfter": "user #1（点击跳转）",
+      "activeIsClickedLabel": true,
+      "dotsAfter": 6
+    },
+    {
+      "pos": 1,
+      "labelAtClick": "user #2（点击跳转）",
+      "previewText": "第 22 段：这是长会话的第 22 条提问，用来检查右侧小圆点会不会挤成一团。",
+      "scrollTopAfter": 261,
+      "topRowText": "第 22 段：这是长会话的第 22 条提问，用来检查右侧小圆点会不会挤成一团。 09:1",
+      "topRowDelta": 0,
+      "semanticHit": true,
+      "activeLabelAfter": "user #2（点击跳转）",
+      "activeIsClickedLabel": true,
+      "dotsAfter": 7
+    },
+    {
+      "pos": 2,
+      "labelAtClick": "user #3（点击跳转）",
+      "previewText": "第 23 段：这是长会话的第 23 条提问，用来检查右侧小圆点会不会挤成一团。",
+      "scrollTopAfter": 476,
+      "topRowText": "第 23 段：这是长会话的第 23 条提问，用来检查右侧小圆点会不会挤成一团。 09:1",
+      "topRowDelta": 0,
+      "semanticHit": true,
+      "activeLabelAfter": "user #3（点击跳转）",
+      "activeIsClickedLabel": true,
+      "dotsAfter": 8
+    },
+    {
+      "pos": 3,
+      "labelAtClick": "user #4（点击跳转）",
+      "previewText": "第 24 段：这是长会话的第 24 条提问，用来检查右侧小圆点会不会挤成一团。",
+      "scrollTopAfter": 691,
+      "topRowText": "第 24 段：这是长会话的第 24 条提问，用来检查右侧小圆点会不会挤成一团。 09:1",
+      "topRowDelta": 0,
+      "semanticHit": true,
+      "activeLabelAfter": "user #4（点击跳转）",
+      "activeIsClickedLabel": true,
+      "dotsAfter": 9
+    },
+    {
+      "pos": 4,
+      "labelAtClick": "user #5（点击跳转）",
+      "previewText": "第 25 段：这是长会话的第 25 条提问，用来检查右侧小圆点会不会挤成一团。",
+      "scrollTopAfter": 906,
+      "topRowText": "第 25 段：这是长会话的第 25 条提问，用来检查右侧小圆点会不会挤成一团。 09:1",
+      "topRowDelta": 0,
+      "semanticHit": true,
+      "activeLabelAfter": "user #5（点击跳转）",
+      "activeIsClickedLabel": true,
+      "dotsAfter": 10
+    },
+    {
+      "pos": 5,
+      "labelAtClick": "user #6（点击跳转）",
+      "previewText": "第 26 段：这是长会话的第 26 条提问，用来检查右侧小圆点会不会挤成一团。",
+      "scrollTopAfter": 1121,
+      "topRowText": "第 26 段：这是长会话的第 26 条提问，用来检查右侧小圆点会不会挤成一团。 09:1",
+      "topRowDelta": 0,
+      "semanticHit": true,
+      "activeLabelAfter": "user #6（点击跳转）",
+      "activeIsClickedLabel": true,
+      "dotsAfter": 11
+    }
+  ],
+  "errors": [],
+  "consoleLog": []
+}

@@ -1,0 +1,369 @@
+{
+  "schema": "results/v1",
+  "target": "dsh-approval-hotkeys@0.2.0 (SiriLee/dsh-approval-hotkeys @ d6b16a1229a8dc23d83404e06173af067847c106)",
+  "host": "@deepseek-ai/dsh 0.2.0-rc.2 / Edge 155.0.4283.62 / Playwright headless",
+  "generated_utc": "2026-10-22T02:00:00Z",
+  "legacy_note": "四态取值：confirmed（有硬读数且能复跑）/ uncertain（有读数但两次不一致或根因未定位）/ untested（本次没有对应用例）。检查项编号沿用 PLAN.md 的 A/B/C/D/E/F/G 体系。",
+  "summary": {
+    "total": 30,
+    "confirmed": 23,
+    "uncertain": 2,
+    "untested": 5,
+    "confirmed_defects": 2
+  },
+  "checks": [
+    {
+      "id": "A1",
+      "title": "npm 发布件可装进隔离 profile，且 profile 清单登记本插件",
+      "expect": "dsh plugin --profile ah add dsh-approval-hotkeys@0.2.0 成功；profile 的 package.json 与 pnpm-lock 记录 dsh-approval-hotkeys@0.2.0",
+      "actual": "安装输出 `+ dsh-approval-hotkeys 0.2.0` / `Packages: +1` / `Done in 9.4s using pnpm v11.7.0`；isolated-home/profiles/ah/package.json 的 dependencies 含 \"dsh-approval-hotkeys\": \"0.2.0\"，dsh.profile.bundles 为 [@deepseek-ai/dsh-base, @deepseek-ai/dsh-web-app, dsh-approval-hotkeys]；pnpm-lock.yaml:11-13 specifier/version 均 0.2.0，:18 integrity 匹配",
+      "evidence": [
+        "evidence/install-01-add-npm.log",
+        "evidence/ah-dump-config.yml"
+      ],
+      "status": "confirmed"
+    },
+    {
+      "id": "A2",
+      "title": "宿主把插件 client 模块注入页面（HTTP 200 且模块在合并 bundle 里）",
+      "expect": "/plugins/?? 合并请求返回 200，且请求串里出现 dsh-approval-hotkeys/client.js",
+      "actual": "run4-05c 与 run5-07 的网络记录里，第三个 /plugins/?? 合并请求 status=200 且 URL 含 `dsh-approval-hotkeys/client.js`；run7-14 单独对该 bundle 取数：status 200、bytes 10396034、hasHotkeys=true，marker 组 moduleId/botkeyNone/approvalKeySel/questionKeySel/planReviewSel/pendingInteraction 全为 true，摘录可见 `target.closest(\"[data-approval-key], iframe, .xterm, [inert]\")`",
+      "evidence": [
+        "evidence/run7-14-load.json",
+        "evidence/run5-07-matrix.json",
+        "evidence/run4-05c-hotkey-matrix.json"
+      ],
+      "status": "confirmed"
+    },
+    {
+      "id": "A3",
+      "title": "插件在 document 上注册 keydown 监听（纯浏览器端，单监听器）",
+      "expect": "无论焦点在 body 还是面板内，document 上都能观察到插件参与按键处理",
+      "actual": "run5-07 T1 显示 capture 阶段 defaultPrevented=false、bubble 阶段 defaultPrevented=true（焦点在 composer），run5-07 T2 显示 Bubble 段 dp=true 且同一时刻发生按钮 click —— 说明处理器挂在 document 的冒泡段，与 README「单个 document keydown 监听器」一致。未单独测「监听器数量」，只测到其行为位置。",
+      "evidence": [
+        "evidence/run5-07-matrix.json"
+      ],
+      "status": "confirmed"
+    },
+    {
+      "id": "B1",
+      "title": "审批面板在场 + 焦点在 body 时按 Enter → 点击「允许一次」",
+      "expect": "按下 Enter 后「允许一次」被点击，面板随即消失",
+      "actual": "run5-07 T2：面板出现耗时 557ms，key=approval:1，按钮 [拒绝, 允许一次] 且都 enabled、focusWithin=false、active=BODY；t=7025 keydown Enter(capture dp=false) 同刻 click「允许一次」，t=7027/7030 面板 keys 从 [approval:1] 变 []，goneAfterMs=2，bubble dp=true。run4-06 独立复现：t=8145 Enter → t=8146 click「允许一次」，间隔 1ms，277ms 后面板消失",
+      "evidence": [
+        "evidence/run5-07-matrix.json",
+        "evidence/run4-06-timing.json",
+        "evidence/run5-07-02-after-enter.png",
+        "evidence/run4-06-02-after-enter.png"
+      ],
+      "status": "confirmed"
+    },
+    {
+      "id": "B2",
+      "title": "审批面板在场时按 Esc → 点击「拒绝」",
+      "expect": "按下 Esc 后「拒绝」被点击，面板消失",
+      "actual": "run5-07 T3：t=9127 keydown Escape(capture dp=false) 同刻 click「拒绝」，t=9129/9132 面板 keys 由 [approval:2] 变 []，bubble dp=true。run9-15 T2 与 run9-17 B 各自独立复现（`click:拒绝`）。",
+      "evidence": [
+        "evidence/run5-07-matrix.json",
+        "evidence/run9-15-gaps.json",
+        "evidence/run9-17-composer.json",
+        "evidence/run5-07-03-after-esc.png"
+      ],
+      "status": "confirmed"
+    },
+    {
+      "id": "B3",
+      "title": "Esc 是否「暂停键盘审阅」（暂停后再按 Enter 不再自动批准）",
+      "expect": "PLAN 里预留的口径：若 README 声称 Esc 会暂停审阅，则暂停后 Enter 不应再批准",
+      "actual": "两条读数互相矛盾：run5-07 T3 里 Esc 直接点击「拒绝」并把面板关掉（无暂停态可言）；run7-13 的 escPauseReview 里 Esc 的 target=DIV、dp=false、没有产生 click，随后按 Enter 仍然 click「允许一次」并让面板前进到 approval:5。两次的差别在焦点落点（BODY vs DIV），无法判定 ESC 是「没生效」还是「被暂停」。README.zh.md 第 68 行明确写「无面板时 Esc 不拦截（不做暂停/停止）」，但没有定义「暂停键盘审阅」这个功能，故无法据此判缺陷。",
+      "evidence": [
+        "evidence/run5-07-matrix.json",
+        "evidence/run7-13-final.json"
+      ],
+      "status": "uncertain"
+    },
+    {
+      "id": "B4",
+      "title": "无审批面板时 Enter/Esc 是否被插件拦键（泄漏判据：defaultPrevented）",
+      "expect": "无面板时插件不应拦键，Enter/Esc 的 defaultPrevented 应为 false",
+      "actual": "焦点在 body、无面板：run5-08 A 与 G 的 Enter/Esc bubble dp 全为 false；run7-12（withPlugin=true）与 run8-12（withPlugin=false）的 noPanel_bodyFocus 四段事件逐条相同（全 false）。反证：run5-07 T1 与 run7-12/run8-12 的 noPanel_composerFocus 里 Enter 的 bubble dp=true，但对照组 run8-12（无插件）同样为 true —— 该拦键来自宿主 composer 自身（发送消息），不是插件。",
+      "evidence": [
+        "evidence/run5-08-guards.json",
+        "evidence/run7-12-attribution.json",
+        "evidence/run8-12-attribution.json"
+      ],
+      "status": "confirmed"
+    },
+    {
+      "id": "C1",
+      "title": "多个待审批项时的渲染顺序与焦点归属",
+      "expect": "若宿主同时渲染多个面板，Enter 应作用于当前焦点项",
+      "actual": "宿主并不并列渲染多个面板：run7-10 采样 45 秒只见 1 个 [data-approval-key]，run4-05c T3/T4 同样是 count=1。一个批准后下一项才出现（run7-11 P1：nextPanel.afterMs=625）。因此「插件在多面板之间挑焦点」这个前提不成立；面板内 focusWithin 恒为 false，即焦点从不落在面板上（run5-07 T2/T3/T4、run5-08 多处）。",
+      "evidence": [
+        "evidence/run7-10-multi.json",
+        "evidence/run7-11-multi-enter.json",
+        "evidence/run4-05c-hotkey-matrix.json"
+      ],
+      "status": "confirmed"
+    },
+    {
+      "id": "C2",
+      "title": "连续按 Enter 是否逐个顺序批准、会不会批到还没看的下一项",
+      "expect": "连按不应批准尚未显示/尚未阅读的审批项",
+      "actual": "取决于按键与新面板出现时刻是否重叠。run7-11 P2（间隔 313ms）与 P3（间隔 140ms）第二次 Enter 落在「上一面板已消失、下一面板还没渲染」的空窗里，没有 click、也没有误批；同一会话的 P4（间隔 200ms 连按 5 次）里第 5 次 Enter 正好落在新渲染的 approval:12 上，把它批准了，最终剩下 approval:13。会话日志 session-5cbc5e08 的 approval/decided 序列可佐证同一次会话内出现连续的 allowed-once。",
+      "evidence": [
+        "evidence/run7-11-multi-enter.json",
+        "evidence/session-session-5cbc5e08-e4d0-4061-9f34-1f9cb540f175.jsonl"
+      ],
+      "status": "confirmed",
+      "defect": true,
+      "defect_note": "手快连按时可能批准用户尚未阅读的下一个审批请求：插件没有节流，也没有「新面板出现后需重新确认」的机制。同一根因的第二种读数见 G1。"
+    },
+    {
+      "id": "C3",
+      "title": "焦点是否可见（aria-selected / data-active / :focus-visible）",
+      "expect": "若插件接管焦点，应有可读的焦点标记",
+      "actual": "插件不移动焦点：面板出现期间 activeElement 始终是 BODY 或输入框，面板根节点 focusWithin 恒为 false（run5-07、run5-08、run9-15 多份读数的 `focusWithinPanel:false`）。因为没有「多面板焦点」这个对象，此项不适用，不计为缺陷。",
+      "evidence": [
+        "evidence/run5-07-matrix.json",
+        "evidence/run5-08-guards.json"
+      ],
+      "status": "confirmed"
+    },
+    {
+      "id": "D1",
+      "title": "焦点在输入框时 Enter 是否误批准",
+      "expect": "焦点在 input/textarea/contenteditable 时，Enter 应交给输入框，不应批准",
+      "actual": "焦点在侧栏搜索框 INPUT.bhn1Oq_searchInput（宽 4px）：run5-08 B 的 Enter capture/bubble dp 均为 false、无 click、面板仍为 [approval:2]；run9-16 B 复现同样结果。焦点在 composer DIV.uV2eYG_input 且无面板时 Enter 被 preventDefault（dp=true），但对照组无插件时同样为 true，属宿主输入框自身行为。审批面板在场时 composer 不可聚焦（focus() 返回 null，可编辑元素只剩侧栏搜索框），所以「边打字边弹面板」这个场景在本宿主里需焦点先被挪走才可能出现。",
+      "evidence": [
+        "evidence/run5-08-guards.json",
+        "evidence/run9-16-focus-burst.json",
+        "evidence/run9-17-composer.json",
+        "evidence/run7-12-attribution.json"
+      ],
+      "status": "confirmed"
+    },
+    {
+      "id": "D2",
+      "title": "焦点在输入框时 Esc 是否误拒绝",
+      "expect": "焦点在可编辑元素时 Esc 不应触发拒绝",
+      "actual": "run9-16 A：焦点 INPUT.bhn1Oq_searchInput，Esc 的 capture/bubble 均无 dp、无 click，panelBefore 与 panelAfter 都是 [approval:2]，activeAfter 仍是该 INPUT；run5-08 的同类用例同样无 click。",
+      "evidence": [
+        "evidence/run9-16-focus-burst.json",
+        "evidence/run5-08-guards.json",
+        "evidence/run9-16-A-input-esc.png"
+      ],
+      "status": "confirmed"
+    },
+    {
+      "id": "D3",
+      "title": "焦点在页面按钮上时 Enter 的实际归属",
+      "expect": "应走浏览器原生按钮激活，插件不应同时点击面板",
+      "actual": "run5-08 C：焦点在 BUTTON.hHd-Xa_brand，click 记录到的是空文本按钮（原生激活，disabled=false），面板从 count=1 变 0，active 回到 DIV.uV2eYG_input。无插件对照 run6-09 的 E'_panel_buttonFocus_enter 表现相同（面板消失、active 回 composer），说明这条路径归宿主，不是插件代批。",
+      "evidence": [
+        "evidence/run5-08-guards.json",
+        "evidence/run6-09-control.json",
+        "evidence/run5-08-C-button-focus.png"
+      ],
+      "status": "confirmed"
+    },
+    {
+      "id": "E1",
+      "title": "组合键（Ctrl/Shift/Alt+Enter）是否被插件吞掉或误批准",
+      "expect": "带修饰键的 Enter 不应批准",
+      "actual": "run5-07 T7：Ctrl+Enter、Shift+Enter、Alt+Enter 三次之后面板仍是 [approval:6]、count=1、按钮都 enabled，无 click；run9-15 T4 复现：三种组合的 panelAfter 都保持 [approval:4]，事件里 dp 全 false。",
+      "evidence": [
+        "evidence/run5-07-matrix.json",
+        "evidence/run9-15-gaps.json"
+      ],
+      "status": "confirmed"
+    },
+    {
+      "id": "E2",
+      "title": "宿主自身快捷键（Ctrl+Alt+N 新会话）在面板在场时的行为",
+      "expect": "宿主快捷键应照常工作，插件不应拦截",
+      "actual": "run7-13 hostShortcut_panelPresent：面板 [approval:3] 在场时按 Ctrl+Alt+N，三段 keydown 的 dp 全为 false，之后面板 count=0、active 回到 DIV.uV2eYG_input、页面 tail 出现「设置 / 探索未至之境 / 预览版 / 默认工作区 / 标准模式」等新会话界面文案 —— 宿主换会话成功，插件未插手。run5-07 T8 与 run9-15 T5 用点击「新会话 Ctrl + Alt + N」得到同样结果。",
+      "evidence": [
+        "evidence/run7-13-final.json",
+        "evidence/run5-07-matrix.json",
+        "evidence/run9-15-gaps.json",
+        "evidence/run7-13-host-shortcut.png"
+      ],
+      "status": "confirmed"
+    },
+    {
+      "id": "E3",
+      "title": "宿主原生 Enter/Esc 在无插件时是否本来就批准/拒绝（归因对照）",
+      "expect": "若宿主自己也处理，则不能把行为记在插件头上",
+      "actual": "对照 profile ah0（无插件）run6-09：面板 [approval:2] 在场、焦点 BODY，Enter 后仍是 [approval:2]；Esc 后仍是 [approval:3]（面板未应答、只是换成了下一个待审批）。run8-12（无插件）同理：afterEnter 与 afterEsc 都保持 [approval:1]。而装插件的 run7-12：（2→3→4）每次都前进。归因成立：批准/拒绝确实由插件触发。",
+      "evidence": [
+        "evidence/run6-09-control.json",
+        "evidence/run8-12-attribution.json",
+        "evidence/run7-12-attribution.json"
+      ],
+      "status": "confirmed"
+    },
+    {
+      "id": "F1",
+      "title": "无面板时 Esc 是否被插件吞掉",
+      "expect": "无面板时 Esc 不应被拦截",
+      "actual": "run5-08 G（只按 Esc，无面板、焦点 BODY）：capture 与 bubble 的 dp 均为 false；run7-12 与 run8-12 的 noPanel_bodyFocus 里 Escape 同样 dp=false。",
+      "evidence": [
+        "evidence/run5-08-guards.json",
+        "evidence/run7-12-attribution.json",
+        "evidence/run8-12-attribution.json"
+      ],
+      "status": "confirmed"
+    },
+    {
+      "id": "F2",
+      "title": "无面板时按 Enter 页面是否有可见副作用（滚动/焦点移动/弹层）",
+      "expect": "无插件行为",
+      "actual": "run5-08 A 与 run7-12 noPanel_bodyFocus：Enter 的 dp 全 false、active 保持 BODY，未记录到弹层或焦点移动。未单独截图对比滚动位置，只读到 activeElement 与 dp。",
+      "evidence": [
+        "evidence/run5-08-guards.json",
+        "evidence/run7-12-attribution.json"
+      ],
+      "status": "confirmed"
+    },
+    {
+      "id": "G1",
+      "title": "连按 Enter（200ms 内 3–5 次）是否只批准一次",
+      "expect": "不应批准超过一次，也不应误批后续项",
+      "actual": "两种间隔结果不同：run9-16 C（间隔 250ms 按 3 次）只有第 1 次 click，第 2、3 次落在空窗，随后 approval:6 自行出现且未被批；run7-11 P4（间隔 200ms 按 5 次）产生 2 次 click，第 5 次把新出现的 approval:12 批掉了（见 C2）。run4-05c T3/T4 的快速与长按同样只出现 1 次 click。因此「连按必误批」不成立，「连按在特定时间窗内会误批」成立。",
+      "evidence": [
+        "evidence/run9-16-focus-burst.json",
+        "evidence/run7-11-multi-enter.json",
+        "evidence/run4-05c-hotkey-matrix.json",
+        "evidence/run9-16-C-burst.png"
+      ],
+      "status": "confirmed",
+      "defect": false,
+      "defect_note": "与 C2 同一根因（缺少按键节流 / 新面板确认），不重复计数；本条只记录两种按键间隔下的不同结果。"
+    },
+    {
+      "id": "G2",
+      "title": "同一 tick 内连发两个 Enter 的点击次数",
+      "expect": "只应点击一次",
+      "actual": "run5-08 F_doubleEnter_sameTick：合成 KeyboardEvent 在同一 tick 连发两次，记录到两条 `click:允许一次`（按钮均 disabled=false），两次 keydown 的 bubble 段 dp 都为 true；面板最终 count=0。会话结果上未产生第二次批准（按钮 disabled + 审批已结算），但确实发生了第二次 click 调用。",
+      "evidence": [
+        "evidence/run5-08-guards.json",
+        "evidence/run5-08-F-double-enter.png"
+      ],
+      "status": "confirmed",
+      "defect": true,
+      "defect_note": "同一次按键序列内对同一按钮发出两次点击调用；靠宿主按钮 disabled 兜底才没造成二次批准，属于依赖下游状态而非自身幂等。"
+    },
+    {
+      "id": "G3",
+      "title": "审批面板中途消失后按键是否报错/留悬挂监听",
+      "expect": "无异常",
+      "actual": "run5-07 T8：面板 [approval:6] 在场时点「新会话」，面板消失、active 回 composer；随后 Enter 的 dp=true 但无 click，Esc 的 dp=false 无 click，均无 pageerror。run4-05c T7、run9-15 T6、run7-13 hostShortcut 同样无 errors、无 console error。",
+      "evidence": [
+        "evidence/run5-07-matrix.json",
+        "evidence/run4-05c-hotkey-matrix.json",
+        "evidence/run9-15-gaps.json"
+      ],
+      "status": "confirmed"
+    },
+    {
+      "id": "G4",
+      "title": "IME 组字中的 Enter 是否被拦",
+      "expect": "isComposing=true 时不应批准",
+      "actual": "run5-08 D：派发 composing=true / keyCode=229 的 Enter，capture 与 bubble 的 dp 均为 false，无 click，面板仍为 [approval:3]。注：这是合成 KeyboardEvent，未用真实中文输入法验证。",
+      "evidence": [
+        "evidence/run5-08-guards.json"
+      ],
+      "status": "confirmed"
+    },
+    {
+      "id": "G5",
+      "title": "repeat=true（按住连发）的 Enter 是否被拦",
+      "expect": "不应批准",
+      "actual": "run5-08 E：派发 repeat=true 的 Enter，dp 全 false、无 click、面板仍为 [approval:3]。另 run4-05c T4 用 keyboard.down 按住 1.5 秒只产生 1 次 click（Playwright 的 down 不产生 OS 级 repeat 事件，故不能替代真实长按）。",
+      "evidence": [
+        "evidence/run5-08-guards.json",
+        "evidence/run4-05c-hotkey-matrix.json"
+      ],
+      "status": "confirmed"
+    },
+    {
+      "id": "H1",
+      "title": "提问/选择面板（[data-question-key]）的 Enter/Esc 行为",
+      "expect": "按 README：Enter 提交/下一题，Esc 放弃整组",
+      "actual": "未测：本次所有 run 只构造出审批面板（[data-approval-key]），页面里从未出现 [data-question-key] 节点。缺的条件是需要一个会调用 ask_user_question 的真实工具轮次或等价真实事件；本轮未做。",
+      "evidence": [],
+      "status": "untested",
+      "reason": "证据里没有任何 [data-question-key] 的面板读数；不把审批面板的结论外推到提问面板。"
+    },
+    {
+      "id": "H2",
+      "title": "计划审查面板（[data-plan-review-key]）的 Enter/Esc 行为",
+      "expect": "按 README：Enter 确认执行，Esc 拒绝；无拒绝按钮时退化为去聊天",
+      "actual": "未测：本次没有构造出计划审查面板，run7-14 只在 bundle 里找到 planReviewSel 这个选择器字符串，属于代码事实而非运行时读数。",
+      "evidence": [],
+      "status": "untested",
+      "reason": "缺真实的 plan-review 事件流；静态选择器命中不能当行为结论。"
+    },
+    {
+      "id": "H3",
+      "title": "真实中文输入法下按 Enter 确认候选词是否被误批准",
+      "expect": "不应批准",
+      "actual": "未测：只用了合成 KeyboardEvent（isComposing=true / keyCode 229），没有用真实 IME 输入中文并确认候选词。合成事件能证明代码路径被 isComposing 拦住，但不能证明真实输入法下的时序。",
+      "evidence": [],
+      "status": "untested",
+      "reason": "需要真实 IME 会话与人工按键；自动化只能合成事件。"
+    },
+    {
+      "id": "H4",
+      "title": "Esc「暂停键盘审阅」后的恢复方式",
+      "expect": "按任务书口径：暂停后应能恢复",
+      "actual": "未测：README.zh.md 明确写「无面板时 Esc 不拦截（不做暂停/停止——那是 GUI 停止生成按钮与既有快捷键的职责）」，即产品本身没有这个功能，因此没有可测的恢复路径；B3 的矛盾读数也未收敛。",
+      "evidence": [],
+      "status": "untested",
+      "reason": "被测对象未实现该功能；按「不把未实现的功能当缺陷」处理，记未测并说明。"
+    },
+    {
+      "id": "I1",
+      "title": "连按导致的下一面板延迟（下一条审批出现的时间）",
+      "expect": "无明确预期，只做时序记录",
+      "actual": "run7-11 P1：批准 approval:2 后 625ms 才出现 approval:3，中间 0–314ms 无面板；run9-16 C 的同类观测显示 400–600ms 区间（approval:5 消失后 12590–12604ms 之间新面板出现）。这段延迟由宿主产生还是插件影响，本次无法区分。",
+      "evidence": [
+        "evidence/run7-11-multi-enter.json",
+        "evidence/run9-16-focus-burst.json"
+      ],
+      "status": "uncertain"
+    },
+    {
+      "id": "I2",
+      "title": "多待审批项是否会被插件按位置猜着点（运行时读不到的降级路径）",
+      "expect": "运行时能报出待应答请求时只应答那一个",
+      "actual": "本次所有运行的宿主都能报出 pendingInteraction（run7-14 的 marker `pendingInteraction:true` 在 bundle 里命中），因此插件的降级分支（DOM 里第一个可见面板）从未被触发，无法测到。已知残留面板在切换会话后会被移除（G3），没有观察到误点。",
+      "evidence": [
+        "evidence/run7-14-load.json"
+      ],
+      "status": "untested",
+      "reason": "要触发降级分支需构造「运行时读不到 uiSession」的宿主版本或字段改名，本次宿主版本固定，做不到。"
+    },
+    {
+      "id": "J1",
+      "title": "两站查重是否已有同范围重复",
+      "expect": "两站都查清才可写首报",
+      "actual": "评测站 review.lingshulab.com 的 ?q= 服务端不过滤，故拉全量：/api/reviews 9 页共 172 条、/api/plugins 7 页共 133 条，本地扫描 dsh-approval-hotkeys / approval-hotkeys / SiriLee / sirilee / 审批快捷键 五个关键词，hits 均为空。悬赏仓 FuRongJun-1999/dsh-bounty：dsh-approval-hotkeys=0、approval-hotkeys=0、SiriLee=1（#987 是 dsh-edit-approval，不同插件）、approval=65 条逐条比对标题后无本插件。结论：两站均无同范围重复。",
+      "evidence": [
+        "evidence/dedup-final.json",
+        "evidence/dedup-lingshulab-full.json",
+        "evidence/dedup-github-bounty.json",
+        "evidence/dedup-lingshulab-scan.json"
+      ],
+      "status": "confirmed"
+    }
+  ],
+  "not_covered": [
+    "真实中文输入法（H3）",
+    "提问面板与计划审查面板（H1/H2）",
+    "插件降级分支（I2）",
+    "Esc 暂停键盘审阅（H4，对象未实现）",
+    "真实长按产生 OS 级 repeat（G5 只覆盖合成 repeat 与 Playwright down）"
+  ]
+}

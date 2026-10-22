@@ -1,0 +1,31 @@
+{
+  "port": 6756,
+  "results": [
+    {
+      "requested": "nocurrent",
+      "mode": "nocurrent",
+      "applied": true,
+      "seats": 0,
+      "anchors": 0,
+      "userRows": 8,
+      "seatDisplay": null,
+      "styleTag": true,
+      "loadOlderCalls": 0,
+      "ariaFirst": null,
+      "pageErrors": []
+    },
+    {
+      "requested": "withcurrent",
+      "mode": "withcurrent",
+      "applied": true,
+      "seats": 1,
+      "anchors": 8,
+      "userRows": 8,
+      "seatDisplay": "block",
+      "styleTag": true,
+      "loadOlderCalls": 1,
+      "ariaFirst": "跳转到第 1 轮：提示 1：第 1 个问题，长度 字字字字字字",
+      "pageErrors": []
+    }
+  ]
+}

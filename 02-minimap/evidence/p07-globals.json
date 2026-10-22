@@ -1,0 +1,50 @@
+{
+  "globals": {
+    "keys": [
+      "__DSH_MINIMAP_CONFIG__",
+      "__DSH_CONTACT_CONFIG__",
+      "__ModuleLoader__",
+      "__DSH_BOOT__",
+      "__DSH_SHORTCUTS_CONFIG__",
+      "__DSH_DOCUMENT_PREVIEW_CONFIG__",
+      "__DSH_MODELS_ONBOARDING__",
+      "__DSH_CONNECTION_RECOVERY__",
+      "__DSH_BOOT_READY__",
+      "__zod_globalRegistry",
+      "__schemastery_index__",
+      "__schemastery_refs__",
+      "__zod_globalConfig"
+    ],
+    "moduleLoader": "object",
+    "loaderKeys": [
+      "mode",
+      "pendingQueue",
+      "load",
+      "create"
+    ]
+  },
+  "probe": {
+    "attempts": [
+      {
+        "k": "window.cordis",
+        "v": "undefined"
+      },
+      {
+        "k": "window.__cordis__",
+        "v": "undefined"
+      },
+      {
+        "k": "window.__DSH_CLIENT__",
+        "v": "undefined"
+      }
+    ],
+    "mlType": "object",
+    "mlKeys": [
+      "mode",
+      "pendingQueue",
+      "load",
+      "create"
+    ]
+  },
+  "errors": []
+}

@@ -1,0 +1,16 @@
+﻿{
+  "ok": true,
+  "panelPresent": false,
+  "panelRect": null,
+  "itemCount": 0,
+  "userRowCount": 0,
+  "storage": {
+    "dsh.workspace.view.v5": "{\"groupBy\":\"workspace\",\"orderBy\":\"updated\",\"groupExpansion\":{\"3d66859e-4425-4721-afaf-24874aee434a\":true},\"sessionOrderByAccount\":{},\"archivedFilter\":\"default\"}",
+    "dsh.sessions.current": "{\"sessionId\":\"session-cded7315-a936-41eb-a3db-96e7a8c6eac8\"}",
+    "dsh.sidebar-right.v1.session-cded7315-a936-41eb-a3db-96e7a8c6eac8": "{\"bySession\":{\"session-cded7315-a936-41eb-a3db-96e7a8c6eac8\":{\"layout\":{\"nodes\":{\"pane1\":{\"kind\":\"pane\",\"id\":\"pane1\",\"host\":\"dock\",\"tabs\":[]}},\"tabs\":{},\"rootId\":\"pane1\",\"floats\":[],\"activePaneId\":\"pane1\",\"expanded\":false,\"mode\":\"push\"},\"minted\":1}}}"
+  },
+  "sessionRows": [
+    "新会话"
+  ],
+  "url": "http://127.0.0.1:2122/"
+}

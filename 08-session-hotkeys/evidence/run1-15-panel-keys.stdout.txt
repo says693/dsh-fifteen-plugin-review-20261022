@@ -1,0 +1,169 @@
+﻿{
+  "utc": "2026-10-22T01:08:14.327Z",
+  "t0": {
+    "n": 2,
+    "rows": [
+      {
+        "k": "session:session-b82a64e0-a6be-45a6-a240-f057d74ca6e0",
+        "t": "新会话",
+        "sel": "true"
+      },
+      {
+        "k": "session:session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e",
+        "t": "周记·第一篇 1分钟",
+        "sel": "false"
+      }
+    ],
+    "active": "session:session-b82a64e0-a6be-45a6-a240-f057d74ca6e0",
+    "toast": null,
+    "focus": {
+      "tag": "INPUT",
+      "role": null,
+      "aria": "API 密钥",
+      "cls": "zGbnIq_input"
+    },
+    "ls": {
+      "dsh.session-hotkeys.dsvHidden": "0",
+      "dsh.sessions.current": "{\"sessionId\":\"session-b82a64e0-a6be-45a6-a240-f057d74ca6e0\"}",
+      "dsh.sidebar-right.v1.session-b82a64e0-a6be-45a6-a240-f057d74ca6e0": "{\"bySession\":{\"session-b82a64e0-a6be-45a6-a240-f057d74ca6e0\":{\"layout\":{\"nodes\":{\"pane1\":{\"kind\":\"pane\",\"id\":\"pane1\",\"host\":\"dock\",\"tabs\":[]}},\"tabs\":{},\"rootId\":\"pane1\",\"floats\":[],\"activePaneId\":\"pane1\",\"expanded\":false,\"mode\":\"push\"},\"minted\":1}}}",
+      "dsh.workspace.view.v5": "{\"groupBy\":\"workspace\",\"orderBy\":\"updated\",\"groupExpansion\":{\"194af2d3-53e4-4f7e-b44f-e51c135ab047\":true},\"sessionOrderByAccount\":{},\"archivedFilter\":\"default\"}"
+    }
+  },
+  "panelAfterAltP": {
+    "shkNodeCount": 127,
+    "classes": [
+      "shk-pinbtn",
+      "shk-pop",
+      "shk-head",
+      "shk-head-icon",
+      "shk-head-title",
+      "shk-head-esc",
+      "shk-tabs",
+      "shk-tab shk-tab-on",
+      "shk-tab",
+      "shk-rows",
+      "shk-helpsec",
+      "shk-keyrow",
+      "shk-keyline",
+      "shk-keyname",
+      "shk-keyval",
+      "shk-mini",
+      "shk-keydesc",
+      "shk-keyrow shk-keyrow-danger",
+      "shk-tipbox",
+      "shk-hint",
+      "shk-current"
+    ],
+    "panelText": "",
+    "bodyHasTitle": true
+  },
+  "keysTab": {
+    "found": true,
+    "text": "按键"
+  },
+  "keysRows": {
+    "rowCount": 19,
+    "keyvalCount": 18,
+    "pairs": [
+      {
+        "text": "常用 导航模式 Alt+` 改键 导航模式：↑↓ 选择 · Enter 进入 顺序切换第 N 个会话 Alt+1-9 改键 按显示顺序切换第 N 个会话 上一个"
+      },
+      {
+        "text": "导航模式 Alt+` 改键 导航模式：↑↓ 选择 · Enter 进入"
+      },
+      {
+        "text": "顺序切换第 N 个会话 Alt+1-9 改键 按显示顺序切换第 N 个会话"
+      },
+      {
+        "text": "上一个会话 Alt+↑ 改键 切换到显示顺序中的上一个会话"
+      },
+      {
+        "text": "下一个会话 Alt+↓ 改键 切换到显示顺序中的下一个会话"
+      },
+      {
+        "text": "新建会话 Alt+N 改键 新建会话"
+      },
+      {
+        "text": "打开面板 Alt+P 改键 打开 / 关闭本面板"
+      },
+      {
+        "text": "折叠 / 展开会话栏 Alt+B 改键 折叠或展开左侧会话栏"
+      },
+      {
+        "text": "关闭聚焦面板 / 退出分屏 Alt+W 改键 关闭聚焦的分屏面板；只剩一个时收起整个分屏"
+      },
+      {
+        "text": "聚焦模型选择 Alt+M 改键 聚焦模型选择（再按一次回到输入框）"
+      },
+      {
+        "text": "聚焦输入框 Alt+Enter 改键 把焦点移回聊天输入框"
+      },
+      {
+        "text": "退焦输入框 · 回到聊天区 Esc 改键 Esc 聚焦聊天区；再按一次还原原焦点"
+      },
+      {
+        "text": "非默认方式发送 Alt+Shift+Enter 改键 以与「忙时 Enter 行为」相反的方式发送当前消息"
+      },
+      {
+        "text": "聚焦搜索 Alt+Shift+F 改键 聚焦并清空搜索框"
+      },
+      {
+        "text": "归档当前会话 Alt+Shift+A 改键 归档当前会话（先弹确认卡片，可在「已归档」页查看）"
+      },
+      {
+        "text": "打开已归档列表 Alt+Shift+U 改键 打开「已归档」会话列表页"
+      },
+      {
+        "text": "重命名当前会话 Alt+Shift+R 改键 重命名当前会话"
+      },
+      {
+        "text": "固定槽位（三态） Alt+Shift+1-9 改键 槽位三态：固定 / 跳转 / 取消"
+      },
+      {
+        "text": "跳转固定槽位 Ctrl+Alt+1-9 改键 纯跳转到固定槽位"
+      }
+    ],
+    "keyvals": [
+      "Alt+`",
+      "Alt+1-9",
+      "Alt+↑",
+      "Alt+↓",
+      "Alt+N",
+      "Alt+P",
+      "Alt+B",
+      "Alt+W",
+      "Alt+M",
+      "Alt+Enter",
+      "Esc",
+      "Alt+Shift+Enter",
+      "Alt+Shift+F",
+      "Alt+Shift+A",
+      "Alt+Shift+U",
+      "Alt+Shift+R",
+      "Alt+Shift+1-9",
+      "Ctrl+Alt+1-9"
+    ],
+    "allShkText": [
+      "shk-pinbtn",
+      "shk-pop",
+      "shk-head",
+      "shk-head-icon",
+      "shk-head-title",
+      "shk-head-esc",
+      "shk-tabs",
+      "shk-tab",
+      "shk-rows",
+      "shk-helpsec",
+      "shk-keyrow",
+      "shk-keyline",
+      "shk-keyname",
+      "shk-keyval",
+      "shk-mini",
+      "shk-keydesc",
+      "shk-tipbox",
+      "shk-hint",
+      "shk-current"
+    ]
+  },
+  "errors": []
+}

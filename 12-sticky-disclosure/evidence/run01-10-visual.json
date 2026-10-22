@@ -1,0 +1,289 @@
+{
+  "cases": [
+    {
+      "name": "a-light-1440",
+      "opts": {
+        "width": 1440,
+        "height": 1000,
+        "colorScheme": "light"
+      },
+      "expanded": 2,
+      "pillCount": "2",
+      "pillText": "全部收起 ·2",
+      "viewport": {
+        "w": 1440,
+        "h": 1000
+      },
+      "dark": false,
+      "htmlDarkAttr": null,
+      "bodyBg": "rgb(255, 255, 255)",
+      "docOverflowX": false,
+      "scrollport": {
+        "x": 280,
+        "y": 76,
+        "w": 1158,
+        "h": 924
+      },
+      "pill": {
+        "x": 1277,
+        "y": 952,
+        "w": 105,
+        "h": 32,
+        "inView": true,
+        "overlapsScrollportRight": -56,
+        "overlapsScrollportBottom": -16
+      },
+      "gear": {
+        "x": 1390,
+        "y": 952,
+        "w": 32,
+        "h": 32,
+        "inView": true
+      },
+      "pillStyle": {
+        "bg": "rgb(255, 255, 255)",
+        "color": "rgb(97, 102, 107)",
+        "border": "rgba(0, 0, 0, 0.12)",
+        "z": "15",
+        "fontSize": "12px",
+        "opacity": "1"
+      },
+      "topmostAtPillCenter": {
+        "tag": "SPAN",
+        "cls": "dshSd_label",
+        "isPill": true
+      },
+      "contrast": 5.8,
+      "errors": [],
+      "consoleErr": []
+    },
+    {
+      "name": "b-dark-1440",
+      "opts": {
+        "width": 1440,
+        "height": 1000,
+        "colorScheme": "dark"
+      },
+      "expanded": 2,
+      "pillCount": "2",
+      "pillText": "全部收起 ·2",
+      "viewport": {
+        "w": 1440,
+        "h": 1000
+      },
+      "dark": true,
+      "htmlDarkAttr": null,
+      "bodyBg": "rgb(21, 21, 23)",
+      "docOverflowX": false,
+      "scrollport": {
+        "x": 280,
+        "y": 76,
+        "w": 1158,
+        "h": 924
+      },
+      "pill": {
+        "x": 1277,
+        "y": 952,
+        "w": 105,
+        "h": 32,
+        "inView": true,
+        "overlapsScrollportRight": -56,
+        "overlapsScrollportBottom": -16
+      },
+      "gear": {
+        "x": 1390,
+        "y": 952,
+        "w": 32,
+        "h": 32,
+        "inView": true
+      },
+      "pillStyle": {
+        "bg": "rgb(44, 44, 46)",
+        "color": "rgb(207, 211, 214)",
+        "border": "rgba(255, 255, 255, 0.16)",
+        "z": "15",
+        "fontSize": "12px",
+        "opacity": "1"
+      },
+      "topmostAtPillCenter": {
+        "tag": "SPAN",
+        "cls": "dshSd_label",
+        "isPill": true
+      },
+      "contrast": 9.25,
+      "errors": [],
+      "consoleErr": []
+    },
+    {
+      "name": "c-narrow-320",
+      "opts": {
+        "width": 320,
+        "height": 700,
+        "colorScheme": "light"
+      },
+      "expanded": 2,
+      "pillCount": "2",
+      "pillText": "全部收起 ·2",
+      "viewport": {
+        "w": 320,
+        "h": 700
+      },
+      "dark": false,
+      "htmlDarkAttr": null,
+      "bodyBg": "rgb(255, 255, 255)",
+      "docOverflowX": false,
+      "scrollport": {
+        "x": 280,
+        "y": 92,
+        "w": 38,
+        "h": 608
+      },
+      "pill": {
+        "x": 157,
+        "y": 652,
+        "w": 105,
+        "h": 32,
+        "inView": true,
+        "overlapsScrollportRight": -56,
+        "overlapsScrollportBottom": -16
+      },
+      "gear": {
+        "x": 270,
+        "y": 652,
+        "w": 32,
+        "h": 32,
+        "inView": true
+      },
+      "pillStyle": {
+        "bg": "rgb(255, 255, 255)",
+        "color": "rgb(97, 102, 107)",
+        "border": "rgba(0, 0, 0, 0.12)",
+        "z": "15",
+        "fontSize": "12px",
+        "opacity": "1"
+      },
+      "topmostAtPillCenter": {
+        "tag": "SPAN",
+        "cls": "dshSd_label",
+        "isPill": true
+      },
+      "contrast": 5.8,
+      "errors": [],
+      "consoleErr": []
+    },
+    {
+      "name": "d-narrow-dark-320",
+      "opts": {
+        "width": 320,
+        "height": 700,
+        "colorScheme": "dark"
+      },
+      "expanded": 2,
+      "pillCount": "2",
+      "pillText": "全部收起 ·2",
+      "viewport": {
+        "w": 320,
+        "h": 700
+      },
+      "dark": true,
+      "htmlDarkAttr": null,
+      "bodyBg": "rgb(21, 21, 23)",
+      "docOverflowX": false,
+      "scrollport": {
+        "x": 280,
+        "y": 92,
+        "w": 38,
+        "h": 608
+      },
+      "pill": {
+        "x": 157,
+        "y": 652,
+        "w": 105,
+        "h": 32,
+        "inView": true,
+        "overlapsScrollportRight": -56,
+        "overlapsScrollportBottom": -16
+      },
+      "gear": {
+        "x": 270,
+        "y": 652,
+        "w": 32,
+        "h": 32,
+        "inView": true
+      },
+      "pillStyle": {
+        "bg": "rgb(44, 44, 46)",
+        "color": "rgb(207, 211, 214)",
+        "border": "rgba(255, 255, 255, 0.16)",
+        "z": "15",
+        "fontSize": "12px",
+        "opacity": "1"
+      },
+      "topmostAtPillCenter": {
+        "tag": "SPAN",
+        "cls": "dshSd_label",
+        "isPill": true
+      },
+      "contrast": 9.25,
+      "errors": [],
+      "consoleErr": []
+    },
+    {
+      "name": "e-light-1280",
+      "opts": {
+        "width": 1280,
+        "height": 900,
+        "colorScheme": "light"
+      },
+      "expanded": 2,
+      "pillCount": "2",
+      "pillText": "全部收起 ·2",
+      "viewport": {
+        "w": 1280,
+        "h": 900
+      },
+      "dark": false,
+      "htmlDarkAttr": null,
+      "bodyBg": "rgb(255, 255, 255)",
+      "docOverflowX": false,
+      "scrollport": {
+        "x": 280,
+        "y": 76,
+        "w": 998,
+        "h": 824
+      },
+      "pill": {
+        "x": 1117,
+        "y": 852,
+        "w": 105,
+        "h": 32,
+        "inView": true,
+        "overlapsScrollportRight": -56,
+        "overlapsScrollportBottom": -16
+      },
+      "gear": {
+        "x": 1230,
+        "y": 852,
+        "w": 32,
+        "h": 32,
+        "inView": true
+      },
+      "pillStyle": {
+        "bg": "rgb(255, 255, 255)",
+        "color": "rgb(97, 102, 107)",
+        "border": "rgba(0, 0, 0, 0.12)",
+        "z": "15",
+        "fontSize": "12px",
+        "opacity": "1"
+      },
+      "topmostAtPillCenter": {
+        "tag": "SPAN",
+        "cls": "dshSd_label",
+        "isPill": true
+      },
+      "contrast": 5.8,
+      "errors": [],
+      "consoleErr": []
+    }
+  ]
+}

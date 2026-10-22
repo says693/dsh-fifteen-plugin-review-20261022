@@ -1,0 +1,298 @@
+{
+  "schema": "dsh-plugin-review-results/1",
+  "task": "fifteen-plugin-reviews-20261022 / r1-02 / dsh-conversation-minimap@1.3.4",
+  "verdict_summary": {
+    "checks_total": 24,
+    "confirmed": 21,
+    "uncertain": 2,
+    "untested": 1,
+    "blocking_defect": "C1 — the minimap never mounts on dsh 0.2.0-rc.2 because the plugin reads sessions.list.getSnapshot().current, a field the host's SessionListState does not have"
+  },
+  "checks": [
+    {
+      "id": "C1",
+      "title": "Real host: the minimap rail never appears in any conversation",
+      "expect": "After installing 1.3.4 and opening a conversation with >= 4 user prompts, a vertical rail (.dsh-mm-seat containing .dsh-mm-anchor) appears at the left edge.",
+      "actual": "Across 5 synthetic sessions (0/1/3/8/25 user prompts) and 5 viewport/theme combinations, .dsh-mm-seat count = 0 and .dsh-mm-anchor count = 0, while the host half clearly ran: window.__DSH_MINIMAP_CONFIG__ = {enabled:true,minPrompts:4,anchorSize:3} and <style id=\"dsh-conversation-minimap-style\"> (2297 chars) were both present. Zero page errors, zero console errors/warnings.",
+      "status": "confirmed",
+      "evidence": ["evidence/p06-rail-report.json", "evidence/p06-mixed.png", "evidence/p13-realhost-matrix.json", "evidence/p13-w1440-light.png", "evidence/p04-diag.json"],
+      "readings": {
+        "sessions_opened": { "mixed(8)": "anchors=0 users=8", "long(48, window shows 25)": "anchors=0 users=25", "three(3)": "anchors=0 users=3", "tiny(1)": "anchors=0 users=1" },
+        "config_injected": true,
+        "style_tag_present": true,
+        "page_errors": 0,
+        "console_errors_or_warnings": 0
+      }
+    },
+    {
+      "id": "C2",
+      "title": "Root cause of C1: sessionId is always null, so the controller is never created",
+      "expect": "MountManager.check() obtains a session id and instantiates MinimapController.",
+      "actual": "client.js:770-775 reads `this.ctx.sessions.list.getSnapshot().current`. The host's SessionListState (dsh-api-session-controller/lib/types/client/sessions/service.d.ts) is `{ids, byId, phase, projectionsBySession}` — there is no `current`. The store's initial value (lib/types/client/sessions/service.js:166) is `{ids:[], byId:{}, phase:'pending', projectionsBySession:{}}`. Official UI code (dsh-client-ui-session/lib/client.js:281-283) instead uses `byId` plus its own binding source. Therefore `currentSessionId()` returns null forever, `check()` calls destroy() and returns before ever constructing the controller, and no seat is created. Nothing throws, which is why the failure is completely silent.",
+      "status": "confirmed",
+      "evidence": ["evidence/p08-ctx-scan.json", "evidence/p09-ctx-capture.json", "evidence/p10-baseline-result.json", "evidence/p11-loader-ids.json"],
+      "readings": {
+        "host_snapshot_shape_verified_in": "dsh-api-session-controller/lib/types/client/sessions/service.d.ts (SessionListState) + service.js:166 initial value",
+        "plugin_reads": "ctx.sessions.list.getSnapshot().current (client.js currentSessionId())",
+        "plugin_apply_ran": true,
+        "seat_created": 0
+      }
+    },
+    {
+      "id": "C3",
+      "title": "Differential proof that the missing `current` field is the sole blocker",
+      "expect": "If the missing field is the only reason the rail is absent, then the same published bundle must render nothing with the real snapshot shape and render fully when `current` is supplied.",
+      "actual": "Same byte-identical client.js served twice. `nocurrent` (snapshot = {ids,byId,phase,projectionsBySession}, exactly like the host): applied=true, seats=0, anchors=0, loadOlderCalls=0, no errors. `withcurrent` (same snapshot + current:'s1'): applied=true, seats=1, anchors=8, anchor count == 8 user rows, seat display=block, loadOlderCalls=1, first aria-label \"跳转到第 1 轮：…\". So one missing field flips a completely dead feature into a fully working one.",
+      "status": "confirmed",
+      "evidence": ["evidence/p12-stub-result.json", "evidence/p12-stub-nocurrent.png", "evidence/p12-stub-withcurrent.png"],
+      "readings": {
+        "nocurrent": { "applied": true, "seats": 0, "anchors": 0, "userRows": 8, "loadOlderCalls": 0 },
+        "withcurrent": { "applied": true, "seats": 1, "anchors": 8, "userRows": 8, "loadOlderCalls": 1, "seatDisplay": "block" }
+      }
+    },
+    {
+      "id": "C4",
+      "title": "Anchor count matches user prompts exactly (measured in the controlled harness)",
+      "expect": "One anchor per user prompt.",
+      "actual": "8 prompts -> 8 anchors; 48 prompts -> 48 anchors; 1 prompt -> 1 anchor; 3 prompts -> hidden; 0 prompts -> hidden. Every anchor carries data-mm-key equal to the corresponding row's data-chat-anchor-key.",
+      "status": "confirmed",
+      "evidence": ["evidence/p14-behaviour.json", "evidence/p14-mixed-hover.png", "evidence/p14-long48.png"],
+      "readings": { "mixed": "8/8", "long48": "48/48", "minp0_one_prompt": "1/1" }
+    },
+    {
+      "id": "C5",
+      "title": "Block geometry does not encode message length or role",
+      "expect": "A minimap thumbnail that reflects the conversation would vary bar size by message length and/or colour by role.",
+      "actual": "All anchors are exactly 12x3 px, spaced 15 px apart (3 px bar + 12 px gap), all with background rgba(128,128,128,0.5), regardless of prompt length. Measured prompt lengths were 2/42/202/802/12/402/102/52 chars with row heights 46/46/86/246/46/146/66/46 px, and every anchor was still 12x3. The only content-dependent geometry is the hover fish-eye (see C6). Source constants: BASE_W=12, ANCHOR_H=3 (configurable 2-8), ANCHOR_GAP=12. This matches the README (\"one evenly-spaced horizontal capsule per user prompt\") so it is a design choice, not a bug — but it does mean the rail is a position index, not a thumbnail of the conversation.",
+      "status": "confirmed",
+      "evidence": ["evidence/p14-behaviour.json", "evidence/p14-mixed-hover.png"],
+      "readings": {
+        "anchor_widths_px": [12, 12, 12, 12, 12, 12, 12, 12],
+        "anchor_heights_px": [3, 3, 3, 3, 3, 3, 3, 3],
+        "anchor_gap_px": 15,
+        "prompt_chars": [2, 42, 202, 802, 12, 402, 102, 52],
+        "row_heights_px": [46, 46, 86, 246, 46, 146, 66, 46],
+        "role_distinction_in_rail": "none — user and steering anchors are styled identically; assistant rows get no anchor at all"
+      }
+    },
+    {
+      "id": "C6",
+      "title": "Hover: fish-eye magnification and prompt preview work",
+      "expect": "Hovering an anchor enlarges nearby bars and shows the prompt text.",
+      "actual": "Moving the pointer onto anchor #3 produced widths [20,35,44,35,20,13,12,12] (peak exactly the documented 44 px), 1 anchor with dsh-mm-hot, 5 with dsh-mm-enlarged, and a 380x160 preview panel reading \"Prompt\\n第三问长一点：字字…\". Camera-style bell curve confirmed.",
+      "status": "confirmed",
+      "evidence": ["evidence/p14-behaviour.json", "evidence/p14-mixed-hover.png"],
+      "readings": { "widths": [20, 35, 44, 35, 20, 13, 12, 12], "hot": 1, "enlarged": 5, "preview_px": "380x160" }
+    },
+    {
+      "id": "C7",
+      "title": "Click jumps to the corresponding message and highlights it",
+      "expect": "Clicking an anchor scrolls that message to the viewport centre and outlines it for about 2 s.",
+      "actual": "3 of 3 clicks moved the scroller and highlighted the right row. Anchor #7: scrollTop 0 -> 557, rowCentreOffset 0 px (exactly centred), jump-highlight on u7, dot turned green, active key became u7. Anchor #4: scrollTop 0 -> 3, offset 0. Anchor #1: scrollTop 557 -> 0, offset -461 px — the browser cannot scroll past the top, so the first message stays 461 px above the centre; the jump still lands correctly and highlights the right row.",
+      "status": "confirmed",
+      "evidence": ["evidence/p14-behaviour.json", "evidence/p14-after-jump.png"],
+      "readings": {
+        "jumps": [
+          { "anchor": 7, "before": 0, "after": 557, "centre_offset_px": 0, "highlight": true },
+          { "anchor": 1, "before": 557, "after": 0, "centre_offset_px": -461, "highlight": true },
+          { "anchor": 4, "before": 0, "after": 3, "centre_offset_px": 0, "highlight": true }
+        ]
+      }
+    },
+    {
+      "id": "C8",
+      "title": "Scroll tracking: the active bar follows the reading position",
+      "expect": "The highlighted bar switches as the reader scrolls, and stays inside the rail even when the column overflows.",
+      "actual": "With the scroller at 100/75/50/25/0 % the active key was u7/u6/u5/u4/u3 — strictly monotonic, no skipping. activeInRail was true in every sample. In the 48-anchor case the column overflows the 824 px rail, the inner column is translated (matrix(1,0,0,1,0,58)) and the seat gets a linear-gradient mask, so the outermost anchors fade instead of escaping.",
+      "status": "confirmed",
+      "evidence": ["evidence/p14-behaviour.json", "evidence/p14-scroll-sync.png", "evidence/p14-long48.png"],
+      "readings": {
+        "sequence": [
+          { "scroll_pct": 100, "active": "u7" }, { "scroll_pct": 75, "active": "u6" },
+          { "scroll_pct": 50, "active": "u5" }, { "scroll_pct": 25, "active": "u4" },
+          { "scroll_pct": 0, "active": "u3" }
+        ],
+        "active_in_rail_all_samples": true,
+        "long48_rail_height_px": 824,
+        "long48_transform": "matrix(1, 0, 0, 1, 0, 58)",
+        "long48_mask": "linear-gradient(...) applied"
+      }
+    },
+    {
+      "id": "C9",
+      "title": "Long session (48 prompts) and an 8000-char message: no jank",
+      "expect": "A 40+ prompt conversation stays responsive; a very long message does not break the rail.",
+      "actual": "48 anchors mounted in 2026 ms wall clock. 90 frames of continuous scrolling: median 5.6 ms, p95 5.7 ms, max 5.8 ms, 0 frames over 50 ms (i.e. no dropped frames at 60 Hz). The 8000-char prompt fixture produced 4 anchors with median 5.6 ms / p95 5.8 ms / max 5.9 ms / 0 frames over 50 ms. Note: this was measured in the controlled harness, because on the real host the rail does not appear at all (C1).",
+      "status": "confirmed",
+      "evidence": ["evidence/p14-behaviour.json", "evidence/p14-long48.png", "evidence/p14-huge.png"],
+      "readings": {
+        "long48": { "anchors": 48, "mountedMs": 2026, "medianMs": 5.6, "p95Ms": 5.7, "maxMs": 5.8, "framesOver50ms": 0 },
+        "huge_8000_chars": { "anchors": 4, "mountedMs": 2035, "medianMs": 5.6, "p95Ms": 5.8, "maxMs": 5.9, "framesOver50ms": 0 }
+      }
+    },
+    {
+      "id": "C10",
+      "title": "Master switch and minPrompts threshold behave as documented",
+      "expect": "enabled:false removes the rail entirely; a conversation below minPrompts shows no rail.",
+      "actual": "enabled:false -> 0 seats, 0 anchors (apply() returns early). minPrompts=4 with 1 or 3 prompts -> seat exists but display:none, 0 anchors. 4+ prompts -> visible. minPrompts=0 with 1 prompt -> 1 anchor, visible. Below-threshold conversations leave an inert seat div in the DOM (display:none), which is invisible but present.",
+      "status": "confirmed",
+      "evidence": ["evidence/p14-behaviour.json", "evidence/p14-tiny.png", "evidence/p14-three.png", "evidence/p14-empty.png"],
+      "readings": {
+        "enabled_false": { "seats": 0, "anchors": 0 },
+        "three_prompts_minPrompts4": { "seats": 1, "display": "none", "anchors": 0 },
+        "one_prompt_minPrompts0": { "anchors": 1, "display": "block" }
+      }
+    },
+    {
+      "id": "C11",
+      "title": "Rapid clicking leaves stale highlight outlines",
+      "expect": "After the 2 s highlight window, no message keeps a blue outline.",
+      "actual": "Three clicks 300 ms apart on anchors 2, 4 and 6: 3.5 s later (2.0 s highlight + 0.3 s fade + margin) two rows still carried .dsh-mm-jump-highlight (u2 and u4) and never cleared. A single click in the same fixture cleared correctly after the same wait. Root cause in source: onJump clears the previous *dot* state and the previous highlightTimer, but the earlier row's outline is only removed by its own 2 s timer, which is cancelled by the next click — so every jump except the last leaves a permanent outline.",
+      "status": "confirmed",
+      "evidence": ["evidence/p15-followups.json", "evidence/p15-rapid.png"],
+      "readings": {
+        "three_rapid_clicks_stale_highlights": ["u2", "u4"],
+        "stale_count_after_3_5s": 2,
+        "single_click_stale_count_after_2_6s": 0
+      }
+    },
+    {
+      "id": "C12",
+      "title": "Narrow windows: 1000 px fine, 760 px and below the rail is gone",
+      "expect": "The rail stays readable in narrow windows without covering message text.",
+      "actual": "1440 px and 1000 px: seat box x=10 width=72, first message row starts at x=96, rows overlapping the seat box = 0 (no occlusion). At 760 px and 600 px the @media (max-width:767px) rule sets display:none, so 8 anchors still exist in the DOM but every box is 0x0 and nothing is visible. That is a silent disappearance: nothing on screen tells the user the feature turned itself off.",
+      "status": "confirmed",
+      "evidence": ["evidence/p14-behaviour.json", "evidence/p14-w1000.png", "evidence/p14-w760.png", "evidence/p14-w600.png", "evidence/p13-realhost-matrix.json"],
+      "readings": {
+        "w1440": { "seatW": 72, "firstRowLeft": 96, "rowsOverlappingSeat": 0, "anchors": 8 },
+        "w1000": { "seatW": 72, "firstRowLeft": 96, "rowsOverlappingSeat": 0, "anchors": 8 },
+        "w760": { "display": "none", "anchorVisibleBox": 0 },
+        "w600": { "display": "none", "anchorVisibleBox": 0 }
+      }
+    },
+    {
+      "id": "C13",
+      "title": "Dark theme: the grey bars are nearly invisible (contrast 2.08:1)",
+      "expect": "The rail should be legible against a dark page background.",
+      "actual": "Anchor colour is a fixed rgba(128,128,128,0.5) with no theme variable. Over the dark page background rgb(21,21,23) it composites to rgb(75,75,76), giving a contrast ratio of 2.08:1 — below the 3:1 that WCAG asks of non-text UI. In light mode the same bar over white composites to about rgb(191,191,191), roughly 1.8:1, also low but typical for this kind of inert rail. The active bar uses var(--dsw-static-deepseek-500) and is clearly visible in both themes.",
+      "status": "confirmed",
+      "evidence": ["evidence/p15-followups.json", "evidence/p15-dark.png"],
+      "readings": {
+        "anchor_bg": "rgba(128, 128, 128, 0.5)",
+        "dark_body_bg": "rgb(21, 21, 23)",
+        "composited_anchor_rgb": [75, 75, 76],
+        "contrast_ratio": 2.08
+      }
+    },
+    {
+      "id": "C14",
+      "title": "anchorSize config is honoured",
+      "expect": "anchorSize:8 makes each bar 8 px tall.",
+      "actual": "With anchorSize:8 the measured bar height is 8 px for all 8 anchors and the gap stays 12 px. The clamp range 2-8 in source matches the README.",
+      "status": "confirmed",
+      "evidence": ["evidence/p15-followups.json"],
+      "readings": { "heights": [8], "gaps": [12] }
+    },
+    {
+      "id": "U1",
+      "title": "Reload and cold restart on the real host",
+      "expect": "The rail rebuilds by itself after F5 and after restarting the host.",
+      "actual": "On the real host the rail is absent before and after both a plain reload and a full host restart (new port 3938, new token). The host half and the client bundle still load correctly after restart (config and style present, 8 user rows rendered), so the reload path itself is not broken — the rail simply never mounts, consistent with C1. What a *working* build does on reload is therefore not observable here.",
+      "status": "uncertain",
+      "evidence": ["evidence/p16-reload.json", "evidence/p17-reload.json"],
+      "readings": {
+        "before_reload": { "seats": 0, "userRows": 8 },
+        "after_page_reload": { "seats": 0, "config": true, "styleTag": true },
+        "after_cold_restart_new_port_3938": { "seats": 0, "config": true, "styleTag": true }
+      },
+      "why_uncertain": "The observation (rail absent) is solid, but because the mount itself fails on this host, this test cannot say whether the rail would rebuild correctly on reload in a working build."
+    },
+    {
+      "id": "U2",
+      "title": "History sync via loadOlder on a real long conversation",
+      "expect": "Opening a conversation whose older prompts are not yet rendered triggers loadOlder until the whole history is reachable.",
+      "actual": "In the real host the 48-turn fixture rendered only a window of rows (25 user rows visible at first instead of 48) and the rail never mounted, so the plugin's own sync loop never ran. In the controlled harness loadOlder was called once (the stub returns history immediately). The 120-page cap and the 40 ms per-page delay were read in source but not exercised against real incremental history.",
+      "status": "uncertain",
+      "evidence": ["evidence/p06-rail-report.json", "evidence/p12-stub-result.json"],
+      "readings": { "real_host_visible_user_rows_of_48": 25, "stub_loadOlderCalls": 1 },
+      "why_uncertain": "Cannot exercise the real sync path while the mount is blocked by C1."
+    },
+    {
+      "id": "U3",
+      "title": "Steering messages as anchors",
+      "expect": "Per source, rows with data-chat-flow-kind=\"steering\" also get an anchor.",
+      "actual": "The synthetic sessions only contain ordinary user/assistant turns; producing a genuine steering row would require a live agent turn with a mid-run steer, which needs a model call. Source shows USER_KINDS = {user:true, steering:true}, but this was not observed in a browser.",
+      "status": "untested",
+      "evidence": ["temp/pkg/package/client.js (USER_KINDS)"],
+      "why": "Requires a real model turn with a mid-run steering message; out of scope (no paid model calls)."
+    },
+    {
+      "id": "N1",
+      "title": "Zero-message conversation",
+      "expect": "Nothing should render and nothing should throw.",
+      "actual": "0 user prompts -> 0 anchors and the seat stays display:block with zero children (an empty 72 px-wide positioned box at the left edge). It is invisible because it has no visible children, but the element is still mounted. No errors.",
+      "status": "confirmed",
+      "evidence": ["evidence/p14-behaviour.json", "evidence/p14-empty.png"],
+      "readings": { "seats": 1, "seatDisplay": "block", "anchors": 0 }
+    },
+    {
+      "id": "N2",
+      "title": "Very short conversation (1 and 3 prompts)",
+      "expect": "Below minPrompts the rail should be hidden.",
+      "actual": "Hidden (display:none), no anchors. Matches the documented default of 4.",
+      "status": "confirmed",
+      "evidence": ["evidence/p14-behaviour.json", "evidence/p14-tiny.png", "evidence/p14-three.png"],
+      "readings": { "one_prompt": { "display": "none", "anchors": 0 }, "three_prompts": { "display": "none", "anchors": 0 } }
+    },
+    {
+      "id": "N3",
+      "title": "Fast scrolling (30 jumps in ~0.5 s)",
+      "expect": "No errors, no stuck state, active bar ends somewhere sane.",
+      "actual": "30 rapid scrollTop flips on the 48-anchor fixture produced zero page errors and zero console warnings; the rail and its 48 anchors stayed intact. Highlight settling was still correct.",
+      "status": "confirmed",
+      "evidence": ["evidence/p14-behaviour.json"],
+      "readings": { "anchors_after": 48, "errors": 0 }
+    },
+    {
+      "id": "N4",
+      "title": "prefers-reduced-motion",
+      "expect": "Animations are disabled but the rail still renders.",
+      "actual": "With reduced motion the rail renders 8 anchors as usual; the CSS block disables the width/outline transitions and the jump uses behaviour 'auto' instead of 'smooth'.",
+      "status": "confirmed",
+      "evidence": ["evidence/p14-behaviour.json"],
+      "readings": { "anchors": 8 }
+    },
+    {
+      "id": "X1",
+      "title": "Self-test fixture disagrees with the host API",
+      "expect": "The repository's own smoke test should mirror the real host.",
+      "actual": "test/smoke.html stubs `getSnapshot()` as `{ current: 's1' }`, i.e. exactly the field the real host does not provide. That is why the author's smoke test passes while the shipped plugin is dead on 0.2.0-rc.2. Test/config.html was not exercised.",
+      "status": "confirmed",
+      "evidence": ["temp/ghsrc/dsh-conversation-minimap-4b2ee4704de51b2409ff80bbba54445cdbc2ba67/test/smoke.html"],
+      "readings": { "stub_returns": "{ current: 's1' }", "host_returns": "{ ids, byId, phase, projectionsBySession }" }
+    },
+    {
+      "id": "X2",
+      "title": "Package install surface",
+      "expect": "Installing the published package into a web profile should be enough to load the client.",
+      "actual": "`dsh plugin --profile <p> add dsh-conversation-minimap@1.3.4` succeeded (EXIT=0, pnpm added 1 package) and the bundle was served in the page's module manifest (visible in /plugins/??…,dsh-conversation-minimap/client.js). The install itself is fine; the failure is at runtime. One install-surface wrinkle, which is a host-CLI behaviour and not a plugin defect: a profile created by `plugin add` alone lacks @deepseek-ai/dsh-web-app, so booting it prints no URL; the profile must be derived from the shipped web template first.",
+      "status": "confirmed",
+      "evidence": ["evidence/install-01-add-npm.txt", "evidence/install-03-webprofile-add.txt", "evidence/p04-diag.json", "evidence/mm1-host.stdout.txt"],
+      "readings": { "install_exit": 0, "bundle_in_manifest": true, "first_boot_stdout_bytes": 0 }
+    },
+    {
+      "id": "X3",
+      "title": "Dedupe check across both sites",
+      "expect": "No same-scope prior review of this plugin.",
+      "actual": "review.lingshulab.com: 133 plugins scanned (3 pages), 0 hits for minimap or Braidy-Wu; 172 reviews scanned (4 pages), 0 hits. github.com/FuRongJun-1999/dsh-bounty: search for 'minimap' 0, 'Braidy-Wu' 0, 'dsh-conversation-minimap' 0, '迷你地图' 1 (#646, a dsh-roleplay review — different subject). First report can be claimed.",
+      "status": "confirmed",
+      "evidence": ["evidence/dedupe-01-lingshu.txt", "evidence/dedupe-02-github-issues.txt"],
+      "readings": {
+        "lingshu_plugins_scanned": 133, "lingshu_plugin_hits": 0,
+        "lingshu_reviews_scanned": 172, "lingshu_review_hits": 0,
+        "github_bounty_hits": 0,
+        "github_bounty_adjacent": "#646 dsh-roleplay (not the same plugin)"
+      }
+    }
+  ]
+}

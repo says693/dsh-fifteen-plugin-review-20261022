@@ -1,0 +1,310 @@
+{
+  "followOnClick": {
+    "before": "",
+    "clicked": "session:session-e9ea570e-d88f-4e06-ada9-d954cdb0874b",
+    "after": {
+      "search": "",
+      "href": "http://127.0.0.1:2690/",
+      "selected": "session:session-e9ea570e-d88f-4e06-ada9-d954cdb0874b",
+      "currentStore": "{\"sessionId\":\"session-e9ea570e-d88f-4e06-ada9-d954cdb0874b\"}"
+    },
+    "warns": []
+  },
+  "followToggleOff": {
+    "search": "",
+    "current": "{\"sessionId\":\"session-e9ea570e-d88f-4e06-ada9-d954cdb0874b\"}"
+  },
+  "settings": {
+    "pluginPage": {
+      "text": "新会话 Ctrl + Alt + N 插件 工作区 beta 新会话 未命名 1小时 alpha 设置 插件 安装、启用和配置插件 添加插件 官方 8 智能体团队 实验性 启用团队协作、团队工具、成员列表和共享任务看板。 自动授权审查 实验性 提供自动审查权限模式，由模型在每次工具调用前判断是否授权。 自动化任务 实验性 按设定的时间或周期，在会话中自动执行任务。 语音输入 实验性 在本机使用 SenseVoice 转写录音，首次使用需安装依赖。 终端 限制每条命令最多能跑多久、最多输出多少内容。 Agent 循环 控制 Agent 派发工具调用的方式。 子智能体 设置子智能体的递归层级、数量和模型。 网页搜索 设置 DeepSeek 的搜索提供方。 已安装 1 @dsh-community/dsh-deeplink DSH WebUI 深链：用 ?session=<会话id> 或 ?workspace=<工程id> 直接打开指定项目对话",
+      "tabs": []
+    },
+    "afterCfg": {
+      "text": "新会话 Ctrl + Alt + N 插件 工作区 beta 新会话 未命名 1小时 alpha 设置 插件 安装、启用和配置插件 添加插件 官方 8 智能体团队 实验性 启用团队协作、团队工具、成员列表和共享任务看板。 自动授权审查 实验性 提供自动审查权限模式，由模型在每次工具调用前判断是否授权。 自动化任务 实验性 按设定的时间或周期，在会话中自动执行任务。 语音输入 实验性 在本机使用 SenseVoice 转写录音，首次使用需安装依赖。 终端 限制每条命令最多能跑多久、最多输出多少内容。 Agent 循环 控制 Agent 派发工具调用的方式。 子智能体 设置子智能体的递归层级、数量和模型。 网页搜索 设置 DeepSeek 的搜索提供方。 已安装 1 @dsh-community/dsh-deeplink DSH WebUI 深链：用 ?session=<会话id> 或 ?workspace=<工程id> 直接打开指定项目对话",
+      "cards": [],
+      "switches": [
+        {
+          "checked": "false",
+          "rect": {
+            "w": 36,
+            "h": 20
+          }
+        },
+        {
+          "checked": "false",
+          "rect": {
+            "w": 36,
+            "h": 20
+          }
+        },
+        {
+          "checked": "false",
+          "rect": {
+            "w": 36,
+            "h": 20
+          }
+        },
+        {
+          "checked": "false",
+          "rect": {
+            "w": 36,
+            "h": 20
+          }
+        },
+        {
+          "checked": "true",
+          "rect": {
+            "w": 36,
+            "h": 20
+          }
+        }
+      ],
+      "thereIsDeepCard": false
+    },
+    "warns": []
+  },
+  "viewport_w760": {
+    "viewport": {
+      "w": 760,
+      "h": 900
+    },
+    "scrollWidth": 760,
+    "clientWidth": 760,
+    "overflowX": false,
+    "bg": "rgb(255, 255, 255)",
+    "fg": "rgb(15, 17, 21)",
+    "deepCard": false,
+    "switches": [
+      {
+        "checked": "false",
+        "rect": {
+          "x": 694,
+          "y": 165,
+          "w": 36,
+          "h": 20
+        }
+      },
+      {
+        "checked": "false",
+        "rect": {
+          "x": 694,
+          "y": 233,
+          "w": 36,
+          "h": 20
+        }
+      },
+      {
+        "checked": "false",
+        "rect": {
+          "x": 694,
+          "y": 301,
+          "w": 36,
+          "h": 20
+        }
+      },
+      {
+        "checked": "false",
+        "rect": {
+          "x": 694,
+          "y": 369,
+          "w": 36,
+          "h": 20
+        }
+      },
+      {
+        "checked": "true",
+        "rect": {
+          "x": 694,
+          "y": 769,
+          "w": 36,
+          "h": 20
+        }
+      }
+    ],
+    "deeplinkOwnSwitches": 0,
+    "warns": []
+  },
+  "viewport_w600": {
+    "viewport": {
+      "w": 600,
+      "h": 800
+    },
+    "scrollWidth": 600,
+    "clientWidth": 600,
+    "overflowX": false,
+    "bg": "rgb(255, 255, 255)",
+    "fg": "rgb(15, 17, 21)",
+    "deepCard": false,
+    "switches": [
+      {
+        "checked": "false",
+        "rect": {
+          "x": 540,
+          "y": 165,
+          "w": 36,
+          "h": 20
+        }
+      },
+      {
+        "checked": "false",
+        "rect": {
+          "x": 540,
+          "y": 233,
+          "w": 36,
+          "h": 20
+        }
+      },
+      {
+        "checked": "false",
+        "rect": {
+          "x": 540,
+          "y": 301,
+          "w": 36,
+          "h": 20
+        }
+      },
+      {
+        "checked": "false",
+        "rect": {
+          "x": 540,
+          "y": 369,
+          "w": 36,
+          "h": 20
+        }
+      },
+      {
+        "checked": "true",
+        "rect": {
+          "x": 540,
+          "y": 769,
+          "w": 36,
+          "h": 20
+        }
+      }
+    ],
+    "deeplinkOwnSwitches": 0,
+    "warns": []
+  },
+  "viewport_dark": {
+    "viewport": {
+      "w": 1440,
+      "h": 1000
+    },
+    "scrollWidth": 1440,
+    "clientWidth": 1440,
+    "overflowX": false,
+    "bg": "rgb(21, 21, 23)",
+    "fg": "rgb(249, 250, 251)",
+    "deepCard": false,
+    "switches": [
+      {
+        "checked": "false",
+        "rect": {
+          "x": 1304,
+          "y": 165,
+          "w": 36,
+          "h": 20
+        }
+      },
+      {
+        "checked": "false",
+        "rect": {
+          "x": 1304,
+          "y": 233,
+          "w": 36,
+          "h": 20
+        }
+      },
+      {
+        "checked": "false",
+        "rect": {
+          "x": 1304,
+          "y": 301,
+          "w": 36,
+          "h": 20
+        }
+      },
+      {
+        "checked": "false",
+        "rect": {
+          "x": 1304,
+          "y": 369,
+          "w": 36,
+          "h": 20
+        }
+      },
+      {
+        "checked": "true",
+        "rect": {
+          "x": 1304,
+          "y": 769,
+          "w": 36,
+          "h": 20
+        }
+      }
+    ],
+    "deeplinkOwnSwitches": 0,
+    "warns": []
+  },
+  "viewport_w760dark": {
+    "viewport": {
+      "w": 760,
+      "h": 900
+    },
+    "scrollWidth": 760,
+    "clientWidth": 760,
+    "overflowX": false,
+    "bg": "rgb(21, 21, 23)",
+    "fg": "rgb(249, 250, 251)",
+    "deepCard": false,
+    "switches": [
+      {
+        "checked": "false",
+        "rect": {
+          "x": 694,
+          "y": 165,
+          "w": 36,
+          "h": 20
+        }
+      },
+      {
+        "checked": "false",
+        "rect": {
+          "x": 694,
+          "y": 233,
+          "w": 36,
+          "h": 20
+        }
+      },
+      {
+        "checked": "false",
+        "rect": {
+          "x": 694,
+          "y": 301,
+          "w": 36,
+          "h": 20
+        }
+      },
+      {
+        "checked": "false",
+        "rect": {
+          "x": 694,
+          "y": 369,
+          "w": 36,
+          "h": 20
+        }
+      },
+      {
+        "checked": "true",
+        "rect": {
+          "x": 694,
+          "y": 769,
+          "w": 36,
+          "h": 20
+        }
+      }
+    ],
+    "deeplinkOwnSwitches": 0,
+    "warns": []
+  }
+}

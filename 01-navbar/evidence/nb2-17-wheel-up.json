@@ -1,0 +1,138 @@
+{
+  "up": [
+    {
+      "step": 1,
+      "scrollTop": 4135,
+      "activeUser": 20,
+      "expectedUser": 20,
+      "dots": 11,
+      "first": 15,
+      "last": 25,
+      "activeCount": 1,
+      "match": true
+    },
+    {
+      "step": 2,
+      "scrollTop": 3635,
+      "activeUser": 18,
+      "expectedUser": 18,
+      "dots": 11,
+      "first": 13,
+      "last": 23,
+      "activeCount": 1,
+      "match": true
+    },
+    {
+      "step": 3,
+      "scrollTop": 3135,
+      "activeUser": 18,
+      "expectedUser": 16,
+      "dots": 11,
+      "first": 13,
+      "last": 23,
+      "activeCount": 1,
+      "match": false
+    },
+    {
+      "step": 4,
+      "scrollTop": 2635,
+      "activeUser": 18,
+      "expectedUser": 13,
+      "dots": 11,
+      "first": 13,
+      "last": 23,
+      "activeCount": 1,
+      "match": false
+    },
+    {
+      "step": 5,
+      "scrollTop": 2135,
+      "activeUser": 18,
+      "expectedUser": 11,
+      "dots": 11,
+      "first": 13,
+      "last": 23,
+      "activeCount": 1,
+      "match": false
+    },
+    {
+      "step": 6,
+      "scrollTop": 1635,
+      "activeUser": 18,
+      "expectedUser": 9,
+      "dots": 11,
+      "first": 13,
+      "last": 23,
+      "activeCount": 1,
+      "match": false
+    },
+    {
+      "step": 7,
+      "scrollTop": 1135,
+      "activeUser": 6,
+      "expectedUser": 6,
+      "dots": 11,
+      "first": 1,
+      "last": 11,
+      "activeCount": 1,
+      "match": true
+    },
+    {
+      "step": 8,
+      "scrollTop": 635,
+      "activeUser": 4,
+      "expectedUser": 4,
+      "dots": 9,
+      "first": 1,
+      "last": 9,
+      "activeCount": 1,
+      "match": true
+    },
+    {
+      "step": 9,
+      "scrollTop": 135,
+      "activeUser": 2,
+      "expectedUser": 2,
+      "dots": 7,
+      "first": 1,
+      "last": 7,
+      "activeCount": 1,
+      "match": true
+    },
+    {
+      "step": 10,
+      "scrollTop": 0,
+      "activeUser": 1,
+      "expectedUser": 1,
+      "dots": 6,
+      "first": 1,
+      "last": 6,
+      "activeCount": 1,
+      "match": true
+    },
+    {
+      "step": 11,
+      "scrollTop": 0,
+      "activeUser": 1,
+      "expectedUser": 1,
+      "dots": 6,
+      "first": 1,
+      "last": 6,
+      "activeCount": 1,
+      "match": true
+    },
+    {
+      "step": 12,
+      "scrollTop": 0,
+      "activeUser": 1,
+      "expectedUser": 1,
+      "dots": 6,
+      "first": 1,
+      "last": 6,
+      "activeCount": 1,
+      "match": true
+    }
+  ],
+  "errors": [],
+  "consoleLog": []
+}

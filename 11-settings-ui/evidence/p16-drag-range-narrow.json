@@ -1,0 +1,152 @@
+{
+  "drag": {
+    "before": {
+      "x": 320,
+      "y": 100,
+      "w": 800,
+      "h": 800
+    },
+    "after": {
+      "x": 320,
+      "y": 100,
+      "w": 800,
+      "h": 800,
+      "position": "relative",
+      "transform": "none",
+      "cursor": "auto"
+    },
+    "moved": false
+  },
+  "rangeClick": [
+    {
+      "frac": 0,
+      "inputVal": "30",
+      "panelBg": "color(srgb 0.172549 0.172549 0.180392 / 0.3)",
+      "status": "{\"settings\":{\"size\":\"default\",\"customWidth\":1280,\"customHeight\":960,\"opacity\":30,\"bgMode\":\"default\",\"bgColorLight\":\"#eef1f5\",\"bgColorDark\":\"#1e2a38\"}}"
+    },
+    {
+      "frac": 0.5,
+      "inputVal": "65",
+      "panelBg": "color(srgb 0.172549 0.172549 0.180392 / 0.65)",
+      "status": "{\"settings\":{\"size\":\"default\",\"customWidth\":1280,\"customHeight\":960,\"opacity\":65,\"bgMode\":\"default\",\"bgColorLight\":\"#eef1f5\",\"bgColorDark\":\"#1e2a38\"}}"
+    },
+    {
+      "frac": 1,
+      "inputVal": "100",
+      "panelBg": "rgb(44, 44, 46)",
+      "status": "{\"settings\":{\"size\":\"default\",\"customWidth\":1280,\"customHeight\":960,\"opacity\":100,\"bgMode\":\"default\",\"bgColorLight\":\"#eef1f5\",\"bgColorDark\":\"#1e2a38\"}}"
+    }
+  ],
+  "narrow": [
+    {
+      "chip": "全屏",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "w": 600,
+        "h": 800,
+        "right": 600,
+        "bottom": 800
+      },
+      "style": {
+        "width": "600px",
+        "height": "800px",
+        "maxWidth": "none",
+        "backgroundColor": "rgb(44, 44, 46)",
+        "borderRadius": "0px",
+        "overflow": "hidden"
+      },
+      "raw": {
+        "l": 0,
+        "t": 0,
+        "r": 600,
+        "b": 800
+      },
+      "outOfViewport": false,
+      "navScroll": {
+        "sh": 800,
+        "ch": 800
+      },
+      "panelScroll": {
+        "sh": 800,
+        "ch": 800,
+        "sw": 600,
+        "cw": 600
+      }
+    },
+    {
+      "chip": "特大（1280×960）",
+      "rect": {
+        "x": 24,
+        "y": 24,
+        "w": 552,
+        "h": 752,
+        "right": 576,
+        "bottom": 776
+      },
+      "style": {
+        "width": "552px",
+        "height": "752px",
+        "maxWidth": "552px",
+        "backgroundColor": "rgb(44, 44, 46)",
+        "borderRadius": "28px",
+        "overflow": "hidden"
+      },
+      "raw": {
+        "l": 24,
+        "t": 24,
+        "r": 576,
+        "b": 776
+      },
+      "outOfViewport": false,
+      "navScroll": {
+        "sh": 752,
+        "ch": 752
+      },
+      "panelScroll": {
+        "sh": 752,
+        "ch": 752,
+        "sw": 552,
+        "cw": 552
+      }
+    },
+    {
+      "chip": "默认（800×800）",
+      "rect": {
+        "x": 24,
+        "y": 24,
+        "w": 552,
+        "h": 752,
+        "right": 576,
+        "bottom": 776
+      },
+      "style": {
+        "width": "552px",
+        "height": "752px",
+        "maxWidth": "552px",
+        "backgroundColor": "rgb(44, 44, 46)",
+        "borderRadius": "28px",
+        "overflow": "hidden"
+      },
+      "raw": {
+        "l": 24,
+        "t": 24,
+        "r": 576,
+        "b": 776
+      },
+      "outOfViewport": false,
+      "navScroll": {
+        "sh": 752,
+        "ch": 752
+      },
+      "panelScroll": {
+        "sh": 752,
+        "ch": 752,
+        "sw": 552,
+        "cw": 552
+      }
+    }
+  ],
+  "errors": [],
+  "consoleLog": []
+}

@@ -1,0 +1,162 @@
+{
+  "utc": "2026-10-22T01:12:24.710Z",
+  "dismiss": {
+    "clicked": true
+  },
+  "masks": 0,
+  "t0": {
+    "active": "session:session-b82a64e0-a6be-45a6-a240-f057d74ca6e0",
+    "n": 2,
+    "toast": null,
+    "focus": {
+      "tag": "BODY",
+      "role": null,
+      "aria": null,
+      "cls": ""
+    },
+    "panel": false
+  },
+  "realKeys": [
+    {
+      "name": "archiveList",
+      "combo": "Alt+Shift+KeyU",
+      "beforeActive": "session:session-b82a64e0-a6be-45a6-a240-f057d74ca6e0",
+      "afterActive": "session:session-b82a64e0-a6be-45a6-a240-f057d74ca6e0",
+      "changed": false,
+      "toast": null,
+      "panel": false,
+      "focus": {
+        "tag": "BUTTON",
+        "role": null,
+        "aria": null,
+        "cls": "shk-tab shk-tab-on"
+      },
+      "extra": {
+        "archivedTabVisible": true,
+        "shkTabs": [
+          "按键\nAlt+1-9\nAlt+Shift+1-9\nAlt+Shift+U",
+          "按键",
+          "Alt+1-9",
+          "Alt+Shift+1-9",
+          "Alt+Shift+U"
+        ]
+      }
+    },
+    {
+      "name": "pinToggle1",
+      "combo": "Alt+Shift+Digit1",
+      "beforeActive": "session:session-b82a64e0-a6be-45a6-a240-f057d74ca6e0",
+      "afterActive": "session:session-b82a64e0-a6be-45a6-a240-f057d74ca6e0",
+      "changed": false,
+      "toast": "已固定槽位 1 ← default-workspace",
+      "panel": false,
+      "focus": {
+        "tag": "BODY",
+        "role": null,
+        "aria": null,
+        "cls": ""
+      },
+      "extra": {
+        "pins": "{\"1\":\"session-b82a64e0-a6be-45a6-a240-f057d74ca6e0\"}"
+      }
+    },
+    {
+      "name": "jumpPin1",
+      "combo": "Control+Alt+Digit1",
+      "beforeActive": "session:session-b82a64e0-a6be-45a6-a240-f057d74ca6e0",
+      "afterActive": "session:session-b82a64e0-a6be-45a6-a240-f057d74ca6e0",
+      "changed": false,
+      "toast": "已切换到固定槽位 1 · default-workspace",
+      "panel": false,
+      "focus": {
+        "tag": "BODY",
+        "role": null,
+        "aria": null,
+        "cls": ""
+      },
+      "extra": {
+        "pins": "{\"1\":\"session-b82a64e0-a6be-45a6-a240-f057d74ca6e0\"}"
+      }
+    },
+    {
+      "name": "navMode",
+      "combo": "Alt+Backquote",
+      "beforeActive": "session:session-b82a64e0-a6be-45a6-a240-f057d74ca6e0",
+      "afterActive": "session:session-b82a64e0-a6be-45a6-a240-f057d74ca6e0",
+      "changed": false,
+      "toast": "导航模式 · 2 个目标 · ↑↓ 移动，Enter 进入",
+      "panel": false,
+      "focus": {
+        "tag": "BODY",
+        "role": null,
+        "aria": null,
+        "cls": ""
+      },
+      "extra": {
+        "nav": true,
+        "shk": [
+          "shk-pinbtn",
+          "wSkVaW_scrollBody",
+          "shk-toast",
+          "shk-ring",
+          "shk-navhint"
+        ]
+      }
+    },
+    {
+      "name": "nextSession",
+      "combo": "Alt+ArrowDown",
+      "beforeActive": "session:session-b82a64e0-a6be-45a6-a240-f057d74ca6e0",
+      "afterActive": "session:session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e",
+      "changed": true,
+      "toast": "已切换到下一个会话 · 周记·第一篇",
+      "panel": false,
+      "focus": {
+        "tag": "DIV",
+        "role": "textbox",
+        "aria": "发消息或创建任务, / 调用指令, @ 文件或对话",
+        "cls": "uV2eYG_input"
+      }
+    },
+    {
+      "name": "prevSession",
+      "combo": "Alt+ArrowUp",
+      "beforeActive": "session:session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e",
+      "afterActive": "session:session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e",
+      "changed": false,
+      "toast": "已切换到上一个会话 · 周记·第一篇",
+      "panel": false,
+      "focus": {
+        "tag": "BODY",
+        "role": null,
+        "aria": null,
+        "cls": ""
+      }
+    }
+  ],
+  "cardTest": {
+    "opened": {
+      "visible": true,
+      "x": 529,
+      "y": 402,
+      "w": 382,
+      "h": 196,
+      "focusInCard": true
+    },
+    "focusAfterOutsideClick": {
+      "tag": "BODY",
+      "cls": "",
+      "inCard": null
+    },
+    "afterEsc": {
+      "found": false
+    },
+    "cancelByClass": {
+      "found": false
+    },
+    "afterCancelByClass": {
+      "stillVisible": false
+    }
+  },
+  "errors": []
+}

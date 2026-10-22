@@ -1,0 +1,12 @@
+﻿{
+    "checked_utc":  "2026-10-22T01:15:07.8440366Z",
+    "site":  "https://review.lingshulab.com",
+    "method":  "the ?q= parameter does not filter server-side (verified: every query returns the same newest rows), so all 9 pages of /api/reviews were pulled (pageSize=20) and scanned locally",
+    "index_total":  172,
+    "declared_total":  172,
+    "pages_fetched":  9,
+    "page_size":  20,
+    "pattern":  "dsh-session-hotkeys|session-hotkeys|YEYEYEYESHIFU|会话快捷键",
+    "same_scope_hits":  0,
+    "status":  "checked_clear"
+}

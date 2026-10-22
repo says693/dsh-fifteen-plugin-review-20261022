@@ -1,0 +1,76 @@
+{
+  "readings": [
+    {
+      "step": "default Ctrl+Alt+C collapses",
+      "before": {
+        "expanded": 1,
+        "pill": "1"
+      },
+      "after": {
+        "expanded": 0,
+        "pill": "0"
+      },
+      "pass": true
+    },
+    {
+      "step": "after rebind: old combo inert, new combo works",
+      "before": 1,
+      "afterOld": 1,
+      "afterNew": 0,
+      "pass": true
+    },
+    {
+      "step": "reload keeps the rebound hotkey",
+      "beforeReload": "Ctrl+Shift+K",
+      "afterReload": "Ctrl+Shift+K",
+      "pass": true
+    }
+  ],
+  "steps": [],
+  "panel": {
+    "present": true,
+    "role": "dialog",
+    "rect": {
+      "x": 1102,
+      "y": 747,
+      "w": 320,
+      "h": 197
+    },
+    "text": "收起全部快捷键 Ctrl + Alt + C 设置 恢复默认 快捷键保存在此浏览器中，刷新后仍然有效。",
+    "keys": [
+      "Ctrl",
+      "Alt",
+      "C"
+    ],
+    "focus": "capture"
+  },
+  "capturing": {
+    "armed": true,
+    "label": "请按新组合键…"
+  },
+  "afterRebind": {
+    "panelOpen": true,
+    "keys": [
+      "Ctrl",
+      "Shift",
+      "K"
+    ],
+    "storage": "{\"ctrl\":true,\"meta\":false,\"alt\":false,\"shift\":true,\"code\":\"KeyK\"}",
+    "hotkey": "Ctrl+Shift+K"
+  },
+  "afterReset": {
+    "keys": [
+      "Ctrl",
+      "Alt",
+      "C"
+    ],
+    "storage": "{\"ctrl\":true,\"meta\":false,\"alt\":true,\"shift\":false,\"code\":\"KeyC\"}",
+    "hotkey": "Ctrl+Alt+C"
+  },
+  "afterReloadHotkey": {
+    "hotkey": "Ctrl+Shift+K",
+    "storage": "{\"ctrl\":true,\"meta\":false,\"alt\":false,\"shift\":true,\"code\":\"KeyK\"}"
+  },
+  "errors": [],
+  "consoleErr": []
+}

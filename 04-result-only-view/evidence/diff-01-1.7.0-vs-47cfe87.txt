@@ -1,0 +1,18 @@
+diff between npm 1.7.0 (temp\package) and repo commit 47cfe87 (1.6.4)
+note: 1.6.4 lib/client.js = 53761 bytes; 1.7.0 lib/client.js = 59767 bytes
+
+=== package.json version ===
+1.7.0 : 1.7.0
+47cfe87: 1.6.4
+
+=== file-level sha256 ===
+lib/client.js        1.7.0=5051a667bfbc 1.6.4=e5e3df1768f6 => DIFFERENT
+lib/index.js         1.7.0=8617a8643851 1.6.4=8617a8643851 => SAME
+package.json         1.7.0=23fcc3d53745 1.6.4=157159815de1 => DIFFERENT
+cordis.patch.yml     1.7.0=aae90a9ffa04 1.6.4=aae90a9ffa04 => SAME
+README.md            1.7.0=e2d2de733fd1 1.6.4=290d8958b782 => DIFFERENT
+LICENSE              1.7.0=b91455fede25 1.6.4=b91455fede25 => SAME
+
+=== storage keys present in each ===
+1.7.0: STORAGE_KEY found=True  SETTINGS_KEY found=True  conversation.input.left=True  turnTail=True
+1.6.4: STORAGE_KEY found=True  SETTINGS_KEY found=True  conversation.input.left=True  turnTail=True

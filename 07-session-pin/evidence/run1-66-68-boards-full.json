@@ -1,0 +1,108 @@
+{
+  "pins": [
+    {
+      "t": "新会话"
+    },
+    {
+      "t": "帮我整理一份关于海洋塑料污 1分钟",
+      "pin": "true"
+    },
+    {
+      "t": "/goto 请假 3分钟",
+      "pin": "true"
+    },
+    {
+      "t": "把这周的错题整理成表格 4分钟",
+      "pin": "true"
+    },
+    {
+      "t": "写一封给班主任的请假邮件 14分钟",
+      "pin": "true"
+    },
+    {
+      "t": "比较两个版本的实验数据差异 14分钟",
+      "pin": "true"
+    }
+  ],
+  "panelRows": [
+    "/goto 请假",
+    "比较两个版本的实验数据差异",
+    "写一封给班主任的请假邮件",
+    "帮我整理一份关于海洋塑料污",
+    "把这周的错题整理成表格"
+  ],
+  "editor": null,
+  "assign": {
+    "ok": false,
+    "why": "no-editor"
+  },
+  "afterAssign": {
+    "rows": [],
+    "groups": []
+  },
+  "afterBoardChip": {
+    "rows": [],
+    "chips": [
+      {
+        "t": "All",
+        "a": false
+      },
+      {
+        "t": "复习",
+        "a": true
+      },
+      {
+        "t": "✎",
+        "a": false
+      },
+      {
+        "t": "✕",
+        "a": false
+      },
+      {
+        "t": "复习",
+        "a": false
+      },
+      {
+        "t": "✎",
+        "a": false
+      },
+      {
+        "t": "✕",
+        "a": false
+      },
+      {
+        "t": "+ board",
+        "a": false
+      },
+      {
+        "t": "+ view",
+        "a": false
+      },
+      {
+        "t": "考试",
+        "a": false
+      }
+    ]
+  },
+  "afterTagFilter": {
+    "visible": []
+  },
+  "afterSaveView": {
+    "chips": [
+      "All",
+      "复习",
+      "✎",
+      "✕",
+      "复习",
+      "✎",
+      "✕",
+      "+ board",
+      "+ view",
+      "考试"
+    ]
+  },
+  "errors": [],
+  "console": [],
+  "dialogs": []
+}

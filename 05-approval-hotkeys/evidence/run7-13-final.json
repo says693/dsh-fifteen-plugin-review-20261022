@@ -1,0 +1,144 @@
+{
+  "utc": "2026-10-22T01:35:02.604Z",
+  "host": {
+    "pid": 18068,
+    "url": "http://127.0.0.1:6400/?token=REDACTED",
+    "profile": "ah",
+    "utc": "2026-10-22T01:27:35.269Z",
+    "env": [
+      "DEEPSEEK_BASE_URL",
+      "DEEPSEEK_API_KEY",
+      "DSH_PERMISSION_MODE"
+    ]
+  },
+  "tests": {
+    "hostShortcut_panelPresent": {
+      "panelSeen": [
+        "approval:3"
+      ],
+      "events": [
+        {
+          "t": 5643,
+          "kind": "keydown",
+          "detail": {
+            "key": "Control",
+            "dp": false,
+            "mods": "ctrl",
+            "target": "BODY"
+          }
+        },
+        {
+          "t": 5644,
+          "kind": "keydown",
+          "detail": {
+            "key": "Alt",
+            "dp": false,
+            "mods": "ctrl+alt",
+            "target": "BODY"
+          }
+        },
+        {
+          "t": 5645,
+          "kind": "keydown",
+          "detail": {
+            "key": "N",
+            "dp": false,
+            "mods": "ctrl+alt",
+            "target": "BODY"
+          }
+        }
+      ],
+      "after": {
+        "panelCount": 0,
+        "keys": [],
+        "active": "DIV.uV2eYG_input",
+        "tail": " 13分钟 | 展开其余 7 个会话 | 设置 | 探索未至之境 | 预览版 | 默认工作区 | 标准模式 | 描述你想要构建的内容, / 调用指令, @ 文件或对话 | 工作区内修改 | DeepSeek-V41-Flash | High"
+      }
+    },
+    "escPauseReview": {
+      "escEvents": [
+        {
+          "t": 8504,
+          "kind": "keydown",
+          "detail": {
+            "key": "Escape",
+            "dp": false,
+            "mods": "",
+            "target": "DIV"
+          }
+        }
+      ],
+      "panelSeen": [
+        "approval:4"
+      ],
+      "enterEvents": [
+        {
+          "t": 10344,
+          "kind": "keydown",
+          "detail": {
+            "key": "Enter",
+            "dp": false,
+            "mods": "",
+            "target": "BODY"
+          }
+        },
+        {
+          "t": 10344,
+          "kind": "click",
+          "detail": {
+            "text": "允许一次"
+          }
+        }
+      ],
+      "after": {
+        "panelCount": 1,
+        "keys": [
+          "approval:5"
+        ],
+        "active": "BODY.",
+        "tail": "anger-full-access 权限：The test needs to write outside the workspace once. | Write-Output \"approved-by-hotkey\" | 拒绝 | 允许一次"
+      }
+    }
+  },
+  "loadSurface": {
+    "scriptSrcs": [
+      "plugins/??@deepseek-ai/dsh-client-modules/client.js&rev=5c32acb5d9ec",
+      "./assets/index-5SrrfWpU.js"
+    ],
+    "pluginsFetch": {
+      "status": 404,
+      "bytes": 0,
+      "hasHotkeys": false
+    },
+    "networkEntries": [
+      {
+        "path": "/plugins/??@deepseek-ai/dsh-client-modules/client.js&rev=5c32acb5d9ec",
+        "status": 200
+      },
+      {
+        "path": "/plugins/??@deepseek-ai/dsh-api-remotes/client.js,@deepseek-ai/dsh-client-ui-deliverables/client.js,@deepseek-ai/dsh-typert-registry/client.js,@deepseek-ai/dsh-",
+        "status": 200
+      },
+      {
+        "path": "/plugins/??@deepseek-ai/dsh-client-ui-open-in-app/client.js,@deepseek-ai/dsh-api-gateway/client.js,@deepseek-ai/dsh-api-job-controller/client.js,@deepseek-ai/ds",
+        "status": 200
+      },
+      {
+        "path": "/plugins/events",
+        "status": 200
+      },
+      {
+        "path": "/plugins",
+        "status": 404
+      }
+    ]
+  },
+  "errors": [],
+  "consoleLog": [
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "utc": "2026-10-22T01:35:02.613Z"
+    }
+  ]
+}

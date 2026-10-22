@@ -1,0 +1,135 @@
+{
+  "results": [
+    {
+      "i": 2,
+      "text": "NB 八条对照 4分钟",
+      "x": 140,
+      "y": 292,
+      "title": "workspace",
+      "flowKids": 0,
+      "flowText": "",
+      "userRows": 0,
+      "dots": 0,
+      "navDisplay": "none",
+      "navRect": {
+        "x": 0,
+        "w": 0,
+        "h": 0
+      },
+      "activeIdx": -1,
+      "cons": [
+        "[session-controller] event feed subscriber failed: TypeError: Cannot read properties of undefined (reading 'kind')\n    at Object.start (http://127.0.0"
+      ]
+    },
+    {
+      "i": 3,
+      "text": "未命名 4分钟",
+      "x": 140,
+      "y": 326,
+      "title": "workspace",
+      "flowKids": null,
+      "flowText": "",
+      "userRows": 0,
+      "dots": 0,
+      "navDisplay": "none",
+      "navRect": {
+        "x": 0,
+        "w": 0,
+        "h": 0
+      },
+      "activeIdx": -1,
+      "cons": [
+        "[session-controller] event feed subscriber failed: TypeError: Cannot read properties of undefined (reading 'kind')\n    at Object.start (http://127.0.0",
+        "TypeError: Cannot read properties of undefined (reading 'kind')\n    at turnProcessAlwaysOpen (http://127.0.0.1:11911/plugins/??@deepseek-ai/dsh-client",
+        "slot entry crashed in 'conversation.view': TypeError: Cannot read properties of undefined (reading 'kind')\n    at turnProcessAlwaysOpen (http://127.0.",
+        "TypeError: Cannot read properties of undefined (reading 'kind')\n    at turnProcessAlwaysOpen (http://127.0.0.1:11911/plugins/??@deepseek-ai/dsh-client",
+        "slot entry crashed in 'conversation.view': TypeError: Cannot read properties of undefined (reading 'kind')\n    at turnProcessAlwaysOpen (http://127.0.",
+        "TypeError: Cannot read properties of undefined (reading 'kind')\n    at turnProcessAlwaysOpen (http://127.0.0.1:11911/plugins/??@deepseek-ai/dsh-client",
+        "slot entry crashed in 'conversation.view': TypeError: Cannot read properties of undefined (reading 'kind')\n    at turnProcessAlwaysOpen (http://127.0."
+      ]
+    },
+    {
+      "i": 4,
+      "text": "未命名 4分钟",
+      "x": 140,
+      "y": 360,
+      "title": "workspace",
+      "flowKids": null,
+      "flowText": "",
+      "userRows": 0,
+      "dots": 0,
+      "navDisplay": "none",
+      "navRect": {
+        "x": 0,
+        "w": 0,
+        "h": 0
+      },
+      "activeIdx": -1,
+      "cons": [
+        "[session-controller] event feed subscriber failed: TypeError: Cannot read properties of undefined (reading 'kind')\n    at Object.start (http://127.0.0"
+      ]
+    },
+    {
+      "i": 5,
+      "text": "未命名 4分钟",
+      "x": 140,
+      "y": 394,
+      "title": "workspace",
+      "flowKids": null,
+      "flowText": "",
+      "userRows": 0,
+      "dots": 0,
+      "navDisplay": "none",
+      "navRect": {
+        "x": 0,
+        "w": 0,
+        "h": 0
+      },
+      "activeIdx": -1,
+      "cons": [
+        "[session-controller] event feed subscriber failed: TypeError: Cannot read properties of undefined (reading 'kind')\n    at Object.start (http://127.0.0"
+      ]
+    },
+    {
+      "i": 6,
+      "text": "未命名 4分钟",
+      "x": 140,
+      "y": 428,
+      "title": "workspace",
+      "flowKids": null,
+      "flowText": "",
+      "userRows": 0,
+      "dots": 0,
+      "navDisplay": "none",
+      "navRect": {
+        "x": 0,
+        "w": 0,
+        "h": 0
+      },
+      "activeIdx": -1,
+      "cons": []
+    },
+    {
+      "i": 7,
+      "text": "未分组",
+      "x": 140,
+      "y": 465,
+      "title": "workspace",
+      "flowKids": null,
+      "flowText": "",
+      "userRows": 0,
+      "dots": 0,
+      "navDisplay": "none",
+      "navRect": {
+        "x": 0,
+        "w": 0,
+        "h": 0
+      },
+      "activeIdx": -1,
+      "cons": [
+        "[session-controller] event feed subscriber failed: TypeError: Cannot read properties of undefined (reading 'kind')\n    at Object.start (http://127.0.0"
+      ]
+    }
+  ],
+  "errors": []
+}

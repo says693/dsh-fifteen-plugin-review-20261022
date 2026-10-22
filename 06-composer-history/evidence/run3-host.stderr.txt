@@ -1,0 +1,16 @@
+<anonymous_script>:1
+﻿{
+^
+
+SyntaxError: Unexpected token '﻿', "﻿{
+    "n"... is not valid JSON
+    at JSON.parse (<anonymous>)
+    at readProfileManifest (file:///C:/Users/32621/AppData/Roaming/npm/node_modules/@deepseek-ai/dsh/node_modules/@deepseek-ai/dsh-app-boot/lib/index.js:835:22)
+    at loadProfile (file:///C:/Users/32621/AppData/Roaming/npm/node_modules/@deepseek-ai/dsh/node_modules/@deepseek-ai/dsh-app-boot/lib/index.js:978:37)
+    at prepareProfile (file:///C:/Users/32621/AppData/Roaming/npm/node_modules/@deepseek-ai/dsh/lib/profile-boot-BZ2ZjNWi.js:187:18)
+    at composeProfile (file:///C:/Users/32621/AppData/Roaming/npm/node_modules/@deepseek-ai/dsh/lib/profile-boot-BZ2ZjNWi.js:206:46)
+    at runProfile (file:///C:/Users/32621/AppData/Roaming/npm/node_modules/@deepseek-ai/dsh/lib/profile-boot-BZ2ZjNWi.js:241:26)
+    at async runCli (file:///C:/Users/32621/AppData/Roaming/npm/node_modules/@deepseek-ai/dsh/lib/bin.js:215:5)
+    at async file:///C:/Users/32621/AppData/Roaming/npm/node_modules/@deepseek-ai/dsh/lib/bin.js:252:23
+
+Node.js v24.19.0

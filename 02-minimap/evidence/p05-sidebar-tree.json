@@ -1,0 +1,172 @@
+{
+  "dump": {
+    "aside": {
+      "tag": "DIV",
+      "cls": "pI_x6G_sidebarCol",
+      "attrs": {},
+      "text": "新会话\nCtrl\n+\nAlt\n+\nN\n插件\n工作区\nworkspace\n新会话\nMM 长会话 48 轮\n1小时\nMM 长",
+      "kids": [
+        {
+          "tag": "DIV",
+          "cls": "",
+          "attrs": {
+            "data-slot": "sidebar",
+            "style": "display: contents;"
+          },
+          "text": "新会话\nCtrl\n+\nAlt\n+\nN\n插件\n工作区\nworkspace\n新会话\nMM 长会话 48 轮\n1小时\nMM 长",
+          "kids": [
+            {
+              "tag": "DIV",
+              "cls": "hHd-Xa_root hHd-Xa_quietBars",
+              "attrs": {
+                "style": "width: 280px;"
+              },
+              "text": "新会话\nCtrl\n+\nAlt\n+\nN\n插件\n工作区\nworkspace\n新会话\nMM 长会话 48 轮\n1小时\nMM 长",
+              "kids": [
+                {
+                  "tag": "DIV",
+                  "cls": "hHd-Xa_logoRow",
+                  "attrs": {
+                    "data-window-drag": "true"
+                  },
+                  "text": "",
+                  "kids": [
+                    {
+                      "tag": "BUTTON",
+                      "cls": "hHd-Xa_brand hHd-Xa_wide",
+                      "attrs": {
+                        "type": "button",
+                        "aria-label": "新建会话",
+                        "aria-keyshortcuts": "Control+Alt+N"
+                      },
+                      "text": "",
+                      "kids": [
+                        null
+                      ]
+                    },
+                    {
+                      "tag": "BUTTON",
+                      "cls": "hHd-Xa_iconButton hHd-Xa_toggle",
+                      "attrs": {
+                        "type": "button",
+                        "aria-label": "收起侧边栏",
+                        "aria-keyshortcuts": "Control+Alt+B"
+                      },
+                      "text": "",
+                      "kids": [
+                        null
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "BUTTON",
+                  "cls": "hHd-Xa_newSession",
+                  "attrs": {
+                    "type": "button",
+                    "aria-label": "新建会话",
+                    "aria-keyshortcuts": "Control+Alt+N"
+                  },
+                  "text": "新会话\nCtrl\n+\nAlt\n+\nN",
+                  "kids": [
+                    {
+                      "tag": "SPAN",
+                      "cls": "hHd-Xa_newSessionLabelMask",
+                      "attrs": {},
+                      "text": "新会话",
+                      "kids": [
+                        null
+                      ]
+                    },
+                    {
+                      "tag": "SPAN",
+                      "cls": "hHd-Xa_newSessionShortcut",
+                      "attrs": {
+                        "aria-hidden": "true"
+                      },
+                      "text": "Ctrl\n+\nAlt\n+\nN",
+                      "kids": [
+                        null
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "NAV",
+                  "cls": "hHd-Xa_panelList",
+                  "attrs": {
+                    "aria-label": "全局面板"
+                  },
+                  "text": "插件",
+                  "kids": [
+                    {
+                      "tag": "BUTTON",
+                      "cls": "hHd-Xa_panelRow",
+                      "attrs": {
+                        "type": "button",
+                        "aria-label": "插件"
+                      },
+                      "text": "插件",
+                      "kids": [
+                        null,
+                        null
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "DIV",
+                  "cls": "hHd-Xa_regionArea",
+                  "attrs": {},
+                  "text": "工作区\nworkspace\n新会话\nMM 长会话 48 轮\n1小时\nMM 长短混排 8 轮\n1小时\nMM 三条会话\n1小",
+                  "kids": [
+                    {
+                      "tag": "DIV",
+                      "cls": "",
+                      "attrs": {
+                        "data-slot": "sidebar.workspaces",
+                        "style": "display: contents;"
+                      },
+                      "text": "工作区\nworkspace\n新会话\nMM 长会话 48 轮\n1小时\nMM 长短混排 8 轮\n1小时\nMM 三条会话\n1小",
+                      "kids": [
+                        null
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "DIV",
+                  "cls": "hHd-Xa_footArea",
+                  "attrs": {},
+                  "text": "设置",
+                  "kids": [
+                    {
+                      "tag": "DIV",
+                      "cls": "hHd-Xa_footerActions",
+                      "attrs": {},
+                      "text": "",
+                      "kids": [
+                        null
+                      ]
+                    },
+                    {
+                      "tag": "DIV",
+                      "cls": "hHd-Xa_settingsArea",
+                      "attrs": {},
+                      "text": "设置",
+                      "kids": [
+                        null
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "bodyText": "新会话\nCtrl\n+\nAlt\n+\nN\n插件\n工作区\nworkspace\n新会话\nMM 长会话 48 轮\n1小时\nMM 长短混排 8 轮\n1小时\nMM 三条会话\n1小时\nMM 极短会话 1 条\n1小时\n设置\n探索未至之境\n预览版\nworkspace\n标准模式\n描述你想要构建的内容, / 调用指令, @ 文件或对话\n工作区内修改\nDeepSeek-V41-Flash\nHigh\n预览版说明\n\nDeepSeek Harness 目前的 0.2 版本仍处于预览阶段，还有许多地方需要持续改进和打磨，希望听取广大开发者和用户的反馈建议。现在，新的桌面端面向广泛用户，开发者相关的进阶功能可在配置中开启使用。预"
+  },
+  "errors": []
+}

@@ -1,0 +1,327 @@
+{
+  "origin": "http://127.0.0.1:14928",
+  "utc": "2026-10-22T01:47:54.602Z",
+  "steps": [
+    {
+      "name": "ping",
+      "status": 200,
+      "body": "{\"ok\":true,\"jobsService\":\"object\",\"jobsMethods\":[\"list\",\"get\",\"read\",\"readAt\",\"kill\",\"start\",\"wait\",\"remove\"],\"agentCount\":1,\"activeHandles\":[\"probe-1\"]}",
+      "parsed": {
+        "ok": true,
+        "jobsService": "object",
+        "jobsMethods": [
+          "list",
+          "get",
+          "read",
+          "readAt",
+          "kill",
+          "start",
+          "wait",
+          "remove"
+        ],
+        "agentCount": 1,
+        "activeHandles": [
+          "probe-1"
+        ]
+      }
+    },
+    {
+      "name": "list0",
+      "status": 200,
+      "body": "{\"unowned\":[{\"id\":\"probe-1\",\"kind\":\"probe\",\"label\":\"r3-running\",\"status\":\"completed\",\"startedAt\":1792633533194,\"finishedAt\":1792633564392,\"output\":{\"total\":5880,\"earliest\":0}}],\"perAgent\":[{\"id\":\"session-8edbe7f6-98a0-421b-aa96-32383adfe63e\",\"jobs\":[{\"id\":\"probe-1\",\"kind\":\"probe\",\"label\":\"r3-running\",\"status\":\"completed\",\"startedAt\":1792633533194,\"finishedAt\":1792633564392,\"output\":{\"total\":5880,\"earliest\":0}}]}],\"agents\":[{\"id\":\"session-8edbe7f6-98a0-421b-aa96-32383adfe63e\",\"ctor\":\"ReactLoopAgent\"}],\"produced\":{\"probe-1\":5880}}",
+      "parsed": {
+        "unowned": [
+          {
+            "id": "probe-1",
+            "kind": "probe",
+            "label": "r3-running",
+            "status": "completed",
+            "startedAt": 1792633533194,
+            "finishedAt": 1792633564392,
+            "output": {
+              "total": 5880,
+              "earliest": 0
+            }
+          }
+        ],
+        "perAgent": [
+          {
+            "id": "session-8edbe7f6-98a0-421b-aa96-32383adfe63e",
+            "jobs": [
+              {
+                "id": "probe-1",
+                "kind": "probe",
+                "label": "r3-running",
+                "status": "completed",
+                "startedAt": 1792633533194,
+                "finishedAt": 1792633564392,
+                "output": {
+                  "total": 5880,
+                  "earliest": 0
+                }
+              }
+            ]
+          }
+        ],
+        "agents": [
+          {
+            "id": "session-8edbe7f6-98a0-421b-aa96-32383adfe63e",
+            "ctor": "ReactLoopAgent"
+          }
+        ],
+        "produced": {
+          "probe-1": 5880
+        }
+      }
+    },
+    {
+      "name": "start-owned",
+      "status": 200,
+      "body": "{\"id\":\"probe-2\",\"opts\":{\"mode\":\"long\",\"kind\":\"probe\",\"label\":\"OWNED-running\",\"lines\":100,\"intervalMs\":300,\"owner\":\"session-8edbe7f6-98a0-421b-aa96-32383adfe63e\"}}",
+      "parsed": {
+        "id": "probe-2",
+        "opts": {
+          "mode": "long",
+          "kind": "probe",
+          "label": "OWNED-running",
+          "lines": 100,
+          "intervalMs": 300,
+          "owner": "session-8edbe7f6-98a0-421b-aa96-32383adfe63e"
+        }
+      }
+    },
+    {
+      "name": "tasks-with-owned",
+      "status": 200,
+      "body": "{\"tasks\":[{\"id\":\"probe-1\",\"kind\":\"probe\",\"label\":\"r3-running\",\"status\":\"completed\",\"startedAt\":1792633533194,\"finishedAt\":1792633564392}]}",
+      "parsed": {
+        "tasks": [
+          {
+            "id": "probe-1",
+            "kind": "probe",
+            "label": "r3-running",
+            "status": "completed",
+            "startedAt": 1792633533194,
+            "finishedAt": 1792633564392
+          }
+        ]
+      }
+    },
+    {
+      "name": "probe-list-with-owned",
+      "status": 200,
+      "body": "{\"unowned\":[{\"id\":\"probe-1\",\"kind\":\"probe\",\"label\":\"r3-running\",\"status\":\"completed\",\"startedAt\":1792633533194,\"finishedAt\":1792633564392,\"output\":{\"total\":5880,\"earliest\":0}}],\"perAgent\":[{\"id\":\"session-8edbe7f6-98a0-421b-aa96-32383adfe63e\",\"jobs\":[{\"id\":\"probe-1\",\"kind\":\"probe\",\"label\":\"r3-running\",\"status\":\"completed\",\"startedAt\":1792633533194,\"finishedAt\":1792633564392,\"output\":{\"total\":5880,\"earliest\":0}}]}],\"agents\":[{\"id\":\"session-8edbe7f6-98a0-421b-aa96-32383adfe63e\",\"ctor\":\"ReactLoopAgent\"}],\"produced\":{\"probe-1\":5880,\"probe-2\":98}}",
+      "parsed": {
+        "unowned": [
+          {
+            "id": "probe-1",
+            "kind": "probe",
+            "label": "r3-running",
+            "status": "completed",
+            "startedAt": 1792633533194,
+            "finishedAt": 1792633564392,
+            "output": {
+              "total": 5880,
+              "earliest": 0
+            }
+          }
+        ],
+        "perAgent": [
+          {
+            "id": "session-8edbe7f6-98a0-421b-aa96-32383adfe63e",
+            "jobs": [
+              {
+                "id": "probe-1",
+                "kind": "probe",
+                "label": "r3-running",
+                "status": "completed",
+                "startedAt": 1792633533194,
+                "finishedAt": 1792633564392,
+                "output": {
+                  "total": 5880,
+                  "earliest": 0
+                }
+              }
+            ]
+          }
+        ],
+        "agents": [
+          {
+            "id": "session-8edbe7f6-98a0-421b-aa96-32383adfe63e",
+            "ctor": "ReactLoopAgent"
+          }
+        ],
+        "produced": {
+          "probe-1": 5880,
+          "probe-2": 98
+        }
+      }
+    },
+    {
+      "name": "start-unowned",
+      "status": 200,
+      "body": "{\"id\":\"probe-3\",\"opts\":{\"mode\":\"long\",\"kind\":\"probe\",\"label\":\"UNOWNED-running\",\"lines\":100,\"intervalMs\":300,\"owner\":null}}",
+      "parsed": {
+        "id": "probe-3",
+        "opts": {
+          "mode": "long",
+          "kind": "probe",
+          "label": "UNOWNED-running",
+          "lines": 100,
+          "intervalMs": 300,
+          "owner": null
+        }
+      }
+    },
+    {
+      "name": "tasks-with-both",
+      "status": 200,
+      "body": "{\"tasks\":[{\"id\":\"probe-1\",\"kind\":\"probe\",\"label\":\"r3-running\",\"status\":\"completed\",\"startedAt\":1792633533194,\"finishedAt\":1792633564392},{\"id\":\"probe-3\",\"kind\":\"probe\",\"label\":\"UNOWNED-running\",\"status\":\"running\",\"startedAt\":1792633675292}]}",
+      "parsed": {
+        "tasks": [
+          {
+            "id": "probe-1",
+            "kind": "probe",
+            "label": "r3-running",
+            "status": "completed",
+            "startedAt": 1792633533194,
+            "finishedAt": 1792633564392
+          },
+          {
+            "id": "probe-3",
+            "kind": "probe",
+            "label": "UNOWNED-running",
+            "status": "running",
+            "startedAt": 1792633675292
+          }
+        ]
+      }
+    },
+    {
+      "name": "probe-list-with-both",
+      "status": 200,
+      "body": "{\"unowned\":[{\"id\":\"probe-1\",\"kind\":\"probe\",\"label\":\"r3-running\",\"status\":\"completed\",\"startedAt\":1792633533194,\"finishedAt\":1792633564392,\"output\":{\"total\":5880,\"earliest\":0}},{\"id\":\"probe-3\",\"kind\":\"probe\",\"label\":\"UNOWNED-running\",\"status\":\"running\",\"startedAt\":1792633675292,\"output\":{\"total\":98,\"earliest\":0}}],\"perAgent\":[{\"id\":\"session-8edbe7f6-98a0-421b-aa96-32383adfe63e\",\"jobs\":[{\"id\":\"probe-1\",\"kind\":\"probe\",\"label\":\"r3-running\",\"status\":\"completed\",\"startedAt\":1792633533194,\"finishedAt\":1792633564392,\"output\":{\"total\":5880,\"earliest\":0}},{\"id\":\"probe-3\",\"kind\":\"probe\",\"label\":\"UNOWNED-running\",\"status\":\"running\",\"startedAt\":1792633675292,\"output\":{\"total\":98,\"earliest\":0}}]}],\"agents\":[{\"id\":\"session-8edbe7f6-98a0-421b-aa96-32383adfe63e\",\"ctor\":\"ReactLoopAgent\"}],\"produced\":{\"probe-1\":5880,\"probe-2\":196,\"probe-3\":98}}",
+      "parsed": {
+        "unowned": [
+          {
+            "id": "probe-1",
+            "kind": "probe",
+            "label": "r3-running",
+            "status": "completed",
+            "startedAt": 1792633533194,
+            "finishedAt": 1792633564392,
+            "output": {
+              "total": 5880,
+              "earliest": 0
+            }
+          },
+          {
+            "id": "probe-3",
+            "kind": "probe",
+            "label": "UNOWNED-running",
+            "status": "running",
+            "startedAt": 1792633675292,
+            "output": {
+              "total": 98,
+              "earliest": 0
+            }
+          }
+        ],
+        "perAgent": [
+          {
+            "id": "session-8edbe7f6-98a0-421b-aa96-32383adfe63e",
+            "jobs": [
+              {
+                "id": "probe-1",
+                "kind": "probe",
+                "label": "r3-running",
+                "status": "completed",
+                "startedAt": 1792633533194,
+                "finishedAt": 1792633564392,
+                "output": {
+                  "total": 5880,
+                  "earliest": 0
+                }
+              },
+              {
+                "id": "probe-3",
+                "kind": "probe",
+                "label": "UNOWNED-running",
+                "status": "running",
+                "startedAt": 1792633675292,
+                "output": {
+                  "total": 98,
+                  "earliest": 0
+                }
+              }
+            ]
+          }
+        ],
+        "agents": [
+          {
+            "id": "session-8edbe7f6-98a0-421b-aa96-32383adfe63e",
+            "ctor": "ReactLoopAgent"
+          }
+        ],
+        "produced": {
+          "probe-1": 5880,
+          "probe-2": 196,
+          "probe-3": 98
+        }
+      }
+    },
+    {
+      "name": "kill-owned",
+      "status": 500,
+      "body": "{\"error\":\"Error: job probe-2 belongs to another session\"}",
+      "parsed": {
+        "error": "Error: job probe-2 belongs to another session"
+      }
+    },
+    {
+      "name": "kill-unowned",
+      "status": 200,
+      "body": "{\"ok\":true,\"snapshot\":\"requested\"}",
+      "parsed": {
+        "ok": true,
+        "snapshot": "requested"
+      }
+    }
+  ],
+  "agents": [
+    {
+      "id": "session-8edbe7f6-98a0-421b-aa96-32383adfe63e",
+      "ctor": "ReactLoopAgent"
+    }
+  ],
+  "ownedId": "probe-2",
+  "unownedId": "probe-3",
+  "verdict": {
+    "ownerId": "session-8edbe7f6-98a0-421b-aa96-32383adfe63e",
+    "ownedJobId": "probe-2",
+    "unownedJobId": "probe-3",
+    "idsSeenByPluginRoute": [
+      "probe-1",
+      "probe-3"
+    ],
+    "idsSeenAsUnownedByHost": [
+      "probe-1",
+      "probe-3"
+    ],
+    "idsSeenAsPerAgentByHost": [
+      "probe-1",
+      "probe-3"
+    ],
+    "ownedMissingFromPluginRoute": true,
+    "unownedPresentInPluginRoute": true,
+    "taskKeysForFirstRow": [
+      "id",
+      "kind",
+      "label",
+      "status",
+      "startedAt",
+      "finishedAt"
+    ],
+    "ownerFieldPresentInAnyHostRow": false
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "open": {
+    "text": "",
+    "overlay": true,
+    "active": "INPUT.",
+    "rows": 4
+  },
+  "realEsc": {
+    "text": "",
+    "overlay": true,
+    "active": "DIV.uV2eYG_input",
+    "rows": 4,
+    "probe": {
+      "captureSeen": [
+        {
+          "prevented": false
+        }
+      ],
+      "rootSeen": [
+        {
+          "prevented": true
+        }
+      ],
+      "inputSeen": [
+        {
+          "prevented": false
+        }
+      ]
+    }
+  },
+  "beforeDispatch": {
+    "text": "",
+    "overlay": true,
+    "active": "DIV.uV2eYG_input",
+    "rows": 4
+  },
+  "syntheticEsc": {
+    "text": "",
+    "overlay": true,
+    "active": "DIV.uV2eYG_input",
+    "rows": 4,
+    "dispatched": {
+      "ok": true,
+      "dispatchReturned": true
+    }
+  },
+  "parkedFocus": "DIV",
+  "outside": {
+    "text": "",
+    "overlay": true,
+    "active": "DIV.YDXeBa_projectRow",
+    "rows": 4,
+    "cap": [
+      {
+        "key": "Control",
+        "ctrl": true,
+        "prevented": false
+      },
+      {
+        "key": "r",
+        "ctrl": true,
+        "prevented": false
+      }
+    ]
+  },
+  "errors": []
+}

@@ -1,0 +1,212 @@
+{
+  "utc": "2026-10-22T02:03:21.778Z",
+  "phases": [
+    {
+      "label": "00-after-new-session",
+      "hasChatFlow": false,
+      "barCount": 0,
+      "flowKids": 0,
+      "bodyTextLen": 209
+    },
+    {
+      "label": "01-three-running-tasks",
+      "hasChatFlow": false,
+      "barCount": 0,
+      "flowKids": 0,
+      "bodyTextLen": 209
+    },
+    {
+      "label": "02-after-bar-click",
+      "hasChatFlow": false,
+      "barCount": 0,
+      "flowKids": 0,
+      "bodyTextLen": 209
+    },
+    {
+      "label": "03-narrow-900",
+      "hasChatFlow": false,
+      "barCount": 0,
+      "flowKids": 0,
+      "bodyTextLen": 149
+    },
+    {
+      "label": "04-narrow-640",
+      "hasChatFlow": false,
+      "barCount": 0,
+      "flowKids": 0,
+      "bodyTextLen": 149
+    },
+    {
+      "label": "05-after-reload",
+      "hasChatFlow": false,
+      "barCount": 0,
+      "flowKids": 0,
+      "bodyTextLen": 209
+    },
+    {
+      "label": "06-after-kill-all",
+      "hasChatFlow": false,
+      "barCount": 0,
+      "flowKids": 0,
+      "bodyTextLen": 209
+    }
+  ],
+  "host": {
+    "origin": "http://127.0.0.1:8798",
+    "pid": 14996
+  },
+  "ping0": {
+    "ok": true,
+    "jobsService": "object",
+    "jobsMethods": [
+      "list",
+      "get",
+      "read",
+      "readAt",
+      "kill",
+      "start",
+      "wait",
+      "remove"
+    ],
+    "agentCount": 1,
+    "activeHandles": []
+  },
+  "list0": {
+    "unowned": [],
+    "perAgent": [
+      {
+        "id": "session-8ccfdb80-463a-4498-961b-57ecff1cedf0",
+        "jobs": []
+      }
+    ],
+    "agents": [
+      {
+        "id": "session-8ccfdb80-463a-4498-961b-57ecff1cedf0",
+        "ctor": "ReactLoopAgent"
+      }
+    ],
+    "produced": {}
+  },
+  "starts": [
+    {
+      "label": "MULTI-A",
+      "status": 200,
+      "body": "{\"id\":\"probe-1\",\"opts\":{\"mode\":\"long\",\"kind\":\"probe\",\"label\":\"MULTI-A\",\"lines\":200,\"intervalMs\":250,\"owner\":null}}"
+    },
+    {
+      "label": "MULTI-B",
+      "status": 200,
+      "body": "{\"id\":\"probe-2\",\"opts\":{\"mode\":\"long\",\"kind\":\"probe\",\"label\":\"MULTI-B\",\"lines\":200,\"intervalMs\":300,\"owner\":null}}"
+    },
+    {
+      "label": "MULTI-C",
+      "status": 200,
+      "body": "{\"id\":\"probe-3\",\"opts\":{\"mode\":\"long\",\"kind\":\"probe\",\"label\":\"MULTI-C\",\"lines\":200,\"intervalMs\":350,\"owner\":null}}"
+    }
+  ],
+  "tasksAlive": {
+    "status": 200,
+    "body": "{\"tasks\":[{\"id\":\"probe-1\",\"kind\":\"probe\",\"label\":\"MULTI-A\",\"status\":\"running\",\"startedAt\":1792634649748},{\"id\":\"probe-2\",\"kind\":\"probe\",\"label\":\"MULTI-B\",\"status\":\"running\",\"startedAt\":1792634649755},{\"id\":\"probe-3\",\"kind\":\"probe\",\"label\":\"MULTI-C\",\"status\":\"running\",\"startedAt\":1792634649761}]}",
+    "count": 3,
+    "keys": [
+      "id",
+      "kind",
+      "label",
+      "status",
+      "startedAt"
+    ],
+    "ids": [
+      "probe-1",
+      "probe-2",
+      "probe-3"
+    ]
+  },
+  "outputAlive": {
+    "status": 404,
+    "bodyHead": "{\"error\":\"task probe-1 not found\"}",
+    "bodyLen": 34
+  },
+  "kills": [
+    {
+      "id": "probe-1",
+      "status": 200
+    },
+    {
+      "id": "probe-2",
+      "status": 200
+    },
+    {
+      "id": "probe-3",
+      "status": 200
+    }
+  ],
+  "tasksAfterKill": {
+    "status": 200,
+    "count": 3,
+    "statuses": [
+      "killed",
+      "killed",
+      "killed"
+    ]
+  },
+  "verdict": {
+    "hasChatFlowEver": false,
+    "barCounts": [
+      {
+        "label": "00-after-new-session",
+        "bar": 0,
+        "flow": false
+      },
+      {
+        "label": "01-three-running-tasks",
+        "bar": 0,
+        "flow": false
+      },
+      {
+        "label": "02-after-bar-click",
+        "bar": 0,
+        "flow": false
+      },
+      {
+        "label": "03-narrow-900",
+        "bar": 0,
+        "flow": false
+      },
+      {
+        "label": "04-narrow-640",
+        "bar": 0,
+        "flow": false
+      },
+      {
+        "label": "05-after-reload",
+        "bar": 0,
+        "flow": false
+      },
+      {
+        "label": "06-after-kill-all",
+        "bar": 0,
+        "flow": false
+      }
+    ],
+    "tasksAliveKeys": [
+      "id",
+      "kind",
+      "label",
+      "status",
+      "startedAt"
+    ],
+    "tasksAliveCount": 3,
+    "outputAliveStatus": 404,
+    "outputAliveLen": 34,
+    "polls": 62,
+    "outputPolls": 1
+  },
+  "errors": [],
+  "consoleLog": [
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "utc": "2026-10-22T02:04:12.386Z"
+    }
+  ]
+}

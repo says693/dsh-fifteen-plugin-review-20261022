@@ -1,0 +1,124 @@
+{
+  "task": "r1-03-turn-index",
+  "round": "r1",
+  "batch": "fifteen-plugin-reviews-20261022",
+  "object": "dsh-turn-index@0.1.1",
+  "repo": "Simon314620/dsh-turn-index",
+  "source_commit": "a324ecde201a219448c23c1c8bbd872bdab512b4",
+  "stage": "completed",
+  "state": "completed",
+  "started_at": "2026-10-22T08:56:00+08:00",
+  "finished_at": "2026-10-22T09:25:00+08:00",
+  "task_dir": "H:\\CODEX\\fifteen-plugin-reviews-20261022\\r1-03-turn-index",
+  "blocked": false,
+  "blockers": [],
+  "headline": "插件装上、宿主认它、client bundle 在浏览器执行（样式注入成功），但右侧轮次索引面板在 5 种会话 × 4 档视口 × 3 次刷新 × 1 次冷重启下从未渲染。根因已用只读探针定位：useSessions(s => s.current) 在 DSH 0.2.0-rc.2 上恒为 undefined，插件 lib/client.js:388 因此恒定 return null。",
+  "counts": {
+    "checks_total": 22,
+    "confirmed": 15,
+    "untested": 6,
+    "uncertain": 1,
+    "defect_confirmed": 4,
+    "p1_confirmed": 1,
+    "p2_confirmed": 1
+  },
+  "confirmed_items": [
+    "A1 发布件安装成功（exit 0），profile bundles 追加 dsh-turn-index",
+    "A2 宿主识别插件；boot manifest 下发 client bundle",
+    "A3 client bundle 在浏览器执行（injectCss 生效，reload 后样式标签恒为 1 份）",
+    "B1 面板从不渲染（1440 宽 .dsh_ti_root=null、[class*=\"dsh_ti\"]=0）",
+    "B1b 排除渲染竞态（21 次采样 + MutationObserver 5s，everPresent=false；reload×3 与冷重启读数一致）",
+    "B1c 排除抛错路径（pageerror/rejection/console.error 全空；无 data-slot-error / data-factory-error）",
+    "B1d 根因：useSessions(s=>s.current)===undefined；SessionListState 无 current 字段；binding(undefined)=undefined",
+    "F1/F2/F3/I1 0/1/6/20 轮与超长单轮下会话数据齐备（userRows 0/1/6/20/3）而面板恒缺席",
+    "G1/G2 刷新与冷重启后读数完全一致",
+    "I2 快速来回滚动 10 次无崩溃、无 pageerror",
+    "J1 无 engines、无宿主版本 peer 约束 ⇒ 不兼容在安装阶段不可见"
+  ],
+  "untested_items": [
+    "C1/C2 滚动联动高亮是否跟手、是否漏/多高亮（无可观测条目）",
+    "D1 点击条目跳转（可点条目数 0）",
+    "E1 折叠/展开状态保留（.dsh_ti_toggle 不存在）",
+    "H2 窄窗 1000/760/600 下插件窄条降级是否遮挡（宿主自身无横向溢出，插件侧无对象）",
+    "「加载更早的轮次」分页",
+    "轨迹视图兜底提示与「切回对话」按钮",
+    "双语文案切换（locale 已注册但面板不存在）",
+    "details 面板打开时的左移避让",
+    "0.1.0-rc.6 宿主上是否同样失效"
+  ],
+  "uncertain_items": [
+    "H1 与宿主自带轮次导轨（rect {x:1393,y:443,w:28,h:62}）及 [data-composer-seat] 的重叠：按插件 CSS 推算相交 1674 px²、面板 bottom=1004 越出 1000 高视口，属几何推算非实测"
+  ],
+  "dedup": {
+    "review_site": {
+      "url": "https://review.lingshulab.com",
+      "checked_at": "2026-10-22T09:12:00+08:00",
+      "method": "逐页全量 /reviews?page=1..9 + 本地正则（?q= 不生效）",
+      "scanned": 170,
+      "hits": 0,
+      "state": "clean"
+    },
+    "bounty_issues": {
+      "url": "https://github.com/FuRongJun-1999/dsh-bounty/issues",
+      "checked_at": "2026-10-22T09:12:00+08:00",
+      "method": "REST 分页 1000 条 + search API 精确查询",
+      "scanned": 1000,
+      "hits": 0,
+      "state": "clean"
+    },
+    "verdict": "两站均查清，无同插件/同作者既有稿件 —— 首报"
+  },
+  "processes": {
+    "self_hosted": [
+      { "tag": "h1", "port": 2122, "pid": 27400, "state": "stopped" },
+      { "tag": "h2", "port": 14959, "pid": 36368, "state": "stopped" },
+      { "tag": "h3", "port": 7924, "pid": 7468, "state": "stopped" },
+      { "tag": "h4", "port": 9772, "pid": 33044, "state": "stopped" }
+    ],
+    "ports_verified_closed": [2122, 14959, 7924, 9772],
+    "browser": "Playwright headless Edge，每个探针 run 结束时 context.close() + browser.close()",
+    "note": "只清理了自己创建的宿主进程；未按进程名批量终止其他 agent 的 node/msedge",
+    "user_gui_untouched": "未访问 1241 / 2538 / 4756"
+  },
+  "environment": {
+    "host": "@deepseek-ai/dsh 0.2.0-rc.2",
+    "browser": "Edge 155.0.4283.62",
+    "driver": "Playwright 1.64.1",
+    "node": "v24.19.0",
+    "os": "Windows 11 家庭版 中文版 10.0.26200",
+    "isolation": "DSH_HOME/HOME/USERPROFILE/APPDATA/LOCALAPPDATA/npm cache 全指向任务目录；端口 0"
+  },
+  "files": {
+    "PLAN.md": "H:\\CODEX\\fifteen-plugin-reviews-20261022\\r1-03-turn-index\\PLAN.md",
+    "PROVENANCE.json": "H:\\CODEX\\fifteen-plugin-reviews-20261022\\r1-03-turn-index\\PROVENANCE.json",
+    "RESULTS.json": "H:\\CODEX\\fifteen-plugin-reviews-20261022\\r1-03-turn-index\\RESULTS.json",
+    "REPORT.md": "H:\\CODEX\\fifteen-plugin-reviews-20261022\\r1-03-turn-index\\REPORT.md",
+    "ISSUE_DRAFT.md": "H:\\CODEX\\fifteen-plugin-reviews-20261022\\r1-03-turn-index\\ISSUE_DRAFT.md",
+    "SITE_REVIEW.md": "H:\\CODEX\\fifteen-plugin-reviews-20261022\\r1-03-turn-index\\SITE_REVIEW.md",
+    "REPRODUCE.md": "H:\\CODEX\\fifteen-plugin-reviews-20261022\\r1-03-turn-index\\REPRODUCE.md",
+    "STATUS.json": "H:\\CODEX\\fifteen-plugin-reviews-20261022\\r1-03-turn-index\\STATUS.json",
+    "host.mjs": "H:\\CODEX\\fifteen-plugin-reviews-20261022\\r1-03-turn-index\\host.mjs",
+    "browser-kit.mjs": "H:\\CODEX\\fifteen-plugin-reviews-20261022\\r1-03-turn-index\\browser-kit.mjs",
+    "make-sessions.mjs": "H:\\CODEX\\fifteen-plugin-reviews-20261022\\r1-03-turn-index\\make-sessions.mjs",
+    "probe-plugin": "H:\\CODEX\\fifteen-plugin-reviews-20261022\\r1-03-turn-index\\probe-plugin",
+    "evidence_dir": "H:\\CODEX\\fifteen-plugin-reviews-20261022\\r1-03-turn-index\\evidence"
+  },
+  "site_review": {
+    "written": true,
+    "cjk_chars": 1490,
+    "in_range_800_1500": true,
+    "structure": ["场景开场", "它到底做了什么", "我第一次用它", "好用的地方", "让人卡住的地方", "我没办法验证的部分", "给想装的人一句话"],
+    "forbidden_terms_hits": 0
+  },
+  "issue_draft_confirmed_ids": ["A1", "A2", "A3", "B1", "B1b", "B1c", "B1d", "P2-J1"],
+  "boundaries_honored": {
+    "no_submission": true,
+    "no_upload": true,
+    "no_new_repo": true,
+    "no_source_modification": true,
+    "no_subagent": true,
+    "no_paid_service": true,
+    "no_secret_read": true,
+    "mock_not_used_as_evidence": true
+  }
+}

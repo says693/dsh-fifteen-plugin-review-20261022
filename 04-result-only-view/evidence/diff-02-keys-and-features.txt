@@ -1,0 +1,67 @@
+=== 1.7.0 CHANGELOG head (what changed since 1.6.4) ===
+# Changelog
+
+## [1.7.0] - 2026-10-01
+
+- Added: the plugin now runs in the **DeepSeek Harness desktop app** as well as
+  on `dsh web`, without a second build. Both surfaces serve the same client
+  platform (`dsh.client.platform: "web"`; the desktop profile boots the same Web
+  application), so the work was making the browser half understand both
+  conversation DOM generations:
+  - **Turn-trace slot registration.** `conversation.chat.turnTail` is a *chain*
+    slot in 0.1.x (gated by `select`) but a *list* slot in 0.2.0, whose
+    registration throws `list slot "conversation.chat.turnTail" requires
+    options.id`. The registration now passes both `id` and `select`; either
+    runtime ignores the option it does not use. Before this fix the trace line
+    never rendered on desktop and the failure surfaced as a page error.
+  - **Nested step seats.** 0.2.0 wraps each step's process in a group seat
+    (`[data-step-process]` / `[data-chat-group-key]`) that nests the tool-call
+    and reasoning flow items, while 0.1.x keeps them as direct children of the
+    transcript column. The turn walkers (`currentTurnItems`, step counting and
+    the reveal key set) now work from the flow's document order and scope
+    themselves to the region between two turn-tail markers, so both shapes
+    resolve to the same turn. Step counting on a settled desktop turn went from
+    `Processed 0 steps` to the real count (184 steps in the verification turn).
+  - **`preparing` tool state.** 0.2.0 marks a tool call that is queued or
+    starting as `data-state="preparing"` before it becomes `"running"`. Both
+    states now count as live, so a step gets its chip from the moment it starts
+    instead of briefly falling back to the native row.
+  - **Settled-turn process controller.** 0.2.0 renders a visible
+    `Completed in 1m 2s` disclosure row at the head of a settled turn's process
+    (0.1.x suppresses it at zero height). It is a process row, so the plugin
+    folds it away like the rest; the trace line stays the reveal affordance and
+    the controller row is excluded from the reveal key set so it never comes
+    back on click.
+- Changed: peer ranges are explicit now
+  (`@deepseek-ai/dsh-client-locale`, `@deepseek-ai/dsh-client-ui-conversation`:
+  `^0.1.1-rc.2 || ^0.2.0-rc.2`) instead of `*`, so the runtime's compatibility
+  gate can actually judge the plugin instead of accepting it blindly.
+- Verified on `dsh web` 0.1.5-rc.3 and on the desktop runtime 0.2.0-rc.2
+  (Electron 0.2.0-rc.2 profile): toggle, fold/reveal cycle (`Processed N steps 路
+  Xs 鈻竊 鈫?`Hide process 鈻綻 鈫?folded), live chips during a running turn, settings
+
+=== 1.6.4 CHANGELOG head ===
+# Changelog
+
+## [1.6.4] - 2026-09-12
+
+- Fixed: DSH 0.1.5 compatibility for the browser-half module gate. The
+  `dsh.client.inject` list declared `@deepseek-ai/dsh-client-runtime`, a package
+  that no longer exists in DSH 0.1.5 (it was split into
+  `dsh-client-ui-renderer`, `dsh-client-ui-session`, `dsh-client-ui-chat` and the
+  `dsh-api-*` controllers). It is replaced by
+  `@deepseek-ai/dsh-client-ui-conversation` 鈥?the module that owns the
+  `conversation.input.left` and `conversation.chat.turnTail` slots this plugin
+  registers into 鈥?which exists in both 0.1.1-rc.2 and 0.1.5-rc.1. The plugin now
+  waits for its own slot owner instead of a removed package, so the toggle is
+  registered only once the composer it lives in is available. The stale
+  `@deepseek-ai/dsh-client-runtime` peer dependency was removed with it. Verified
+  on 0.1.1-rc.2 (composer toggle + Settings rows) and 0.1.5-rc.1/rc.2 (Settings
+  rows "Results only" / "Show turn trace", composer toggle collapsing/expanding
+  the process rows, chip present inside dsh-split-screen panes, no console
+  errors).
+
+
+=== npm 1.7.0 vs 1.6.4: does 1.7.0 add settings row / fold mode? ===
+1.7.0: settings.general.item=True  forceMotion=True  mode:auto/manual=True  CHIP_CSS=True  traceBtn=True  ariaExpanded=True
+1.6.4: settings.general.item=True  forceMotion=True  mode:auto/manual=True  CHIP_CSS=True  traceBtn=True  ariaExpanded=True

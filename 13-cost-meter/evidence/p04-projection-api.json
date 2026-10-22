@@ -1,0 +1,190 @@
+{
+  "apiDump": {
+    "attempts": [
+      {
+        "url": "/api/session/state",
+        "status": 404,
+        "body": "not found"
+      },
+      {
+        "url": "/api/sessions",
+        "status": 404,
+        "body": "not found"
+      }
+    ]
+  },
+  "keyScan": {
+    "hits": [],
+    "windowKeys": [
+      "oncontextrestored",
+      "sessionStorage",
+      "cookieStore",
+      "__DSH_CONTACT_CONFIG__",
+      "__DSH_BOOT__",
+      "__DSH_SHORTCUTS_CONFIG__",
+      "__DSH_DOCUMENT_PREVIEW_CONFIG__",
+      "__DSH_MODELS_ONBOARDING__",
+      "__DSH_CONNECTION_RECOVERY__",
+      "__DSH_BOOT_READY__"
+    ]
+  },
+  "network": [
+    {
+      "path": "/api/settings/describe",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:43:04.060Z"
+    },
+    {
+      "path": "/api/dynamicCordisRunner/syncInspectManifest",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:43:04.061Z"
+    },
+    {
+      "path": "/api/credentials/describe",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:43:04.061Z"
+    },
+    {
+      "path": "/api/dynamicCordisRunner/inventory",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:43:04.061Z"
+    },
+    {
+      "path": "/api/session/modelCatalog",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:43:04.061Z"
+    },
+    {
+      "path": "/api/agentPresets/list",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:43:04.071Z"
+    },
+    {
+      "path": "/api/permissionPresets/catalog",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:43:04.096Z"
+    },
+    {
+      "path": "/api/dynamicCordisRunner/inventory",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:43:04.096Z"
+    },
+    {
+      "path": "/api/agentPresets/list",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:43:04.096Z"
+    },
+    {
+      "path": "/api/agentPresets/list",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:43:04.096Z"
+    },
+    {
+      "path": "/api/session/modelCatalog",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:43:04.116Z"
+    },
+    {
+      "path": "/api/credentials/describe",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:43:04.117Z"
+    },
+    {
+      "path": "/api/settings/describe",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:43:04.117Z"
+    },
+    {
+      "path": "/api/dynamicCordisRunner/syncInspectManifest",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:43:04.117Z"
+    },
+    {
+      "path": "/api/session/list",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:43:04.126Z"
+    },
+    {
+      "path": "/api/credentials/describe",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:43:04.126Z"
+    },
+    {
+      "path": "/api/session/create",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:43:04.157Z"
+    },
+    {
+      "path": "/api/agentPresets/list",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:43:04.217Z"
+    },
+    {
+      "path": "/api/commands/list",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:43:04.226Z"
+    },
+    {
+      "path": "/api/skills/list",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:43:04.226Z"
+    },
+    {
+      "path": "/api/commands/list",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:43:07.522Z"
+    },
+    {
+      "path": "/api/skills/list",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:43:07.522Z"
+    },
+    {
+      "path": "/api/session/state",
+      "method": "GET",
+      "status": 404,
+      "utc": "2026-10-22T01:43:09.492Z"
+    },
+    {
+      "path": "/api/sessions",
+      "method": "GET",
+      "status": 404,
+      "utc": "2026-10-22T01:43:09.496Z"
+    }
+  ],
+  "errors": [],
+  "consoleLog": [
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "utc": "2026-10-22T01:43:09.493Z"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "utc": "2026-10-22T01:43:09.497Z"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+﻿[
+    {
+        "file":  "package.json",
+        "bytes":  5510,
+        "sha256":  "cca0a78bdcabf3c44ef3aed7ed470dd5a47705a4e989007a8170496f8ffad685"
+    },
+    {
+        "file":  "LICENSE",
+        "bytes":  11357,
+        "sha256":  "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+        "file":  "README.md",
+        "bytes":  46509,
+        "sha256":  "26012dba4d107b031abcb19ae6a48c7291f9dfb04495a4195ebece4dc99c7042"
+    },
+    {
+        "file":  "cordis.patch.yml",
+        "bytes":  319,
+        "sha256":  "d30c1c02e59c31e217b1e32dcae0c6014957ed0601cb4a2799bee55923065a66"
+    },
+    {
+        "file":  "lib\\index.js",
+        "bytes":  39971,
+        "sha256":  "e3049db03710d7f3519d0da16e5ff31d61f5486879621bd69a61faabfba8c2a8"
+    },
+    {
+        "file":  "lib\\client.js",
+        "bytes":  143857,
+        "sha256":  "a5d33e5d60c91c4d27f22c71ea6e4645cc889b9143599ec46ce933e3230888cc"
+    },
+    {
+        "file":  "lib\\invariant.js",
+        "bytes":  1296,
+        "sha256":  "6ad4312abe906dbf8fd5c7851b54371f1ebf43098c2383be045978e4e862443d"
+    },
+    {
+        "file":  "src\\client\\recall.ts",
+        "bytes":  14217,
+        "sha256":  "6f49702a280256ed18d58323afe84934fa2e8e643f8455ac9f94b2a8c4c7f51e"
+    },
+    {
+        "file":  "src\\client\\history-store.ts",
+        "bytes":  4118,
+        "sha256":  "349092f1cac4d03718c1dba0c55b80babe2548dc7346b88129f203c95bf4463a"
+    }
+]

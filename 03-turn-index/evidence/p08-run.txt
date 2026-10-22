@@ -1,0 +1,21 @@
+﻿{
+  "obs": {
+    "events": [
+      {
+        "t": 1792631045186,
+        "k": "loader.patched",
+        "v": null
+      }
+    ],
+    "factoryCalls": []
+  },
+  "after": {
+    "panel": false,
+    "styleInjected": true,
+    "slotErrors": [],
+    "overlaySeatChildren": 0,
+    "sessionCurrent": "{\"sessionId\":\"session-cded7315-a936-41eb-a3db-96e7a8c6eac8\"}",
+    "userRows": 0
+  },
+  "pageErrors": []
+}

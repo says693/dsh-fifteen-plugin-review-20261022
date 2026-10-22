@@ -1,0 +1,117 @@
+{
+  "utc": "2026-10-22T01:45:00.760Z",
+  "steps": [
+    {
+      "label": "00-landing",
+      "hasChatFlow": false,
+      "barCount": 0,
+      "flowKids": 0,
+      "flowTextLen": 0,
+      "bodyTextLen": 200
+    },
+    {
+      "label": "01-after-open-session",
+      "hasChatFlow": false,
+      "barCount": 0,
+      "flowKids": 0,
+      "flowTextLen": 0,
+      "bodyTextLen": 200
+    },
+    {
+      "label": "02-after-fallback-click",
+      "hasChatFlow": false,
+      "barCount": 0,
+      "flowKids": 0,
+      "flowTextLen": 0,
+      "bodyTextLen": 200
+    },
+    {
+      "label": "03-with-running-task-in-chat",
+      "hasChatFlow": false,
+      "barCount": 0,
+      "flowKids": 0,
+      "flowTextLen": 0,
+      "bodyTextLen": 200
+    },
+    {
+      "label": "04-after-bar-click",
+      "hasChatFlow": false,
+      "barCount": 0,
+      "flowKids": 0,
+      "flowTextLen": 0,
+      "bodyTextLen": 200
+    }
+  ],
+  "host": {
+    "origin": "http://127.0.0.1:14928",
+    "pid": 32704
+  },
+  "rows": [
+    {
+      "text": "默认工作区",
+      "sel": null,
+      "rect": {
+        "x": 12,
+        "y": 206,
+        "w": 256,
+        "h": 34
+      }
+    },
+    {
+      "text": "ts-fixtures",
+      "sel": null,
+      "rect": {
+        "x": 12,
+        "y": 244,
+        "w": 256,
+        "h": 34
+      }
+    },
+    {
+      "text": "新会话",
+      "sel": "true",
+      "rect": {
+        "x": 12,
+        "y": 280,
+        "w": 256,
+        "h": 32
+      }
+    }
+  ],
+  "clickedRow": null,
+  "startRes": {
+    "status": 200,
+    "body": "{\"id\":\"probe-1\",\"opts\":{\"mode\":\"long\",\"kind\":\"probe\",\"label\":\"r3-running\",\"lines\":120,\"intervalMs\":250,\"owner\":null}}"
+  },
+  "tasksRaw": {
+    "status": 200,
+    "body": "{\"tasks\":[{\"id\":\"probe-1\",\"kind\":\"probe\",\"label\":\"r3-running\",\"status\":\"running\",\"startedAt\":1792633533194}]}",
+    "count": 1,
+    "keys": [
+      "id",
+      "kind",
+      "label",
+      "status",
+      "startedAt"
+    ]
+  },
+  "barBeforeClick": 0,
+  "verdict": {
+    "hasChatFlow": false,
+    "barCountBaseline": 0,
+    "barCountWithRunning": 0,
+    "barCountAfterClick": 0,
+    "routeCount": 1,
+    "routeKeys": [
+      "id",
+      "kind",
+      "label",
+      "status",
+      "startedAt"
+    ],
+    "polls": 35,
+    "clickedRow": null
+  },
+  "errors": [],
+  "consoleLog": []
+}

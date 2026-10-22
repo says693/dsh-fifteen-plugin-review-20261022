@@ -1,0 +1,184 @@
+{
+  "samples": [
+    {
+      "step": 1,
+      "scrollTop": 4635,
+      "activeUser": 22,
+      "expectedUser": 22,
+      "dots": 9,
+      "first": 17,
+      "last": 25,
+      "activeCount": 1,
+      "match": true
+    },
+    {
+      "step": 2,
+      "scrollTop": 4635,
+      "activeUser": 22,
+      "expectedUser": 22,
+      "dots": 9,
+      "first": 17,
+      "last": 25,
+      "activeCount": 1,
+      "match": true
+    },
+    {
+      "step": 3,
+      "scrollTop": 4635,
+      "activeUser": 22,
+      "expectedUser": 22,
+      "dots": 9,
+      "first": 17,
+      "last": 25,
+      "activeCount": 1,
+      "match": true
+    },
+    {
+      "step": 4,
+      "scrollTop": 4635,
+      "activeUser": 22,
+      "expectedUser": 22,
+      "dots": 9,
+      "first": 17,
+      "last": 25,
+      "activeCount": 1,
+      "match": true
+    },
+    {
+      "step": 5,
+      "scrollTop": 4635,
+      "activeUser": 22,
+      "expectedUser": 22,
+      "dots": 9,
+      "first": 17,
+      "last": 25,
+      "activeCount": 1,
+      "match": true
+    },
+    {
+      "step": 6,
+      "scrollTop": 4635,
+      "activeUser": 22,
+      "expectedUser": 22,
+      "dots": 9,
+      "first": 17,
+      "last": 25,
+      "activeCount": 1,
+      "match": true
+    },
+    {
+      "step": 7,
+      "scrollTop": 4635,
+      "activeUser": 22,
+      "expectedUser": 22,
+      "dots": 9,
+      "first": 17,
+      "last": 25,
+      "activeCount": 1,
+      "match": true
+    },
+    {
+      "step": 8,
+      "scrollTop": 4635,
+      "activeUser": 22,
+      "expectedUser": 22,
+      "dots": 9,
+      "first": 17,
+      "last": 25,
+      "activeCount": 1,
+      "match": true
+    },
+    {
+      "step": 9,
+      "scrollTop": 4635,
+      "activeUser": 22,
+      "expectedUser": 22,
+      "dots": 9,
+      "first": 17,
+      "last": 25,
+      "activeCount": 1,
+      "match": true
+    },
+    {
+      "step": 10,
+      "scrollTop": 4635,
+      "activeUser": 22,
+      "expectedUser": 22,
+      "dots": 9,
+      "first": 17,
+      "last": 25,
+      "activeCount": 1,
+      "match": true
+    }
+  ],
+  "kb": [
+    {
+      "step": 1,
+      "scrollTop": 4635,
+      "activeUser": 22,
+      "expectedUser": 22,
+      "dots": 9,
+      "first": 17,
+      "last": 25,
+      "activeCount": 1,
+      "match": true
+    },
+    {
+      "step": 2,
+      "scrollTop": 4635,
+      "activeUser": 22,
+      "expectedUser": 22,
+      "dots": 9,
+      "first": 17,
+      "last": 25,
+      "activeCount": 1,
+      "match": true
+    },
+    {
+      "step": 3,
+      "scrollTop": 4635,
+      "activeUser": 22,
+      "expectedUser": 22,
+      "dots": 9,
+      "first": 17,
+      "last": 25,
+      "activeCount": 1,
+      "match": true
+    },
+    {
+      "step": 4,
+      "scrollTop": 4635,
+      "activeUser": 22,
+      "expectedUser": 22,
+      "dots": 9,
+      "first": 17,
+      "last": 25,
+      "activeCount": 1,
+      "match": true
+    },
+    {
+      "step": 5,
+      "scrollTop": 4635,
+      "activeUser": 22,
+      "expectedUser": 22,
+      "dots": 9,
+      "first": 17,
+      "last": 25,
+      "activeCount": 1,
+      "match": true
+    },
+    {
+      "step": 6,
+      "scrollTop": 4635,
+      "activeUser": 22,
+      "expectedUser": 22,
+      "dots": 9,
+      "first": 17,
+      "last": 25,
+      "activeCount": 1,
+      "match": true
+    }
+  ],
+  "errors": [],
+  "consoleLog": []
+}

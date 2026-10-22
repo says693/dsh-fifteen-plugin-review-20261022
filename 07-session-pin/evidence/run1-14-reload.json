@@ -1,0 +1,87 @@
+{
+  "rowsAfterReload": [
+    {
+      "idx": 0,
+      "kind": "workspace",
+      "text": "默认工作区",
+      "rowKey": "workspace:101ac9c7-365b-4997-b465-7f91f41c472a",
+      "y": 206,
+      "pin": null,
+      "color": null,
+      "bg": "rgba(0, 0, 0, 0)",
+      "shadow": "none"
+    },
+    {
+      "idx": 1,
+      "kind": "session",
+      "text": "新会话",
+      "rowKey": "session:session-6854de43-b6df-467b-a967-80a0bddadba9",
+      "y": 242,
+      "pin": null,
+      "color": null,
+      "bg": "rgba(38, 49, 72, 0.06)",
+      "shadow": "none"
+    },
+    {
+      "idx": 2,
+      "kind": "session",
+      "text": "把这周的错题整理成表格 2分钟",
+      "rowKey": "session:session-36dafaf6-2551-4cb7-a7a0-5a148681f143",
+      "y": 276,
+      "pin": "true",
+      "color": "c1",
+      "bg": "rgba(234, 179, 8, 0.1)",
+      "shadow": "rgb(234, 179, 8) 3px 0px 0px 0px inset"
+    },
+    {
+      "idx": 3,
+      "kind": "session",
+      "text": "写一封给班主任的请假邮件 2分钟",
+      "rowKey": "session:session-3c8badf3-ce48-4e15-aae2-be9723a30ae1",
+      "y": 310,
+      "pin": "false",
+      "color": null,
+      "bg": "rgba(0, 0, 0, 0)",
+      "shadow": "none"
+    },
+    {
+      "idx": 4,
+      "kind": "session",
+      "text": "比较两个版本的实验数据差异 2分钟",
+      "rowKey": "session:session-300ede31-2667-45af-9046-0749490f3dd4",
+      "y": 344,
+      "pin": "false",
+      "color": null,
+      "bg": "rgba(0, 0, 0, 0)",
+      "shadow": "none"
+    },
+    {
+      "idx": 5,
+      "kind": "session",
+      "text": "帮我整理一份关于海洋塑料污 3分钟",
+      "rowKey": "session:session-08fbbad4-a5f0-4e61-8e44-49b911727022",
+      "y": 378,
+      "pin": "true",
+      "color": null,
+      "bg": "rgba(0, 0, 0, 0)",
+      "shadow": "none"
+    }
+  ],
+  "view": "{\"groupBy\":\"workspace\",\"orderBy\":\"updated\",\"groupExpansion\":{\"101ac9c7-365b-4997-b465-7f91f41c472a\":true},\"sessionOrderByAccount\":{},\"archivedFilter\":\"default\"}",
+  "viewMenu": [
+    {
+      "tag": "BUTTON",
+      "role": "menuitem",
+      "text": "手动排序",
+      "checked": null,
+      "cls": "_item_4ub78_90"
+    },
+    {
+      "tag": "BUTTON",
+      "role": "menuitem",
+      "text": "最近更新",
+      "checked": null,
+      "cls": "_item_4ub78_90 _selected_4ub78_216"
+    }
+  ]
+}

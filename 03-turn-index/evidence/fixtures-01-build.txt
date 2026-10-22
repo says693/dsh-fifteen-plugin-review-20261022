@@ -1,0 +1,5 @@
+﻿{"id":"sess-ti-zero","title":"零轮空会话","turns":0,"events":1,"kind":"zero"}
+{"id":"sess-ti-one","title":"一轮最小会话","turns":1,"events":7,"kind":"one"}
+{"id":"sess-ti-six","title":"六轮标准会话","turns":6,"events":38,"kind":"six"}
+{"id":"sess-ti-twenty","title":"二十轮长会话","turns":20,"events":121,"kind":"twenty"}
+{"id":"sess-ti-long","title":"超长单轮会话","turns":3,"events":19,"kind":"long"}

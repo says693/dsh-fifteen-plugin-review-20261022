@@ -1,0 +1,38 @@
+{
+  "panelBefore": false,
+  "state": {
+    "panelOpen": true,
+    "panelText": "会话 ▾ 未分组 (5) /goto 请假 ⋯ 比较两个版本的实验数据差异 ⋯ 写一封给班主任的请假邮件 ⋯ 帮我整理一份关于海洋塑料污 ⋯ 把这周的错题整理成表格 ⋯",
+    "rowCount": 5,
+    "manageCount": 5,
+    "manageClasses": [
+      "__dsh-session-pin-manage__",
+      "__dsh-session-pin-manage__",
+      "__dsh-session-pin-manage__",
+      "__dsh-session-pin-manage__",
+      "__dsh-session-pin-manage__"
+    ],
+    "allPinClasses": [
+      "__dsh-session-pin-row-controls__",
+      "__dsh-session-pin-badge__ __dsh-session-pin-pinned__",
+      "__dsh-session-pin-swatch__",
+      "__dsh-session-pin-footer__",
+      "__dsh-session-pin-panel__",
+      "__dsh-session-pin-panel-section__",
+      "__dsh-session-pin-panel-group__",
+      "__dsh-session-pin-panel-group-toggle__",
+      "__dsh-session-pin-panel-row__",
+      "__dsh-session-pin-panel-dot__",
+      "__dsh-session-pin-manage__",
+      "__dsh-session-pin-nav__health",
+      "__dsh-session-pin-nav__",
+      "__dsh-session-pin-nav__chips",
+      "__dsh-session-pin-nav__chipwrap",
+      "__dsh-session-pin-nav-chip__ __dsh-session-pin-nav-chip-active__",
+      "__dsh-session-pin-nav-chip__",
+      "__dsh-session-pin-nav__input"
+    ]
+  },
+  "errors": [],
+  "console": []
+}

@@ -1,0 +1,177 @@
+{
+  "utc": "2026-10-22T01:32:06.731Z",
+  "host": {
+    "pid": 23372,
+    "url": "http://127.0.0.1:12921/?token=REDACTED",
+    "profile": "ah0",
+    "utc": "2026-10-22T01:31:15.712Z",
+    "env": [
+      "DEEPSEEK_BASE_URL",
+      "DEEPSEEK_API_KEY",
+      "DSH_PERMISSION_MODE"
+    ]
+  },
+  "withPlugin": false,
+  "tests": {
+    "noPanel_bodyFocus": {
+      "active": "BODY.",
+      "events": [
+        {
+          "t": 4578,
+          "kind": "keydown-capture",
+          "detail": {
+            "key": "Enter",
+            "dp": false,
+            "target": "BODY."
+          }
+        },
+        {
+          "t": 4578,
+          "kind": "keydown-bubble",
+          "detail": {
+            "key": "Enter",
+            "dp": false,
+            "target": "BODY."
+          }
+        },
+        {
+          "t": 4886,
+          "kind": "keydown-capture",
+          "detail": {
+            "key": "Escape",
+            "dp": false,
+            "target": "BODY."
+          }
+        },
+        {
+          "t": 4886,
+          "kind": "keydown-bubble",
+          "detail": {
+            "key": "Escape",
+            "dp": false,
+            "target": "BODY."
+          }
+        }
+      ]
+    },
+    "noPanel_composerFocus": {
+      "focus": {
+        "ok": true,
+        "cls": "uV2eYG_input"
+      },
+      "events": [
+        {
+          "t": 5249,
+          "kind": "keydown-capture",
+          "detail": {
+            "key": "Enter",
+            "dp": false,
+            "target": "DIV.uV2eYG_input"
+          }
+        },
+        {
+          "t": 5252,
+          "kind": "keydown-bubble",
+          "detail": {
+            "key": "Enter",
+            "dp": true,
+            "target": "DIV.uV2eYG_input"
+          }
+        },
+        {
+          "t": 5660,
+          "kind": "keydown-capture",
+          "detail": {
+            "key": "Escape",
+            "dp": false,
+            "target": "DIV.uV2eYG_input"
+          }
+        },
+        {
+          "t": 5661,
+          "kind": "keydown-bubble",
+          "detail": {
+            "key": "Escape",
+            "dp": false,
+            "target": "DIV.uV2eYG_input"
+          }
+        }
+      ],
+      "after": {
+        "panelCount": 0,
+        "keys": [],
+        "active": "DIV.uV2eYG_input",
+        "editorVisible": true,
+        "editorFocused": true,
+        "tail": "| 8分钟 | 展开其余 9 个会话 | 设置 | 探索未至之境 | 预览版 | 默认工作区 | 标准模式 | 描述你想要构建的内容, / 调用指令, @ 文件或对话 | 工作区内修改 | DeepSeek-V41-Flash | High"
+      }
+    },
+    "panel_composerFocus_panelSeen": {
+      "keys": [
+        "approval:1"
+      ]
+    },
+    "panel_composerFocus": {
+      "focus": null,
+      "panelBefore": [
+        "approval:1"
+      ],
+      "afterEnter": [
+        "approval:1"
+      ],
+      "afterEsc": [
+        "approval:1"
+      ],
+      "events": [
+        {
+          "t": 8078,
+          "kind": "keydown-capture",
+          "detail": {
+            "key": "Enter",
+            "dp": false,
+            "target": "BODY."
+          }
+        },
+        {
+          "t": 8078,
+          "kind": "keydown-bubble",
+          "detail": {
+            "key": "Enter",
+            "dp": false,
+            "target": "BODY."
+          }
+        },
+        {
+          "t": 8687,
+          "kind": "keydown-capture",
+          "detail": {
+            "key": "Escape",
+            "dp": false,
+            "target": "BODY."
+          }
+        },
+        {
+          "t": 8687,
+          "kind": "keydown-bubble",
+          "detail": {
+            "key": "Escape",
+            "dp": false,
+            "target": "BODY."
+          }
+        }
+      ]
+    }
+  },
+  "errors": [],
+  "consoleLog": [],
+  "finalState": {
+    "panelCount": 1,
+    "keys": [
+      "approval:1"
+    ],
+    "active": "BODY.",
+    "editorVisible": false,
+    "editorFocused": false,
+    "tail": "anger-full-access 权限：The test needs to write outside the workspace once. | Write-Output \"approved-by-hotkey\" | 拒绝 | 允许一次"
+  }
+}

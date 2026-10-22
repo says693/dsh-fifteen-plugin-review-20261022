@@ -1,0 +1,58 @@
+{
+  "navExists": {
+    "count": 13,
+    "hasNav": false,
+    "classes": [
+      "__dsh-session-pin-row-controls__",
+      "__dsh-session-pin-badge__ __dsh-session-pin-pinned__",
+      "__dsh-session-pin-swatch__",
+      "__dsh-session-pin-badge__",
+      "__dsh-session-pin-footer__"
+    ]
+  },
+  "navExistsAfterPanel": {
+    "hasNav": true,
+    "navHtml": "<div class=\"__dsh-session-pin-nav__\" style=\"display: flex;\"><div class=\"__dsh-session-pin-nav__chips\"><span class=\"__dsh-session-pin-nav__chipwrap\"><button type=\"button\" class=\"__dsh-session-pin-nav-chip__ __dsh-session-pin-nav-chip-active__\">All</button></span><button type=\"button\" class=\"__dsh-session-pin-nav-chip__\">+ board</button></div><input class=\"__dsh-session-pin-nav__input\" placeholder=\"filter: text, #tag\"><div class=\"__dsh-session-pin-nav__chips\"><button type=\"button\" class=\"__dsh-session-pin-nav-chip__\">+ view</button></div></div>",
+    "bodyChildren": [
+      "",
+      "",
+      "",
+      "__dsh-session-pin-nav__"
+    ]
+  },
+  "composer": [],
+  "rowMenus": {
+    "rowText": "把这周的错题整理成表格\n8分钟",
+    "btns": [
+      {
+        "cls": "__dsh-session-pin-badge__ __dsh-session-pin-pinned",
+        "aria": "取消置顶",
+        "title": "取消置顶"
+      },
+      {
+        "cls": "__dsh-session-pin-swatch__",
+        "aria": "更换行颜色（点击循环切换，Shift+点击清除）",
+        "title": "更换行颜色（点击循环切换，Shift+点击清除）"
+      },
+      {
+        "cls": "YDXeBa_iconButton",
+        "aria": "会话“把这周的错题整理成表格”的操作",
+        "title": ""
+      },
+      {
+        "cls": "YDXeBa_iconButton",
+        "aria": "归档会话",
+        "title": ""
+      },
+      {
+        "cls": "YDXeBa_iconButton",
+        "aria": "置顶会话",
+        "title": ""
+      }
+    ],
+    "rowHtml": "<div data-row-key=\"session:session-36dafaf6-2551-4cb7-a7a0-5a148681f143\" class=\"YDXeBa_sessionRow\" role=\"treeitem\" aria-selected=\"false\" draggable=\"true\"><span class=\"__dsh-session-pin-row-controls__\" data-overlay-owned=\"1\"><button type=\"button\" class=\"__dsh-session-pin-badge__ __dsh-session-pin-pinned__\" data-overlay-owned=\"1\" aria-pressed=\"true\" title=\"取消置顶\" aria-label=\"取消置顶\"><svg viewBox=\"0 0 24 24\" width=\"14\" height=\"14\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M12 17v5\"></path><path d=\"M9 10.76a2 2 0 0 1-1.11 1.79l-1.78.9A2 2 0 0 0 5 15.24V16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-.76a2 2 0 0 0-1.11-1.79l-1.78-.9A2 2 0 0 1 15 10.76V7a1 1 0 0 1 1-1 2 2 0 0 0 0-4H8a2 2 0 0 0 0 4 1 1 0 0 1 1 1z\"></path></svg></button><button type=\"button\" class=\"__dsh-session-pin-swatch__\" data-overlay-owned=\"1\" title=\"更换行颜色（点击循环切换，Shift+点击清除）\" aria-label=\"更换行颜色（点击循环切换，Shift+点击清除）\" data-color=\"c1\"></button></span><span class=\"YDXeBa_slot\"><div data-slot=\"sidebar.session.row.leading\" style=\"display: contents;\"></div></span><span class=\"YDXeBa_title\">把这周的错题整理成表格</span><span class=\"YDXeBa_time\">8分钟</span><span class=\"YDXeBa_rowActions\"><span class=\"_root_4ub78_1\"><button type=\"button\" class=\"YDXeBa_iconButton\" aria-label=\"会话“把这周的错题整理成表格”的操作\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" aria-hidden=\"true\" stroke-width=\"1\"><path d=\"M3 9C3.55228 9 4 8.55228 4 8C4 7.447"
+  },
+  "errors": [],
+  "console": [],
+  "dialogs": []
+}

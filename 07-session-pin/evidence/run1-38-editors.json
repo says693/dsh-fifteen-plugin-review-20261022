@@ -1,0 +1,54 @@
+{
+  "editors": {
+    "els": [
+      {
+        "tag": "DIV",
+        "cls": "uV2eYG_input",
+        "ph": "描述你想要构建的内容, / 调用指令, @ 文件或对话",
+        "inScroll": true,
+        "rect": {
+          "x": 469,
+          "y": 501,
+          "w": 770,
+          "h": 52
+        }
+      }
+    ],
+    "scrolls": [
+      {
+        "tag": "DIV",
+        "cls": "uV2eYG_scroll",
+        "childTags": [
+          "DIV"
+        ]
+      }
+    ]
+  },
+  "nativePin": {
+    "rowKey": "session:session-3c8badf3-ce48-4e15-aae2-be9723a30ae1",
+    "btns": [
+      {
+        "aria": "置顶会话",
+        "cls": "__dsh-session-pin-badge__"
+      },
+      {
+        "aria": "更换行颜色（点击循环切换，Shift+点击清除）",
+        "cls": "__dsh-session-pin-swatch__"
+      },
+      {
+        "aria": "会话“写一封给班主任的请假邮件”的操作",
+        "cls": "YDXeBa_iconButton"
+      },
+      {
+        "aria": "归档会话",
+        "cls": "YDXeBa_iconButton"
+      },
+      {
+        "aria": "置顶会话",
+        "cls": "YDXeBa_iconButton"
+      }
+    ]
+  },
+  "errors": [],
+  "console": []
+}

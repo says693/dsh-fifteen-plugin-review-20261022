@@ -1,0 +1,19 @@
+{
+  "checkedAt": "2026-10-22T01:47:10.474Z",
+  "repo": "github.com/FuRongJun-1999/dsh-bounty/issues",
+  "method": "GET /issues?state=all&per_page=100 paginated until exhausted",
+  "issuesFetched": 1000,
+  "keywords": [
+    "dsh-milestone",
+    "SnowCrescenter-tech",
+    "milestone"
+  ],
+  "hits": [
+    {
+      "n": 1367,
+      "title": "【intake 输入】@a9i5k4/dsh-auto-memory@3.3.13 插件测评：五维读数（5/5 维）＋可复跑证据",
+      "state": "closed"
+    }
+  ],
+  "verdict": "POSSIBLE DUPLICATE — see hits"
+}

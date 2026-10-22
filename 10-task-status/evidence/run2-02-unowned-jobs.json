@@ -1,0 +1,229 @@
+{
+  "origin": "http://127.0.0.1:3917",
+  "utc": "2026-10-22T01:35:31.133Z",
+  "steps": [
+    {
+      "name": "ping-before",
+      "path": "/probe-ts/ping",
+      "status": 200,
+      "body": "{\"ok\":true,\"jobsService\":\"object\",\"jobsMethods\":[\"list\",\"get\",\"read\",\"readAt\",\"kill\",\"start\",\"wait\",\"remove\"],\"agentCount\":0,\"activeHandles\":[]}",
+      "parsed": {
+        "ok": true,
+        "jobsService": "object",
+        "jobsMethods": [
+          "list",
+          "get",
+          "read",
+          "readAt",
+          "kill",
+          "start",
+          "wait",
+          "remove"
+        ],
+        "agentCount": 0,
+        "activeHandles": []
+      }
+    },
+    {
+      "name": "start-unowned-long",
+      "path": "/probe-ts/start?mode=long&kind=probe&label=unowned-long&intervalMs=300&lines=200",
+      "status": 200,
+      "body": "{\"id\":\"probe-1\",\"opts\":{\"mode\":\"long\",\"kind\":\"probe\",\"label\":\"unowned-long\",\"lines\":200,\"intervalMs\":300,\"owner\":null}}",
+      "parsed": {
+        "id": "probe-1",
+        "opts": {
+          "mode": "long",
+          "kind": "probe",
+          "label": "unowned-long",
+          "lines": 200,
+          "intervalMs": 300,
+          "owner": null
+        }
+      }
+    },
+    {
+      "name": "tasks-after-unowned-start",
+      "path": "/plugins/dsh-task-status/tasks",
+      "status": 200,
+      "body": "{\"tasks\":[{\"id\":\"probe-1\",\"kind\":\"probe\",\"label\":\"unowned-long\",\"status\":\"running\",\"startedAt\":1792632931168}]}",
+      "parsed": {
+        "tasks": [
+          {
+            "id": "probe-1",
+            "kind": "probe",
+            "label": "unowned-long",
+            "status": "running",
+            "startedAt": 1792632931168
+          }
+        ]
+      }
+    },
+    {
+      "name": "probe-list-after-unowned-start",
+      "path": "/probe-ts/list",
+      "status": 200,
+      "body": "{\"unowned\":[{\"id\":\"probe-1\",\"kind\":\"probe\",\"label\":\"unowned-long\",\"status\":\"running\",\"startedAt\":1792632931168,\"output\":{\"total\":98,\"earliest\":0}}],\"perAgent\":[],\"agents\":[],\"produced\":{\"probe-1\":98}}",
+      "parsed": {
+        "unowned": [
+          {
+            "id": "probe-1",
+            "kind": "probe",
+            "label": "unowned-long",
+            "status": "running",
+            "startedAt": 1792632931168,
+            "output": {
+              "total": 98,
+              "earliest": 0
+            }
+          }
+        ],
+        "perAgent": [],
+        "agents": [],
+        "produced": {
+          "probe-1": 98
+        }
+      }
+    },
+    {
+      "name": "start-unowned-instant",
+      "path": "/probe-ts/start?mode=instant&kind=probe&label=unowned-instant",
+      "status": 200,
+      "body": "{\"id\":\"probe-2\",\"opts\":{\"mode\":\"instant\",\"kind\":\"probe\",\"label\":\"unowned-instant\",\"owner\":null}}",
+      "parsed": {
+        "id": "probe-2",
+        "opts": {
+          "mode": "instant",
+          "kind": "probe",
+          "label": "unowned-instant",
+          "owner": null
+        }
+      }
+    },
+    {
+      "name": "tasks-after-instant",
+      "path": "/plugins/dsh-task-status/tasks",
+      "status": 200,
+      "body": "{\"tasks\":[{\"id\":\"probe-1\",\"kind\":\"probe\",\"label\":\"unowned-long\",\"status\":\"running\",\"startedAt\":1792632931168},{\"id\":\"probe-2\",\"kind\":\"probe\",\"label\":\"unowned-instant\",\"status\":\"completed\",\"startedAt\":1792632931822,\"finishedAt\":1792632931822}]}",
+      "parsed": {
+        "tasks": [
+          {
+            "id": "probe-1",
+            "kind": "probe",
+            "label": "unowned-long",
+            "status": "running",
+            "startedAt": 1792632931168
+          },
+          {
+            "id": "probe-2",
+            "kind": "probe",
+            "label": "unowned-instant",
+            "status": "completed",
+            "startedAt": 1792632931822,
+            "finishedAt": 1792632931822
+          }
+        ]
+      }
+    },
+    {
+      "name": "start-unowned-burst",
+      "path": "/probe-ts/start?mode=burst&kind=probe&label=unowned-burst&bytes=200000",
+      "status": 200,
+      "body": "{\"id\":\"probe-3\",\"opts\":{\"mode\":\"burst\",\"kind\":\"probe\",\"label\":\"unowned-burst\",\"bytes\":200000,\"owner\":null}}",
+      "parsed": {
+        "id": "probe-3",
+        "opts": {
+          "mode": "burst",
+          "kind": "probe",
+          "label": "unowned-burst",
+          "bytes": 200000,
+          "owner": null
+        }
+      }
+    },
+    {
+      "name": "tasks-after-burst",
+      "path": "/plugins/dsh-task-status/tasks",
+      "status": 200,
+      "body": "{\"tasks\":[{\"id\":\"probe-1\",\"kind\":\"probe\",\"label\":\"unowned-long\",\"status\":\"running\",\"startedAt\":1792632931168},{\"id\":\"probe-2\",\"kind\":\"probe\",\"label\":\"unowned-instant\",\"status\":\"completed\",\"startedAt\":1792632931822,\"finishedAt\":1792632931822},{\"id\":\"probe-3\",\"kind\":\"probe\",\"label\":\"unowned-burst\",\"status\":\"completed\",\"startedAt\":1792632932163,\"finishedAt\":1792632932167}]}",
+      "parsed": {
+        "tasks": [
+          {
+            "id": "probe-1",
+            "kind": "probe",
+            "label": "unowned-long",
+            "status": "running",
+            "startedAt": 1792632931168
+          },
+          {
+            "id": "probe-2",
+            "kind": "probe",
+            "label": "unowned-instant",
+            "status": "completed",
+            "startedAt": 1792632931822,
+            "finishedAt": 1792632931822
+          },
+          {
+            "id": "probe-3",
+            "kind": "probe",
+            "label": "unowned-burst",
+            "status": "completed",
+            "startedAt": 1792632932163,
+            "finishedAt": 1792632932167
+          }
+        ]
+      }
+    },
+    {
+      "name": "kill-unowned-long",
+      "path": "/probe-ts/kill?id=probe-1",
+      "status": 200,
+      "body": "{\"ok\":true,\"snapshot\":\"requested\"}",
+      "parsed": {
+        "ok": true,
+        "snapshot": "requested"
+      }
+    },
+    {
+      "name": "tasks-after-kill",
+      "path": "/plugins/dsh-task-status/tasks",
+      "status": 200,
+      "body": "{\"tasks\":[{\"id\":\"probe-1\",\"kind\":\"probe\",\"label\":\"unowned-long\",\"status\":\"killed\",\"detail\":\"probe kill; probe kill\",\"startedAt\":1792632931168,\"finishedAt\":1792632934741},{\"id\":\"probe-2\",\"kind\":\"probe\",\"label\":\"unowned-instant\",\"status\":\"completed\",\"startedAt\":1792632931822,\"finishedAt\":1792632931822},{\"id\":\"probe-3\",\"kind\":\"probe\",\"label\":\"unowned-burst\",\"status\":\"completed\",\"startedAt\":1792632932163,\"finishedAt\":1792632932167}]}",
+      "parsed": {
+        "tasks": [
+          {
+            "id": "probe-1",
+            "kind": "probe",
+            "label": "unowned-long",
+            "status": "killed",
+            "detail": "probe kill; probe kill",
+            "startedAt": 1792632931168,
+            "finishedAt": 1792632934741
+          },
+          {
+            "id": "probe-2",
+            "kind": "probe",
+            "label": "unowned-instant",
+            "status": "completed",
+            "startedAt": 1792632931822,
+            "finishedAt": 1792632931822
+          },
+          {
+            "id": "probe-3",
+            "kind": "probe",
+            "label": "unowned-burst",
+            "status": "completed",
+            "startedAt": 1792632932163,
+            "finishedAt": 1792632932167
+          }
+        ]
+      }
+    }
+  ],
+  "agentCountBefore": 0,
+  "agentIds": null,
+  "unownedId": "probe-1",
+  "instantId": "probe-2",
+  "burstId": "probe-3",
+  "burstOutputLen": 34,
+  "burstOutputHead": "{\"error\":\"task probe-3 not found\"}"
+}

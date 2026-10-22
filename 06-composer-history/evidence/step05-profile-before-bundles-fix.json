@@ -1,0 +1,15 @@
+{
+  "name": "dsh-profile-chist",
+  "private": true,
+  "dependencies": {
+    "dsh-composer-history": "file:H:/CODEX/fifteen-plugin-reviews-20261022/r2-01-composer-history/temp/dl/dsh-composer-history-0.8.15.tgz"
+  },
+  "dsh": {
+    "profile": {
+      "bundles": [
+        "@deepseek-ai/dsh-base",
+        "dsh-composer-history"
+      ]
+    }
+  }
+}

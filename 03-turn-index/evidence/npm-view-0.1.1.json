@@ -1,0 +1,121 @@
+﻿{
+  "name": "dsh-turn-index",
+  "versions": [
+    "0.1.0",
+    "0.1.1"
+  ],
+  "time": {
+    "created": "2026-08-13T19:09:10.841Z",
+    "modified": "2026-08-13T19:52:11.729Z",
+    "0.1.0": "2026-08-13T19:09:11.128Z",
+    "0.1.1": "2026-08-13T19:52:11.588Z"
+  },
+  "users": {},
+  "dist-tags": {
+    "latest": "0.1.1"
+  },
+  "_rev": "39-7e657c1371580065",
+  "_id": "dsh-turn-index@0.1.1",
+  "_attachments": {},
+  "description": "对话轮次索引：Web GUI 右侧边栏列出每一轮用户提问，点击跳转到对应位置 (Turn index sidebar for the DeepSeek Harness web GUI: one entry per user turn, click to jump)",
+  "version": "0.1.1",
+  "license": "MIT",
+  "author": "Simon314620",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Simon314620/dsh-turn-index.git"
+  },
+  "homepage": "https://github.com/Simon314620/dsh-turn-index#readme",
+  "bugs": {
+    "url": "https://github.com/Simon314620/dsh-turn-index/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "plugin",
+    "client-plugin",
+    "conversation",
+    "turn-index",
+    "navigation",
+    "sidebar"
+  ],
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": {
+      "types": "./lib/types/index.d.ts",
+      "default": "./lib/index.js"
+    },
+    "./client": {
+      "types": "./lib/types/client/index.d.ts",
+      "default": "./lib/client.js"
+    },
+    "./invariant": {
+      "types": "./lib/types/invariant.d.ts",
+      "default": "./lib/invariant.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "types": "./lib/types/index.d.ts",
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": []
+    }
+  },
+  "peerDependencies": {
+    "react": "^18.0.0 || ^19.0.0"
+  },
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "jsdom": "^30.0.1"
+  },
+  "gitHead": "a324ecde201a219448c23c1c8bbd872bdab512b4",
+  "_nodeVersion": "24.18.0",
+  "_npmVersion": "11.16.0",
+  "dist": {
+    "integrity": "sha512-6WN7SojM9j81qm27XgV4lw/6R1PPBMWH9+al/kDSWUYgaKFtnIxwp3d8kzWZaWL8RiVxzUNE71mODlj8YAjz0Q==",
+    "shasum": "755dda4ddfde9eabfa503ceeffc8dd7492339eb5",
+    "tarball": "https://mirrors.cloud.tencent.com/npm/dsh-turn-index/-/dsh-turn-index-0.1.1.tgz",
+    "fileCount": 11,
+    "unpackedSize": 39366,
+    "signatures": [
+      {
+        "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U",
+        "sig": "MEYCIQDjciUDjETGuztCu3LpaRPme0eSKW4r3H1zBPTpIozmfwIhAI72JIciQorzrhP8umCxJ0/BKEtZCnZaN8ElXFH1H3dm"
+      }
+    ]
+  },
+  "_npmUser": "simon314620 <918283620@qq.com>",
+  "directories": {},
+  "maintainers": [
+    "simon314620 <918283620@qq.com>"
+  ],
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages-npm-production",
+    "tmp": "tmp/dsh-turn-index_0.1.1_1786650731440_0.6016606196280376"
+  },
+  "_hasShrinkwrap": false,
+  "contributors": []
+}
+node.exe : npm notice
+所在位置 行:1 字符: 1
++ & "C:\Program Files/node.exe" "C:\Program Files/node_modules/npm/bin/ ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (npm notice:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+npm notice New major version of npm available! 11.17.0 -> 12.2.1
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.1
+npm notice To update run: npm install -g npm@12.2.1
+npm notice

@@ -1,0 +1,64 @@
+﻿{
+  "utc": "2026-10-22T01:04:34.289Z",
+  "editable": [
+    {
+      "sel": "input[type=text]",
+      "tag": "INPUT",
+      "cls": "bhn1Oq_searchInput",
+      "aria": null,
+      "ph": "搜索会话名称",
+      "rect": {
+        "x": 204,
+        "y": 174,
+        "w": 4,
+        "h": 20
+      }
+    },
+    {
+      "sel": "[contenteditable=\"true\"]",
+      "tag": "DIV",
+      "cls": "uV2eYG_input",
+      "aria": "描述你想要构建的内容, / 调用指令, @ 文件或对话",
+      "ph": "描述你想要构建的内容, / 调用指令, @ 文件或对话",
+      "rect": {
+        "x": 469,
+        "y": 501,
+        "w": 770,
+        "h": 52
+      }
+    },
+    {
+      "sel": "[contenteditable]",
+      "tag": "DIV",
+      "cls": "uV2eYG_input",
+      "aria": "描述你想要构建的内容, / 调用指令, @ 文件或对话",
+      "ph": "描述你想要构建的内容, / 调用指令, @ 文件或对话",
+      "rect": {
+        "x": 469,
+        "y": 501,
+        "w": 770,
+        "h": 52
+      }
+    },
+    {
+      "sel": "[role=textbox]",
+      "tag": "DIV",
+      "cls": "uV2eYG_input",
+      "aria": "描述你想要构建的内容, / 调用指令, @ 文件或对话",
+      "ph": "描述你想要构建的内容, / 调用指令, @ 文件或对话",
+      "rect": {
+        "x": 469,
+        "y": 501,
+        "w": 770,
+        "h": 52
+      }
+    }
+  ],
+  "classNames": [
+    "bhn1Oq_searchInput",
+    "wSkVaW_composerSeat",
+    "wSkVaW_composerStack",
+    "wSkVaW_composerHero",
+    "uV2eYG_input"
+  ]
+}

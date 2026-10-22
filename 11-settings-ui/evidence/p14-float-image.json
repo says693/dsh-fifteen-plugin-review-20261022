@@ -1,0 +1,36 @@
+{
+  "floatBall": {
+    "keywordHits": [],
+    "circleCandidates": [],
+    "pluginRootNodes": 2,
+    "suSecOutsideDialog": 1
+  },
+  "imageBg": {
+    "sectionText": "窗口大小\n默认（800×800）\n大（1080×780）\n特大（1280×960）\n全屏\n自定义\n背景不透明度\n100%\n背景\n主题默认\n纯色\n恢复默认\n改动即时生效；纯色按亮/暗主题各存一色，切换自动跟随；随 dsh profile 保存",
+    "hasImageWord": false,
+    "hasFileInput": false,
+    "sectionChips": [
+      "默认（800×800）",
+      "大（1080×780）",
+      "特大（1280×960）",
+      "全屏",
+      "自定义",
+      "主题默认",
+      "纯色",
+      "恢复默认"
+    ],
+    "tweakUsesBackgroundImage": false
+  },
+  "internals": {
+    "available": false,
+    "hasLoader": true,
+    "loaderKeys": [
+      "mode",
+      "pendingQueue",
+      "load",
+      "create"
+    ]
+  },
+  "errors": [],
+  "consoleLog": []
+}

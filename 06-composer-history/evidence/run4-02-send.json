@@ -1,0 +1,259 @@
+{
+  "before": {
+    "url": "http://127.0.0.1:5470/",
+    "composer": {
+      "found": true,
+      "tag": "DIV",
+      "editable": "true",
+      "text": "",
+      "len": null,
+      "caret": null,
+      "rect": {
+        "x": 469,
+        "y": 501,
+        "w": 770,
+        "h": 52
+      }
+    },
+    "storage": {},
+    "storageKeys": [
+      "dsh.workspace.view.v5",
+      "dsh.sidebar-right.v1.session-0eede7d3-f0bc-4670-97af-7299dc5b74f3",
+      "dsh.sessions.current"
+    ],
+    "overlay": {
+      "found": false,
+      "html": null
+    },
+    "bodyTextLen": 119,
+    "composerHistoryNodes": 2
+  },
+  "typed": {
+    "url": "http://127.0.0.1:5470/",
+    "composer": {
+      "found": true,
+      "tag": "DIV",
+      "editable": "true",
+      "text": "历史探针第一条",
+      "len": 7,
+      "caret": 7,
+      "rect": {
+        "x": 469,
+        "y": 501,
+        "w": 770,
+        "h": 52
+      }
+    },
+    "storage": {},
+    "storageKeys": [
+      "dsh.sidebar-right.v1.session-0eede7d3-f0bc-4670-97af-7299dc5b74f3",
+      "dsh.sessions.current",
+      "dsh.conversation.session-0eede7d3-f0bc-4670-97af-7299dc5b74f3",
+      "dsh.workspace.view.v5"
+    ],
+    "overlay": {
+      "found": false,
+      "html": null
+    },
+    "bodyTextLen": 101,
+    "composerHistoryNodes": 2
+  },
+  "afterSend": {
+    "url": "http://127.0.0.1:5470/",
+    "composer": {
+      "found": true,
+      "tag": "DIV",
+      "editable": "true",
+      "text": "",
+      "len": null,
+      "caret": 0,
+      "rect": {
+        "x": 469,
+        "y": 880,
+        "w": 770,
+        "h": 36
+      }
+    },
+    "storage": {
+      "dsh.composer-history.v1": {
+        "bytes": 29,
+        "parsed": {
+          "v": 1,
+          "entries": [
+            "历史探针第一条"
+          ]
+        }
+      },
+      "dsh.composer-history.insights.v1": {
+        "bytes": 134,
+        "parsed": {
+          "v": 1,
+          "records": [
+            {
+              "text": "历史探针第一条",
+              "sessions": [
+                "session-0eede7d3-f0bc-4670-97af-7299dc5b74f3"
+              ],
+              "uses": 1,
+              "lastUsedAt": 1792631033396
+            }
+          ]
+        }
+      }
+    },
+    "storageKeys": [
+      "dsh.sidebar-right.v1.session-0eede7d3-f0bc-4670-97af-7299dc5b74f3",
+      "dsh.composer-history.v1",
+      "dsh.composer-history.insights.v1",
+      "dsh.sessions.current",
+      "dsh.conversation.session-0eede7d3-f0bc-4670-97af-7299dc5b74f3",
+      "dsh.workspace.view.v5"
+    ],
+    "overlay": {
+      "found": false,
+      "html": null
+    },
+    "bodyTextLen": 387,
+    "composerHistoryNodes": 2
+  },
+  "rows": {
+    "userRows": 1,
+    "anyRows": 1,
+    "textSample": [
+      "历史探针第一条\n09:03\n处理失败\n处理失败\n本轮运行失败llm-deepseek: no API key for provider route \"deepseek-official\"; store DEEPSEEK_API_KEY th"
+    ],
+    "toastText": null,
+    "storageKeys": [
+      "dsh.sidebar-right.v1.session-0eede7d3-f0bc-4670-97af-7299dc5b74f3",
+      "dsh.composer-history.v1",
+      "dsh.composer-history.insights.v1",
+      "dsh.sessions.current",
+      "dsh.conversation.session-0eede7d3-f0bc-4670-97af-7299dc5b74f3",
+      "dsh.workspace.view.v5"
+    ]
+  },
+  "errors": [],
+  "consoleLog": [],
+  "network": [
+    {
+      "path": "/api/settings/describe",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:03:47.646Z"
+    },
+    {
+      "path": "/api/dynamicCordisRunner/syncInspectManifest",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:03:47.657Z"
+    },
+    {
+      "path": "/api/session/list",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:03:47.663Z"
+    },
+    {
+      "path": "/api/credentials/describe",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:03:47.687Z"
+    },
+    {
+      "path": "/api/session/create",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:03:47.692Z"
+    },
+    {
+      "path": "/api/agentPresets/list",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:03:47.751Z"
+    },
+    {
+      "path": "/api/commands/list",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:03:47.760Z"
+    },
+    {
+      "path": "/api/skills/list",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:03:47.760Z"
+    },
+    {
+      "path": "/api/settings/mutate",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:03:50.809Z"
+    },
+    {
+      "path": "/api/session/modelCatalog",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:03:50.809Z"
+    },
+    {
+      "path": "/api/settings/describe",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:03:50.815Z"
+    },
+    {
+      "path": "/api/llm/listProviders",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:03:50.834Z"
+    },
+    {
+      "path": "/api/llm/listConfigurableProviders",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:03:50.834Z"
+    },
+    {
+      "path": "/api/settings/describe",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:03:50.834Z"
+    },
+    {
+      "path": "/api/credentials/describe",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:03:50.844Z"
+    },
+    {
+      "path": "/api/session/modelCatalog",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:03:50.844Z"
+    },
+    {
+      "path": "/api/credentials/describe",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:03:50.850Z"
+    },
+    {
+      "path": "/api/credentials/describe",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:03:50.862Z"
+    },
+    {
+      "path": "/api/agentPresets/list",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:03:53.264Z"
+    },
+    {
+      "path": "/api/session/prompt",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:03:53.346Z"
+    }
+  ]
+}

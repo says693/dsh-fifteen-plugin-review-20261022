@@ -1,0 +1,252 @@
+{
+  "at": "2026-10-22T01:46:44.382Z",
+  "steps": [
+    {
+      "label": "1440-main",
+      "viewport": {
+        "w": 1440,
+        "h": 1000,
+        "dpr": 1
+      },
+      "dark": false,
+      "badgeCount": 0,
+      "badgeTexts": [],
+      "tipsCount": 0,
+      "costCssLoaded": true,
+      "overflowX": false,
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "composer": {
+        "x": 280,
+        "y": 872,
+        "w": 1153,
+        "h": 128,
+        "visible": true
+      },
+      "overlap": [],
+      "storageKeys": [
+        "dsh.sessions.current",
+        "dsh.workspace.view.v5",
+        "dsh.sidebar-right.v1.session-1f4ae256-bac7-42c9-b251-484aba0b2bef",
+        "dsh.sidebar-right.v1.sess-cm-flash"
+      ],
+      "bodyHead": "新会话\nCtrl\n+\nAlt\n+\nN\n插件\n工作区\nworkspace\nflash 档价目对照\n1小时\n超大用量：千万级 token\n1小时\n极小用量：1 token\n1小时\n用量全为零的会话\n1小时\n未命名\n1小时\n展开其余 2 个会话\n"
+    },
+    {
+      "label": "after-reload",
+      "viewport": {
+        "w": 1440,
+        "h": 1000,
+        "dpr": 1
+      },
+      "dark": false,
+      "badgeCount": 0,
+      "badgeTexts": [],
+      "tipsCount": 0,
+      "costCssLoaded": true,
+      "overflowX": false,
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "composer": {
+        "x": 280,
+        "y": 872,
+        "w": 1153,
+        "h": 128,
+        "visible": true
+      },
+      "overlap": [],
+      "storageKeys": [
+        "dsh.sessions.current",
+        "dsh.workspace.view.v5",
+        "dsh.sidebar-right.v1.session-1f4ae256-bac7-42c9-b251-484aba0b2bef",
+        "dsh.sidebar-right.v1.sess-cm-flash"
+      ],
+      "bodyHead": "新会话\nCtrl\n+\nAlt\n+\nN\n插件\n工作区\nworkspace\nflash 档价目对照\n1小时\n超大用量：千万级 token\n1小时\n极小用量：1 token\n1小时\n用量全为零的会话\n1小时\n未命名\n1小时\n展开其余 2 个会话\n"
+    },
+    {
+      "label": "switch-row2",
+      "viewport": {
+        "w": 1440,
+        "h": 1000,
+        "dpr": 1
+      },
+      "dark": false,
+      "badgeCount": 0,
+      "badgeTexts": [],
+      "tipsCount": 0,
+      "costCssLoaded": true,
+      "overflowX": false,
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "composer": {
+        "x": 280,
+        "y": 872,
+        "w": 1153,
+        "h": 128,
+        "visible": true
+      },
+      "overlap": [],
+      "storageKeys": [
+        "dsh.sessions.current",
+        "dsh.sidebar-right.v1.sess-cm-tiny",
+        "dsh.workspace.view.v5",
+        "dsh.sidebar-right.v1.session-1f4ae256-bac7-42c9-b251-484aba0b2bef",
+        "dsh.sidebar-right.v1.sess-cm-flash"
+      ],
+      "bodyHead": "新会话\nCtrl\n+\nAlt\n+\nN\n插件\n工作区\nworkspace\nflash 档价目对照\n1小时\n超大用量：千万级 token\n1小时\n极小用量：1 token\n1小时\n用量全为零的会话\n1小时\n未命名\n1小时\n展开其余 2 个会话\n"
+    },
+    {
+      "label": "switch-back-row1",
+      "viewport": {
+        "w": 1440,
+        "h": 1000,
+        "dpr": 1
+      },
+      "dark": false,
+      "badgeCount": 0,
+      "badgeTexts": [],
+      "tipsCount": 0,
+      "costCssLoaded": true,
+      "overflowX": false,
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "composer": {
+        "x": 280,
+        "y": 872,
+        "w": 1153,
+        "h": 128,
+        "visible": true
+      },
+      "overlap": [],
+      "storageKeys": [
+        "dsh.sessions.current",
+        "dsh.sidebar-right.v1.sess-cm-tiny",
+        "dsh.workspace.view.v5",
+        "dsh.sidebar-right.v1.sess-cm-huge",
+        "dsh.sidebar-right.v1.session-1f4ae256-bac7-42c9-b251-484aba0b2bef",
+        "dsh.sidebar-right.v1.sess-cm-flash"
+      ],
+      "bodyHead": "新会话\nCtrl\n+\nAlt\n+\nN\n插件\n工作区\nworkspace\nflash 档价目对照\n1小时\n超大用量：千万级 token\n1小时\n极小用量：1 token\n1小时\n用量全为零的会话\n1小时\n未命名\n1小时\n展开其余 2 个会话\n"
+    },
+    {
+      "label": "w1000",
+      "viewport": {
+        "w": 1000,
+        "h": 800,
+        "dpr": 1
+      },
+      "dark": false,
+      "badgeCount": 0,
+      "badgeTexts": [],
+      "tipsCount": 0,
+      "costCssLoaded": true,
+      "overflowX": false,
+      "scrollWidth": 1000,
+      "clientWidth": 1000,
+      "composer": {
+        "x": 56,
+        "y": 672,
+        "w": 937,
+        "h": 128,
+        "visible": true
+      },
+      "overlap": [],
+      "storageKeys": [
+        "dsh.sessions.current",
+        "dsh.sidebar-right.v1.sess-cm-tiny",
+        "dsh.workspace.view.v5",
+        "dsh.sidebar-right.v1.sess-cm-huge",
+        "dsh.sidebar-right.v1.session-1f4ae256-bac7-42c9-b251-484aba0b2bef",
+        "dsh.sidebar-right.v1.sess-cm-flash"
+      ],
+      "bodyHead": "超大用量：千万级 token\n对话\n轨迹\n第 1 轮：一个超大会话的用量。\n08:42\n已完成\n已完成，用时 6秒\n\n第 1 段：超大轮 的说明文字，用来把这一轮撑高，方便观察滚动与徽标位置。\n\n第 2 段：超大轮 的说明文字，用来把这一轮"
+    },
+    {
+      "label": "w760",
+      "viewport": {
+        "w": 760,
+        "h": 800,
+        "dpr": 1
+      },
+      "dark": false,
+      "badgeCount": 0,
+      "badgeTexts": [],
+      "tipsCount": 0,
+      "costCssLoaded": true,
+      "overflowX": false,
+      "scrollWidth": 760,
+      "clientWidth": 760,
+      "composer": {
+        "x": 56,
+        "y": 672,
+        "w": 697,
+        "h": 128,
+        "visible": true
+      },
+      "overlap": [],
+      "storageKeys": [
+        "dsh.sessions.current",
+        "dsh.sidebar-right.v1.sess-cm-tiny",
+        "dsh.workspace.view.v5",
+        "dsh.sidebar-right.v1.sess-cm-huge",
+        "dsh.sidebar-right.v1.session-1f4ae256-bac7-42c9-b251-484aba0b2bef",
+        "dsh.sidebar-right.v1.sess-cm-flash"
+      ],
+      "bodyHead": "超大用量：千万级 token\n对话\n轨迹\n第 1 轮：一个超大会话的用量。\n08:42\n已完成\n已完成，用时 6秒\n\n第 1 段：超大轮 的说明文字，用来把这一轮撑高，方便观察滚动与徽标位置。\n\n第 2 段：超大轮 的说明文字，用来把这一轮"
+    },
+    {
+      "label": "w600",
+      "viewport": {
+        "w": 600,
+        "h": 800,
+        "dpr": 1
+      },
+      "dark": false,
+      "badgeCount": 0,
+      "badgeTexts": [],
+      "tipsCount": 0,
+      "costCssLoaded": true,
+      "overflowX": false,
+      "scrollWidth": 600,
+      "clientWidth": 600,
+      "composer": {
+        "x": 56,
+        "y": 672,
+        "w": 537,
+        "h": 128,
+        "visible": true
+      },
+      "overlap": [],
+      "storageKeys": [
+        "dsh.sessions.current",
+        "dsh.sidebar-right.v1.sess-cm-tiny",
+        "dsh.workspace.view.v5",
+        "dsh.sidebar-right.v1.sess-cm-huge",
+        "dsh.sidebar-right.v1.session-1f4ae256-bac7-42c9-b251-484aba0b2bef",
+        "dsh.sidebar-right.v1.sess-cm-flash"
+      ],
+      "bodyHead": "超大用量：千万级 token\n对话\n轨迹\n第 1 轮：一个超大会话的用量。\n08:42\n已完成\n已完成，用时 6秒\n\n第 1 段：超大轮 的说明文字，用来把这一轮撑高，方便观察滚动与徽标位置。\n\n第 2 段：超大轮 的说明文字，用来把这一轮"
+    },
+    {
+      "label": "dark-1440",
+      "dark": true,
+      "badgeCount": 0,
+      "tipsCount": 0,
+      "costCssLoaded": true,
+      "overflowX": false,
+      "bodyHead": "新会话\nCtrl\n+\nAlt\n+\nN\n插件\n工作区\nworkspace\nflash 档价目对照\n1小时\n超大用量：千万级 token\n1小时\n极小用量：1 token\n1小时\n用量全为零的会话\n1小时\n未命名\n1小时\n展开其余 2 个会话\n"
+    }
+  ],
+  "host": "http://127.0.0.1:1233",
+  "hoverProbe": {
+    "hdrPresent": true,
+    "hdrChildren": 2,
+    "actionsCount": 1,
+    "actionChildren": [
+      2
+    ],
+    "tipsInDom": 0
+  },
+  "errors": [],
+  "consoleLog": []
+}

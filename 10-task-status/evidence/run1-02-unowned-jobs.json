@@ -1,0 +1,108 @@
+{
+  "origin": "http://127.0.0.1:6481",
+  "utc": "2026-10-22T01:32:55.556Z",
+  "steps": [
+    {
+      "name": "ping-before",
+      "path": "/probe-ts/ping",
+      "status": 200,
+      "body": "{\"ok\":true,\"jobsService\":\"object\",\"jobsMethods\":[\"list\",\"get\",\"read\",\"readAt\",\"kill\",\"start\",\"wait\",\"remove\"],\"agentCount\":0,\"activeHandles\":[]}",
+      "parsed": {
+        "ok": true,
+        "jobsService": "object",
+        "jobsMethods": [
+          "list",
+          "get",
+          "read",
+          "readAt",
+          "kill",
+          "start",
+          "wait",
+          "remove"
+        ],
+        "agentCount": 0,
+        "activeHandles": []
+      }
+    },
+    {
+      "name": "start-unowned-long",
+      "path": "/probe-ts/start?mode=long&kind=probe&label=unowned-long&intervalMs=300&lines=200",
+      "status": 500,
+      "body": "{\"error\":\"Error: background jobs unavailable: no job controller serves this agent (load @deepseek-ai/dsh-tool-jobs in its composition)\"}",
+      "parsed": {
+        "error": "Error: background jobs unavailable: no job controller serves this agent (load @deepseek-ai/dsh-tool-jobs in its composition)"
+      }
+    },
+    {
+      "name": "tasks-after-unowned-start",
+      "path": "/plugins/dsh-task-status/tasks",
+      "status": 200,
+      "body": "{\"tasks\":[]}",
+      "parsed": {
+        "tasks": []
+      }
+    },
+    {
+      "name": "probe-list-after-unowned-start",
+      "path": "/probe-ts/list",
+      "status": 200,
+      "body": "{\"unowned\":[],\"perAgent\":[],\"agents\":[],\"produced\":{}}",
+      "parsed": {
+        "unowned": [],
+        "perAgent": [],
+        "agents": [],
+        "produced": {}
+      }
+    },
+    {
+      "name": "start-unowned-instant",
+      "path": "/probe-ts/start?mode=instant&kind=probe&label=unowned-instant",
+      "status": 500,
+      "body": "{\"error\":\"Error: background jobs unavailable: no job controller serves this agent (load @deepseek-ai/dsh-tool-jobs in its composition)\"}",
+      "parsed": {
+        "error": "Error: background jobs unavailable: no job controller serves this agent (load @deepseek-ai/dsh-tool-jobs in its composition)"
+      }
+    },
+    {
+      "name": "tasks-after-instant",
+      "path": "/plugins/dsh-task-status/tasks",
+      "status": 200,
+      "body": "{\"tasks\":[]}",
+      "parsed": {
+        "tasks": []
+      }
+    },
+    {
+      "name": "start-unowned-burst",
+      "path": "/probe-ts/start?mode=burst&kind=probe&label=unowned-burst&bytes=200000",
+      "status": 500,
+      "body": "{\"error\":\"Error: background jobs unavailable: no job controller serves this agent (load @deepseek-ai/dsh-tool-jobs in its composition)\"}",
+      "parsed": {
+        "error": "Error: background jobs unavailable: no job controller serves this agent (load @deepseek-ai/dsh-tool-jobs in its composition)"
+      }
+    },
+    {
+      "name": "tasks-after-burst",
+      "path": "/plugins/dsh-task-status/tasks",
+      "status": 200,
+      "body": "{\"tasks\":[]}",
+      "parsed": {
+        "tasks": []
+      }
+    },
+    {
+      "name": "tasks-after-kill",
+      "path": "/plugins/dsh-task-status/tasks",
+      "status": 200,
+      "body": "{\"tasks\":[]}",
+      "parsed": {
+        "tasks": []
+      }
+    }
+  ],
+  "agentCountBefore": 0,
+  "agentIds": null,
+  "unownedId": null,
+  "instantId": null,
+  "burstId": null
+}

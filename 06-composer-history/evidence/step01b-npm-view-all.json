@@ -1,0 +1,280 @@
+﻿{
+  "name": "dsh-composer-history",
+  "versions": [
+    "0.2.0",
+    "0.3.0",
+    "0.4.0",
+    "0.5.0",
+    "0.5.1",
+    "0.5.2",
+    "0.5.3",
+    "0.6.0",
+    "0.6.1",
+    "0.6.2",
+    "0.6.3",
+    "0.6.4",
+    "0.6.5",
+    "0.7.0",
+    "0.7.1",
+    "0.7.2",
+    "0.7.3",
+    "0.7.4",
+    "0.8.0",
+    "0.8.1",
+    "0.8.2",
+    "0.8.4",
+    "0.8.5",
+    "0.8.6",
+    "0.8.7",
+    "0.8.8",
+    "0.8.9",
+    "0.8.10",
+    "0.8.11",
+    "0.8.12",
+    "0.8.14",
+    "0.8.15"
+  ],
+  "time": {
+    "created": "2026-08-14T10:13:21.083Z",
+    "modified": "2026-10-18T12:31:34.151Z",
+    "0.2.0": "2026-08-14T10:13:21.285Z",
+    "0.3.0": "2026-08-14T15:30:29.535Z",
+    "0.4.0": "2026-08-15T04:03:12.782Z",
+    "0.5.0": "2026-08-16T16:02:37.833Z",
+    "0.5.1": "2026-08-21T05:51:24.571Z",
+    "0.5.2": "2026-08-22T14:48:35.520Z",
+    "0.5.3": "2026-08-23T05:33:35.303Z",
+    "0.6.0": "2026-08-26T14:58:33.751Z",
+    "0.6.1": "2026-08-27T14:30:58.330Z",
+    "0.6.2": "2026-08-30T22:32:38.198Z",
+    "0.6.3": "2026-09-01T15:28:01.950Z",
+    "0.6.4": "2026-09-02T13:31:12.856Z",
+    "0.6.5": "2026-09-02T14:53:48.454Z",
+    "0.7.0": "2026-09-04T16:04:53.504Z",
+    "0.7.1": "2026-09-07T10:25:17.460Z",
+    "0.7.2": "2026-09-07T13:20:29.768Z",
+    "0.7.3": "2026-09-08T14:46:32.186Z",
+    "0.7.4": "2026-09-09T10:46:54.799Z",
+    "0.8.0": "2026-09-09T12:54:35.030Z",
+    "0.8.1": "2026-09-10T06:11:56.791Z",
+    "0.8.2": "2026-09-12T02:24:42.249Z",
+    "0.8.4": "2026-09-22T14:53:16.167Z",
+    "0.8.5": "2026-09-23T04:41:17.454Z",
+    "0.8.6": "2026-09-24T13:34:45.982Z",
+    "0.8.7": "2026-09-24T19:01:47.843Z",
+    "0.8.8": "2026-10-04T17:28:21.710Z",
+    "0.8.9": "2026-10-05T10:22:31.400Z",
+    "0.8.10": "2026-10-05T10:55:14.972Z",
+    "0.8.11": "2026-10-10T00:59:38.397Z",
+    "0.8.12": "2026-10-10T05:36:50.556Z",
+    "0.8.14": "2026-10-18T06:48:23.991Z",
+    "0.8.15": "2026-10-18T12:31:33.771Z"
+  },
+  "users": {},
+  "dist-tags": {
+    "latest": "0.8.15"
+  },
+  "_rev": "2280-09138968315e902f",
+  "_id": "dsh-composer-history@0.8.15",
+  "_attachments": {},
+  "_contentLength": 256643,
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-conversation",
+        "@deepseek-ai/dsh-client-ui-input-trigger",
+        "@deepseek-ai/dsh-client-ui-settings"
+      ],
+      "platform": "web"
+    },
+    "manifestVersion": 1
+  },
+  "bugs": {
+    "url": "https://github.com/PerryLink/dsh-composer-history/issues"
+  },
+  "dist": {
+    "shasum": "9ae4a6636a733f7624c53354aa5173063ec8d814",
+    "tarball": "https://mirrors.cloud.tencent.com/npm/dsh-composer-history/-/dsh-composer-history-0.8.15.tgz",
+    "fileCount": 62,
+    "integrity": "sha512-L3/RiaCKvaUf8TETcDozTzId5nMjsCiM9vk9P66MhFedam0KCBUhx5Q99RbUVkDwUAxl/NPfLlYregkRaOO9cA==",
+    "signatures": [
+      {
+        "sig": "MEUCIGbaNnO+9J6/cDzsmgcYaj4S2Ndzp82nYySnOgNp0nHoAiEAiK87keZ6RVtZbBCsdHoJ4ZMDyE4YbPDjaVyuiGiVrOM=",
+        "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      },
+      {
+        "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U",
+        "sig": "MEUCIQCgqAQ3AJWHGJUrIc0fieFEFQCL7IeV+cqQaUiWKKaPlgIgI/WyAhuaCAeCI2aVgs7FiMET4XJw691n8G2UTxAaymA="
+      }
+    ],
+    "attestations": {
+      "url": "https://registry.npmjs.org/-/npm/v1/attestations/dsh-composer-history@0.8.15",
+      "provenance": {
+        "predicateType": "https://slsa.dev/provenance/v1"
+      }
+    },
+    "unpackedSize": 932256
+  },
+  "main": "./lib/index.js",
+  "type": "module",
+  "types": "./lib/types/index.d.ts",
+  "engines": {
+    "dsh": ">=0.2.1-0 <0.3.0",
+    "node": "^22.19.0 || >=24.0.0"
+  },
+  "exports": {
+    ".": {
+      "types": "./lib/types/index.d.ts",
+      "default": "./lib/index.js"
+    },
+    "./client": {
+      "types": "./lib/types/client/index.d.ts",
+      "default": "./lib/client.js"
+    },
+    "./invariant": {
+      "types": "./lib/types/invariant.d.ts",
+      "default": "./lib/invariant.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "funding": {
+    "url": "https://github.com/sponsors/PerryLink",
+    "type": "individual"
+  },
+  "gitHead": "231564217350170a355c5c7c8ccddcd7e18bf1f5",
+  "license": "Apache-2.0",
+  "scripts": {
+    "lint": "oxlint",
+    "test": "vitest run",
+    "build": "node scripts/clean.mjs && tsc -p tsconfig.build.json && tsdown && node scripts/fix-dts.mjs",
+    "typecheck": "tsc --noEmit",
+    "test:watch": "vitest",
+    "verify:pack": "node scripts/verify-pack.mjs",
+    "typecheck:ci": "tsc -p tsconfig.ci.json --noEmit",
+    "check:readmes": "node scripts/check-readmes.mjs",
+    "test:coverage": "vitest run --coverage",
+    "prepublishOnly": "pnpm run check:readmes && pnpm run build && pnpm run test"
+  },
+  "version": "0.8.15",
+  "_npmUser": "GitHub Actions <npm-oidc-no-reply@github.com>",
+  "homepage": "https://github.com/PerryLink/dsh-composer-history#readme",
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "web-gui",
+    "composer",
+    "input-history",
+    "keyboard-shortcuts",
+    "terminal",
+    "compaction",
+    "sliding-context",
+    "context-window",
+    "typescript",
+    "ui"
+  ],
+  "repository": {
+    "url": "git+https://github.com/PerryLink/dsh-composer-history.git",
+    "type": "git"
+  },
+  "_npmVersion": "11.21.1",
+  "description": "Terminal-style input history for the DeepSeek Harness web composer: edge-first arrows with exact draft/caret restore, browser-local persisted history, Ctrl+R reverse search, workspace-scoped recall, and fully configurable keys — plus sliding-context aware",
+  "directories": {},
+  "dshWorkshop": {
+    "type": "plugin",
+    "schema": "omdsh-workshop-package/v1",
+    "install": {
+      "mode": "transactional",
+      "adapter": "profile-bundle",
+      "failurePolicy": "generation-rollback",
+      "touchesCurrentBeforeActivation": false
+    },
+    "evidence": {
+      "remove": null,
+      "install": null,
+      "hotReload": null,
+      "failureIsolation": null
+    },
+    "lifecycle": {
+      "dispose": "supported",
+      "activation": "restart-plugin"
+    },
+    "capability": {
+      "id": "composer-history-recall",
+      "kind": "ui",
+      "expected": "the newest user message fills the draft and the caret moves to its end",
+      "invocation": "ArrowUp with the caret on the composer's first line"
+    },
+    "integration": {
+      "artifact": "cordis.patch.yml",
+      "protocol": "harness-profile"
+    },
+    "permissions": [
+      "browser:local-storage"
+    ],
+    "compatibility": {
+      "dshVersions": [
+        "0.1.2-rc.1",
+        "0.1.5-rc.2",
+        "0.1.7-alpha.2",
+        "0.1.7-rc.1",
+        "0.1.7-rc.2",
+        "0.2.1-alpha.1"
+      ]
+    }
+  },
+  "maintainers": [
+    "perrylink <novelnexusai@outlook.com>"
+  ],
+  "_nodeVersion": "22.23.3",
+  "publishConfig": {
+    "access": "public"
+  },
+  "_hasShrinkwrap": false,
+  "packageManager": "pnpm@11.7.0",
+  "devDependencies": {
+    "jsdom": "^26.1.0",
+    "oxlint": "0.18.1",
+    "tsdown": "^0.22.14",
+    "vitest": "^3.2.0",
+    "typescript": "^5.9.0",
+    "@types/node": "^22.19.0",
+    "@deepseek-ai/cordis": "^4.0.5-alpha.1",
+    "@vitest/coverage-v8": "^3.2.0",
+    "@deepseek-ai/schemastery": "^3.18.5-alpha.1",
+    "@deepseek-ai/dsh-settings": "0.2.1-rc.2",
+    "@deepseek-ai/dsh-attachment": "0.2.1-rc.2",
+    "@deepseek-ai/dsh-api-remotes": "0.2.1-rc.2",
+    "@deepseek-ai/cordis-plugin-loader": "^1.0.6-alpha.1",
+    "@deepseek-ai/cordis-plugin-include": "^1.0.10-alpha.1",
+    "@deepseek-ai/dsh-working-directory": "0.2.1-rc.2",
+    "@deepseek-ai/dsh-client-ui-settings": "0.2.1-rc.2",
+    "@deepseek-ai/dsh-client-ui-conversation": "0.2.1-rc.2",
+    "@deepseek-ai/dsh-client-ui-input-trigger": "0.2.1-rc.2"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "^4.0.5-alpha.1",
+    "@deepseek-ai/dsh-client-ui-settings": ">=0.1.2-rc.1 <0.2.0 || >=0.1.5-alpha.1 <0.2.0 || >=0.1.6-0 <0.2.0 || >=0.1.7-0 <0.2.0 || >=0.2.0-0 <0.3.0 || >=0.2.1-0 <0.3.0",
+    "@deepseek-ai/dsh-client-ui-conversation": ">=0.1.2-rc.1 <0.2.0 || >=0.1.5-alpha.1 <0.2.0 || >=0.1.6-0 <0.2.0 || >=0.1.7-0 <0.2.0 || >=0.2.0-0 <0.3.0 || >=0.2.1-0 <0.3.0",
+    "@deepseek-ai/dsh-client-ui-input-trigger": ">=0.1.2-rc.1 <0.2.0 || >=0.1.5-alpha.1 <0.2.0 || >=0.1.6-0 <0.2.0 || >=0.1.7-0 <0.2.0 || >=0.2.0-0 <0.3.0 || >=0.2.1-0 <0.3.0"
+  },
+  "peerDependenciesMeta": {
+    "@deepseek-ai/dsh-client-ui-settings": {
+      "optional": true
+    },
+    "@deepseek-ai/dsh-client-ui-conversation": {
+      "optional": true
+    },
+    "@deepseek-ai/dsh-client-ui-input-trigger": {
+      "optional": true
+    }
+  },
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages-npm-production",
+    "tmp": "tmp/dsh-composer-history_0.8.15_1792326693672_0.7462694427282692"
+  },
+  "contributors": []
+}

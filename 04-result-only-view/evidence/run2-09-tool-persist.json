@@ -1,0 +1,89 @@
+{
+  "origin": {
+    "current": "http://127.0.0.1:4133",
+    "previous": "http://127.0.0.1:9798"
+  },
+  "A_freshOriginStorage": {
+    "keys": [
+      "dsh.workspace.view.v5",
+      "dsh.sessions.current",
+      "dsh.sidebar-right.v1.session-5a0b261b-2264-4e16-83c7-237905f1d656"
+    ],
+    "rovEnabled": null,
+    "rovSettings": null
+  },
+  "B_rows": [
+    {
+      "key": "workspace:ac1753c6-dd89-451b-a529-74e44357e9e6",
+      "text": "workspace"
+    },
+    {
+      "key": "session:session-5a0b261b-2264-4e16-83c7-237905f1d656",
+      "text": "新会话"
+    },
+    {
+      "key": "session:sess-rov-multi",
+      "text": "ROV 多轮对照 1小时"
+    },
+    {
+      "key": "session:sess-rov-long",
+      "text": "ROV 超长回复 1小时"
+    },
+    {
+      "key": "session:sess-rov-one",
+      "text": "ROV 单轮长回复 1小时"
+    },
+    {
+      "key": "workspace:",
+      "text": "未分组"
+    }
+  ],
+  "B_opened": false,
+  "B_afterOpen": {
+    "current": "{\"sessionId\":\"session-5a0b261b-2264-4e16-83c7-237905f1d656\"}",
+    "selected": "session:session-5a0b261b-2264-4e16-83c7-237905f1d656",
+    "kinds": {},
+    "toolAttr": [],
+    "flowText": "",
+    "flowLen": 0
+  },
+  "B_toggle": {
+    "off": {
+      "pressed": "false",
+      "think": [],
+      "tool": [],
+      "flowText": "",
+      "flowLen": 0
+    },
+    "on": {
+      "pressed": "true",
+      "think": [],
+      "tool": [],
+      "flowText": "",
+      "flowLen": 0
+    },
+    "off2": {
+      "pressed": "false",
+      "think": [],
+      "tool": [],
+      "flowText": "",
+      "flowLen": 0
+    },
+    "offOnOffIdentical": true,
+    "answerKeptOn": false,
+    "reasoningHiddenOn": false,
+    "toolHiddenOn": false,
+    "answerKeptOff": false
+  },
+  "C_setOff": {
+    "pressed": "false",
+    "stored": null
+  },
+  "C_afterSetOff": {
+    "stored": null,
+    "styleTags": 0
+  },
+  "C_sameOriginNote": "second context uses a fresh profile: localStorage is NOT shared across browser profiles, so this checks per-profile, not per-origin",
+  "errors": [],
+  "consoleLog": []
+}

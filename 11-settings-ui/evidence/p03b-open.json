@@ -1,0 +1,165 @@
+{
+  "blockers": [
+    "稍后配置"
+  ],
+  "dialogsAfterClear": [],
+  "afterClick": {
+    "settingsSel": true,
+    "settingsAny": true,
+    "dialogs": [
+      {
+        "modal": "settings",
+        "cls": "VOzbGW_panel",
+        "text": "设置\n通用设置\n模型\n内置插件\nAgent 预设\n设置界面\n打开配置文件\n关闭\n权限\n选择新会话的默认权限模式\n工作区内修改\n语言\n中文\n外观\n浅色\n深色\n跟随系统\n字号大小\n仅影响会话内容的字号\n14\npx\n工作步骤展示\n选择希望看到多少工具调用细节\n详细\n显示代码工作视图\n开启后，显示轨迹、本轮代码差异，可选择完整的 Agent 预设切换\n快捷键\n\n查看和编辑当前可用的快捷键和输入操作\n\n编辑"
+      }
+    ]
+  },
+  "panel": {
+    "url": "http://127.0.0.1:3067/",
+    "viewport": {
+      "w": 1440,
+      "h": 1000
+    },
+    "dark": false,
+    "panelPresent": true,
+    "panelRect": {
+      "x": 320,
+      "y": 100,
+      "w": 800,
+      "h": 800,
+      "bottom": 900,
+      "right": 1120
+    },
+    "panelStyle": {
+      "width": "800px",
+      "height": "800px",
+      "maxWidth": "1392px",
+      "maxHeight": "none",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "borderRadius": "28px",
+      "position": "relative",
+      "overflow": "hidden"
+    },
+    "tweakStyleExists": true,
+    "tweakCss": "",
+    "uiStyleExists": true,
+    "doc": {
+      "scrollW": 1440,
+      "clientW": 1440,
+      "overflowX": false
+    },
+    "storageKeys": [
+      "dsh.workspace.view.v5",
+      "dsh.sidebar-right.v1.session-2706f68c-a82a-4dfc-95b3-f4abb3626af2",
+      "dsh.sessions.current"
+    ],
+    "bodyBg": "rgb(255, 255, 255)"
+  },
+  "nav": {
+    "panelOuterHead": "<div tabindex=\"-1\" data-shortcut-modal=\"settings\" class=\"VOzbGW_panel\" role=\"dialog\" aria-modal=\"true\" aria-labelledby=\":rh:\"><nav class=\"VOzbGW_nav\"><div class=\"VOzbGW_navTitle\" id=\":rh:\" tabindex=\"-1\"><div data-slot=\"settings.header\" style=\"display: contents;\">设置</div></div><div class=\"VOzbGW_navList\"><button type=\"button\" class=\"VOzbGW_navCell VOzbGW_active\" aria-current=\"true\" data-modal-autofocus=\"\" data-dsh-automatic-focus=\"\"><svg width=\"16\" height=\"16\" class=\"VOzbGW_navIcon\" viewBox=\"0 0 ",
+    "navText": "设置\n通用设置\n模型\n内置插件\nAgent 预设\n设置界面",
+    "allButtons": [
+      {
+        "text": "通用设置",
+        "role": null,
+        "sel": "true",
+        "w": 164
+      },
+      {
+        "text": "模型",
+        "role": null,
+        "sel": null,
+        "w": 164
+      },
+      {
+        "text": "内置插件",
+        "role": null,
+        "sel": null,
+        "w": 164
+      },
+      {
+        "text": "Agent 预设",
+        "role": null,
+        "sel": null,
+        "w": 164
+      },
+      {
+        "text": "设置界面",
+        "role": null,
+        "sel": null,
+        "w": 164
+      },
+      {
+        "text": "打开配置文件",
+        "role": null,
+        "sel": null,
+        "w": 94
+      },
+      {
+        "text": "关闭",
+        "role": null,
+        "sel": null,
+        "w": 28
+      },
+      {
+        "text": "工作区内修改",
+        "role": null,
+        "sel": null,
+        "w": 138
+      },
+      {
+        "text": "中文",
+        "role": null,
+        "sel": null,
+        "w": 82
+      },
+      {
+        "text": "浅色",
+        "role": null,
+        "sel": null,
+        "w": 183
+      },
+      {
+        "text": "深色",
+        "role": null,
+        "sel": null,
+        "w": 183
+      },
+      {
+        "text": "跟随系统",
+        "role": null,
+        "sel": null,
+        "w": 183
+      },
+      {
+        "text": "详细",
+        "role": null,
+        "sel": null,
+        "w": 82
+      },
+      {
+        "text": "编辑快捷键",
+        "role": null,
+        "sel": null,
+        "w": 98
+      },
+      {
+        "text": "排队发送",
+        "role": null,
+        "sel": null,
+        "w": 110
+      },
+      {
+        "text": "详细",
+        "role": null,
+        "sel": null,
+        "w": 82
+      }
+    ],
+    "hasSettingsUiTitle": true,
+    "suSecCount": 0,
+    "suChipCount": 0
+  },
+  "errors": [],
+  "consoleLog": []
+}

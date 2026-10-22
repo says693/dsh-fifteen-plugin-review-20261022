@@ -1,0 +1,191 @@
+{
+  "utc": "2026-10-22T01:30:51.472Z",
+  "host": {
+    "pid": 18068,
+    "url": "http://127.0.0.1:6400/?token=REDACTED",
+    "profile": "ah",
+    "utc": "2026-10-22T01:27:35.269Z",
+    "env": [
+      "DEEPSEEK_BASE_URL",
+      "DEEPSEEK_API_KEY",
+      "DSH_PERMISSION_MODE"
+    ]
+  },
+  "withPlugin": true,
+  "tests": {
+    "noPanel_bodyFocus": {
+      "active": "BODY.",
+      "events": [
+        {
+          "t": 4541,
+          "kind": "keydown-capture",
+          "detail": {
+            "key": "Enter",
+            "dp": false,
+            "target": "BODY."
+          }
+        },
+        {
+          "t": 4542,
+          "kind": "keydown-bubble",
+          "detail": {
+            "key": "Enter",
+            "dp": false,
+            "target": "BODY."
+          }
+        },
+        {
+          "t": 4848,
+          "kind": "keydown-capture",
+          "detail": {
+            "key": "Escape",
+            "dp": false,
+            "target": "BODY."
+          }
+        },
+        {
+          "t": 4848,
+          "kind": "keydown-bubble",
+          "detail": {
+            "key": "Escape",
+            "dp": false,
+            "target": "BODY."
+          }
+        }
+      ]
+    },
+    "noPanel_composerFocus": {
+      "focus": {
+        "ok": true,
+        "cls": "uV2eYG_input"
+      },
+      "events": [
+        {
+          "t": 5212,
+          "kind": "keydown-capture",
+          "detail": {
+            "key": "Enter",
+            "dp": false,
+            "target": "DIV.uV2eYG_input"
+          }
+        },
+        {
+          "t": 5215,
+          "kind": "keydown-bubble",
+          "detail": {
+            "key": "Enter",
+            "dp": true,
+            "target": "DIV.uV2eYG_input"
+          }
+        },
+        {
+          "t": 5628,
+          "kind": "keydown-capture",
+          "detail": {
+            "key": "Escape",
+            "dp": false,
+            "target": "DIV.uV2eYG_input"
+          }
+        },
+        {
+          "t": 5628,
+          "kind": "keydown-bubble",
+          "detail": {
+            "key": "Escape",
+            "dp": false,
+            "target": "DIV.uV2eYG_input"
+          }
+        }
+      ],
+      "after": {
+        "panelCount": 0,
+        "keys": [],
+        "active": "DIV.uV2eYG_input",
+        "editorVisible": true,
+        "editorFocused": true,
+        "tail": "| 9分钟 | 展开其余 7 个会话 | 设置 | 探索未至之境 | 预览版 | 默认工作区 | 标准模式 | 描述你想要构建的内容, / 调用指令, @ 文件或对话 | 工作区内修改 | DeepSeek-V41-Flash | High"
+      }
+    },
+    "panel_composerFocus_panelSeen": {
+      "keys": [
+        "approval:2"
+      ]
+    },
+    "panel_composerFocus": {
+      "focus": null,
+      "panelBefore": [
+        "approval:2"
+      ],
+      "afterEnter": [
+        "approval:3"
+      ],
+      "afterEsc": [
+        "approval:4"
+      ],
+      "events": [
+        {
+          "t": 7780,
+          "kind": "keydown-capture",
+          "detail": {
+            "key": "Enter",
+            "dp": false,
+            "target": "BODY."
+          }
+        },
+        {
+          "t": 7781,
+          "kind": "click",
+          "detail": {
+            "text": "允许一次"
+          }
+        },
+        {
+          "t": 7787,
+          "kind": "keydown-bubble",
+          "detail": {
+            "key": "Enter",
+            "dp": true,
+            "target": "BODY."
+          }
+        },
+        {
+          "t": 8405,
+          "kind": "keydown-capture",
+          "detail": {
+            "key": "Escape",
+            "dp": false,
+            "target": "BODY."
+          }
+        },
+        {
+          "t": 8405,
+          "kind": "click",
+          "detail": {
+            "text": "拒绝"
+          }
+        },
+        {
+          "t": 8409,
+          "kind": "keydown-bubble",
+          "detail": {
+            "key": "Escape",
+            "dp": true,
+            "target": "BODY."
+          }
+        }
+      ]
+    }
+  },
+  "errors": [],
+  "consoleLog": [],
+  "finalState": {
+    "panelCount": 1,
+    "keys": [
+      "approval:4"
+    ],
+    "active": "BODY.",
+    "editorVisible": false,
+    "editorFocused": false,
+    "tail": "anger-full-access 权限：The test needs to write outside the workspace once. | Write-Output \"approved-by-hotkey\" | 拒绝 | 允许一次"
+  }
+}

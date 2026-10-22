@@ -1,0 +1,2 @@
+dsh web: http://127.0.0.1:1530/?token=REDACTED
+dsh web: http://127.0.0.1:3067/?token=REDACTED

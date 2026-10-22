@@ -1,0 +1,243 @@
+{
+  "schema": "results/v1",
+  "target": "Han-1413141/dsh-sticky-disclosure@1.0.1",
+  "commit": "d844605756b9d4c2f5e723ee67ea0f65476d7085",
+  "distribution": "npm 无发布件，本地目录安装；**未测发布包**",
+  "transcribed_at": "2026-10-22T10:22:00+08:00",
+  "transcription_mode": "只读 evidence/ 转写，未起宿主、未跑浏览器、未开新探针",
+  "status_legend": {
+    "confirmed": "evidence/ 里有直接读数支持该预期",
+    "uncertain": "有读数但无法归因，或读数受探针/宿主侧干扰",
+    "untested": "evidence/ 里没有对应读数，本轮不补测"
+  },
+  "counts": {
+    "checks_total": 25,
+    "confirmed": 18,
+    "uncertain": 2,
+    "untested": 5,
+    "confirmed_defect": 0,
+    "confirmed_ids": ["C1", "C2", "C3", "C4", "C5", "C6", "C7", "C8", "C9", "C10", "C11", "C12", "C13", "C14", "C15", "C16", "C17", "C25"],
+    "uncertain_ids": ["C18", "C22"],
+    "untested_ids": ["C19", "C20", "C21", "C23", "C24"]
+  },
+  "checks": [
+    {
+      "id": "C1",
+      "group": "常驻控件",
+      "expected": "会话里存在可见的「全部收起」常驻按钮，位于滚动区右下角，带默认快捷键提示",
+      "actual": "[data-sticky-disclosure-control] 存在且 visible=true；rect {x:1286,y:952,w:96,h:32}；文本「全部收起」；title「收起全部展开区块 · Ctrl+Alt+C」；aria-label「收起全部展开区块」；z-index 15",
+      "status": "confirmed",
+      "evidence": ["evidence/05-probe01.txt", "evidence/run01-01-boot.json", "evidence/run01-02-open.json"],
+      "note": "无会话（boot 刚完成、rows=0）时按钮已渲染，说明它是常驻而非随会话加载"
+    },
+    {
+      "id": "C2",
+      "group": "常驻控件",
+      "expected": "为空会话时按钮不显示数字，且不留悬空分隔符",
+      "actual": "data-count=\"0\"，.dshSd_count 文本为空串 \"\"，按钮整体文本为「全部收起」（无「·0」）",
+      "status": "confirmed",
+      "evidence": ["evidence/05-probe01.txt", "evidence/18-probe08-abnormal.txt", "evidence/run01-08-abnormal.json"]
+    },
+    {
+      "id": "C3",
+      "group": "计数准确性",
+      "expected": "计数等于当前展开区块数；DOM 实况、data-count、可见文本、插件自报 expanded() 四方一致",
+      "actual": "展开 0/1/2/3/4 个时逐次读数：domExpanded 0,1,2,3,4；data-count 0,1,2,3,4；文本 \"\",\"·1\",\"·2\",\"·3\",\"·4\"；expanded() 0,1,2,3,4；每步 agree=true",
+      "status": "confirmed",
+      "evidence": ["evidence/16-probe06-core.txt", "evidence/run01-06-core.json"]
+    },
+    {
+      "id": "C4",
+      "group": "计数准确性",
+      "expected": "按钮尺寸随计数位数变化但仍钉在滚动区右下角，不遮挡正文关键区域",
+      "actual": "计数为 0 时 96×32（x=1286）；有计数时 105×32（x=1277）；40 个时 112×32（x=1270）；y 恒为 952。右缘距滚动区右边 -56，下缘距滚动区底边 -16",
+      "status": "confirmed",
+      "evidence": ["evidence/16-probe06-core.txt", "evidence/run01-06-core.json", "evidence/19-probe09-many.txt", "evidence/run01-10-visual.json"]
+    },
+    {
+      "id": "C5",
+      "group": "一键收起",
+      "expected": "一次点击收起全部展开区块（Think、工具卡、turn-process 都在范围内）",
+      "actual": "展开 4 个区块后对按钮做真实鼠标点击（boundingBox 中心），pillClickMs=5；点击后 domExpanded=0、data-count=\"0\"、文本回空串、expanded()=0、dockChips=0",
+      "status": "confirmed",
+      "evidence": ["evidence/16-probe06-core.txt", "evidence/run01-06-core.json", "evidence/06-core-c-collapsed.png"]
+    },
+    {
+      "id": "C6",
+      "group": "一键收起",
+      "expected": "大量区块（40+）时一次点击也能全部收起，不漏收",
+      "actual": "sess-sd-many 展开 40 个（think 20 + tool 20），data-count=\"40\"、文本「·40」、expanded()=40、agree=true；一次点击 clickMs=14 后 expanded=0、leftover=[]、leftoverCount=0",
+      "status": "confirmed",
+      "evidence": ["evidence/19-probe09-many.txt", "evidence/run01-09-many.json", "evidence/09-many-b-collapsed.png"]
+    },
+    {
+      "id": "C7",
+      "group": "一键收起",
+      "expected": "大量区块下计数同样准确",
+      "actual": "40 个展开时三方一致 agree=true；byVariant 读数为 think=20、tool=20、turnProcess=0（turn-process 汇总按钮展开态不计入 disclosure 计数）",
+      "status": "confirmed",
+      "evidence": ["evidence/19-probe09-many.txt", "evidence/run01-09-many.json"]
+    },
+    {
+      "id": "C8",
+      "group": "快捷键",
+      "expected": "默认快捷键 Ctrl+Alt+C 与按钮等效",
+      "actual": "展开 1 个后按 Ctrl+Alt+C：expanded 1→0，data-count 1→0，pass=true",
+      "status": "confirmed",
+      "evidence": ["evidence/17-probe07-hotkey.txt", "evidence/run01-07-hotkey.json"]
+    },
+    {
+      "id": "C9",
+      "group": "快捷键",
+      "expected": "齿轮打开设置面板，面板给出当前键位、设置、恢复默认与持久化说明",
+      "actual": "面板 present=true、role=dialog、rect {x:1102,y:747,w:320,h:197}；文本「收起全部快捷键 / Ctrl + Alt + C / 设置 / 恢复默认 / 快捷键保存在此浏览器中，刷新后仍然有效」；kbd=[Ctrl,Alt,C]；panel.focus=capture",
+      "status": "confirmed",
+      "evidence": ["evidence/17-probe07-hotkey.txt", "evidence/run01-07-hotkey.json", "evidence/07-hotkey-a-panel.png"]
+    },
+    {
+      "id": "C10",
+      "group": "快捷键",
+      "expected": "点「设置」进入捕获态，按下新组合键即改绑并写入 localStorage",
+      "actual": "capturing.armed=true、label「请按新组合键…」；按 Ctrl+Shift+K 后 kbd=[Ctrl,Shift,K]；localStorage[\"dsh-sticky-disclosure:hotkey\"]={\"ctrl\":true,\"meta\":false,\"alt\":false,\"shift\":true,\"code\":\"KeyK\"}；hotkey()=\"Ctrl+Shift+K\"",
+      "status": "confirmed",
+      "evidence": ["evidence/17-probe07-hotkey.txt", "evidence/run01-07-hotkey.json", "evidence/07-hotkey-b-rebound.png"]
+    },
+    {
+      "id": "C11",
+      "group": "快捷键",
+      "expected": "改绑后旧组合失效、新组合生效",
+      "actual": "展开 1 个后按旧组合 Ctrl+Alt+C：afterOld=1（未收起）；按新组合 Ctrl+Shift+K：afterNew=0；pass=true",
+      "status": "confirmed",
+      "evidence": ["evidence/17-probe07-hotkey.txt", "evidence/run01-07-hotkey.json"]
+    },
+    {
+      "id": "C12",
+      "group": "快捷键",
+      "expected": "「恢复默认」把键位与存储都还原成 Ctrl+Alt+C",
+      "actual": "kbd=[Ctrl,Alt,C]；storage={\"ctrl\":true,\"meta\":false,\"alt\":true,\"shift\":false,\"code\":\"KeyC\"}；hotkey()=\"Ctrl+Alt+C\"",
+      "status": "confirmed",
+      "evidence": ["evidence/17-probe07-hotkey.txt", "evidence/run01-07-hotkey.json", "evidence/07-hotkey-c-reset.png"]
+    },
+    {
+      "id": "C13",
+      "group": "快捷键",
+      "expected": "刷新后仍使用改绑后的快捷键",
+      "actual": "改绑为 Ctrl+Shift+K 后 reload：hotkey()=\"Ctrl+Shift+K\"，storage 仍为 {ctrl:true,shift:true,code:KeyK}；pass=true",
+      "status": "confirmed",
+      "evidence": ["evidence/17-probe07-hotkey.txt", "evidence/run01-07-hotkey.json"]
+    },
+    {
+      "id": "C14",
+      "group": "异常对照",
+      "expected": "一个可折叠区块都没有时，按钮仍在且点击不抛错",
+      "actual": "sess-sd-zero：rows=0、expanded=0；按钮 present=true、96×32、data-count=\"0\"、文本「全部收起」；clickOk=true；点后 expanded=0、pill=\"0\"；无 errors、无 consoleErr",
+      "status": "confirmed",
+      "evidence": ["evidence/18-probe08-abnormal.txt", "evidence/run01-08-abnormal.json", "evidence/08-abnormal-a-zero.png", "evidence/08-abnormal-b-zero-after.png"]
+    },
+    {
+      "id": "C15",
+      "group": "视觉与主题",
+      "expected": "浅色/深色、宽/窄视口下按钮都可见、不被裁切、不被别的层盖住",
+      "actual": "五组读数 pill.inView 全 true；topmostAtPillCenter 命中 dshSd_label（是按钮自己，未被遮挡）；docOverflowX=false；对比度 浅色 5.8:1、深色 9.25:1；深色 1440 时 bg=rgb(44,44,46)、color=rgb(207,211,214)；320×700 时按钮 rect {x:157,y:652,w:105,h:32} 仍在视口内",
+      "status": "confirmed",
+      "evidence": ["evidence/20b-probe10-visual.txt", "evidence/run01-10-visual.json", "evidence/10-visual-b-dark-1440.png", "evidence/10-visual-c-narrow-320.png", "evidence/10-visual-d-narrow-dark-320.png"]
+    },
+    {
+      "id": "C16",
+      "group": "钉住（chip）",
+      "expected": "展开区块滑出滚动区顶部时生成顶部 chip",
+      "actual": "展开 4 个时 dockChips=2；展开 3 个时 dockChips=2；展开 40 个时 dockChips=30；截图 08-abnormal-c-many-expanded.png 顶部可见成排 chip（「搜索文件内容 p1 / 思考 / …」）",
+      "status": "confirmed",
+      "evidence": ["evidence/16-probe06-core.txt", "evidence/19-probe09-many.txt", "evidence/08-abnormal-c-many-expanded.png", "evidence/21-probe11-reload.txt"],
+      "note": "只确认 chip 出现与数量，未验证点击 chip 是否收起原区块"
+    },
+    {
+      "id": "C17",
+      "group": "刷新",
+      "expected": "普通刷新后按钮与计数恢复，展开/收起状态按插件设计处理",
+      "actual": "刷新前 expanded=3、按钮 105×32、文本「全部收起 ·3」、dockChips=2；刷新后 expanded=0、96×32、文本「全部收起」、dockChips=0；随后重新展开 2 个 → expanded=2、文本「·2」，计数恢复正常工作。summary.stateRemembered=false",
+      "status": "confirmed",
+      "evidence": ["evidence/21-probe11-reload.txt", "evidence/run01-11-reload.json", "evidence/11-reload-a-before.png", "evidence/11-reload-b-after.png"],
+      "note": "README 未承诺记住展开态，故「刷新后全部收起」记为行为观察，不作缺陷"
+    },
+    {
+      "id": "C18",
+      "group": "刷新",
+      "expected": "刷新后快捷键仍可用",
+      "actual": "刷新后 hotkey 仍为 Ctrl+Alt+C（默认值）；但刷新后按 Ctrl+Shift+K 时 expanded 停在 2（未收起）",
+      "status": "uncertain",
+      "evidence": ["evidence/21-probe11-reload.txt", "evidence/run01-11-reload.json"],
+      "note": "探针侧不一致：probe-11 第 48 行按的是 Ctrl+Shift+K，而 phase 记录 hotkey=\"Ctrl+Alt+C\"（该轮未先改绑）。故「刷新后快捷键失效」不能成立，这是探针脚本与断言不匹配，不是插件读数"
+    },
+    {
+      "id": "C19",
+      "group": "刷新",
+      "expected": "宿主冷重启（杀进程再起）后按钮、计数、快捷键偏好是否恢复",
+      "actual": "evidence/ 里只有一个宿主实例（run01，pid 2024，端口 9578），无第二个 host.local.json",
+      "status": "untested",
+      "evidence": [],
+      "note": "原因：上一执行者在冷重启前退出；本轮硬性边界禁止起宿主，不补测"
+    },
+    {
+      "id": "C20",
+      "group": "流式",
+      "expected": "页面已打开时新增轮次，新出现的区块按插件规则处理（是否自动收起）",
+      "actual": "无读数。所有探针都是先写好会话再打开页面，没有「页面开着时追加 turn」的记录",
+      "status": "untested",
+      "evidence": [],
+      "note": "原因：需在宿主运行中追加会话事件（探针 + 宿主协同），本轮边界禁止新开探针"
+    },
+    {
+      "id": "C21",
+      "group": "钉住（chip）",
+      "expected": "点击顶部 chip 会收起它对应的展开区块",
+      "actual": "无点击 chip 的读数；只拿到 chip 数量（dockChips 2 / 30）",
+      "status": "untested",
+      "evidence": [],
+      "note": "原因：现有探针只统计 dock.chips，没有对 chip 做点击"
+    },
+    {
+      "id": "C22",
+      "group": "窄窗口",
+      "expected": "320px 宽下仍能打开会话并操作按钮",
+      "actual": "probe-10 首跑在 320×700 下 openSession 等 20s 超时（侧栏收起，[data-row-key] 不可见）；20b 重跑拿到按钮读数但会话内容区 scrollport 仅 38px 宽",
+      "status": "uncertain",
+      "evidence": ["evidence/20-probe10-visual.txt", "evidence/20b-probe10-visual.txt", "evidence/10-visual-c-narrow-320.png"],
+      "note": "超时是宿主侧栏在窄窗默认折叠导致探针定位不到会话行，不是插件行为；但插件在 38px 宽内容区里的实际可用性没测到"
+    },
+    {
+      "id": "C23",
+      "group": "快捷键边界",
+      "expected": "输入框聚焦时快捷键仍生效；IME 组合输入（isComposing）与 AltGr 不被误捕获；Esc 取消捕获",
+      "actual": "无读数。probe-07 只在页面主体按组合键，没有聚焦输入框或模拟 IME 的用例",
+      "status": "untested",
+      "evidence": [],
+      "note": "原因：需合成 IME composition 事件与置焦用例，属新探针范围"
+    },
+    {
+      "id": "C24",
+      "group": "卸载还原",
+      "expected": "禁用/卸载插件后按钮、面板、样式全部还原，DOM 不留残余",
+      "actual": "无读数。全程只有一个插件启用态",
+      "status": "untested",
+      "evidence": [],
+      "note": "原因：需在宿主里禁用插件后重载页面再取 DOM 快照"
+    },
+    {
+      "id": "C25",
+      "group": "方法学（非插件缺陷）",
+      "expected": "探针能对展开行做真实鼠标点击",
+      "actual": "宿主每条回复标题行上有一个 opacity:0 但 pointerEvents:auto 的操作栏 div.xzv4MW_actions（rect 479,227,748×28），elementFromPoint 命中的不是行本身，Playwright locator.click 全部超时；改用 element.click()（程序化）后 expanded 0→1 成功",
+      "status": "confirmed",
+      "evidence": ["evidence/15-diag-actions.txt", "evidence/13-diag-click2.txt", "evidence/12-diag-click.txt", "evidence/run01-05a-count.json"],
+      "note": "这是宿主不可见操作栏的遮挡，与插件无关；因此 C3 的「展开动作」是程序化点击，而 C5 的「药丸点击」是真实鼠标事件（boundingBox 中心 page.mouse.click）"
+    }
+  ],
+  "environment_notes": [
+    "宿主：@deepseek-ai/dsh 0.2.0-rc.2，--host 127.0.0.1 --port 0 --no-open，profile sdweb，pid 2024，origin http://127.0.0.1:9578",
+    "浏览器：Edge 155.0.4283.62 headless via Playwright 1.64.1，独立 context，只放行本机地址",
+    "会话数据为手写合成 fixture（format v4 + zstd），未调用任何模型；页面右上角「DeepSeek-V41-Flash High」只是宿主默认选择器，本轮没有真正发起模型请求",
+    "宿主首次启动会弹「预览版说明」欢迎层与「添加一个 API Key 开始使用」对话框，探针用 dismissOnboarding 关掉；本报告不触及真实密钥",
+    "40 个区块逐行展开耗时 39116ms（08 轮的另一条 45126ms），这是探针逐行点击的累计开销，不是插件性能"
+  ]
+}

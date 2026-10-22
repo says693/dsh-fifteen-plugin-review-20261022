@@ -1,0 +1,289 @@
+{
+  "schema": "dsh-plugin-review/results/v1",
+  "subject": "dsh-result-only-view@1.7.0 (npm published)",
+  "repo_diff_check": "YEYEYEYESHIFU/dsh-result-only-view @ 47cfe87a7d183be2506fcca8ff9ed2e5f6069b2c (1.6.4) — source diff only, not run",
+  "host": "@deepseek-ai/dsh 0.2.0-rc.2, --profile web --host 127.0.0.1 --port 0 --no-open",
+  "browser": "Edge headless via Playwright, 1440x1000, 127.0.0.1 only",
+  "generated_at": "2026-10-22T01:25:00+08:00",
+
+  "checks": [
+    {
+      "id": "1a",
+      "point": "1 开关位置",
+      "check": "「只看结果」开关在输入框左侧工具行，可见可点，且能从页面上的其他 aria-pressed 控件里区分出来",
+      "expected": "存在一个文本含「只看结果」的 button[aria-pressed]，祖先链含 conversation.input.left",
+      "actual": "找到 4 个 button[aria-pressed]（自动换行 / 好的回答 / 有问题的回答 / 只看结果），只有第 4 个的 text=「◉ 只看结果」、borderRadius=11px、祖先槽 conversation.input.left ← conversation.composer.bar ← conversation.composer ← main.conversation ← main ← root；rect=(655,936,79,22)；composer seat=(280,872,1153,128)，输入框=(469,880,770,36)",
+      "evidence": ["evidence/run1-04-inventory.json", "evidence/run1-04-inventory.png"],
+      "state": "confirmed"
+    },
+    {
+      "id": "1b",
+      "point": "1 点击即时生效",
+      "check": "点击后隐藏是否同步生效、按钮状态何时翻转",
+      "expected": "点击即隐藏；按钮 aria-pressed 与文案随之更新",
+      "actual": "点前 pressed=false / styleTags=0 / thinkHidden=0；点击调用本身耗时 1.9ms，同一 tick 内读取已得到 styleTags=1、thinkHidden=1（思考行 display:none）；下一个 rAF 时 pressed=true、文案变「◉ 只看结果」；50ms / 150ms / 400ms 三次采样均稳定",
+      "evidence": ["evidence/run1-05-core.json", "evidence/run1-05-core.stdout.txt", "evidence/run1-05-on.png"],
+      "state": "confirmed"
+    },
+    {
+      "id": "1c",
+      "point": "1 状态一致性",
+      "check": "按钮状态、localStorage、注入样式三者是否同步",
+      "expected": "三者一致，无「按了但没存」",
+      "actual": "关闭后 localStorage dsh.result-only-view.enabled='0' 且 styleTags=0；开启后='1' 且 styleTags=1；两者始终与 aria-pressed 同向。注意：如果点击时状态本来就已是目标值，插件不会写入新值（首次点击前该键为 null，因为默认值是「开」且未落盘）",
+      "evidence": ["evidence/run1-06-persist-anomaly.json", "evidence/run1-07-followup.json"],
+      "state": "confirmed"
+    },
+    {
+      "id": "2a",
+      "point": "2 思考块隐藏",
+      "check": "开启后思考行是否隐藏",
+      "expected": "div[data-variant=\"think\"] 隐藏",
+      "actual": "sess-rov-one：开启后 think 行 display:none、rect 高度 0；关闭后 display:flex、高度 24px。sess-rov-multi：3 个 think 行在开启后全部 display:none，关闭后全部 flex/24px",
+      "evidence": ["evidence/run1-05-core.json", "evidence/run1-07-followup.json", "evidence/run1-05-multi.png"],
+      "state": "confirmed"
+    },
+    {
+      "id": "2b",
+      "point": "2 过程行隐藏",
+      "check": "turn-process 与 thinking-only 的 assistant-step 是否也隐藏",
+      "expected": "这两类也属于「过程」，应当一并隐藏",
+      "actual": "开启后 kinds 里 turn-process 的 display 从 block 变 none；thinking-only 的 assistant-step 从 block 变 none（高度 0）；真正带回答的 assistant-step 保持 block、高度 549px",
+      "evidence": ["evidence/run1-05-core.json"],
+      "state": "confirmed"
+    },
+    {
+      "id": "2c",
+      "point": "2 最终回答完整保留",
+      "check": "开启后回答文本是否一字不少，代码块与表格是否还在",
+      "expected": "用户消息、回答正文、代码、表格全在；只有过程被隐藏",
+      "actual": "sess-rov-one 开启后 flow 文本 386 字，含尾标记 END-OF-ANSWER-ONE、表格表头「状态」、代码行「function greet」、用户提问「给我解释一下」，且不含思考正文（thinkInText=0）",
+      "evidence": ["evidence/run1-05-core.json", "evidence/run1-05-on.png"],
+      "state": "confirmed"
+    },
+    {
+      "id": "2d",
+      "point": "2 工具卡隐藏",
+      "check": "工具调用卡是否被隐藏",
+      "expected": "工具调用行隐藏",
+      "actual": "未能取得读数。三次尝试造含工具调用的合成会话都被宿主格式校验拒绝：第一次 {type:'tool-call'} 内容块 → step/end leaves unresolved tool call；第二次改成 tool/call + tool/result 分离事件 → tool/result requires toolCallId matching its tool source；第三次把 source.callId 对齐后写盘成功，但加载报 tool/call call-1 has no advertised tool lifecycle。按纪律停止继续试事件形态",
+      "evidence": ["evidence/run3-10-tool.json", "evidence/run5-12-tool.json", "evidence/fixture-03-tool2-session.txt"],
+      "state": "untested"
+    },
+    {
+      "id": "2e",
+      "point": "2 白名单卡片",
+      "check": "ask_user_question / cordis_run 卡片是否不被隐藏",
+      "expected": "白名单交互卡片始终可见",
+      "actual": "本轮没有任何会话里出现这两类卡片，无对象可观测",
+      "evidence": [],
+      "state": "untested"
+    },
+    {
+      "id": "3a",
+      "point": "3 关闭后完整还原",
+      "check": "关闭后注入样式被移除，所有元素 display 回到开启前",
+      "expected": "样式标签消失、display 回原值、无残留内联样式",
+      "actual": "关闭后 styleTags=0；think 行 display 回 flex、高度回 24px；所有被查元素的 inline style 属性均为 null（插件没有写内联样式，全靠样式表）",
+      "evidence": ["evidence/run1-05-core.json", "evidence/run1-05-off.png"],
+      "state": "confirmed"
+    },
+    {
+      "id": "3b",
+      "point": "3 三态对比无残留",
+      "check": "初始（关）/ 开 / 再关，三次的 display 与内联样式是否逐项相同",
+      "expected": "第 1 次关与第 3 次关完全相同",
+      "actual": "off / on / off2 三次快照的 items（5 个 flow 项）与 think 行数组逐项比较 identical=true；差异只出现在 on 态（turn-process none、thinking-only assistant-step none、think none、turn-tail 从 32px 变 68px）",
+      "evidence": ["evidence/run1-05-core.json"],
+      "state": "confirmed"
+    },
+    {
+      "id": "3c",
+      "point": "3 内容零丢失",
+      "check": "关闭后整段会话文本长度是否回到开启前",
+      "expected": "文本长度与内容一致（痕迹行会带来少量增减）",
+      "actual": "开启 386 字 / 关闭 385 字；两边都含尾标记 END-OF-ANSWER-ONE；差值来自痕迹行「已处理 1 步 · 5s ▸」与「只」等 UI 文案切换，正文未丢",
+      "evidence": ["evidence/run1-05-core.json"],
+      "state": "confirmed"
+    },
+    {
+      "id": "4a",
+      "point": "4 刷新后保留（关）",
+      "check": "关掉开关后 page.reload，状态是否仍是关",
+      "expected": "仍是关",
+      "actual": "关闭后 stored='0'；reload 后 pressed=false、styleTags=0、think 行可见（thinkDisplayed=1）",
+      "evidence": ["evidence/run1-07-followup.json", "evidence/run1-07-reload-off.png"],
+      "state": "confirmed"
+    },
+    {
+      "id": "4b",
+      "point": "4 刷新后保留（开）",
+      "check": "开着开关时 reload，状态是否仍是开",
+      "expected": "仍是开",
+      "actual": "显式点成开启后 stored='1'；reload 后 pressed=true、label「◉ 只看结果」、styleTags=1、thinkDisplayed=0",
+      "evidence": ["evidence/run1-07-followup.json", "evidence/run1-07-reload-on.png"],
+      "state": "confirmed"
+    },
+    {
+      "id": "4c",
+      "point": "4 切换会话保持",
+      "check": "在会话之间切换时开关状态是否保持、新会话是否也守住状态",
+      "expected": "开关是全局的，切会话不变，且新会话立刻按当前状态渲染",
+      "actual": "关态下从 sess-rov-one 切到 sess-rov-multi：pressed 仍 false、3 个 think 全可见；开态下从 multi 切回 one：pressed 仍 true、thinkDisplayed=0。切会话过程中按钮 DOM 会被重建，必须重新查询元素才能读到状态",
+      "evidence": ["evidence/run1-07-followup.json", "evidence/run1-07-switch-on.png"],
+      "state": "confirmed"
+    },
+    {
+      "id": "4d",
+      "point": "4 冷重启保留",
+      "check": "停掉宿主再重启后开关状态是否保留",
+      "expected": "同一 origin 下应保留",
+      "actual": "重启了 4 次，origin 每次都变（9798 → 4133 → 11114 → 5315 → 12495），新 origin 首次打开时 dsh.result-only-view.enabled 读出 null（源码默认视为开启）。这是 --port 0 换端口导致 localStorage 按 origin 隔离的环境限制，不是插件丢设置；同一 origin 内的 reload 已验证读写都正常（4a/4b）",
+      "evidence": ["evidence/run2-09-tool-persist.json", "evidence/run4-11-tool.stdout.txt", "evidence/run5-host.local.json"],
+      "state": "uncertain"
+    },
+    {
+      "id": "5a",
+      "point": "5 长回复完整",
+      "check": "长回复（>2800 字）在开启后是否完整显示、末尾是否被截",
+      "expected": "末尾标记仍在，正文不被裁",
+      "actual": "sess-rov-long 开启后 flow 文本 2852 字，含尾标记 END-OF-ANSWER-LONG 与最后一段「第 24 段」；关闭后 2851 字同样含尾标记",
+      "evidence": ["evidence/run1-05-core.json", "evidence/run1-05-long-on.png"],
+      "state": "confirmed"
+    },
+    {
+      "id": "5b",
+      "point": "5 代码块不被裁",
+      "check": "代码块在开启后是否可见、能否横向滚动、有没有被父级裁掉",
+      "expected": "pre 可见、overflowX auto、maxHeight none、scrollHeight 等于 clientHeight（没被截断）",
+      "actual": "pre visible=true、display=block、overflowX=auto、overflowY=auto、maxHeight=none、高度 159、scrollHeight=clientHeight=159、代码 135 字符",
+      "evidence": ["evidence/run1-05-core.json"],
+      "state": "confirmed"
+    },
+    {
+      "id": "5c",
+      "point": "5 表格不被裁",
+      "check": "表格在开启后是否可见、行数完整、父容器没裁",
+      "expected": "table 可见、4 行（含表头）、父容器 overflow auto 且 maxHeight none",
+      "actual": "table visible=true、display=table、4 行、宽度 742、高度 172；父容器 overflow=auto、maxHeight=none",
+      "evidence": ["evidence/run1-05-core.json"],
+      "state": "confirmed"
+    },
+    {
+      "id": "6a",
+      "point": "6 0 轮会话",
+      "check": "空会话下开关是否出现、可点、无报错",
+      "expected": "开关出现且不报错",
+      "actual": "未能取得读数。sess-rov-empty（只有 session/title 一条事件）虽然登记在 workspace.json 的 sessionIds 里，但侧栏没有它的行（treeitems 里 hasEmptyRow=false），点不到",
+      "evidence": ["evidence/run1-08-tool.json", "evidence/run1-07-followup.json"],
+      "state": "untested"
+    },
+    {
+      "id": "6b",
+      "point": "6 单轮会话",
+      "check": "单轮会话下隐藏是否生效、痕迹行是否出现",
+      "expected": "隐藏生效、痕迹行出现",
+      "actual": "sess-rov-one 开启后 think 隐藏；turn-tail 行文本「已处理 1 步 · 5s ▸」，含 .dsh-rov-trace-btn 且 aria-expanded=false（关闭时该按钮不存在，轨迹行只剩时间）",
+      "evidence": ["evidence/run1-05-core.json", "evidence/run1-07-followup.json"],
+      "state": "confirmed"
+    },
+    {
+      "id": "6c",
+      "point": "6 多轮会话",
+      "check": "多轮下每轮痕迹行是否独立、各自展开互不影响",
+      "expected": "每轮一条痕迹行，各自 aria-expanded 独立",
+      "actual": "sess-rov-multi 有 3 条 turn-tail，各有自己的「已处理 1 步 · 5s ▸」按钮、aria-expanded 全为 false；点第 1 条展开后只有第 1 个 think 变可见（thinkVisible 从 0 变 1），另两条仍 hidden；再点一次回到 0",
+      "evidence": ["evidence/run1-07-followup.json", "evidence/run1-07-trace-click.png"],
+      "state": "confirmed"
+    },
+    {
+      "id": "6d",
+      "point": "6 痕迹行步数",
+      "check": "痕迹行显示的步数是否与实际过程行数一致",
+      "expected": "「已处理 N 步」的 N 与真实步骤数相符",
+      "actual": "痕迹行显示「已处理 1 步」，而该回合的 turn-process 行数为 1（[data-chat-flow-kind=turn-process] 计数 1），一致。注意 1.7.0 的变更日志说桌面端曾显示 0 步、修好后为真实步数；本轮 web 端读到的是 1 步，非 0",
+      "evidence": ["evidence/run1-07-followup.json"],
+      "state": "confirmed"
+    },
+    {
+      "id": "7a",
+      "point": "7 异常：展开中切换",
+      "check": "先把折叠块展开，再切开关，会不会留下「半展开但父级已隐藏」的孤儿元素；关回来后还能不能看",
+      "expected": "不留孤儿；关回来后内容还在",
+      "actual": "先点开 think 行（data-expanded=true、高度 96）；切到开启后 display=none、高度 0，但 data-expanded 仍保持 true；再切回关闭后 display=flex、高度回到 96、hasBody=true（内容仍在）。全页孤儿扫描 orphanCount=0（没有任何元素「自身可见但祖先 display:none」）",
+      "evidence": ["evidence/run1-06-persist-anomaly.json", "evidence/run1-06-expand-toggle.png"],
+      "state": "confirmed"
+    },
+    {
+      "id": "7b",
+      "point": "7 异常：连续快速切换",
+      "check": "20 次快速切换（间隔 30ms）后状态是否一致、样式标签会不会累积、有没有报错",
+      "expected": "最终状态与点击次数奇偶一致；样式标签只有一个或零个；无报错",
+      "actual": "20 次点击后 finalPressed=false（偶数次→回到原点）、styleTagCount=0、thinkDisplayed=1；另一次同样 20 次点击后停在 pressed=true、styleTagCount=1、字符数 7610（只有一个 style 标签，没有累积）；全程 errors=[]、consoleLog=[]",
+      "evidence": ["evidence/run1-06-persist-anomaly.json", "evidence/run1-06-rapid.png"],
+      "state": "confirmed"
+    },
+    {
+      "id": "7c",
+      "point": "7 异常：痕迹行展开中切开关",
+      "check": "在痕迹行展开状态下把开关关掉再打开，展开状态是否被重置、内容是否还在",
+      "expected": "开关关闭时痕迹行应消失；再开启时回到折叠态且内容还在",
+      "actual": "点痕迹行展开（aria-expanded=true、文案变「收起过程 ▾」、第 1 个 think 可见）；把开关关掉时痕迹行整个消失（hasTrace=false，turn-tail 只剩时间）；再开启时痕迹行回来且 aria-expanded=false（折叠），点开后仍能显示内容",
+      "evidence": ["evidence/run1-07-followup.json", "evidence/run1-05-core.json"],
+      "state": "confirmed"
+    },
+    {
+      "id": "8a",
+      "point": "8 安装面",
+      "check": "dsh plugin add 是否成功、插件是否被宿主加载",
+      "expected": "安装成功、profile bundles 含插件、页面注入样式与开关",
+      "actual": "先 add 本地目录（link:）成功，再 remove 后 add 该 tgz（file:）成功，EXIT=0（有 peerDependencies WARN 但不阻断）；profile package.json 的 dsh.profile.bundles 含 dsh-result-only-view；运行时页面有 1 个 style[data-plugin=\"dsh-result-only-view\"]、开关按钮存在、/plugins 资源列表末尾出现 dsh-result-only-view/client.js",
+      "evidence": ["evidence/install-01-add.txt", "evidence/install-02-add-tarball.txt", "evidence/install-03-profile-package.json", "evidence/run1-01-boot.json"],
+      "state": "confirmed"
+    },
+    {
+      "id": "8b",
+      "point": "8 无控制台报错",
+      "check": "全程有无 pageerror / console error",
+      "expected": "无与插件相关的报错",
+      "actual": "probe-01/05/06/07/08/12 的 errors 与 consoleLog 均为空。唯一一次 console error 发生在 run3，原因是测试侧把 workspace.json 写成了带 BOM 的 UTF-8，导致宿主 sessionController 不可用（与插件无关，已定位并修复）",
+      "evidence": ["evidence/run1-05-core.json", "evidence/run1-07-followup.json", "evidence/run3-host.stderr.txt"],
+      "state": "confirmed"
+    },
+    {
+      "id": "9a",
+      "point": "9 版本一致性",
+      "check": "被测的是不是 npm 发布件 1.7.0；与仓库 HEAD 1.6.4 有什么关系",
+      "expected": "如实区分两个版本",
+      "actual": "测的是 npm 1.7.0（shasum aca7702…、integrity 已本地复算一致、gitHead 4653ee8…）；仓库固定提交 47cfe87 的 package.json 是 1.6.4。两者 lib/index.js、cordis.patch.yml、LICENSE 哈希完全相同；lib/client.js（59767 vs 53761 字节）、package.json、README.md、CHANGELOG.md 不同。1.7.0 的变更日志写明这版是「桌面端支持 + 0.2.0 DOM 适配」",
+      "evidence": ["evidence/diff-01-1.7.0-vs-47cfe87.txt", "evidence/diff-02-keys-and-features.txt"],
+      "state": "confirmed"
+    },
+    {
+      "id": "10a",
+      "point": "10 查重",
+      "check": "两站是否已有同插件同范围的稿件",
+      "expected": "两站都查清才可写首报",
+      "actual": "评测站 review.lingshulab.com 全量 4 页 172 条本地扫描命中 0；悬赏站按 5 个词查询，逐条比对标题后同插件命中 0（YEYEYEYESHIFU 直接 0 条）",
+      "evidence": ["evidence/dedup-01-lingshulab.txt", "evidence/dedup-02-bounty-github.txt"],
+      "state": "confirmed"
+    }
+  ],
+
+  "summary": {
+    "confirmed": 25,
+    "uncertain": 1,
+    "untested": 3,
+    "total_checks": 29,
+    "confirmed_ids": ["1a","1b","1c","2a","2b","2c","3a","3b","3c","4a","4b","4c","5a","5b","5c","6b","6c","6d","7a","7b","7c","8a","8b","9a","10a"],
+    "uncertain_ids": ["4d"],
+    "untested_ids": ["2d","2e","6a"],
+    "note": "confirmed 计数按 checks 数组里 state=confirmed 的条目数去重统计；summary.confirmed 与 confirmed_ids 长度一致。"
+  },
+
+  "notes_for_report": [
+    "probe-03（evidence/run1-03-core.json）的读数作废：它用 document.querySelector('button[aria-pressed]') 取第一个匹配，命中的是「自动换行」而不是被测开关。probe-04 做了控件清点并定位到正确目标，probe-05 起全部重测。这份文件保留作为「我们怎么发现探针错了」的记录，不用于任何结论。",
+    "本轮没有发现可提交的功能缺陷。全部主路径（开关、隐藏、保留、还原、刷新、切会话、长内容、多轮、两个异常）都按 README 描述工作，且没有控制台报错。",
+    "「工具卡隐藏」与「0 轮会话」两项是因为测试夹具造不出来而记 untested，不是插件行为异常。"
+  ]
+}

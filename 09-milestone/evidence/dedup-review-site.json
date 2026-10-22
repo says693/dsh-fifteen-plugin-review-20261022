@@ -1,0 +1,27 @@
+{
+  "site": "https://review.lingshulab.com",
+  "checkedAt": "2026-10-22T01:46:41.407Z",
+  "method": "pulled /api/reviews pageSize=100 until exhausted; ?q= not used (does not filter server-side)",
+  "pagesFetched": 8,
+  "totalReported": 172,
+  "itemsFetched": 172,
+  "keywords": [
+    "dsh-milestone",
+    "snowcrescenter",
+    "milestone-0.7",
+    "milestone"
+  ],
+  "hits": [],
+  "nearMiss": [],
+  "verdict": "no duplicate covering dsh-milestone / SnowCrescenter-tech",
+  "sampleTitles": [
+    "dsh-slack 0.3.4 试跑：频道超过 20 页会少报（判定：还说不准）",
+    "@sunwindy/dsh-tool-baixiaochun 0.2.1 标准测评：装与不装都是 15/25，插件没多干成活（判定：没啥差别）",
+    "dsh-orb 0.1.9 测评",
+    "dsh-bili-scroll 0.1.7 测评",
+    "@hyzyn/dsh-docker 0.13.3：真机实测 16 个任务，装与不装都答对；省调用、省数据，但没多干成活",
+    "honcho-dsh-memory 0.1.2 测评",
+    "【安全面快测】dsh-plugin-iot-thinking 0.1.0（判定：还说不准·能力未测）：已补的配置桥门禁挡不住 DNS rebinding，恶意网页可把 reasoning 原文改道到攻击者端点并关归档（P1）",
+    "【安全面快测】dsh-normify 0.5.4（判定：还说不准·能力未测）：9 个写入点全部跟随符号链接，clone 被投毒仓库后默认参数 build 即覆盖工作区外文件并可写进 ~/.bashrc 执行（P1）"
+  ]
+}

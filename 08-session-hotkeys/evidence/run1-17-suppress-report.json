@@ -1,0 +1,107 @@
+{
+  "utc": "2026-10-22T01:09:32.893Z",
+  "t0": {
+    "active": "session:session-b82a64e0-a6be-45a6-a240-f057d74ca6e0",
+    "n": 2,
+    "toast": null,
+    "focus": {
+      "tag": "INPUT",
+      "role": null,
+      "aria": "API 密钥",
+      "cls": "zGbnIq_input"
+    },
+    "composer": "",
+    "search": "",
+    "sideCollapsed": false,
+    "tone": null
+  },
+  "composerFound": true,
+  "focusedBefore": {
+    "focused": false,
+    "aria": null
+  },
+  "altDigitInComposer": {
+    "before": "session:session-b82a64e0-a6be-45a6-a240-f057d74ca6e0",
+    "after": "session:session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e",
+    "changed": true,
+    "toast": "已切换到会话 2 · 周记·第一篇",
+    "composerTextAfter": "",
+    "composerStillFocused": null
+  },
+  "plainLetters": {
+    "before": "session:session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e",
+    "after": "session:session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e",
+    "changed": false,
+    "toast": null,
+    "composerText": "abmnpwr",
+    "searchValue": "",
+    "sidebarCollapsed": false
+  },
+  "ime": {
+    "beforeFocus": true,
+    "afterFocus": true,
+    "defaultPrevented": true,
+    "focusKept": true,
+    "toast": null
+  },
+  "afterIme": {
+    "active": "session:session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e",
+    "n": 1,
+    "toast": null,
+    "focus": {
+      "tag": "DIV",
+      "role": "textbox",
+      "aria": "发消息或创建任务, / 调用指令, @ 文件或对话",
+      "cls": "uV2eYG_input"
+    },
+    "composer": "abmnpwr",
+    "search": "",
+    "sideCollapsed": false,
+    "tone": null
+  },
+  "escFirst": {
+    "focusBefore": "DIV",
+    "focusAfter": "DIV",
+    "afterToast": "已聚焦聊天区 · ↑↓ / PgUp / PgDn 滚动"
+  },
+  "escSecond": {
+    "focusAfter": "DIV",
+    "toast": "焦点已还原"
+  },
+  "toggleSidebar": {
+    "before": false,
+    "afterFirst": false,
+    "afterSecond": false,
+    "toast1": "焦点已还原",
+    "toast2": null
+  },
+  "searchFocus": {
+    "focus": {
+      "tag": "INPUT",
+      "role": null,
+      "aria": null,
+      "cls": "bhn1Oq_searchInput"
+    },
+    "searchValue": "",
+    "toast": null
+  },
+  "focusModel": {
+    "focus": {
+      "tag": "BUTTON",
+      "role": null,
+      "aria": "选择模型，当前 DeepSeek-V41-Flash，推理等级 High",
+      "cls": "_7KE1Ra_trigger shk-modelfocus"
+    },
+    "toast": "已聚焦模型选择 · Enter 打开菜单"
+  },
+  "focusComposer": {
+    "focus": {
+      "tag": "DIV",
+      "role": "textbox",
+      "aria": "发消息或创建任务, / 调用指令, @ 文件或对话",
+      "cls": "uV2eYG_input"
+    },
+    "toast": "已回到输入框"
+  },
+  "errors": []
+}

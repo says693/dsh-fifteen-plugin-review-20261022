@@ -1,0 +1,60 @@
+{
+  "out": {
+    "first": {
+      "seats": 0,
+      "anchors": 0,
+      "userRows": 0,
+      "styleTag": true,
+      "config": {
+        "enabled": true,
+        "minPrompts": 4,
+        "anchorSize": 3
+      },
+      "url": "http://127.0.0.1:4243/"
+    },
+    "opened": {
+      "found": true
+    },
+    "afterOpen": {
+      "seats": 0,
+      "anchors": 0,
+      "userRows": 8,
+      "styleTag": true,
+      "config": {
+        "enabled": true,
+        "minPrompts": 4,
+        "anchorSize": 3
+      },
+      "url": "http://127.0.0.1:4243/"
+    },
+    "afterReloadBoot": {
+      "seats": 0,
+      "anchors": 0,
+      "userRows": 8,
+      "styleTag": true,
+      "config": {
+        "enabled": true,
+        "minPrompts": 4,
+        "anchorSize": 3
+      },
+      "url": "http://127.0.0.1:4243/"
+    },
+    "opened2": {
+      "found": true
+    },
+    "afterReloadOpen": {
+      "seats": 0,
+      "anchors": 0,
+      "userRows": 8,
+      "styleTag": true,
+      "config": {
+        "enabled": true,
+        "minPrompts": 4,
+        "anchorSize": 3
+      },
+      "url": "http://127.0.0.1:4243/"
+    }
+  },
+  "errors": [],
+  "consoleLog": []
+}

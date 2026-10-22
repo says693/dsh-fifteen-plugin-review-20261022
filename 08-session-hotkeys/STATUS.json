@@ -1,0 +1,80 @@
+{
+  "task": "r2-03-session-hotkeys",
+  "round": "r2",
+  "subject": "dsh-session-hotkeys@1.9.5 (npm published tarball)",
+  "repo": "YEYEYEYESHIFU/dsh-session-hotkeys",
+  "stage": "completed",
+  "state": "completed",
+  "blocked": null,
+  "blockers": [],
+  "started_local": "2026-10-22T08:56:23+08:00",
+  "finished_utc": "2026-10-22T01:20:00Z",
+  "artifacts": [
+    {"file": "PLAN.md", "status": "done", "note": "完成判据 + A–H 检查项 + 正常/异常成对表 + 停止条件"},
+    {"file": "PROVENANCE.json", "status": "done", "note": "版本差异说明、双哈希一致、7 文件 sha256、宿主/工具/隔离/查重/进程"},
+    {"file": "evidence/", "status": "done", "note": "原始命令输出、哈希、探针 JSON 读数、截图、查重结果"},
+    {"file": "RESULTS.json", "status": "done", "note": "28 条检查项 + U1–U7 未测清单"},
+    {"file": "REPORT.md", "status": "done", "note": "面向维护者：发现与影响、读数摘要、未测项、环境限制、复跑指引"},
+    {"file": "ISSUE_DRAFT.md", "status": "done", "note": "marker YEYEYEYESHIFU/dsh-session-hotkeys；三条可复现项 + 四态划分"},
+    {"file": "SITE_REVIEW.md", "status": "done", "note": "第六节文风；场景开场/讲故事/比喻/大白话/温度/结尾建议；6 个二级标题"},
+    {"file": "REPRODUCE.md", "status": "done", "note": "隔离变量、profile 初始化、安装、探针顺序、冷重启固定端口理由、清理、查重、环境坑"},
+    {"file": "STATUS.json", "status": "done", "note": "本文件"}
+  ],
+  "counts": {
+    "checks_total": 30,
+    "confirmed": 26,
+    "uncertain": 3,
+    "untested": 1,
+    "observations": 2,
+    "untested_backlog": 7
+  },
+  "confirmed_ids": [
+    "A1", "A2", "A3",
+    "B1", "B2",
+    "C1", "C2", "C3", "C4", "C5", "C6", "C7",
+    "D1", "D2", "D4",
+    "E1", "E2", "E3", "E4",
+    "F1", "F2",
+    "G1", "G2",
+    "H1", "H2"
+  ],
+  "uncertain_ids": ["F3", "H3", "O2"],
+  "untested_ids": ["D3"],
+  "headline": {
+    "blocking_defects_found": 0,
+    "verified_working": "18 个默认键位与 README/源码/面板三方一致；位置切换、改绑与旧键失效、恢复默认、刷新与冷重启保留、输入框与 IME 抑制、两个异常项全部可复现通过",
+    "top_improvements": [
+      "Alt+N 的成功 toast 只反映「调用未抛异常」，空白会话被宿主复用时仍报「新建会话」（client.js:1164-1174）",
+      "归档确认卡片的默认焦点落在「归档」按钮而非「取消」（不可撤销动作）",
+      "重命名成功后侧栏标题未立即更新（uncertain，未定位成因）"
+    ]
+  },
+  "duplicate_check": {
+    "github_bounty": {"status": "checked_clear", "queries": ["dsh-session-hotkeys", "YEYEYEYESHIFU", "session-hotkeys", "会话快捷键"], "same_scope_hits": 0},
+    "lingshulab": {"status": "checked_clear", "index_total": 172, "pages_fetched": 9, "same_scope_hits": 0},
+    "conclusion": "两站都查清，无同范围重复"
+  },
+  "processes": {
+    "hosts_started": 3,
+    "hosts_stopped": 3,
+    "ports_used": [2280, 23456],
+    "ports_listening_after_cleanup": 0,
+    "user_gui_touched": false,
+    "user_gui_ports_avoided": [1241, 2538, 4756]
+  },
+  "safety": {
+    "api_key_entered": false,
+    "real_credentials_read": false,
+    "plugin_source_modified": false,
+    "submitted_or_uploaded": false,
+    "paid_services_used": false,
+    "subagents_spawned": false
+  },
+  "known_limitations": [
+    "归档 Enter 确认未取得落盘对照（U1）",
+    "改键冲突拒绝未构造（D3/U2 类）",
+    "macOS 预设未测（宿主为 Windows）",
+    "Alt+Shift+Enter 需真实模型会话，未测",
+    "SITE_REVIEW 字数按中文正文（CJK）计为 1587；去空白全字符 2205（含键位标记与反引号）"
+  ]
+}

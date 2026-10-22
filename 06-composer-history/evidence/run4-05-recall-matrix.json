@@ -1,0 +1,553 @@
+{
+  "seeded": {
+    "text": "",
+    "caret": 0,
+    "len": 0,
+    "entries": [
+      "第一条历史：给周记起个开头",
+      "第二条历史：把结尾写暖一点",
+      "第三条历史：再检查一遍错别字"
+    ],
+    "rawLen": 68,
+    "session": "{\"sessionId\":\"session-3e3fc267-8605-4c27-a075-36ac7514eb43\"}"
+  },
+  "seedReadings": [
+    {
+      "sent": "第一条历史：给周记起个开头",
+      "after": {
+        "text": "",
+        "caret": 0,
+        "len": 0,
+        "entries": [
+          "第一条历史：给周记起个开头"
+        ],
+        "rawLen": 35,
+        "session": "{\"sessionId\":\"session-3e3fc267-8605-4c27-a075-36ac7514eb43\"}"
+      }
+    },
+    {
+      "sent": "第二条历史：把结尾写暖一点",
+      "after": {
+        "text": "",
+        "caret": 0,
+        "len": 0,
+        "entries": [
+          "第一条历史：给周记起个开头",
+          "第二条历史：把结尾写暖一点"
+        ],
+        "rawLen": 51,
+        "session": "{\"sessionId\":\"session-3e3fc267-8605-4c27-a075-36ac7514eb43\"}"
+      }
+    },
+    {
+      "sent": "第三条历史：再检查一遍错别字",
+      "after": {
+        "text": "",
+        "caret": 0,
+        "len": 0,
+        "entries": [
+          "第一条历史：给周记起个开头",
+          "第二条历史：把结尾写暖一点",
+          "第三条历史：再检查一遍错别字"
+        ],
+        "rawLen": 68,
+        "session": "{\"sessionId\":\"session-3e3fc267-8605-4c27-a075-36ac7514eb43\"}"
+      }
+    }
+  ],
+  "B1": {
+    "pre": {
+      "text": "",
+      "caret": 0,
+      "len": 0,
+      "entries": [
+        "第一条历史：给周记起个开头",
+        "第二条历史：把结尾写暖一点",
+        "第三条历史：再检查一遍错别字"
+      ],
+      "rawLen": 68,
+      "session": "{\"sessionId\":\"session-3e3fc267-8605-4c27-a075-36ac7514eb43\"}"
+    },
+    "keysBefore": [],
+    "post": {
+      "text": "第三条历史：再检查一遍错别字",
+      "caret": 14,
+      "len": 14,
+      "entries": [
+        "第一条历史：给周记起个开头",
+        "第二条历史：把结尾写暖一点",
+        "第三条历史：再检查一遍错别字"
+      ],
+      "rawLen": 68,
+      "session": "{\"sessionId\":\"session-3e3fc267-8605-4c27-a075-36ac7514eb43\"}"
+    },
+    "keys": []
+  },
+  "B2": [
+    {
+      "step": 2,
+      "state": {
+        "text": "第二条历史：把结尾写暖一点",
+        "caret": 13,
+        "len": 13,
+        "entries": [
+          "第一条历史：给周记起个开头",
+          "第二条历史：把结尾写暖一点",
+          "第三条历史：再检查一遍错别字"
+        ],
+        "rawLen": 68,
+        "session": "{\"sessionId\":\"session-3e3fc267-8605-4c27-a075-36ac7514eb43\"}"
+      },
+      "keys": []
+    },
+    {
+      "step": 3,
+      "state": {
+        "text": "第一条历史：给周记起个开头",
+        "caret": 13,
+        "len": 13,
+        "entries": [
+          "第一条历史：给周记起个开头",
+          "第二条历史：把结尾写暖一点",
+          "第三条历史：再检查一遍错别字"
+        ],
+        "rawLen": 68,
+        "session": "{\"sessionId\":\"session-3e3fc267-8605-4c27-a075-36ac7514eb43\"}"
+      },
+      "keys": []
+    },
+    {
+      "step": 4,
+      "state": {
+        "text": "第一条历史：给周记起个开头",
+        "caret": 0,
+        "len": 13,
+        "entries": [
+          "第一条历史：给周记起个开头",
+          "第二条历史：把结尾写暖一点",
+          "第三条历史：再检查一遍错别字"
+        ],
+        "rawLen": 68,
+        "session": "{\"sessionId\":\"session-3e3fc267-8605-4c27-a075-36ac7514eb43\"}"
+      },
+      "keys": []
+    },
+    {
+      "step": 5,
+      "state": {
+        "text": "第一条历史：给周记起个开头",
+        "caret": 0,
+        "len": 13,
+        "entries": [
+          "第一条历史：给周记起个开头",
+          "第二条历史：把结尾写暖一点",
+          "第三条历史：再检查一遍错别字"
+        ],
+        "rawLen": 68,
+        "session": "{\"sessionId\":\"session-3e3fc267-8605-4c27-a075-36ac7514eb43\"}"
+      },
+      "keys": []
+    },
+    {
+      "step": 6,
+      "state": {
+        "text": "第一条历史：给周记起个开头",
+        "caret": 0,
+        "len": 13,
+        "entries": [
+          "第一条历史：给周记起个开头",
+          "第二条历史：把结尾写暖一点",
+          "第三条历史：再检查一遍错别字"
+        ],
+        "rawLen": 68,
+        "session": "{\"sessionId\":\"session-3e3fc267-8605-4c27-a075-36ac7514eb43\"}"
+      },
+      "keys": []
+    }
+  ],
+  "B3": {
+    "draftBefore": {
+      "text": "还没写完的草稿",
+      "caret": 0,
+      "len": 7,
+      "entries": [
+        "第一条历史：给周记起个开头",
+        "第二条历史：把结尾写暖一点",
+        "第三条历史：再检查一遍错别字"
+      ],
+      "rawLen": 68,
+      "session": "{\"sessionId\":\"session-3e3fc267-8605-4c27-a075-36ac7514eb43\"}"
+    },
+    "recalled": {
+      "text": "还没写完的草稿",
+      "caret": 0,
+      "len": 7,
+      "entries": [
+        "第一条历史：给周记起个开头",
+        "第二条历史：把结尾写暖一点",
+        "第三条历史：再检查一遍错别字"
+      ],
+      "rawLen": 68,
+      "session": "{\"sessionId\":\"session-3e3fc267-8605-4c27-a075-36ac7514eb43\"}"
+    },
+    "upKeys": [],
+    "downs": [
+      {
+        "step": 1,
+        "state": {
+          "text": "第二条历史：把结尾写暖一点",
+          "caret": 13,
+          "len": 13,
+          "entries": [
+            "第一条历史：给周记起个开头",
+            "第二条历史：把结尾写暖一点",
+            "第三条历史：再检查一遍错别字"
+          ],
+          "rawLen": 68,
+          "session": "{\"sessionId\":\"session-3e3fc267-8605-4c27-a075-36ac7514eb43\"}"
+        },
+        "keys": []
+      },
+      {
+        "step": 2,
+        "state": {
+          "text": "第三条历史：再检查一遍错别字",
+          "caret": 14,
+          "len": 14,
+          "entries": [
+            "第一条历史：给周记起个开头",
+            "第二条历史：把结尾写暖一点",
+            "第三条历史：再检查一遍错别字"
+          ],
+          "rawLen": 68,
+          "session": "{\"sessionId\":\"session-3e3fc267-8605-4c27-a075-36ac7514eb43\"}"
+        },
+        "keys": []
+      },
+      {
+        "step": 3,
+        "state": {
+          "text": "\n",
+          "caret": 0,
+          "len": 1,
+          "entries": [
+            "第一条历史：给周记起个开头",
+            "第二条历史：把结尾写暖一点",
+            "第三条历史：再检查一遍错别字"
+          ],
+          "rawLen": 68,
+          "session": "{\"sessionId\":\"session-3e3fc267-8605-4c27-a075-36ac7514eb43\"}"
+        },
+        "keys": []
+      },
+      {
+        "step": 4,
+        "state": {
+          "text": "\n",
+          "caret": 0,
+          "len": 1,
+          "entries": [
+            "第一条历史：给周记起个开头",
+            "第二条历史：把结尾写暖一点",
+            "第三条历史：再检查一遍错别字"
+          ],
+          "rawLen": 68,
+          "session": "{\"sessionId\":\"session-3e3fc267-8605-4c27-a075-36ac7514eb43\"}"
+        },
+        "keys": [
+          {
+            "key": "ArrowDown",
+            "ctrl": false,
+            "shift": false,
+            "alt": false,
+            "prevented": false,
+            "text": "\n"
+          }
+        ]
+      },
+      {
+        "step": 5,
+        "state": {
+          "text": "\n",
+          "caret": 0,
+          "len": 1,
+          "entries": [
+            "第一条历史：给周记起个开头",
+            "第二条历史：把结尾写暖一点",
+            "第三条历史：再检查一遍错别字"
+          ],
+          "rawLen": 68,
+          "session": "{\"sessionId\":\"session-3e3fc267-8605-4c27-a075-36ac7514eb43\"}"
+        },
+        "keys": [
+          {
+            "key": "ArrowDown",
+            "ctrl": false,
+            "shift": false,
+            "alt": false,
+            "prevented": false,
+            "text": "\n"
+          }
+        ]
+      }
+    ]
+  },
+  "B4": {
+    "midBrowse": {
+      "text": "第二条历史：把结尾写暖一点",
+      "caret": 13,
+      "len": 13,
+      "entries": [
+        "第一条历史：给周记起个开头",
+        "第二条历史：把结尾写暖一点",
+        "第三条历史：再检查一遍错别字"
+      ],
+      "rawLen": 68,
+      "session": "{\"sessionId\":\"session-3e3fc267-8605-4c27-a075-36ac7514eb43\"}"
+    },
+    "afterEsc": {
+      "text": "用 Esc 试的草稿",
+      "caret": 0,
+      "len": 10,
+      "entries": [
+        "第一条历史：给周记起个开头",
+        "第二条历史：把结尾写暖一点",
+        "第三条历史：再检查一遍错别字"
+      ],
+      "rawLen": 68,
+      "session": "{\"sessionId\":\"session-3e3fc267-8605-4c27-a075-36ac7514eb43\"}"
+    },
+    "keys": []
+  },
+  "B5": {
+    "before": {
+      "text": "第一行\n第二行",
+      "caret": 6,
+      "len": 7,
+      "entries": [
+        "第一条历史：给周记起个开头",
+        "第二条历史：把结尾写暖一点",
+        "第三条历史：再检查一遍错别字"
+      ],
+      "rawLen": 68,
+      "session": "{\"sessionId\":\"session-3e3fc267-8605-4c27-a075-36ac7514eb43\"}"
+    },
+    "secondLine": {
+      "after": {
+        "text": "第一行\n第二行",
+        "caret": 3,
+        "len": 7,
+        "entries": [
+          "第一条历史：给周记起个开头",
+          "第二条历史：把结尾写暖一点",
+          "第三条历史：再检查一遍错别字"
+        ],
+        "rawLen": 68,
+        "session": "{\"sessionId\":\"session-3e3fc267-8605-4c27-a075-36ac7514eb43\"}"
+      },
+      "keys": [
+        {
+          "key": "ArrowUp",
+          "ctrl": false,
+          "shift": false,
+          "alt": false,
+          "prevented": false,
+          "text": "第一行\n第二行"
+        }
+      ]
+    },
+    "firstLine": {
+      "after": {
+        "text": "第三条历史：再检查一遍错别字",
+        "caret": 14,
+        "len": 14,
+        "entries": [
+          "第一条历史：给周记起个开头",
+          "第二条历史：把结尾写暖一点",
+          "第三条历史：再检查一遍错别字"
+        ],
+        "rawLen": 68,
+        "session": "{\"sessionId\":\"session-3e3fc267-8605-4c27-a075-36ac7514eb43\"}"
+      },
+      "keys": []
+    }
+  },
+  "F2": {
+    "text": "甲\n乙",
+    "caret": 2,
+    "len": 3,
+    "entries": [
+      "第一条历史：给周记起个开头",
+      "第二条历史：把结尾写暖一点",
+      "第三条历史：再检查一遍错别字"
+    ],
+    "rawLen": 68,
+    "session": "{\"sessionId\":\"session-3e3fc267-8605-4c27-a075-36ac7514eb43\"}"
+  },
+  "F3": {
+    "shift": {
+      "state": {
+        "text": "修饰键测试",
+        "caret": 0,
+        "len": 5,
+        "entries": [
+          "第一条历史：给周记起个开头",
+          "第二条历史：把结尾写暖一点",
+          "第三条历史：再检查一遍错别字"
+        ],
+        "rawLen": 68,
+        "session": "{\"sessionId\":\"session-3e3fc267-8605-4c27-a075-36ac7514eb43\"}"
+      },
+      "keys": [
+        {
+          "key": "Shift",
+          "ctrl": false,
+          "shift": true,
+          "alt": false,
+          "prevented": false,
+          "text": "修饰键测试"
+        },
+        {
+          "key": "ArrowUp",
+          "ctrl": false,
+          "shift": true,
+          "alt": false,
+          "prevented": false,
+          "text": "修饰键测试"
+        }
+      ]
+    },
+    "alt": {
+      "state": {
+        "text": "修饰键测试",
+        "caret": 0,
+        "len": 5,
+        "entries": [
+          "第一条历史：给周记起个开头",
+          "第二条历史：把结尾写暖一点",
+          "第三条历史：再检查一遍错别字"
+        ],
+        "rawLen": 68,
+        "session": "{\"sessionId\":\"session-3e3fc267-8605-4c27-a075-36ac7514eb43\"}"
+      },
+      "keys": [
+        {
+          "key": "Alt",
+          "ctrl": false,
+          "shift": false,
+          "alt": true,
+          "prevented": false,
+          "text": "修饰键测试"
+        },
+        {
+          "key": "ArrowUp",
+          "ctrl": false,
+          "shift": false,
+          "alt": true,
+          "prevented": false,
+          "text": "修饰键测试"
+        }
+      ]
+    }
+  },
+  "F3b": {
+    "state": {
+      "text": "第三条历史：再检查一遍错别字",
+      "caret": 14,
+      "len": 14,
+      "entries": [
+        "第一条历史：给周记起个开头",
+        "第二条历史：把结尾写暖一点",
+        "第三条历史：再检查一遍错别字"
+      ],
+      "rawLen": 68,
+      "session": "{\"sessionId\":\"session-3e3fc267-8605-4c27-a075-36ac7514eb43\"}"
+    },
+    "keys": [
+      {
+        "key": "Control",
+        "ctrl": true,
+        "shift": false,
+        "alt": false,
+        "prevented": false,
+        "text": "\n"
+      }
+    ]
+  },
+  "forReload": {
+    "text": "第三条历史：再检查一遍错别字",
+    "caret": 14,
+    "len": 14,
+    "entries": [
+      "第一条历史：给周记起个开头",
+      "第二条历史：把结尾写暖一点",
+      "第三条历史：再检查一遍错别字"
+    ],
+    "rawLen": 68,
+    "session": "{\"sessionId\":\"session-3e3fc267-8605-4c27-a075-36ac7514eb43\"}"
+  },
+  "errors": [],
+  "consoleLog": [],
+  "network": [
+    {
+      "path": "/api/agentPresets/list",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:05:55.499Z"
+    },
+    {
+      "path": "/api/commands/list",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:05:55.512Z"
+    },
+    {
+      "path": "/api/skills/list",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:05:55.512Z"
+    },
+    {
+      "path": "/api/session/modelCatalog",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:05:55.512Z"
+    },
+    {
+      "path": "/api/credentials/describe",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:05:55.524Z"
+    },
+    {
+      "path": "/api/credentials/describe",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:05:55.543Z"
+    },
+    {
+      "path": "/api/agentPresets/list",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:05:59.776Z"
+    },
+    {
+      "path": "/api/session/prompt",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:05:59.822Z"
+    },
+    {
+      "path": "/api/session/prompt",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:06:03.746Z"
+    },
+    {
+      "path": "/api/session/prompt",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:06:07.748Z"
+    }
+  ]
+}

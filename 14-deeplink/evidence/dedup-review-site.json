@@ -1,0 +1,17 @@
+{
+  "checkedAt": "2026-10-22T02:37:27.128Z",
+  "url": "https://review.lingshulab.com",
+  "method": "?q= 不生效，逐页拉全量 /api/reviews?page=1..9（pageSize 服务端固定 20），本地正则扫描",
+  "pages": 9,
+  "total": 172,
+  "patterns": [
+    "/deeplink/i",
+    "/deep[-_ ]?link/i",
+    "/深链/i",
+    "/qyw233/i",
+    "/%3Fsession/i",
+    "/\\?session=/i",
+    "/\\?workspace=/i"
+  ],
+  "hits": []
+}

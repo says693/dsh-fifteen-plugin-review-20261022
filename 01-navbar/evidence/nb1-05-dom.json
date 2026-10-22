@@ -1,0 +1,16 @@
+{
+  "hasFlow": true,
+  "flowChildCount": 0,
+  "flowTextLen": 0,
+  "flowTextHead": "",
+  "attrCounts": {
+    "data-chat-flow": 1
+  },
+  "timeHoverRoot": 0,
+  "chatFlowKindUser": 0,
+  "anchorKey": 0,
+  "turnTail": 0,
+  "bubbles": 0,
+  "scrollCandidates": [],
+  "html": "<div class=\"EvIC1a_column\" data-chat-flow=\"\"></div>"
+}

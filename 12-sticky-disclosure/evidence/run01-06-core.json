@@ -1,0 +1,225 @@
+{
+  "sessionId": "sess-sd-six",
+  "howMany": 4,
+  "readings": [
+    {
+      "note": "baseline",
+      "at": "2026-10-22T01:41:07.306Z",
+      "domExpanded": 0,
+      "domRows": 18,
+      "think": 6,
+      "tool": 6,
+      "turnProcess": 6,
+      "pillCountAttr": "0",
+      "pillCountText": "",
+      "pillText": "全部收起",
+      "pillPresent": true,
+      "pillRect": {
+        "x": 1286,
+        "y": 952,
+        "w": 96,
+        "h": 32,
+        "visible": true
+      },
+      "pluginExpanded": 0,
+      "dockChips": 0,
+      "agree": true
+    },
+    {
+      "note": "after expanding row 0 (via dom)",
+      "at": "2026-10-22T01:41:08.309Z",
+      "domExpanded": 1,
+      "domRows": 18,
+      "think": 6,
+      "tool": 6,
+      "turnProcess": 6,
+      "pillCountAttr": "1",
+      "pillCountText": "·1",
+      "pillText": "全部收起 ·1",
+      "pillPresent": true,
+      "pillRect": {
+        "x": 1277,
+        "y": 952,
+        "w": 105,
+        "h": 32,
+        "visible": true
+      },
+      "pluginExpanded": 1,
+      "dockChips": 1,
+      "agree": true
+    },
+    {
+      "note": "after expanding row 1 (via dom)",
+      "at": "2026-10-22T01:41:09.288Z",
+      "domExpanded": 2,
+      "domRows": 18,
+      "think": 6,
+      "tool": 6,
+      "turnProcess": 6,
+      "pillCountAttr": "2",
+      "pillCountText": "·2",
+      "pillText": "全部收起 ·2",
+      "pillPresent": true,
+      "pillRect": {
+        "x": 1277,
+        "y": 952,
+        "w": 105,
+        "h": 32,
+        "visible": true
+      },
+      "pluginExpanded": 2,
+      "dockChips": 2,
+      "agree": true
+    },
+    {
+      "note": "after expanding row 2 (via dom)",
+      "at": "2026-10-22T01:41:10.269Z",
+      "domExpanded": 3,
+      "domRows": 18,
+      "think": 6,
+      "tool": 6,
+      "turnProcess": 6,
+      "pillCountAttr": "3",
+      "pillCountText": "·3",
+      "pillText": "全部收起 ·3",
+      "pillPresent": true,
+      "pillRect": {
+        "x": 1277,
+        "y": 952,
+        "w": 105,
+        "h": 32,
+        "visible": true
+      },
+      "pluginExpanded": 3,
+      "dockChips": 2,
+      "agree": true
+    },
+    {
+      "note": "after expanding row 3 (via dom)",
+      "at": "2026-10-22T01:41:11.245Z",
+      "domExpanded": 4,
+      "domRows": 18,
+      "think": 6,
+      "tool": 6,
+      "turnProcess": 6,
+      "pillCountAttr": "4",
+      "pillCountText": "·4",
+      "pillText": "全部收起 ·4",
+      "pillPresent": true,
+      "pillRect": {
+        "x": 1277,
+        "y": 952,
+        "w": 105,
+        "h": 32,
+        "visible": true
+      },
+      "pluginExpanded": 4,
+      "dockChips": 2,
+      "agree": true
+    },
+    {
+      "note": "before pill click",
+      "at": "2026-10-22T01:41:11.281Z",
+      "domExpanded": 4,
+      "domRows": 18,
+      "think": 6,
+      "tool": 6,
+      "turnProcess": 6,
+      "pillCountAttr": "4",
+      "pillCountText": "·4",
+      "pillText": "全部收起 ·4",
+      "pillPresent": true,
+      "pillRect": {
+        "x": 1277,
+        "y": 952,
+        "w": 105,
+        "h": 32,
+        "visible": true
+      },
+      "pluginExpanded": 4,
+      "dockChips": 2,
+      "agree": true
+    },
+    {
+      "note": "after pill click",
+      "at": "2026-10-22T01:41:12.811Z",
+      "domExpanded": 0,
+      "domRows": 18,
+      "think": 6,
+      "tool": 6,
+      "turnProcess": 6,
+      "pillCountAttr": "0",
+      "pillCountText": "",
+      "pillText": "全部收起",
+      "pillPresent": true,
+      "pillRect": {
+        "x": 1286,
+        "y": 952,
+        "w": 96,
+        "h": 32,
+        "visible": true
+      },
+      "pluginExpanded": 0,
+      "dockChips": 0,
+      "agree": true
+    }
+  ],
+  "steps": [
+    "row 0: via=dom expanded=1 pill=1 agree=true",
+    "row 1: via=dom expanded=2 pill=2 agree=true",
+    "row 2: via=dom expanded=3 pill=3 agree=true",
+    "row 3: via=dom expanded=4 pill=4 agree=true"
+  ],
+  "beforeClick": {
+    "note": "before pill click",
+    "at": "2026-10-22T01:41:11.281Z",
+    "domExpanded": 4,
+    "domRows": 18,
+    "think": 6,
+    "tool": 6,
+    "turnProcess": 6,
+    "pillCountAttr": "4",
+    "pillCountText": "·4",
+    "pillText": "全部收起 ·4",
+    "pillPresent": true,
+    "pillRect": {
+      "x": 1277,
+      "y": 952,
+      "w": 105,
+      "h": 32,
+      "visible": true
+    },
+    "pluginExpanded": 4,
+    "dockChips": 2,
+    "agree": true
+  },
+  "afterClick": {
+    "note": "after pill click",
+    "at": "2026-10-22T01:41:12.811Z",
+    "domExpanded": 0,
+    "domRows": 18,
+    "think": 6,
+    "tool": 6,
+    "turnProcess": 6,
+    "pillCountAttr": "0",
+    "pillCountText": "",
+    "pillText": "全部收起",
+    "pillPresent": true,
+    "pillRect": {
+      "x": 1286,
+      "y": 952,
+      "w": 96,
+      "h": 32,
+      "visible": true
+    },
+    "pluginExpanded": 0,
+    "dockChips": 0,
+    "agree": true
+  },
+  "pillClickMs": 5,
+  "errors": [],
+  "consoleErr": [],
+  "consoleInfo": [
+    "[dsh-sticky-disclosure] applied v1.0.1 — Ctrl+Alt+C collapses all expanded sections"
+  ]
+}

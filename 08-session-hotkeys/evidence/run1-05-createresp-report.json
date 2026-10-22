@@ -1,0 +1,30 @@
+{
+  "utc": "2026-10-22T01:02:14.139Z",
+  "storageBefore": [
+    "dsh.session-hotkeys.dsvHidden",
+    "dsh.sessions.current",
+    "dsh.workspace.view.v5",
+    "dsh.sidebar-right.v1.session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e"
+  ],
+  "afterAltN": {
+    "rowCount": 1,
+    "rows": [
+      {
+        "key": "session:session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e",
+        "sel": "true",
+        "text": "新会话"
+      }
+    ],
+    "activeKey": "session:session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e",
+    "toast": "新建会话",
+    "lsCurrent": "{\"sessionId\":\"session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e\"}"
+  },
+  "bodies": [
+    {
+      "path": "/api/session/create",
+      "status": 200,
+      "body": "{\"type\":\"server-response\",\"rpcId\":\"eca5ac98-e707-4a01-8dfb-1728c931c667\",\"result\":{\"ok\":true,\"value\":{\"sessionId\":\"session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e\",\"agentPreset\":\"standard\"}}}"
+    }
+  ],
+  "errors": []
+}

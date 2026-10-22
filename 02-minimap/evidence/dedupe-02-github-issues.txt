@@ -1,0 +1,7 @@
+﻿=== github.com/FuRongJun-1999/dsh-bounty issues search ===
+time_utc=2026-10-22T01:16:43.2744420Z
+query='repo:FuRongJun-1999/dsh-bounty minimap' total=0
+query='repo:FuRongJun-1999/dsh-bounty Braidy-Wu' total=0
+query='repo:FuRongJun-1999/dsh-bounty dsh-conversation-minimap' total=0
+query='repo:FuRongJun-1999/dsh-bounty 迷你地图' total=1
+  #646 【测评报告】dsh-roleplay（chinosk6）体验快测（角色扮演 · 方法试验）：dsh 0.2.0-rc.2 上装载/隔离/持久化无红项；但 `/x-roleplay` 路由不验 token、不查 Host/Origin，跨站 POST 可改名任意目录、`../` 卡片 id 写出工作区、DNS 重绑定读回明文 API key；世界书晚一轮生效且快照膨胀 [closed]

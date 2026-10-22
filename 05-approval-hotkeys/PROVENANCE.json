@@ -1,0 +1,136 @@
+{
+  "schema": "provenance/v1",
+  "generated_utc": "2026-10-22T02:00:00Z",
+  "target": {
+    "owner_repo": "SiriLee/dsh-approval-hotkeys",
+    "source_commit": "d6b16a1229a8dc23d83404e06173af067847c106",
+    "version": "0.2.0",
+    "license": "MIT",
+    "license_copyright": "Copyright (c) 2026 SiriLee",
+    "license_file_sha256": "895417849e28e3f191601428d25f184ff9fe0926558015e1c99e2e7197570a52",
+    "license_file_bytes": 1064,
+    "repository_field": "git+https://github.com/SiriLee/dsh-approval-hotkeys.git",
+    "homepage": "https://github.com/SiriLee/dsh-approval-hotkeys#readme",
+    "engines_node": "^22.19.0 || >=24.0.0",
+    "engines_dsh": ">=0.2.0-rc.2 <0.3.0-0",
+    "kind": "browser-side client plugin (host half is an empty stub)"
+  },
+  "package": {
+    "registry": "npm",
+    "name": "dsh-approval-hotkeys",
+    "version": "0.2.0",
+    "tarball_local_copy": "temp/npm-0.2.0.tgz",
+    "tarball_bytes": 327715,
+    "dist_shasum_sha1": "cf55c7e8cb043b1957ba39af6888401985e12020",
+    "integrity_sha512_base64": "rJNu0SAET1ltdCT6MjWtlpLbjfzv9skPFc/PaSyjfTduI7Ul2Lsyym8ThUVChs7m2aFVCdhj48SfJZozNoEdZg==",
+    "hash_source": "integrity 从 isolated-home/profiles/ah/pnpm-lock.yaml 第 18 行读出；sha1/sha512 于 2026-10-22 本地对 temp/npm-0.2.0.tgz 复算，与 integrity 逐字符一致",
+    "source_tarball_local_copy": "temp/src.tgz",
+    "source_tarball_bytes": 363982,
+    "source_tarball_shasum_sha1": "19f904cb29fa59748d8b71b14f43ce3d80848398",
+    "installed_tree": "isolated-home/profiles/ah/node_modules/dsh-approval-hotkeys",
+    "installed_files": {
+      "package.json": { "bytes": 3632, "sha256": "e55dc3daea4ddc1e158f17457d53d74e5a4169acd2e4002e0d560476bdf797a7" },
+      "lib/index.js": { "bytes": 57, "sha256": "e6ba84bb2625eca8e54a16389670e00d452799d9ea0ba39d7b42c5de159bc0d2" },
+      "lib/client.js": { "bytes": 6517, "sha256": "c7d7c866eb2984f1d528b9e0de50f59c6ef97263951050361e7d5c3a62146644" },
+      "cordis.patch.yml": { "bytes": 462, "sha256": "8414381eee3c24b08bdc8fc141145b5b03b64a0bfe7cbc8adbe56a64fdcc7a93" },
+      "LICENSE": { "bytes": 1064, "sha256": "895417849e28e3f191601428d25f184ff9fe0926558015e1c99e2e7197570a52" },
+      "locale/zh.json": { "bytes": 150, "sha256": "72ee91fc96d2c41b28fcd205cbeb955d40107c5147420e80f3f188cefd522991" },
+      "locale/en.json": { "bytes": 146, "sha256": "165547da593e8a748f35073bfe7ae3ab5f78d16545b64172bfb145aa985cc078" }
+    },
+    "hash_note": "全部七个文件的 sha256 与字节数于 2026-10-22 本地 Get-FileHash 复算，可直接重跑核对；integrity 与 pnpm-lock.yaml:18 逐字符一致。"
+  },
+  "host": {
+    "package": "@deepseek-ai/dsh",
+    "version": "0.2.0-rc.2",
+    "binary": "C:/Users/32621/AppData/Roaming/npm/node_modules/@deepseek-ai/dsh/lib/bin.js",
+    "argv": ["--profile", "ah|ah0", "--host", "127.0.0.1", "--port", "0", "--no-open"],
+    "profiles": {
+      "ah": "dsh-base + dsh-web-app + dsh-approval-hotkeys（实验组）",
+      "ah0": "dsh-base + dsh-web-app（对照组，无插件）",
+      "approvalhotkeys": "早期安装尝试用 profile，未用于结论"
+    },
+    "instances": [
+      { "tag": "run2", "pid": 9212, "origin": "http://127.0.0.1:13334", "profile": "ah", "utc": "2026-10-22T01:08:24.045Z" },
+      { "tag": "run3", "pid": 31688, "origin": "http://127.0.0.1:8025", "profile": "ah", "utc": "2026-10-22T01:10:46.187Z" },
+      { "tag": "run4", "pid": 13104, "origin": "http://127.0.0.1:6955", "profile": "ah", "utc": "2026-10-22T01:13:28.302Z" },
+      { "tag": "run5", "pid": 33884, "origin": "http://127.0.0.1:14228", "profile": "ah", "utc": "2026-10-22T01:18:55.950Z" },
+      { "tag": "run6", "pid": 27076, "origin": "http://127.0.0.1:5072", "profile": "ah0", "utc": "2026-10-22T01:22:03.836Z" },
+      { "tag": "run7", "pid": 18068, "origin": "http://127.0.0.1:6400", "profile": "ah", "utc": "2026-10-22T01:27:35.269Z" },
+      { "tag": "run8", "pid": 23372, "origin": "http://127.0.0.1:12921", "profile": "ah0", "utc": "2026-10-22T01:31:15.712Z" },
+      { "tag": "run9", "pid": 5536, "origin": "http://127.0.0.1:5462", "profile": "ah", "utc": "2026-10-22T01:42:12.964Z" }
+    ],
+    "port_policy": "一律 --port 0 由宿主自选端口，未占用用户正在使用的 4756/2538/1241"
+  },
+  "browser": {
+    "engine": "Microsoft Edge",
+    "version": "155.0.4283.62",
+    "executable": "C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe",
+    "driver": "Playwright（只读引用 H:/CODEX/dsh-code-security-review-20261019/tooling/node_modules/playwright/index.mjs）",
+    "mode": "headless，独立 BrowserContext，viewport 1440x1000，colorScheme light，serviceWorkers block",
+    "network_policy": "context.route 只放行 127.0.0.1 / localhost / [::1]，其余 abort"
+  },
+  "runtime": {
+    "os": "Microsoft Windows 11 家庭版 中文版 build 26200",
+    "node": "v24.19.0",
+    "powershell": "5.1.26100.9711",
+    "pnpm": "v11.7.0（宿主 dsh plugin 内部使用）"
+  },
+  "isolation": {
+    "root": "H:/CODEX/fifteen-plugin-reviews-20261022/r1-05-approval-hotkeys",
+    "DSH_HOME": "isolated-home",
+    "HOME": "isolated-home/user-home",
+    "USERPROFILE": "isolated-home/user-home",
+    "APPDATA": "isolated-home/appdata",
+    "LOCALAPPDATA": "isolated-home/localappdata",
+    "XDG_CACHE_HOME": "isolated-home/cache",
+    "XDG_CONFIG_HOME": "isolated-home/config",
+    "XDG_DATA_HOME": "isolated-home/data",
+    "npm_config_cache": "temp/npm-cache",
+    "DSH_TELEMETRY_DISABLED": "1",
+    "workspace_cwd": "fixtures/workspace",
+    "note": "所有配置、会话、缓存、包目录均落在任务目录内；未读写日常配置、未读写真实会话"
+  },
+  "model_substitute": {
+    "kind": "本机假 LLM 端点（fake-llm.mjs）",
+    "bind": "127.0.0.1:0（每次随机端口）",
+    "wire_format": "Anthropic Messages SSE（message_start / content_block_start(tool_use) / content_block_delta(input_json_delta) / content_block_stop / message_delta / message_stop）",
+    "trigger": "用户消息含 TRIGGER 才返回一次带 justification 的越权 pwsh 调用；否则返回纯文本 end_turn",
+    "tool_count_env": "FAKE_TOOL_COUNT 控制一条消息里放几个待审批项",
+    "credentials": "DEEPSEEK_API_KEY 为本地假值 sk-fake-local-only，真实密钥未被读取",
+    "rationale": "审批面板需要宿主真实的 approval/request 实时事件才会出现；合成会话回放不能重建 pending 态，故用本地端点让真实宿主自己产生真实审批面板"
+  },
+  "dedup": {
+    "checked_utc": "2026-10-22T01:47:10.178Z",
+    "review_site": {
+      "url": "https://review.lingshulab.com",
+      "method": "页面 ?q= 服务端不过滤，故拉 /api/reviews 与 /api/plugins 全量后本地扫描",
+      "reviews_total": 172,
+      "reviews_fetched": 172,
+      "plugins_total": 133,
+      "plugins_fetched": 133,
+      "hits": []
+    },
+    "bounty_repo": {
+      "repo": "FuRongJun-1999/dsh-bounty",
+      "queries": [
+        { "q": "dsh-approval-hotkeys", "total": 0 },
+        { "q": "approval-hotkeys", "total": 0 },
+        { "q": "SiriLee", "total": 1, "note": "命中 #987，对象是 dsh-edit-approval，非本插件" },
+        { "q": "approval", "total": 65, "note": "逐条比对标题后无本插件条目，其余为 dsh-agent-approval / dsh-approval-gate / dsh-edit-approval / dsh-approval-llm 等不同插件" }
+      ]
+    },
+    "conclusion": "两站均无同范围重复，可写首报"
+  },
+  "timeline_utc": {
+    "first_evidence": "2026-10-22T01:05:01.964Z",
+    "last_evidence": "2026-10-22T01:47:10.178Z",
+    "delivery_written": "2026-10-22T02:00:00Z"
+  },
+  "boundaries": [
+    "未修改插件源码",
+    "未修改或删除 evidence/ 下任何文件",
+    "未上传、未投稿、未新建公开仓库、未跟帖",
+    "未读取真实密钥、未使用第三方账号、未调用付费模型",
+    "未访问或接管用户正在使用的 DSH Web GUI"
+  ]
+}

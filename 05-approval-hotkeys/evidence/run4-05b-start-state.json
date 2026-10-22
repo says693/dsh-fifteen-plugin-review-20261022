@@ -1,0 +1,102 @@
+{
+  "utc": "2026-10-22T01:15:08.132Z",
+  "host": {
+    "pid": 13104,
+    "url": "http://127.0.0.1:6955/?token=REDACTED",
+    "profile": "ah",
+    "utc": "2026-10-22T01:13:28.302Z",
+    "env": [
+      "DEEPSEEK_BASE_URL",
+      "DEEPSEEK_API_KEY",
+      "DSH_PERMISSION_MODE"
+    ]
+  },
+  "s0": {
+    "label": null,
+    "editor": {
+      "cls": "uV2eYG_input",
+      "rect": {
+        "x": 469,
+        "y": 501,
+        "w": 770,
+        "h": 52
+      },
+      "visible": true,
+      "focusable": -1
+    },
+    "dialogs": [],
+    "bodyFirstChars": "新会话\nCtrl\n+\nAlt\n+\nN\n插件\n工作区\n默认工作区\n新会话\n等待审批\ndone\n待审批\ndone\n5分钟\n请执行一次需要越权审批的命\n5分钟\n请执行一次需要越权审批的命\n9分钟\n设置\n探索未至之境\n预览版\n默认工作区\n标准模式\n描述你想要构建的内容, / 调用指令, @ 文件或对话\n工作区内修改\nDeepSeek-V41-Flash\nHigh",
+    "buttons": [
+      "新会话\nCtrl\n+\nAlt\n+\nN",
+      "插件",
+      "设置",
+      "默认工作区",
+      "标准模式",
+      "工作区内修改",
+      "DeepSeek-V41-Flash"
+    ],
+    "scrollY": 0,
+    "docH": 1000,
+    "winH": 1000
+  },
+  "cont": null,
+  "s1": {
+    "label": null,
+    "editor": {
+      "cls": "uV2eYG_input",
+      "rect": {
+        "x": 469,
+        "y": 501,
+        "w": 770,
+        "h": 52
+      },
+      "visible": true,
+      "focusable": -1
+    },
+    "dialogs": [],
+    "bodyFirstChars": "新会话\nCtrl\n+\nAlt\n+\nN\n插件\n工作区\n默认工作区\n新会话\n等待审批\ndone\n待审批\ndone\n5分钟\n请执行一次需要越权审批的命\n5分钟\n请执行一次需要越权审批的命\n9分钟\n设置\n探索未至之境\n预览版\n默认工作区\n标准模式\n描述你想要构建的内容, / 调用指令, @ 文件或对话\n工作区内修改\nDeepSeek-V41-Flash\nHigh",
+    "buttons": [
+      "新会话\nCtrl\n+\nAlt\n+\nN",
+      "插件",
+      "设置",
+      "默认工作区",
+      "标准模式",
+      "工作区内修改",
+      "DeepSeek-V41-Flash"
+    ],
+    "scrollY": 0,
+    "docH": 1000,
+    "winH": 1000
+  },
+  "closed": [],
+  "s2": {
+    "label": null,
+    "editor": {
+      "cls": "uV2eYG_input",
+      "rect": {
+        "x": 469,
+        "y": 501,
+        "w": 770,
+        "h": 52
+      },
+      "visible": true,
+      "focusable": -1
+    },
+    "dialogs": [],
+    "bodyFirstChars": "新会话\nCtrl\n+\nAlt\n+\nN\n插件\n工作区\n默认工作区\n新会话\n等待审批\ndone\n待审批\ndone\n5分钟\n请执行一次需要越权审批的命\n5分钟\n请执行一次需要越权审批的命\n9分钟\n设置\n探索未至之境\n预览版\n默认工作区\n标准模式\n描述你想要构建的内容, / 调用指令, @ 文件或对话\n工作区内修改\nDeepSeek-V41-Flash\nHigh",
+    "buttons": [
+      "新会话\nCtrl\n+\nAlt\n+\nN",
+      "插件",
+      "设置",
+      "默认工作区",
+      "标准模式",
+      "工作区内修改",
+      "DeepSeek-V41-Flash"
+    ],
+    "scrollY": 0,
+    "docH": 1000,
+    "winH": 1000
+  },
+  "errors": [],
+  "consoleLog": []
+}

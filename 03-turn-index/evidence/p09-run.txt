@@ -1,0 +1,13 @@
+﻿{
+  "result": {
+    "probeNode": "{\"step\":\"ok\",\"currentType\":\"undefined\",\"currentValue\":\"unserializable:TypeError: Cannot read properties of undefined (reading 'slice')\",\"currentIsUndefined\":true,\"currentKeys\":null,\"currentHasKeyProp\":null,\"listKeys\":[\"ids\",\"byId\",\"phase\",\"projectionsBySession\"],\"idsSample\":[\"session-cded7315-a936-41eb-a3db-96e7a8c6eac8\",\"sess-ti-six\",\"sess-ti-long\",\"sess-ti-twenty\",\"sess-ti-one\",\"sess-ti-zero\"],\"byIdKeysSample\":[\"session-cded7315-a936-41eb-a3db-96e7a8c6eac8\",\"sess-ti-six\",\"sess-ti-long\",\"sess-ti-twenty\",\"sess-ti-one\",\"sess-ti-zero\"],\"bindingOfFirstId\":\"object\",\"bindingOfCurrentKey\":\"undefined\",\"sessionKeys\":[\"rootCtx\",\"searchResultLimit\",\"list\",\"manager\",\"scopes\",\"retainObservers\",\"scopeDrops\",\"closed\"]}",
+    "probeVisible": true,
+    "slotErrors": [],
+    "factoryErrors": [],
+    "overlaySeatChildren": 1,
+    "tiPanel": false,
+    "sessionCurrent": "{\"sessionId\":\"session-cded7315-a936-41eb-a3db-96e7a8c6eac8\"}"
+  },
+  "pageErrors": [],
+  "cons": []
+}

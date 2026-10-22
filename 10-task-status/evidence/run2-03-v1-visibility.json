@@ -1,0 +1,866 @@
+{
+  "utc": "2026-10-22T01:36:31.194Z",
+  "phases": [
+    {
+      "label": "00-baseline",
+      "url": "http://127.0.0.1:3917/",
+      "viewport": {
+        "w": 1440,
+        "h": 1000,
+        "dpr": 1
+      },
+      "doc": {
+        "scrollWidth": 1440,
+        "clientWidth": 1440,
+        "overflowX": false
+      },
+      "hasChatFlow": false,
+      "chatFlowRect": null,
+      "chatFlowChildCount": 0,
+      "chatFlowTextLen": 0,
+      "barCount": 0,
+      "bars": [],
+      "dockFamilies": [
+        {
+          "slot": "root",
+          "cls": "",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0
+          }
+        },
+        {
+          "slot": "sidebar",
+          "cls": "",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0
+          }
+        },
+        {
+          "slot": "sidebar.brand.mark",
+          "cls": "",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0
+          }
+        },
+        {
+          "slot": "sidebar.brand.name",
+          "cls": "",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0
+          }
+        },
+        {
+          "slot": "sidebar.panellist",
+          "cls": "",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0
+          }
+        },
+        {
+          "slot": "sidebar.workspaces",
+          "cls": "",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0
+          }
+        },
+        {
+          "slot": "sidebar.workspaces.directoryFlow",
+          "cls": "",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0
+          }
+        },
+        {
+          "slot": "sidebar.footer.action",
+          "cls": "",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0
+          }
+        },
+        {
+          "slot": "sidebar.settings",
+          "cls": "",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0
+          }
+        },
+        {
+          "slot": "settings.launcher",
+          "cls": "",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0
+          }
+        },
+        {
+          "slot": "settings.trigger",
+          "cls": "",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0
+          }
+        },
+        {
+          "slot": "settings.onboarding",
+          "cls": "",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0
+          }
+        },
+        {
+          "slot": "main",
+          "cls": "",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0
+          }
+        },
+        {
+          "slot": "main.conversation",
+          "cls": "",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0
+          }
+        },
+        {
+          "slot": "conversation.header",
+          "cls": "",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0
+          }
+        },
+        {
+          "slot": "conversation.header.leading",
+          "cls": "",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0
+          }
+        },
+        {
+          "slot": "conversation.session.header",
+          "cls": "",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0
+          }
+        },
+        {
+          "slot": "conversation.session.header.corner",
+          "cls": "",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0
+          }
+        },
+        {
+          "slot": "conversation.session",
+          "cls": "",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0
+          }
+        },
+        {
+          "slot": "conversation.composer",
+          "cls": "",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0
+          }
+        }
+      ],
+      "composerPresent": true,
+      "storageKeys": [
+        "dsh.workspace.view.v5",
+        "dsh.sidebar-right.v1.session-1b5fb0d9-294e-49bc-90ad-6a858bcefa48",
+        "dsh.sessions.current"
+      ],
+      "bodyTextLen": 380,
+      "bodyTextHead": "新会话\nCtrl\n+\nAlt\n+\nN\n插件\n工作区\n默认工作区\n新会话\n设置\n探索未至之境\n预览版\n默认工作区\n标准模式\n描述你想要构建的内容, / 调用指令, @ 文件或对话\n工作区内修改\nDeepSeek-V41-Flash\nHigh\n预览版说明\n\nDeepSeek Harness 目前的 0.2 版本仍处于预览阶段，还有许多地方需要持续改进和打磨，希望听取广大开发者和用户的反馈建议。现在，新的桌面端面向广泛用户，开发者相关的进阶功能可在配置中开启使用。预计 DeepSeek Harness 的产品功能以及插件 API 都会继续快速迭代、持续演化，并逐渐趋于稳定。\n\n我们期待与全球用户和开发者一起，在开源、可复用、可组合的基础设施之上，共同探索智能上限。欢迎大家用 DeepSeek Harness 将想法变成现实，与社区一起丰富插件生态。\n\n继续"
+    },
+    {
+      "label": "01-with-running-task",
+      "url": "http://127.0.0.1:3917/",
+      "viewport": {
+        "w": 1440,
+        "h": 1000,
+        "dpr": 1
+      },
+      "doc": {
+        "scrollWidth": 1440,
+        "clientWidth": 1440,
+        "overflowX": false
+      },
+      "hasChatFlow": false,
+      "chatFlowRect": null,
+      "chatFlowChildCount": 0,
+      "chatFlowTextLen": 0,
+      "barCount": 0,
+      "bars": [],
+      "dockFamilies": [
+        {
+          "slot": "root",
+          "cls": "",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0
+          }
+        },
+        {
+          "slot": "sidebar",
+          "cls": "",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0
+          }
+        },
+        {
+          "slot": "sidebar.brand.mark",
+          "cls": "",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0
+          }
+        },
+        {
+          "slot": "sidebar.brand.name",
+          "cls": "",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0
+          }
+        },
+        {
+          "slot": "sidebar.panellist",
+          "cls": "",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0
+          }
+        },
+        {
+          "slot": "sidebar.workspaces",
+          "cls": "",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0
+          }
+        },
+        {
+          "slot": "sidebar.workspaces.directoryFlow",
+          "cls": "",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0
+          }
+        },
+        {
+          "slot": "sidebar.footer.action",
+          "cls": "",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0
+          }
+        },
+        {
+          "slot": "sidebar.settings",
+          "cls": "",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0
+          }
+        },
+        {
+          "slot": "settings.launcher",
+          "cls": "",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0
+          }
+        },
+        {
+          "slot": "settings.trigger",
+          "cls": "",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0
+          }
+        },
+        {
+          "slot": "settings.onboarding",
+          "cls": "",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0
+          }
+        },
+        {
+          "slot": "main",
+          "cls": "",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0
+          }
+        },
+        {
+          "slot": "main.conversation",
+          "cls": "",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0
+          }
+        },
+        {
+          "slot": "conversation.header",
+          "cls": "",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0
+          }
+        },
+        {
+          "slot": "conversation.header.leading",
+          "cls": "",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0
+          }
+        },
+        {
+          "slot": "conversation.session.header",
+          "cls": "",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0
+          }
+        },
+        {
+          "slot": "conversation.session.header.corner",
+          "cls": "",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0
+          }
+        },
+        {
+          "slot": "conversation.session",
+          "cls": "",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0
+          }
+        },
+        {
+          "slot": "conversation.composer",
+          "cls": "",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0
+          }
+        }
+      ],
+      "composerPresent": true,
+      "storageKeys": [
+        "dsh.workspace.view.v5",
+        "dsh.sidebar-right.v1.session-1b5fb0d9-294e-49bc-90ad-6a858bcefa48",
+        "dsh.sessions.current"
+      ],
+      "bodyTextLen": 380,
+      "bodyTextHead": "新会话\nCtrl\n+\nAlt\n+\nN\n插件\n工作区\n默认工作区\n新会话\n设置\n探索未至之境\n预览版\n默认工作区\n标准模式\n描述你想要构建的内容, / 调用指令, @ 文件或对话\n工作区内修改\nDeepSeek-V41-Flash\nHigh\n预览版说明\n\nDeepSeek Harness 目前的 0.2 版本仍处于预览阶段，还有许多地方需要持续改进和打磨，希望听取广大开发者和用户的反馈建议。现在，新的桌面端面向广泛用户，开发者相关的进阶功能可在配置中开启使用。预计 DeepSeek Harness 的产品功能以及插件 API 都会继续快速迭代、持续演化，并逐渐趋于稳定。\n\n我们期待与全球用户和开发者一起，在开源、可复用、可组合的基础设施之上，共同探索智能上限。欢迎大家用 DeepSeek Harness 将想法变成现实，与社区一起丰富插件生态。\n\n继续"
+    },
+    {
+      "label": "02-after-all-settled",
+      "url": "http://127.0.0.1:3917/",
+      "viewport": {
+        "w": 1440,
+        "h": 1000,
+        "dpr": 1
+      },
+      "doc": {
+        "scrollWidth": 1440,
+        "clientWidth": 1440,
+        "overflowX": false
+      },
+      "hasChatFlow": false,
+      "chatFlowRect": null,
+      "chatFlowChildCount": 0,
+      "chatFlowTextLen": 0,
+      "barCount": 0,
+      "bars": [],
+      "dockFamilies": [
+        {
+          "slot": "root",
+          "cls": "",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0
+          }
+        },
+        {
+          "slot": "sidebar",
+          "cls": "",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0
+          }
+        },
+        {
+          "slot": "sidebar.brand.mark",
+          "cls": "",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0
+          }
+        },
+        {
+          "slot": "sidebar.brand.name",
+          "cls": "",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0
+          }
+        },
+        {
+          "slot": "sidebar.panellist",
+          "cls": "",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0
+          }
+        },
+        {
+          "slot": "sidebar.workspaces",
+          "cls": "",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0
+          }
+        },
+        {
+          "slot": "sidebar.workspaces.directoryFlow",
+          "cls": "",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0
+          }
+        },
+        {
+          "slot": "sidebar.footer.action",
+          "cls": "",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0
+          }
+        },
+        {
+          "slot": "sidebar.settings",
+          "cls": "",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0
+          }
+        },
+        {
+          "slot": "settings.launcher",
+          "cls": "",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0
+          }
+        },
+        {
+          "slot": "settings.trigger",
+          "cls": "",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0
+          }
+        },
+        {
+          "slot": "settings.onboarding",
+          "cls": "",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0
+          }
+        },
+        {
+          "slot": "main",
+          "cls": "",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0
+          }
+        },
+        {
+          "slot": "main.conversation",
+          "cls": "",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0
+          }
+        },
+        {
+          "slot": "conversation.header",
+          "cls": "",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0
+          }
+        },
+        {
+          "slot": "conversation.header.leading",
+          "cls": "",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0
+          }
+        },
+        {
+          "slot": "conversation.session.header",
+          "cls": "",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0
+          }
+        },
+        {
+          "slot": "conversation.session.header.corner",
+          "cls": "",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0
+          }
+        },
+        {
+          "slot": "conversation.session",
+          "cls": "",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0
+          }
+        },
+        {
+          "slot": "conversation.composer",
+          "cls": "",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0
+          }
+        }
+      ],
+      "composerPresent": true,
+      "storageKeys": [
+        "dsh.workspace.view.v5",
+        "dsh.sidebar-right.v1.session-1b5fb0d9-294e-49bc-90ad-6a858bcefa48",
+        "dsh.sessions.current"
+      ],
+      "bodyTextLen": 380,
+      "bodyTextHead": "新会话\nCtrl\n+\nAlt\n+\nN\n插件\n工作区\n默认工作区\n新会话\n设置\n探索未至之境\n预览版\n默认工作区\n标准模式\n描述你想要构建的内容, / 调用指令, @ 文件或对话\n工作区内修改\nDeepSeek-V41-Flash\nHigh\n预览版说明\n\nDeepSeek Harness 目前的 0.2 版本仍处于预览阶段，还有许多地方需要持续改进和打磨，希望听取广大开发者和用户的反馈建议。现在，新的桌面端面向广泛用户，开发者相关的进阶功能可在配置中开启使用。预计 DeepSeek Harness 的产品功能以及插件 API 都会继续快速迭代、持续演化，并逐渐趋于稳定。\n\n我们期待与全球用户和开发者一起，在开源、可复用、可组合的基础设施之上，共同探索智能上限。欢迎大家用 DeepSeek Harness 将想法变成现实，与社区一起丰富插件生态。\n\n继续"
+    }
+  ],
+  "host": {
+    "origin": "http://127.0.0.1:3917",
+    "pid": 31056
+  },
+  "hasToken": true,
+  "startRes": {
+    "status": 200,
+    "body": "{\"id\":\"probe-4\",\"opts\":{\"mode\":\"long\",\"kind\":\"probe\",\"label\":\"v1-running\",\"lines\":80,\"intervalMs\":250,\"owner\":null}}"
+  },
+  "startedId": "probe-4",
+  "tasksRunning": {
+    "status": 200,
+    "body": "{\"tasks\":[{\"id\":\"probe-1\",\"kind\":\"probe\",\"label\":\"unowned-long\",\"status\":\"killed\",\"detail\":\"probe kill; probe kill\",\"startedAt\":1792632931168,\"finishedAt\":1792632934741},{\"id\":\"probe-2\",\"kind\":\"probe\",\"label\":\"unowned-instant\",\"status\":\"completed\",\"startedAt\":1792632931822,\"finishedAt\":1792632931822},{\"id\":\"probe-3\",\"kind\":\"probe\",\"label\":\"unowned-burst\",\"status\":\"completed\",\"startedAt\":1792632932163,\"finishedAt\":1792632932167},{\"id\":\"probe-4\",\"kind\":\"probe\",\"label\":\"v1-running\",\"status\":\"running\",\"startedAt\":1792632995535}]}",
+    "parsed": {
+      "tasks": [
+        {
+          "id": "probe-1",
+          "kind": "probe",
+          "label": "unowned-long",
+          "status": "killed",
+          "detail": "probe kill; probe kill",
+          "startedAt": 1792632931168,
+          "finishedAt": 1792632934741
+        },
+        {
+          "id": "probe-2",
+          "kind": "probe",
+          "label": "unowned-instant",
+          "status": "completed",
+          "startedAt": 1792632931822,
+          "finishedAt": 1792632931822
+        },
+        {
+          "id": "probe-3",
+          "kind": "probe",
+          "label": "unowned-burst",
+          "status": "completed",
+          "startedAt": 1792632932163,
+          "finishedAt": 1792632932167
+        },
+        {
+          "id": "probe-4",
+          "kind": "probe",
+          "label": "v1-running",
+          "status": "running",
+          "startedAt": 1792632995535
+        }
+      ]
+    },
+    "keys": [
+      "id",
+      "kind",
+      "label",
+      "status",
+      "detail",
+      "startedAt",
+      "finishedAt"
+    ],
+    "count": 4
+  },
+  "killRes": [
+    {
+      "id": "probe-4",
+      "status": 200,
+      "body": "{\"ok\":true,\"snapshot\":\"requested\"}"
+    }
+  ],
+  "tasksAfterKill": {
+    "status": 200,
+    "body": "{\"tasks\":[{\"id\":\"probe-1\",\"kind\":\"probe\",\"label\":\"unowned-long\",\"status\":\"killed\",\"detail\":\"probe kill; probe kill\",\"startedAt\":1792632931168,\"finishedAt\":1792632934741},{\"id\":\"probe-2\",\"kind\":\"probe\",\"label\":\"unowned-instant\",\"status\":\"completed\",\"startedAt\":1792632931822,\"finishedAt\":1792632931822},{\"id\":\"probe-3\",\"kind\":\"probe\",\"label\":\"unowned-burst\",\"status\":\"completed\",\"startedAt\":1792632932163,\"finishedAt\":1792632932167},{\"id\":\"probe-4\",\"kind\":\"probe\",\"label\":\"v1-running\",\"status\":\"killed\",\"detail\":\"probe kill; probe kill\",\"startedAt\":1792632995535,\"finishedAt\":1792632997801}]}",
+    "count": 4
+  },
+  "network": [
+    {
+      "path": "/plugins/dsh-task-status/tasks",
+      "method": "GET",
+      "status": 200,
+      "utc": "2026-10-22T01:36:32.927Z"
+    },
+    {
+      "path": "/plugins/dsh-task-status/tasks",
+      "method": "GET",
+      "status": 200,
+      "utc": "2026-10-22T01:36:33.915Z"
+    },
+    {
+      "path": "/plugins/dsh-task-status/tasks",
+      "method": "GET",
+      "status": 200,
+      "utc": "2026-10-22T01:36:34.908Z"
+    },
+    {
+      "path": "/probe-ts/start?mode=long&kind=probe&label=v1-running&intervalMs=250&lines=80",
+      "method": "GET",
+      "status": 200,
+      "utc": "2026-10-22T01:36:35.536Z"
+    },
+    {
+      "path": "/plugins/dsh-task-status/tasks",
+      "method": "GET",
+      "status": 200,
+      "utc": "2026-10-22T01:36:35.919Z"
+    },
+    {
+      "path": "/plugins/dsh-task-status/tasks",
+      "method": "GET",
+      "status": 200,
+      "utc": "2026-10-22T01:36:36.914Z"
+    },
+    {
+      "path": "/plugins/dsh-task-status/tasks",
+      "method": "GET",
+      "status": 200,
+      "utc": "2026-10-22T01:36:37.756Z"
+    },
+    {
+      "path": "/plugins/dsh-task-status/tasks",
+      "method": "GET",
+      "status": 200,
+      "utc": "2026-10-22T01:36:37.799Z"
+    },
+    {
+      "path": "/probe-ts/kill?id=probe-4",
+      "method": "GET",
+      "status": 200,
+      "utc": "2026-10-22T01:36:37.802Z"
+    },
+    {
+      "path": "/plugins/dsh-task-status/tasks",
+      "method": "GET",
+      "status": 200,
+      "utc": "2026-10-22T01:36:37.912Z"
+    },
+    {
+      "path": "/plugins/dsh-task-status/tasks",
+      "method": "GET",
+      "status": 200,
+      "utc": "2026-10-22T01:36:38.910Z"
+    },
+    {
+      "path": "/plugins/dsh-task-status/tasks",
+      "method": "GET",
+      "status": 200,
+      "utc": "2026-10-22T01:36:39.911Z"
+    },
+    {
+      "path": "/plugins/dsh-task-status/tasks",
+      "method": "GET",
+      "status": 200,
+      "utc": "2026-10-22T01:36:40.022Z"
+    }
+  ],
+  "errors": [],
+  "consoleLog": [],
+  "verdict": {
+    "hasChatFlow": false,
+    "barCountBaseline": 0,
+    "barCountWithRunning": 0,
+    "barCountAfterSettled": 0,
+    "routeTaskCountWithRunning": 4,
+    "routeTaskKeys": [
+      "id",
+      "kind",
+      "label",
+      "status",
+      "detail",
+      "startedAt",
+      "finishedAt"
+    ],
+    "taskPollRequests": 11
+  }
+}

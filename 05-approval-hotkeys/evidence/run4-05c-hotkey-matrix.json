@@ -1,0 +1,932 @@
+{
+  "utc": "2026-10-22T01:15:31.797Z",
+  "host": {
+    "pid": 13104,
+    "url": "http://127.0.0.1:6955/?token=REDACTED",
+    "profile": "ah",
+    "utc": "2026-10-22T01:13:28.302Z",
+    "env": [
+      "DEEPSEEK_BASE_URL",
+      "DEEPSEEK_API_KEY",
+      "DSH_PERMISSION_MODE"
+    ]
+  },
+  "tests": {
+    "T0_noPanelKeyLeak": {
+      "panel": {
+        "count": 0,
+        "keys": [],
+        "items": [],
+        "active": "DIV.uV2eYG_input",
+        "editorsVisible": 1
+      },
+      "events": [
+        {
+          "t": 4772,
+          "kind": "keydown",
+          "detail": {
+            "key": "Enter",
+            "defaultPrevented": false,
+            "repeat": false,
+            "mods": "",
+            "target": "DIV.uV2eYG_input",
+            "composing": false
+          }
+        },
+        {
+          "t": 5041,
+          "kind": "keydown",
+          "detail": {
+            "key": "Escape",
+            "defaultPrevented": false,
+            "repeat": false,
+            "mods": "",
+            "target": "DIV.uV2eYG_input",
+            "composing": false
+          }
+        }
+      ]
+    },
+    "T1_enterConfirm": {
+      "sent": {
+        "ok": true
+      },
+      "panel": {
+        "found": false,
+        "elapsedMs": 45203,
+        "panel": {
+          "count": 0,
+          "keys": [],
+          "items": [],
+          "active": "DIV.uV2eYG_input",
+          "editorsVisible": 1
+        }
+      },
+      "note": "no panel"
+    },
+    "T2_escReject": {
+      "sent": {
+        "ok": true
+      },
+      "panel": {
+        "found": false,
+        "elapsedMs": 45167,
+        "panel": {
+          "count": 0,
+          "keys": [],
+          "items": [],
+          "active": "DIV.uV2eYG_input",
+          "editorsVisible": 1
+        }
+      },
+      "note": "no panel"
+    },
+    "T3_rapidEnter": {
+      "sent": {
+        "ok": true
+      },
+      "panelBefore": {
+        "found": true,
+        "elapsedMs": 261,
+        "panel": {
+          "count": 1,
+          "keys": [
+            "approval:2"
+          ],
+          "items": [
+            {
+              "key": "approval:2",
+              "busy": "false",
+              "text": "等待审批\n允许本次操作使用 danger-full-access 权限：The test needs to write outside the workspace once.\nWrite-Output \"fake-llm-triggered\"\n拒绝\n允许一次",
+              "buttons": [
+                {
+                  "i": 0,
+                  "text": "拒绝",
+                  "disabled": false
+                },
+                {
+                  "i": 1,
+                  "text": "允许一次",
+                  "disabled": false
+                }
+              ]
+            }
+          ],
+          "active": "BODY.",
+          "editorsVisible": 0
+        }
+      },
+      "events": [
+        {
+          "t": 98225,
+          "kind": "keydown",
+          "detail": {
+            "key": "Enter",
+            "defaultPrevented": false,
+            "repeat": false,
+            "mods": "",
+            "target": "BODY.",
+            "composing": false
+          }
+        },
+        {
+          "t": 98225,
+          "kind": "click",
+          "detail": {
+            "text": "允许一次",
+            "disabled": false
+          }
+        },
+        {
+          "t": 98227,
+          "kind": "panels",
+          "detail": {
+            "keys": [
+              "approval:2"
+            ]
+          }
+        },
+        {
+          "t": 98231,
+          "kind": "panels",
+          "detail": {
+            "keys": []
+          }
+        },
+        {
+          "t": 98379,
+          "kind": "panels",
+          "detail": {
+            "keys": []
+          }
+        },
+        {
+          "t": 98452,
+          "kind": "keydown",
+          "detail": {
+            "key": "Enter",
+            "defaultPrevented": false,
+            "repeat": false,
+            "mods": "",
+            "target": "BODY.",
+            "composing": false
+          }
+        },
+        {
+          "t": 98655,
+          "kind": "keydown",
+          "detail": {
+            "key": "Enter",
+            "defaultPrevented": false,
+            "repeat": false,
+            "mods": "",
+            "target": "BODY.",
+            "composing": false
+          }
+        },
+        {
+          "t": 98772,
+          "kind": "panels",
+          "detail": {
+            "keys": []
+          }
+        },
+        {
+          "t": 98775,
+          "kind": "panels",
+          "detail": {
+            "keys": []
+          }
+        },
+        {
+          "t": 98797,
+          "kind": "panels",
+          "detail": {
+            "keys": []
+          }
+        },
+        {
+          "t": 98813,
+          "kind": "panels",
+          "detail": {
+            "keys": []
+          }
+        },
+        {
+          "t": 98819,
+          "kind": "panels",
+          "detail": {
+            "keys": []
+          }
+        },
+        {
+          "t": 98859,
+          "kind": "keydown",
+          "detail": {
+            "key": "Enter",
+            "defaultPrevented": false,
+            "repeat": false,
+            "mods": "",
+            "target": "BODY.",
+            "composing": false
+          }
+        },
+        {
+          "t": 98874,
+          "kind": "panels",
+          "detail": {
+            "keys": []
+          }
+        },
+        {
+          "t": 99075,
+          "kind": "keydown",
+          "detail": {
+            "key": "Enter",
+            "defaultPrevented": false,
+            "repeat": false,
+            "mods": "",
+            "target": "BODY.",
+            "composing": false
+          }
+        }
+      ],
+      "panelAfter": {
+        "count": 0,
+        "keys": [],
+        "items": [],
+        "active": "BODY.",
+        "editorsVisible": 1
+      },
+      "gone": {
+        "gone": true,
+        "elapsedMs": 1
+      }
+    },
+    "T4_holdEnter": {
+      "sent": {
+        "ok": true
+      },
+      "panelBefore": {
+        "found": true,
+        "elapsedMs": 260,
+        "panel": {
+          "count": 1,
+          "keys": [
+            "approval:3"
+          ],
+          "items": [
+            {
+              "key": "approval:3",
+              "busy": "false",
+              "text": "等待审批\n允许本次操作使用 danger-full-access 权限：The test needs to write outside the workspace once.\nWrite-Output \"fake-llm-triggered\"\n拒绝\n允许一次",
+              "buttons": [
+                {
+                  "i": 0,
+                  "text": "拒绝",
+                  "disabled": false
+                },
+                {
+                  "i": 1,
+                  "text": "允许一次",
+                  "disabled": false
+                }
+              ]
+            }
+          ],
+          "active": "BODY.",
+          "editorsVisible": 0
+        }
+      },
+      "events": [
+        {
+          "t": 102085,
+          "kind": "keydown",
+          "detail": {
+            "key": "Enter",
+            "defaultPrevented": false,
+            "repeat": false,
+            "mods": "",
+            "target": "BODY.",
+            "composing": false
+          }
+        },
+        {
+          "t": 102085,
+          "kind": "click",
+          "detail": {
+            "text": "允许一次",
+            "disabled": false
+          }
+        },
+        {
+          "t": 102086,
+          "kind": "panels",
+          "detail": {
+            "keys": [
+              "approval:3"
+            ]
+          }
+        },
+        {
+          "t": 102090,
+          "kind": "panels",
+          "detail": {
+            "keys": []
+          }
+        },
+        {
+          "t": 102225,
+          "kind": "panels",
+          "detail": {
+            "keys": []
+          }
+        },
+        {
+          "t": 102651,
+          "kind": "panels",
+          "detail": {
+            "keys": []
+          }
+        },
+        {
+          "t": 102654,
+          "kind": "panels",
+          "detail": {
+            "keys": []
+          }
+        },
+        {
+          "t": 102689,
+          "kind": "panels",
+          "detail": {
+            "keys": []
+          }
+        },
+        {
+          "t": 102705,
+          "kind": "panels",
+          "detail": {
+            "keys": []
+          }
+        },
+        {
+          "t": 102712,
+          "kind": "panels",
+          "detail": {
+            "keys": []
+          }
+        },
+        {
+          "t": 102754,
+          "kind": "panels",
+          "detail": {
+            "keys": []
+          }
+        }
+      ],
+      "panelAfter": {
+        "count": 0,
+        "keys": [],
+        "items": [],
+        "active": "BODY.",
+        "editorsVisible": 1
+      },
+      "gone": {
+        "gone": true,
+        "elapsedMs": 1
+      }
+    },
+    "T5_inputFocus": {
+      "sent": {
+        "ok": true
+      },
+      "panelBefore": {
+        "found": true,
+        "elapsedMs": 261,
+        "panel": {
+          "count": 1,
+          "keys": [
+            "approval:4"
+          ],
+          "items": [
+            {
+              "key": "approval:4",
+              "busy": "false",
+              "text": "等待审批\n允许本次操作使用 danger-full-access 权限：The test needs to write outside the workspace once.\nWrite-Output \"fake-llm-triggered\"\n拒绝\n允许一次",
+              "buttons": [
+                {
+                  "i": 0,
+                  "text": "拒绝",
+                  "disabled": false
+                },
+                {
+                  "i": 1,
+                  "text": "允许一次",
+                  "disabled": false
+                }
+              ]
+            }
+          ],
+          "active": "BODY.",
+          "editorsVisible": 0
+        }
+      },
+      "focused": null,
+      "events": [
+        {
+          "t": 105706,
+          "kind": "keydown",
+          "detail": {
+            "key": "Enter",
+            "defaultPrevented": false,
+            "repeat": false,
+            "mods": "",
+            "target": "BODY.",
+            "composing": false
+          }
+        },
+        {
+          "t": 105707,
+          "kind": "click",
+          "detail": {
+            "text": "允许一次",
+            "disabled": false
+          }
+        },
+        {
+          "t": 105708,
+          "kind": "panels",
+          "detail": {
+            "keys": [
+              "approval:4"
+            ]
+          }
+        },
+        {
+          "t": 105711,
+          "kind": "panels",
+          "detail": {
+            "keys": []
+          }
+        },
+        {
+          "t": 105845,
+          "kind": "panels",
+          "detail": {
+            "keys": []
+          }
+        },
+        {
+          "t": 106127,
+          "kind": "keydown",
+          "detail": {
+            "key": "Escape",
+            "defaultPrevented": false,
+            "repeat": false,
+            "mods": "",
+            "target": "BODY.",
+            "composing": false
+          }
+        },
+        {
+          "t": 106305,
+          "kind": "panels",
+          "detail": {
+            "keys": []
+          }
+        },
+        {
+          "t": 106307,
+          "kind": "panels",
+          "detail": {
+            "keys": []
+          }
+        },
+        {
+          "t": 106340,
+          "kind": "panels",
+          "detail": {
+            "keys": []
+          }
+        },
+        {
+          "t": 106358,
+          "kind": "panels",
+          "detail": {
+            "keys": []
+          }
+        },
+        {
+          "t": 106365,
+          "kind": "panels",
+          "detail": {
+            "keys": []
+          }
+        },
+        {
+          "t": 106408,
+          "kind": "panels",
+          "detail": {
+            "keys": []
+          }
+        }
+      ],
+      "panelAfter": {
+        "count": 0,
+        "keys": [],
+        "items": [],
+        "active": "BODY.",
+        "editorsVisible": 1
+      }
+    },
+    "T6_chords": {
+      "skipped": "no panel on screen",
+      "panel": {
+        "count": 0,
+        "keys": [],
+        "items": [],
+        "active": "BODY.",
+        "editorsVisible": 1
+      }
+    },
+    "T7_panelVanishes": {
+      "clicked": null,
+      "panelBefore": {
+        "count": 1,
+        "keys": [
+          "approval:5"
+        ],
+        "items": [
+          {
+            "key": "approval:5",
+            "busy": "false",
+            "text": "等待审批\n允许本次操作使用 danger-full-access 权限：The test needs to write outside the workspace once.\nWrite-Output \"fake-llm-triggered\"\n拒绝\n允许一次",
+            "buttons": [
+              {
+                "i": 0,
+                "text": "拒绝",
+                "disabled": false
+              },
+              {
+                "i": 1,
+                "text": "允许一次",
+                "disabled": false
+              }
+            ]
+          }
+        ],
+        "active": "BODY.",
+        "editorsVisible": 0
+      },
+      "afterSwitch": {
+        "count": 1,
+        "keys": [
+          "approval:5"
+        ],
+        "items": [
+          {
+            "key": "approval:5",
+            "busy": "false",
+            "text": "等待审批\n允许本次操作使用 danger-full-access 权限：The test needs to write outside the workspace once.\nWrite-Output \"fake-llm-triggered\"\n拒绝\n允许一次",
+            "buttons": [
+              {
+                "i": 0,
+                "text": "拒绝",
+                "disabled": false
+              },
+              {
+                "i": 1,
+                "text": "允许一次",
+                "disabled": false
+              }
+            ]
+          }
+        ],
+        "active": "BODY.",
+        "editorsVisible": 0
+      },
+      "events": [
+        {
+          "t": 109882,
+          "kind": "keydown",
+          "detail": {
+            "key": "Enter",
+            "defaultPrevented": false,
+            "repeat": false,
+            "mods": "",
+            "target": "BODY.",
+            "composing": false
+          }
+        },
+        {
+          "t": 109882,
+          "kind": "click",
+          "detail": {
+            "text": "允许一次",
+            "disabled": false
+          }
+        },
+        {
+          "t": 109883,
+          "kind": "panels",
+          "detail": {
+            "keys": [
+              "approval:5"
+            ]
+          }
+        },
+        {
+          "t": 109886,
+          "kind": "panels",
+          "detail": {
+            "keys": []
+          }
+        },
+        {
+          "t": 110022,
+          "kind": "panels",
+          "detail": {
+            "keys": []
+          }
+        },
+        {
+          "t": 110207,
+          "kind": "keydown",
+          "detail": {
+            "key": "Escape",
+            "defaultPrevented": false,
+            "repeat": false,
+            "mods": "",
+            "target": "BODY.",
+            "composing": false
+          }
+        },
+        {
+          "t": 110480,
+          "kind": "panels",
+          "detail": {
+            "keys": []
+          }
+        },
+        {
+          "t": 110481,
+          "kind": "panels",
+          "detail": {
+            "keys": []
+          }
+        },
+        {
+          "t": 110535,
+          "kind": "panels",
+          "detail": {
+            "keys": []
+          }
+        },
+        {
+          "t": 110567,
+          "kind": "panels",
+          "detail": {
+            "keys": []
+          }
+        },
+        {
+          "t": 110577,
+          "kind": "panels",
+          "detail": {
+            "keys": []
+          }
+        },
+        {
+          "t": 110583,
+          "kind": "panels",
+          "detail": {
+            "keys": []
+          }
+        }
+      ],
+      "panelAfter": {
+        "count": 0,
+        "keys": [],
+        "items": [],
+        "active": "BODY.",
+        "editorsVisible": 1
+      }
+    }
+  },
+  "failures": [],
+  "newSession": null,
+  "startPanel": {
+    "count": 0,
+    "keys": [],
+    "items": [],
+    "active": "DIV.uV2eYG_input",
+    "editorsVisible": 1
+  },
+  "errors": [],
+  "consoleLog": [],
+  "network": [
+    {
+      "path": "/plugins/??@deepseek-ai/dsh-client-modules/client.js&rev=5c32acb5d9ec",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/plugins/??@deepseek-ai/dsh-api-remotes/client.js,@deepseek-ai/dsh-client-ui-deliverables/client.js,@deepseek-ai/dsh-typert-registry/client.js,@deepseek-ai/dsh-client-connection/client.js,@deepseek-ai/dsh-api-workspace-controller/client.js,@deepseek-ai/dsh-api-session-controller/client.js,@deepseek-ai/dsh-client-ui-directory-picker-native/client.js&rev=34527dc94ea4",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/plugins/??@deepseek-ai/dsh-client-ui-open-in-app/client.js,@deepseek-ai/dsh-api-gateway/client.js,@deepseek-ai/dsh-api-job-controller/client.js,@deepseek-ai/dsh-api-terminal-controller/client.js,@deepseek-ai/dsh-api-workspace-files/client.js,@deepseek-ai/dsh-client-ui-settings-account/client.js,@deepseek-ai/dsh-client-hmr/client.js,@deepseek-ai/dsh-cordis-client-runner/client.js,@deepseek-ai/dsh-client-ui-theme/client.js,@deepseek-ai/dsh-client-locale/client.js,@deepseek-ai/dsh-client-shortcuts/client.js,@deepseek-ai/dsh-client-ui-shortcuts/client.js,@deepseek-ai/dsh-client-ui-layout/client.js,@deepseek-ai/dsh-client-ui-renderer/client.js,@deepseek-ai/dsh-client-ui-session/client.js,@deepseek-ai/dsh-client-resources/client.js,@deepseek-ai/dsh-client-ui-sidebar/client.js,@deepseek-ai/dsh-client-ui-sidebar-right/client.js,@deepseek-ai/dsh-client-ui-sidebar-documentpreview/client.js,@deepseek-ai/dsh-client-ui-sidebar-terminal/client.js,@deepseek-ai/dsh-client-ui-sidebar-files/client.js,@deepseek-ai/dsh-client-ui-settings/client.js,@deepseek-ai/dsh-client-ui-settings-general/client.js,@deepseek-ai/dsh-client-ui-settings-models/client.js,@deepseek-ai/dsh-client-ui-plugin-manager/client.js,@deepseek-ai/dsh-client-ui-settings-plugin-inventory/client.js,@deepseek-ai/dsh-client-ui-conversation/client.js,@deepseek-ai/dsh-client-ui-approval/client.js,@deepseek-ai/dsh-client-ui-chat/client.js,@deepseek-ai/dsh-client-ui-brand-official/client.js,@deepseek-ai/dsh-client-ui-attachment/client.js,@deepseek-ai/dsh-client-ui-tool/client.js,@deepseek-ai/dsh-client-ui-cordis/client.js,@deepseek-ai/dsh-client-ui-workspace/client.js,@deepseek-ai/dsh-client-ui-workflow-run/client.js,@deepseek-ai/dsh-client-ui-input-trigger/client.js,@deepseek-ai/dsh-client-ui-commands/client.js,@deepseek-ai/dsh-client-ui-skill/client.js,@deepseek-ai/dsh-client-ui-subagent/client.js,@deepseek-ai/dsh-client-ui-reference/client.js,@deepseek-ai/dsh-client-ui-jobs/client.js,@deepseek-ai/dsh-client-ui-goal/client.js,@deepseek-ai/dsh-client-ui-message-feedback/client.js,@deepseek-ai/dsh-client-ui-model-selection/client.js,@deepseek-ai/dsh-client-ui-permission-presets/client.js,@deepseek-ai/dsh-client-ui-agent-preset/client.js,@deepseek-ai/dsh-client-ui-settings-session-log/client.js,@deepseek-ai/dsh-client-ui-settings-plugins/client.js,@deepseek-ai/dsh-client-ui-settings-shell/client.js,@deepseek-ai/dsh-client-ui-settings-agent-loop/client.js,@deepseek-ai/dsh-client-ui-settings-subagent/client.js,@deepseek-ai/dsh-client-ui-settings-web-search/client.js,@deepseek-ai/dsh-client-ui-plan/client.js,@deepseek-ai/dsh-client-ui-user-questions/client.js,@deepseek-ai/dsh-client-ui-trajectory/client.js,dsh-approval-hotkeys/client.js,@deepseek-ai/dsh-session-log-export/client.js,@deepseek-ai/dsh-client-file-upload/client.js&rev=0879f5d42611",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/settings/describe",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/dynamicCordisRunner/syncInspectManifest",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/credentials/describe",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/dynamicCordisRunner/inventory",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/session/modelCatalog",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/plugins/events",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/agentPresets/list",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/permissionPresets/catalog",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/dynamicCordisRunner/inventory",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/agentPresets/list",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/agentPresets/list",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/session/modelCatalog",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/credentials/describe",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/settings/describe",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/dynamicCordisRunner/syncInspectManifest",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/session/list",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/credentials/describe",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/session/create",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/llm/listProviders",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/llm/listConfigurableProviders",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/agentPresets/list",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/commands/list",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/skills/list",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/session/modelCatalog",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/credentials/describe",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/agentPresets/list",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/session/prompt",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/session/prompt",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/session/prompt",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/$events/result",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/session/prompt",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/$events/result",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/session/prompt",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/$events/result",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/session/prompt",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/$events/result",
+      "method": "POST",
+      "status": 200
+    }
+  ],
+  "finalPanel": {
+    "count": 0,
+    "keys": [],
+    "items": [],
+    "active": "BODY.",
+    "editorsVisible": 1
+  }
+}

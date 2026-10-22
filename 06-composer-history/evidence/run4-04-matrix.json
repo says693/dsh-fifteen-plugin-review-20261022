@@ -1,0 +1,494 @@
+{
+  "B1": {
+    "pre": {
+      "text": "",
+      "raw": "",
+      "caret": 0,
+      "len": 0,
+      "entries": []
+    },
+    "post": {
+      "text": "",
+      "raw": "",
+      "caret": 0,
+      "len": 0,
+      "entries": []
+    },
+    "keys": [
+      {
+        "key": "ArrowUp",
+        "ctrl": false,
+        "shift": false,
+        "alt": false,
+        "prevented": false,
+        "text": ""
+      }
+    ]
+  },
+  "B2": [
+    {
+      "step": 2,
+      "state": {
+        "text": "",
+        "raw": "",
+        "caret": 0,
+        "len": 0,
+        "entries": []
+      },
+      "keys": [
+        {
+          "key": "ArrowUp",
+          "ctrl": false,
+          "shift": false,
+          "alt": false,
+          "prevented": false,
+          "text": ""
+        }
+      ]
+    },
+    {
+      "step": 3,
+      "state": {
+        "text": "",
+        "raw": "",
+        "caret": 0,
+        "len": 0,
+        "entries": []
+      },
+      "keys": [
+        {
+          "key": "ArrowUp",
+          "ctrl": false,
+          "shift": false,
+          "alt": false,
+          "prevented": false,
+          "text": ""
+        }
+      ]
+    },
+    {
+      "step": 4,
+      "state": {
+        "text": "",
+        "raw": "",
+        "caret": 0,
+        "len": 0,
+        "entries": []
+      },
+      "keys": [
+        {
+          "key": "ArrowUp",
+          "ctrl": false,
+          "shift": false,
+          "alt": false,
+          "prevented": false,
+          "text": ""
+        }
+      ]
+    },
+    {
+      "step": 5,
+      "state": {
+        "text": "",
+        "raw": "",
+        "caret": 0,
+        "len": 0,
+        "entries": []
+      },
+      "keys": [
+        {
+          "key": "ArrowUp",
+          "ctrl": false,
+          "shift": false,
+          "alt": false,
+          "prevented": false,
+          "text": ""
+        }
+      ]
+    },
+    {
+      "step": 6,
+      "state": {
+        "text": "",
+        "raw": "",
+        "caret": 0,
+        "len": 0,
+        "entries": []
+      },
+      "keys": [
+        {
+          "key": "ArrowUp",
+          "ctrl": false,
+          "shift": false,
+          "alt": false,
+          "prevented": false,
+          "text": ""
+        }
+      ]
+    }
+  ],
+  "B3": {
+    "cleared": {
+      "text": "",
+      "raw": "",
+      "caret": 0,
+      "len": 0,
+      "entries": []
+    },
+    "draftBefore": {
+      "text": "还没写完的草稿",
+      "raw": "还没写完的草稿",
+      "caret": 0,
+      "len": 7,
+      "entries": []
+    },
+    "recalled": {
+      "text": "还没写完的草稿",
+      "raw": "还没写完的草稿",
+      "caret": 0,
+      "len": 7,
+      "entries": []
+    },
+    "upKeys": [
+      {
+        "key": "ArrowUp",
+        "ctrl": false,
+        "shift": false,
+        "alt": false,
+        "prevented": false,
+        "text": "还没写完的草稿"
+      }
+    ],
+    "downs": [
+      {
+        "step": 1,
+        "state": {
+          "text": "还没写完的草稿",
+          "raw": "还没写完的草稿",
+          "caret": 7,
+          "len": 7,
+          "entries": []
+        },
+        "keys": [
+          {
+            "key": "ArrowDown",
+            "ctrl": false,
+            "shift": false,
+            "alt": false,
+            "prevented": false,
+            "text": "还没写完的草稿"
+          }
+        ]
+      },
+      {
+        "step": 2,
+        "state": {
+          "text": "还没写完的草稿",
+          "raw": "还没写完的草稿",
+          "caret": 7,
+          "len": 7,
+          "entries": []
+        },
+        "keys": [
+          {
+            "key": "ArrowDown",
+            "ctrl": false,
+            "shift": false,
+            "alt": false,
+            "prevented": false,
+            "text": "还没写完的草稿"
+          }
+        ]
+      },
+      {
+        "step": 3,
+        "state": {
+          "text": "还没写完的草稿",
+          "raw": "还没写完的草稿",
+          "caret": 7,
+          "len": 7,
+          "entries": []
+        },
+        "keys": [
+          {
+            "key": "ArrowDown",
+            "ctrl": false,
+            "shift": false,
+            "alt": false,
+            "prevented": false,
+            "text": "还没写完的草稿"
+          }
+        ]
+      },
+      {
+        "step": 4,
+        "state": {
+          "text": "还没写完的草稿",
+          "raw": "还没写完的草稿",
+          "caret": 7,
+          "len": 7,
+          "entries": []
+        },
+        "keys": [
+          {
+            "key": "ArrowDown",
+            "ctrl": false,
+            "shift": false,
+            "alt": false,
+            "prevented": false,
+            "text": "还没写完的草稿"
+          }
+        ]
+      }
+    ]
+  },
+  "B4": {
+    "recalled": {
+      "text": "用 Esc 试的草稿",
+      "raw": "用 Esc 试的草稿",
+      "caret": 0,
+      "len": 10,
+      "entries": []
+    },
+    "afterEsc": {
+      "text": "用 Esc 试的草稿",
+      "raw": "用 Esc 试的草稿",
+      "caret": 0,
+      "len": 10,
+      "entries": []
+    },
+    "keys": [
+      {
+        "key": "ArrowUp",
+        "ctrl": false,
+        "shift": false,
+        "alt": false,
+        "prevented": false,
+        "text": "用 Esc 试的草稿"
+      },
+      {
+        "key": "Escape",
+        "ctrl": false,
+        "shift": false,
+        "alt": false,
+        "prevented": false,
+        "text": "用 Esc 试的草稿"
+      }
+    ]
+  },
+  "B5_secondLine": {
+    "before": {
+      "text": "第一行\n第二行",
+      "raw": "第一行第二行",
+      "caret": 6,
+      "len": 7,
+      "entries": []
+    },
+    "after": {
+      "text": "第一行\n第二行",
+      "raw": "第一行第二行",
+      "caret": 3,
+      "len": 7,
+      "entries": []
+    },
+    "keys": [
+      {
+        "key": "ArrowUp",
+        "ctrl": false,
+        "shift": false,
+        "alt": false,
+        "prevented": false,
+        "text": "第一行\n第二行"
+      }
+    ]
+  },
+  "B5_firstLine": {
+    "after": {
+      "text": "第一行\n第二行",
+      "raw": "第一行第二行",
+      "caret": 0,
+      "len": 7,
+      "entries": []
+    },
+    "keys": [
+      {
+        "key": "ArrowUp",
+        "ctrl": false,
+        "shift": false,
+        "alt": false,
+        "prevented": false,
+        "text": "第一行\n第二行"
+      }
+    ]
+  },
+  "F2_shiftEnter": {
+    "before": {
+      "text": "\n",
+      "raw": "",
+      "caret": 0,
+      "len": 1,
+      "entries": []
+    },
+    "after": {
+      "text": "甲\n乙",
+      "raw": "甲乙",
+      "caret": 2,
+      "len": 3,
+      "entries": []
+    }
+  },
+  "F3": {
+    "shift": {
+      "state": {
+        "text": "修饰键测试",
+        "raw": "修饰键测试",
+        "caret": 0,
+        "len": 5,
+        "entries": []
+      },
+      "keys": [
+        {
+          "key": "Shift",
+          "ctrl": false,
+          "shift": true,
+          "alt": false,
+          "prevented": false,
+          "text": "修饰键测试"
+        },
+        {
+          "key": "ArrowUp",
+          "ctrl": false,
+          "shift": true,
+          "alt": false,
+          "prevented": false,
+          "text": "修饰键测试"
+        }
+      ]
+    },
+    "alt": {
+      "state": {
+        "text": "修饰键测试",
+        "raw": "修饰键测试",
+        "caret": 0,
+        "len": 5,
+        "entries": []
+      },
+      "keys": [
+        {
+          "key": "Alt",
+          "ctrl": false,
+          "shift": false,
+          "alt": true,
+          "prevented": false,
+          "text": "修饰键测试"
+        },
+        {
+          "key": "ArrowUp",
+          "ctrl": false,
+          "shift": false,
+          "alt": true,
+          "prevented": false,
+          "text": "修饰键测试"
+        }
+      ]
+    }
+  },
+  "F3b_ctrlAlias": {
+    "state": {
+      "text": "\n",
+      "raw": "",
+      "caret": 0,
+      "len": 1,
+      "entries": []
+    },
+    "keys": [
+      {
+        "key": "Control",
+        "ctrl": true,
+        "shift": false,
+        "alt": false,
+        "prevented": false,
+        "text": "\n"
+      },
+      {
+        "key": "ArrowUp",
+        "ctrl": true,
+        "shift": false,
+        "alt": false,
+        "prevented": false,
+        "text": "\n"
+      }
+    ]
+  },
+  "afterSeed": {
+    "text": "",
+    "raw": "",
+    "caret": null,
+    "len": 0,
+    "entries": []
+  },
+  "errors": [],
+  "consoleLog": [],
+  "network": [
+    {
+      "path": "/api/credentials/describe",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:05:14.024Z"
+    },
+    {
+      "path": "/api/llm/listProviders",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:05:14.040Z"
+    },
+    {
+      "path": "/api/llm/listConfigurableProviders",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:05:14.040Z"
+    },
+    {
+      "path": "/api/session/create",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:05:14.045Z"
+    },
+    {
+      "path": "/api/session/modelCatalog",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:05:14.087Z"
+    },
+    {
+      "path": "/api/agentPresets/list",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:05:14.099Z"
+    },
+    {
+      "path": "/api/credentials/describe",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:05:14.100Z"
+    },
+    {
+      "path": "/api/commands/list",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:05:14.109Z"
+    },
+    {
+      "path": "/api/skills/list",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:05:14.114Z"
+    },
+    {
+      "path": "/api/credentials/describe",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:05:14.114Z"
+    }
+  ]
+}

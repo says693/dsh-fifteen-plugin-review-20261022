@@ -1,0 +1,211 @@
+{
+  "schema": "dsh-plugin-review/provenance/v1",
+  "generated_at": "2026-10-22T01:25:00+08:00",
+
+  "subject": {
+    "name": "dsh-result-only-view",
+    "repo": "YEYEYEYESHIFU/dsh-result-only-view",
+    "author": "YEYEYEYESHIFU",
+    "license": "MIT",
+    "tested_artifact": {
+      "kind": "npm-published",
+      "version": "1.7.0",
+      "dist_tag": "latest",
+      "published_at": "2026-10-01T08:54:00.104Z",
+      "tarball": "https://mirrors.cloud.tencent.com/npm/dsh-result-only-view/-/dsh-result-only-view-1.7.0.tgz",
+      "dist_shasum": "aca77025e02ed3d31f07ba0d84bfccd7e7a57d9f",
+      "dist_integrity": "sha512-FdtEAkAmyRcP2JsoE+gi+hIJ/K7cd/NfWsLsxNWn8QWJQSwWDDalFz/CGFpJYgHMgLwiz/cgYZDaOMHK7eR94w==",
+      "local_tarball_sha256": "28167b449dfcdde685ddaed719894748c6f16c22b275e35accbf4de95cfc8364",
+      "local_tarball_path": "temp/dsh-result-only-view-1.7.0.tgz",
+      "local_tarball_bytes": 27855,
+      "unpacked_file_count": 8,
+      "npm_gitHead": "4653ee8d320160ad2a155c40e37820aa548e9c2b",
+      "npm_user": "yeyeyeyeshifu <william.yemao@gmail.com>"
+    },
+    "source_commit_checked_for_diff": {
+      "kind": "github-commit-zip",
+      "commit": "47cfe87a7d183be2506fcca8ff9ed2e5f6069b2c",
+      "version_in_package_json": "1.6.4",
+      "note": "仓库 HEAD 是 1.6.4，npm 上是 1.7.0；本轮运行时只测了 npm 发布件 1.7.0，这个提交只用于源码差异核对，没有把它装进宿主跑过。",
+      "downloaded_from": "https://codeload.github.com/YEYEYEYESHIFU/dsh-result-only-view/zip/47cfe87a7d183be2506fcca8ff9ed2e5f6069b2c",
+      "local_path": "temp/repo-47cfe87/"
+    }
+  },
+
+  "file_hashes_sha256": {
+    "note": "npm 1.7.0 解包后的关键文件；同一行的 repo_47cfe87 是 1.6.4 对应文件，用于差异核对。",
+    "lib/client.js": {
+      "npm_1_7_0": "5051a667bfbc3273fad7f1a10fdaf6333ba16bdf89f5a015d89fa0daf61b5426",
+      "repo_47cfe87_1_6_4": "e5e3df1768f6",
+      "bytes_npm": 59767,
+      "bytes_repo": 53761,
+      "same": false
+    },
+    "lib/index.js": {
+      "npm_1_7_0": "8617a8643851c3b29aa738701088173e6c3eecab83492549aebd40728b6346c7",
+      "repo_47cfe87_1_6_4": "8617a8643851c3b29aa738701088173e6c3eecab83492549aebd40728b6346c7",
+      "same": true
+    },
+    "package.json": {
+      "npm_1_7_0": "23fcc3d53745070f4c346db85d0bfe97c4230fb8deeb7626233073e7dedee537",
+      "repo_47cfe87_1_6_4": "157159815de1",
+      "same": false
+    },
+    "cordis.patch.yml": {
+      "npm_1_7_0": "aae90a9ffa04ef6e3326f9c499f46ec5782bf220efaa30443174c78e5c542c55",
+      "repo_47cfe87_1_6_4": "aae90a9ffa04ef6e3326f9c499f46ec5782bf220efaa30443174c78e5c542c55",
+      "same": true
+    },
+    "README.md": {
+      "npm_1_7_0": "e2d2de733fd16edfcde42c41d2af76076b6c3d2c678d048ea68d88d3d3970e7c",
+      "repo_47cfe87_1_6_4": "290d8958b782",
+      "same": false
+    },
+    "LICENSE": {
+      "npm_1_7_0": "b91455fede257bd0804ebf666dc87976c2b3a8a64f2703b9f6df653a16ba6386",
+      "repo_47cfe87_1_6_4": "b91455fede257bd0804ebf666dc87976c2b3a8a64f2703b9f6df653a16ba6386",
+      "same": true
+    },
+    "CHANGELOG.md": {
+      "npm_1_7_0": "0c81aa1c396e40a1d36fa41578300e8052c6af7a216f2bb7ecf3181201a64703",
+      "npm_bytes": 12712
+    },
+    "scripts/verify.mjs": {
+      "npm_1_7_0": "6c7b3a2fdfd8f97bbf048df50c79efbd8ca5856ab4ed37861b7bd67cb7d7cdaa"
+    }
+  },
+
+  "diff_summary_1_7_0_vs_1_6_4": {
+    "identical_files": ["lib/index.js", "cordis.patch.yml", "LICENSE"],
+    "changed_files": ["lib/client.js (+6006 bytes)", "package.json", "README.md", "CHANGELOG.md", "scripts/verify.mjs"],
+    "changelog_claims_for_1_7_0": [
+      "桌面端支持：conversation.chat.turnTail 在 0.1.x 是 chain 槽、0.2.0 是 list 槽（注册需要 options.id），修前痕迹行在桌面端从不渲染，并以 page error 暴露",
+      "嵌套 step seats（[data-step-process] / [data-chat-group-key]）：步数统计从 Processed 0 steps 修到真实步数",
+      "preparing 工具状态计入进行中，芯片从步骤一开始就出现",
+      "0.2.0 的 Completed in … 控制行被当过程行折叠，且排除在 reveal key 集合之外",
+      "peer 依赖范围从 * 收紧为 ^0.1.1-rc.2 || ^0.2.0-rc.2"
+    ],
+    "behaviour_keys_present_in_both": {
+      "dsh.result-only-view.enabled": true,
+      "dsh.result-only-view.settings": true,
+      "slot_conversation.input.left": true,
+      "slot_conversation.chat.turnTail": true,
+      "settings.general.item": true,
+      "fold_mode_auto_manual": true
+    },
+    "how_this_was_measured": "evidence/diff-01-1.7.0-vs-47cfe87.txt, evidence/diff-02-keys-and-features.txt"
+  },
+
+  "host": {
+    "cli": "@deepseek-ai/dsh",
+    "version": "0.2.0-rc.2",
+    "bin": "C:\Users\USER\\AppData\\Roaming\\npm\\node_modules\\@deepseek-ai\\dsh\\lib\\bin.js",
+    "args": ["--profile", "web", "--host", "127.0.0.1", "--port", "0", "--no-open"],
+    "profile": "web",
+    "profile_bundles": ["@deepseek-ai/dsh-base", "@deepseek-ai/dsh-web-app", "dsh-result-only-view"],
+    "instances": [
+      {"tag": "run1", "pid": 13324, "origin": "http://127.0.0.1:9798", "started_utc": "2026-10-22T01:00:47.142Z", "stopped": true},
+      {"tag": "run2", "pid": 37028, "origin": "http://127.0.0.1:4133", "started_utc": "2026-10-22T01:09:09.054Z", "stopped": true},
+      {"tag": "run3", "pid": 3552, "origin": "http://127.0.0.1:11114", "started_utc": "2026-10-22T01:11:31.946Z", "stopped": true},
+      {"tag": "run4", "pid": 3520, "origin": "http://127.0.0.1:5315", "started_utc": "2026-10-22T01:13:08.522Z", "stopped": true},
+      {"tag": "run5", "pid": 24896, "origin": "http://127.0.0.1:12495", "started_utc": "2026-10-22T01:15:25.643Z", "stopped": true}
+    ],
+    "all_stopped_verified_at": "2026-10-22T01:24:00+08:00",
+    "stop_evidence": "五个 --port 0 端口 9798/4133/11114/5315/12495 均无 Listen；5 个 pid 的 Get-Process 均为空"
+  },
+
+  "isolation": {
+    "DSH_HOME": "isolated-home/dsh",
+    "HOME": "isolated-home/user-home",
+    "USERPROFILE": "isolated-home/user-home",
+    "APPDATA": "isolated-home/appdata",
+    "LOCALAPPDATA": "isolated-home/localappdata",
+    "XDG_CACHE_HOME": "isolated-home/cache",
+    "XDG_CONFIG_HOME": "isolated-home/config",
+    "XDG_DATA_HOME": "isolated-home/data",
+    "npm_config_cache": "temp/npm-cache",
+    "host_cwd": "fixtures/workspace",
+    "user_gui_untouched": ["1241", "2538", "4756"],
+    "note": "用户正在用的 GUI（含本会话的 4756）全程没有访问、没有读 token/cookie/真实会话。"
+  },
+
+  "browser": {
+    "engine": "Microsoft Edge",
+    "driver": "Playwright",
+    "driver_path": "H:\\CODEX\\dsh-code-security-review-20261019\\tooling\\node_modules\\playwright\\index.mjs",
+    "mode": "headless",
+    "viewport": {"width": 1440, "height": 1000, "deviceScaleFactor": 1},
+    "network_policy": "context.route 只放行 127.0.0.1 / localhost / [::1]，其余全部 abort",
+    "service_workers": "block"
+  },
+
+  "runtime": {
+    "node": "v24.19.0",
+    "npm": "11.17.0",
+    "pnpm": "11.7.0 (bundled with dsh CLI)",
+    "os": "Windows x64"
+  },
+
+  "fixtures": {
+    "note": "全部用官方 @deepseek-ai/dsh-session-persistence-jsonl 手写事件，不调用模型、不读真实会话；只用于在真实宿主里造出可观测的对话结构。",
+    "sessions": [
+      {"id": "sess-rov-empty", "title": "ROV 空会话", "turns": 0, "events": 1, "purpose": "0 轮边界", "visible_in_sidebar": false},
+      {"id": "sess-rov-one", "title": "ROV 单轮长回复", "turns": 1, "events": 7, "purpose": "思考行 + 长回答 + 代码块 + 表格"},
+      {"id": "sess-rov-multi", "title": "ROV 多轮对照", "turns": 3, "events": 19, "purpose": "多轮与每轮独立痕迹行"},
+      {"id": "sess-rov-long", "title": "ROV 超长回复", "turns": 1, "events": 7, "purpose": "24 段长正文 + 代码块 + 表格，验裁切"},
+      {"id": "sess-rov-tool", "title": "ROV 工具调用对照", "turns": 1, "events": 7, "purpose": "工具卡尝试 1（被 SessionFormatError 判 corrupt）", "usable": false},
+      {"id": "sess-rov-tool2", "title": "ROV 工具卡对照", "turns": 1, "events": 12, "purpose": "工具卡尝试 2（tool/call + tool/result，仍被判 corrupt：no advertised tool lifecycle）", "usable": false}
+    ],
+    "generators": ["make-sessions.mjs", "make-sessions2-tool.mjs", "make-sessions3-tool2.mjs"],
+    "evidence": ["evidence/fixture-01-make-sessions.txt", "evidence/fixture-02-tool-session.txt", "evidence/fixture-03-tool2-session.txt"]
+  },
+
+  "tooling_scripts": {
+    "host.mjs": "起隔离宿主，抓 stdout 里带 token 的 URL 写 evidence/<tag>-host.local.json（flags: wx，防覆盖）",
+    "browser-kit.mjs": "Playwright 启动 + 路由白名单 + probe() 一次读全 + TOGGLE_JS（按文案定位被测开关）",
+    "fix-workspace.mjs": "以无 BOM UTF-8 重写 isolated-home/dsh/storages/workspace.json，把 fixture 会话 id 登记进 sessionIds",
+    "dedup-lingshulab.mjs": "评测站 /api/reviews 全量分页拉取 + 本地正则扫描"
+  },
+
+  "dedup": {
+    "checked_at_utc": "2026-10-22T01:17:35Z",
+    "queries": ["dsh-result-only-view", "YEYEYEYESHIFU", "result-only-view", "只看结果", "result only"],
+    "sites": {
+      "review_lingshulab_com": {
+        "method": "GET /api/reviews?page=N&page_size=50 分页拉全量（?q= 服务端不过滤，不能用）",
+        "total_reviews_scanned": 172,
+        "pages": [50, 50, 50, 22],
+        "hits": 0,
+        "evidence": "evidence/dedup-01-lingshulab.txt"
+      },
+      "github_FuRongJun-1999_dsh-bounty": {
+        "method": "GET api.github.com/search/issues?q=repo:FuRongJun-1999/dsh-bounty <term>",
+        "totals_per_query": {
+          "dsh-result-only-view": 11,
+          "result-only-view": 11,
+          "只看结果": 482,
+          "result only": 75,
+          "YEYEYEYESHIFU": 0
+        },
+        "same_plugin_hits_per_query": {
+          "dsh-result-only-view": 0,
+          "result-only-view": 0,
+          "只看结果": 0,
+          "result only": 0,
+          "YEYEYEYESHIFU": 0
+        },
+        "note": "total 是分词匹配的结果（11/482/75 条命中的都是别的插件，如 @local/dsh-memory、dsh-plan-mode-plus、dsh-mnemon、dsh-roleplay-preset），逐条比对标题后同插件重复为 0。",
+        "evidence": "evidence/dedup-02-bounty-github.txt"
+      }
+    },
+    "conclusion": "两站都查清，无同插件同范围重复 → 可写首报。"
+  },
+
+  "boundaries_observed": [
+    "不投稿、不上传、不新建公开仓库、不跟帖、不改任何线上记录",
+    "不改插件源码（插件装在 isolated-home/dsh/profiles/web，发布件原样使用）",
+    "不再派子 agent",
+    "不调用付费模型、不使用真实第三方账号、不读真实密钥或登录态",
+    "只清理自己创建的 5 个宿主进程；同机其他 agent 的 host.mjs 进程未触碰"
+  ]
+}

@@ -1,0 +1,128 @@
+{
+  "utc": "2026-10-22T01:45:46.261Z",
+  "host": {
+    "pid": 5536,
+    "url": "http://127.0.0.1:5462/?token=REDACTED",
+    "profile": "ah",
+    "utc": "2026-10-22T01:42:12.964Z",
+    "env": [
+      "DEEPSEEK_BASE_URL",
+      "DEEPSEEK_API_KEY",
+      "DSH_PERMISSION_MODE"
+    ]
+  },
+  "tests": {
+    "A_composerFocus_Enter": {
+      "panelBefore": [
+        "approval:3"
+      ],
+      "activeBefore": "BODY.",
+      "activeIsEditable": false,
+      "events": [
+        {
+          "t": 5543,
+          "kind": "keydown-capture",
+          "detail": {
+            "key": "Enter",
+            "dp": false,
+            "target": "BODY."
+          }
+        },
+        {
+          "t": 5543,
+          "kind": "click",
+          "detail": {
+            "text": "允许一次"
+          }
+        },
+        {
+          "t": 5551,
+          "kind": "keydown-bubble",
+          "detail": {
+            "key": "Enter",
+            "dp": true,
+            "target": "BODY."
+          }
+        }
+      ],
+      "panelAfter": [
+        "approval:4"
+      ],
+      "composerText": null
+    },
+    "B_composerFocus_Esc": {
+      "panelBefore": [
+        "approval:4"
+      ],
+      "activeBefore": "BODY.",
+      "activeIsEditable": false,
+      "events": [
+        {
+          "t": 6620,
+          "kind": "keydown-capture",
+          "detail": {
+            "key": "Escape",
+            "dp": false,
+            "target": "BODY."
+          }
+        },
+        {
+          "t": 6620,
+          "kind": "click",
+          "detail": {
+            "text": "拒绝"
+          }
+        },
+        {
+          "t": 6629,
+          "kind": "keydown-bubble",
+          "detail": {
+            "key": "Escape",
+            "dp": true,
+            "target": "BODY."
+          }
+        }
+      ],
+      "panelAfter": [
+        "approval:5"
+      ]
+    },
+    "C_bodyFocus_Enter_control": {
+      "panelBefore": [
+        "approval:5"
+      ],
+      "activeBefore": "BODY.",
+      "events": [
+        {
+          "t": 7718,
+          "kind": "keydown-capture",
+          "detail": {
+            "key": "Enter",
+            "dp": false,
+            "target": "BODY."
+          }
+        },
+        {
+          "t": 7718,
+          "kind": "click",
+          "detail": {
+            "text": "允许一次"
+          }
+        },
+        {
+          "t": 7726,
+          "kind": "keydown-bubble",
+          "detail": {
+            "key": "Enter",
+            "dp": true,
+            "target": "BODY."
+          }
+        }
+      ],
+      "panelAfter": []
+    }
+  },
+  "failures": [],
+  "errors": [],
+  "consoleLog": []
+}

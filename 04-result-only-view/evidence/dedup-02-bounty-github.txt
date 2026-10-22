@@ -1,0 +1,114 @@
+query_time_utc=2026-10-22T01:17:35Z
+note=api.github.com/search/issues, repo:FuRongJun-1999/dsh-bounty
+QUERY [dsh-result-only-view] total=11
+  HIT #1135 【测评报告】dsh-plan-mode-plus 0.2.0（shuxidemosheng）深度测评 · 12 件缺陷：3 条可达的**只读保证绕过**（工具描述谎报拦截范围 / 提示词要求用能写的 subagent / subagent+MCP 全放行）
+  HIT #662 【测评报告】dsh-roleplay-preset（oliblue-evan）体验快测（角色扮演 · 方法试验）：按 README 装进 .agent-presets/ 在当前宿主 0.2 上根本不出现；按宿主迁移步骤搬成 bundle 又因 persona 用旧键 text: 被标 broken；只改一个键名后 system 与原文逐字一致（2972 字），记忆库跨会话 / 重启可读回
+  HIT #1201 [intake 输入] 【测评报告】dsh-evolve-in-git 0.6.3 安全快测（Git 记忆/进化插件 · 直驱真实 lib · 本地隔离）：git 选项注入写任意文件、auth.sshCommand 任意命令并带出宿主密钥、/api/evolve-git/config 无宿主鉴权、远端 URL 外带 GITHUB_TOKEN（P1）
+  HIT #647 【测评报告】dsh_workflow（icetomoyo）体验快测（工作流 · 方法试验，附 0.1.7 上游 #5 复现）：dsh 0.2.0-rc.2 拒装、豁免后自带 179/179 绿；查出 4 个缺陷：宿主崩溃后 run 永远 running、wf.parallel([]) 让 run 失败、同名保存后静默不可达、暂停期间墙钟照计被超时杀掉
+  HIT #1341 [intake 输入] dsh-pilot v0.5.14 安全测评：`%TEMP%` 里公开源码哈希命名的缓存 DLL 被无条件 `Add-Type -Path` 加载并调用——同用户写入即在该插件的常驻 PowerShell 工人（真键鼠效水器）里执行代码
+  HIT #823 [intake 输入] dsh-mnemon 0.5.31 大型插件测评：本地组件、状态重建与备份边界；50 条有效受控判据及未验范围
+  HIT #667 【测评报告】dsh-track（fakechris）体验快测（工作流 · 方法试验）：dsh 0.2.0-rc.2 上装载、激活、持久化可用，自带 290/292 绿（2 红 + 1 套加载失败均缺作者本机会话日志）；实跑查出 4 个缺陷（/api/track/* 绕过宿主鉴权、并发建任务编号全撞成 INV-1、并发证据丢写、相似度阈值可设 0 后重启把所有任务自动取消）
+  HIT #1462 [intake 输入] 【测评报告】@local/dsh-memory 0.5.2 安全快测（GIN0076/cross-session-memory · 跨会话记忆 · 直驱真实模块＋真实宿主 session-query · 本地隔离）：mem_recall 会话检索不带工作区过滤，跨工作区回吐他人会话原文（P1）
+  HIT #1140 【测评报告】dsh-mnemon 0.5.32（omdsh-dev）深度安全审计 · 12 件问题（0 P0 / 1 P1 / 5 P2 / 6 P3）+ 6 项正面发现：默认零外发、子代理隔离四道 fail-closed、路径边界显式校验
+  HIT #661 【测评报告】dsh-proof（EvilIrving）体验快测（工作流 · 方法试验）：dsh 0.2.0-rc.2 拒装（peer `^0.1.0-rc.6`），强装后默认配置下验证者一次也起不来（`maxDepth: 0`，只记 warn、静默 fail-open）；补齐后又撞默认 deny 名单与废弃 source kind；验证者看不到任务、仍可经 workflow 写文件
+  HIT #1345 [intake 输入] 【测评报告】dsh-genshin-account 0.2.1（插件页）/ 0.19.0（HEAD）安全快测（原神账号 · 米游社凭据 · 直驱真实模块 · 离线隔离）：插件 HTTP 路由不经宿主鉴权、无 Origin 即放行，本机进程或 DNS 重绑定可改写进模型的数据、用用户米游社会话发请求并混入他人抽卡记录；验证页把第三方 gt.js 拉进 DSH 同源且删掉 CSP（P2）
+  same_plugin_hits=0
+QUERY [YEYEYEYESHIFU] total=0
+  same_plugin_hits=0
+QUERY [result-only-view] total=11
+  HIT #823 [intake 输入] dsh-mnemon 0.5.31 大型插件测评：本地组件、状态重建与备份边界；50 条有效受控判据及未验范围
+  HIT #1135 【测评报告】dsh-plan-mode-plus 0.2.0（shuxidemosheng）深度测评 · 12 件缺陷：3 条可达的**只读保证绕过**（工具描述谎报拦截范围 / 提示词要求用能写的 subagent / subagent+MCP 全放行）
+  HIT #1140 【测评报告】dsh-mnemon 0.5.32（omdsh-dev）深度安全审计 · 12 件问题（0 P0 / 1 P1 / 5 P2 / 6 P3）+ 6 项正面发现：默认零外发、子代理隔离四道 fail-closed、路径边界显式校验
+  HIT #662 【测评报告】dsh-roleplay-preset（oliblue-evan）体验快测（角色扮演 · 方法试验）：按 README 装进 .agent-presets/ 在当前宿主 0.2 上根本不出现；按宿主迁移步骤搬成 bundle 又因 persona 用旧键 text: 被标 broken；只改一个键名后 system 与原文逐字一致（2972 字），记忆库跨会话 / 重启可读回
+  HIT #1341 [intake 输入] dsh-pilot v0.5.14 安全测评：`%TEMP%` 里公开源码哈希命名的缓存 DLL 被无条件 `Add-Type -Path` 加载并调用——同用户写入即在该插件的常驻 PowerShell 工人（真键鼠效水器）里执行代码
+  HIT #1201 [intake 输入] 【测评报告】dsh-evolve-in-git 0.6.3 安全快测（Git 记忆/进化插件 · 直驱真实 lib · 本地隔离）：git 选项注入写任意文件、auth.sshCommand 任意命令并带出宿主密钥、/api/evolve-git/config 无宿主鉴权、远端 URL 外带 GITHUB_TOKEN（P1）
+  HIT #647 【测评报告】dsh_workflow（icetomoyo）体验快测（工作流 · 方法试验，附 0.1.7 上游 #5 复现）：dsh 0.2.0-rc.2 拒装、豁免后自带 179/179 绿；查出 4 个缺陷：宿主崩溃后 run 永远 running、wf.parallel([]) 让 run 失败、同名保存后静默不可达、暂停期间墙钟照计被超时杀掉
+  HIT #667 【测评报告】dsh-track（fakechris）体验快测（工作流 · 方法试验）：dsh 0.2.0-rc.2 上装载、激活、持久化可用，自带 290/292 绿（2 红 + 1 套加载失败均缺作者本机会话日志）；实跑查出 4 个缺陷（/api/track/* 绕过宿主鉴权、并发建任务编号全撞成 INV-1、并发证据丢写、相似度阈值可设 0 后重启把所有任务自动取消）
+  HIT #1462 [intake 输入] 【测评报告】@local/dsh-memory 0.5.2 安全快测（GIN0076/cross-session-memory · 跨会话记忆 · 直驱真实模块＋真实宿主 session-query · 本地隔离）：mem_recall 会话检索不带工作区过滤，跨工作区回吐他人会话原文（P1）
+  HIT #661 【测评报告】dsh-proof（EvilIrving）体验快测（工作流 · 方法试验）：dsh 0.2.0-rc.2 拒装（peer `^0.1.0-rc.6`），强装后默认配置下验证者一次也起不来（`maxDepth: 0`，只记 warn、静默 fail-open）；补齐后又撞默认 deny 名单与废弃 source kind；验证者看不到任务、仍可经 workflow 写文件
+  HIT #1345 [intake 输入] 【测评报告】dsh-genshin-account 0.2.1（插件页）/ 0.19.0（HEAD）安全快测（原神账号 · 米游社凭据 · 直驱真实模块 · 离线隔离）：插件 HTTP 路由不经宿主鉴权、无 Origin 即放行，本机进程或 DNS 重绑定可改写进模型的数据、用用户米游社会话发请求并混入他人抽卡记录；验证页把第三方 gt.js 拉进 DSH 同源且删掉 CSP（P2）
+  same_plugin_hits=0
+QUERY [只看结果] total=482
+  HIT #1482 [intake 输入] 【测评报告】dsh-slack 0.3.4 能力试跑（本地假 Slack · 五状态=还说不准）：8 项试跑 7 项符合；频道超过 20 页只取前 20 页且无提醒
+  HIT #1481 [intake 输入] 【测评报告】@sunwindy/dsh-tool-baixiaochun 0.2.1 标准测评（配对 50 次 · 五状态=没啥差别）：装与不装都 15/25；npm 装法把依赖拖低一代、profile 起不来
+  HIT #1470 深度审计 · @honcho-ai/dsh-honcho 0.1.2（等级三）
+  HIT #1472 [intake 输入] 【测评报告】@hyzyn/dsh-docker 0.13.3 标准测评（16 任务 × 3 轮配对 · 五状态=没啥差别）：两边都 48/48 全对，但调用少一半、返回数据 1/6；事件长窗口返 0 条（P2）
+  HIT #1469 [intake 输入] 【测评报告】dsh-engramory-recall 0.21.0 Windows 增量：大小写路径绕过写闸（P2）；硬链接/连接点变体与测试套件 22 红
+  HIT #1474 深度审计 · dsh-bili-scroll 0.1.7（等级三）
+  HIT #319 feat(tools): 加「静默回退」检查器 —— 把《运行手册》§二-8 的人工步骤做成可跑脚本（§七 点名要求）
+  HIT #1416 fix(guard): tree.change-scope 只判越界，不判 missing —— 该断言在 main 上永远红
+  HIT #1413 fix(rescore): 认「维护者直接裁决」档 —— 合法裁决不再被判成 unknown rule
+  HIT #291 ci(bounty-board): 覆盖面扩到全部 tests/test_*.py ＋ 上调变异下界 45→58
+  HIT #71 [悬赏] 灵枢生态宣传：材料 + 渠道 + 触达读数（可核验，不写「效果好」）
+  HIT #1473 深度审计 · dsh-orb 0.1.9（等级三）
+  HIT #303 fix(bounty_list): 真源 `items` 元素**非对象**不再崩（`--check` 闸从此拿得到结论）
+  HIT #383 test(check_plan): 修掉两处已失效的变异锚点，反面证明重新生效
+  HIT #1419 fix(harness): runner 的 relpath 跨盘符不再崩 —— Windows 上 impl 在临时盘、仓在另一盘是常态
+  HIT #1452 `dsh-memory` 的 `md_cg/reach.narrow(..., context, ...)`：收下**上下文**却不读 ⇒ 收窄是恒等变换，「按场景收窄」不存在（结果偏多而结构正常）
+  HIT #1238 [intake 输入]【测评报告】dsh-engramory-recall 0.21.0 第四版：这道题终于能判了，装上有用（不装 3/10，装 12/12）
+  HIT #583 dsh-mobile-apk: 渲染冻结看门狗的自愈标志从不复位 —— 第二次冻结起只提示不动作
+  HIT #879 【测评报告】工作流插件上下文税 · 第 14 批（自动评测流水线）：1 件实测
+  HIT #1414 深度审计 · qmd-autosearch 0.1.2（等级三）
+  HIT #1300 深度审计 · dsh-memory-vault 0.1.5（等级三）
+  HIT #1430 `lingshu/core/core.py` 的**三级终裁** `_terminal_judgment(claim, verification, impact)` 收下 `verification` 却**一次不读** ⇒ 验证 fail 与 pass 的终裁完全一样（同文件 `#130` 刚修过「已置位、无人读」）
+  HIT #315 feat(bounty_board): 加 `--products-check` —— 四个导出产物此前**只写不校验**（源改了产物静默陈旧）
+  HIT #317 fix(rule-text): `STALE_RE` 补数字边界 —— 旧式**分不清 −1 与 −12/−10**（含自纠说明）
+  HIT #280 ci(bounty-board): 把状态机守卫接进 CI（正向断言 ＋ 定点变异 ＋ 跑完不许搞脏）
+  HIT #1363 [intake 输入] 【测评报告】@dsh-external/dsh-super-injector 0.3.5 体验快测（实装件 · 运行时注入器 · 可用性依赖部署形态）
+  HIT #1308 深度审计 · dsh-cite 0.5.0（等级三）
+  HIT #587 dsh-mobile-apk: 升级安全闸 `snapshotFresh()` 只装在 Activity 一条路上
+  HIT #940 【测评报告】工作流插件上下文税 · 第 19 批（自动评测流水线）：2 件实测
+  HIT #1426 [intake 输入] dsh-sticky-note 0.6.0：自动保存把刚编辑的历史便签写回旧草稿，预览态 Esc 也无法退出
+  HIT #1438 `dsh-memory` 的 `md_cg/audit._fn(..., payload, ctx, ...)`：**载荷与上下文两个输入都不读** ⇒ 这个审计函数对审计结论零影响，却占着一个调用位
+  HIT #1091 深度审计 · dsh-cite 0.5.0（等级三）
+  HIT #937 【测评报告】工作流插件上下文税 · 第 19 批（自动评测流水线）：2 件实测
+  HIT #1241 [intake 输入]【测评报告】dsh-engramory-recall 0.21.0 第五版：第二道题没有差异，优势只出现在一道题上
+  HIT #1244 [intake 输入] 【测评报告】dsh-learn-skills 2.2.9：名字带数字生成无效预设、安装失败原因丢失、内部模型调用全失败（P2×3、P3×1）
+  HIT #886 `verify.py` 的价值观/防注入闸在 **LLM 侧任何失败路径上都判通过** —— 实测 4/4 放行一条提示注入
+  HIT #1277 `verify._fallback_verify` **伪造三项检查**：关键词命中 ≥2 就把 `zero_law`/`existence_priority` 写成 True，而 `structure_conflict` 在**两个分支里恒为 True**（通过分支因此自相矛盾）
+  HIT #936 【测评报告】工作流插件上下文税 · 第 19 批（自动评测流水线）：3 件实测
+  HIT #875 【测评报告】工作流插件上下文税 · 第 12 批（自动评测流水线）：3 件实测
+  HIT #880 【测评报告】工作流插件上下文税 · 第 16 批（自动评测流水线）：3 件实测
+  same_plugin_hits=0
+QUERY [result only] total=75
+  HIT #1110 `self_loop._heartbeat()`：`heartbeat_check()` 返回**非空非 dict** 时 `result.get` 抛 AttributeError ⇒ **整个心跳中断**（版本检测与 `_iteration_count` 永久跳过，却被记成「主循环异常」）
+  HIT #996 【intake 输入】OpenBitFun `dsh-openbitfun` 0.1.0 短评：initialize 仍用协议 v1，v6 主机首跳 `-32602`
+  HIT #120 【贡献申报】ChineseProgramming：`update_failure(error)` 的 `error` 被丢弃（失败原因不可诊断，trust 下降无归因）
+  HIT #781 【intake 输入】dsh-memory：scoreboard._obj 把非映射 spec/result 静默归一为 {} —— 文案许诺的 bad_files 计数在实现里不存在，result 一路在 build() 全 9 键上与「文件缺失」不可分（上游 #511）
+  HIT #788 提案：UMB v0.1 大一统零模型检索基准（12 集 / 冻结清单 / 统一跑器），申请悬赏条目
+  HIT #836 [intake 输入] dsh-genui 0.12.0 深度测评：真实浏览器 action 回路、双恢复与异常输入
+  HIT #34 [PR 评估][hard] lingshu #460：稀疏推断优化与 Unified 关系生命周期修复（已修复，待人审）
+  HIT #1135 【测评报告】dsh-plan-mode-plus 0.2.0（shuxidemosheng）深度测评 · 12 件缺陷：3 条可达的**只读保证绕过**（工具描述谎报拦截范围 / 提示词要求用能写的 subagent / subagent+MCP 全放行）
+  HIT #1377 【intake 输入】@adenxie/dsh-vercel@0.4.0 插件测评：五维读数（5/5 维）＋可复跑证据
+  HIT #109 【贡献申报】lingshu：四步制衡终裁的 deviation_threshold 是幻影旋钮（零读取点 / 不钳制 / 行为不变 / 却写不可遗忘结构层记录）
+  HIT #537 【intake 输入】ChineseProgramming（`chinese_programming`）：未定义函数被调：只记 warning 就 `return` ⇒ **实参滞留在栈上**，产物残缺且 VM 裸穿 `IndexError`
+  HIT #1298 [intake 输入] dsh-wechat-bridge 0.9.1：15 条面板路由零来源校验，跨站 `POST /trust/add` 即可把任意微信号写入信任集，之后该号可驱动 agent
+  HIT #1361 fix(bounty-pm): 验收原文补上「先导出快照」前置 —— 该命令在干净检出上原本必 rc=1
+  HIT #888 `/osi/*` 路由**同时接受 GET**，而 `handle_osi_request` **收了 `method` 却从不检查** ⇒ `GET /osi/store` 会写记忆、`GET /osi/decay` 会衰减
+  HIT #1339 [intake 输入] dsh-ssh-ops v0.4.1 安全测评：PostgreSQL `DO $$ … $$` 绕过破坏性 SQL 闸——`db_execute`/`db_tx_execute` 把内嵌 `DROP TABLE` 原样送进驱动，无备份、无隔离改名；`db_run` 对 Redis 零白名单
+  HIT #92 【贡献申报】ChineseProgramming 编译器：`知足` 缺数值守卫致**裸崩 ValueError**（同函数内 `德` 有守卫；助记符×后端普查 33 个机械发现）
+  HIT #21 交付：dsh-memory P0 缺陷审计——一个 .md 的 frontmatter 手改漏一个括号，整库打不开、MCP 服务起不来（修前 8/18 → 参考补丁 18/18，5 条定点变异各自转红）
+  HIT #20 交付：dsh-memory P0 缺陷审计——link/import 用未清洗的 pack_id 拼归档路径，非管理员令牌可覆写 _keys.json / _tokens.json（修前 7/12 → 参考补丁 12/12，5 条定点变异各自转红）
+  HIT #1058 [intake 输入] 【测评报告】dsh-minimal-ptc 0.5.6（stardustlc）安全快测（极简提示词 + PTC 编排 · 方法试验）：`complete: true` 人格吞掉宿主为本预设挂的全部工具提示段，计划模式指令不进 system prompt（P1）
+  HIT #146 【贡献申报】hive-memory-bench #15 #16 #17：判分链三条量具失效（P0×3）——自报 condition 绕过结论轴、conclusion/answer 字段口径相反、判官输出不绑答卷哈希；附复现读数与脚本
+  HIT #572 【测评报告】yuiju @29d9d23 体验快测（能力域 · 方法试验）：Linux 装得上、type-check/lint 全绿；自带单测仅 1 个，4 个包 test 脚本无测试文件 RC=1；无模型规则试跑 18 组全出结果；LLM 评测 10 场景跑完（$0.0119），1 个场景夹具使任何行动都无法执行
+  HIT #1372 【intake 输入】@a9i5k4/dsh-ark9canvas@0.4.1 插件测评：五维读数（4/5 维）＋可复跑证据
+  HIT #19 交付：dsh-memory P0 缺陷审计——睡眠周期从冻结的首轮基线 fork 影子，把旧副本写回主库，静默回滚之后的记忆编辑且不留备份（修前 7/16 → 参考补丁 16/16，4 条定点变异各自转红）
+  HIT #154 【intake 功能提案】dsh-memory：情境约束下的路径解释证据保真（参考实现与外部标注迁移测试，未接生产）
+  HIT #45 [Bug][P1] `/dispute` 理由不截断地回显：一条 262144 字符的 `/dispute` 让机器人回评被 GitHub 拒（422），但标签已先改成 disputed、标记仍是 claimed——持有者借此永久躲开超时扣分、绕过并发上限，之后还能照常交付结算（真机确认）
+  HIT #802 [intake 输入] dsh-daily-brief 0.1.0 体验快测：link 加载失败、真实会话统计全零（含非空 Session 反例）
+  HIT #731 【贡献申报】dsh-bench #29 #30 #31（基线 38e0188）：P0 报告的区间、分数、样本量、成本、核验受限状态都不与所引证据对账（证据判「帮倒忙」、报告写「真有用」，照样进榜、推荐、进「值得试」；仓库自带 uncertain 示例本身就对不上）；P1 7 处（其中 3 处是 #25/#27 修复引入的回归）；另回报本人 #17 修复未闭环 1 处（申请并入）
+  HIT #160 【贡献验收申请】[hard／B建议] rinDBeans：lingshu 第二三批真实位姿、关系、像素反馈与预测行动
+  HIT #1008 [intake 输入] 【测评报告】dsh-dream 0.10.0 安全快测（反思记忆 · 确定性层审计 · 方法试验）：模型可自行打开审阅闸并把会话注入文本变成跨项目长期记忆（P1）
+  HIT #1385 【intake 输入】@1agents/acp-service@0.8.1 插件测评：五维读数（4/5 维）＋可复跑证据
+  HIT #87 交付：dsh-memory P1 缺陷审计——review_cli accept 以 designer-cli 身份重新封装 private 记忆，写入者自己从此读不到（修前 8/15 → 参考补丁 15/15，6 条定点变异各自转红）
+  HIT #42 交付：dsh-memory P0 缺陷审计——声明为 private 的记忆被同构聚合（writelimit CONVERGE）以明文并入更早的 internal 节点，无令牌访客即可读到，_writelimit.json 另存 private 正文骨架（修前 8/16 → 参考补丁 16/16，9 条定点变异各自转红）
+  HIT #185 【贡献申报】lingshu #1：verify() 把模型自身节点当外部观测 ⇒ 未观测假设自证命中，命中率被模型新增结构污染（缺陷报告；修复 b5f480c 由维护者完成）
+  HIT #922 [intake 输入][security/移动网关] 硬编码全局日志路径且未认证源可注入换行伪造日志（P3）＋directory 面缺少 workspace 约束（P4）＋WebSocket upgrade 无 Origin 纵深（P4）＋pairingCode 绕过 allowQueryToken 门控（P4）
+  HIT #86 交付：dsh-memory P1 缺陷审计——睡眠周期的归纳步骤把 restricted 记忆的人名与条件词写进不带密级的 internal 概念节点，访客与 record/output 令牌可读；手动归纳、情景重构落库同一出口（修前 7/17 → 参考补丁 17/17，11 条定点变异各自转红）
+  HIT #23 交付：dsh-memory P0 缺陷审计——各端 MCP 模板在用户打开的项目目录里以 `python -m` 拉起记忆服务，项目里放一个 json.py 就先于服务以用户身份执行（修前 7/16 → 参考补丁 16/16，6 条定点变异各自转红）
+  HIT #823 [intake 输入] dsh-mnemon 0.5.31 大型插件测评：本地组件、状态重建与备份边界；50 条有效受控判据及未验范围
+  HIT #907 【intake 输入】同一确定性五步管线四实现横评 + 一个工作流插件本体：20 次运行 sha256 全等黄金、插件装得上也编得过，但 12 个 scenario 一个没跑到（工作流 · 方法试验）
+  HIT #67 [悬赏] 横向测评：各家角色扮演 / 记忆系统 / 智能体工作流方案（≥3 家 · 可复跑）
+  HIT #662 【测评报告】dsh-roleplay-preset（oliblue-evan）体验快测（角色扮演 · 方法试验）：按 README 装进 .agent-presets/ 在当前宿主 0.2 上根本不出现；按宿主迁移步骤搬成 bundle 又因 persona 用旧键 text: 被标 broken；只改一个键名后 system 与原文逐字一致（2972 字），记忆库跨会话 / 重启可读回
+  same_plugin_hits=0

@@ -1,0 +1,49 @@
+{
+  "utc": "2026-10-22T01:47:10.178Z",
+  "site": {
+    "lingshulab": {
+      "reviewsTotal": 172,
+      "reviewsFetched": 172,
+      "pluginsTotal": 133,
+      "pluginsFetched": 133,
+      "reviewHits": [],
+      "pluginHits": []
+    },
+    "github": {
+      "repo": "FuRongJun-1999/dsh-bounty",
+      "queries": [
+        {
+          "q": "dsh-approval-hotkeys",
+          "status": 200,
+          "total": 0,
+          "items": []
+        },
+        {
+          "q": "approval-hotkeys",
+          "status": 200,
+          "total": 0,
+          "items": []
+        },
+        {
+          "q": "SiriLee",
+          "status": 200,
+          "total": 1,
+          "items": [
+            {
+              "number": 987,
+              "title": "[intake 输入] 【测评报告】dsh-edit-approval 0.5.0 安全快测：默认只拦 write/edit，bash 门默认关闭、run_code/pwsh/str_replace_editor 不在名单，审批可绕（P1）",
+              "state": "closed",
+              "url": "https://github.com/FuRongJun-1999/dsh-bounty/issues/987"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "keywords": [
+    "dsh-approval-hotkeys",
+    "approval-hotkeys",
+    "SiriLee",
+    "sirilee"
+  ]
+}

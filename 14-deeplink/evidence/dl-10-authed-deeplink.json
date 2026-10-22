@@ -1,0 +1,307 @@
+{
+  "host": "http://127.0.0.1:2690",
+  "cases": [
+    {
+      "id": "D1-session",
+      "path": "/?session=sess-dl-alpha-two",
+      "status": 200,
+      "cookieNames": [
+        "dsh-auth-giYuHCszfPtQK0b_Tu8XjRpYiCDYK5tejWmbDUBIy74"
+      ],
+      "first": {
+        "href": "http://127.0.0.1:2690/",
+        "search": "",
+        "selectedKey": "session:session-e9ea570e-d88f-4e06-ada9-d954cdb0874b",
+        "selectedText": "新会话",
+        "chatFlowKids": 0,
+        "userRows": 0,
+        "bodyLen": 194,
+        "currentStore": "{\"sessionId\":\"session-e9ea570e-d88f-4e06-ada9-d954cdb0874b\"}",
+        "deeplinkStyle": true
+      },
+      "afterReload": {
+        "href": "http://127.0.0.1:2690/",
+        "search": "",
+        "selectedKey": "session:session-e9ea570e-d88f-4e06-ada9-d954cdb0874b",
+        "selectedText": "新会话",
+        "chatFlowKids": 0,
+        "userRows": 0,
+        "bodyLen": 194,
+        "currentStore": "{\"sessionId\":\"session-e9ea570e-d88f-4e06-ada9-d954cdb0874b\"}",
+        "deeplinkStyle": true
+      },
+      "warns": [
+        "error: [client-store] subscriber failed: TypeError: sessions.open is not a function\n    at onSessionList (http://127.0.0.1:2690/plugins/??@deepseek-ai/dsh-client-ui-open-in-app/client.js,@deepseek-ai/dsh-api-gateway/client.js,@deepseek-ai/dsh-api-"
+      ],
+      "errs": []
+    },
+    {
+      "id": "D2-session-other-ws",
+      "path": "/?session=sess-dl-beta-one",
+      "status": 200,
+      "cookieNames": [
+        "dsh-auth-giYuHCszfPtQK0b_Tu8XjRpYiCDYK5tejWmbDUBIy74"
+      ],
+      "first": {
+        "href": "http://127.0.0.1:2690/",
+        "search": "",
+        "selectedKey": "session:session-e9ea570e-d88f-4e06-ada9-d954cdb0874b",
+        "selectedText": "新会话",
+        "chatFlowKids": 0,
+        "userRows": 0,
+        "bodyLen": 194,
+        "currentStore": "{\"sessionId\":\"session-e9ea570e-d88f-4e06-ada9-d954cdb0874b\"}",
+        "deeplinkStyle": true
+      },
+      "afterReload": {
+        "href": "http://127.0.0.1:2690/",
+        "search": "",
+        "selectedKey": "session:session-e9ea570e-d88f-4e06-ada9-d954cdb0874b",
+        "selectedText": "新会话",
+        "chatFlowKids": 0,
+        "userRows": 0,
+        "bodyLen": 194,
+        "currentStore": "{\"sessionId\":\"session-e9ea570e-d88f-4e06-ada9-d954cdb0874b\"}",
+        "deeplinkStyle": true
+      },
+      "warns": [
+        "error: [client-store] subscriber failed: TypeError: sessions.open is not a function\n    at onSessionList (http://127.0.0.1:2690/plugins/??@deepseek-ai/dsh-client-ui-open-in-app/client.js,@deepseek-ai/dsh-api-gateway/client.js,@deepseek-ai/dsh-api-"
+      ],
+      "errs": []
+    },
+    {
+      "id": "D3-workspace-alpha",
+      "path": "/?workspace=7529e9de-4bfc-4528-92e9-9ea05c755f53",
+      "status": 200,
+      "cookieNames": [
+        "dsh-auth-giYuHCszfPtQK0b_Tu8XjRpYiCDYK5tejWmbDUBIy74"
+      ],
+      "first": {
+        "href": "http://127.0.0.1:2690/",
+        "search": "",
+        "selectedKey": "session:session-e9ea570e-d88f-4e06-ada9-d954cdb0874b",
+        "selectedText": "新会话",
+        "chatFlowKids": 0,
+        "userRows": 0,
+        "bodyLen": 194,
+        "currentStore": "{\"sessionId\":\"session-e9ea570e-d88f-4e06-ada9-d954cdb0874b\"}",
+        "deeplinkStyle": true
+      },
+      "afterReload": {
+        "href": "http://127.0.0.1:2690/",
+        "search": "",
+        "selectedKey": "session:session-e9ea570e-d88f-4e06-ada9-d954cdb0874b",
+        "selectedText": "新会话",
+        "chatFlowKids": 0,
+        "userRows": 0,
+        "bodyLen": 194,
+        "currentStore": "{\"sessionId\":\"session-e9ea570e-d88f-4e06-ada9-d954cdb0874b\"}",
+        "deeplinkStyle": true
+      },
+      "warns": [
+        "error: [workspace-controller] subscriber failed: TypeError: workspaces.connectWorkspace is not a function\n    at onWorkspaceList (http://127.0.0.1:2690/plugins/??@deepseek-ai/dsh-client-ui-open-in-app/client.js,@deepseek-ai/dsh-api-gateway/client."
+      ],
+      "errs": []
+    },
+    {
+      "id": "D4-workspace-beta",
+      "path": "/?workspace=ee73cda6-f6fe-44b6-b772-dabdbafe22e8",
+      "status": 200,
+      "cookieNames": [
+        "dsh-auth-giYuHCszfPtQK0b_Tu8XjRpYiCDYK5tejWmbDUBIy74"
+      ],
+      "first": {
+        "href": "http://127.0.0.1:2690/",
+        "search": "",
+        "selectedKey": "session:session-e9ea570e-d88f-4e06-ada9-d954cdb0874b",
+        "selectedText": "新会话",
+        "chatFlowKids": 0,
+        "userRows": 0,
+        "bodyLen": 194,
+        "currentStore": "{\"sessionId\":\"session-e9ea570e-d88f-4e06-ada9-d954cdb0874b\"}",
+        "deeplinkStyle": true
+      },
+      "afterReload": {
+        "href": "http://127.0.0.1:2690/",
+        "search": "",
+        "selectedKey": "session:session-e9ea570e-d88f-4e06-ada9-d954cdb0874b",
+        "selectedText": "新会话",
+        "chatFlowKids": 0,
+        "userRows": 0,
+        "bodyLen": 194,
+        "currentStore": "{\"sessionId\":\"session-e9ea570e-d88f-4e06-ada9-d954cdb0874b\"}",
+        "deeplinkStyle": true
+      },
+      "warns": [
+        "error: [workspace-controller] subscriber failed: TypeError: workspaces.connectWorkspace is not a function\n    at onWorkspaceList (http://127.0.0.1:2690/plugins/??@deepseek-ai/dsh-client-ui-open-in-app/client.js,@deepseek-ai/dsh-api-gateway/client."
+      ],
+      "errs": []
+    },
+    {
+      "id": "D5-both",
+      "path": "/?session=sess-dl-beta-one&workspace=7529e9de-4bfc-4528-92e9-9ea05c755f53",
+      "status": 200,
+      "cookieNames": [
+        "dsh-auth-giYuHCszfPtQK0b_Tu8XjRpYiCDYK5tejWmbDUBIy74"
+      ],
+      "first": {
+        "href": "http://127.0.0.1:2690/",
+        "search": "",
+        "selectedKey": "session:session-e9ea570e-d88f-4e06-ada9-d954cdb0874b",
+        "selectedText": "新会话",
+        "chatFlowKids": 0,
+        "userRows": 0,
+        "bodyLen": 194,
+        "currentStore": "{\"sessionId\":\"session-e9ea570e-d88f-4e06-ada9-d954cdb0874b\"}",
+        "deeplinkStyle": true
+      },
+      "afterReload": {
+        "href": "http://127.0.0.1:2690/",
+        "search": "",
+        "selectedKey": "session:session-e9ea570e-d88f-4e06-ada9-d954cdb0874b",
+        "selectedText": "新会话",
+        "chatFlowKids": 0,
+        "userRows": 0,
+        "bodyLen": 194,
+        "currentStore": "{\"sessionId\":\"session-e9ea570e-d88f-4e06-ada9-d954cdb0874b\"}",
+        "deeplinkStyle": true
+      },
+      "warns": [
+        "error: [client-store] subscriber failed: TypeError: sessions.open is not a function\n    at onSessionList (http://127.0.0.1:2690/plugins/??@deepseek-ai/dsh-client-ui-open-in-app/client.js,@deepseek-ai/dsh-api-gateway/client.js,@deepseek-ai/dsh-api-"
+      ],
+      "errs": []
+    },
+    {
+      "id": "D6-unknown-session",
+      "path": "/?session=sess-nope",
+      "status": 200,
+      "cookieNames": [
+        "dsh-auth-giYuHCszfPtQK0b_Tu8XjRpYiCDYK5tejWmbDUBIy74"
+      ],
+      "first": {
+        "href": "http://127.0.0.1:2690/",
+        "search": "",
+        "selectedKey": "session:session-e9ea570e-d88f-4e06-ada9-d954cdb0874b",
+        "selectedText": "新会话",
+        "chatFlowKids": 0,
+        "userRows": 0,
+        "bodyLen": 194,
+        "currentStore": "{\"sessionId\":\"session-e9ea570e-d88f-4e06-ada9-d954cdb0874b\"}",
+        "deeplinkStyle": true
+      },
+      "afterReload": {
+        "href": "http://127.0.0.1:2690/",
+        "search": "",
+        "selectedKey": "session:session-e9ea570e-d88f-4e06-ada9-d954cdb0874b",
+        "selectedText": "新会话",
+        "chatFlowKids": 0,
+        "userRows": 0,
+        "bodyLen": 194,
+        "currentStore": "{\"sessionId\":\"session-e9ea570e-d88f-4e06-ada9-d954cdb0874b\"}",
+        "deeplinkStyle": true
+      },
+      "warns": [
+        "warning: [dsh-deeplink] 会话 'sess-nope' 不在会话列表中，忽略深链参数"
+      ],
+      "errs": []
+    },
+    {
+      "id": "D7-unknown-workspace",
+      "path": "/?workspace=00000000-0000-4000-8000-000000000000",
+      "status": 200,
+      "cookieNames": [
+        "dsh-auth-giYuHCszfPtQK0b_Tu8XjRpYiCDYK5tejWmbDUBIy74"
+      ],
+      "first": {
+        "href": "http://127.0.0.1:2690/",
+        "search": "",
+        "selectedKey": "session:session-e9ea570e-d88f-4e06-ada9-d954cdb0874b",
+        "selectedText": "新会话",
+        "chatFlowKids": 0,
+        "userRows": 0,
+        "bodyLen": 194,
+        "currentStore": "{\"sessionId\":\"session-e9ea570e-d88f-4e06-ada9-d954cdb0874b\"}",
+        "deeplinkStyle": true
+      },
+      "afterReload": {
+        "href": "http://127.0.0.1:2690/",
+        "search": "",
+        "selectedKey": "session:session-e9ea570e-d88f-4e06-ada9-d954cdb0874b",
+        "selectedText": "新会话",
+        "chatFlowKids": 0,
+        "userRows": 0,
+        "bodyLen": 194,
+        "currentStore": "{\"sessionId\":\"session-e9ea570e-d88f-4e06-ada9-d954cdb0874b\"}",
+        "deeplinkStyle": true
+      },
+      "warns": [
+        "warning: [dsh-deeplink] 工程 '00000000-0000-4000-8000-000000000000' 不在工程列表中，忽略深链参数"
+      ],
+      "errs": []
+    },
+    {
+      "id": "D8-empty",
+      "path": "/?session=",
+      "status": 200,
+      "cookieNames": [
+        "dsh-auth-giYuHCszfPtQK0b_Tu8XjRpYiCDYK5tejWmbDUBIy74"
+      ],
+      "first": {
+        "href": "http://127.0.0.1:2690/",
+        "search": "",
+        "selectedKey": "session:session-e9ea570e-d88f-4e06-ada9-d954cdb0874b",
+        "selectedText": "新会话",
+        "chatFlowKids": 0,
+        "userRows": 0,
+        "bodyLen": 194,
+        "currentStore": "{\"sessionId\":\"session-e9ea570e-d88f-4e06-ada9-d954cdb0874b\"}",
+        "deeplinkStyle": true
+      },
+      "afterReload": {
+        "href": "http://127.0.0.1:2690/",
+        "search": "",
+        "selectedKey": "session:session-e9ea570e-d88f-4e06-ada9-d954cdb0874b",
+        "selectedText": "新会话",
+        "chatFlowKids": 0,
+        "userRows": 0,
+        "bodyLen": 194,
+        "currentStore": "{\"sessionId\":\"session-e9ea570e-d88f-4e06-ada9-d954cdb0874b\"}",
+        "deeplinkStyle": true
+      },
+      "warns": [],
+      "errs": []
+    },
+    {
+      "id": "D9-no-params",
+      "path": "/",
+      "status": 200,
+      "cookieNames": [
+        "dsh-auth-giYuHCszfPtQK0b_Tu8XjRpYiCDYK5tejWmbDUBIy74"
+      ],
+      "first": {
+        "href": "http://127.0.0.1:2690/",
+        "search": "",
+        "selectedKey": "session:session-e9ea570e-d88f-4e06-ada9-d954cdb0874b",
+        "selectedText": "新会话",
+        "chatFlowKids": 0,
+        "userRows": 0,
+        "bodyLen": 194,
+        "currentStore": "{\"sessionId\":\"session-e9ea570e-d88f-4e06-ada9-d954cdb0874b\"}",
+        "deeplinkStyle": true
+      },
+      "afterReload": {
+        "href": "http://127.0.0.1:2690/",
+        "search": "",
+        "selectedKey": "session:session-e9ea570e-d88f-4e06-ada9-d954cdb0874b",
+        "selectedText": "新会话",
+        "chatFlowKids": 0,
+        "userRows": 0,
+        "bodyLen": 194,
+        "currentStore": "{\"sessionId\":\"session-e9ea570e-d88f-4e06-ada9-d954cdb0874b\"}",
+        "deeplinkStyle": true
+      },
+      "warns": [],
+      "errs": []
+    }
+  ]
+}

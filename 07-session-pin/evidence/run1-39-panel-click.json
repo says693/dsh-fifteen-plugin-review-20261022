@@ -1,0 +1,36 @@
+{
+  "pinA": {
+    "ok": true,
+    "key": "session:session-08fbbad4-a5f0-4e61-8e44-49b911727022"
+  },
+  "pinB": {
+    "ok": true,
+    "key": "session:session-3c8badf3-ce48-4e15-aae2-be9723a30ae1"
+  },
+  "curBefore": "session-6854de43-b6df-467b-a967-80a0bddadba9",
+  "panelRows": [
+    {
+      "title": "写一封给班主任的请假邮件",
+      "id": "session-3c8badf3-ce48-4e15-aae2-be9723a30ae1"
+    },
+    {
+      "title": "把这周的错题整理成表格",
+      "id": "session-36dafaf6-2551-4cb7-a7a0-5a148681f143"
+    }
+  ],
+  "curAfterPanelClick": "session-6854de43-b6df-467b-a967-80a0bddadba9",
+  "selectedAfter": [
+    "session:session-6854de43-b6df-467b-a967-80a0bddadba9"
+  ],
+  "headerBtn": null,
+  "convTitle": "新会话 Ctrl + Alt + N 插件 工作区 默认工作区 新会话 把这周的错题整理成表格 9分钟 写一封给班主任的请假邮件 9分钟 比较两个版本的实验数据差异 9分钟 帮我整理一份关于海洋塑料污 9分钟 已置顶的会话 (2) 设置 探索未至之境 预览版 默认工作区 标准模式 描述你想要构建的内容, / 调用指令, @ 文件或对话 工作区内修改 DeepSeek-V41-Flash High",
+  "errors": [],
+  "console": [
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "utc": "2026-10-22T01:14:18.561Z"
+    }
+  ],
+  "dialogs": []
+}

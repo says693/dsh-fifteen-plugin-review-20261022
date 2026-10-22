@@ -1,0 +1,196 @@
+{
+  "utc": "2026-10-22T01:46:43.014Z",
+  "before": {
+    "label": "before",
+    "rows": [
+      {
+        "text": "默认工作区",
+        "attrs": {
+          "class": "YDXeBa_projectRow",
+          "data-row-key": "workspace:eb42bca0-d9b4-4da5-9148-a83ffbb9a740",
+          "role": "treeitem",
+          "aria-expanded": "false",
+          "draggable": "true"
+        },
+        "kids": 0
+      },
+      {
+        "text": "ts-fixtures",
+        "attrs": {
+          "class": "YDXeBa_projectRow",
+          "data-row-key": "workspace:ws-fixtures-task-status",
+          "role": "treeitem",
+          "aria-expanded": "true",
+          "draggable": "true"
+        },
+        "kids": 0
+      },
+      {
+        "text": "新会话",
+        "attrs": {
+          "data-row-key": "session:session-8edbe7f6-98a0-421b-aa96-32383adfe63e",
+          "class": "YDXeBa_sessionRow YDXeBa_selected",
+          "role": "treeitem",
+          "aria-selected": "true",
+          "draggable": "false"
+        },
+        "kids": 0
+      }
+    ],
+    "sessionish": [
+      {
+        "tag": "DIV",
+        "attrs": {
+          "class": "YDXeBa_projectRow",
+          "data-row-key": "workspace:eb42bca0-d9b4-4da5-9148-a83ffbb9a740",
+          "role": "treeitem",
+          "aria-expanded": "false",
+          "draggable": "true"
+        },
+        "text": "默认工作区"
+      },
+      {
+        "tag": "DIV",
+        "attrs": {
+          "class": "YDXeBa_projectRow",
+          "data-row-key": "workspace:ws-fixtures-task-status",
+          "role": "treeitem",
+          "aria-expanded": "true",
+          "draggable": "true"
+        },
+        "text": "ts-fixtures"
+      },
+      {
+        "tag": "DIV",
+        "attrs": {
+          "data-row-key": "session:session-8edbe7f6-98a0-421b-aa96-32383adfe63e",
+          "class": "YDXeBa_sessionRow YDXeBa_selected",
+          "role": "treeitem",
+          "aria-selected": "true",
+          "draggable": "false"
+        },
+        "text": "新会话"
+      }
+    ],
+    "sidebarText": "新会话\nCtrl\n+\nAlt\n+\nN\n插件\n工作区\n默认工作区\nts-fixtures\n新会话\n设置",
+    "headerText": "",
+    "heroText": ""
+  },
+  "wsRect": {
+    "x": 12,
+    "y": 244,
+    "w": 256,
+    "h": 34
+  },
+  "after": {
+    "label": "after",
+    "rows": [
+      {
+        "text": "默认工作区",
+        "attrs": {
+          "class": "YDXeBa_projectRow",
+          "data-row-key": "workspace:eb42bca0-d9b4-4da5-9148-a83ffbb9a740",
+          "role": "treeitem",
+          "aria-expanded": "false",
+          "draggable": "true"
+        },
+        "kids": 0
+      },
+      {
+        "text": "ts-fixtures",
+        "attrs": {
+          "class": "YDXeBa_projectRow",
+          "data-row-key": "workspace:ws-fixtures-task-status",
+          "role": "treeitem",
+          "aria-expanded": "true",
+          "draggable": "true"
+        },
+        "kids": 0
+      },
+      {
+        "text": "新会话",
+        "attrs": {
+          "data-row-key": "session:session-8edbe7f6-98a0-421b-aa96-32383adfe63e",
+          "class": "YDXeBa_sessionRow YDXeBa_selected",
+          "role": "treeitem",
+          "aria-selected": "true",
+          "draggable": "false"
+        },
+        "kids": 0
+      }
+    ],
+    "sessionish": [
+      {
+        "tag": "DIV",
+        "attrs": {
+          "class": "YDXeBa_projectRow",
+          "data-row-key": "workspace:eb42bca0-d9b4-4da5-9148-a83ffbb9a740",
+          "role": "treeitem",
+          "aria-expanded": "false",
+          "draggable": "true"
+        },
+        "text": "默认工作区"
+      },
+      {
+        "tag": "DIV",
+        "attrs": {
+          "class": "YDXeBa_projectRow",
+          "data-row-key": "workspace:ws-fixtures-task-status",
+          "role": "treeitem",
+          "aria-expanded": "true",
+          "draggable": "true"
+        },
+        "text": "ts-fixtures"
+      },
+      {
+        "tag": "DIV",
+        "attrs": {
+          "data-row-key": "session:session-8edbe7f6-98a0-421b-aa96-32383adfe63e",
+          "class": "YDXeBa_sessionRow YDXeBa_selected",
+          "role": "treeitem",
+          "aria-selected": "true",
+          "draggable": "false"
+        },
+        "text": "新会话"
+      }
+    ],
+    "sidebarText": "新会话\nCtrl\n+\nAlt\n+\nN\n插件\n工作区\n默认工作区\nts-fixtures\n新会话\n设置",
+    "headerText": "",
+    "heroText": ""
+  },
+  "api": [
+    {
+      "p": "/api/workspace/state",
+      "status": 404,
+      "body": "not found"
+    },
+    {
+      "p": "/api/session/list",
+      "status": 404,
+      "body": "not found"
+    },
+    {
+      "p": "/probe-ts/list",
+      "status": 200,
+      "body": "{\"unowned\":[{\"id\":\"probe-1\",\"kind\":\"probe\",\"label\":\"r3-running\",\"status\":\"completed\",\"startedAt\":1792633533194,\"finishedAt\":1792633564392,\"output\":{\"total\":5880,\"earliest\":0}}],\"perAgent\":[{\"id\":\"session-8edbe7f6-98a0-421b-aa96-32383adfe63e\",\"jobs\":[{\"id\":\"probe-1\",\"kind\":\"probe\",\"label\":\"r3-running\",\"status\":\"completed\",\"startedAt\":1792633533194,\"finishedAt\":1792633564392,\"output\":{\"total\":5880,\"earliest\":0}}]}],\"agents\":[{\"id\":\"session-8edbe7f6-98a0-421b-aa96-32383adfe63e\",\"ctor\":\"ReactLoopAgent\"}],\"produced\":{\"probe-1\":5880}}"
+    },
+    {
+      "p": "/plugins/dsh-task-status/tasks",
+      "status": 200,
+      "body": "{\"tasks\":[{\"id\":\"probe-1\",\"kind\":\"probe\",\"label\":\"r3-running\",\"status\":\"completed\",\"startedAt\":1792633533194,\"finishedAt\":1792633564392}]}"
+    }
+  ],
+  "errors": [],
+  "consoleLog": [
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "utc": "2026-10-22T01:47:13.456Z"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "utc": "2026-10-22T01:47:13.456Z"
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "D": {
+    "sessionA": "{\"sessionId\":\"session-3e3fc267-8605-4c27-a075-36ac7514eb43\"}",
+    "entriesAtStart": [
+      "第一条历史：给周记起个开头",
+      "第二条历史：把结尾写暖一点",
+      "第三条历史：再检查一遍错别字"
+    ],
+    "treeitems": [
+      {
+        "text": "默认工作区",
+        "selected": null
+      },
+      {
+        "text": "第一条历史：给周记起个开头\n3分钟",
+        "selected": "true"
+      },
+      {
+        "text": "第一条历史：给周记起个开头\n5分钟",
+        "selected": "false"
+      },
+      {
+        "text": "历史探针第一条\n6分钟",
+        "selected": "false"
+      }
+    ],
+    "afterNewSession": {
+      "session": "{\"sessionId\":\"session-3e3fc267-8605-4c27-a075-36ac7514eb43\"}",
+      "entries": [
+        "第一条历史：给周记起个开头",
+        "第二条历史：把结尾写暖一点",
+        "第三条历史：再检查一遍错别字"
+      ],
+      "treeitems": [
+        {
+          "text": "默认工作区",
+          "selected": null
+        },
+        {
+          "text": "第一条历史：给周记起个开头\n3分钟",
+          "selected": "true"
+        },
+        {
+          "text": "第一条历史：给周记起个开头\n5分钟",
+          "selected": "false"
+        },
+        {
+          "text": "历史探针第一条\n6分钟",
+          "selected": "false"
+        }
+      ]
+    },
+    "afterSendInB": {
+      "session": "{\"sessionId\":\"session-3e3fc267-8605-4c27-a075-36ac7514eb43\"}",
+      "entries": [
+        "第一条历史：给周记起个开头",
+        "第二条历史：把结尾写暖一点",
+        "第三条历史：再检查一遍错别字",
+        "乙会话专属的句子-只在B里发过"
+      ]
+    },
+    "backInA": {
+      "clicked": {
+        "x": 140,
+        "y": 223,
+        "text": "默认工作区"
+      },
+      "session": "{\"sessionId\":\"session-3e3fc267-8605-4c27-a075-36ac7514eb43\"}",
+      "entries": [
+        "第一条历史：给周记起个开头",
+        "第二条历史：把结尾写暖一点",
+        "第三条历史：再检查一遍错别字",
+        "乙会话专属的句子-只在B里发过"
+      ]
+    },
+    "recallInA": [
+      {
+        "step": 1,
+        "text": "乙会话专属的句子-只在B里发过",
+        "caret": 15
+      },
+      {
+        "step": 2,
+        "text": "第三条历史：再检查一遍错别字",
+        "caret": 14
+      },
+      {
+        "step": 3,
+        "text": "第二条历史：把结尾写暖一点",
+        "caret": 13
+      },
+      {
+        "step": 4,
+        "text": "第一条历史：给周记起个开头",
+        "caret": 13
+      }
+    ],
+    "errors": []
+  },
+  "G3": {
+    "oldOrigin": "http://127.0.0.1:5470",
+    "oldPid": 20832,
+    "newOrigin": "http://127.0.0.1:5470",
+    "entriesAfterColdRestart": [
+      "第一条历史：给周记起个开头",
+      "第二条历史：把结尾写暖一点",
+      "第三条历史：再检查一遍错别字",
+      "乙会话专属的句子-只在B里发过"
+    ],
+    "storageKeys": [
+      "dsh.composer-history.insights.v1",
+      "dsh.composer-history.v1"
+    ],
+    "errors": []
+  }
+}

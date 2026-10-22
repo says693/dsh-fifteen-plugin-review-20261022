@@ -1,0 +1,109 @@
+﻿{
+  "name": "@vlln/dsh-task-status",
+  "versions": [
+    "0.3.1"
+  ],
+  "time": {
+    "created": "2026-08-19T16:47:23.897Z",
+    "0.3.1": "2026-08-19T16:47:24.241Z",
+    "modified": "2026-08-19T16:47:24.472Z"
+  },
+  "users": {},
+  "dist-tags": {
+    "latest": "0.3.1"
+  },
+  "_rev": "100-9497dde0e15b3ba0",
+  "_id": "@vlln/dsh-task-status@0.3.1",
+  "_attachments": {},
+  "description": "后台任务状态条——对话输入区上方的任务进度 UI（官方 dock 槽 + Node 轮询路由）",
+  "version": "0.3.1",
+  "type": "module",
+  "main": "lib/index.mjs",
+  "types": "lib/index.d.mts",
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": {
+    ".": {
+      "default": "./lib/index.mjs"
+    },
+    "./client": "./lib/client.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [
+        "@deepseek-ai/dsh-client-runtime",
+        "@deepseek-ai/dsh-client-ui-slots"
+      ],
+      "platform": "web"
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "^4.0.1",
+    "react": "^18.2.0"
+  },
+  "engines": {
+    "node": ">=22.19.0",
+    "dsh": ">=0.1.0-rc.5"
+  },
+  "scripts": {
+    "build": "tsdown --config ./tsdown.config.ts",
+    "prepack": "npm run build"
+  },
+  "devDependencies": {
+    "tsdown": "0.22.2",
+    "typescript": "^5.9.3"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vlln/+process.argv[1]+.git"
+  },
+  "gitHead": "849d73a5a862b332634fc4b987174122bbd953bb",
+  "bugs": {
+    "url": "https://github.com/vlln/+process.argv[1]+/issues"
+  },
+  "homepage": "https://github.com/vlln/+process.argv[1]+#readme",
+  "_nodeVersion": "22.23.1",
+  "_npmVersion": "12.0.2",
+  "dist": {
+    "integrity": "sha512-rNIzEOFRYeCzvxCDWQED8KxWtFXescGvsDDDT4GPM2r9rvoicQIHDnzm6SDCzKE2q/MZx4Sw3M6JBUByFVcYlA==",
+    "shasum": "62c1deb97fc38a9bc2e749ebf6d987ce3c64b935",
+    "tarball": "https://mirrors.cloud.tencent.com/npm/@vlln/dsh-task-status/-/dsh-task-status-0.3.1.tgz",
+    "fileCount": 10,
+    "unpackedSize": 47324,
+    "signatures": [
+      {
+        "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U",
+        "sig": "MEUCIQC5cG4GoBeIVSoZAANaN285Anp/y2PY1Pmh2ODLFcKYjQIgCwg+g1tNOeSHm8gSvZkXBFhoQkNXyczsCNGndcuaiZI="
+      }
+    ]
+  },
+  "_npmUser": "vlln <vlln@qq.com>",
+  "directories": {},
+  "maintainers": [
+    "vlln <vlln@qq.com>"
+  ],
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages-npm-production",
+    "tmp": "tmp/dsh-task-status_0.3.1_1787158044097_0.9016282352044573"
+  },
+  "_hasShrinkwrap": false,
+  "contributors": []
+}
+node.exe : npm notice
+所在位置 行:1 字符: 1
++ & "C:\Program Files/node.exe" "C:\Program Files/node_modules/npm/bin/ ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (npm notice:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+npm notice New major version of npm available! 11.17.0 -> 12.2.1
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.1
+npm notice To update run: npm install -g npm@12.2.1
+npm notice

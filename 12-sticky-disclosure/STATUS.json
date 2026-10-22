@@ -1,0 +1,84 @@
+{
+  "stage": "completed",
+  "state": "completed",
+  "blockers": [],
+  "target": "Han-1413141/dsh-sticky-disclosure@1.0.1",
+  "commit": "d844605756b9d4c2f5e723ee67ea0f65476d7085",
+  "distribution_note": "npm 无发布件，本地目录安装固定提交；未测发布包",
+  "evidence_count": 68,
+  "files": [
+    "PLAN.md",
+    "PROVENANCE.json",
+    "RESULTS.json",
+    "REPORT.md",
+    "ISSUE_DRAFT.md",
+    "SITE_REVIEW.md",
+    "REPRODUCE.md",
+    "STATUS.json",
+    "evidence/"
+  ],
+  "deliverable_paths": {
+    "PLAN.md": "H:/CODEX/fifteen-plugin-reviews-20261022/r3-02-sticky-disclosure/PLAN.md",
+    "PROVENANCE.json": "H:/CODEX/fifteen-plugin-reviews-20261022/r3-02-sticky-disclosure/PROVENANCE.json",
+    "RESULTS.json": "H:/CODEX/fifteen-plugin-reviews-20261022/r3-02-sticky-disclosure/RESULTS.json",
+    "REPORT.md": "H:/CODEX/fifteen-plugin-reviews-20261022/r3-02-sticky-disclosure/REPORT.md",
+    "ISSUE_DRAFT.md": "H:/CODEX/fifteen-plugin-reviews-20261022/r3-02-sticky-disclosure/ISSUE_DRAFT.md",
+    "SITE_REVIEW.md": "H:/CODEX/fifteen-plugin-reviews-20261022/r3-02-sticky-disclosure/SITE_REVIEW.md",
+    "REPRODUCE.md": "H:/CODEX/fifteen-plugin-reviews-20261022/r3-02-sticky-disclosure/REPRODUCE.md",
+    "STATUS.json": "H:/CODEX/fifteen-plugin-reviews-20261022/r3-02-sticky-disclosure/STATUS.json"
+  },
+  "counts": {
+    "checks_total": 25,
+    "confirmed": 18,
+    "uncertain": 2,
+    "untested": 5,
+    "confirmed_defect": 0,
+    "issue_draft_confirmed_items": 0
+  },
+  "site_review": {
+    "cjk_chars": 1491,
+    "range": [800, 1500],
+    "banned_word_hits": 0,
+    "sections": ["它到底做了什么", "我第一次用它", "好用的地方", "让人卡住的地方", "我没办法验证的部分", "给想装的人一句话"]
+  },
+  "issue_draft": {
+    "first_line_marker": "<!-- intake:v1 {\"project\":\"bench\",\"target\":\"Han-1413141/dsh-sticky-disclosure\",\"form\":\"intake\"} -->",
+    "title": "# [intake 输入] dsh-sticky-disclosure 1.0.1：常驻计数与一键收起在官方宿主上按文档工作，未复现出可提交缺陷",
+    "verdict": "未找到可提交缺陷，本文件作复核留档"
+  },
+  "dedup": {
+    "github_bounty_hits": 0,
+    "review_site_hits": 0,
+    "review_site_fully_scanned": false,
+    "first_report_claim": false
+  },
+  "processes": {
+    "host_started_this_pass": false,
+    "browser_started_this_pass": false,
+    "new_probes_written": false,
+    "prior_host_pid": 2024,
+    "prior_host_status": "上一执行者已退出；本轮未起宿主，故未新增进程",
+    "user_gui_touched": false
+  },
+  "boundaries_respected": {
+    "plugin_source_modified": false,
+    "evidence_dir_modified": false,
+    "uploaded": false,
+    "submitted": false,
+    "real_secrets_read": false
+  },
+  "untested_items": [
+    "宿主冷重启后按钮/计数/快捷键偏好（只有一个宿主实例 run01）",
+    "页面打开时追加新轮次，新块是否自动收起",
+    "点击顶部 chip 是否收起原区块",
+    "输入框聚焦 / IME isComposing / AltGr / Esc 取消捕获",
+    "禁用或卸载后 DOM 与样式是否全量还原",
+    "npm 发布包（不存在）"
+  ],
+  "uncertain_items": [
+    "320px 宽下的实际可用性（内容区仅 38px，探针侧栏折叠导致首跑超时）",
+    "刷新后快捷键是否失效（21-probe11-reload.txt 按键与断言不匹配，属探针问题）"
+  ],
+  "generated_at": "2026-10-22T10:25:00+08:00",
+  "generated_by": "evidence-transcription-pass"
+}

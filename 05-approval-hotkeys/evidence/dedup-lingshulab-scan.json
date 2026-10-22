@@ -1,0 +1,76 @@
+{
+  "utc": "2026-10-22T01:33:17.637Z",
+  "site": "https://review.lingshulab.com",
+  "pages": [
+    {
+      "page": 1,
+      "url": "https://review.lingshulab.com/",
+      "status": 200,
+      "bytes": 74181,
+      "slugs": 0,
+      "repeated": false
+    },
+    {
+      "page": 2,
+      "url": "https://review.lingshulab.com/?page=2",
+      "status": 200,
+      "bytes": 74195,
+      "slugs": 0,
+      "repeated": false
+    }
+  ],
+  "matches": [
+    {
+      "keyword": "dsh-approval-hotkeys",
+      "inRootPage": false
+    },
+    {
+      "keyword": "approval-hotkeys",
+      "inRootPage": false
+    },
+    {
+      "keyword": "SiriLee",
+      "inRootPage": false
+    },
+    {
+      "keyword": "sirilee",
+      "inRootPage": false
+    },
+    {
+      "keyword": "审批快捷键",
+      "inRootPage": false
+    }
+  ],
+  "totalSlugs": 0,
+  "slugs": [],
+  "apiTries": [
+    {
+      "path": "/api/reviews",
+      "status": 200,
+      "bytes": 6790,
+      "hasHotkeys": false,
+      "head": "{\"ok\":true,\"data\":{\"items\":[{\"reviewId\":\"01a1612a-1438-704a-a30d-ae5cb660c7d6\",\"pluginId\":\"01a151f5-93bd-7a8c-8fd0-0afdb7b5ac45\",\"sourceKind\":\"community\",\"title\":\"dsh-slack 0.3.4 试跑：频道超过 20 页会少报（判定：还说"
+    },
+    {
+      "path": "/api/plugins",
+      "status": 200,
+      "bytes": 16815,
+      "hasHotkeys": false,
+      "head": "{\"ok\":true,\"data\":{\"items\":[{\"pluginId\":\"01a1607c-43bf-7efd-8cd3-d7bb01f6bc22\",\"pluginPath\":\".\",\"repositoryFullName\":\"IThinkItsaName/dsh-auto-restart\",\"repositoryHtmlUrl\":\"https://github.com/IThinkIts"
+    },
+    {
+      "path": "/api/review",
+      "status": 404,
+      "bytes": 15416,
+      "hasHotkeys": false,
+      "head": "<!DOCTYPE html><html lang=\"zh-CN\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"/><link rel=\"stylesheet\" href=\"/_next/static/chunks/42hy1fj4fvwv4.css\""
+    },
+    {
+      "path": "/api/list",
+      "status": 404,
+      "bytes": 15414,
+      "hasHotkeys": false,
+      "head": "<!DOCTYPE html><html lang=\"zh-CN\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"/><link rel=\"stylesheet\" href=\"/_next/static/chunks/42hy1fj4fvwv4.css\""
+    }
+  ]
+}

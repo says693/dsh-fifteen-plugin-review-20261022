@@ -1,0 +1,92 @@
+{
+  "stage": "completed",
+  "state": "completed",
+  "target": "@vlln/dsh-task-status@0.3.1",
+  "repo": "vlln/dsh-task-status",
+  "source_commit": "3751096f38eeb52df85b2cfae15a239d4197d643",
+  "blockers": [
+    {
+      "id": "B1",
+      "kind": "environment",
+      "severity": "partial",
+      "blocks": ["C28", "V2–V7 的模型侧部分"],
+      "what": "无法在「不调用模型」的前提下造出模型侧产出的真实后台任务。",
+      "why": "宿主 web profile 被 @deepseek-ai/dsh-web-app 的 patch 段把 tool-jobs 置为 disabled:true，组合里没有 job controller，模型侧也没有 run_in_background 通道；而调用模型需要真实 API Key，按边界全程未填。",
+      "workaround": "自建探针 dsh-probe-ts 调用宿主公开 seam ctx.jobs.attachController('probe-ts') 补齐 controller，再 jobs.start(spec) 造进程内合成任务。",
+      "residual_gap": "合成任务与真实任务共用同一个 ctx.jobs 注册表和同一套字段/生命周期，但 kind 是 probe 而不是 bash/agent。故凡只依赖「注册表里有一个 running 任务」的结论（D1/D2/D3）成立；凡依赖「模型侧真实产出」的结论（真实 bash 任务的输出格式能否被 tail 渲染、任务名与命令摘要如何显示）一律不下，V2–V7 的 DOM 层读数因状态条从未渲染记 untested。",
+      "treated_as": "宿主组合选择，不写成插件缺陷"
+    },
+    {
+      "id": "B2",
+      "kind": "environment",
+      "severity": "partial",
+      "blocks": ["C22", "首屏对话流可达性"],
+      "what": "页面停在「添加一个 API Key 开始使用」引导层，两次尝试（点「继续」关掉预览说明、点「新会话」、展开工作区）均未进入可对话状态。",
+      "why": "缺 API Key 的引导遮罩；[data-chat-flow] 只在有消息的会话里产出，空会话（hero 态）不产。",
+      "workaround": "改用合成会话 sess-ts-task 直接落盘 13 条事件，绕开 UI 建会话。",
+      "residual_gap": "C22 归因不一，记 uncertain，不全算插件侧。",
+      "treated_as": "部分归因于环境，不单独写成插件缺陷"
+    },
+    {
+      "id": "B3",
+      "kind": "observation",
+      "severity": "low",
+      "blocks": ["C23", "C24", "C25", "C26"],
+      "what": "四项 DOM 层读数因状态条从未渲染而无法取得。",
+      "why": "下游阻塞于 D2（client 用 [data-chat-flow=\"\"] 判断 Chat 视图，该属性在宿主 0.2.0-rc.2 里不存在，组件直接 return null），没有状态条就没有可展开的行、没有可量的滚动区、没有可观察的刷新重建。",
+      "workaround": "无——只有先修 D2 才可能取得；本轮按边界不改插件源码。",
+      "residual_gap": "C23/C24/C25/C26 一律记 untested，不写成「功能正常」也不写成「功能异常」。",
+      "treated_as": "下游不可测，非新增阻塞"
+    }
+  ],
+  "files": [
+    "PLAN.md",
+    "PROVENANCE.json",
+    "RESULTS.json",
+    "REPORT.md",
+    "ISSUE_DRAFT.md",
+    "SITE_REVIEW.md",
+    "REPRODUCE.md",
+    "STATUS.json"
+  ],
+  "evidence_count": 75,
+  "confirmed_defects": 3,
+  "confirmed_defect_ids": ["D1", "D2", "D3"],
+  "confirmed_defect_detail": [
+    "D1（C10/C11/C12）owned 后台任务被 /tasks 静默丢弃：插件按 snapshot.ownerSession 过滤，宿主投影字段名是 owner，整个 DSH 安装树里 ownerSession 命中 0 个文件。",
+    "D2（C18/C20）状态条在任何会话状态下都不渲染：client 用 [data-chat-flow=\"\"] 判断是否在 Chat 视图，该属性在宿主 0.2.0-rc.2 实测 0 个，组件 return null。",
+    "D3（C13/C14/C29）/output 对 /tasks 里正在 running 的任务返回 404：镜像补丁把官方 jobs.read 返回值从 {chunks, lossy, job} 换成 {text, snapshot}，两字段都不存在，text 恒空、snapshot 恒 undefined；同时打断官方 dsh-tool-jobs 的 renderModelDelta。"
+  ],
+  "note": "口径说明：(1) confirmed_defects 按 RESULTS.json 派生——该文件的 checks 条目只有 id/area/check/expected/actual/status/evidence 七个字段，没有独立的 defect 布尔字段，缺陷由 summary.headline_findings 归并为 D1/D2/D3 三条，对应 confirmed 状态的 C10/C11/C12、C18/C20、C13/C14/C29；C04（npm 元数据 repository/homepage/bugs 三处 URL 写成未求值的模板 +process.argv[1]+）为 confirmed 状态但归为 supplementary finding，未计入缺陷数。(2) evidence_count 写实测值 75（26 json / 33 png / 12 txt / 4 log），与派单口径的 63 不符：目录实际含 75 个文件，多出的部分是 run5 收尾的 run5-12-final-matrix.json 与七张 run5-final-*.png，以及 run6 的 readshape 收尾四个文件；此处按实际数量记录，不以派单数字为准。(3) checks 四态：confirmed 23 / uncertain 2 / untested 4，共 29 条（C27 由 untested 改 confirmed、新增 C29）。(4) 本轮为纯转写：未起宿主、未跑浏览器、未新增探针、未改动 evidence/ 与被测插件源码，REPRODUCE.md 中的所有命令与读数均取自既有 evidence/ 与脚本。",
+  "check_counts": {
+    "total": 29,
+    "confirmed": 23,
+    "uncertain": 2,
+    "untested": 4
+  },
+  "untested_items": ["C23", "C24", "C25", "C26"],
+  "uncertain_items": ["C19", "C22"],
+  "processes": {
+    "self_created_hosts": 6,
+    "all_stopped": true,
+    "stopped_by": "evidence/*-host.local.json 记录的 pid：13516 / 31056 / 35880 / 32704 / 14996 / 32536",
+    "ports": [6481, 3917, 14623, 14928, 8798, 6725],
+    "ports_rechecked_free": true,
+    "user_gui_ports_never_touched": [1241, 2538, 4756],
+    "browser_processes": "每个探针脚本结尾 browser.close()，无残留 headless msedge"
+  },
+  "dedup": {
+    "conclusion": "两站均无同范围重复，可写首报",
+    "checked_at_utc": "2026-10-22T02:12:18Z",
+    "evidence": "evidence/14-dedup.json"
+  },
+  "boundaries_observed": [
+    "不投稿、不上传、不新建公开仓库",
+    "不修改被测插件源码，不动 evidence/",
+    "不调用付费模型、不读真实密钥或真实会话",
+    "绝不访问用户正在使用的 GUI（127.0.0.1 的 1241 / 2538 / 4756）",
+    "宿主端口一律 --port 0",
+    "只清理自己创建的进程，按 evidence/*-host.local.json 的 pid 停，不按进程名批量杀"
+  ],
+  "updated_at": "2026-10-22T10:20:00+08:00"
+}

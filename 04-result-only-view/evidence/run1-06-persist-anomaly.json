@@ -1,0 +1,204 @@
+{
+  "storageProbe": {
+    "key": "dsh.result-only-view.enabled",
+    "controlWrite": "ok",
+    "before": {
+      "pressed": "true",
+      "direct": null,
+      "err": null,
+      "allKeys": [
+        "dsh.sessions.current",
+        "dsh.workspace.view.v5",
+        "dsh.sidebar-right.v1.sess-rov-one",
+        "dsh.sidebar-right.v1.session-5a0b261b-2264-4e16-83c7-237905f1d656"
+      ],
+      "allRovKeys": [],
+      "length": 4
+    },
+    "afterOff": {
+      "pressed": "false",
+      "direct": "0",
+      "err": null,
+      "allKeys": [
+        "dsh.sessions.current",
+        "dsh.workspace.view.v5",
+        "dsh.sidebar-right.v1.sess-rov-one",
+        "dsh.result-only-view.enabled",
+        "dsh.sidebar-right.v1.session-5a0b261b-2264-4e16-83c7-237905f1d656"
+      ],
+      "allRovKeys": [
+        "dsh.result-only-view.enabled"
+      ],
+      "length": 5
+    },
+    "afterOn": {
+      "pressed": "true",
+      "direct": "1",
+      "err": null,
+      "allKeys": [
+        "dsh.sessions.current",
+        "dsh.workspace.view.v5",
+        "dsh.sidebar-right.v1.sess-rov-one",
+        "dsh.result-only-view.enabled",
+        "dsh.sidebar-right.v1.session-5a0b261b-2264-4e16-83c7-237905f1d656"
+      ],
+      "allRovKeys": [
+        "dsh.result-only-view.enabled"
+      ],
+      "length": 5
+    }
+  },
+  "reload": {
+    "beforeReload": {
+      "pressed": "false",
+      "stored": null
+    },
+    "afterReload": {
+      "pressed": "false",
+      "label": "○ 只看结果",
+      "stored": null,
+      "styleTags": 0,
+      "thinkTotal": 1,
+      "thinkDisplayed": 1
+    }
+  },
+  "sessionSwitch": {
+    "before": {
+      "pressed": "false",
+      "session": "{\"sessionId\":\"sess-rov-one\"}"
+    },
+    "afterSwitch": {
+      "pressed": "false",
+      "label": "○ 只看结果",
+      "thinkTotal": 3,
+      "thinkDisplayed": 3
+    },
+    "afterSwitchOn": {
+      "pressed": "false",
+      "thinkTotal": 1,
+      "thinkDisplayed": 1
+    }
+  },
+  "expandThenToggle": {
+    "t0": {
+      "expanded": "true",
+      "display": "flex",
+      "h": 96,
+      "bodyLen": 0
+    },
+    "t1": {
+      "pressed": "true",
+      "expanded": "true",
+      "display": "none",
+      "inline": null,
+      "h": 0,
+      "bodyLen": 0
+    },
+    "t2": {
+      "pressed": "false",
+      "expanded": "true",
+      "display": "flex",
+      "inline": null,
+      "h": 96,
+      "bodyLen": 0,
+      "hasBody": true
+    },
+    "orphans": [],
+    "orphanCount": 0
+  },
+  "rapid": {
+    "start": "false",
+    "finalPressed": "false",
+    "label": "○ 只看结果",
+    "stored": null,
+    "styleTagCount": 0,
+    "styleTagChars": [],
+    "thinkTotal": 1,
+    "thinkDisplayed": 1
+  },
+  "traceCount": {
+    "off": [
+      {
+        "text": "08:00",
+        "hasTrace": false,
+        "traceText": null,
+        "processRows": 0,
+        "processDisplay": []
+      },
+      {
+        "text": "08:00",
+        "hasTrace": false,
+        "traceText": null,
+        "processRows": 0,
+        "processDisplay": []
+      },
+      {
+        "text": "08:00",
+        "hasTrace": false,
+        "traceText": null,
+        "processRows": 0,
+        "processDisplay": []
+      }
+    ],
+    "on": [
+      {
+        "text": "已处理 0 步 · 5s ▸ 08:00",
+        "hasTrace": true,
+        "traceText": "已处理 0 步 · 5s ▸",
+        "processRows": 0,
+        "processDisplay": []
+      },
+      {
+        "text": "已处理 0 步 · 5s ▸ 08:00",
+        "hasTrace": true,
+        "traceText": "已处理 0 步 · 5s ▸",
+        "processRows": 0,
+        "processDisplay": []
+      },
+      {
+        "text": "已处理 0 步 · 5s ▸ 08:00",
+        "hasTrace": true,
+        "traceText": "已处理 0 步 · 5s ▸",
+        "processRows": 0,
+        "processDisplay": []
+      }
+    ],
+    "off2": [
+      {
+        "text": "08:00",
+        "hasTrace": false,
+        "traceText": null,
+        "processRows": 0,
+        "processDisplay": []
+      },
+      {
+        "text": "08:00",
+        "hasTrace": false,
+        "traceText": null,
+        "processRows": 0,
+        "processDisplay": []
+      },
+      {
+        "text": "08:00",
+        "hasTrace": false,
+        "traceText": null,
+        "processRows": 0,
+        "processDisplay": []
+      }
+    ],
+    "anchorSeats": 18
+  },
+  "empty2": {
+    "currentSession": "{\"sessionId\":\"sess-rov-multi\"}",
+    "selectedRow": "session:sess-rov-multi",
+    "togglePresent": true,
+    "label": "○ 只看结果",
+    "pressed": "false",
+    "thinkTotal": 3,
+    "flowItems": 15,
+    "flowTextLen": 561,
+    "bodyText": "新会话 Ctrl + Alt + N 插件 工作区 workspace ROV 多轮对照 1小时 ROV 超长回复 1小时 ROV 单轮长回复 1小时 设置 ROV 多轮对照 对话 轨迹 多轮第 1 轮：先确认第一轮。 08:00 已完成 已完成，用时 5秒 「只看结果」做的事很简单：把过程收起来，只留下你问的和你最后得到的答案。 下面这段代码是用来演示代码块是否完整显示的对照样本： js fun"
+  },
+  "errors": [],
+  "consoleLog": []
+}

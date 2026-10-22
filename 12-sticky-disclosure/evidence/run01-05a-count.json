@@ -1,0 +1,113 @@
+{
+  "label": "run01",
+  "sessionId": "sess-sd-six",
+  "howMany": 4,
+  "steps": [
+    "click 0 failed: TimeoutError: locator.click: Timeout 8000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-conversation-scroll] ",
+    "click 1 failed: TimeoutError: locator.click: Timeout 8000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-conversation-scroll] ",
+    "click 2 failed: TimeoutError: locator.click: Timeout 8000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-conversation-scroll] ",
+    "click 3 failed: TimeoutError: locator.click: Timeout 8000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-conversation-scroll] ",
+    "clicked 0 disclosure rows",
+    "clicked the pill in 19 ms"
+  ],
+  "readings": [
+    {
+      "note": "baseline",
+      "at": "2026-10-22T01:37:58.453Z",
+      "domExpanded": 0,
+      "domRows": 18,
+      "pluginExpanded": 0,
+      "pillCountAttr": "0",
+      "pillCountText": "",
+      "pillText": "全部收起",
+      "pillVisible": true,
+      "pillRect": {
+        "x": 1286,
+        "y": 952,
+        "w": 96,
+        "h": 32,
+        "visible": true
+      },
+      "dockChips": 0
+    },
+    {
+      "note": "baseline",
+      "at": "2026-10-22T01:37:58.453Z",
+      "domExpanded": 0,
+      "domRows": 18,
+      "pluginExpanded": 0,
+      "pillCountAttr": "0",
+      "pillCountText": "",
+      "pillText": "全部收起",
+      "pillVisible": true,
+      "pillRect": {
+        "x": 1286,
+        "y": 952,
+        "w": 96,
+        "h": 32,
+        "visible": true
+      },
+      "dockChips": 0
+    },
+    {
+      "note": "after expanding 0 rows",
+      "at": "2026-10-22T01:38:31.465Z",
+      "domExpanded": 0,
+      "domRows": 18,
+      "pluginExpanded": 0,
+      "pillCountAttr": "0",
+      "pillCountText": "",
+      "pillText": "全部收起",
+      "pillVisible": true,
+      "pillRect": {
+        "x": 1286,
+        "y": 952,
+        "w": 96,
+        "h": 32,
+        "visible": true
+      },
+      "dockChips": 0
+    },
+    {
+      "note": "after pill click",
+      "at": "2026-10-22T01:38:32.741Z",
+      "domExpanded": 0,
+      "domRows": 18,
+      "pluginExpanded": 0,
+      "pillCountAttr": "0",
+      "pillCountText": "",
+      "pillText": "全部收起",
+      "pillVisible": true,
+      "pillRect": {
+        "x": 1286,
+        "y": 952,
+        "w": 96,
+        "h": 32,
+        "visible": true
+      },
+      "dockChips": 0
+    }
+  ],
+  "availableRows": 12,
+  "expandedByClick": 0,
+  "pillBefore": {
+    "x": 1286,
+    "y": 952,
+    "width": 96,
+    "height": 32
+  },
+  "clickMs": 19,
+  "beforePillClick": {
+    "open": 0,
+    "ariaTrue": 0
+  },
+  "errors": [],
+  "console": [
+    {
+      "type": "info",
+      "text": "[dsh-sticky-disclosure] applied v1.0.1 — Ctrl+Alt+C collapses all expanded sections",
+      "utc": "2026-10-22T01:37:51.108Z"
+    }
+  ],
+  "consoleErr": []
+}

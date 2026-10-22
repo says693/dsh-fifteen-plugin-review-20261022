@@ -1,0 +1,22 @@
+dsh: warning: 2 entries did not activate
+typert-loader (@deepseek-ai/dsh-typert-loader): AggregateError: typert-loader: 1 typert contributor(s) failed to register:
+  - typert-loader: @deepseek-ai/dsh-llm invocation "@deepseek-ai/dsh-llm#llm/discoverModels" parameter codec has no create() factory
+    at Object.apply [as callback] (file:///C:/Users/32621/AppData/Roaming/npm/node_modules/@deepseek-ai/dsh/node_modules/@deepseek-ai/dsh-typert-loader/lib/index.js:344:33)
+    at async Fiber._reload (file:///C:/Users/32621/AppData/Roaming/npm/node_modules/@deepseek-ai/dsh/node_modules/@deepseek-ai/cordis/lib/index.js:1356:5)
+    at async Promise.allSettled (index 1)
+    at async Proxy.await (file:///C:/Users/32621/AppData/Roaming/npm/node_modules/@deepseek-ai/dsh/node_modules/@deepseek-ai/cordis-plugin-loader/lib/index.js:158:4)
+    at async boot (file:///C:/Users/32621/AppData/Roaming/npm/node_modules/@deepseek-ai/dsh/node_modules/@deepseek-ai/dsh-app-boot/lib/index.js:4084:3)
+    at async runProfile (file:///C:/Users/32621/AppData/Roaming/npm/node_modules/@deepseek-ai/dsh/lib/profile-boot-BZ2ZjNWi.js:271:15)
+    at async runCli (file:///C:/Users/32621/AppData/Roaming/npm/node_modules/@deepseek-ai/dsh/lib/bin.js:215:5)
+    at async file:///C:/Users/32621/AppData/Roaming/npm/node_modules/@deepseek-ai/dsh/lib/bin.js:252:23
+Error: typert-loader: @deepseek-ai/dsh-llm invocation "@deepseek-ai/dsh-llm#llm/discoverModels" parameter codec has no create() factory
+    at requireStrictCodec (file:///C:/Users/32621/AppData/Roaming/npm/node_modules/@deepseek-ai/dsh/node_modules/@deepseek-ai/dsh-typert-loader/lib/index.js:211:48)
+    at requireInvocation (file:///C:/Users/32621/AppData/Roaming/npm/node_modules/@deepseek-ai/dsh/node_modules/@deepseek-ai/dsh-typert-loader/lib/index.js:185:3)
+    at validateTypertManifest (file:///C:/Users/32621/AppData/Roaming/npm/node_modules/@deepseek-ai/dsh/node_modules/@deepseek-ai/dsh-typert-loader/lib/index.js:116:89)
+    at file:///C:/Users/32621/AppData/Roaming/npm/node_modules/@deepseek-ai/dsh/node_modules/@deepseek-ai/dsh-typert-loader/lib/index.js:273:95
+image-offload (@deepseek-ai/dsh-compaction-image-offload): TypeError: ctx.sessions.registerMessageProjection is not a function
+    at new apply (file:///C:/Users/32621/AppData/Roaming/npm/node_modules/@deepseek-ai/dsh/node_modules/@deepseek-ai/dsh-compaction-image-offload/lib/index.js:140:15)
+    at Fiber.execute (file:///C:/Users/32621/AppData/Roaming/npm/node_modules/@deepseek-ai/dsh/node_modules/@deepseek-ai/cordis/lib/index.js:1068:24)
+    at file:///C:/Users/32621/AppData/Roaming/npm/node_modules/@deepseek-ai/dsh/node_modules/@deepseek-ai/cordis/lib/index.js:1142:34
+    at file:///H:/CODEX/fifteen-plugin-reviews-20261022/r2-04-milestone/isolated-home/profiles/web/#image-offload
+    at file:///H:/CODEX/fifteen-plugin-reviews-20261022/r2-04-milestone/isolated-home/profiles/web/#include

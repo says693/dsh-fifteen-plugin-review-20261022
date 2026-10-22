@@ -1,0 +1,101 @@
+﻿{
+    "sha":  "f0e79f9dc551d108405082d197581c952bd09c73",
+    "node_id":  "C_kwDOUK0DXdoAKGYwZTc5ZjlkYzU1MWQxMDg0MDUwODJkMTk3NTgxYzk1MmJkMDljNzM",
+    "commit":  {
+                   "author":  {
+                                  "name":  "weibaohui",
+                                  "email":  "weibaohui@users.noreply.github.com",
+                                  "date":  "2026-10-09T09:11:14Z"
+                              },
+                   "committer":  {
+                                     "name":  "weibaohui",
+                                     "email":  "weibaohui@users.noreply.github.com",
+                                     "date":  "2026-10-09T09:11:38Z"
+                                 },
+                   "message":  "Add MIT LICENSE file",
+                   "tree":  {
+                                "sha":  "d491d425e8ba5227f1c1b3b56fc4cce01d54585b",
+                                "url":  "https://api.github.com/repos/weibaohui/dsh-settings-ui/git/trees/d491d425e8ba5227f1c1b3b56fc4cce01d54585b"
+                            },
+                   "url":  "https://api.github.com/repos/weibaohui/dsh-settings-ui/git/commits/f0e79f9dc551d108405082d197581c952bd09c73",
+                   "comment_count":  0,
+                   "verification":  {
+                                        "verified":  false,
+                                        "reason":  "unsigned",
+                                        "signature":  null,
+                                        "payload":  null,
+                                        "verified_at":  null
+                                    }
+               },
+    "url":  "https://api.github.com/repos/weibaohui/dsh-settings-ui/commits/f0e79f9dc551d108405082d197581c952bd09c73",
+    "html_url":  "https://github.com/weibaohui/dsh-settings-ui/commit/f0e79f9dc551d108405082d197581c952bd09c73",
+    "comments_url":  "https://api.github.com/repos/weibaohui/dsh-settings-ui/commits/f0e79f9dc551d108405082d197581c952bd09c73/comments",
+    "author":  {
+                   "login":  "weibaohui",
+                   "id":  27042034,
+                   "node_id":  "MDQ6VXNlcjI3MDQyMDM0",
+                   "avatar_url":  "https://avatars.githubusercontent.com/u/27042034?v=4",
+                   "gravatar_id":  "",
+                   "url":  "https://api.github.com/users/weibaohui",
+                   "html_url":  "https://github.com/weibaohui",
+                   "followers_url":  "https://api.github.com/users/weibaohui/followers",
+                   "following_url":  "https://api.github.com/users/weibaohui/following{/other_user}",
+                   "gists_url":  "https://api.github.com/users/weibaohui/gists{/gist_id}",
+                   "starred_url":  "https://api.github.com/users/weibaohui/starred{/owner}{/repo}",
+                   "subscriptions_url":  "https://api.github.com/users/weibaohui/subscriptions",
+                   "organizations_url":  "https://api.github.com/users/weibaohui/orgs",
+                   "repos_url":  "https://api.github.com/users/weibaohui/repos",
+                   "events_url":  "https://api.github.com/users/weibaohui/events{/privacy}",
+                   "received_events_url":  "https://api.github.com/users/weibaohui/received_events",
+                   "type":  "User",
+                   "user_view_type":  "public",
+                   "site_admin":  false
+               },
+    "committer":  {
+                      "login":  "weibaohui",
+                      "id":  27042034,
+                      "node_id":  "MDQ6VXNlcjI3MDQyMDM0",
+                      "avatar_url":  "https://avatars.githubusercontent.com/u/27042034?v=4",
+                      "gravatar_id":  "",
+                      "url":  "https://api.github.com/users/weibaohui",
+                      "html_url":  "https://github.com/weibaohui",
+                      "followers_url":  "https://api.github.com/users/weibaohui/followers",
+                      "following_url":  "https://api.github.com/users/weibaohui/following{/other_user}",
+                      "gists_url":  "https://api.github.com/users/weibaohui/gists{/gist_id}",
+                      "starred_url":  "https://api.github.com/users/weibaohui/starred{/owner}{/repo}",
+                      "subscriptions_url":  "https://api.github.com/users/weibaohui/subscriptions",
+                      "organizations_url":  "https://api.github.com/users/weibaohui/orgs",
+                      "repos_url":  "https://api.github.com/users/weibaohui/repos",
+                      "events_url":  "https://api.github.com/users/weibaohui/events{/privacy}",
+                      "received_events_url":  "https://api.github.com/users/weibaohui/received_events",
+                      "type":  "User",
+                      "user_view_type":  "public",
+                      "site_admin":  false
+                  },
+    "parents":  [
+                    {
+                        "sha":  "51180fdbe96829210bf60c2a1b35f0ccc3e4e4cd",
+                        "url":  "https://api.github.com/repos/weibaohui/dsh-settings-ui/commits/51180fdbe96829210bf60c2a1b35f0ccc3e4e4cd",
+                        "html_url":  "https://github.com/weibaohui/dsh-settings-ui/commit/51180fdbe96829210bf60c2a1b35f0ccc3e4e4cd"
+                    }
+                ],
+    "stats":  {
+                  "total":  21,
+                  "additions":  21,
+                  "deletions":  0
+              },
+    "files":  [
+                  {
+                      "sha":  "4e9ffbe8175850f6e3ce31781bda48084796304f",
+                      "filename":  "LICENSE",
+                      "status":  "added",
+                      "additions":  21,
+                      "deletions":  0,
+                      "changes":  21,
+                      "blob_url":  "https://github.com/weibaohui/dsh-settings-ui/blob/f0e79f9dc551d108405082d197581c952bd09c73/LICENSE",
+                      "raw_url":  "https://github.com/weibaohui/dsh-settings-ui/raw/f0e79f9dc551d108405082d197581c952bd09c73/LICENSE",
+                      "contents_url":  "https://api.github.com/repos/weibaohui/dsh-settings-ui/contents/LICENSE?ref=f0e79f9dc551d108405082d197581c952bd09c73",
+                      "patch":  "@@ -0,0 +1,21 @@\n+MIT License\n+\n+Copyright (c) 2026 weibaohui\n+\n+Permission is hereby granted, free of charge, to any person obtaining a copy\n+of this software and associated documentation files (the \"Software\"), to deal\n+in the Software without restriction, including without limitation the rights\n+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell\n+copies of the Software, and to permit persons to whom the Software is\n+furnished to do so, subject to the following conditions:\n+\n+The above copyright notice and this permission notice shall be included in all\n+copies or substantial portions of the Software.\n+\n+THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\n+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\n+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\n+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\n+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\n+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\n+SOFTWARE."
+                  }
+              ]
+}

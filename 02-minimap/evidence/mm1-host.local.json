@@ -1,0 +1,7 @@
+{
+    "pid":  7468,
+    "url":  "http://127.0.0.1:3938/?token=REDACTED",
+    "profile":  "mmweb",
+    "utc":  "2026-10-22T01:15:46.7686882Z",
+    "note":  "cold restart after full host stop"
+}

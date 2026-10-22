@@ -1,0 +1,62 @@
+{
+  "current": "session-08fbbad4-a5f0-4e61-8e44-49b911727022",
+  "healthAfterBind": [
+    {
+      "t": "写一封给班主任的请假邮件",
+      "health": "",
+      "hlen": 0
+    },
+    {
+      "t": "帮我整理一份关于海洋塑料污",
+      "health": "",
+      "hlen": 0
+    },
+    {
+      "t": "把这周的错题整理成表格",
+      "health": "",
+      "hlen": 0
+    }
+  ],
+  "wsBefore": {
+    "hasBadge": false
+  },
+  "wsAfter": {
+    "cls": "undefined"
+  },
+  "panelWithWs": "会话 ▾ 未分组 (3) 写一封给班主任的请假邮件 ⋯ 帮我整理一份关于海洋塑料污 ⋯ 把这周的错题整理成表格 ⋯",
+  "narrow": {
+    "vw": 820,
+    "docOverflowX": false,
+    "panel": {
+      "x": 510,
+      "y": 48,
+      "w": 298,
+      "h": 147,
+      "right": 808
+    },
+    "nav": {
+      "x": 791,
+      "y": 114,
+      "w": 0,
+      "h": 0,
+      "right": 791
+    },
+    "badgeCount": 0
+  },
+  "searchUi": {
+    "inputs": [
+      {
+        "ph": "搜索会话名称",
+        "val": "",
+        "rect": {
+          "x": 41,
+          "y": 174,
+          "w": 196
+        }
+      }
+    ]
+  },
+  "errors": [],
+  "console": [],
+  "dialogs": []
+}

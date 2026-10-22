@@ -1,0 +1,277 @@
+﻿{
+  "name": "dsh-session-pin",
+  "versions": [
+    "0.3.0",
+    "0.3.1",
+    "0.4.0",
+    "0.4.1",
+    "0.4.2",
+    "0.4.3",
+    "0.5.0",
+    "0.6.0",
+    "0.6.1",
+    "0.7.0",
+    "0.7.1",
+    "0.7.2",
+    "0.7.3",
+    "0.7.4",
+    "0.7.5",
+    "0.7.6",
+    "0.7.7",
+    "0.7.8",
+    "0.7.9",
+    "0.7.10",
+    "0.7.11",
+    "0.7.13",
+    "0.7.14",
+    "0.7.15",
+    "0.7.16",
+    "0.7.17",
+    "0.7.18",
+    "0.7.19"
+  ],
+  "time": {
+    "created": "2026-08-16T08:58:55.818Z",
+    "modified": "2026-10-05T16:34:33.389Z",
+    "0.3.0": "2026-08-16T08:58:56.134Z",
+    "0.3.1": "2026-08-16T09:51:53.634Z",
+    "0.4.0": "2026-08-16T16:47:50.947Z",
+    "0.4.1": "2026-08-19T05:16:52.686Z",
+    "0.4.2": "2026-08-21T05:56:22.272Z",
+    "0.4.3": "2026-08-22T16:30:05.003Z",
+    "0.5.0": "2026-08-23T05:22:36.563Z",
+    "0.6.0": "2026-08-26T14:40:13.766Z",
+    "0.6.1": "2026-08-27T11:45:11.137Z",
+    "0.7.0": "2026-08-30T22:33:12.577Z",
+    "0.7.1": "2026-09-01T15:30:00.565Z",
+    "0.7.2": "2026-09-02T13:31:56.701Z",
+    "0.7.3": "2026-09-02T14:56:42.064Z",
+    "0.7.4": "2026-09-04T14:03:17.875Z",
+    "0.7.5": "2026-09-07T10:32:23.339Z",
+    "0.7.6": "2026-09-07T13:30:48.645Z",
+    "0.7.7": "2026-09-08T15:11:02.549Z",
+    "0.7.8": "2026-09-09T11:10:16.933Z",
+    "0.7.9": "2026-09-10T06:22:38.865Z",
+    "0.7.10": "2026-09-10T08:04:32.675Z",
+    "0.7.11": "2026-09-12T02:33:52.376Z",
+    "0.7.13": "2026-09-22T14:58:07.283Z",
+    "0.7.14": "2026-09-23T04:42:03.993Z",
+    "0.7.15": "2026-09-24T13:33:49.850Z",
+    "0.7.16": "2026-09-25T01:41:19.448Z",
+    "0.7.17": "2026-10-04T17:29:44.682Z",
+    "0.7.18": "2026-10-05T10:29:22.545Z",
+    "0.7.19": "2026-10-05T11:10:37.203Z"
+  },
+  "users": {},
+  "dist-tags": {
+    "latest": "0.7.19"
+  },
+  "_rev": "2466-c2aed18a193a685b",
+  "_id": "dsh-session-pin@0.7.19",
+  "_attachments": {},
+  "_contentLength": 220716,
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [
+        "@deepseek-ai/dsh-client-connection",
+        "@deepseek-ai/dsh-client-ui-conversation",
+        "@deepseek-ai/dsh-client-ui-sidebar",
+        "@deepseek-ai/dsh-client-ui-layout",
+        "@deepseek-ai/dsh-client-ui-settings"
+      ],
+      "platform": "web",
+      "immediately": true
+    },
+    "manifestVersion": 1
+  },
+  "bugs": {
+    "url": "https://github.com/PerryLink/dsh-session-pin/issues"
+  },
+  "dist": {
+    "shasum": "f551e6123d41cdab62ce7aefac8e6bd11d65b6b3",
+    "tarball": "https://mirrors.cloud.tencent.com/npm/dsh-session-pin/-/dsh-session-pin-0.7.19.tgz",
+    "fileCount": 14,
+    "integrity": "sha512-RedQtH6hiVyRYDHA3BocPzsju/4gL8Reb6eMnKanwQIGpCEKscO6WagZbKAa1aos4YAlzaqXj7DHL9r+j0aVYg==",
+    "signatures": [
+      {
+        "sig": "MEUCIQC+412YX519Em6zVg4vzQt0Vvio++Mmm1hSuftNFMGuigIgKEQ9QlaAplEAbD8V2BH1UHXW+1VEhzJs7++5D0+MKSc=",
+        "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      },
+      {
+        "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U",
+        "sig": "MEYCIQC5qxCyEo0pxgdDx7kAZIZgrOlKrcs9CnsLClOPLd2ebQIhAKvq6fTqVxGGedXpgzPEF79K11lrr1Yc75r18yF24kqH"
+      }
+    ],
+    "attestations": {
+      "url": "https://registry.npmjs.org/-/npm/v1/attestations/dsh-session-pin@0.7.19",
+      "provenance": {
+        "predicateType": "https://slsa.dev/provenance/v1"
+      }
+    },
+    "unpackedSize": 504916
+  },
+  "main": "./lib/index.js",
+  "type": "module",
+  "engines": {
+    "dsh": ">=0.1.2-rc.1 <0.2.0 || >=0.1.5-alpha.1 <0.2.0 || >=0.1.6-0 <0.2.0 || >=0.1.7-0 <0.2.0 || >=0.2.0-0 <0.3.0 || >=0.2.1-0 <0.3.0",
+    "node": "^22.19.0 || >=24.0.0"
+  },
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "funding": {
+    "url": "https://github.com/sponsors/PerryLink",
+    "type": "individual"
+  },
+  "gitHead": "a7f5eaa2b3d25e1c7e47879c5946c9f8581ebb4f",
+  "license": "Apache-2.0",
+  "scripts": {
+    "lint": "oxlint",
+    "test": "vitest run",
+    "build": "node scripts/build.mjs",
+    "typecheck": "tsc --noEmit",
+    "typecheck:ci": "tsc -p tsconfig.ci.json --noEmit",
+    "check:readmes": "node scripts/check-readme-sync.mjs",
+    "test:coverage": "vitest run --coverage",
+    "verify:artifacts": "node scripts/verify-artifacts.mjs",
+    "verify:self-contained": "node scripts/verify-self-contained.mjs"
+  },
+  "version": "0.7.19",
+  "_npmUser": "GitHub Actions <npm-oidc-no-reply@github.com>",
+  "homepage": "https://github.com/PerryLink/dsh-session-pin#readme",
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "session-pin",
+    "pin",
+    "workspace"
+  ],
+  "repository": {
+    "url": "git+https://github.com/PerryLink/dsh-session-pin.git",
+    "type": "git"
+  },
+  "_npmVersion": "11.19.0",
+  "description": "Pin sessions and workspaces to the top of the DeepSeek Harness sidebar with per-pin row colors — a dual-face (host + client) dsh plugin with row [pin][swatch] controls, a header toggle, and a pinned panel.",
+  "directories": {},
+  "dshWorkshop": {
+    "type": "plugin",
+    "schema": "omdsh-workshop-package/v1",
+    "install": {
+      "mode": "transactional",
+      "adapter": "profile-bundle",
+      "failurePolicy": "generation-rollback",
+      "touchesCurrentBeforeActivation": false
+    },
+    "evidence": {
+      "remove": null,
+      "install": null,
+      "hotReload": null,
+      "failureIsolation": null
+    },
+    "lifecycle": {
+      "dispose": "supported",
+      "activation": "restart-plugin"
+    },
+    "capability": {
+      "id": "session-pin-toggle",
+      "kind": "ui",
+      "expected": "the session joins the pinned set and moves to the front of its workspace account",
+      "invocation": "click the pushpin on a session row"
+    },
+    "integration": {
+      "artifact": "cordis.patch.yml",
+      "protocol": "harness-profile"
+    },
+    "permissions": [
+      "browser:local-storage",
+      "settings:read",
+      "settings:write"
+    ],
+    "compatibility": {
+      "dshVersions": [
+        "0.1.2-rc.1",
+        "0.1.5-rc.2",
+        "0.1.7-alpha.2",
+        "0.1.7-rc.1",
+        "0.1.7-rc.2",
+        "0.2.1-alpha.1"
+      ]
+    }
+  },
+  "maintainers": [
+    "perrylink <novelnexusai@outlook.com>"
+  ],
+  "_nodeVersion": "24.21.0",
+  "publishConfig": {
+    "access": "public"
+  },
+  "_hasShrinkwrap": false,
+  "packageManager": "pnpm@11.7.0",
+  "devDependencies": {
+    "jsdom": "26.0.0",
+    "react": "18.3.1",
+    "oxlint": "0.18.1",
+    "vitest": "^3.2.0",
+    "esbuild": "^0.25.0",
+    "playwright": "^1.62.1",
+    "typescript": "^5.8.0",
+    "@types/node": "22.19.0",
+    "@types/react": "18.3.0",
+    "@deepseek-ai/cordis": "^4.0.5-alpha.1",
+    "@vitest/coverage-v8": "3.2.7",
+    "@deepseek-ai/dsh-session": "0.2.1-alpha.1",
+    "@deepseek-ai/schemastery": "^3.18.5-alpha.1",
+    "@deepseek-ai/dsh-settings": "0.2.1-alpha.1",
+    "@deepseek-ai/dsh-workspace": "0.2.1-alpha.1",
+    "@deepseek-ai/dsh-attachment": "0.2.1-alpha.1",
+    "@deepseek-ai/dsh-api-remotes": "0.2.1-alpha.1",
+    "@deepseek-ai/dsh-client-locale": "0.2.1-alpha.1",
+    "@deepseek-ai/dsh-client-ui-slots": "0.2.1-alpha.1",
+    "@deepseek-ai/cordis-plugin-loader": "^1.0.6-alpha.1",
+    "@deepseek-ai/dsh-client-ui-layout": "0.2.1-alpha.1",
+    "@deepseek-ai/cordis-plugin-include": "^1.0.10-alpha.1",
+    "@deepseek-ai/dsh-client-connection": "0.2.1-alpha.1",
+    "@deepseek-ai/dsh-client-ui-sidebar": "0.2.1-alpha.1",
+    "@deepseek-ai/dsh-client-ui-settings": "0.2.1-alpha.1",
+    "@deepseek-ai/dsh-client-ui-conversation": "0.2.1-alpha.1"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "^4.0.5-alpha.1",
+    "@deepseek-ai/dsh-session": ">=0.1.2-rc.1 <0.2.0 || >=0.1.5-alpha.1 <0.2.0 || >=0.1.6-0 <0.2.0 || >=0.1.7-0 <0.2.0 || >=0.2.0-0 <0.3.0 || >=0.2.1-0 <0.3.0",
+    "@deepseek-ai/schemastery": "^3.18.5-alpha.1",
+    "@deepseek-ai/dsh-settings": ">=0.1.2-rc.1 <0.2.0 || >=0.1.5-alpha.1 <0.2.0 || >=0.1.6-0 <0.2.0 || >=0.1.7-0 <0.2.0 || >=0.2.0-0 <0.3.0 || >=0.2.1-0 <0.3.0",
+    "@deepseek-ai/dsh-client-ui-layout": ">=0.1.2-rc.1 <0.2.0 || >=0.1.5-alpha.1 <0.2.0 || >=0.1.6-0 <0.2.0 || >=0.1.7-0 <0.2.0 || >=0.2.0-0 <0.3.0 || >=0.2.1-0 <0.3.0",
+    "@deepseek-ai/dsh-client-connection": ">=0.1.2-rc.1 <0.2.0 || >=0.1.5-alpha.1 <0.2.0 || >=0.1.6-0 <0.2.0 || >=0.1.7-0 <0.2.0 || >=0.2.0-0 <0.3.0 || >=0.2.1-0 <0.3.0",
+    "@deepseek-ai/dsh-client-ui-sidebar": ">=0.1.2-rc.1 <0.2.0 || >=0.1.5-alpha.1 <0.2.0 || >=0.1.6-0 <0.2.0 || >=0.1.7-0 <0.2.0 || >=0.2.0-0 <0.3.0 || >=0.2.1-0 <0.3.0",
+    "@deepseek-ai/dsh-client-ui-settings": ">=0.1.2-rc.1 <0.2.0 || >=0.1.5-alpha.1 <0.2.0 || >=0.1.6-0 <0.2.0 || >=0.1.7-0 <0.2.0 || >=0.2.0-0 <0.3.0 || >=0.2.1-0 <0.3.0",
+    "@deepseek-ai/dsh-client-ui-conversation": ">=0.1.2-rc.1 <0.2.0 || >=0.1.5-alpha.1 <0.2.0 || >=0.1.6-0 <0.2.0 || >=0.1.7-0 <0.2.0 || >=0.2.0-0 <0.3.0 || >=0.2.1-0 <0.3.0"
+  },
+  "peerDependenciesMeta": {
+    "@deepseek-ai/dsh-client-ui-layout": {
+      "optional": true
+    },
+    "@deepseek-ai/dsh-client-connection": {
+      "optional": true
+    },
+    "@deepseek-ai/dsh-client-ui-sidebar": {
+      "optional": true
+    },
+    "@deepseek-ai/dsh-client-ui-settings": {
+      "optional": true
+    },
+    "@deepseek-ai/dsh-client-ui-conversation": {
+      "optional": true
+    }
+  },
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages-npm-production",
+    "tmp": "tmp/dsh-session-pin_0.7.19_1791198637022_0.2717025984465238"
+  },
+  "contributors": []
+}

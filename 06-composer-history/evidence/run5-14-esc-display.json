@@ -1,0 +1,73 @@
+{
+  "afterOpen": {
+    "present": true,
+    "display": "flex",
+    "visibility": "visible",
+    "opacity": "1",
+    "rect": {
+      "w": 784,
+      "h": 226
+    },
+    "visible": true,
+    "ariaExpanded": "true",
+    "text": "",
+    "active": "INPUT"
+  },
+  "afterEsc": {
+    "present": true,
+    "display": "none",
+    "visibility": "visible",
+    "opacity": "1",
+    "rect": {
+      "w": 0,
+      "h": 0
+    },
+    "visible": false,
+    "ariaExpanded": "false",
+    "text": "",
+    "active": "DIV"
+  },
+  "reopen": {
+    "present": true,
+    "display": "flex",
+    "visibility": "visible",
+    "opacity": "1",
+    "rect": {
+      "w": 784,
+      "h": 226
+    },
+    "visible": true,
+    "ariaExpanded": "true",
+    "text": "",
+    "active": "INPUT"
+  },
+  "afterEnter": {
+    "present": true,
+    "display": "none",
+    "visibility": "visible",
+    "opacity": "1",
+    "rect": {
+      "w": 0,
+      "h": 0
+    },
+    "visible": false,
+    "ariaExpanded": "false",
+    "text": "第一条历史：给周记起个开头",
+    "active": "DIV"
+  },
+  "afterOutsideClick": {
+    "present": true,
+    "display": "none",
+    "visibility": "visible",
+    "opacity": "1",
+    "rect": {
+      "w": 0,
+      "h": 0
+    },
+    "visible": false,
+    "ariaExpanded": "false",
+    "text": "\n",
+    "active": "BODY"
+  },
+  "errors": []
+}

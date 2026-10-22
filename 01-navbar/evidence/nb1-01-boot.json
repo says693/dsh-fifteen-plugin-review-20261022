@@ -1,0 +1,247 @@
+{
+  "host": {
+    "origin": "http://127.0.0.1:11911",
+    "profile": "navbar"
+  },
+  "dismissed": true,
+  "boot": {
+    "url": "http://127.0.0.1:11911/",
+    "viewport": {
+      "w": 1440,
+      "h": 1000,
+      "dpr": 1
+    },
+    "doc": {
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "overflowX": false
+    },
+    "styleTag": true,
+    "styleTagLen": 5466,
+    "navExists": true,
+    "navVisible": false,
+    "navRect": {
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    },
+    "navDisplay": "none",
+    "navLeft": "",
+    "navChildren": 0,
+    "dots": 0,
+    "mores": 0,
+    "loadOlder": 0,
+    "loadOlderVisible": false,
+    "previewExists": true,
+    "previewDisplay": "none",
+    "pinButtons": 0,
+    "flowExists": false,
+    "flowRect": null,
+    "allRows": 0,
+    "userRows": 0,
+    "treeitems": [
+      "workspace",
+      "新会话",
+      "未命名\n1分钟",
+      "未命名\n1分钟",
+      "未命名\n1分钟",
+      "未命名\n1分钟",
+      "未命名\n1分钟"
+    ],
+    "localStorageKeys": [
+      "dsh.workspace.view.v5",
+      "dsh.sidebar-right.v1.session-c134bdf7-3d4e-440a-8c0b-124e16e43e73",
+      "dsh.sessions.current"
+    ],
+    "bodyTextSample": "新会话\nCtrl\n+\nAlt\n+\nN\n插件\n工作区\nworkspace\n新会话\n未命名\n1分钟\n未命名\n1分钟\n未命名\n1分钟\n未命名\n1分钟\n未命名\n1分钟\n设置\n探索未至之境\n预览版\nworkspace\n标准模式\n描述你想要构建的内容, / 调用指令, @ 文件或对话\n工作区内修改\nDeepSeek-V41-Flash\nHigh"
+  },
+  "errors": [],
+  "consoleLog": [],
+  "network": [
+    {
+      "path": "/api/settings/describe",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:01:31.441Z"
+    },
+    {
+      "path": "/api/dynamicCordisRunner/syncInspectManifest",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:01:31.443Z"
+    },
+    {
+      "path": "/api/credentials/describe",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:01:31.443Z"
+    },
+    {
+      "path": "/api/dynamicCordisRunner/inventory",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:01:31.443Z"
+    },
+    {
+      "path": "/api/session/modelCatalog",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:01:31.443Z"
+    },
+    {
+      "path": "/api/agentPresets/list",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:01:31.470Z"
+    },
+    {
+      "path": "/api/credentials/describe",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:01:31.470Z"
+    },
+    {
+      "path": "/api/permissionPresets/catalog",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:01:31.480Z"
+    },
+    {
+      "path": "/api/dynamicCordisRunner/inventory",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:01:31.480Z"
+    },
+    {
+      "path": "/api/agentPresets/list",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:01:31.486Z"
+    },
+    {
+      "path": "/api/agentPresets/list",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:01:31.490Z"
+    },
+    {
+      "path": "/api/session/modelCatalog",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:01:31.524Z"
+    },
+    {
+      "path": "/api/settings/describe",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:01:31.525Z"
+    },
+    {
+      "path": "/api/dynamicCordisRunner/syncInspectManifest",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:01:31.528Z"
+    },
+    {
+      "path": "/api/credentials/describe",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:01:31.533Z"
+    },
+    {
+      "path": "/api/session/list",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:01:31.535Z"
+    },
+    {
+      "path": "/api/session/create",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:01:31.620Z"
+    },
+    {
+      "path": "/api/agentPresets/list",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:01:31.681Z"
+    },
+    {
+      "path": "/api/commands/list",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:01:31.690Z"
+    },
+    {
+      "path": "/api/skills/list",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:01:31.702Z"
+    },
+    {
+      "path": "/api/settings/mutate",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:01:34.608Z"
+    },
+    {
+      "path": "/api/session/modelCatalog",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:01:34.626Z"
+    },
+    {
+      "path": "/api/settings/describe",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:01:34.626Z"
+    },
+    {
+      "path": "/api/llm/listProviders",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:01:34.645Z"
+    },
+    {
+      "path": "/api/llm/listConfigurableProviders",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:01:34.645Z"
+    },
+    {
+      "path": "/api/settings/describe",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:01:34.645Z"
+    },
+    {
+      "path": "/api/credentials/describe",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:01:34.655Z"
+    },
+    {
+      "path": "/api/session/modelCatalog",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:01:34.655Z"
+    },
+    {
+      "path": "/api/credentials/describe",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:01:34.661Z"
+    },
+    {
+      "path": "/api/credentials/describe",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:01:34.672Z"
+    }
+  ]
+}

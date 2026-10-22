@@ -1,0 +1,85 @@
+{
+  "utc": "2026-10-22T01:03:27.410Z",
+  "t0": {
+    "n": 1,
+    "rows": [
+      {
+        "k": "session:session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e",
+        "t": "新会话",
+        "sel": "true"
+      }
+    ],
+    "active": "session:session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e",
+    "toast": null
+  },
+  "dialogsAfterRename": [
+    {
+      "type": "prompt",
+      "message": "重命名会话",
+      "defaultValue": "default-workspace"
+    }
+  ],
+  "t1": {
+    "n": 1,
+    "rows": [
+      {
+        "k": "session:session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e",
+        "t": "新会话",
+        "sel": "true"
+      }
+    ],
+    "active": "session:session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e",
+    "toast": "已重命名为 · 周记·第一篇"
+  },
+  "presses": [
+    {
+      "i": 0,
+      "before": 1,
+      "after": 1,
+      "keysBefore": [
+        "session:session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e"
+      ],
+      "keysAfter": [
+        "session:session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e"
+      ],
+      "toast": "新建会话"
+    },
+    {
+      "i": 1,
+      "before": 1,
+      "after": 1,
+      "keysBefore": [
+        "session:session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e"
+      ],
+      "keysAfter": [
+        "session:session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e"
+      ],
+      "toast": "新建会话"
+    },
+    {
+      "i": 2,
+      "before": 1,
+      "after": 1,
+      "keysBefore": [
+        "session:session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e"
+      ],
+      "keysAfter": [
+        "session:session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e"
+      ],
+      "toast": "新建会话"
+    }
+  ],
+  "t2": {
+    "n": 1,
+    "rows": [
+      {
+        "k": "session:session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e",
+        "t": "新会话",
+        "sel": "true"
+      }
+    ],
+    "active": "session:session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e",
+    "toast": "新建会话"
+  },
+  "errors": []
+}

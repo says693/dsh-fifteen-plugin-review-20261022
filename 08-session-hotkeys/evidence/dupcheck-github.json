@@ -1,0 +1,77 @@
+﻿[
+    {
+        "query":  "dsh-session-hotkeys",
+        "total":  0,
+        "items":  [
+
+                  ]
+    },
+    {
+        "query":  "YEYEYEYESHIFU",
+        "total":  0,
+        "items":  [
+
+                  ]
+    },
+    {
+        "query":  "session-hotkeys",
+        "total":  0,
+        "items":  [
+
+                  ]
+    },
+    {
+        "query":  "会话快捷键",
+        "total":  8,
+        "items":  [
+                      {
+                          "number":  1428,
+                          "title":  "[intake 输入] dsh-spotlight 0.0.2：npm 发布件加载失败、命令类目恒空、键盘选中不可见",
+                          "url":  "https://github.com/FuRongJun-1999/dsh-bounty/issues/1428",
+                          "created":  "2026-10-21T11:39:51Z"
+                      },
+                      {
+                          "number":  1473,
+                          "title":  "深度审计 · dsh-orb 0.1.9（等级三）",
+                          "url":  "https://github.com/FuRongJun-1999/dsh-bounty/issues/1473",
+                          "created":  "2026-10-21T16:14:15Z"
+                      },
+                      {
+                          "number":  1481,
+                          "title":  "[intake 输入] 【测评报告】@sunwindy/dsh-tool-baixiaochun 0.2.1 标准测评（配对 50 次 · 五状态=没啥差别）：装与不装都 15/25；npm 装法把依赖拖低一代、profile 起不来",
+                          "url":  "https://github.com/FuRongJun-1999/dsh-bounty/issues/1481",
+                          "created":  "2026-10-22T00:43:37Z"
+                      },
+                      {
+                          "number":  1351,
+                          "title":  "[intake 输入] 【测评报告】dsh-notify-me 1.10.2 测评",
+                          "url":  "https://github.com/FuRongJun-1999/dsh-bounty/issues/1351",
+                          "created":  "2026-10-21T04:32:53Z"
+                      },
+                      {
+                          "number":  668,
+                          "title":  "【测评报告】dsh-roleplay（lutrodev）体验快测（角色扮演 · 方法试验）：dsh 0.2.0-rc.2 拒装，强装后自检拒启并连带禁掉 12 个宿主内置插件行；在声明宿主 0.1.2-rc.1 上导入与提示词组装能用，但世界书只看本轮输入、四类条目语义丢失、无工作区的 RP 会话重启后消失",
+                          "url":  "https://github.com/FuRongJun-1999/dsh-bounty/issues/668",
+                          "created":  "2026-10-16T00:48:09Z"
+                      },
+                      {
+                          "number":  1426,
+                          "title":  "[intake 输入] dsh-sticky-note 0.6.0：自动保存把刚编辑的历史便签写回旧草稿，预览态 Esc 也无法退出",
+                          "url":  "https://github.com/FuRongJun-1999/dsh-bounty/issues/1426",
+                          "created":  "2026-10-21T11:39:48Z"
+                      },
+                      {
+                          "number":  658,
+                          "title":  "【测评报告】dsh-plannotator（titanwings）体验快测（工作流 · 方法试验）：dsh 0.2.0-rc.2 web 档能装、网页端 bundle 能下发，但 Host 面激活即报错、Ask AI 路由不存在；自带 56/56 绿；实跑查出回传给 agent 的反馈丢了锚点（重复短语分不清、引用不是计划原文）、批注文字可伪造章节，README 安装命令指向不存在的 tag",
+                          "url":  "https://github.com/FuRongJun-1999/dsh-bounty/issues/658",
+                          "created":  "2026-10-16T00:37:51Z"
+                      },
+                      {
+                          "number":  990,
+                          "title":  "[intake 输入] 【测评报告】chuanban-dsh-writingset 0.3.0 体验快测（写作套装 / 工作流 · 方法试验）",
+                          "url":  "https://github.com/FuRongJun-1999/dsh-bounty/issues/990",
+                          "created":  "2026-10-18T15:20:28Z"
+                      }
+                  ]
+    }
+]

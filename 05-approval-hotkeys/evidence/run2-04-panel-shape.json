@@ -1,0 +1,194 @@
+{
+  "utc": "2026-10-22T01:10:14.138Z",
+  "host": {
+    "pid": 9212,
+    "url": "http://127.0.0.1:13334/?token=REDACTED",
+    "profile": "ah",
+    "utc": "2026-10-22T01:08:24.045Z",
+    "env": [
+      "DEEPSEEK_BASE_URL",
+      "DEEPSEEK_API_KEY",
+      "DSH_PERMISSION_MODE"
+    ]
+  },
+  "composerBefore": {
+    "tag": "DIV",
+    "cls": "uV2eYG_input",
+    "visible": true
+  },
+  "panels": [],
+  "snapshot1": {
+    "panels": [],
+    "keys": [],
+    "composerExists": true,
+    "composerVisible": {
+      "w": 770,
+      "h": 36
+    },
+    "activeTag": "DIV",
+    "activeCls": "uV2eYG_input",
+    "textareas": 0,
+    "inputs": 2,
+    "focusables": [
+      "",
+      "",
+      "新会话\nCtrl\n+\nAlt\n+\nN",
+      "插件",
+      "",
+      "",
+      "",
+      "设置",
+      "",
+      "",
+      "",
+      "",
+      "对话",
+      "轨迹",
+      "",
+      "已完成，用时 1秒",
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  "editableWhilePanel": [
+    {
+      "tag": "INPUT",
+      "cls": "bhn1Oq_searchInput",
+      "type": "text",
+      "inPanel": false,
+      "rect": {
+        "x": 204,
+        "y": 174,
+        "w": 4,
+        "h": 20
+      },
+      "visible": true
+    },
+    {
+      "tag": "DIV",
+      "cls": "uV2eYG_input",
+      "type": null,
+      "inPanel": false,
+      "rect": {
+        "x": 469,
+        "y": 880,
+        "w": 770,
+        "h": 36
+      },
+      "visible": true
+    },
+    {
+      "tag": "INPUT",
+      "cls": "",
+      "type": "file",
+      "inPanel": false,
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "visible": false
+    }
+  ],
+  "timeline": [
+    {
+      "t": 3505,
+      "kind": "mutation",
+      "detail": {
+        "panelsOnScreen": []
+      }
+    },
+    {
+      "t": 3507,
+      "kind": "mutation",
+      "detail": {
+        "panelsOnScreen": []
+      }
+    },
+    {
+      "t": 3615,
+      "kind": "keydown",
+      "detail": {
+        "key": "Enter",
+        "defaultPrevented": false,
+        "repeat": false,
+        "target": "DIV"
+      }
+    },
+    {
+      "t": 3632,
+      "kind": "mutation",
+      "detail": {
+        "panelsOnScreen": []
+      }
+    },
+    {
+      "t": 3665,
+      "kind": "mutation",
+      "detail": {
+        "panelsOnScreen": []
+      }
+    },
+    {
+      "t": 3673,
+      "kind": "mutation",
+      "detail": {
+        "panelsOnScreen": []
+      }
+    },
+    {
+      "t": 3704,
+      "kind": "mutation",
+      "detail": {
+        "panelsOnScreen": []
+      }
+    },
+    {
+      "t": 3734,
+      "kind": "mutation",
+      "detail": {
+        "panelsOnScreen": []
+      }
+    },
+    {
+      "t": 3737,
+      "kind": "mutation",
+      "detail": {
+        "panelsOnScreen": []
+      }
+    },
+    {
+      "t": 3747,
+      "kind": "mutation",
+      "detail": {
+        "panelsOnScreen": []
+      }
+    },
+    {
+      "t": 3758,
+      "kind": "mutation",
+      "detail": {
+        "panelsOnScreen": []
+      }
+    },
+    {
+      "t": 3826,
+      "kind": "mutation",
+      "detail": {
+        "panelsOnScreen": []
+      }
+    },
+    {
+      "t": 3833,
+      "kind": "mutation",
+      "detail": {
+        "panelsOnScreen": []
+      }
+    }
+  ],
+  "errors": [],
+  "consoleLog": []
+}

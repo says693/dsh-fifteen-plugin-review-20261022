@@ -1,0 +1,168 @@
+{
+  "utc": "2026-10-22T02:12:18.481Z",
+  "queries": [],
+  "hits": [
+    {
+      "site": "github",
+      "q": "dsh-task-status",
+      "number": 569,
+      "title": "【测评报告】vlln/whale-girl @9c32d7a 体验快测（方法试验）：Linux 装得上、宿主内 7 端点按契约应答；自带测试 216/216＋门禁 12/12＋自证 88/88＋desktop 19/19 无红；无模型账本试跑出结果；1 个缺陷：未设 DSH_HOME 时状态路径由包目录推算，本地路径安装下积累静默丢失"
+    },
+    {
+      "site": "github",
+      "q": "vlln",
+      "number": 656,
+      "title": "【测评报告】dsh-loop（vlln）体验快测（工作流 · 方法试验）：web 档装载与 /loop·loop 工具可用；间隔没有上下界，`/loop 0` 与 `/loop 25d` 都退化成约 1 ms 一跳（300 ms 内投递约 280 次）；状态 / 停止路由绕过宿主令牌"
+    },
+    {
+      "site": "github",
+      "q": "vlln",
+      "number": 569,
+      "title": "【测评报告】vlln/whale-girl @9c32d7a 体验快测（方法试验）：Linux 装得上、宿主内 7 端点按契约应答；自带测试 216/216＋门禁 12/12＋自证 88/88＋desktop 19/19 无红；无模型账本试跑出结果；1 个缺陷：未设 DSH_HOME 时状态路径由包目录推算，本地路径安装下积累静默丢失"
+    },
+    {
+      "site": "github",
+      "q": "task-status",
+      "number": 569,
+      "title": "【测评报告】vlln/whale-girl @9c32d7a 体验快测（方法试验）：Linux 装得上、宿主内 7 端点按契约应答；自带测试 216/216＋门禁 12/12＋自证 88/88＋desktop 19/19 无红；无模型账本试跑出结果；1 个缺陷：未设 DSH_HOME 时状态路径由包目录推算，本地路径安装下积累静默丢失"
+    }
+  ],
+  "verdict": {
+    "lingshulabReviewsScanned": 172,
+    "lingshulabPluginsScanned": 133,
+    "rawPatternHits": 4,
+    "sameScopeHits": 0,
+    "conclusion": "两站均无同范围重复（按 dsh-task-status / vlln / task-status / 任务状态条 四个模式扫描）",
+    "sameScope": []
+  },
+  "lingshulab": {
+    "fetched": 172,
+    "total": 172,
+    "pages": 4
+  },
+  "lingshulabPlugins": {
+    "fetched": 133
+  },
+  "github": [
+    {
+      "q": "dsh-task-status",
+      "status": 200,
+      "total": 35,
+      "titles": [
+        "#567 【测评报告】dsh-task-dag 1.5.1 体验快测（能力域 · 方法试验）：DSH 0.1.7-rc.2 装载/卸载干净、自带套件 18 过 / 0 红；发现 Team 事件版本门 v1≠宿主 v2 致 Agent Teams 视图恒空；0.2.0-rc.2 按声明拒装",
+        "#670 【测评报告】dsh-suite/plugin-team-board（whyihaveyou）体验快测（工作流 · 方法试验）：dsh 0.2.0-rc.2 默认拒装，豁免后只在 web 档激活；自带 smoke 20/20；实跑查出 claim 无互斥（可抢占已认领/已完成任务）、/team-board/* 路由无鉴权无校验、快照损坏后启动清空看板",
+        "#665 【测评报告】dsh-task-planner（ztl34245881-commits）体验快测（工作流 · 方法试验）：dsh 0.2.0-rc.2 上 4 种调用全报 ctx.shell.run is not a function；旧宿主 0.1.5-rc.3 上查出 6 个缺陷，含经验正文一行 LESSONEOF 即截断并把余下内容当 shell 执行（真宿主复现）、结项状态判反、60 条后召回失效",
+        "#664 【测评报告】dsh-specflow（lonelymoon87）体验快测（工作流 · 方法试验）：dsh 0.2.0-rc.2 上注册无红项、自带 6 项全绿；实跑查出 3 个缺陷：自家 implement 技能建的目标缺 [SpecFlow:] 前缀被拒、代码块里的复选框计入进度（完成的规格永远差 2 项）、/plan-spec 与 /tasks 不校验编号",
+        "#649 【测评报告】dsh-agent-teams（NanmiCoder）体验快测（工作流 · 方法试验）：dsh 0.2.0-rc.2 上装载、激活、Web 路由鉴权未见红项，自带 verify 35 步全绿（node:test 282 项 0 红＋脚本检查 682 条 0 FAIL）；实跑查出 2 个缺陷（队名为「Archive」时与归档目录相撞，删除 / 丢弃永久 EINVAL 并留下成员已撤、队伍未删的半删状态；create_task 接受空标题，暂存计划随即无法批准）",
+        "#669 【测评报告】mstar-harness（btspoony）体验快测（工作流 · 方法试验）：装载与 8 命令/24 技能/7 工具就位，但首轮静默卡死、模型 0 请求（source kind 'plugin' 被宿主拒收，改一行恢复）；两个 SDD 工具越出工作区读写",
+        "#1265 [intake 输入] 【安全快测】dsh-plugin-notify 0.1.3（huguangyu666）：`/notify/api*` 三条路由零鉴权——跨站 POST 即可让插件用桌面通知+中文语音播报攻击者文本，并接管宿主 `notify` 设置命名空间，把攻击者文案固化成「每个回合结束自动念」的模板",
+        "#647 【测评报告】dsh_workflow（icetomoyo）体验快测（工作流 · 方法试验，附 0.1.7 上游 #5 复现）：dsh 0.2.0-rc.2 拒装、豁免后自带 179/179 绿；查出 4 个缺陷：宿主崩溃后 run 永远 running、wf.parallel([]) 让 run 失败、同名保存后静默不可达、暂停期间墙钟照计被超时杀掉",
+        "#781 【intake 输入】dsh-memory：scoreboard._obj 把非映射 spec/result 静默归一为 {} —— 文案许诺的 bad_files 计数在实现里不存在，result 一路在 build() 全 9 键上与「文件缺失」不可分（上游 #511）",
+        "#651 【测评报告】dsh-automation（titanwings）体验快测（工作流 · 方法试验）：在当前宿主 0.2.0-rc.2 上装得上、激活就失败（`settings.register` 已不存在，绕过后又报缺 `webServer` 注入）；替身试跑下调度主路径与 README 一致，另查出两处缺陷：取消不生效时运行永久卡在 running，补跑模式会补跑暂停期间的任务",
+        "#571 【测评报告】dsh-nexttavern 0.3.0-rc.1（@2d297fb）体验快测（能力域 · 方法试验）：宿主装成、源码版激活失败（缺发布期生成物）、自带测试 48 过 / 14 红逐条归因（13 环境面＋1 测试滞后）",
+        "#1407 [intake 输入] 【测评报告】dsh-chat-import 0.26.2 实测：#822 增量续写 P1 仍复现（Codex / DSH 0.2.1-rc.2），活写租约使一行修复失效",
+        "#828 [intake 输入] DSH-better-sidebar 0.28.0 快测：双通道安装与 HTTP 注册通过，附 2699 项单测读数",
+        "#1368 【intake 输入】@agentscope-ai/reme-dsh-plugin@0.1.2 插件测评：五维读数（5/5 维）＋可复跑证据",
+        "#659 【测评报告】dsh-plugin-automations（Sev7een）体验快测（工作流 · 方法试验）：dsh 0.2.0-rc.2 上能装、API 和持久化可用，但到点任务全部以 agent_create_failed 失败；停机后 Cron 会把错过的每一次连着补跑",
+        "#1275 [intake 输入] dsh-swarm 0.5.1：`/kanban` 前缀路由零鉴权，跨站 PUT 即可把评审/各角色模型路由改到攻击者端点，并能删链、触发全局 npm 安装（P0）",
+        "#1322 [intake 输入] 【测评报告】@zhangj1164/dsh-memo 0.1.1（dsh-mega-plugins @76ef8c9）数据外传与遥测脱敏测评（首评）：默认脱敏规则对 15 类敏感样本漏掉 13 类，漏网的工作区外路径与云厂商 key 经「日志分析」原样进入发给模型的提示和预填 GitHub issue 正文（P1）；分析长期记忆写到 $HOME/memo/ 而非 DSH home（P2）…",
+        "#1143 [intake 输入] 【测评报告】dsh-arbiter-wf 0.8.4-stable 安全快测（仲裁工作流 · 直驱真实模块 · 本地隔离）：插件自带的 `bash` 工具完全绕开宿主沙箱与审批（写/删工作区外文件、带着 `DEEPSEEK_API_KEY` 进子进程），Windows 上默认开（P0）",
+        "#654 【测评报告】dsh-inspect（omdsh-dev）体验快测（工作流 · 方法试验）：dsh 0.2.0-rc.2 拒装（peer `^0.0.1` 无版本满足），强装后每次调用报「no \"workflows\" service」（宿主服务名为 `workflowEngine`）；补别名后 checkup→fix→review 跑通；红队「推翻」按原文逐字匹配，改写即失效",
+        "#652 【测评报告】dsh-deep-research（omdsh-dev）体验快测（工作流 · 方法试验）：dsh 0.2.0-rc.2 拒装（peer `^0.0.1` 无版本满足），强装后因服务名 `workflows`≠`workflowEngine` 一直 pending；补别名后能跑通，但传 `questions` 必失败，轮次封顶时未研究子问题与缺口静默丢弃",
+        "#569 【测评报告】vlln/whale-girl @9c32d7a 体验快测（方法试验）：Linux 装得上、宿主内 7 端点按契约应答；自带测试 216/216＋门禁 12/12＋自证 88/88＋desktop 19/19 无红；无模型账本试跑出结果；1 个缺陷：未设 DSH_HOME 时状态路径由包目录推算，本地路径安装下积累静默丢失",
+        "#653 【测评报告】dsh-doublecheck（PerryLink）体验快测（工作流 · 方法试验）：dsh 0.2.0-rc.2 上自带 227/227 绿，block 档能拦首次 edit/write，但默认 remind 档只提醒；红/绿证据可伪造（`[exit code: 0]`、`|| true`）让红测试报 verified；strict 正则多转义一层、`test/../src` 绕过红门",
+        "#1203 [intake 输入] 【测评报告】dsh-memento 0.5.27 安全快测（记忆 · 安全与护栏 · 直驱真实模块＋真实宿主 web 组件 · 本地隔离）：压缩摘要未经审批即注入后续会话 system prompt（P1）；/api/memento/* 以 exact 路由绕开宿主 /api 鉴权，无 cookie / DNS rebinding / LAN 可读全库与\"已删除\"密钥（P1）",
+        "#1251 [intake 输入] 【测评报告】@agentscope-ai/reme-dsh-plugin 0.1.3 安全快测（ReMe 长期记忆 · 本地模拟 ReMe 服务 · 方法试验）：ReMe 停机期间自动记忆积压无上限、已结束会话不再重试，只在宿主关闭时补送一次（P2）；endpoint 带 user:pass@ 时口令经错误信息进入模型上下文、状态页与宿主日志（P2）；超时整批重发、reme_search 原样转交、快照注释与实际不符（P3×3）；已验…",
+        "#442 【贡献申报】dsh-bench #13–#17：「帮倒忙」仍判可推荐并发徽章、插件名/报告字段未转义进 <title>/<h1>（存储型 XSS）、测完日期写成未来即永不过期（P0×3），安全事件在提前返回路径中丢失等 4 条、负成本/坏日期崩溃/public_check 漏检 JSON 凭据 3 条（P1×7）；附复现",
+        "#1253 [intake 输入] 【测评报告】dsh-native-memory 0.2.0（@98c4a49）「写入需审批」专项核实（安全面首评）：审批门本身 fail-closed、跨工作区隔离未发现问题，但审批面板只给 120 字摘要，最长 2000 字的事实 / 240 字的常驻档案条目尾部不经人眼就入库并注入后续会话，改 tags、按 id 覆盖、删档案条目时摘要不显示改动（P1）；默认开启的 compaction guard 把工具输出里的第三方文本不经审批注入后续 24h 系统提示（P2）…",
+        "#673 【贡献申报】dsh-bench #25 #27（基线 f894741）：`--out` 指向仓库/数据/真源目录时 build() 无条件 rmtree（`--out .` 删光整仓含 .git，`--out data` 删数据后 rc=0）、同版本报告取舍不看 report_version（更正后的第 2 版被第 1 版顶出排名）；另回报 3 处本人已结算项的修复未闭环（主动申请并入、只按新增面计）；#26 与他人先报的 #635 重复，主动撤回",
+        "#648 【测评报告】dsh-advisor（btspoony）体验快测（工作流 · 方法试验）：immuneTurns 设 0/1 时 concern 自唤醒停不下来（87 s 内主模型被调 1161 次），headless 下调试日志混进 stdout；自带 22 套 492 项全绿",
+        "#578 【测评报告】智能体工作流三体系对照分析（工作流 · 方法试验）",
+        "#675 [测评] DSH 工作流类插件 4 个 · 双平台实测：装得上 4/4，端到端跑得通 0/4（D 根因已定）"
+      ]
+    },
+    {
+      "q": "vlln",
+      "status": 200,
+      "total": 2,
+      "titles": [
+        "#656 【测评报告】dsh-loop（vlln）体验快测（工作流 · 方法试验）：web 档装载与 /loop·loop 工具可用；间隔没有上下界，`/loop 0` 与 `/loop 25d` 都退化成约 1 ms 一跳（300 ms 内投递约 280 次）；状态 / 停止路由绕过宿主令牌",
+        "#569 【测评报告】vlln/whale-girl @9c32d7a 体验快测（方法试验）：Linux 装得上、宿主内 7 端点按契约应答；自带测试 216/216＋门禁 12/12＋自证 88/88＋desktop 19/19 无红；无模型账本试跑出结果；1 个缺陷：未设 DSH_HOME 时状态路径由包目录推算，本地路径安装下积累静默丢失"
+      ]
+    },
+    {
+      "q": "task-status",
+      "status": 200,
+      "total": 35,
+      "titles": [
+        "#567 【测评报告】dsh-task-dag 1.5.1 体验快测（能力域 · 方法试验）：DSH 0.1.7-rc.2 装载/卸载干净、自带套件 18 过 / 0 红；发现 Team 事件版本门 v1≠宿主 v2 致 Agent Teams 视图恒空；0.2.0-rc.2 按声明拒装",
+        "#670 【测评报告】dsh-suite/plugin-team-board（whyihaveyou）体验快测（工作流 · 方法试验）：dsh 0.2.0-rc.2 默认拒装，豁免后只在 web 档激活；自带 smoke 20/20；实跑查出 claim 无互斥（可抢占已认领/已完成任务）、/team-board/* 路由无鉴权无校验、快照损坏后启动清空看板",
+        "#665 【测评报告】dsh-task-planner（ztl34245881-commits）体验快测（工作流 · 方法试验）：dsh 0.2.0-rc.2 上 4 种调用全报 ctx.shell.run is not a function；旧宿主 0.1.5-rc.3 上查出 6 个缺陷，含经验正文一行 LESSONEOF 即截断并把余下内容当 shell 执行（真宿主复现）、结项状态判反、60 条后召回失效",
+        "#649 【测评报告】dsh-agent-teams（NanmiCoder）体验快测（工作流 · 方法试验）：dsh 0.2.0-rc.2 上装载、激活、Web 路由鉴权未见红项，自带 verify 35 步全绿（node:test 282 项 0 红＋脚本检查 682 条 0 FAIL）；实跑查出 2 个缺陷（队名为「Archive」时与归档目录相撞，删除 / 丢弃永久 EINVAL 并留下成员已撤、队伍未删的半删状态；create_task 接受空标题，暂存计划随即无法批准）",
+        "#486 md_cg 来源/归属字段伪造族：`MdCG.add` 的 `**extra` 直通 frontmatter（#463 根因），**归属/派生/晋升/证据元字段可整体伪造**——一个库层写入即可产出挂着「`writer: system_core`＋`merge_sources:[3锚点]`＋`promotion_basis: 经三名委员双签批准`＋`importance_source: authority_directive`」的节点：身份归属、谱系来源、治理叙事、证据计数全套自述型权威声明无一有闸。",
+        "#664 【测评报告】dsh-specflow（lonelymoon87）体验快测（工作流 · 方法试验）：dsh 0.2.0-rc.2 上注册无红项、自带 6 项全绿；实跑查出 3 个缺陷：自家 implement 技能建的目标缺 [SpecFlow:] 前缀被拒、代码块里的复选框计入进度（完成的规格永远差 2 项）、/plan-spec 与 /tasks 不校验编号",
+        "#669 【测评报告】mstar-harness（btspoony）体验快测（工作流 · 方法试验）：装载与 8 命令/24 技能/7 工具就位，但首轮静默卡死、模型 0 请求（source kind 'plugin' 被宿主拒收，改一行恢复）；两个 SDD 工具越出工作区读写",
+        "#781 【intake 输入】dsh-memory：scoreboard._obj 把非映射 spec/result 静默归一为 {} —— 文案许诺的 bad_files 计数在实现里不存在，result 一路在 build() 全 9 键上与「文件缺失」不可分（上游 #511）",
+        "#1265 [intake 输入] 【安全快测】dsh-plugin-notify 0.1.3（huguangyu666）：`/notify/api*` 三条路由零鉴权——跨站 POST 即可让插件用桌面通知+中文语音播报攻击者文本，并接管宿主 `notify` 设置命名空间，把攻击者文案固化成「每个回合结束自动念」的模板",
+        "#791 [intake 输入] memory：原生任务结果与经验双层记忆（dsh-memory PR #516）",
+        "#647 【测评报告】dsh_workflow（icetomoyo）体验快测（工作流 · 方法试验，附 0.1.7 上游 #5 复现）：dsh 0.2.0-rc.2 拒装、豁免后自带 179/179 绿；查出 4 个缺陷：宿主崩溃后 run 永远 running、wf.parallel([]) 让 run 失败、同名保存后静默不可达、暂停期间墙钟照计被超时杀掉",
+        "#659 【测评报告】dsh-plugin-automations（Sev7een）体验快测（工作流 · 方法试验）：dsh 0.2.0-rc.2 上能装、API 和持久化可用，但到点任务全部以 agent_create_failed 失败；停机后 Cron 会把错过的每一次连着补跑",
+        "#578 【测评报告】智能体工作流三体系对照分析（工作流 · 方法试验）",
+        "#571 【测评报告】dsh-nexttavern 0.3.0-rc.1（@2d297fb）体验快测（能力域 · 方法试验）：宿主装成、源码版激活失败（缺发布期生成物）、自带测试 48 过 / 14 红逐条归因（13 环境面＋1 测试滞后）",
+        "#288 【贡献申报】dsh-bench #2–#8：报告可自带门槛放宽判定、构建不经发布闸、方法试验与已失效报告进榜、安全暂停条目进「值得试」、报告页卡片可手填、证据链接只查非空（P0×6），过期不可重算等口径缺陷（P1×4）；附复现",
+        "#1368 【intake 输入】@agentscope-ai/reme-dsh-plugin@0.1.2 插件测评：五维读数（5/5 维）＋可复跑证据",
+        "#651 【测评报告】dsh-automation（titanwings）体验快测（工作流 · 方法试验）：在当前宿主 0.2.0-rc.2 上装得上、激活就失败（`settings.register` 已不存在，绕过后又报缺 `webServer` 注入）；替身试跑下调度主路径与 README 一致，另查出两处缺陷：取消不生效时运行永久卡在 running，补跑模式会补跑暂停期间的任务",
+        "#1275 [intake 输入] dsh-swarm 0.5.1：`/kanban` 前缀路由零鉴权，跨站 PUT 即可把评审/各角色模型路由改到攻击者端点，并能删链、触发全局 npm 安装（P0）",
+        "#442 【贡献申报】dsh-bench #13–#17：「帮倒忙」仍判可推荐并发徽章、插件名/报告字段未转义进 <title>/<h1>（存储型 XSS）、测完日期写成未来即永不过期（P0×3），安全事件在提前返回路径中丢失等 4 条、负成本/坏日期崩溃/public_check 漏检 JSON 凭据 3 条（P1×7）；附复现",
+        "#828 [intake 输入] DSH-better-sidebar 0.28.0 快测：双通道安装与 HTTP 注册通过，附 2699 项单测读数",
+        "#673 【贡献申报】dsh-bench #25 #27（基线 f894741）：`--out` 指向仓库/数据/真源目录时 build() 无条件 rmtree（`--out .` 删光整仓含 .git，`--out data` 删数据后 rc=0）、同版本报告取舍不看 report_version（更正后的第 2 版被第 1 版顶出排名）；另回报 3 处本人已结算项的修复未闭环（主动申请并入、只按新增面计）；#26 与他人先报的 #635 重复，主动撤回",
+        "#653 【测评报告】dsh-doublecheck（PerryLink）体验快测（工作流 · 方法试验）：dsh 0.2.0-rc.2 上自带 227/227 绿，block 档能拦首次 edit/write，但默认 remind 档只提醒；红/绿证据可伪造（`[exit code: 0]`、`|| true`）让红测试报 verified；strict 正则多转义一层、`test/../src` 绕过红门",
+        "#1251 [intake 输入] 【测评报告】@agentscope-ai/reme-dsh-plugin 0.1.3 安全快测（ReMe 长期记忆 · 本地模拟 ReMe 服务 · 方法试验）：ReMe 停机期间自动记忆积压无上限、已结束会话不再重试，只在宿主关闭时补送一次（P2）；endpoint 带 user:pass@ 时口令经错误信息进入模型上下文、状态页与宿主日志（P2）；超时整批重发、reme_search 原样转交、快照注释与实际不符（P3×3）；已验…",
+        "#841 【测评报告】dsh-memory 0.8.1 · C-6：`cg(op=review)` 的 `action` 分派对**未知值不设防**：非法 action 与合法路径行为等价、**裁决照样落账**",
+        "#675 [测评] DSH 工作流类插件 4 个 · 双平台实测：装得上 4/4，端到端跑得通 0/4（D 根因已定）",
+        "#1017 【贡献申报】dsh-memory #354 四维度对抗实证缺陷 ×14 条（P0×2 / P1×10 / P2×2）——逐条自申 hard×2 / medium×10 / easy×2（载体已由维护方处置关闭）",
+        "#648 【测评报告】dsh-advisor（btspoony）体验快测（工作流 · 方法试验）：immuneTurns 设 0/1 时 concern 自唤醒停不下来（87 s 内主模型被调 1161 次），headless 下调试日志混进 stdout；自带 22 套 492 项全绿",
+        "#1407 [intake 输入] 【测评报告】dsh-chat-import 0.26.2 实测：#822 增量续写 P1 仍复现（Codex / DSH 0.2.1-rc.2），活写租约使一行修复失效",
+        "#1203 [intake 输入] 【测评报告】dsh-memento 0.5.27 安全快测（记忆 · 安全与护栏 · 直驱真实模块＋真实宿主 web 组件 · 本地隔离）：压缩摘要未经审批即注入后续会话 system prompt（P1）；/api/memento/* 以 exact 路由绕开宿主 /api 鉴权，无 cookie / DNS rebinding / LAN 可读全库与\"已删除\"密钥（P1）",
+        "#569 【测评报告】vlln/whale-girl @9c32d7a 体验快测（方法试验）：Linux 装得上、宿主内 7 端点按契约应答；自带测试 216/216＋门禁 12/12＋自证 88/88＋desktop 19/19 无红；无模型账本试跑出结果；1 个缺陷：未设 DSH_HOME 时状态路径由包目录推算，本地路径安装下积累静默丢失"
+      ]
+    },
+    {
+      "q": "任务状态条",
+      "status": 200,
+      "total": 401,
+      "titles": [
+        "#71 [悬赏] 灵枢生态宣传：材料 + 渠道 + 触达读数（可核验，不写「效果好」）",
+        "#1472 [intake 输入] 【测评报告】@hyzyn/dsh-docker 0.13.3 标准测评（16 任务 × 3 轮配对 · 五状态=没啥差别）：两边都 48/48 全对，但调用少一半、返回数据 1/6；事件长窗口返 0 条（P2）",
+        "#1473 深度审计 · dsh-orb 0.1.9（等级三）",
+        "#1481 [intake 输入] 【测评报告】@sunwindy/dsh-tool-baixiaochun 0.2.1 标准测评（配对 50 次 · 五状态=没啥差别）：装与不装都 15/25；npm 装法把依赖拖低一代、profile 起不来",
+        "#1482 [intake 输入] 【测评报告】dsh-slack 0.3.4 能力试跑（本地假 Slack · 五状态=还说不准）：8 项试跑 7 项符合；频道超过 20 页只取前 20 页且无提醒",
+        "#1471 [intake 输入] lingshu #854：旧子树枚举不完整时拒绝替换修复交付",
+        "#1 docs(spec): 悬赏站设计文档 v1.0 与使用指南 v1.0",
+        "#1485 [intake 输入] 【安全面快测】dsh-memj 0.1.5（判定：还说不准·能力未测）（项目制记忆 · 直驱发布件 lib/index.js ＋ 真 DSH 宿主实测 · 本地隔离）：无鉴权本地 API 可改写系统提示词段（P1）；注入块换行未转义可伪造条目行（P2）；外部引用可读任意绝对路径（P3）；读取阈值对无章节正文不生效（P3）",
+        "#1070 标准测评报告 · dsh-rss 0.7.0（能力五状态）",
+        "#1208 深度审计：@zhangj1164/dsh-memo 0.1.1（L3 · A 路径）",
+        "#33 [网站面·悬赏板][P1] 默认（账本推演）模式下，新发布的悬赏永远上不了悬赏板；招标中的任务也不上板。空板文案却承诺「打 `bounty` 标签并发布后此处自动出现」",
+        "#1474 深度审计 · dsh-bili-scroll 0.1.7（等级三）",
+        "#1388 【intake 输入】@banana-peeljj12/dsh-trellis@0.3.7 插件测评：五维读数（5/5 维）＋可复跑证据",
+        "#280 ci(bounty-board): 把状态机守卫接进 CI（正向断言 ＋ 定点变异 ＋ 跑完不许搞脏）",
+        "#303 fix(bounty_list): 真源 `items` 元素**非对象**不再崩（`--check` 闸从此拿得到结论）",
+        "#1398 深度审计 · dsh-flash-presets 0.2.1（等级三）",
+        "#72 feat(bot): 悬赏机器人接入 —— 悬赏=标题带「悬赏」的 issue；结算表切到 docs/bounty/贡献表.md",
+        "#1411 【intake 输入】dsh-workflow-lite 0.6.0 增量：普通三步任务两臂 3/3 一样；不写版本会装到 0.5.0",
+        "#585 【测评报告】Yuki（YuanYeYouTao）安全审计 + 理论建议（记忆域 · 方法试验）：0 P0/P1，5 项加固确认 + 4 项 P2",
+        "#27 [状态机][P1] `disputed` 是死胡同：没有任何命令能离开它，README 说的「维护者手改标签复位」也不管用（标记优先于标签）；持有者临到期发一条 `/dispute` 就能永久躲开 −2base 超时，同时一直占着任务",
+        "#1251 [intake 输入] 【测评报告】@agentscope-ai/reme-dsh-plugin 0.1.3 安全快测（ReMe 长期记忆 · 本地模拟 ReMe 服务 · 方法试验）：ReMe 停机期间自动记忆积压无上限、已结束会话不再重试，只在宿主关闭时补送一次（P2）；endpoint 带 user:pass@ 时口令经错误信息进入模型上下文、状态页与宿主日志（P2）；超时整批重发、reme_search 原样转交、快照注释与实际不符（P3×3）；已验…",
+        "#460 审核员授权评估申请（对照《审核员机制 v0.1》§五判据自查）",
+        "#1030 标准测评结论 · dsh-minimal-ptc 0.5.6（能力五状态：不适用）",
+        "#267 [Bug][P1] 晋升判据把真模式的 `round=1`（真实返工一次）当成「追溯性中性占位」：每条都先被退回一次的人判达标，偶尔一次过闸的人反被「一次过闸占比」挡下",
+        "#24 [GitHubClient.comments/状态重建][P1] 评论超过 1000 条后被静默截断，机器人后写的标记全部看不见，状态冻结在旧值：已结算的任务仍是 verified，再 `/settle` 就重复记分",
+        "#1262 [intake 输入] 【安全快测】dsh-cron-panel 0.1.13（a792883583）：`/cron-panel/*` 整面零鉴权——不校验任何请求来源即可 `/bin/sh -c` 执行任意命令并读回 stdout、把攻击者命令写进系统 crontab 持久化、再按调用方自报的行号删掉用户自己的定时任务",
+        "#1214 深度审计：dsh-plan-mode-plus 0.2.0（L3 · A 路径）",
+        "#48 [Bug][P2] `/dispute` 没有任何状态或 `bounty` 标签前置：已结算的任务可被拉回 disputed，并在荣誉榜上给持有者记一次「争议」；普通 issue 也会被机器人打上 `bounty:disputed`（真机确认）",
+        "#1020 标准测评结论 · dsh-locale-es-419 1.0.0（能力五状态：不适用）",
+        "#1371 【intake 输入】@akasha-book/mcp@1.1.6 插件测评：五维读数（3/5 维）＋可复跑证据"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,129 @@
+{
+  "subject": {
+    "name": "dsh-composer-history",
+    "version": "0.8.15",
+    "author": "PerryLink",
+    "repository": "https://github.com/PerryLink/dsh-composer-history",
+    "npm": "https://www.npmjs.com/package/dsh-composer-history",
+    "license": "Apache-2.0",
+    "licenseFile": {
+      "path": "LICENSE",
+      "bytes": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "firstLine": "Apache License"
+    },
+    "publishedAt": "2026-10-18T12:31:33.771Z",
+    "distTag": "latest",
+    "gitHead": "231564217350170a355c5c7c8ccddcd7e18bf1f5",
+    "sourceCommitForComparison": "1227c30175c6270b8576840c804f4c498abdff82",
+    "sourceCommitNote": "任务给定的仓库对照提交；发布件自带 src/，本轮以发布件为被测对象，该提交仅作逻辑对照，未克隆、未构建"
+  },
+  "packageIntegrity": {
+    "registry": "npm (default configured mirror: mirrors.cloud.tencent.com/npm)",
+    "tarball": "dsh-composer-history-0.8.15.tgz",
+    "tarballBytes": 354433,
+    "expectedShasum": "9ae4a6636a733f7624c53354aa5173063ec8d814",
+    "observedSha1": "9ae4a6636a733f7624c53354aa5173063ec8d814",
+    "shasumMatch": true,
+    "expectedIntegrity": "sha512-L3/RiaCKvaUf8TETcDozTzId5nMjsCiM9vk9P66MhFedam0KCBUhx5Q99RbUVkDwUAxl/NPfLlYregkRaOO9cA==",
+    "observedIntegrity": "sha512-L3/RiaCKvaUf8TETcDozTzId5nMjsCiM9vk9P66MhFedam0KCBUhx5Q99RbUVkDwUAxl/NPfLlYregkRaOO9cA==",
+    "integrityMatch": true,
+    "fileCount": 62,
+    "unpackedSize": 932256,
+    "provenanceAttestation": "https://registry.npmjs.org/-/npm/v1/attestations/dsh-composer-history@0.8.15 (SLSA provenance v1 present)"
+  },
+  "keyFileHashes": {
+    "package.json": { "bytes": 5510, "sha256": "cca0a78bdcabf3c44ef3aed7ed470dd5a47705a4e989007a8170496f8ffad685" },
+    "LICENSE": { "bytes": 11357, "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4" },
+    "README.md": { "bytes": 46509, "sha256": "26012dba4d107b031abcb19ae6a48c7291f9dfb04495a4195ebece4dc99c7042" },
+    "cordis.patch.yml": { "bytes": 319, "sha256": "d30c1c02e59c31e217b1e32dcae0c6014957ed0601cb4a2799bee55923065a66" },
+    "lib/index.js": { "bytes": 39971, "sha256": "e3049db03710d7f3519d0da16e5ff31d61f5486879621bd69a61faabfba8c2a8" },
+    "lib/client.js": { "bytes": 143857, "sha256": "a5d33e5d60c91c4d27f22c71ea6e4645cc889b9143599ec46ce933e3230888cc" },
+    "lib/invariant.js": { "bytes": 1296, "sha256": "6ad4312abe906dbf8fd5c7851b54371f1ebf43098c2383be045978e4e862443d" },
+    "src/client/recall.ts": { "bytes": 14217, "sha256": "6f49702a280256ed18d58323afe84934fa2e8e643f8455ac9f94b2a8c4c7f51e" },
+    "src/client/history-store.ts": { "bytes": 4118, "sha256": "349092f1cac4d03718c1dba0c55b80babe2548dc7346b88129f203c95bf4463a" }
+  },
+  "manifestDeclarations": {
+    "dsh.manifestVersion": 1,
+    "dsh.bundle.patch": "./cordis.patch.yml",
+    "dsh.client.platform": "web",
+    "dsh.client.inject": [
+      "@deepseek-ai/dsh-client-ui-conversation",
+      "@deepseek-ai/dsh-client-ui-input-trigger",
+      "@deepseek-ai/dsh-client-ui-settings"
+    ],
+    "dshWorkshop.permissions": ["browser:local-storage"],
+    "dshWorkshop.lifecycle.activation": "restart-plugin",
+    "engines.dsh": ">=0.2.1-0 <0.3.0",
+    "engines.node": "^22.19.0 || >=24.0.0"
+  },
+  "host": {
+    "package": "@deepseek-ai/dsh",
+    "version": "0.2.0-rc.2",
+    "bin": "C:/Users/32621/AppData/Roaming/npm/node_modules/@deepseek-ai/dsh/lib/bin.js",
+    "invocation": "--profile chist --host 127.0.0.1 --port <0|5470> --no-open",
+    "profile": "chist",
+    "profileBundles": ["@deepseek-ai/dsh-base", "@deepseek-ai/dsh-web-app", "dsh-composer-history"],
+    "profileNote": "首次 `dsh plugin --profile chist add` 只生成 dsh-base + 插件两行 bundles，缺 dsh-web-app，宿主启动即退（EXIT 1、stdout 空）；手工补成三行后正常启动。属 profile 初始化行为，不是被测插件缺陷。",
+    "isolatedEnv": ["DSH_HOME", "HOME", "USERPROFILE", "APPDATA", "LOCALAPPDATA", "XDG_CACHE_HOME", "XDG_CONFIG_HOME", "XDG_DATA_HOME", "npm_config_cache"],
+    "isolatedRoot": "H:/CODEX/fifteen-plugin-reviews-20261022/r2-01-composer-history/isolated-home",
+    "originsObserved": ["http://127.0.0.1:5470 (run4 冷重启前)", "http://127.0.0.1:5470 (run5 固定端口冷重启后)", "http://127.0.0.1:8975 (run6, cwd=fixtures/workspace-b)"]
+  },
+  "tooling": {
+    "node": "v24.19.0",
+    "npm": "11.17.0",
+    "pnpm": "11.7.0 (bundled with dsh CLI)",
+    "browser": "Microsoft Edge 155.0.4283.62",
+    "playwright": "1.64.1 (read-only reference: H:/CODEX/dsh-code-security-review-20261019/tooling/node_modules/playwright/index.mjs)",
+    "browserMode": "headless, launchPersistentContext with per-scenario userDataDir under temp/, route allow-list 127.0.0.1/localhost/[::1]",
+    "os": "Windows (x64)"
+  },
+  "installation": {
+    "command": "node <dsh bin.js> plugin --profile chist add <abs path to dsh-composer-history-0.8.15.tgz>",
+    "exitCode": 0,
+    "peerDependencyWarnings": true,
+    "allowVersionOverrideUsed": false,
+    "dumpConfigRow": "- id: composer-history\n  name: dsh-composer-history",
+    "evidence": ["evidence/step03-plugin-add.log", "evidence/step04-dump-config.txt", "evidence/step05-profile-before-bundles-fix.json"]
+  },
+  "dedupe": {
+    "reviewSite": {
+      "base": "https://review.lingshulab.com",
+      "queriedAt": "2026-10-22T09:14:56+08:00",
+      "method": "?q= 服务端不过滤，改为拉全量：/api/reviews 4 页共 172 条、/api/plugins 3 页共 133 条，本地逐条扫描",
+      "reviewsScanned": 172,
+      "pluginsScanned": 133,
+      "hitsForComposerHistory": 0,
+      "perryLinkPluginsInCatalog": 1,
+      "perryLinkPluginNames": ["dsh-memento"],
+      "targetPluginListed": false,
+      "verdict": "无同范围重复"
+    },
+    "bountyRepo": {
+      "base": "https://github.com/FuRongJun-1999/dsh-bounty/issues",
+      "api": "https://api.github.com/search/issues?q=repo:FuRongJun-1999/dsh-bounty+<term>",
+      "queriedAt": "2026-10-22T09:14:00+08:00",
+      "queries": [
+        { "q": "dsh-composer-history", "total": 1, "hit": "#1317", "hitTitle": "[intake 输入] pi2dsh v0.27.0 安全测评…", "sameScope": false, "note": "正文不含 composer-history，是按分词命中的无关条目" },
+        { "q": "PerryLink", "total": 12, "sameScope": false, "note": "12 条全是 PerryLink 名下其他插件（dsh-session-sync / dsh-permission-rules / dsh-approval-gate / dsh-doublecheck / dsh-memento ×2 / dsh-host-rsi / 上下文税横评 / dsh-memory-vault / dsh-mirror / dsh-core-memory / only-memory），无 composer-history" },
+        { "q": "composer", "total": 6, "sameScope": false, "note": "命中 dsh-spotlight / dsh-message-edit / upstream.ts / pi2dsh / dsh-genui / dsh-myskin，均非本插件" }
+      ],
+      "verdict": "无同范围重复"
+    },
+    "conclusion": "两站均查清，无同范围重复；可作为首报候选"
+  },
+  "processes": {
+    "selfStarted": [
+      { "tag": "run4", "pid": 20832, "port": 5470, "stoppedBy": "job_kill (pwsh-1b905e32e7524592)" },
+      { "tag": "run5", "pid": 33680, "port": 5470, "stoppedBy": "Stop-Process at collection time" },
+      { "tag": "run6", "pid": 26460, "port": 8975, "stoppedBy": "Stop-Process at collection time" }
+    ],
+    "failedOrEmpty": [
+      { "tag": "run1", "note": "Start-Job 承载失败，stdout/stderr 均 0 字节" },
+      { "tag": "run2", "note": "profile 缺 dsh-web-app，EXIT 1，stdout/stderr 均 0 字节" },
+      { "tag": "run3", "note": "profile package.json 被写入 UTF-8 BOM，readProfileManifest JSON.parse 失败，stderr 1093 字节" }
+    ],
+    "userGuiUntouched": "未访问、未接管 127.0.0.1 的 1241 / 2538 / 4756；未读取任何 token/cookie/真实会话"
+  },
+  "generatedAt": "2026-10-22T09:20:00+08:00"
+}

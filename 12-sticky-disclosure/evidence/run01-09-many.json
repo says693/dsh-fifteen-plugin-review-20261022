@@ -1,0 +1,44 @@
+{
+  "steps": [],
+  "rounds": [],
+  "base": {
+    "rows": 60,
+    "think": 20,
+    "tool": 20,
+    "turnProcess": 20,
+    "disclosureRows": 40
+  },
+  "expandMs": 39116,
+  "attempted": 40,
+  "expanded": 40,
+  "pill": {
+    "attr": "40",
+    "text": "·40",
+    "plugin": 40,
+    "rect": {
+      "x": 1270,
+      "y": 952,
+      "w": 112,
+      "h": 32,
+      "visible": true
+    },
+    "dockChips": 30
+  },
+  "agree": true,
+  "byVariant": {
+    "think": 20,
+    "tool": 20,
+    "turnProcess": 0
+  },
+  "after": {
+    "expanded": 0,
+    "pillAttr": "0",
+    "pillText": "",
+    "plugin": 0,
+    "clickMs": 14,
+    "leftover": [],
+    "leftoverCount": 0
+  },
+  "errors": [],
+  "consoleErr": []
+}

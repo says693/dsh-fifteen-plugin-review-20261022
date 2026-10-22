@@ -1,0 +1,112 @@
+{
+  "schema": "dsh-plugin-review-provenance/1",
+  "task": {
+    "batch": "fifteen-plugin-reviews-20261022",
+    "round": "r1",
+    "slot": "r1-02",
+    "dir": "H:\\CODEX\\fifteen-plugin-reviews-20261022\\r1-02-minimap",
+    "executed_at_local": "2026-10-22T09:00:00+08:00",
+    "executed_at_utc_start": "2026-10-22T00:55:00Z",
+    "executed_at_utc_end": "2026-10-22T01:20:00Z"
+  },
+  "subject": {
+    "name": "dsh-conversation-minimap",
+    "version": "1.3.4",
+    "author": "Braidy-Wu",
+    "npm_user": "braidy_wu <wd4371009@gmail.com>",
+    "license": "MIT",
+    "license_file": "LICENSE, 1066 bytes, first line 'MIT License', copyright 'Copyright (c) 2026 Braidy-Wu'",
+    "repository": "https://github.com/Braidy-Wu/dsh-conversation-minimap",
+    "repository_full_name": "Braidy-Wu/dsh-conversation-minimap",
+    "source_commit_tested": "4b2ee4704de51b2409ff80bbba54445cdbc2ba67",
+    "source_commit_note": "ASSIGNMENT 指定的 1.3.4 提交；npm 包 gitHead 字段为 4379152bcbcf06f90b3332843ad1cdc01fb3b9e9，与 4b2ee470 不同号，但五个受测文件与 4b2ee470 逐字节相同（见 file_hashes），所以按 4b2ee470 作源码对照成立",
+    "npm_published_at": "2026-08-19T07:06:43.406Z",
+    "description": "DSH Web GUI prompt-based conversation minimap: a vertical navigation rail on the left of long conversations, each anchor = one user prompt; hover shows the prompt preview, click jumps to that message."
+  },
+  "npm_package": {
+    "registry": "https://registry.npmjs.org/dsh-conversation-minimap",
+    "tarball_url_used": "https://registry.npmjs.org/dsh-conversation-minimap/-/dsh-conversation-minimap-1.3.4.tgz",
+    "tarball_url_registry_reported": "https://mirrors.cloud.tencent.com/npm/dsh-conversation-minimap/-/dsh-conversation-minimap-1.3.4.tgz",
+    "tarball_bytes": 243973,
+    "tarball_sha1_measured": "17a4c86c8479b02e6bc3077a53c5c225bdbb2da9",
+    "shasum_from_registry": "17a4c86c8479b02e6bc3077a53c5c225bdbb2da9",
+    "shasum_match": true,
+    "tarball_sha256_measured": "2f76d9ddc4d2f019e5f8f878768d033b8fd2bbc254f2a66785fd54c69d4c3809",
+    "integrity_measured": "sha512-bZhe5D2IblCPM0/N8iGqZNyvEbmgOY+r3ky2HQKj3faj2LhkTD1EG7Yea8weFNfo61baE61muNXLcEag4TtDvQ==",
+    "integrity_from_registry": "sha512-bZhe5D2IblCPM0/N8iGqZNyvEbmgOY+r3ky2HQKj3faj2LhkTD1EG7Yea8weFNfo61baE61muNXLcEag4TtDvQ==",
+    "integrity_match": true,
+    "file_count": 8,
+    "unpacked_size_measured": 290513,
+    "unpacked_size_registry": 290513,
+    "signatures_present": true,
+    "files": [
+      "package.json", "index.js", "client.js", "cordis.patch.yml",
+      "README.md", "README.zh.md", "LICENSE", "docs/screenshot.png"
+    ]
+  },
+  "file_hashes": {
+    "algorithm": "sha256",
+    "note": "npm 发布件解包目录 temp/pkg/package 与 GitHub 提交 4b2ee470 解包目录 temp/ghsrc/... 的同名文件逐个比对，全部相同",
+    "npm_vs_git_identical": true,
+    "files": {
+      "client.js": { "npm": "451f4ff45f173d1e0a558f35b84bb0cebfc894f9d264330903ed60db0ea4cc4a", "git": "451f4ff45f173d1e0a558f35b84bb0cebfc894f9d264330903ed60db0ea4cc4a", "bytes": 35904 },
+      "index.js": { "npm": "33c51afb2111de2990a96d907c8d97a3f83e597d293b5e1e14c23ab7f50c8eb3", "git": "33c51afb2111de2990a96d907c8d97a3f83e597d293b5e1e14c23ab7f50c8eb3", "bytes": 1025 },
+      "package.json": { "npm": "ac6df9b7973e19c56595cb4bb828893ad6032e102e534e96e2d0e7feb7db592c", "git": "ac6df9b7973e19c56595cb4bb828893ad6032e102e534e96e2d0e7feb7db592c", "bytes": 1248 },
+      "LICENSE": { "npm": "10fd3ad01b1dc7e8e2df954100bfbf415d8461c3ab9e96a94f9347ba8446b94f", "git": "10fd3ad01b1dc7e8e2df954100bfbf415d8461c3ab9e96a94f9347ba8446b94f", "bytes": 1066 },
+      "cordis.patch.yml": { "npm": "c991ff9c19147d77d48359292f591118c2ddddca7957467c1b8b46411b982880", "git": "c991ff9c19147d77d48359292f591118c2ddddca7957467c1b8b46411b982880", "bytes": 700 }
+    }
+  },
+  "host": {
+    "package": "@deepseek-ai/dsh",
+    "version": "0.2.0-rc.2",
+    "bin": "C:\Users\USER\\AppData\\Roaming\\npm\\node_modules\\@deepseek-ai\\dsh\\lib\\bin.js",
+    "node": "v24.19.0",
+    "invocation": "node bin.js --profile mmweb --host 127.0.0.1 --port 0 --no-open",
+    "profile": "mmweb (derived from the shipped web template, bundles = @deepseek-ai/dsh-base, @deepseek-ai/dsh-web-app, dsh-conversation-minimap)",
+    "profile_creation_note": "第一次用 `dsh plugin --profile mm add ...` 直接建出的 profile 只有 [dsh-base, 插件]，缺 dsh-web-app，boot 后不打印 URL（见 evidence/mm1-host.stdout.txt 为 0 字节、host 进程存活无监听端口）。改用 `dsh --profile mmweb --from-default-profile web --dump-config` 建出 web 派生 profile，再 add 插件，才能正常起 web 宿主。这是安装面的坑，不计为插件缺陷。"
+  },
+  "browser": {
+    "engine": "Microsoft Edge",
+    "executable": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
+    "driver": "Playwright 1.64.1 (H:\\CODEX\\dsh-code-security-review-20261019\\tooling\\node_modules\\playwright\\index.mjs, read-only reference)",
+    "mode": "headless, separate context per run, route allowlist 127.0.0.1/localhost/[::1] only",
+    "viewports_tested": ["1440x1000 light", "1440x1000 dark", "1000x900", "760x900", "600x900", "1200x800 (stub)"]
+  },
+  "isolation": {
+    "DSH_HOME": "H:\\CODEX\\fifteen-plugin-reviews-20261022\\r1-02-minimap\\isolated-home",
+    "HOME": "isolated-home\\user-home",
+    "USERPROFILE": "isolated-home\\user-home",
+    "APPDATA": "isolated-home\\appdata",
+    "LOCALAPPDATA": "isolated-home\\localappdata",
+    "npm_config_cache": "temp\\npm-cache",
+    "port_policy": "--port 0 (OS-assigned); observed 4243 then 3938 after cold restart",
+    "user_gui_never_touched": "1241 / 2538 / 4756 were never opened, read, or killed"
+  },
+  "fixtures": {
+    "builder": "make-sessions.mjs (official @deepseek-ai/dsh-session-persistence-jsonl, zstd, no model call)",
+    "sessions": [
+      { "id": "sess-mm-mixed", "user_prompts": 8, "prompt_chars": [2, 42, 202, 802, 12, 402, 102, 52], "purpose": "normal: uneven prompt lengths" },
+      { "id": "sess-mm-long", "user_prompts": 48, "purpose": "long session (>=40); turn 24 carries an ~8000-char prompt" },
+      { "id": "sess-mm-empty", "user_prompts": 0, "purpose": "anomaly: zero messages" },
+      { "id": "sess-mm-tiny", "user_prompts": 1, "purpose": "anomaly: single-turn session" },
+      { "id": "sess-mm-three", "user_prompts": 3, "purpose": "anomaly: below the documented minPrompts=4 threshold" }
+    ],
+    "stub_harness": {
+      "files": "fixtures/stub/*.html + fixtures/stub/client.js",
+      "client_js_provenance": "byte-identical copy of the npm tarball's client.js (sha256 451f4ff4...), served locally; plugin source not modified",
+      "why": "the real host never mounts the rail (see RESULTS C1), so the plugin's own UI logic was measured against stubs that mirror dsh 0.2.0-rc.2's SessionListState shape"
+    }
+  },
+  "network_hosts_contacted": [
+    "registry.npmjs.org (tarball + metadata)",
+    "codeload.github.com (source tarball at fixed commit)",
+    "api.github.com (issue search for dedupe)",
+    "review.lingshulab.com (plugin + review catalogue for dedupe)",
+    "127.0.0.1 (isolated host and stub server)"
+  ],
+  "not_done": [
+    "No plugin source modified, no fork, no submission, no upload, no repository created.",
+    "No model API key used; no real session, token, or cookie read.",
+    "macOS/Linux behaviour untested (Windows-only environment)."
+  ]
+}

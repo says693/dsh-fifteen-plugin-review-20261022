@@ -1,0 +1,28 @@
+{
+  "endpoints": [
+    {
+      "path": "/open-in-app/icon/explorer",
+      "status": 200,
+      "method": "GET",
+      "len": 1497,
+      "hasSessionCost": false
+    },
+    {
+      "path": "/api/commands/list",
+      "status": 200,
+      "method": "POST",
+      "len": 1048,
+      "hasSessionCost": false
+    },
+    {
+      "path": "/api/skills/list",
+      "status": 200,
+      "method": "POST",
+      "len": 495,
+      "hasSessionCost": false
+    }
+  ],
+  "costPayloads": [],
+  "errors": [],
+  "consoleLog": []
+}

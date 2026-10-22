@@ -1,0 +1,162 @@
+﻿{
+  "name": "dsh-milestone",
+  "versions": [
+    "0.1.0",
+    "0.2.0",
+    "0.2.1",
+    "0.3.0",
+    "0.3.1",
+    "0.4.0",
+    "0.5.0",
+    "0.6.0",
+    "0.6.1",
+    "0.6.2",
+    "0.6.3",
+    "0.6.4",
+    "0.6.5",
+    "0.6.6",
+    "0.7.0",
+    "0.7.1",
+    "0.7.2"
+  ],
+  "time": {
+    "created": "2026-08-13T15:35:56.535Z",
+    "modified": "2026-09-12T11:08:26.578Z",
+    "0.1.0": "2026-08-13T15:35:56.758Z",
+    "0.2.0": "2026-08-13T17:06:25.151Z",
+    "0.2.1": "2026-08-13T17:12:28.478Z",
+    "0.3.0": "2026-08-13T18:13:27.025Z",
+    "0.3.1": "2026-08-13T18:21:45.182Z",
+    "0.4.0": "2026-08-13T19:30:30.074Z",
+    "0.5.0": "2026-08-13T20:19:04.331Z",
+    "0.6.0": "2026-08-14T03:58:06.715Z",
+    "0.6.1": "2026-08-23T04:07:11.991Z",
+    "0.6.2": "2026-08-23T04:34:32.344Z",
+    "0.6.3": "2026-08-23T05:01:00.154Z",
+    "0.6.4": "2026-08-23T05:12:27.307Z",
+    "0.6.5": "2026-08-23T06:31:58.758Z",
+    "0.6.6": "2026-08-23T13:39:31.993Z",
+    "0.7.0": "2026-09-10T13:51:02.209Z",
+    "0.7.1": "2026-09-12T10:51:51.303Z",
+    "0.7.2": "2026-09-12T11:08:26.436Z"
+  },
+  "users": {},
+  "dist-tags": {
+    "latest": "0.7.2"
+  },
+  "_rev": "164-69750658ccba8954",
+  "_id": "dsh-milestone@0.7.2",
+  "_attachments": {},
+  "version": "0.7.2",
+  "description": "Git-style milestone timeline for DeepSeek Harness: hover for metadata, click to jump to any message. 会话里程碑导航条：圆点时间线，定位并跳转到每条提问。",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [
+        "@deepseek-ai/dsh-client-store",
+        "@deepseek-ai/dsh-client-ui-conversation",
+        "@deepseek-ai/dsh-client-ui-layout"
+      ],
+      "platform": "web"
+    }
+  },
+  "scripts": {
+    "build": "tsdown",
+    "watch": "tsdown --watch",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:surface": "playwright test --config=qa/playwright.config.ts",
+    "prepublishOnly": "pnpm run build"
+  },
+  "license": "MIT",
+  "keywords": [
+    "deepseek",
+    "harness",
+    "dsh",
+    "dsh-plugin",
+    "conversation",
+    "navigation"
+  ],
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "^4.0.1",
+    "@deepseek-ai/dsh-client-locale": ">=0.1.5-rc.1 <0.3.0-0",
+    "@deepseek-ai/dsh-client-store": ">=0.1.5-rc.1 <0.3.0-0",
+    "@deepseek-ai/dsh-client-ui-slots": ">=0.1.5-rc.1 <0.3.0-0",
+    "react": "^18.2.0"
+  },
+  "peerDependenciesMeta": {
+    "@deepseek-ai/dsh-client-locale": {
+      "optional": true
+    },
+    "@deepseek-ai/dsh-client-store": {
+      "optional": true
+    },
+    "@deepseek-ai/dsh-client-ui-slots": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@deepseek-ai/cordis": "^4.0.1",
+    "@deepseek-ai/dsh-api-session-controller": "0.1.5-rc.2",
+    "@deepseek-ai/dsh-client-locale": "0.1.5-rc.2",
+    "@deepseek-ai/dsh-client-store": "0.1.5-rc.2",
+    "@deepseek-ai/dsh-client-ui-layout": "0.1.5-rc.2",
+    "@deepseek-ai/dsh-client-ui-renderer": "0.1.5-rc.2",
+    "@deepseek-ai/dsh-client-ui-session": "0.1.5-rc.2",
+    "@deepseek-ai/dsh-client-ui-slots": "0.1.5-rc.2",
+    "@playwright/test": "^1.62.1",
+    "@testing-library/jest-dom": "^7.0.1",
+    "@testing-library/react": "^16.3.2",
+    "@testing-library/user-event": "^14.6.4",
+    "@types/node": "^26.2.0",
+    "@types/react": "~18.3.1",
+    "jsdom": "^30.0.1",
+    "react": "^18.2.0",
+    "tsdown": "0.22.2",
+    "typescript": "^6.0.3",
+    "vitest": "^4.1.10"
+  },
+  "dependencies": {
+    "@deepseek-ai/dsh-llm": "0.1.5-rc.2",
+    "@deepseek-ai/dsh-session": "0.1.5-rc.2",
+    "@deepseek-ai/dsh-session-projection": "0.1.5-rc.2",
+    "zod": "^4.5.4"
+  },
+  "gitHead": "01beb47009aae7886523777582d30fbd44b66dda",
+  "_nodeVersion": "24.19.0",
+  "_npmVersion": "11.17.0",
+  "dist": {
+    "integrity": "sha512-F/mWJyfPObZLcyUT4v0bGWF6No4hE3brQEjS/mQYY0yMWkdlwgrIgUI7gsblWjAbs73AfPL6i1SbIA5Vln8J6Q==",
+    "shasum": "05bff0576f22c73f89c62a46d167559876bb814b",
+    "tarball": "https://mirrors.cloud.tencent.com/npm/dsh-milestone/-/dsh-milestone-0.7.2.tgz",
+    "fileCount": 8,
+    "unpackedSize": 264156,
+    "signatures": [
+      {
+        "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U",
+        "sig": "MEYCIQCY+SZonKIJ/VMmaHNw1W3vD7+mcqy2CaqnWSjQpSo5jQIhANBNGh29ICDAfERq8ee8eMn1E8sXiFhjXZ3FFVSNsoEU"
+      }
+    ]
+  },
+  "_npmUser": "snowcrescenter <snowcrescenter@gmail.com>",
+  "directories": {},
+  "maintainers": [
+    "snowcrescenter <snowcrescenter@gmail.com>"
+  ],
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages-npm-production",
+    "tmp": "tmp/dsh-milestone_0.7.2_1789211306286_0.5995210907641095"
+  },
+  "_hasShrinkwrap": false,
+  "contributors": []
+}

@@ -1,0 +1,148 @@
+{
+  "tag": "p06",
+  "opened": {
+    "mixed": {
+      "found": true,
+      "clicked": "DIV",
+      "cls": "YDXeBa_sessionRow"
+    },
+    "long": {
+      "found": true,
+      "clicked": "DIV",
+      "cls": "YDXeBa_sessionRow"
+    },
+    "three": {
+      "found": true,
+      "clicked": "DIV",
+      "cls": "YDXeBa_sessionRow"
+    },
+    "tiny": {
+      "found": true,
+      "clicked": "DIV",
+      "cls": "YDXeBa_sessionRow"
+    },
+    "empty": {
+      "found": false
+    }
+  },
+  "rails": {
+    "mixed": {
+      "anchorCount": 0,
+      "seatCount": 0,
+      "seatDisplay": null,
+      "seatRect": null,
+      "railRect": null,
+      "innerTransform": null,
+      "seatMask": null,
+      "rowCount": 32,
+      "userRowCount": 8,
+      "scroll": {
+        "scrollTop": 2304,
+        "scrollHeight": 3228,
+        "clientHeight": 924,
+        "rect": {
+          "x": 280,
+          "y": 76,
+          "w": 1158,
+          "h": 924
+        }
+      },
+      "anchors": []
+    },
+    "long": {
+      "anchorCount": 0,
+      "seatCount": 0,
+      "seatDisplay": null,
+      "seatRect": null,
+      "railRect": null,
+      "innerTransform": null,
+      "seatMask": null,
+      "rowCount": 100,
+      "userRowCount": 25,
+      "scroll": {
+        "scrollTop": 10573,
+        "scrollHeight": 11497,
+        "clientHeight": 924,
+        "rect": {
+          "x": 280,
+          "y": 76,
+          "w": 1158,
+          "h": 924
+        }
+      },
+      "anchors": []
+    },
+    "three": {
+      "anchorCount": 0,
+      "seatCount": 0,
+      "seatDisplay": null,
+      "seatRect": null,
+      "railRect": null,
+      "innerTransform": null,
+      "seatMask": null,
+      "rowCount": 12,
+      "userRowCount": 3,
+      "scroll": {
+        "scrollTop": 0,
+        "scrollHeight": 924,
+        "clientHeight": 924,
+        "rect": {
+          "x": 280,
+          "y": 76,
+          "w": 1158,
+          "h": 924
+        }
+      },
+      "anchors": []
+    },
+    "tiny": {
+      "anchorCount": 0,
+      "seatCount": 0,
+      "seatDisplay": null,
+      "seatRect": null,
+      "railRect": null,
+      "innerTransform": null,
+      "seatMask": null,
+      "rowCount": 4,
+      "userRowCount": 1,
+      "scroll": {
+        "scrollTop": 0,
+        "scrollHeight": 924,
+        "clientHeight": 924,
+        "rect": {
+          "x": 280,
+          "y": 76,
+          "w": 1158,
+          "h": 924
+        }
+      },
+      "anchors": []
+    },
+    "empty": {
+      "anchorCount": 0,
+      "seatCount": 0,
+      "seatDisplay": null,
+      "seatRect": null,
+      "railRect": null,
+      "innerTransform": null,
+      "seatMask": null,
+      "rowCount": 4,
+      "userRowCount": 1,
+      "scroll": {
+        "scrollTop": 0,
+        "scrollHeight": 924,
+        "clientHeight": 924,
+        "rect": {
+          "x": 280,
+          "y": 76,
+          "w": 1158,
+          "h": 924
+        }
+      },
+      "anchors": []
+    }
+  },
+  "errors": [],
+  "console": [],
+  "lengthMapping": []
+}

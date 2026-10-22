@@ -1,0 +1,42 @@
+{
+  "start": {
+    "cur": "session-6854de43-b6df-467b-a967-80a0bddadba9",
+    "sel": [
+      "session:session-6854de43-b6df-467b-a967-80a0bddadba9"
+    ],
+    "head": ""
+  },
+  "targetText": "把这周的错题整理成表格\n9分钟",
+  "afterSidebarClick": {
+    "cur": "session-36dafaf6-2551-4cb7-a7a0-5a148681f143",
+    "sel": [
+      "session:session-36dafaf6-2551-4cb7-a7a0-5a148681f143"
+    ],
+    "head": "把这周的错题整理成表格 标准模式 对话 轨迹"
+  },
+  "panelRows": [
+    {
+      "t": "把这周的错题整理成表格",
+      "id": "session-36dafaf6-2551-4cb7-a7a0-5a148681f143"
+    }
+  ],
+  "afterPanelClick": {
+    "before": "session-36dafaf6-2551-4cb7-a7a0-5a148681f143",
+    "firstId": "session-36dafaf6-2551-4cb7-a7a0-5a148681f143",
+    "cur": "session-36dafaf6-2551-4cb7-a7a0-5a148681f143",
+    "sel": [
+      "session:session-36dafaf6-2551-4cb7-a7a0-5a148681f143"
+    ],
+    "head": "把这周的错题整理成表格 标准模式 对话 轨迹"
+  },
+  "gotoAttempt": {
+    "cur": "session-36dafaf6-2551-4cb7-a7a0-5a148681f143",
+    "sel": [
+      "session:session-36dafaf6-2551-4cb7-a7a0-5a148681f143"
+    ],
+    "dialogs": [],
+    "composerText": ""
+  },
+  "errors": [],
+  "console": []
+}

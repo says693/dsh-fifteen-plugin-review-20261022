@@ -1,0 +1,26 @@
+{
+  "wrap": {
+    "ok": true
+  },
+  "opened": {
+    "found": true
+  },
+  "out": {
+    "applyCalls": 0,
+    "snapshot": null,
+    "ctxKeys": null,
+    "wrapErr": null,
+    "snapErr": null,
+    "seats": 0,
+    "anchors": 0,
+    "userRows": 8,
+    "stylePresent": true,
+    "config": {
+      "enabled": true,
+      "minPrompts": 4,
+      "anchorSize": 3
+    }
+  },
+  "consoleLog": [],
+  "errors": []
+}

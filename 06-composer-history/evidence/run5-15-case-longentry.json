@@ -1,0 +1,73 @@
+{
+  "entries": [
+    "第一条历史：给周记起个开头",
+    "第二条历史：把结尾写暖一点",
+    "第三条历史：再检查一遍错别字",
+    "乙会话专属的句子-只在B里发过",
+    "Hello there, this is Draft ONE",
+    "hello again from draft two"
+  ],
+  "lowerHello": {
+    "present": true,
+    "visible": true,
+    "status": "2 matches",
+    "rows": [
+      "Hello there, this is Draft ONE",
+      "hello again from draft two"
+    ],
+    "marks": [
+      "Hello",
+      "hello"
+    ],
+    "selected": "Hello there, this is Draft ONE"
+  },
+  "upperHello": {
+    "present": true,
+    "visible": true,
+    "status": "2 matches",
+    "rows": [
+      "Hello there, this is Draft ONE",
+      "hello again from draft two"
+    ],
+    "marks": [
+      "Hello",
+      "hello"
+    ],
+    "selected": "Hello there, this is Draft ONE"
+  },
+  "noMatch": {
+    "present": true,
+    "visible": true,
+    "status": "",
+    "rows": [],
+    "marks": [],
+    "selected": null
+  },
+  "noMatchAfterEsc": {
+    "text": "",
+    "len": 0
+  },
+  "longEntry": {
+    "elapsedMs": 20516,
+    "settledLen": null,
+    "firstSample": {
+      "ms": 10,
+      "len": 26
+    },
+    "lastSample": {
+      "ms": 20001,
+      "len": 26
+    },
+    "sampleCount": 40,
+    "entriesAfter": [
+      13,
+      13,
+      14,
+      15,
+      30,
+      26,
+      20014
+    ]
+  },
+  "errors": []
+}

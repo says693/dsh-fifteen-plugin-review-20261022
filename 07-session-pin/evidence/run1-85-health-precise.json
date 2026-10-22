@@ -1,0 +1,63 @@
+{
+  "conv": {
+    "cur": "session-08fbbad4-a5f0-4e61-8e44-49b911727022",
+    "convText": "帮我整理一份关于海洋塑料污 标准模式 对话 轨迹 帮我整理一份关于海洋塑料污染的读书笔记提纲 09:04 处理失败 处理失败 本轮运行失败llm-deepseek: no API key for provider route \"deepseek-official\"; store DEEPSEEK_API_KEY through the credentials service (the web Models page writes it), or export DEEPSEEK_API_KEY in the launching environment MISSING_CREDENTIAL 你好，请简单介绍一下你自己 09:18 处理失败 处理失败 本轮运行失败llm-deepseek: no API key for provider route \"deepseek-official\"; st",
+    "nodeish": 12
+  },
+  "health1": [
+    {
+      "t": "/goto 请假",
+      "h": "",
+      "sid": "session-6854de43-b6df-467b-a967-80a0bddadba9"
+    },
+    {
+      "t": "比较两个版本的实验数据差异",
+      "h": "",
+      "sid": "session-300ede31-2667-45af-9046-0749490f3dd4"
+    },
+    {
+      "t": "写一封给班主任的请假邮件",
+      "h": "",
+      "sid": "session-3c8badf3-ce48-4e15-aae2-be9723a30ae1"
+    },
+    {
+      "t": "帮我整理一份关于海洋塑料污",
+      "h": "",
+      "sid": "session-08fbbad4-a5f0-4e61-8e44-49b911727022"
+    },
+    {
+      "t": "把这周的错题整理成表格",
+      "h": "",
+      "sid": "session-36dafaf6-2551-4cb7-a7a0-5a148681f143"
+    }
+  ],
+  "health2": [
+    {
+      "t": "/goto 请假",
+      "h": "",
+      "raw": "<span class=\"__dsh-session-pin-nav__health\"></span>"
+    },
+    {
+      "t": "比较两个版本的实验数据差异",
+      "h": "",
+      "raw": "<span class=\"__dsh-session-pin-nav__health\"></span>"
+    },
+    {
+      "t": "写一封给班主任的请假邮件",
+      "h": "",
+      "raw": "<span class=\"__dsh-session-pin-nav__health\"></span>"
+    },
+    {
+      "t": "帮我整理一份关于海洋塑料污",
+      "h": "",
+      "raw": "<span class=\"__dsh-session-pin-nav__health\"></span>"
+    },
+    {
+      "t": "把这周的错题整理成表格",
+      "h": "",
+      "raw": "<span class=\"__dsh-session-pin-nav__health\"></span>"
+    }
+  ],
+  "errors": [],
+  "console": []
+}

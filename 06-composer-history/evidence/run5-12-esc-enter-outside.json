@@ -1,0 +1,141 @@
+{
+  "openFocus": {
+    "text": "\n",
+    "overlay": true,
+    "focusIn": "INPUT",
+    "rows": [
+      {
+        "t": "第一条历史：给周记起个开头",
+        "sel": "true"
+      },
+      {
+        "t": "第二条历史：把结尾写暖一点",
+        "sel": "false"
+      },
+      {
+        "t": "第三条历史：再检查一遍错别字",
+        "sel": "false"
+      },
+      {
+        "t": "乙会话专属的句子-只在B里发过",
+        "sel": "false"
+      }
+    ],
+    "status": "4 entries"
+  },
+  "escWithOverlayFocus": {
+    "text": "\n",
+    "overlay": true,
+    "focusIn": "DIV.uV2eYG_input",
+    "rows": [
+      {
+        "t": "第一条历史：给周记起个开头",
+        "sel": "true"
+      },
+      {
+        "t": "第二条历史：把结尾写暖一点",
+        "sel": "false"
+      },
+      {
+        "t": "第三条历史：再检查一遍错别字",
+        "sel": "false"
+      },
+      {
+        "t": "乙会话专属的句子-只在B里发过",
+        "sel": "false"
+      }
+    ],
+    "status": "4 entries"
+  },
+  "afterOutsideClick": {
+    "text": "\n",
+    "overlay": true,
+    "focusIn": "BODY",
+    "rows": [
+      {
+        "t": "第一条历史：给周记起个开头",
+        "sel": "true"
+      },
+      {
+        "t": "第二条历史：把结尾写暖一点",
+        "sel": "false"
+      },
+      {
+        "t": "第三条历史：再检查一遍错别字",
+        "sel": "false"
+      },
+      {
+        "t": "乙会话专属的句子-只在B里发过",
+        "sel": "false"
+      }
+    ],
+    "status": "4 entries"
+  },
+  "afterEnter": {
+    "text": "第一条历史：给周记起个开头",
+    "overlay": true,
+    "focusIn": "DIV.uV2eYG_input",
+    "rows": [
+      {
+        "t": "第一条历史：给周记起个开头",
+        "sel": "true"
+      },
+      {
+        "t": "第二条历史：把结尾写暖一点",
+        "sel": "false"
+      },
+      {
+        "t": "第三条历史：再检查一遍错别字",
+        "sel": "false"
+      },
+      {
+        "t": "乙会话专属的句子-只在B里发过",
+        "sel": "false"
+      }
+    ],
+    "status": "4 entries"
+  },
+  "afterEnterThenEsc": {
+    "text": "第一条历史：给周记起个开头",
+    "overlay": true,
+    "focusIn": "DIV.uV2eYG_input",
+    "rows": [
+      {
+        "t": "第一条历史：给周记起个开头",
+        "sel": "true"
+      },
+      {
+        "t": "第二条历史：把结尾写暖一点",
+        "sel": "false"
+      },
+      {
+        "t": "第三条历史：再检查一遍错别字",
+        "sel": "false"
+      },
+      {
+        "t": "乙会话专属的句子-只在B里发过",
+        "sel": "false"
+      }
+    ],
+    "status": "4 entries"
+  },
+  "outsideComposer": {
+    "overlay": true,
+    "noReload": "kept",
+    "cap": [
+      {
+        "key": "Control",
+        "ctrl": true,
+        "prevented": false
+      },
+      {
+        "key": "r",
+        "ctrl": true,
+        "prevented": true
+      }
+    ],
+    "active": "INPUT",
+    "focusBefore": "DIV"
+  },
+  "errors": []
+}

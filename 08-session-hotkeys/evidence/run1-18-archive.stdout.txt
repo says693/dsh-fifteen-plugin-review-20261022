@@ -1,0 +1,181 @@
+﻿{
+  "utc": "2026-10-22T01:10:08.637Z",
+  "side0": {
+    "asideW": 280,
+    "asideX": 0,
+    "toggleLabels": [
+      "收起侧边栏",
+      "打开右侧边栏",
+      "收起右侧边栏"
+    ]
+  },
+  "side1": {
+    "asideW": 56,
+    "asideX": 0,
+    "toggleLabels": [
+      "打开侧边栏",
+      "打开右侧边栏",
+      "收起右侧边栏"
+    ]
+  },
+  "side2": {
+    "asideW": 280,
+    "asideX": 0,
+    "toggleLabels": [
+      "收起侧边栏",
+      "打开右侧边栏",
+      "收起右侧边栏"
+    ]
+  },
+  "prevented": [
+    {
+      "combo": "Alt+1",
+      "handlerSaw": [],
+      "defaultPrevented": false
+    },
+    {
+      "combo": "Alt+2",
+      "handlerSaw": [],
+      "defaultPrevented": false
+    },
+    {
+      "combo": "Alt+N",
+      "handlerSaw": [],
+      "defaultPrevented": false
+    },
+    {
+      "combo": "Alt+P",
+      "handlerSaw": [],
+      "defaultPrevented": false
+    },
+    {
+      "combo": "Alt+B",
+      "handlerSaw": [],
+      "defaultPrevented": false
+    },
+    {
+      "combo": "Alt+M",
+      "handlerSaw": [],
+      "defaultPrevented": false
+    },
+    {
+      "combo": "Alt+W",
+      "handlerSaw": [],
+      "defaultPrevented": false
+    },
+    {
+      "combo": "Alt+Shift+F",
+      "handlerSaw": [],
+      "defaultPrevented": false
+    },
+    {
+      "combo": "Alt+Shift+A",
+      "handlerSaw": [],
+      "defaultPrevented": false
+    },
+    {
+      "combo": "Alt+Shift+U",
+      "handlerSaw": [
+        {
+          "code": "KeyU",
+          "ctrl": false,
+          "alt": true,
+          "shift": true,
+          "dp": false,
+          "tag": "INPUT"
+        }
+      ],
+      "defaultPrevented": false
+    },
+    {
+      "combo": "Alt+Shift+R",
+      "handlerSaw": [
+        {
+          "code": "KeyR",
+          "ctrl": false,
+          "alt": true,
+          "shift": true,
+          "dp": false,
+          "tag": "INPUT"
+        }
+      ],
+      "defaultPrevented": false
+    },
+    {
+      "combo": "Alt+Shift+1",
+      "handlerSaw": [
+        {
+          "code": "Digit1",
+          "ctrl": false,
+          "alt": true,
+          "shift": true,
+          "dp": false,
+          "tag": "INPUT"
+        }
+      ],
+      "defaultPrevented": false
+    },
+    {
+      "combo": "Ctrl+Alt+1",
+      "handlerSaw": [
+        {
+          "code": "Digit1",
+          "ctrl": true,
+          "alt": true,
+          "shift": false,
+          "dp": false,
+          "tag": "INPUT"
+        }
+      ],
+      "defaultPrevented": false
+    }
+  ],
+  "beforeArchive": {
+    "active": "session:session-b82a64e0-a6be-45a6-a240-f057d74ca6e0",
+    "n": 2,
+    "toast": null,
+    "focus": {
+      "tag": "INPUT",
+      "role": null,
+      "aria": "API 密钥",
+      "cls": "zGbnIq_input"
+    }
+  },
+  "confirmCard": {
+    "found": true,
+    "classes": [
+      "shk-confirm-mask",
+      "shk-confirm",
+      "shk-confirm-strip",
+      "shk-confirm-dot",
+      "shk-confirm-body",
+      "shk-confirm-session",
+      "shk-confirm-sessionicon",
+      "shk-confirm-sessiontitle",
+      "shk-confirm-text",
+      "shk-confirm-actions",
+      "shk-confirm-btn",
+      "shk-confirm-btn",
+      "shk-confirm-hint"
+    ],
+    "texts": [
+      "归档会话\ndefault-workspace\n归档不会删除日志，但浏览器端无法恢复会话。\n取消\n归档\nEnter 确认 · Esc 取消 · ←→ 切换",
+      "归档会话\ndefault-workspace\n归档不会删除日志，但浏览器端无法恢复会话。\n取消\n归档\nEnter 确认 · Esc 取消 · ←→ 切换",
+      "归档会话"
+    ],
+    "bodyHasWarn": true
+  },
+  "afterArchiveEsc": {
+    "active": "session:session-b82a64e0-a6be-45a6-a240-f057d74ca6e0",
+    "n": 2,
+    "toast": null,
+    "focus": {
+      "tag": "INPUT",
+      "role": null,
+      "aria": "API 密钥",
+      "cls": "zGbnIq_input"
+    }
+  },
+  "confirmGone": false,
+  "errors": []
+}

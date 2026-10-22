@@ -1,0 +1,29 @@
+﻿node : dsh: initialized profile web at H:\CODEX\fifteen-plugin-reviews-20261022\r1-03-turn-index\isolated-home\profiles
+\web
+所在位置 行:4 字符: 8
++ $out = node 'C:\Users\32621\AppData\Roaming\npm\node_modules\@deepsee ...
++        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (dsh: initialize...me\profiles\web:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Progress: resolved 1, reused 0, downloaded 0, added 0
+
+dependencies:
++ dsh-turn-index 0.1.1
+
+Packages: +1
++
+[WARN] Tarball download average speed 5 KiB/s (size 13 KiB) is below 50 KiB/s: https://registry.npmjs.org/dsh-turn-index/-/dsh-turn-index-0.1.1.tgz (GET)
+Progress: resolved 1, reused 0, downloaded 1, added 0
+Progress: resolved 1, reused 0, downloaded 1, added 1, done
+Done in 4.9s using pnpm v11.7.0
+[WARN] Request took 15649ms: https://registry.npmjs.org/pnpm
+
+   ╭──────────────────────────────────────────╮
+   │                                          │
+   │   Update available! 11.7.0 → 12.14.0.    │
+   │   Changelog: https://pnpm.io/v/12.14.0   │
+   │     To update, run: pnpm add -g pnpm     │
+   │                                          │
+   ╰──────────────────────────────────────────╯
+

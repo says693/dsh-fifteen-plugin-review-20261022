@@ -1,0 +1,13 @@
+file:///C:/Users/32621/AppData/Roaming/npm/node_modules/@deepseek-ai/dsh/node_modules/@deepseek-ai/dsh-app-boot/lib/index.js:974
+		if (template === void 0) throw new Error(`${binName}: profile ${JSON.stringify(name)} does not exist; create it with 'dsh plugin --profile ${name} add <package>'`);
+		                               ^
+
+Error: dsh: profile "web2" does not exist; create it with 'dsh plugin --profile web2 add <package>'
+    at loadProfile (file:///C:/Users/32621/AppData/Roaming/npm/node_modules/@deepseek-ai/dsh/node_modules/@deepseek-ai/dsh-app-boot/lib/index.js:974:34)
+    at prepareProfile (file:///C:/Users/32621/AppData/Roaming/npm/node_modules/@deepseek-ai/dsh/lib/profile-boot-BZ2ZjNWi.js:187:18)
+    at composeProfile (file:///C:/Users/32621/AppData/Roaming/npm/node_modules/@deepseek-ai/dsh/lib/profile-boot-BZ2ZjNWi.js:206:46)
+    at runProfile (file:///C:/Users/32621/AppData/Roaming/npm/node_modules/@deepseek-ai/dsh/lib/profile-boot-BZ2ZjNWi.js:241:26)
+    at async runCli (file:///C:/Users/32621/AppData/Roaming/npm/node_modules/@deepseek-ai/dsh/lib/bin.js:215:5)
+    at async file:///C:/Users/32621/AppData/Roaming/npm/node_modules/@deepseek-ai/dsh/lib/bin.js:252:23
+
+Node.js v24.19.0

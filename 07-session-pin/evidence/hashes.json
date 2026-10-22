@@ -1,0 +1,38 @@
+{
+  "package.json": {
+    "sha256": "b65b18dd726a7b1d23a3b6995d248343d11d0ab8aea77a4d5678b9929a13ef51",
+    "bytes": 6133
+  },
+  "lib/index.js": {
+    "sha256": "660a87fbd6dac18c8f0dc966588d00a5d48d3bcd4b10af3cc58c0a8e2701b720",
+    "bytes": 4422
+  },
+  "lib/client.js": {
+    "sha256": "32110da815c64894afb829c877d7f534d277247268d441f7216033b366e237b6",
+    "bytes": 80270
+  },
+  "LICENSE": {
+    "sha256": "a22a0c495566ce9b09b25aa3feab8d54a5b12c6a26eb3dcb5324ead9a586da66",
+    "bytes": 11361
+  },
+  "cordis.patch.yml": {
+    "sha256": "ae5ace218378cbb07858be6fd837831c5f03e0a97feb6a853cb4b6383c29cc23",
+    "bytes": 360
+  },
+  "README.md": {
+    "sha256": "a956e9d22c9327b477092cfa40d7e20c3f38c513c1df1fa8d7059de228d9d075",
+    "bytes": 25439
+  },
+  "README-zh.md": {
+    "sha256": "8cc7401f2a83dd4cf44901460f1690eecbfce6f39b17b278c2273fe27e3d9f62",
+    "bytes": 24134
+  },
+  "CHANGELOG.md": {
+    "sha256": "2e971398712f49244313fb6a91b825039f54f4dd944c5033f7fa796a02f4700f",
+    "bytes": 26972
+  },
+  "SECURITY.md": {
+    "sha256": "2e7765b16abd7da92e52bb434f5e949a962766fc781a75b30a74fd5105d7e63d",
+    "bytes": 1781
+  }
+}

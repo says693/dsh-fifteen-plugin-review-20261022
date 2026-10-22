@@ -1,0 +1,98 @@
+{
+  "A_availableRows": {
+    "pressed": "true",
+    "label": "◉ 只看结果",
+    "stored": null,
+    "styleTags": 1,
+    "thinkTotal": 0,
+    "thinkDisplayed": 0,
+    "toolTotal": 0,
+    "toolDisplayed": 0,
+    "currentSession": "{\"sessionId\":\"session-5a0b261b-2264-4e16-83c7-237905f1d656\"}",
+    "rows": [
+      "workspace:ac1753c6-dd89-451b-a529-74e44357e9e6",
+      "session:session-5a0b261b-2264-4e16-83c7-237905f1d656",
+      "session:sess-rov-multi",
+      "session:sess-rov-long",
+      "session:sess-rov-one",
+      "workspace:"
+    ]
+  },
+  "A_opened": false,
+  "A_afterOpen": {
+    "current": "{\"sessionId\":\"session-5a0b261b-2264-4e16-83c7-237905f1d656\"}",
+    "selected": "session:session-5a0b261b-2264-4e16-83c7-237905f1d656",
+    "kinds": {},
+    "toolAttr": [],
+    "flowText": "",
+    "flowLen": 0
+  },
+  "A_toggle": {
+    "off": {
+      "pressed": "false",
+      "think": [],
+      "tool": [],
+      "toolCall": [],
+      "flowText": "",
+      "flowLen": 0
+    },
+    "on": {
+      "pressed": "true",
+      "think": [],
+      "tool": [],
+      "toolCall": [],
+      "flowText": "",
+      "flowLen": 0
+    },
+    "off2": {
+      "pressed": "false",
+      "think": [],
+      "tool": [],
+      "toolCall": [],
+      "flowText": "",
+      "flowLen": 0
+    },
+    "offOnOffIdentical": true,
+    "answerKeptOn": false,
+    "reasoningHiddenOn": true,
+    "answerKeptOff": false
+  },
+  "B_listed": {
+    "treeitems": [
+      {
+        "key": "workspace:ac1753c6-dd89-451b-a529-74e44357e9e6",
+        "text": "workspace",
+        "selected": null
+      },
+      {
+        "key": "session:session-5a0b261b-2264-4e16-83c7-237905f1d656",
+        "text": "新会话",
+        "selected": "true"
+      },
+      {
+        "key": "session:sess-rov-multi",
+        "text": "ROV 多轮对照 1小时",
+        "selected": "false"
+      },
+      {
+        "key": "session:sess-rov-long",
+        "text": "ROV 超长回复 1小时",
+        "selected": "false"
+      },
+      {
+        "key": "session:sess-rov-one",
+        "text": "ROV 单轮长回复 1小时",
+        "selected": "false"
+      },
+      {
+        "key": "workspace:",
+        "text": "未分组",
+        "selected": null
+      }
+    ],
+    "hasEmptyRow": false
+  },
+  "B_emptyConclusion": "not-listed-by-host (0-turn fixture filtered out of the sidebar)",
+  "errors": [],
+  "consoleLog": []
+}

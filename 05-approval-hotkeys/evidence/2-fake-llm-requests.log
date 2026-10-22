@@ -1,0 +1,82 @@
+{"utc":"2026-10-22T01:09:30.005Z","method":"POST","url":"/v1/messages","auth":"PRESENT","bodyBytes":75565}
+{"utc":"2026-10-22T01:09:30.009Z","method":"POST","url":"/v1/messages","auth":"PRESENT","bodyBytes":46480}
+{"utc":"2026-10-22T01:09:30.925Z","method":"POST","url":"/v1/messages","auth":"PRESENT","bodyBytes":46136}
+{"utc":"2026-10-22T01:09:32.054Z","method":"POST","url":"/v1/messages","auth":"PRESENT","bodyBytes":46415}
+{"utc":"2026-10-22T01:09:32.815Z","method":"POST","url":"/v1/messages","auth":"PRESENT","bodyBytes":48529}
+{"utc":"2026-10-22T01:09:36.132Z","method":"POST","url":"/v1/messages","auth":"PRESENT","bodyBytes":47731}
+{"utc":"2026-10-22T01:09:55.469Z","method":"POST","url":"/v1/messages","auth":"PRESENT","bodyBytes":75536}
+{"utc":"2026-10-22T01:09:55.471Z","method":"POST","url":"/v1/messages","auth":"PRESENT","bodyBytes":46451}
+{"utc":"2026-10-22T01:14:20.412Z","calls":1,"wantsTool":true,"url":"/v1/messages","bytes":75571,"auth":"PRESENT"}
+{"utc":"2026-10-22T01:14:20.413Z","calls":2,"wantsTool":false,"url":"/v1/messages","bytes":46487,"auth":"PRESENT"}
+{"utc":"2026-10-22T01:14:21.159Z","calls":3,"wantsTool":true,"url":"/v1/messages","bytes":46373,"auth":"PRESENT"}
+{"utc":"2026-10-22T01:15:35.366Z","calls":4,"wantsTool":false,"url":"/v1/messages","bytes":75571,"auth":"PRESENT"}
+{"utc":"2026-10-22T01:15:35.367Z","calls":5,"wantsTool":true,"url":"/v1/messages","bytes":46487,"auth":"PRESENT"}
+{"utc":"2026-10-22T01:16:21.319Z","calls":6,"wantsTool":false,"url":"/v1/messages","bytes":44691,"auth":"PRESENT"}
+{"utc":"2026-10-22T01:17:07.208Z","calls":7,"wantsTool":true,"url":"/v1/messages","bytes":44635,"auth":"PRESENT"}
+{"utc":"2026-10-22T01:17:07.976Z","calls":8,"wantsTool":false,"url":"/v1/messages","bytes":46214,"auth":"PRESENT"}
+{"utc":"2026-10-22T01:17:11.083Z","calls":9,"wantsTool":true,"url":"/v1/messages","bytes":45236,"auth":"PRESENT"}
+{"utc":"2026-10-22T01:17:11.865Z","calls":10,"wantsTool":false,"url":"/v1/messages","bytes":46815,"auth":"PRESENT"}
+{"utc":"2026-10-22T01:17:14.703Z","calls":11,"wantsTool":true,"url":"/v1/messages","bytes":45837,"auth":"PRESENT"}
+{"utc":"2026-10-22T01:17:15.518Z","calls":12,"wantsTool":false,"url":"/v1/messages","bytes":47416,"auth":"PRESENT"}
+{"utc":"2026-10-22T01:17:17.042Z","calls":13,"wantsTool":true,"url":"/v1/messages","bytes":46438,"auth":"PRESENT"}
+{"utc":"2026-10-22T01:17:19.706Z","calls":14,"wantsTool":false,"url":"/v1/messages","bytes":48017,"auth":"PRESENT"}
+{"utc":"2026-10-22T01:17:58.231Z","calls":15,"wantsTool":true,"url":"/v1/messages","bytes":75563,"auth":"PRESENT"}
+{"utc":"2026-10-22T01:17:58.232Z","calls":16,"wantsTool":false,"url":"/v1/messages","bytes":46479,"auth":"PRESENT"}
+{"utc":"2026-10-22T01:18:00.909Z","calls":17,"wantsTool":true,"url":"/v1/messages","bytes":46371,"auth":"PRESENT"}
+{"utc":"2026-10-22T01:20:10.450Z","url":"/v1/messages","bytes":75561,"auth":"PRESENT","lastUserHead":"TRIGGER 第一次审批 Current runtime context. This snapshot supersedes earlier runtime-","wantsTool":true}
+{"utc":"2026-10-22T01:20:10.454Z","url":"/v1/messages","bytes":46476,"auth":"PRESENT","lastUserHead":"Generate the session title from this JSON array of human messages:\n[{\"seq\":8,\"te","wantsTool":true}
+{"utc":"2026-10-22T01:20:11.321Z","url":"/v1/messages","bytes":46135,"auth":"PRESENT","lastUserHead":"","wantsTool":false}
+{"utc":"2026-10-22T01:20:12.641Z","url":"/v1/messages","bytes":45055,"auth":"PRESENT","lastUserHead":"TRIGGER 第二次审批","wantsTool":true}
+{"utc":"2026-10-22T01:20:12.881Z","url":"/v1/messages","bytes":46800,"auth":"PRESENT","lastUserHead":"","wantsTool":false}
+{"utc":"2026-10-22T01:20:14.804Z","url":"/v1/messages","bytes":45795,"auth":"PRESENT","lastUserHead":"TRIGGER 第三次审批","wantsTool":true}
+{"utc":"2026-10-22T01:20:15.585Z","url":"/v1/messages","bytes":47308,"auth":"PRESENT","lastUserHead":"","wantsTool":false}
+{"utc":"2026-10-22T01:20:19.825Z","url":"/v1/messages","bytes":46417,"auth":"PRESENT","lastUserHead":"TRIGGER 第四次审批","wantsTool":true}
+{"utc":"2026-10-22T01:20:20.874Z","url":"/v1/messages","bytes":47930,"auth":"PRESENT","lastUserHead":"","wantsTool":false}
+{"utc":"2026-10-22T01:20:25.178Z","url":"/v1/messages","bytes":47039,"auth":"PRESENT","lastUserHead":"TRIGGER 第五次审批","wantsTool":true}
+{"utc":"2026-10-22T01:20:25.959Z","url":"/v1/messages","bytes":48552,"auth":"PRESENT","lastUserHead":"","wantsTool":false}
+{"utc":"2026-10-22T01:20:27.329Z","url":"/v1/messages","bytes":47663,"auth":"PRESENT","lastUserHead":"TRIGGER 第六次审批","wantsTool":true}
+{"utc":"2026-10-22T01:21:37.765Z","url":"/v1/messages","bytes":75541,"auth":"PRESENT","lastUserHead":"TRIGGER B Current runtime context. This snapshot supersedes earlier runtime-cont","wantsTool":true}
+{"utc":"2026-10-22T01:21:37.767Z","url":"/v1/messages","bytes":46456,"auth":"PRESENT","lastUserHead":"Generate the session title from this JSON array of human messages:\n[{\"seq\":8,\"te","wantsTool":true}
+{"utc":"2026-10-22T01:21:39.881Z","url":"/v1/messages","bytes":75541,"auth":"PRESENT","lastUserHead":"TRIGGER D Current runtime context. This snapshot supersedes earlier runtime-cont","wantsTool":true}
+{"utc":"2026-10-22T01:21:39.882Z","url":"/v1/messages","bytes":46456,"auth":"PRESENT","lastUserHead":"Generate the session title from this JSON array of human messages:\n[{\"seq\":8,\"te","wantsTool":true}
+{"utc":"2026-10-22T01:21:42.276Z","url":"/v1/messages","bytes":46131,"auth":"PRESENT","lastUserHead":"","wantsTool":false}
+{"utc":"2026-10-22T01:23:07.420Z","url":"/v1/messages","bytes":75494,"auth":"PRESENT","lastUserHead":"TRIGGER B' Current runtime context. This snapshot supersedes earlier runtime-con","wantsTool":true}
+{"utc":"2026-10-22T01:23:07.421Z","url":"/v1/messages","bytes":46410,"auth":"PRESENT","lastUserHead":"Generate the session title from this JSON array of human messages:\n[{\"seq\":8,\"te","wantsTool":true}
+{"utc":"2026-10-22T01:26:21.563Z","url":"/v1/messages","bytes":75494,"auth":"PRESENT","lastUserHead":"TRIGGER B' Current runtime context. This snapshot supersedes earlier runtime-con","wantsTool":true}
+{"utc":"2026-10-22T01:26:21.565Z","url":"/v1/messages","bytes":46410,"auth":"PRESENT","lastUserHead":"Generate the session title from this JSON array of human messages:\n[{\"seq\":8,\"te","wantsTool":true}
+{"utc":"2026-10-22T01:26:23.052Z","url":"/v1/messages","bytes":46313,"auth":"PRESENT","lastUserHead":"","wantsTool":false}
+{"utc":"2026-10-22T01:26:24.770Z","url":"/v1/messages","bytes":45110,"auth":"PRESENT","lastUserHead":"TRIGGER C'","wantsTool":true}
+{"utc":"2026-10-22T01:26:26.225Z","url":"/v1/messages","bytes":46861,"auth":"PRESENT","lastUserHead":"","wantsTool":false}
+{"utc":"2026-10-22T01:26:27.963Z","url":"/v1/messages","bytes":45847,"auth":"PRESENT","lastUserHead":"TRIGGER D'","wantsTool":true}
+{"utc":"2026-10-22T01:26:28.710Z","url":"/v1/messages","bytes":47366,"auth":"PRESENT","lastUserHead":"","wantsTool":false}
+{"utc":"2026-10-22T01:26:31.163Z","url":"/v1/messages","bytes":46466,"auth":"PRESENT","lastUserHead":"TRIGGER E'","wantsTool":true}
+{"utc":"2026-10-22T01:28:37.123Z","url":"/v1/messages","bytes":75549,"auth":"PRESENT","lastUserHead":"TRIGGER 多审批 Current runtime context. This snapshot supersedes earlier runtime-co","wantsTool":true}
+{"utc":"2026-10-22T01:28:37.127Z","url":"/v1/messages","bytes":46465,"auth":"PRESENT","lastUserHead":"Generate the session title from this JSON array of human messages:\n[{\"seq\":8,\"te","wantsTool":true}
+{"utc":"2026-10-22T01:29:55.543Z","url":"/v1/messages","bytes":75544,"auth":"PRESENT","lastUserHead":"TRIGGER P1 Current runtime context. This snapshot supersedes earlier runtime-con","wantsTool":true}
+{"utc":"2026-10-22T01:29:55.544Z","url":"/v1/messages","bytes":46460,"auth":"PRESENT","lastUserHead":"Generate the session title from this JSON array of human messages:\n[{\"seq\":8,\"te","wantsTool":true}
+{"utc":"2026-10-22T01:29:57.387Z","url":"/v1/messages","bytes":53667,"auth":"PRESENT","lastUserHead":"You are repeating the exact same tool call with identical arguments. Carefully a","wantsTool":false}
+{"utc":"2026-10-22T01:30:00.333Z","url":"/v1/messages","bytes":46366,"auth":"PRESENT","lastUserHead":"TRIGGER P2","wantsTool":true}
+{"utc":"2026-10-22T01:30:03.782Z","url":"/v1/messages","bytes":55421,"auth":"PRESENT","lastUserHead":"You are repeating the exact same tool call with identical arguments. Carefully a","wantsTool":false}
+{"utc":"2026-10-22T01:30:06.738Z","url":"/v1/messages","bytes":48309,"auth":"PRESENT","lastUserHead":"TRIGGER P3","wantsTool":true}
+{"utc":"2026-10-22T01:30:10.027Z","url":"/v1/messages","bytes":57364,"auth":"PRESENT","lastUserHead":"You are repeating the exact same tool call with identical arguments. Carefully a","wantsTool":false}
+{"utc":"2026-10-22T01:30:13.005Z","url":"/v1/messages","bytes":50252,"auth":"PRESENT","lastUserHead":"TRIGGER P4","wantsTool":true}
+{"utc":"2026-10-22T01:30:16.964Z","url":"/v1/messages","bytes":59098,"auth":"PRESENT","lastUserHead":"You are repeating the exact same tool call with identical arguments. Carefully a","wantsTool":false}
+{"utc":"2026-10-22T01:30:56.503Z","url":"/v1/messages","bytes":75604,"auth":"PRESENT","lastUserHead":"TRIGGER focus-composer Current runtime context. This snapshot supersedes earlier","wantsTool":true}
+{"utc":"2026-10-22T01:30:56.504Z","url":"/v1/messages","bytes":46520,"auth":"PRESENT","lastUserHead":"Generate the session title from this JSON array of human messages:\n[{\"seq\":8,\"te","wantsTool":true}
+{"utc":"2026-10-22T01:32:11.864Z","url":"/v1/messages","bytes":75644,"auth":"PRESENT","lastUserHead":"TRIGGER focus-composer Current runtime context. This snapshot supersedes earlier","wantsTool":true}
+{"utc":"2026-10-22T01:32:11.865Z","url":"/v1/messages","bytes":46559,"auth":"PRESENT","lastUserHead":"Generate the session title from this JSON array of human messages:\n[{\"seq\":9,\"te","wantsTool":true}
+{"utc":"2026-10-22T01:35:05.281Z","url":"/v1/messages","bytes":75574,"auth":"PRESENT","lastUserHead":"TRIGGER shortcut Current runtime context. This snapshot supersedes earlier runti","wantsTool":true}
+{"utc":"2026-10-22T01:35:05.283Z","url":"/v1/messages","bytes":46490,"auth":"PRESENT","lastUserHead":"Generate the session title from this JSON array of human messages:\n[{\"seq\":8,\"te","wantsTool":true}
+{"utc":"2026-10-22T01:35:10.165Z","url":"/v1/messages","bytes":75579,"auth":"PRESENT","lastUserHead":"TRIGGER after-esc Current runtime context. This snapshot supersedes earlier runt","wantsTool":true}
+{"utc":"2026-10-22T01:35:10.167Z","url":"/v1/messages","bytes":46495,"auth":"PRESENT","lastUserHead":"Generate the session title from this JSON array of human messages:\n[{\"seq\":8,\"te","wantsTool":true}
+{"utc":"2026-10-22T01:44:01.518Z","url":"/v1/messages","bytes":75642,"auth":"PRESENT","lastUserHead":"TRIGGER gaps Current runtime context. This snapshot supersedes earlier runtime-c","wantsTool":true}
+{"utc":"2026-10-22T01:44:01.523Z","url":"/v1/messages","bytes":46558,"auth":"PRESENT","lastUserHead":"Generate the session title from this JSON array of human messages:\n[{\"seq\":9,\"te","wantsTool":true}
+{"utc":"2026-10-22T01:44:04.521Z","url":"/v1/messages","bytes":53457,"auth":"PRESENT","lastUserHead":"You are repeating the exact same tool call with identical arguments. Carefully a","wantsTool":false}
+{"utc":"2026-10-22T01:44:36.774Z","url":"/v1/messages","bytes":46279,"auth":"PRESENT","lastUserHead":"TRIGGER chord","wantsTool":true}
+{"utc":"2026-10-22T01:45:11.201Z","url":"/v1/messages","bytes":75579,"auth":"PRESENT","lastUserHead":"TRIGGER focus-esc Current runtime context. This snapshot supersedes earlier runt","wantsTool":true}
+{"utc":"2026-10-22T01:45:11.203Z","url":"/v1/messages","bytes":46495,"auth":"PRESENT","lastUserHead":"Generate the session title from this JSON array of human messages:\n[{\"seq\":8,\"te","wantsTool":true}
+{"utc":"2026-10-22T01:45:15.092Z","url":"/v1/messages","bytes":53906,"auth":"PRESENT","lastUserHead":"You are repeating the exact same tool call with identical arguments. Carefully a","wantsTool":false}
+{"utc":"2026-10-22T01:45:17.708Z","url":"/v1/messages","bytes":46500,"auth":"PRESENT","lastUserHead":"TRIGGER burst","wantsTool":true}
+{"utc":"2026-10-22T01:45:48.925Z","url":"/v1/messages","bytes":75574,"auth":"PRESENT","lastUserHead":"TRIGGER composer Current runtime context. This snapshot supersedes earlier runti","wantsTool":true}
+{"utc":"2026-10-22T01:45:48.927Z","url":"/v1/messages","bytes":46490,"auth":"PRESENT","lastUserHead":"Generate the session title from this JSON array of human messages:\n[{\"seq\":8,\"te","wantsTool":true}
+{"utc":"2026-10-22T01:45:52.088Z","url":"/v1/messages","bytes":53441,"auth":"PRESENT","lastUserHead":"You are repeating the exact same tool call with identical arguments. Carefully a","wantsTool":false}

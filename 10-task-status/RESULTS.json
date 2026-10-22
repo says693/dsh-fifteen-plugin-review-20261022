@@ -1,0 +1,293 @@
+{
+  "schema": "results/v1",
+  "target": "@vlln/dsh-task-status@0.3.1",
+  "generated_at": "2026-10-22T10:05:00+08:00",
+  "method_note": "本文件只抄录 evidence/ 里已经存在的读数，没有新增实测。四态：confirmed=有原始响应/截图直接支撑；uncertain=观察到现象但归因不一；untested=缺条件或读数无法区分。",
+  "summary": {
+    "total": 29,
+    "confirmed": 23,
+    "uncertain": 2,
+    "untested": 4,
+    "count_note": "C27 由 untested 改为 confirmed（两站查重已完成），并新增 C29（read 返回值形状）。故 21+2=23 confirmed、5-1=4 untested、28+1=29 total。",
+    "headline_findings": [
+      "D1：owned（有主）后台任务被 /tasks 路由静默丢弃——插件用 ownerSession 过滤，宿主投影字段名是 owner，有主任务在插件视图里不存在。",
+      "D2：即使 /tasks 返回 running 任务，页面上也从不出现状态条；client 用 [data-chat-flow=\"\"] 判断是否在 Chat 视图，该属性在宿主 0.2.0-rc.2 里实测 0 个。",
+      "D3：/output 对 /tasks 里明明存在的 running 任务返回 404 task not found，实时输出 tail 这条路读不到东西。",
+      "D3 的根因（C29）：插件的镜像补丁把官方 jobs.read 的返回值从 {chunks, lossy, job} 换成了 {text, snapshot}，两个字段都不存在，于是 text 恒空、snapshot 恒 undefined。这同时打断了插件自己的 /output（404）和官方 dsh-tool-jobs 的 renderModelDelta。"
+    ]
+  },
+
+  "checks": [
+    {
+      "id": "C01",
+      "area": "身份与完整性",
+      "check": "npm 发布件的 shasum / integrity 与 registry 声明一致",
+      "expected": "sha1=62c1deb9…、sha512-rNIzEO…、与 dist 声明双向匹配",
+      "actual": "match_shasum=true、match_integrity=true；tarball 15676 字节 / 解包 47324 字节 / 10 个文件，与 registry fileCount、unpackedSize 一致",
+      "status": "confirmed",
+      "evidence": ["evidence/02-npm-pack.json", "evidence/03-meta.json"]
+    },
+    {
+      "id": "C02",
+      "area": "身份与完整性",
+      "check": "许可证与作者可核对",
+      "expected": "MIT，作者 vlln（Sam Gao）",
+      "actual": "package.json license=MIT；LICENSE 首行 MIT License、版权行 Copyright (c) 2026 Sam Gao (vlln)；registry maintainer vlln <vlln@qq.com>",
+      "status": "confirmed",
+      "evidence": ["evidence/01-npm-view.json", "evidence/02-npm-pack.json"]
+    },
+    {
+      "id": "C03",
+      "area": "身份与完整性",
+      "check": "仓库与提交可访问",
+      "expected": "vlln/dsh-task-status 公开、提交 3751096f… 可读",
+      "actual": "repo HTTP 200（MIT、8 stars、pushed 2026-10-03）；commit HTTP 200，提交信息「docs: 归档说明——官方已内置后台任务 UI，本插件冻结」",
+      "status": "confirmed",
+      "evidence": ["evidence/03-meta.json"]
+    },
+    {
+      "id": "C04",
+      "area": "身份与完整性",
+      "check": "npm 元数据里的仓库/主页/缺陷追踪 URL",
+      "expected": "指向 https://github.com/vlln/dsh-task-status",
+      "actual": "三处 URL 都是 `git+https://github.com/vlln/+process.argv[1]+.git`——仓库名位置是未求值的模板字面量，从 npm 页点不回仓库",
+      "status": "confirmed",
+      "evidence": ["evidence/01-npm-view.json", "evidence/03-meta.json"]
+    },
+    {
+      "id": "C05",
+      "area": "安装",
+      "check": "发布件能否装进隔离 profile 并让宿主启动",
+      "expected": "pnpm 安装成功；宿主起来并打印带 token 的本地 URL",
+      "actual": "05-plugin-add.log：`+ @vlln/dsh-task-status link:…/temp/unpack/package`，Done in 388ms；五个宿主实例全部就绪并写入 *-host.local.json",
+      "status": "confirmed",
+      "evidence": ["evidence/05-plugin-add.log", "evidence/run1-host.local.json", "evidence/run5-host.local.json"]
+    },
+    {
+      "id": "C06",
+      "area": "Node half · 路由可达性",
+      "check": "/plugins/dsh-task-status/tasks 是否注册成功",
+      "expected": "GET 返回 200 与 {\"tasks\":[...]}",
+      "actual": "五个实例全部 200；空环境返回 {\"tasks\":[]}",
+      "status": "confirmed",
+      "evidence": ["evidence/run1-01-bootstrap.json", "evidence/run2-01-bootstrap.json", "evidence/run5-01-bootstrap.json"]
+    },
+    {
+      "id": "C07",
+      "area": "Node half · /output 参数校验",
+      "check": "缺少 id 参数时的响应",
+      "expected": "400 + 可读错误",
+      "actual": "400，body `{\"error\":\"missing task id\"}`（三个实例一致）",
+      "status": "confirmed",
+      "evidence": ["evidence/run1-01-bootstrap.json", "evidence/run2-01-bootstrap.json", "evidence/run5-01-bootstrap.json"]
+    },
+    {
+      "id": "C08",
+      "area": "Node half · /output 参数校验",
+      "check": "不存在 id 时的响应",
+      "expected": "404 + 可读错误",
+      "actual": "404，body `{\"error\":\"task does-not-exist-9999 not found\"}`（三个实例一致）",
+      "status": "confirmed",
+      "evidence": ["evidence/run1-01-bootstrap.json", "evidence/run2-01-bootstrap.json", "evidence/run5-01-bootstrap.json"]
+    },
+    {
+      "id": "C09",
+      "area": "Node half · 任务可见性",
+      "check": "unowned（无主）后台任务是否出现在 /tasks",
+      "expected": "出现",
+      "actual": "出现。probe-1(unowned-long/running)、probe-2(unowned-instant/completed)、probe-3(unowned-burst/completed) 三条都在；键为 id/kind/label/status/startedAt(/detail/finishedAt)",
+      "status": "confirmed",
+      "evidence": ["evidence/run2-02-unowned-jobs.json", "evidence/run5-12-final-matrix.json"]
+    },
+    {
+      "id": "C10",
+      "area": "Node half · 任务可见性",
+      "check": "owned（有主）后台任务是否出现在 /tasks",
+      "expected": "出现（同属该会话）",
+      "actual": "不出现。ownerId=session-8edbe7f6-…，该 agent 名下 owned 任务 probe-2 在 jobs.list(agent) 里有、在 /tasks 里没有；同一次读数的 unowned 任务 probe-3 却在。verdict 记录 ownedMissingFromPluginRoute=true、unownedPresentInPluginRoute=true",
+      "status": "confirmed",
+      "evidence": ["evidence/run4-11-owned-vs-unowned.json"]
+    },
+    {
+      "id": "C11",
+      "area": "Node half · 字段口径",
+      "check": "/tasks 投影里是否存在 owner / ownerSession 字段",
+      "expected": "至少带一个能表达归属的字段，前端才能按会话过滤",
+      "actual": "不存在。run4-11 的 taskKeysForFirstRow=[id,kind,label,status,startedAt,finishedAt]、ownerFieldPresentInAnyHostRow=false；插件 toWire 只在 snapshot.ownerSession !== undefined 时才带 ownerSession，而宿主快照里没有这个字段，于是永远不带",
+      "status": "confirmed",
+      "evidence": ["evidence/run4-11-owned-vs-unowned.json", "evidence/run2-02-unowned-jobs.json"]
+    },
+    {
+      "id": "C12",
+      "area": "Node half · 字段口径",
+      "check": "过滤字段 ownerSession 与宿主投影字段 owner 是否同名",
+      "expected": "同名，能对上",
+      "actual": "不同名。collectTasks 首个循环写 `if (snapshot.ownerSession === void 0 ...) continue`；宿主快照带的是 owner。整个 DSH 安装树里 ownerSession 命中 0 个文件。后果：有主任务被 continue 跳过",
+      "status": "confirmed",
+      "evidence": ["evidence/run4-11-owned-vs-unowned.json", "reference: temp/unpack/package/lib/index.mjs toWire/collectTasks"]
+    },
+    {
+      "id": "C13",
+      "area": "Node half · 实时输出",
+      "check": "/output 能否读到 running 任务的输出 tail",
+      "expected": "200 + {text, full:true, snapshot}",
+      "actual": "404，body `{\"error\":\"task probe-1 not found\"}`（bodyLen 34）。同一时刻 /tasks 里 probe-1 的 status 是 running。三任务并行时同样 404",
+      "status": "confirmed",
+      "evidence": ["evidence/run5-12-final-matrix.json"]
+    },
+    {
+      "id": "C14",
+      "area": "Node half · 实时输出",
+      "check": "/output 对已结束任务的响应",
+      "expected": "仍能读到累积输出，或给出明确终态说明",
+      "actual": "404 `{\"error\":\"task probe-3 not found\"}`——probe-3 是刚跑完的 burst 任务，同样读不到",
+      "status": "confirmed",
+      "evidence": ["evidence/run2-02-unowned-jobs.json"]
+    },
+    {
+      "id": "C15",
+      "area": "宿主环境",
+      "check": "web profile 下 jobs.start 是否可用",
+      "expected": "能创建后台任务",
+      "actual": "500 `background jobs unavailable: no job controller serves this agent (load @deepseek-ai/dsh-tool-jobs in its composition)`；首次宿主 agentCount=0。原因在 profile：`- id: tool-jobs / name: @deepseek-ai/dsh-tool-jobs / disabled: true`，被 dsh-web-app 的 patch 段置为 disabled，组合里没有 controller",
+      "status": "confirmed",
+      "evidence": ["evidence/run1-02-unowned-jobs.json", "evidence/04-profile-initialize.log"]
+    },
+    {
+      "id": "C16",
+      "area": "宿主环境",
+      "check": "自挂 controller 后能否造出真实进程内任务",
+      "expected": "能，且不调用模型",
+      "actual": "能。探针 attachController('probe-ts') 后 /probe-ts/start 一律 200，返回 probe-1/2/3；任务输出按 intervalMs 增长（produced.probe-1=98→5880 字节不等）。全程零模型调用",
+      "status": "confirmed",
+      "evidence": ["evidence/run2-02-unowned-jobs.json", "evidence/run5-12-final-matrix.json", "evidence/06-probe-add.log"]
+    },
+    {
+      "id": "C17",
+      "area": "宿主环境",
+      "check": "profile 是否干净启动",
+      "expected": "无未激活条目",
+      "actual": "run3 有 4 条未激活：workspace 报 `workspace 'eb42bca0-…' is absent from registry order`，session-controller / workspace-controller 等 pending；浏览器出现 session/control RemoteError `active Service \"sessionController\" is unavailable`。其余实例 stderr 为空",
+      "status": "confirmed",
+      "evidence": ["evidence/run3-host.stderr.txt", "evidence/run3-08-v1-chat-visibility.json"]
+    },
+    {
+      "id": "C18",
+      "area": "client · 可见性",
+      "check": "有 running 任务时状态条是否出现",
+      "expected": "出现 [data-task-status-bar] 且显示「N 个后台任务运行中」",
+      "actual": "从不出现。run2 有 1 个 running 任务时 barCount=0；run5 有三个 running（MULTI-A/B/C，/tasks count=3）时七个阶段 barCount 全为 0，hasChatFlowEver=false；run3/run4 同样全 0。截图 run5-final-01 里对话区没有任何状态条",
+      "status": "confirmed",
+      "evidence": ["evidence/run5-12-final-matrix.json", "evidence/run2-03-v1-visibility.json", "evidence/run4-08-v1-chat-visibility.json", "evidence/run5-final-01-three-running-tasks.png"]
+    },
+    {
+      "id": "C19",
+      "area": "client · 可见性",
+      "check": "零任务时状态条是否隐藏（对照）",
+      "expected": "隐藏",
+      "actual": "隐藏，但这一条没有区分力：有任务的三种场景同样是 0，无法证明「隐藏」是条件判断的结果而不是从未渲染",
+      "status": "uncertain",
+      "evidence": ["evidence/run2-03-v1-visibility.json", "evidence/run4-09-open-session.json"]
+    },
+    {
+      "id": "C20",
+      "area": "client · Chat 判据",
+      "check": "插件用来判断「是否在 Chat 视图」的锚点是否存在",
+      "expected": "页面里有 [data-chat-flow=\"\"] 元素",
+      "actual": "不存在。DOM 全量 dump 里 dataAttrs 只有 conversationScroll/inputScroll/composerInput/phase/placeholder/lexicalEditor 六种，chatFlowAny=0、chatFlowEmpty=0；client.js:143 直接用该属性判断，不存在则 return null",
+      "status": "confirmed",
+      "evidence": ["evidence/run2-05-dom-dump.json", "reference: temp/unpack/package/lib/client.js"]
+    },
+    {
+      "id": "C21",
+      "area": "client · 轮询",
+      "check": "前端是否真的在轮询 /tasks",
+      "expected": "约每秒一次",
+      "actual": "在轮询。run2-03 记录 11 次 /tasks 请求、run4-08 记录 35 次、run4-09 记录 28 次、run5-12 记录 62 次，全部 200。轮询在跑，界面始终不渲染",
+      "status": "confirmed",
+      "evidence": ["evidence/run2-03-v1-visibility.json", "evidence/run4-08-v1-chat-visibility.json", "evidence/run5-12-final-matrix.json"]
+    },
+    {
+      "id": "C22",
+      "area": "client · 首屏阻塞",
+      "check": "会话页面是否进入可对话状态",
+      "expected": "关掉引导后能进入对话流",
+      "actual": "两次尝试都没进入：run2 用「继续」关掉预览说明后，页面停在「添加一个 API Key 开始使用」；run3/run4 的 bodyTextLen 分别恒为 65 / 200，点「新会话」与展开工作区都不改变现状。这与缺 API Key 的引导有关，不能全算插件侧",
+      "status": "uncertain",
+      "evidence": ["evidence/run2-04-chat-entry.json", "evidence/run4-09-open-session.json", "evidence/run4-dump-00.png"]
+    },
+    {
+      "id": "C23",
+      "area": "client · 多任务",
+      "check": "多任务并行时的计数与排列",
+      "expected": "头部「3 个后台任务运行中」+ 展开后逐条排列",
+      "actual": "无法观察：状态条从未渲染，没有可点的行。任务侧数据是对的（/tasks 三条 running）",
+      "status": "untested",
+      "evidence": ["evidence/run5-12-final-matrix.json", "evidence/run5-final-01-three-running-tasks.png"]
+    },
+    {
+      "id": "C24",
+      "area": "client · 输出 tail",
+      "check": "展开任务行后 tail 是否每秒增长",
+      "expected": "输出逐秒追加，整段替换渲染",
+      "actual": "无法观察：没有状态条可展开（run5 的 02-after-bar-click 阶段 barCount 仍为 0，点空）",
+      "status": "untested",
+      "evidence": ["evidence/run5-12-final-matrix.json", "evidence/run5-final-02-after-bar-click.png"]
+    },
+    {
+      "id": "C25",
+      "area": "client · 布局",
+      "check": "窄窗 900 / 640 下是否撑破容器或产生横向滚动",
+      "expected": "输出区 160px 封顶、纵向滚动、页面不横向溢出",
+      "actual": "无法判定插件行为：状态条不出现，窄窗只有宿主自身的重排。可读到的只是 doc.overflowX=false，与插件无关",
+      "status": "untested",
+      "evidence": ["evidence/run5-12-final-matrix.json", "evidence/run5-final-03-narrow-900.png", "evidence/run5-final-04-narrow-640.png"]
+    },
+    {
+      "id": "C26",
+      "area": "client · 生命周期",
+      "check": "刷新与冷重启后状态条是否按真实状态重建 / 清理",
+      "expected": "reload 后重建；冷重启后任务消失、状态条消失",
+      "actual": "无法判定：基线本来就是 0，reload 后仍是 0，前后的 0 看不出是「正确清理」还是「从未出现」。任务结束后（kill 全部、statuses 三个 killed）barCount 仍为 0，同样无区分力",
+      "status": "untested",
+      "evidence": ["evidence/run5-12-final-matrix.json", "evidence/run5-final-05-after-reload.png", "evidence/run5-final-06-after-kill-all.png"]
+    },
+    {
+      "id": "C27",
+      "area": "查重",
+      "check": "review.lingshulab.com 与 github.com/FuRongJun-1999/dsh-bounty 是否已有同范围提报",
+      "expected": "两站按插件精确名 / 作者 / 别名查询并记录时间与命中",
+      "actual": "已完成。评测站：/api/reviews 全量 172 条（4 页 50/50/50/22，total 与拉取数一致）+ /api/plugins 133 个，按 dsh-task-status | vlln | task[- ]?status | 任务状态条 本地扫描，评测命中 0、插件命中 0。悬赏站（search/issues 限定 repo）：dsh-task-status total=35、vlln total=2、task-status total=35、任务状态条 total=401，逐条比对标题后全部为分词误命中（dsh-task-dag、dsh-task-planner、dsh-plugin-notify、dsh-memory 等；vlln 那 2 条是 #656 dsh-loop、#569 vlln/whale-girl，同作者其他插件）。同范围重复 0。查询时间 2026-10-22T02:12:18Z。",
+      "status": "confirmed",
+      "evidence": ["evidence/14-dedup.json", "dedup.mjs"]
+    },
+    {
+      "id": "C29",
+      "area": "Node half · 镜像补丁的返回值契约",
+      "check": "插件给 ctx.jobs.read 打的镜像补丁返回什么形状，是否与官方 dsh-tool-jobs 的读法兼容",
+      "expected": "官方 ReadResult 为 {chunks, lossy, job}；dsh-tool-jobs 按 renderModelDelta(read.chunks, read.lossy, read.job.output.spillPaths ?? []) 消费",
+      "actual": "不兼容。直接调用打过补丁的 ctx.jobs.read 得到 resultKeys=[\"text\",\"snapshot\"]、hasChunks=false、hasLossy=false、hasJob=false、hasText=true（textLen=0）、hasSnapshot=false、officialToolInputsUsable=false；连续两次调用结果一致。宿主 readJob() 本身返回的是 chunks/lossy/job，插件在 src/index.mjs 里读 result?.text 与 result.snapshot，两者都不存在。后果一：readTaskOutput 返回 snapshot=undefined，路由据此判 404（见 C13）。后果二：官方工具的 renderModelDelta 会拿到 undefined 的 chunks/lossy。",
+      "status": "confirmed",
+      "evidence": ["evidence/run6-13-readshape.json", "reference: temp/unpack/package/lib/index.mjs mirror patch", "reference: <dsh>/node_modules/@deepseek-ai/dsh-tool-jobs/lib/index.js:217"]
+    },
+    {
+      "id": "C28",
+      "area": "环境限制",
+      "check": "能否在不调用模型的前提下造出「真实」后台任务",
+      "expected": "能——用宿主公开的 jobs seam 起进程内任务",
+      "actual": "只能造出「进程内合成任务」，造不出模型侧产出的真实后台任务：web profile 的 tool-jobs 被置 disabled，模型侧没有 run_in_background 通道，而调用模型需要 API Key（全程未填）。合成任务走的是同一个 ctx.jobs 注册表，字段与生命周期一致，但 kind 是 probe 而不是 bash/agent，故任何依赖「模型真的起了任务」的结论都不能下",
+      "status": "confirmed",
+      "evidence": ["evidence/04-profile-initialize.log", "evidence/run1-02-unowned-jobs.json", "evidence/run4-09-open-session.json"]
+    }
+  ],
+
+  "not_claims": [
+    "不声称插件在任何环境下都不工作——只记录本环境（宿主 0.2.0-rc.2 + web profile ts2 + Edge 155 headless）的读数",
+    "不把 tool-jobs 被置 disabled 写成插件缺陷（那是宿主组合选择）",
+    "不把「页面停在 API Key 引导」全部归为插件问题",
+    "不把 C28（只能造合成任务）写成插件缺陷",
+    "不把分词误命中（dsh-task-dag / dsh-task-planner / dsh-loop / whale-girl）当作同插件重复",
+    "V2–V7 的 DOM 层读数（tail 增长、多任务排列、结束清理、窄窗布局、刷新重建）因状态条从未渲染而无法取得，一律记 untested，不写成「功能正常」也不写成「功能异常」"
+  ],
+  "dedup_conclusion": "两站均无同范围重复，可写首报（证据 evidence/14-dedup.json，查询时间 2026-10-22T02:12:18Z）"
+}

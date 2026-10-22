@@ -1,0 +1,303 @@
+{
+  "A_start": {
+    "pressed": "true",
+    "label": "◉ 只看结果",
+    "stored": null,
+    "styleTags": 1,
+    "thinkTotal": 1,
+    "thinkDisplayed": 0,
+    "currentSession": "{\"sessionId\":\"sess-rov-one\"}",
+    "selectedRow": "session:sess-rov-one"
+  },
+  "A_clickOn": {
+    "pressed": "true",
+    "stored": null
+  },
+  "A_beforeReloadOn": {
+    "pressed": "true",
+    "label": "◉ 只看结果",
+    "stored": null,
+    "styleTags": 1,
+    "thinkTotal": 1,
+    "thinkDisplayed": 0,
+    "currentSession": "{\"sessionId\":\"sess-rov-one\"}",
+    "selectedRow": "session:sess-rov-one"
+  },
+  "A_afterReloadOn": {
+    "pressed": "true",
+    "label": "◉ 只看结果",
+    "stored": null,
+    "styleTags": 1,
+    "thinkTotal": 1,
+    "thinkDisplayed": 0,
+    "currentSession": "{\"sessionId\":\"sess-rov-one\"}",
+    "selectedRow": "session:sess-rov-one"
+  },
+  "A_clickOff": {
+    "pressed": "false",
+    "stored": "0"
+  },
+  "A_afterReloadOff": {
+    "pressed": "false",
+    "label": "○ 只看结果",
+    "stored": "0",
+    "styleTags": 0,
+    "thinkTotal": 1,
+    "thinkDisplayed": 1,
+    "currentSession": "{\"sessionId\":\"sess-rov-one\"}",
+    "selectedRow": "session:sess-rov-one"
+  },
+  "B_beforeSwitch": {
+    "pressed": "false",
+    "label": "○ 只看结果",
+    "stored": "0",
+    "styleTags": 0,
+    "thinkTotal": 1,
+    "thinkDisplayed": 1,
+    "currentSession": "{\"sessionId\":\"sess-rov-one\"}",
+    "selectedRow": "session:sess-rov-one"
+  },
+  "B_afterSwitch": {
+    "pressed": "false",
+    "label": "○ 只看结果",
+    "stored": "0",
+    "styleTags": 0,
+    "thinkTotal": 3,
+    "thinkDisplayed": 3,
+    "currentSession": "{\"sessionId\":\"sess-rov-multi\"}",
+    "selectedRow": "session:sess-rov-multi"
+  },
+  "B_setOn": {
+    "pressed": "true",
+    "stored": "1"
+  },
+  "B_onInMulti": {
+    "pressed": "true",
+    "label": "◉ 只看结果",
+    "stored": "1",
+    "styleTags": 1,
+    "thinkTotal": 3,
+    "thinkDisplayed": 0,
+    "currentSession": "{\"sessionId\":\"sess-rov-multi\"}",
+    "selectedRow": "session:sess-rov-multi"
+  },
+  "B_backToOneWhileOn": {
+    "pressed": "true",
+    "label": "◉ 只看结果",
+    "stored": "1",
+    "styleTags": 1,
+    "thinkTotal": 1,
+    "thinkDisplayed": 0,
+    "currentSession": "{\"sessionId\":\"sess-rov-one\"}",
+    "selectedRow": "session:sess-rov-one"
+  },
+  "C_beforeClickEmpty": {
+    "pressed": "true",
+    "label": "◉ 只看结果",
+    "stored": "1",
+    "styleTags": 1,
+    "thinkTotal": 1,
+    "thinkDisplayed": 0,
+    "currentSession": "{\"sessionId\":\"sess-rov-one\"}",
+    "selectedRow": "session:sess-rov-one"
+  },
+  "C_clicked": false,
+  "C_afterClickEmpty": {
+    "pressed": "true",
+    "label": "◉ 只看结果",
+    "stored": "1",
+    "styleTags": 1,
+    "thinkTotal": 1,
+    "thinkDisplayed": 0,
+    "currentSession": "{\"sessionId\":\"sess-rov-one\"}",
+    "selectedRow": "session:sess-rov-one"
+  },
+  "C_alt": {
+    "noRow": true
+  },
+  "C_afterAlt": {
+    "pressed": "true",
+    "label": "◉ 只看结果",
+    "stored": "1",
+    "styleTags": 1,
+    "thinkTotal": 1,
+    "thinkDisplayed": 0,
+    "currentSession": "{\"sessionId\":\"sess-rov-one\"}",
+    "selectedRow": "session:sess-rov-one"
+  },
+  "D_structure": {
+    "tailCount": 3,
+    "tails": [
+      {
+        "traceText": "已处理 1 步 · 5s ▸",
+        "ariaExpanded": "false",
+        "descendantsByKind": {},
+        "anchorKeys": [],
+        "dataKeys": {
+          "class": "EvIC1a_flowItem",
+          "data-chat-anchor-key": "9:turn-tail1",
+          "data-chat-flow-key": "9:turn-tail1",
+          "data-chat-paging-anchor": "true",
+          "data-chat-node-key": "9:turn-tail1",
+          "data-chat-flow-kind": "turn-tail",
+          "data-chat-turn": "1"
+        },
+        "innerHTMLHead": "<div data-slot=\"conversation.chat.node\" style=\"display: contents;\"><div class=\"TS9iAW_root\" data-turn-tail=\"1\" data-actions-reveal=\"hover\"><div data-slot=\"conversation.chat.turnTail\" style=\"display: contents;\"><button type=\"button\" class=\"dsh-rov-trace-btn\" aria-expanded=\"false\" title=\"展开或收起本回合的过程\" style=\"display: inline-flex; align-items: center; gap: 4px; height: 20px; padding: 0px 6px; border-r"
+      },
+      {
+        "traceText": "已处理 1 步 · 5s ▸",
+        "ariaExpanded": "false",
+        "descendantsByKind": {},
+        "anchorKeys": [],
+        "dataKeys": {
+          "class": "EvIC1a_flowItem",
+          "data-chat-anchor-key": "9:turn-tail2",
+          "data-chat-flow-key": "9:turn-tail2",
+          "data-chat-paging-anchor": "true",
+          "data-chat-node-key": "9:turn-tail2",
+          "data-chat-flow-kind": "turn-tail",
+          "data-chat-turn": "2"
+        },
+        "innerHTMLHead": "<div data-slot=\"conversation.chat.node\" style=\"display: contents;\"><div class=\"TS9iAW_root\" data-turn-tail=\"2\" data-actions-reveal=\"hover\"><div data-slot=\"conversation.chat.turnTail\" style=\"display: contents;\"><button type=\"button\" class=\"dsh-rov-trace-btn\" aria-expanded=\"false\" title=\"展开或收起本回合的过程\" style=\"display: inline-flex; align-items: center; gap: 4px; height: 20px; padding: 0px 6px; border-r"
+      },
+      {
+        "traceText": "已处理 1 步 · 5s ▸",
+        "ariaExpanded": "false",
+        "descendantsByKind": {},
+        "anchorKeys": [],
+        "dataKeys": {
+          "class": "EvIC1a_flowItem",
+          "data-chat-anchor-key": "9:turn-tail3",
+          "data-chat-flow-key": "9:turn-tail3",
+          "data-chat-paging-anchor": "true",
+          "data-chat-node-key": "9:turn-tail3",
+          "data-chat-flow-kind": "turn-tail",
+          "data-chat-turn": "3"
+        },
+        "innerHTMLHead": "<div data-slot=\"conversation.chat.node\" style=\"display: contents;\"><div class=\"TS9iAW_root\" data-turn-tail=\"3\" data-actions-reveal=\"always\"><div data-slot=\"conversation.chat.turnTail\" style=\"display: contents;\"><button type=\"button\" class=\"dsh-rov-trace-btn\" aria-expanded=\"false\" title=\"展开或收起本回合的过程\" style=\"display: inline-flex; align-items: center; gap: 4px; height: 20px; padding: 0px 6px; border-"
+      }
+    ],
+    "processRows": [
+      {
+        "display": "none",
+        "parentKind": null,
+        "parentTag": "DIV",
+        "parentAnchor": null
+      },
+      {
+        "display": "none",
+        "parentKind": null,
+        "parentTag": "DIV",
+        "parentAnchor": null
+      },
+      {
+        "display": "none",
+        "parentKind": null,
+        "parentTag": "DIV",
+        "parentAnchor": null
+      }
+    ],
+    "anchorSeats": [
+      {
+        "key": "13:input-messageu-001",
+        "kind": "user"
+      },
+      {
+        "key": "12:turn-process1",
+        "kind": "turn-process"
+      },
+      {
+        "key": "group:[\"process\",\"14:assistant-step1:1\",\"reasoning\"]",
+        "kind": null
+      },
+      {
+        "key": "[\"14:assistant-step1:1\",\"reasoning\"]",
+        "kind": "assistant-step"
+      },
+      {
+        "key": "14:assistant-step1:1",
+        "kind": "assistant-step"
+      },
+      {
+        "key": "9:turn-tail1",
+        "kind": "turn-tail"
+      },
+      {
+        "key": "13:input-messageu-002",
+        "kind": "user"
+      },
+      {
+        "key": "12:turn-process2",
+        "kind": "turn-process"
+      },
+      {
+        "key": "group:[\"process\",\"14:assistant-step2:1\",\"reasoning\"]",
+        "kind": null
+      },
+      {
+        "key": "[\"14:assistant-step2:1\",\"reasoning\"]",
+        "kind": "assistant-step"
+      },
+      {
+        "key": "14:assistant-step2:1",
+        "kind": "assistant-step"
+      },
+      {
+        "key": "9:turn-tail2",
+        "kind": "turn-tail"
+      },
+      {
+        "key": "13:input-messageu-003",
+        "kind": "user"
+      },
+      {
+        "key": "12:turn-process3",
+        "kind": "turn-process"
+      },
+      {
+        "key": "group:[\"process\",\"14:assistant-step3:1\",\"reasoning\"]",
+        "kind": null
+      },
+      {
+        "key": "[\"14:assistant-step3:1\",\"reasoning\"]",
+        "kind": "assistant-step"
+      },
+      {
+        "key": "14:assistant-step3:1",
+        "kind": "assistant-step"
+      },
+      {
+        "key": "9:turn-tail3",
+        "kind": "turn-tail"
+      }
+    ]
+  },
+  "D_traceClick": {
+    "before": {
+      "text": "已处理 1 步 · 5s ▸",
+      "expanded": "false",
+      "thinkDisplay": [
+        "none",
+        "none",
+        "none"
+      ]
+    },
+    "after": {
+      "text": "收起过程 ▾",
+      "expanded": "true",
+      "thinkDisplay": [
+        "flex",
+        "none",
+        "none"
+      ],
+      "thinkVisible": 1
+    },
+    "back": {
+      "text": "已处理 1 步 · 5s ▸",
+      "expanded": "false",
+      "thinkVisible": 0
+    }
+  },
+  "errors": [],
+  "consoleLog": []
+}

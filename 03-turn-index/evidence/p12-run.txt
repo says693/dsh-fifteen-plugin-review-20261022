@@ -1,0 +1,51 @@
+﻿{
+  "rounds": [
+    {
+      "i": 0,
+      "styleTags": 1,
+      "anyTi": 0,
+      "panel": false,
+      "overlaySeatChildren": 1,
+      "prefKeys": [],
+      "userRows": 6,
+      "scrollHeight": 2644,
+      "probeVisible": true
+    },
+    {
+      "i": 1,
+      "styleTags": 1,
+      "anyTi": 0,
+      "panel": false,
+      "overlaySeatChildren": 1,
+      "prefKeys": [],
+      "userRows": 6,
+      "scrollHeight": 2644,
+      "probeVisible": true
+    },
+    {
+      "i": 2,
+      "styleTags": 1,
+      "anyTi": 0,
+      "panel": false,
+      "overlaySeatChildren": 1,
+      "prefKeys": [],
+      "userRows": 6,
+      "scrollHeight": 2644,
+      "probeVisible": true
+    }
+  ],
+  "doc": {
+    "scrollWidth": 1440,
+    "clientWidth": 1440,
+    "overflowX": false
+  },
+  "userRowCount": 6,
+  "storageKeys": [
+    "dsh.sessions.current",
+    "dsh.sidebar-right.v1.sess-ti-six",
+    "dsh.sidebar-right.v1.session-cded7315-a936-41eb-a3db-96e7a8c6eac8",
+    "dsh.workspace.view.v5"
+  ],
+  "errors": [],
+  "consoleLog": []
+}

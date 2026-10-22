@@ -1,0 +1,552 @@
+{
+  "utc": "2026-10-22T01:09:30.329Z",
+  "host": {
+    "pid": 9212,
+    "url": "http://127.0.0.1:13334/?token=REDACTED",
+    "profile": "ah",
+    "utc": "2026-10-22T01:08:24.045Z",
+    "env": [
+      "DEEPSEEK_BASE_URL",
+      "DEEPSEEK_API_KEY",
+      "DSH_PERMISSION_MODE"
+    ]
+  },
+  "steps": [
+    {
+      "step": "continue",
+      "clicked": null
+    },
+    {
+      "step": "send",
+      "send": {
+        "ok": true
+      }
+    },
+    {
+      "step": "approval-1",
+      "found": true,
+      "elapsedMs": 418,
+      "state": {
+        "count": 1,
+        "items": [
+          {
+            "key": "approval:1",
+            "rect": {
+              "x": 280,
+              "y": 814,
+              "w": 1153,
+              "h": 186
+            },
+            "text": "等待审批\n允许本次操作使用 danger-full-access 权限：The test needs to write outside the workspace once.\nWrite-Output \"fake-llm-triggered\"\n拒绝\n允许一次",
+            "ariaBusy": "false",
+            "buttons": [
+              {
+                "idx": 0,
+                "text": "拒绝",
+                "disabled": false,
+                "cls": "_button_1rv3m_2 _outline_1rv3m_54 _md_1rv3m_23 mna1RW_reject",
+                "rect": {
+                  "x": 1062,
+                  "y": 937,
+                  "w": 58,
+                  "h": 36
+                }
+              },
+              {
+                "idx": 1,
+                "text": "允许一次",
+                "disabled": false,
+                "cls": "_button_1rv3m_2 _primary_1rv3m_36 _md_1rv3m_23",
+                "rect": {
+                  "x": 1128,
+                  "y": 937,
+                  "w": 84,
+                  "h": 36
+                }
+              }
+            ]
+          }
+        ],
+        "active": {
+          "tag": "BODY",
+          "cls": "",
+          "editable": false
+        }
+      }
+    }
+  ],
+  "testEditableEnter": {
+    "before": {
+      "count": 1,
+      "items": [
+        {
+          "key": "approval:1",
+          "rect": {
+            "x": 280,
+            "y": 814,
+            "w": 1153,
+            "h": 186
+          },
+          "text": "等待审批\n允许本次操作使用 danger-full-access 权限：The test needs to write outside the workspace once.\nWrite-Output \"fake-llm-triggered\"\n拒绝\n允许一次",
+          "ariaBusy": "false",
+          "buttons": [
+            {
+              "idx": 0,
+              "text": "拒绝",
+              "disabled": false,
+              "cls": "_button_1rv3m_2 _outline_1rv3m_54 _md_1rv3m_23 mna1RW_reject",
+              "rect": {
+                "x": 1062,
+                "y": 937,
+                "w": 58,
+                "h": 36
+              }
+            },
+            {
+              "idx": 1,
+              "text": "允许一次",
+              "disabled": false,
+              "cls": "_button_1rv3m_2 _primary_1rv3m_36 _md_1rv3m_23",
+              "rect": {
+                "x": 1128,
+                "y": 937,
+                "w": 84,
+                "h": 36
+              }
+            }
+          ]
+        }
+      ],
+      "active": {
+        "tag": "BODY",
+        "cls": "",
+        "editable": false
+      }
+    },
+    "after": {
+      "count": 1,
+      "items": [
+        {
+          "key": "approval:2",
+          "rect": {
+            "x": 280,
+            "y": 814,
+            "w": 1153,
+            "h": 186
+          },
+          "text": "等待审批\n允许本次操作使用 danger-full-access 权限：The test needs to write outside the workspace once.\nWrite-Output \"fake-llm-triggered\"\n拒绝\n允许一次",
+          "ariaBusy": "false",
+          "buttons": [
+            {
+              "idx": 0,
+              "text": "拒绝",
+              "disabled": false,
+              "cls": "_button_1rv3m_2 _outline_1rv3m_54 _md_1rv3m_23 mna1RW_reject",
+              "rect": {
+                "x": 1062,
+                "y": 937,
+                "w": 58,
+                "h": 36
+              }
+            },
+            {
+              "idx": 1,
+              "text": "允许一次",
+              "disabled": false,
+              "cls": "_button_1rv3m_2 _primary_1rv3m_36 _md_1rv3m_23",
+              "rect": {
+                "x": 1128,
+                "y": 937,
+                "w": 84,
+                "h": 36
+              }
+            }
+          ]
+        }
+      ],
+      "active": {
+        "tag": "BODY",
+        "cls": "",
+        "editable": false
+      }
+    },
+    "observed": [
+      {
+        "key": "Enter",
+        "t": 4604,
+        "defaultPrevented": true,
+        "repeat": false,
+        "ctrl": false,
+        "meta": false,
+        "alt": false,
+        "shift": false,
+        "target": "BODY.",
+        "isComposing": false
+      }
+    ],
+    "clicks": [
+      {
+        "t": 4598,
+        "text": "允许一次",
+        "disabled": false
+      }
+    ]
+  },
+  "testEnterConfirm": {
+    "before": {
+      "count": 1,
+      "items": [
+        {
+          "key": "approval:2",
+          "rect": {
+            "x": 280,
+            "y": 814,
+            "w": 1153,
+            "h": 186
+          },
+          "text": "等待审批\n允许本次操作使用 danger-full-access 权限：The test needs to write outside the workspace once.\nWrite-Output \"fake-llm-triggered\"\n拒绝\n允许一次",
+          "ariaBusy": "false",
+          "buttons": [
+            {
+              "idx": 0,
+              "text": "拒绝",
+              "disabled": false,
+              "cls": "_button_1rv3m_2 _outline_1rv3m_54 _md_1rv3m_23 mna1RW_reject",
+              "rect": {
+                "x": 1062,
+                "y": 937,
+                "w": 58,
+                "h": 36
+              }
+            },
+            {
+              "idx": 1,
+              "text": "允许一次",
+              "disabled": false,
+              "cls": "_button_1rv3m_2 _primary_1rv3m_36 _md_1rv3m_23",
+              "rect": {
+                "x": 1128,
+                "y": 937,
+                "w": 84,
+                "h": 36
+              }
+            }
+          ]
+        }
+      ],
+      "active": {
+        "tag": "BODY",
+        "cls": "",
+        "editable": false
+      }
+    },
+    "after": {
+      "count": 1,
+      "items": [
+        {
+          "key": "approval:3",
+          "rect": {
+            "x": 280,
+            "y": 814,
+            "w": 1153,
+            "h": 186
+          },
+          "text": "等待审批\n允许本次操作使用 danger-full-access 权限：The test needs to write outside the workspace once.\nWrite-Output \"fake-llm-triggered\"\n拒绝\n允许一次",
+          "ariaBusy": "false",
+          "buttons": [
+            {
+              "idx": 0,
+              "text": "拒绝",
+              "disabled": false,
+              "cls": "_button_1rv3m_2 _outline_1rv3m_54 _md_1rv3m_23 mna1RW_reject",
+              "rect": {
+                "x": 1062,
+                "y": 937,
+                "w": 58,
+                "h": 36
+              }
+            },
+            {
+              "idx": 1,
+              "text": "允许一次",
+              "disabled": false,
+              "cls": "_button_1rv3m_2 _primary_1rv3m_36 _md_1rv3m_23",
+              "rect": {
+                "x": 1128,
+                "y": 937,
+                "w": 84,
+                "h": 36
+              }
+            }
+          ]
+        }
+      ],
+      "active": {
+        "tag": "BODY",
+        "cls": "",
+        "editable": false
+      }
+    },
+    "observed": [
+      {
+        "key": "Enter",
+        "t": 5577,
+        "defaultPrevented": true,
+        "repeat": false,
+        "ctrl": false,
+        "meta": false,
+        "alt": false,
+        "shift": false,
+        "target": "BODY.",
+        "isComposing": false
+      }
+    ],
+    "clicks": [
+      {
+        "t": 4598,
+        "text": "允许一次",
+        "disabled": false
+      },
+      {
+        "t": 5572,
+        "text": "允许一次",
+        "disabled": false
+      }
+    ]
+  },
+  "testEscSetup": {
+    "found": true,
+    "elapsedMs": 2,
+    "state": {
+      "count": 1,
+      "items": [
+        {
+          "key": "approval:3",
+          "rect": {
+            "x": 280,
+            "y": 814,
+            "w": 1153,
+            "h": 186
+          },
+          "text": "等待审批\n允许本次操作使用 danger-full-access 权限：The test needs to write outside the workspace once.\nWrite-Output \"fake-llm-triggered\"\n拒绝\n允许一次",
+          "ariaBusy": "false",
+          "buttons": [
+            {
+              "idx": 0,
+              "text": "拒绝",
+              "disabled": false,
+              "cls": "_button_1rv3m_2 _outline_1rv3m_54 _md_1rv3m_23 mna1RW_reject",
+              "rect": {
+                "x": 1062,
+                "y": 937,
+                "w": 58,
+                "h": 36
+              }
+            },
+            {
+              "idx": 1,
+              "text": "允许一次",
+              "disabled": false,
+              "cls": "_button_1rv3m_2 _primary_1rv3m_36 _md_1rv3m_23",
+              "rect": {
+                "x": 1128,
+                "y": 937,
+                "w": 84,
+                "h": 36
+              }
+            }
+          ]
+        }
+      ],
+      "active": {
+        "tag": "BODY",
+        "cls": "",
+        "editable": false
+      }
+    }
+  },
+  "testEscReject": {
+    "before": {
+      "count": 1,
+      "items": [
+        {
+          "key": "approval:3",
+          "rect": {
+            "x": 280,
+            "y": 814,
+            "w": 1153,
+            "h": 186
+          },
+          "text": "等待审批\n允许本次操作使用 danger-full-access 权限：The test needs to write outside the workspace once.\nWrite-Output \"fake-llm-triggered\"\n拒绝\n允许一次",
+          "ariaBusy": "false",
+          "buttons": [
+            {
+              "idx": 0,
+              "text": "拒绝",
+              "disabled": false,
+              "cls": "_button_1rv3m_2 _outline_1rv3m_54 _md_1rv3m_23 mna1RW_reject",
+              "rect": {
+                "x": 1062,
+                "y": 937,
+                "w": 58,
+                "h": 36
+              }
+            },
+            {
+              "idx": 1,
+              "text": "允许一次",
+              "disabled": false,
+              "cls": "_button_1rv3m_2 _primary_1rv3m_36 _md_1rv3m_23",
+              "rect": {
+                "x": 1128,
+                "y": 937,
+                "w": 84,
+                "h": 36
+              }
+            }
+          ]
+        }
+      ],
+      "active": {
+        "tag": "BODY",
+        "cls": "",
+        "editable": false
+      }
+    },
+    "after": {
+      "count": 1,
+      "items": [
+        {
+          "key": "approval:4",
+          "rect": {
+            "x": 280,
+            "y": 814,
+            "w": 1153,
+            "h": 186
+          },
+          "text": "等待审批\n允许本次操作使用 danger-full-access 权限：The test needs to write outside the workspace once.\nWrite-Output \"fake-llm-triggered\"\n拒绝\n允许一次",
+          "ariaBusy": "false",
+          "buttons": [
+            {
+              "idx": 0,
+              "text": "拒绝",
+              "disabled": false,
+              "cls": "_button_1rv3m_2 _outline_1rv3m_54 _md_1rv3m_23 mna1RW_reject",
+              "rect": {
+                "x": 1062,
+                "y": 937,
+                "w": 58,
+                "h": 36
+              }
+            },
+            {
+              "idx": 1,
+              "text": "允许一次",
+              "disabled": false,
+              "cls": "_button_1rv3m_2 _primary_1rv3m_36 _md_1rv3m_23",
+              "rect": {
+                "x": 1128,
+                "y": 937,
+                "w": 84,
+                "h": 36
+              }
+            }
+          ]
+        }
+      ],
+      "active": {
+        "tag": "BODY",
+        "cls": "",
+        "editable": false
+      }
+    },
+    "observed": [
+      {
+        "key": "Escape",
+        "t": 7040,
+        "defaultPrevented": true,
+        "repeat": false,
+        "ctrl": false,
+        "meta": false,
+        "alt": false,
+        "shift": false,
+        "target": "BODY.",
+        "isComposing": false
+      }
+    ],
+    "clicks": [
+      {
+        "t": 4598,
+        "text": "允许一次",
+        "disabled": false
+      },
+      {
+        "t": 5572,
+        "text": "允许一次",
+        "disabled": false
+      },
+      {
+        "t": 7036,
+        "text": "拒绝",
+        "disabled": false
+      }
+    ]
+  },
+  "testNoPanelKeys": {
+    "noPanelCount": 1,
+    "observed": [
+      {
+        "key": "Enter",
+        "t": 9793,
+        "defaultPrevented": true,
+        "repeat": false,
+        "ctrl": false,
+        "meta": false,
+        "alt": false,
+        "shift": false,
+        "target": "BODY.",
+        "isComposing": false
+      },
+      {
+        "key": "Escape",
+        "t": 10114,
+        "defaultPrevented": false,
+        "repeat": false,
+        "ctrl": false,
+        "meta": false,
+        "alt": false,
+        "shift": false,
+        "target": "BODY.",
+        "isComposing": false
+      }
+    ]
+  },
+  "errors": [],
+  "consoleLog": [],
+  "observedFinal": [
+    {
+      "key": "Enter",
+      "t": 9793,
+      "defaultPrevented": true,
+      "repeat": false,
+      "ctrl": false,
+      "meta": false,
+      "alt": false,
+      "shift": false,
+      "target": "BODY.",
+      "isComposing": false
+    },
+    {
+      "key": "Escape",
+      "t": 10114,
+      "defaultPrevented": false,
+      "repeat": false,
+      "ctrl": false,
+      "meta": false,
+      "alt": false,
+      "shift": false,
+      "target": "BODY.",
+      "isComposing": false
+    }
+  ]
+}

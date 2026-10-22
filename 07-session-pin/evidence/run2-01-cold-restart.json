@@ -1,0 +1,94 @@
+{
+  "tag": "run2",
+  "origin": "http://127.0.0.1:7552/?token=REDACTED",
+  "sidebar": [
+    {
+      "k": "workspace:101ac9c7-365b-4997-b465-7f91f41c472a",
+      "t": "默认工作区",
+      "bg": "rgba(0, 0, 0, 0)",
+      "shadow": "none"
+    },
+    {
+      "k": "session:session-c031acc8-cd2e-48f3-b0ac-0ad30adda10d",
+      "t": "新会话",
+      "bg": "rgba(38, 49, 72, 0.06)",
+      "shadow": "none"
+    },
+    {
+      "k": "session:session-08fbbad4-a5f0-4e61-8e44-49b911727022",
+      "t": "帮我整理一份关于海洋塑料污 9分钟",
+      "pin": "true",
+      "color": null,
+      "bg": "rgba(0, 0, 0, 0)",
+      "shadow": "none"
+    },
+    {
+      "k": "session:session-36dafaf6-2551-4cb7-a7a0-5a148681f143",
+      "t": "把这周的错题整理成表格 12分钟",
+      "pin": "true",
+      "color": "c1",
+      "bg": "rgba(234, 179, 8, 0.1)",
+      "shadow": "rgb(234, 179, 8) 3px 0px 0px 0px inset"
+    },
+    {
+      "k": "session:session-3c8badf3-ce48-4e15-aae2-be9723a30ae1",
+      "t": "写一封给班主任的请假邮件 22分钟",
+      "pin": "true",
+      "color": null,
+      "bg": "rgba(0, 0, 0, 0)",
+      "shadow": "none"
+    },
+    {
+      "k": "session:session-300ede31-2667-45af-9046-0749490f3dd4",
+      "t": "比较两个版本的实验数据差异 22分钟",
+      "pin": "true",
+      "color": null,
+      "bg": "rgba(0, 0, 0, 0)",
+      "shadow": "none"
+    }
+  ],
+  "footer": "已置顶的会话 (5)",
+  "panel": {
+    "rows": [
+      {
+        "t": "/goto 请假",
+        "dot": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "t": "比较两个版本的实验数据差异",
+        "dot": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "t": "写一封给班主任的请假邮件",
+        "dot": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "t": "帮我整理一份关于海洋塑料污",
+        "dot": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "t": "把这周的错题整理成表格",
+        "dot": "rgb(234, 179, 8)"
+      }
+    ],
+    "groups": [
+      "▾ 未分组 (5)"
+    ],
+    "chips": [
+      "All",
+      "复习",
+      "✎",
+      "✕",
+      "复习",
+      "✎",
+      "✕",
+      "+ board",
+      "+ view",
+      "考试",
+      "复习"
+    ]
+  },
+  "storage": {},
+  "errors": [],
+  "console": []
+}

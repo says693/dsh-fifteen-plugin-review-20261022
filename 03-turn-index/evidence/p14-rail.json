@@ -1,0 +1,179 @@
+{
+  "wide": {
+    "viewport": {
+      "w": 1440,
+      "h": 1000
+    },
+    "hostTurnRail": {
+      "present": true,
+      "rect": {
+        "x": 1393,
+        "y": 443,
+        "w": 28,
+        "h": 62,
+        "right": 1421,
+        "bottom": 505
+      },
+      "markCount": 7
+    },
+    "composer": {
+      "x": 280,
+      "y": 872,
+      "w": 1153,
+      "h": 128,
+      "right": 1433,
+      "bottom": 1000
+    },
+    "scrollport": {
+      "x": 280,
+      "y": 76,
+      "w": 1158,
+      "h": 924,
+      "right": 1438,
+      "bottom": 1000
+    },
+    "hypotheticalTiPanel": {
+      "right": 20,
+      "width": 232,
+      "x": 1188,
+      "top": 80,
+      "bottom": 1004
+    },
+    "railVsHypotheticalOverlapArea": 1674,
+    "docOverflowX": false
+  },
+  "narrow": [
+    {
+      "width": 1000,
+      "viewport": {
+        "w": 1000,
+        "h": 1000
+      },
+      "hostTurnRail": {
+        "present": true,
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0,
+          "right": 0,
+          "bottom": 0
+        },
+        "markCount": 1
+      },
+      "composer": {
+        "x": 56,
+        "y": 872,
+        "w": 937,
+        "h": 128,
+        "right": 993,
+        "bottom": 1000
+      },
+      "scrollport": {
+        "x": 56,
+        "y": 76,
+        "w": 942,
+        "h": 924,
+        "right": 998,
+        "bottom": 1000
+      },
+      "hypotheticalTiPanel": {
+        "right": 20,
+        "width": 208,
+        "x": 772,
+        "top": 80,
+        "bottom": 1004
+      },
+      "railVsHypotheticalOverlapArea": 0,
+      "docOverflowX": false
+    },
+    {
+      "width": 760,
+      "viewport": {
+        "w": 760,
+        "h": 1000
+      },
+      "hostTurnRail": {
+        "present": true,
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0,
+          "right": 0,
+          "bottom": 0
+        },
+        "markCount": 1
+      },
+      "composer": {
+        "x": 56,
+        "y": 872,
+        "w": 697,
+        "h": 128,
+        "right": 753,
+        "bottom": 1000
+      },
+      "scrollport": {
+        "x": 56,
+        "y": 76,
+        "w": 702,
+        "h": 924,
+        "right": 758,
+        "bottom": 1000
+      },
+      "hypotheticalTiPanel": {
+        "right": 20,
+        "width": 208,
+        "x": 532,
+        "top": 80,
+        "bottom": 1004
+      },
+      "railVsHypotheticalOverlapArea": 0,
+      "docOverflowX": false
+    },
+    {
+      "width": 600,
+      "viewport": {
+        "w": 600,
+        "h": 1000
+      },
+      "hostTurnRail": {
+        "present": true,
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0,
+          "right": 0,
+          "bottom": 0
+        },
+        "markCount": 1
+      },
+      "composer": {
+        "x": 56,
+        "y": 872,
+        "w": 537,
+        "h": 128,
+        "right": 593,
+        "bottom": 1000
+      },
+      "scrollport": {
+        "x": 56,
+        "y": 76,
+        "w": 542,
+        "h": 924,
+        "right": 598,
+        "bottom": 1000
+      },
+      "hypotheticalTiPanel": {
+        "right": 20,
+        "width": 208,
+        "x": 372,
+        "top": 80,
+        "bottom": 1004
+      },
+      "railVsHypotheticalOverlapArea": 0,
+      "docOverflowX": false
+    }
+  ]
+}

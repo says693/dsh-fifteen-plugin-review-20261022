@@ -1,0 +1,150 @@
+{
+  "origin": "http://127.0.0.1:7552/?token=REDACTED",
+  "header": null,
+  "colored": {
+    "key": "session:session-36dafaf6-2551-4cb7-a7a0-5a148681f143",
+    "color": "c1",
+    "bg": "rgba(234, 179, 8, 0.1)"
+  },
+  "afterShiftClick": {
+    "color": null,
+    "bg": "rgba(0, 0, 0, 0)",
+    "shadow": "none",
+    "pin": "true"
+  },
+  "orderBy": "manual",
+  "manualBase": [
+    {
+      "k": "session-c031acc8-cd2e-48f3-b0ac-0ad30adda10d",
+      "t": "新会话",
+      "y": 242
+    },
+    {
+      "k": "session-08fbbad4-a5f0-4e61-8e44-49b911727022",
+      "t": "帮我整理一份关于海洋塑料污 11分钟",
+      "pin": "true",
+      "y": 276
+    },
+    {
+      "k": "session-36dafaf6-2551-4cb7-a7a0-5a148681f143",
+      "t": "把这周的错题整理成表格 13分钟",
+      "pin": "true",
+      "y": 310
+    },
+    {
+      "k": "session-3c8badf3-ce48-4e15-aae2-be9723a30ae1",
+      "t": "写一封给班主任的请假邮件",
+      "pin": "true",
+      "y": 344
+    },
+    {
+      "k": "session-300ede31-2667-45af-9046-0749490f3dd4",
+      "t": "比较两个版本的实验数据差异 24分钟",
+      "pin": "true",
+      "y": 378
+    }
+  ],
+  "afterUnpinAll": [
+    {
+      "k": "session-c031acc8-cd2e-48f3-b0ac-0ad30adda10d",
+      "t": "新会话",
+      "y": 242
+    },
+    {
+      "k": "session-08fbbad4-a5f0-4e61-8e44-49b911727022",
+      "t": "帮我整理一份关于海洋塑料污 11分钟",
+      "pin": "true",
+      "y": 276
+    },
+    {
+      "k": "session-36dafaf6-2551-4cb7-a7a0-5a148681f143",
+      "t": "把这周的错题整理成表格 13分钟",
+      "pin": "true",
+      "y": 310
+    },
+    {
+      "k": "session-3c8badf3-ce48-4e15-aae2-be9723a30ae1",
+      "t": "写一封给班主任的请假邮件",
+      "pin": "true",
+      "y": 344
+    },
+    {
+      "k": "session-300ede31-2667-45af-9046-0749490f3dd4",
+      "t": "比较两个版本的实验数据差异 24分钟",
+      "pin": "false",
+      "y": 378
+    }
+  ],
+  "afterPinLastManual": [
+    {
+      "k": "session-c031acc8-cd2e-48f3-b0ac-0ad30adda10d",
+      "t": "新会话",
+      "y": 242
+    },
+    {
+      "k": "session-08fbbad4-a5f0-4e61-8e44-49b911727022",
+      "t": "帮我整理一份关于海洋塑料污 11分钟",
+      "pin": "true",
+      "y": 276
+    },
+    {
+      "k": "session-36dafaf6-2551-4cb7-a7a0-5a148681f143",
+      "t": "把这周的错题整理成表格 13分钟",
+      "pin": "true",
+      "y": 310
+    },
+    {
+      "k": "session-3c8badf3-ce48-4e15-aae2-be9723a30ae1",
+      "t": "写一封给班主任的请假邮件",
+      "pin": "true",
+      "y": 344
+    },
+    {
+      "k": "session-300ede31-2667-45af-9046-0749490f3dd4",
+      "t": "比较两个版本的实验数据差异 24分钟",
+      "pin": "true",
+      "y": 378
+    }
+  ],
+  "fails": [
+    {
+      "status": 404,
+      "url": "http://127.0.0.1:7552/api/session.setPinned"
+    },
+    {
+      "status": 404,
+      "url": "http://127.0.0.1:7552/api/session.setPinned"
+    },
+    {
+      "status": 404,
+      "url": "http://127.0.0.1:7552/api/session.setPinned"
+    },
+    {
+      "status": 404,
+      "url": "http://127.0.0.1:7552/api/session.setPinned"
+    }
+  ],
+  "consoleErrors": [
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "utc": "2026-10-22T01:29:15.172Z"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "utc": "2026-10-22T01:29:15.173Z"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "utc": "2026-10-22T01:29:15.173Z"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "utc": "2026-10-22T01:29:15.173Z"
+    }
+  ],
+  "errors": []
+}

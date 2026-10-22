@@ -1,0 +1,137 @@
+﻿{
+  "name": "@weibaohui/dsh-settings-ui",
+  "versions": [
+    "0.1.0",
+    "0.1.1",
+    "0.2.0",
+    "0.2.1",
+    "0.2.2",
+    "0.2.3",
+    "0.2.4",
+    "0.2.5",
+    "0.2.6",
+    "0.2.7",
+    "0.2.8",
+    "0.2.9",
+    "0.2.10"
+  ],
+  "time": {
+    "created": "2026-09-01T13:02:17.985Z",
+    "modified": "2026-09-30T06:32:40.053Z",
+    "0.1.0": "2026-09-01T13:02:18.369Z",
+    "0.1.1": "2026-09-01T13:10:49.694Z",
+    "0.2.0": "2026-09-01T14:05:32.131Z",
+    "0.2.1": "2026-09-06T14:10:39.011Z",
+    "0.2.2": "2026-09-11T15:45:15.343Z",
+    "0.2.3": "2026-09-23T12:02:28.912Z",
+    "0.2.4": "2026-09-25T02:40:30.864Z",
+    "0.2.5": "2026-09-25T10:46:19.400Z",
+    "0.2.6": "2026-09-25T13:15:47.772Z",
+    "0.2.7": "2026-09-26T13:55:47.030Z",
+    "0.2.8": "2026-09-26T15:04:09.566Z",
+    "0.2.9": "2026-09-27T23:04:42.761Z",
+    "0.2.10": "2026-09-30T06:32:39.771Z"
+  },
+  "users": {},
+  "dist-tags": {
+    "latest": "0.2.10"
+  },
+  "_rev": "1985-95e81c6ca7765db1",
+  "_id": "@weibaohui/dsh-settings-ui@0.2.10",
+  "_attachments": {},
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web"
+    }
+  },
+  "bugs": {
+    "url": "https://github.com/weibaohui/dsh-settings-ui/issues"
+  },
+  "dist": {
+    "shasum": "1be422ae19a42072906fc6a3f26095eb2a796a93",
+    "tarball": "https://mirrors.cloud.tencent.com/npm/@weibaohui/dsh-settings-ui/-/dsh-settings-ui-0.2.10.tgz",
+    "fileCount": 5,
+    "integrity": "sha512-o/YWP3yB3ABlCR537SNA68HPgcc/xmdM/OKaJ3AXWCDLxEWEWm4OyiUqFezQ8Alxm//PeAE1loGDbT4LBR6Baw==",
+    "signatures": [
+      {
+        "sig": "MEYCIQDReF17Xc1YUUTTr/88iTXcRknOI5+vwGKmFEI8gNRcbQIhAJeavlFl2NtfWH9IGjl/2E1kYYLIlefvAZH0hBmVEdND",
+        "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      },
+      {
+        "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U",
+        "sig": "MEUCIQCg8enntKKIy4jGfydD0zTVc9t8eblPAcwORo77+UgkFAIgYddHuEk6uP9PWs8egvt0SiZZb7OGhQCZPj+bj5k+IKw="
+      }
+    ],
+    "attestations": {
+      "url": "https://registry.npmjs.org/-/npm/v1/attestations/@weibaohui%2fdsh-settings-ui@0.2.10",
+      "provenance": {
+        "predicateType": "https://slsa.dev/provenance/v1"
+      }
+    },
+    "unpackedSize": 35152
+  },
+  "main": "src/index.js",
+  "engines": {
+    "dsh": ">=0.2.0-rc.2",
+    "node": ">=22.5"
+  },
+  "exports": {
+    ".": "./src/index.js",
+    "./client": "./client/bundle.js",
+    "./package.json": "./package.json"
+  },
+  "gitHead": "51180fdbe96829210bf60c2a1b35f0ccc3e4e4cd",
+  "license": "MIT",
+  "scripts": {
+    "test": "node --test test/*.test.mjs",
+    "check": "node --check src/index.js && node --check client/bundle.js",
+    "prepublishOnly": "npm run check && npm test"
+  },
+  "version": "0.2.10",
+  "_npmUser": "GitHub Actions <npm-oidc-no-reply@github.com>",
+  "homepage": "https://github.com/weibaohui/dsh-settings-ui#readme",
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "cordis",
+    "plugin",
+    "dsh-plugin",
+    "web",
+    "ui",
+    "appearance"
+  ],
+  "repository": {
+    "url": "git+https://github.com/weibaohui/dsh-settings-ui.git",
+    "type": "git"
+  },
+  "_npmVersion": "12.1.0",
+  "description": "dsh 插件 · 设置界面自定义：调整原生设置窗口大小（全屏 / 预置大尺寸 / 自定义宽高）、背景透明度与背景（主题 / 自定义颜色），悬浮球即开即调，随 dsh profile 持久化",
+  "directories": {},
+  "maintainers": [
+    "weibaohui <weibaohui@yeah.net>"
+  ],
+  "_nodeVersion": "22.23.2",
+  "publishConfig": {
+    "access": "public"
+  },
+  "_hasShrinkwrap": false,
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages-npm-production",
+    "tmp": "tmp/dsh-settings-ui_0.2.10_1790749959685_0.34242268883835614"
+  },
+  "contributors": []
+}
+node.exe : npm notice
+所在位置 行:1 字符: 1
++ & "C:\Program Files/node.exe" "C:\Program Files/node_modules/npm/bin/ ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (npm notice:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+npm notice New major version of npm available! 11.17.0 -> 12.2.1
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.1
+npm notice To update run: npm install -g npm@12.2.1
+npm notice

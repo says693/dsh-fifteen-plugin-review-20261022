@@ -1,0 +1,86 @@
+{
+  "before": "http://127.0.0.1:11911/",
+  "list": [
+    {
+      "i": 0,
+      "text": "workspace",
+      "x": 140,
+      "y": 223,
+      "href": null
+    },
+    {
+      "i": 1,
+      "text": "新会话",
+      "x": 140,
+      "y": 258,
+      "href": null
+    },
+    {
+      "i": 2,
+      "text": "未命名 刚刚",
+      "x": 140,
+      "y": 292,
+      "href": null
+    },
+    {
+      "i": 3,
+      "text": "未命名 刚刚",
+      "x": 140,
+      "y": 326,
+      "href": null
+    },
+    {
+      "i": 4,
+      "text": "未命名 刚刚",
+      "x": 140,
+      "y": 360,
+      "href": null
+    },
+    {
+      "i": 5,
+      "text": "未命名 刚刚",
+      "x": 140,
+      "y": 394,
+      "href": null
+    },
+    {
+      "i": 6,
+      "text": "未命名 刚刚",
+      "x": 140,
+      "y": 428,
+      "href": null
+    }
+  ],
+  "attempts": [
+    {
+      "i": 2,
+      "text": "未命名 刚刚",
+      "x": 140,
+      "y": 292,
+      "href": null,
+      "url": "http://127.0.0.1:11911/",
+      "userRows": 0,
+      "hasFlow": true,
+      "navDisplay": "none",
+      "dots": 0,
+      "bodyHead": "新会话 Ctrl + Alt + N 插件 工作区 workspace 未命名 刚刚 未命名 未命名 刚刚 未命名 刚刚 未命名 刚刚 设置 workspace 对话 轨迹 历史加载失败：stored session \"sess-nav-eight\" is corrupt: session \"sess-nav-eight\": stored log is corrupt: SessionFormat",
+      "corrupt": true
+    },
+    {
+      "i": 3,
+      "text": "未命名 刚刚",
+      "x": 140,
+      "y": 326,
+      "href": null,
+      "url": "http://127.0.0.1:11911/",
+      "userRows": 0,
+      "hasFlow": true,
+      "navDisplay": "none",
+      "dots": 0,
+      "bodyHead": "新会话 Ctrl + Alt + N 插件 工作区 workspace 未命名 刚刚 未命名 刚刚 未命名 未命名 刚刚 未命名 刚刚 设置 workspace 对话 轨迹 历史加载失败：stored session \"sess-nav-single\" is corrupt: session \"sess-nav-single\": stored log is corrupt: SessionForm",
+      "corrupt": true
+    }
+  ],
+  "errors": [],
+  "consoleLog": []
+}

@@ -1,0 +1,42 @@
+{
+  "coldRestart": {
+    "origin": "http://127.0.0.1:5470",
+    "entries": [
+      "第一条历史：给周记起个开头",
+      "第二条历史：把结尾写暖一点",
+      "第三条历史：再检查一遍错别字",
+      "乙会话专属的句子-只在B里发过"
+    ],
+    "rawLen": 86,
+    "session": "{\"sessionId\":\"session-cc7e3400-8dbe-45a8-bfac-419ca5001c13\"}",
+    "userRows": 0,
+    "storageKeys": [
+      "dsh.composer-history.insights.v1",
+      "dsh.composer-history.v1"
+    ],
+    "recallAfterColdRestart": "乙会话专属的句子-只在B里发过",
+    "errors": []
+  },
+  "workspaceB": {
+    "origin": "http://127.0.0.1:8975",
+    "hostWorkdir": "H:\\CODEX\\fifteen-plugin-reviews-20261022\\r2-01-composer-history\\fixtures\\workspace-b",
+    "entries": null,
+    "storageKeys": [],
+    "userRows": 0,
+    "recallAtStart": "",
+    "afterSend": {
+      "entries": [
+        "丙工作区独有的句子-只在workspace-b发过"
+      ],
+      "text": ""
+    },
+    "recallAfterSend": [
+      "丙工作区独有的句子-只在workspace-b发过",
+      "丙工作区独有的句子-只在workspace-b发过",
+      "丙工作区独有的句子-只在workspace-b发过",
+      "丙工作区独有的句子-只在workspace-b发过",
+      "丙工作区独有的句子-只在workspace-b发过"
+    ],
+    "errors": []
+  }
+}

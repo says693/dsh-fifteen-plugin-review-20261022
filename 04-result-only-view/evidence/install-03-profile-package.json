@@ -1,0 +1,17 @@
+﻿{
+  "name": "dsh-profile-web",
+  "private": true,
+  "dsh": {
+    "profile": {
+      "bundles": [
+        "@deepseek-ai/dsh-base",
+        "@deepseek-ai/dsh-web-app",
+        "dsh-result-only-view"
+      ]
+    }
+  },
+  "dependencies": {
+    "dsh-result-only-view": "file:H:/CODEX/fifteen-plugin-reviews-20261022/r1-04-result-only-view/temp/dsh-result-only-view-1.7.0.tgz"
+  }
+}
+

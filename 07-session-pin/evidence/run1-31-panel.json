@@ -1,0 +1,91 @@
+{
+  "before": {
+    "rows": [
+      {
+        "k": "workspace:101ac9c7-365b-4997-b465-7f91f41c472a",
+        "t": "默认工作区"
+      },
+      {
+        "k": "session:session-6854de43-b6df-467b-a967-80a0bddadba9",
+        "t": "新会话"
+      },
+      {
+        "k": "session:session-36dafaf6-2551-4cb7-a7a0-5a148681f143",
+        "t": "把这周的错题整理成表格 6分钟",
+        "pin": "false"
+      },
+      {
+        "k": "session:session-3c8badf3-ce48-4e15-aae2-be9723a30ae1",
+        "t": "写一封给班主任的请假邮件 6分钟",
+        "pin": "true"
+      },
+      {
+        "k": "session:session-300ede31-2667-45af-9046-0749490f3dd4",
+        "t": "比较两个版本的实验数据差异 6分钟",
+        "pin": "false"
+      },
+      {
+        "k": "session:session-08fbbad4-a5f0-4e61-8e44-49b911727022",
+        "t": "帮我整理一份关于海洋塑料污 6分钟",
+        "pin": "false"
+      }
+    ],
+    "panel": false,
+    "current": "{\"sessionId\":\"session-6854de43-b6df-467b-a967-80a0bddadba9\"}"
+  },
+  "panelOpen": {
+    "rect": {
+      "x": 1130,
+      "y": 48,
+      "w": 298,
+      "h": 118
+    },
+    "html": "<div class=\"__dsh-session-pin-panel__\" role=\"dialog\" aria-label=\"已置顶的会话\"><div class=\"__dsh-session-pin-panel-section__\">会话</div><button type=\"button\" class=\"__dsh-session-pin-panel-group__\" aria-expanded=\"true\"><span class=\"__dsh-session-pin-panel-group-toggle__\">▾</span><span>未分组 (2)</span></button><div class=\"__dsh-session-pin-panel-row__\" role=\"button\" tabindex=\"0\" title=\"帮我整理一份关于海洋塑料污\" data-id=\"session-08fbbad4-a5f0-4e61-8e44-49b911727022\" data-title=\"帮我整理一份关于海洋塑料污\" data-tags=\"\" data-session-id=\"session-08fbbad4-a5f0-4e61-8e44-49b911727022\"><span><svg viewBox=\"0 0 24 24\" width=\"14\" height=\"14\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M12 17v5\"></path><path d=\"M9 10.76a2 2 0 0 1-1.11 1.79l-1.78.9A2 2 0 0 0 5 15.24V16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-.76a2 2 0 0 0-1.11-1.79l-1.78-.9A2 2 0 0 1 15 10.76V7a1 1 0 0 1 1-1 2 2 0 0 0 0-4H8a2 2 0 0 0 0 4 1 1 0 0 1 1 1z\"></path></svg></span><span class=\"__dsh-session-pin-panel-dot__\"></span><span>帮我整理一份关于海洋塑料污</span><button type=\"button\" class=\"__dsh-session-pin-manage__\" title=\"归组或设置标签\" aria-label=\"归组或设置标签\">⋯</button><span class=\"__dsh-session-pin-nav__health\"></span></div><div class=\"__dsh-session-pin-panel-row__\" role=\"button\" tabindex=\"0\" title=\"写一封给班主任的请假邮件\" data-id=\"session-3c8badf3-ce48-4e15-aae2-be9723a30ae1\" data-title=\"写一封给班主任的请假邮件\" data-tags=\"\" data-session-id=\"session-3c8badf3-ce48-4e15-aae2-be9723a30ae1\"><span><svg viewBox=\"0 0 24 24\" width=\"14\" height=\"14\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M12 17v5\"></path><path d=\"M9 10.76a2 2 0 0 1-1.11 1.79l-1.78.9A2 2 0 0 0 5 15.24V16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-.76a2 2 0 0 0-1.11-1.79l-1.78-.9A2 2 0 0 1 15 10.76V7a1 1 0 0 1 1-1 2 2 0 0 0 0-4H8a2 2 0 0 0 0 4 1 1 0 0 1 1 1z\"></path></svg></span><span class=\"__dsh-session-pin-panel-dot__\"></span><span>写一封给班主任的请假邮件</span><button type=\"button\" class=\"__dsh-session-pin-manage__\" title=\"归组或设置标签\" aria-label=\"归组或设置标签\">⋯</button><span class=\"__dsh-session-pin-nav__health\"></span></div></div>",
+    "text": "会话 ▾ 未分组 (2) 帮我整理一份关于海洋塑料污 ⋯ 写一封给班主任的请假邮件 ⋯",
+    "rows": [
+      {
+        "text": "帮我整理一份关于海洋塑料污 ⋯",
+        "cls": "__dsh-session-pin-panel-row__"
+      },
+      {
+        "text": "写一封给班主任的请假邮件 ⋯",
+        "cls": "__dsh-session-pin-panel-row__"
+      }
+    ],
+    "sections": [
+      "会话"
+    ],
+    "groups": [
+      {
+        "text": "▾ 未分组 (2)",
+        "cls": "__dsh-session-pin-panel-group__"
+      }
+    ],
+    "buttons": [
+      {
+        "text": "▾\n未分组 (2)",
+        "aria": null,
+        "cls": "__dsh-session-pin-panel-group__"
+      },
+      {
+        "text": "⋯",
+        "aria": "归组或设置标签",
+        "cls": "__dsh-session-pin-manage__"
+      },
+      {
+        "text": "⋯",
+        "aria": "归组或设置标签",
+        "cls": "__dsh-session-pin-manage__"
+      }
+    ]
+  },
+  "errors": [],
+  "console": [
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "utc": "2026-10-22T01:11:45.858Z"
+    }
+  ],
+  "dialogs": []
+}

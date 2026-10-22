@@ -1,0 +1,103 @@
+﻿{
+  "utc": "2026-10-22T01:02:47.349Z",
+  "t0": {
+    "n": 1,
+    "keys": [
+      "session:session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e"
+    ],
+    "titles": [
+      "新会话"
+    ],
+    "active": "session:session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e",
+    "toast": null
+  },
+  "afterRenamePress": {
+    "activeTag": "H2",
+    "activeCls": "jLrgrW_title",
+    "visibleInputs": [
+      {
+        "tag": "INPUT",
+        "val": "",
+        "ph": "搜索会话名称"
+      }
+    ],
+    "overlay": [
+      {
+        "cls": "shk-pinbtn",
+        "text": ""
+      }
+    ]
+  },
+  "t1": {
+    "n": 1,
+    "keys": [
+      "session:session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e"
+    ],
+    "titles": [
+      "新会话"
+    ],
+    "active": "session:session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e",
+    "toast": null
+  },
+  "afterEnter": {
+    "overlay": [
+      {
+        "cls": "shk-pinbtn",
+        "text": ""
+      }
+    ],
+    "toast": null
+  },
+  "newPresses": [
+    {
+      "i": 0,
+      "before": 1,
+      "after": 1,
+      "beforeKeys": [
+        "session:session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e"
+      ],
+      "afterKeys": [
+        "session:session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e"
+      ],
+      "toast": "新建会话",
+      "active": "session:session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e"
+    },
+    {
+      "i": 1,
+      "before": 1,
+      "after": 1,
+      "beforeKeys": [
+        "session:session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e"
+      ],
+      "afterKeys": [
+        "session:session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e"
+      ],
+      "toast": "新建会话",
+      "active": "session:session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e"
+    },
+    {
+      "i": 2,
+      "before": 1,
+      "after": 1,
+      "beforeKeys": [
+        "session:session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e"
+      ],
+      "afterKeys": [
+        "session:session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e"
+      ],
+      "toast": "新建会话",
+      "active": "session:session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e"
+    }
+  ],
+  "t2": {
+    "n": 1,
+    "keys": [
+      "session:session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e"
+    ],
+    "titles": [
+      "新会话"
+    ],
+    "active": "session:session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e",
+    "toast": "新建会话"
+  }
+}

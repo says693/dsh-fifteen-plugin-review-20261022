@@ -1,0 +1,24 @@
+{
+  "state": {
+    "navDisplay": "flex",
+    "dots": 11,
+    "activeLabel": "user #8（点击跳转）",
+    "mores": 2,
+    "navRect": {
+      "x": 1240,
+      "y": 375,
+      "w": 40,
+      "h": 251
+    },
+    "previewText": "第 27 段：这是长会话的第 27 条提问，用来检查右侧小圆点会不会挤成一团。",
+    "previewDisplay": "block",
+    "dotY": [
+      427,
+      444,
+      461
+    ],
+    "dotSpacing": 17
+  },
+  "errors": [],
+  "consoleLog": []
+}

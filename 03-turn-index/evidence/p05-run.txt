@@ -1,0 +1,15 @@
+﻿{
+  "status": {
+    "styleInjected": true,
+    "panel": false,
+    "overlayChildCount": 1,
+    "overlayInner": "<div data-slot=\"shell.overlay\" style=\"display: contents;\"></div>",
+    "slotWrapper": ""
+  },
+  "cap": {
+    "errors": [],
+    "logs": [],
+    "rejections": []
+  },
+  "events": []
+}

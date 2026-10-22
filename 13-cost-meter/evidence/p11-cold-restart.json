@@ -1,0 +1,65 @@
+{
+  "at": "2026-10-22T01:48:53.492Z",
+  "steps": [
+    {
+      "label": "cold-boot",
+      "badgeCount": 0,
+      "tipsCount": 0,
+      "costCssLoaded": true,
+      "overflowX": false,
+      "storageKeys": [
+        "dsh.workspace.view.v5",
+        "dsh.sessions.current",
+        "dsh.sidebar-right.v1.session-984423db-9a04-486a-8787-ec6e8af9eb38"
+      ],
+      "bodyHead": "新会话\nCtrl\n+\nAlt\n+\nN\n插件\n工作区\nworkspace\n新会话\nflash 档价目对照\n1小时\n超大用量：千万级 token\n1小时\n极小用量：1 token\n1小时\n用量全为零的会话\n1小时\n未命名\n1小时\n展开其余 2 个会话\n设置\n探索未至之境\n预览版\nworkspace\n标准"
+    },
+    {
+      "label": "cold-open-row1",
+      "badgeCount": 0,
+      "tipsCount": 0,
+      "costCssLoaded": true,
+      "overflowX": false,
+      "storageKeys": [
+        "dsh.sessions.current",
+        "dsh.sidebar-right.v1.session-984423db-9a04-486a-8787-ec6e8af9eb38",
+        "dsh.workspace.view.v5",
+        "dsh.sidebar-right.v1.sess-cm-flash"
+      ],
+      "bodyHead": "新会话\nCtrl\n+\nAlt\n+\nN\n插件\n工作区\nworkspace\nflash 档价目对照\n1小时\n超大用量：千万级 token\n1小时\n极小用量：1 token\n1小时\n用量全为零的会话\n1小时\n未命名\n1小时\n展开其余 2 个会话\n设置\nflash 档价目对照\n对话\n轨迹\n第 1 轮：用 f"
+    },
+    {
+      "label": "cold-open-row2",
+      "badgeCount": 0,
+      "tipsCount": 0,
+      "costCssLoaded": true,
+      "overflowX": false,
+      "storageKeys": [
+        "dsh.sessions.current",
+        "dsh.sidebar-right.v1.session-984423db-9a04-486a-8787-ec6e8af9eb38",
+        "dsh.workspace.view.v5",
+        "dsh.sidebar-right.v1.sess-cm-tiny",
+        "dsh.sidebar-right.v1.sess-cm-flash"
+      ],
+      "bodyHead": "新会话\nCtrl\n+\nAlt\n+\nN\n插件\n工作区\nworkspace\nflash 档价目对照\n1小时\n超大用量：千万级 token\n1小时\n极小用量：1 token\n1小时\n用量全为零的会话\n1小时\n未命名\n1小时\n展开其余 2 个会话\n设置\n极小用量：1 token\n对话\n轨迹\n第 1 轮：只回"
+    },
+    {
+      "label": "cold-open-row3",
+      "badgeCount": 0,
+      "tipsCount": 0,
+      "costCssLoaded": true,
+      "overflowX": false,
+      "storageKeys": [
+        "dsh.sessions.current",
+        "dsh.sidebar-right.v1.session-984423db-9a04-486a-8787-ec6e8af9eb38",
+        "dsh.workspace.view.v5",
+        "dsh.sidebar-right.v1.sess-cm-tiny",
+        "dsh.sidebar-right.v1.sess-cm-zerousage",
+        "dsh.sidebar-right.v1.sess-cm-flash"
+      ],
+      "bodyHead": "新会话\nCtrl\n+\nAlt\n+\nN\n插件\n工作区\nworkspace\nflash 档价目对照\n1小时\n超大用量：千万级 token\n1小时\n极小用量：1 token\n1小时\n用量全为零的会话\n1小时\n未命名\n1小时\n展开其余 2 个会话\n设置\n用量全为零的会话\n对话\n轨迹\n第 1 轮：用量字段存在"
+    }
+  ],
+  "errors": [],
+  "consoleLog": []
+}

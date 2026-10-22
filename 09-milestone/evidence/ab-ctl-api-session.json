@@ -1,0 +1,50 @@
+{
+  "res": {
+    "status": 200,
+    "text": "{\"type\":\"server-response\",\"rpcId\":\"15fd9074-7994-4538-bc64-a69888cf9322\",\"result\":{\"ok\":false,\"error\":{\"code\":\"gateway/bad-request\",\"message\":\"invalid client-request message\",\"details\":{\"issues\":[{\"expected\":\"string\",\"code\":\"invalid_type\",\"path\":[\"method\"],\"message\":\"Invalid input: expected string, received undefined\"},{\"code\":\"invalid_type\",\"expected\":\"nonoptional\",\"path\":[\"payload\"],\"message\":\"Invalid input: expected nonoptional, received undefined\"}]}}}}"
+  },
+  "parsed": {
+    "type": "server-response",
+    "rpcId": "15fd9074-7994-4538-bc64-a69888cf9322",
+    "result": {
+      "ok": false,
+      "error": {
+        "code": "gateway/bad-request",
+        "message": "invalid client-request message",
+        "details": {
+          "issues": [
+            {
+              "expected": "string",
+              "code": "invalid_type",
+              "path": [
+                "method"
+              ],
+              "message": "Invalid input: expected string, received undefined"
+            },
+            {
+              "code": "invalid_type",
+              "expected": "nonoptional",
+              "path": [
+                "payload"
+              ],
+              "message": "Invalid input: expected nonoptional, received undefined"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "ids": [],
+  "clicked": "未命名",
+  "state": {
+    "url": "http://127.0.0.1:13125/",
+    "userRows": 3,
+    "anyRows": 12,
+    "dots": 0,
+    "railList": false,
+    "incompatible": false,
+    "scrollHeight": 4261,
+    "body": "新会话 Ctrl + Alt + N 插件 工作区 workspace 超长单轮会话 1小时 未命名 1小时 未命名 1小时 未命名 1小时 未命名 1小时 未分组 设置 超长单轮会话 对话 轨迹 第 1 条：正常长度的开场问题。 08:25 已完成 已完成，用时 5秒 第 1 段：正常轮 的说明文字，用来把这一轮撑高，方便观察滚动高亮是否跟得上。 第 2 段：正常轮 的说明文字，用来把这一轮撑高，方便观察滚动高亮是否跟得上。 第 3 段：正常轮 的说明文字，用来把这一轮撑高"
+  },
+  "errors": []
+}

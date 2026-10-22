@@ -1,0 +1,220 @@
+{
+  "host": "http://127.0.0.1:12294",
+  "removed": [
+    "/^稍后配置$/"
+  ],
+  "initial": [
+    {
+      "i": 0,
+      "key": "workspace:ee73cda6-f6fe-44b6-b772-dabdbafe22e8",
+      "text": "beta",
+      "selected": null,
+      "expanded": "true",
+      "cls": "YDXeBa_projectRow",
+      "rect": {
+        "x": 12,
+        "y": 206,
+        "w": 256,
+        "h": 34
+      }
+    },
+    {
+      "i": 1,
+      "key": "session:session-935c2477-a159-4ad1-bd17-1ef223f3c7dc",
+      "text": "新会话",
+      "selected": "true",
+      "expanded": null,
+      "cls": "YDXeBa_sessionRow YDXeBa_selected",
+      "rect": {
+        "x": 12,
+        "y": 242,
+        "w": 256,
+        "h": 32
+      }
+    },
+    {
+      "i": 2,
+      "key": "session:sess-dl-beta-one",
+      "text": "未命名 1小时",
+      "selected": "false",
+      "expanded": null,
+      "cls": "YDXeBa_sessionRow",
+      "rect": {
+        "x": 12,
+        "y": 276,
+        "w": 256,
+        "h": 32
+      }
+    },
+    {
+      "i": 3,
+      "key": "workspace:7529e9de-4bfc-4528-92e9-9ea05c755f53",
+      "text": "alpha",
+      "selected": null,
+      "expanded": "false",
+      "cls": "YDXeBa_projectRow",
+      "rect": {
+        "x": 12,
+        "y": 312,
+        "w": 256,
+        "h": 34
+      }
+    }
+  ],
+  "expandedLog": [
+    "workspace:7529e9de-4bfc-4528-92e9-9ea05c755f53"
+  ],
+  "expanded": [
+    {
+      "i": 0,
+      "key": "workspace:ee73cda6-f6fe-44b6-b772-dabdbafe22e8",
+      "text": "beta",
+      "selected": null,
+      "expanded": "true",
+      "cls": "YDXeBa_projectRow",
+      "rect": {
+        "x": 12,
+        "y": 206,
+        "w": 256,
+        "h": 34
+      }
+    },
+    {
+      "i": 1,
+      "key": "session:session-935c2477-a159-4ad1-bd17-1ef223f3c7dc",
+      "text": "新会话",
+      "selected": "true",
+      "expanded": null,
+      "cls": "YDXeBa_sessionRow YDXeBa_selected",
+      "rect": {
+        "x": 12,
+        "y": 242,
+        "w": 256,
+        "h": 32
+      }
+    },
+    {
+      "i": 2,
+      "key": "session:sess-dl-beta-one",
+      "text": "未命名 1小时",
+      "selected": "false",
+      "expanded": null,
+      "cls": "YDXeBa_sessionRow",
+      "rect": {
+        "x": 12,
+        "y": 276,
+        "w": 256,
+        "h": 32
+      }
+    },
+    {
+      "i": 3,
+      "key": "workspace:7529e9de-4bfc-4528-92e9-9ea05c755f53",
+      "text": "alpha",
+      "selected": null,
+      "expanded": "true",
+      "cls": "YDXeBa_projectRow",
+      "rect": {
+        "x": 12,
+        "y": 312,
+        "w": 256,
+        "h": 34
+      }
+    },
+    {
+      "i": 4,
+      "key": "session:sess-dl-alpha-two",
+      "text": "未命名 1小时",
+      "selected": "false",
+      "expanded": null,
+      "cls": "YDXeBa_sessionRow",
+      "rect": {
+        "x": 12,
+        "y": 348,
+        "w": 256,
+        "h": 32
+      }
+    },
+    {
+      "i": 5,
+      "key": "session:sess-dl-alpha-one",
+      "text": "未命名 1小时",
+      "selected": "false",
+      "expanded": null,
+      "cls": "YDXeBa_sessionRow",
+      "rect": {
+        "x": 12,
+        "y": 382,
+        "w": 256,
+        "h": 32
+      }
+    }
+  ],
+  "opened": [
+    {
+      "key": "session:session-935c2477-a159-4ad1-bd17-1ef223f3c7dc",
+      "text": "新会话 Ctrl + Alt + N 插件 工作区 beta 新会话 未命名 1小时 alpha 未命名 1小时 未命名 1小时 设置 探索未至之境 预览版 beta 标准模式 描述你想要构建的内容, / 调用指令, @ 文件或对话 工作区内修改 DeepSeek-V41-Flash High",
+      "url": "http://127.0.0.1:12294/",
+      "chatFlow": [],
+      "kinds": [],
+      "userRows": 0,
+      "selectedRow": "新会话"
+    },
+    {
+      "key": "session:sess-dl-beta-one",
+      "text": "新会话 Ctrl + Alt + N 插件 工作区 beta BETA-ONE 另一个工程的会话 1小时 alpha 未命名 1小时 未命名 1小时 设置 BETA-ONE 另一个工程的会话 对话 轨迹 BETA-ONE 的提问：这条会话只在 beta 工程里。 09:19 已完成 已完成，用时 5秒 第 1 段：BETA-ONE 回答 的说明文字，用来把这一轮撑高。 第 2 段：BETA-ONE 回答 的说明文字，用来把这一轮撑高。 第 3 段：BETA-ONE 回答 的说明文字，用来把这一轮撑高。 09:19 发消息或创建任务, / 调用指令, @ 文件或对话 工作区内修改 DeepSeek-V41-Flash High 1 轮 1 步 alpha H:\\CODEX\\fifteen-plugin-reviews-20261022\\r3-05-deeplink\\fixtures\\alpha 创建于 2026年10月22日 08",
+      "url": "http://127.0.0.1:12294/",
+      "chatFlow": [
+        4
+      ],
+      "kinds": [
+        "user",
+        "turn-process",
+        "assistant-step",
+        "turn-tail"
+      ],
+      "userRows": 1,
+      "selectedRow": "BETA-ONE 另一个工程的会话\n1小时"
+    },
+    {
+      "key": "session:sess-dl-alpha-two",
+      "text": "新会话 Ctrl + Alt + N 插件 工作区 beta BETA-ONE 另一个工程的会话 1小时 alpha ALPHA-TWO 第二个会话 未命名 1小时 设置 ALPHA-TWO 第二个会话 对话 轨迹 ALPHA-TWO 第一轮。 09:19 已完成 已完成，用时 5秒 第 1 段：ALPHA-TWO 回答一 的说明文字，用来把这一轮撑高。 第 2 段：ALPHA-TWO 回答一 的说明文字，用来把这一轮撑高。 09:19 ALPHA-TWO 第二轮：用来验证跳转后滚到哪。 09:19 已完成 已完成，用时 5秒 第 1 段：ALPHA-TWO 回答二 的说明文字，用来把这一轮撑高。 第 2 段：ALPHA-TWO 回答二 的说明文字，用来把这一轮撑高。 第 3 段：ALPHA-TWO 回答二 的说明文字，用来把这一轮撑高。 第 4 段：ALPHA-TWO 回答二 的说明文字，用来把这一轮撑高。 第 5 段：ALP",
+      "url": "http://127.0.0.1:12294/",
+      "chatFlow": [
+        12
+      ],
+      "kinds": [
+        "user",
+        "turn-process",
+        "assistant-step",
+        "turn-tail",
+        "user",
+        "turn-process",
+        "assistant-step",
+        "turn-tail",
+        "user",
+        "turn-process"
+      ],
+      "userRows": 3,
+      "selectedRow": "ALPHA-TWO 第二个会话"
+    },
+    {
+      "key": "session:sess-dl-alpha-one",
+      "text": "新会话 Ctrl + Alt + N 插件 工作区 beta BETA-ONE 另一个工程的会话 1小时 alpha ALPHA-TWO 第二个会话 1小时 ALPHA-ONE 唯一会话 设置 ALPHA-ONE 唯一会话 对话 轨迹 ALPHA-ONE 的提问：这条会话只在 alpha 工程里。 09:19 已完成 已完成，用时 5秒 第 1 段：ALPHA-ONE 回答 的说明文字，用来把这一轮撑高。 第 2 段：ALPHA-ONE 回答 的说明文字，用来把这一轮撑高。 第 3 段：ALPHA-ONE 回答 的说明文字，用来把这一轮撑高。 09:19 发消息或创建任务, / 调用指令, @ 文件或对话 工作区内修改 DeepSeek-V41-Flash High 1 轮 1 步",
+      "url": "http://127.0.0.1:12294/",
+      "chatFlow": [
+        4
+      ],
+      "kinds": [
+        "user",
+        "turn-process",
+        "assistant-step",
+        "turn-tail"
+      ],
+      "userRows": 1,
+      "selectedRow": "ALPHA-ONE 唯一会话"
+    }
+  ],
+  "errors": [],
+  "consoleLog": []
+}

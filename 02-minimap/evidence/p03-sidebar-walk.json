@@ -1,0 +1,71 @@
+{
+  "results": [
+    {
+      "index": 0,
+      "clicked": true,
+      "totalRows": 12,
+      "userRows": 3,
+      "anchors": 0,
+      "seat": 0,
+      "seatDisplay": null,
+      "scrollTop": 0,
+      "scrollHeight": 924,
+      "firstText": "第一问\n07:58",
+      "url": "http://127.0.0.1:4243/"
+    },
+    {
+      "index": 1,
+      "clicked": true,
+      "totalRows": 4,
+      "userRows": 1,
+      "anchors": 0,
+      "seat": 0,
+      "seatDisplay": null,
+      "scrollTop": 0,
+      "scrollHeight": 924,
+      "firstText": "只有一个问题\n07:58",
+      "url": "http://127.0.0.1:4243/"
+    },
+    {
+      "index": 2,
+      "clicked": true,
+      "totalRows": 0,
+      "userRows": 0,
+      "anchors": 0,
+      "seat": 0,
+      "seatDisplay": null,
+      "scrollTop": 0,
+      "scrollHeight": 960,
+      "firstText": null,
+      "url": "http://127.0.0.1:4243/"
+    },
+    {
+      "index": 3,
+      "clicked": true,
+      "totalRows": 100,
+      "userRows": 25,
+      "anchors": 0,
+      "seat": 0,
+      "seatDisplay": null,
+      "scrollTop": 10573,
+      "scrollHeight": 11497,
+      "firstText": "超长提问（第 24 轮）：字字字字字字字",
+      "url": "http://127.0.0.1:4243/"
+    },
+    {
+      "index": 4,
+      "clicked": true,
+      "totalRows": 32,
+      "userRows": 8,
+      "anchors": 0,
+      "seat": 0,
+      "seatDisplay": null,
+      "scrollTop": 2304,
+      "scrollHeight": 3228,
+      "firstText": "短问\n07:57",
+      "url": "http://127.0.0.1:4243/"
+    }
+  ],
+  "consoleLog": [],
+  "errors": []
+}

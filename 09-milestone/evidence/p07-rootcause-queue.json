@@ -1,0 +1,16 @@
+{
+  "claim": "MilestoneRail dereferences session snapshot .queue which no longer exists on DSH 0.2.0-rc.2",
+  "bundlePath": "isolated-home/profiles/web3/node_modules/dsh-milestone/lib/client.js",
+  "bundleSha256": "bfea11811e5cd3822e2a145f9cbb8a2cb8cd3cf127ede45bcee7feeeafc1a1ab",
+  "exactSnippet": "urn EMPTY_KINDS_BY_TURN;\n\t\t\t\tconst map = /* @__PURE__ */ new Map();\n\t\t\t\tfor (const t of turns) {\n\t\t\t\t\tconst kinds = kindsForTurn(t);\n\t\t\t\t\tif (kinds.length > 0) map.set(t.turn, kinds);\n\t\t\t\t}\n\t\t\t\treturn map;\n\t\t\t}, [projection]);\n\t\t\tconst running = useSession((s) => s.running);\n\t\t\tconst awaitingInput = useSession((s) => s.queue).length > 0;\n\t\t\tconst [railBox, setRailBox] = (0, react.useState)(null);\n",
+  "occurrencesOfDotQueueParen": 1,
+  "occurrenceIndex": 133292,
+  "sourceFile": "src/client/MilestoneRail.tsx line 632 (fixed commit 3bdd8d1327f30b64a1119aeb62c752ef1e12c713)",
+  "sourceLine": "const awaitingInput = (useSession(s => s.queue) as unknown[]).length > 0",
+  "hostTypesFile": "@deepseek-ai/dsh-client-ui-session@0.2.0-rc.2 lib/types/client/index.d.ts",
+  "hostTypeLines": [
+    "readonly pendingInteraction: SessionPendingInteraction | undefined;"
+  ],
+  "hostHasQueueField": false,
+  "conclusion": "host snapshot exposes pendingInteraction; queue is gone -> selector returns undefined -> .length throws -> CompatBoundary disables the whole rail"
+}

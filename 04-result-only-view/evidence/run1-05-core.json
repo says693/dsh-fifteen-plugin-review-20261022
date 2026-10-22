@@ -1,0 +1,1083 @@
+{
+  "openOne": true,
+  "immediacy": {
+    "before": {
+      "t": 6780.7,
+      "pressed": "false",
+      "label": "○ 只看结果",
+      "styleTags": 0,
+      "thinkTotal": 1,
+      "thinkHidden": 0,
+      "flowTextLen": 385,
+      "stored": null
+    },
+    "at0": {
+      "t": 6783.2,
+      "pressed": "false",
+      "label": "○ 只看结果",
+      "styleTags": 1,
+      "thinkTotal": 1,
+      "thinkHidden": 1,
+      "flowTextLen": 371,
+      "stored": null
+    },
+    "atRaf": {
+      "t": 6786.2,
+      "pressed": "true",
+      "label": "◉ 只看结果",
+      "styleTags": 1,
+      "thinkTotal": 1,
+      "thinkHidden": 1,
+      "flowTextLen": 386,
+      "stored": null
+    },
+    "at50": {
+      "t": 6839.5,
+      "pressed": "true",
+      "label": "◉ 只看结果",
+      "styleTags": 1,
+      "thinkTotal": 1,
+      "thinkHidden": 1,
+      "flowTextLen": 386,
+      "stored": null
+    },
+    "at150": {
+      "t": 6999.8,
+      "pressed": "true",
+      "label": "◉ 只看结果",
+      "styleTags": 1,
+      "thinkTotal": 1,
+      "thinkHidden": 1,
+      "flowTextLen": 386,
+      "stored": null
+    },
+    "atSettled": {
+      "t": 7404,
+      "pressed": "true",
+      "label": "◉ 只看结果",
+      "styleTags": 1,
+      "thinkTotal": 1,
+      "thinkHidden": 1,
+      "flowTextLen": 386,
+      "stored": null
+    },
+    "clickMs": 1.9,
+    "label": "◉ 只看结果",
+    "title": "只看结果已开启：过程已隐藏，运行中以实时摘要芯片展示正在进行的步骤（问答与插件审批卡片除外）。点击恢复完整单行折叠。"
+  },
+  "stateOn": {
+    "url": "http://127.0.0.1:9798/",
+    "origin": "http://127.0.0.1:9798",
+    "viewport": {
+      "w": 1440,
+      "h": 1000
+    },
+    "storage": {
+      "keys": [
+        "dsh.sessions.current",
+        "dsh.workspace.view.v5",
+        "dsh.sidebar-right.v1.sess-rov-one",
+        "dsh.result-only-view.enabled",
+        "dsh.sidebar-right.v1.session-5a0b261b-2264-4e16-83c7-237905f1d656"
+      ],
+      "enabled": "1",
+      "settings": null
+    },
+    "styleTags": [
+      {
+        "cssId": "result-only-hide",
+        "chars": 7610
+      }
+    ],
+    "toggles": [
+      {
+        "text": "",
+        "ariaPressed": "true",
+        "title": null,
+        "rect": {
+          "x": 1158,
+          "y": 274,
+          "w": 24,
+          "h": 24
+        },
+        "visible": true
+      },
+      {
+        "text": "",
+        "ariaPressed": "false",
+        "title": null,
+        "rect": {
+          "x": 515,
+          "y": 785,
+          "w": 28,
+          "h": 28
+        },
+        "visible": true
+      },
+      {
+        "text": "",
+        "ariaPressed": "false",
+        "title": null,
+        "rect": {
+          "x": 551,
+          "y": 785,
+          "w": 28,
+          "h": 28
+        },
+        "visible": true
+      },
+      {
+        "text": "◉ 只看结果",
+        "ariaPressed": "true",
+        "title": "只看结果已开启：过程已隐藏，运行中以实时摘要芯片展示正在进行的步骤（问答与插件审批卡片除外）。点击恢复完整单行折叠。",
+        "rect": {
+          "x": 655,
+          "y": 936,
+          "w": 79,
+          "h": 22
+        },
+        "visible": true
+      }
+    ],
+    "counts": {
+      "think": 1,
+      "thinkVisible": 0,
+      "thinkDisplayed": 0,
+      "toolCall": 0,
+      "toolCallVisible": 0,
+      "toolAttr": 0,
+      "kinds": {
+        "user": 1,
+        "turn-process": 1,
+        "assistant-step": 2,
+        "turn-tail": 1
+      },
+      "flowItems": 5,
+      "pre": 1,
+      "table": 1
+    },
+    "thinkRows": [
+      {
+        "display": "none",
+        "visible": false,
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0
+        },
+        "expanded": null,
+        "state": "ok",
+        "ariaExpanded": null,
+        "text": ""
+      }
+    ],
+    "toolRows": [],
+    "turnTail": [
+      {
+        "display": "block",
+        "visible": true,
+        "text": "已处理 0 步 · 5s ▸ 08:00",
+        "traceBtn": true,
+        "ariaExpanded": "false"
+      }
+    ],
+    "turnProcess": [
+      {
+        "display": "none",
+        "visible": false
+      }
+    ],
+    "items": [
+      {
+        "i": 0,
+        "kind": "user",
+        "tag": "DIV",
+        "display": "block",
+        "visible": true,
+        "rect": {
+          "x": 485,
+          "y": 92,
+          "w": 742,
+          "h": 76
+        },
+        "text": "给我解释一下「只看结果」，再给个代码块和表格的例子。 08:00",
+        "ariaExpanded": null,
+        "variant": null
+      },
+      {
+        "i": 1,
+        "kind": "turn-process",
+        "tag": "DIV",
+        "display": "none",
+        "visible": false,
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0
+        },
+        "text": "已完成已完成，用时 5秒",
+        "ariaExpanded": null,
+        "variant": null
+      },
+      {
+        "i": 2,
+        "kind": "assistant-step",
+        "tag": "DIV",
+        "display": "none",
+        "visible": false,
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0
+        },
+        "text": "",
+        "ariaExpanded": null,
+        "variant": null
+      },
+      {
+        "i": 3,
+        "kind": "assistant-step",
+        "tag": "DIV",
+        "display": "block",
+        "visible": true,
+        "rect": {
+          "x": 485,
+          "y": 184,
+          "w": 742,
+          "h": 549
+        },
+        "text": "「只看结果」做的事很简单：把过程收起来，只留下你问的和你最后得到的答案。 下面这段代码是用来演示代码块是否完整显示的对照样本： js function greet(name) { return \"你好，\" + name + \"！\"; } f",
+        "ariaExpanded": null,
+        "variant": null
+      },
+      {
+        "i": 4,
+        "kind": "turn-tail",
+        "tag": "DIV",
+        "display": "block",
+        "visible": true,
+        "rect": {
+          "x": 485,
+          "y": 745,
+          "w": 742,
+          "h": 68
+        },
+        "text": "已处理 0 步 · 5s ▸ 08:00",
+        "ariaExpanded": null,
+        "variant": null
+      }
+    ],
+    "pre": [
+      {
+        "display": "block",
+        "visible": true,
+        "rect": {
+          "x": 485,
+          "y": 306,
+          "w": 742,
+          "h": 159
+        },
+        "codeLen": 119,
+        "overflowX": "auto"
+      }
+    ],
+    "tables": [
+      {
+        "display": "table",
+        "visible": true,
+        "rect": {
+          "x": 485,
+          "y": 521,
+          "w": 742,
+          "h": 172
+        },
+        "rows": 4,
+        "overflow": "visible"
+      }
+    ],
+    "scroll": [
+      {
+        "scrollTop": 0,
+        "scrollHeight": 924,
+        "clientHeight": 924
+      }
+    ],
+    "bodyTextLen": 553,
+    "bodyText": "新会话 Ctrl + Alt + N 插件 工作区 workspace ROV 多轮对照 1小时 ROV 超长回复 1小时 ROV 单轮长回复 1小时 设置 ROV 单轮长回复 对话 轨迹 给我解释一下「只看结果」，再给个代码块和表格的例子。 08:00 「只看结果」做的事很简单：把过程收起来，只留下你问的和你最后得到的答案。 下面这段代码是用来演示代码块是否完整显示的对照样本： js function greet(name) { return \"你好，\" + name + \"！\"; } for (const n of [\"小明\", \"小红\", \"小刚\"]) { console.log(greet(n)); } 再给你一张对照表，用来检查表格有没有被裁掉： 状态 开关位置 你看到什么 开启 输入框左侧 只有你的问题与最终回答 关闭 输入框左侧 思考与工具调用都摊开 刷新后 保持上次设置 关",
+    "conversationText": "给我解释一下「只看结果」，再给个代码块和表格的例子。 08:00 「只看结果」做的事很简单：把过程收起来，只留下你问的和你最后得到的答案。 下面这段代码是用来演示代码块是否完整显示的对照样本： js function greet(name) { return \"你好，\" + name + \"！\"; } for (const n of [\"小明\", \"小红\", \"小刚\"]) { console.log(greet(n)); } 再给你一张对照表，用来检查表格有没有被裁掉： 状态 开关位置 你看到什么 开启 输入框左侧 只有你的问题与最终回答 关闭 输入框左侧 思考与工具调用都摊开 刷新后 保持上次设置 关掉再打开，东西还在原处 尾巴这句话用来确认长回复没有被截断：END-OF-ANSWER-ONE. 已处理 0 步 · 5s ▸ 08:00",
+    "conversationTextLen": 386
+  },
+  "answerIntegrityOn": {
+    "len": 386,
+    "hasTail": true,
+    "hasTableHeader": true,
+    "hasCodeLine": true,
+    "hasUserText": true,
+    "thinkHidden": 1,
+    "thinkInText": 0
+  },
+  "off": {
+    "pressed": "false",
+    "stored": null,
+    "styleTags": 0,
+    "len": 385,
+    "hasTail": true,
+    "thinkTotal": 1,
+    "thinkVisible": 1,
+    "thinkDisplay": [
+      "flex"
+    ],
+    "thinkInlineStyle": [
+      null
+    ],
+    "thinkText": 0
+  },
+  "stateOff": {
+    "url": "http://127.0.0.1:9798/",
+    "origin": "http://127.0.0.1:9798",
+    "viewport": {
+      "w": 1440,
+      "h": 1000
+    },
+    "storage": {
+      "keys": [
+        "dsh.sessions.current",
+        "dsh.workspace.view.v5",
+        "dsh.sidebar-right.v1.sess-rov-one",
+        "dsh.result-only-view.enabled",
+        "dsh.sidebar-right.v1.session-5a0b261b-2264-4e16-83c7-237905f1d656"
+      ],
+      "enabled": "0",
+      "settings": null
+    },
+    "styleTags": [],
+    "toggles": [
+      {
+        "text": "",
+        "ariaPressed": "true",
+        "title": null,
+        "rect": {
+          "x": 1158,
+          "y": 323,
+          "w": 24,
+          "h": 24
+        },
+        "visible": true
+      },
+      {
+        "text": "",
+        "ariaPressed": "false",
+        "title": null,
+        "rect": {
+          "x": 515,
+          "y": 798,
+          "w": 28,
+          "h": 28
+        },
+        "visible": true
+      },
+      {
+        "text": "",
+        "ariaPressed": "false",
+        "title": null,
+        "rect": {
+          "x": 551,
+          "y": 798,
+          "w": 28,
+          "h": 28
+        },
+        "visible": true
+      },
+      {
+        "text": "○ 只看结果",
+        "ariaPressed": "false",
+        "title": "只看结果已关闭：思考与工具调用以单行折叠显示。点击开启“只看结果”。",
+        "rect": {
+          "x": 655,
+          "y": 936,
+          "w": 80,
+          "h": 22
+        },
+        "visible": true
+      }
+    ],
+    "counts": {
+      "think": 1,
+      "thinkVisible": 1,
+      "thinkDisplayed": 1,
+      "toolCall": 0,
+      "toolCallVisible": 0,
+      "toolAttr": 0,
+      "kinds": {
+        "user": 1,
+        "turn-process": 1,
+        "assistant-step": 2,
+        "turn-tail": 1
+      },
+      "flowItems": 5,
+      "pre": 1,
+      "table": 1
+    },
+    "thinkRows": [
+      {
+        "display": "flex",
+        "visible": true,
+        "rect": {
+          "x": 485,
+          "y": 236,
+          "w": 737,
+          "h": 24
+        },
+        "expanded": null,
+        "state": "ok",
+        "ariaExpanded": null,
+        "text": ""
+      }
+    ],
+    "toolRows": [],
+    "turnTail": [
+      {
+        "display": "block",
+        "visible": true,
+        "text": "08:00",
+        "traceBtn": false,
+        "ariaExpanded": null
+      }
+    ],
+    "turnProcess": [
+      {
+        "display": "block",
+        "visible": true
+      }
+    ],
+    "items": [
+      {
+        "i": 0,
+        "kind": "user",
+        "tag": "DIV",
+        "display": "block",
+        "visible": true,
+        "rect": {
+          "x": 485,
+          "y": 92,
+          "w": 742,
+          "h": 76
+        },
+        "text": "给我解释一下「只看结果」，再给个代码块和表格的例子。 08:00",
+        "ariaExpanded": null,
+        "variant": null
+      },
+      {
+        "i": 1,
+        "kind": "turn-process",
+        "tag": "DIV",
+        "display": "block",
+        "visible": true,
+        "rect": {
+          "x": 485,
+          "y": 184,
+          "w": 742,
+          "h": 33
+        },
+        "text": "已完成 已完成，用时 5秒",
+        "ariaExpanded": null,
+        "variant": null
+      },
+      {
+        "i": 2,
+        "kind": "assistant-step",
+        "tag": "DIV",
+        "display": "block",
+        "visible": false,
+        "rect": {
+          "x": 485,
+          "y": 236,
+          "w": 737,
+          "h": 0
+        },
+        "text": "",
+        "ariaExpanded": null,
+        "variant": null
+      },
+      {
+        "i": 3,
+        "kind": "assistant-step",
+        "tag": "DIV",
+        "display": "block",
+        "visible": true,
+        "rect": {
+          "x": 485,
+          "y": 233,
+          "w": 742,
+          "h": 549
+        },
+        "text": "「只看结果」做的事很简单：把过程收起来，只留下你问的和你最后得到的答案。 下面这段代码是用来演示代码块是否完整显示的对照样本： js function greet(name) { return \"你好，\" + name + \"！\"; } f",
+        "ariaExpanded": null,
+        "variant": null
+      },
+      {
+        "i": 4,
+        "kind": "turn-tail",
+        "tag": "DIV",
+        "display": "block",
+        "visible": true,
+        "rect": {
+          "x": 485,
+          "y": 794,
+          "w": 742,
+          "h": 32
+        },
+        "text": "08:00",
+        "ariaExpanded": null,
+        "variant": null
+      }
+    ],
+    "pre": [
+      {
+        "display": "block",
+        "visible": true,
+        "rect": {
+          "x": 485,
+          "y": 355,
+          "w": 742,
+          "h": 159
+        },
+        "codeLen": 119,
+        "overflowX": "auto"
+      }
+    ],
+    "tables": [
+      {
+        "display": "table",
+        "visible": true,
+        "rect": {
+          "x": 485,
+          "y": 570,
+          "w": 742,
+          "h": 172
+        },
+        "rows": 4,
+        "overflow": "visible"
+      }
+    ],
+    "scroll": [
+      {
+        "scrollTop": 0,
+        "scrollHeight": 924,
+        "clientHeight": 924
+      }
+    ],
+    "bodyTextLen": 552,
+    "bodyText": "新会话 Ctrl + Alt + N 插件 工作区 workspace ROV 多轮对照 1小时 ROV 超长回复 1小时 ROV 单轮长回复 1小时 设置 ROV 单轮长回复 对话 轨迹 给我解释一下「只看结果」，再给个代码块和表格的例子。 08:00 已完成 已完成，用时 5秒 「只看结果」做的事很简单：把过程收起来，只留下你问的和你最后得到的答案。 下面这段代码是用来演示代码块是否完整显示的对照样本： js function greet(name) { return \"你好，\" + name + \"！\"; } for (const n of [\"小明\", \"小红\", \"小刚\"]) { console.log(greet(n)); } 再给你一张对照表，用来检查表格有没有被裁掉： 状态 开关位置 你看到什么 开启 输入框左侧 只有你的问题与最终回答 关闭 输入框左侧 思考与工具调用都摊",
+    "conversationText": "给我解释一下「只看结果」，再给个代码块和表格的例子。 08:00 已完成 已完成，用时 5秒 「只看结果」做的事很简单：把过程收起来，只留下你问的和你最后得到的答案。 下面这段代码是用来演示代码块是否完整显示的对照样本： js function greet(name) { return \"你好，\" + name + \"！\"; } for (const n of [\"小明\", \"小红\", \"小刚\"]) { console.log(greet(n)); } 再给你一张对照表，用来检查表格有没有被裁掉： 状态 开关位置 你看到什么 开启 输入框左侧 只有你的问题与最终回答 关闭 输入框左侧 思考与工具调用都摊开 刷新后 保持上次设置 关掉再打开，东西还在原处 尾巴这句话用来确认长回复没有被截断：END-OF-ANSWER-ONE. 08:00",
+    "conversationTextLen": 385
+  },
+  "threeState": {
+    "off": {
+      "pressed": "false",
+      "items": [
+        {
+          "kind": "user",
+          "display": "block",
+          "inline": null,
+          "h": 76
+        },
+        {
+          "kind": "turn-process",
+          "display": "block",
+          "inline": null,
+          "h": 33
+        },
+        {
+          "kind": "assistant-step",
+          "display": "block",
+          "inline": null,
+          "h": 0
+        },
+        {
+          "kind": "assistant-step",
+          "display": "block",
+          "inline": null,
+          "h": 549
+        },
+        {
+          "kind": "turn-tail",
+          "display": "block",
+          "inline": null,
+          "h": 32
+        }
+      ],
+      "think": [
+        {
+          "display": "flex",
+          "inline": null,
+          "h": 24
+        }
+      ]
+    },
+    "on": {
+      "pressed": "true",
+      "items": [
+        {
+          "kind": "user",
+          "display": "block",
+          "inline": null,
+          "h": 76
+        },
+        {
+          "kind": "turn-process",
+          "display": "none",
+          "inline": null,
+          "h": 0
+        },
+        {
+          "kind": "assistant-step",
+          "display": "none",
+          "inline": null,
+          "h": 0
+        },
+        {
+          "kind": "assistant-step",
+          "display": "block",
+          "inline": null,
+          "h": 549
+        },
+        {
+          "kind": "turn-tail",
+          "display": "block",
+          "inline": null,
+          "h": 68
+        }
+      ],
+      "think": [
+        {
+          "display": "none",
+          "inline": null,
+          "h": 0
+        }
+      ]
+    },
+    "off2": {
+      "pressed": "false",
+      "items": [
+        {
+          "kind": "user",
+          "display": "block",
+          "inline": null,
+          "h": 76
+        },
+        {
+          "kind": "turn-process",
+          "display": "block",
+          "inline": null,
+          "h": 33
+        },
+        {
+          "kind": "assistant-step",
+          "display": "block",
+          "inline": null,
+          "h": 0
+        },
+        {
+          "kind": "assistant-step",
+          "display": "block",
+          "inline": null,
+          "h": 549
+        },
+        {
+          "kind": "turn-tail",
+          "display": "block",
+          "inline": null,
+          "h": 32
+        }
+      ],
+      "think": [
+        {
+          "display": "flex",
+          "inline": null,
+          "h": 24
+        }
+      ]
+    },
+    "identical": true
+  },
+  "longOnSample": {
+    "pressed": "true",
+    "flowLen": 2852,
+    "tail": true,
+    "lastPara": true,
+    "pre": [
+      {
+        "visible": true,
+        "display": "block",
+        "overflowX": "auto",
+        "overflowY": "auto",
+        "maxHeight": "none",
+        "h": 159,
+        "scrollH": 159,
+        "clientH": 159,
+        "codeLen": 135
+      }
+    ],
+    "table": [
+      {
+        "visible": true,
+        "display": "table",
+        "rows": 4,
+        "w": 742,
+        "h": 172,
+        "parentOverflow": "auto",
+        "parentMaxHeight": "none"
+      }
+    ],
+    "think": [
+      {
+        "display": "none",
+        "h": 0
+      }
+    ],
+    "scroll": [
+      {
+        "scrollHeight": 1924,
+        "clientHeight": 924,
+        "scrollTop": 1000
+      }
+    ]
+  },
+  "longOffSample": {
+    "pressed": "false",
+    "flowLen": 2851,
+    "tail": true,
+    "preVisible": 1,
+    "tableVisible": 1,
+    "thinkVisible": 1
+  },
+  "empty": {
+    "togglePresent": true,
+    "label": "○ 只看结果",
+    "pressed": "false",
+    "rect": {
+      "x": 655,
+      "y": 936,
+      "w": 80,
+      "h": 22
+    },
+    "thinkRows": 1,
+    "flowItems": 5
+  },
+  "multi": {
+    "off": {
+      "pressed": "false",
+      "think": [
+        {
+          "expanded": null,
+          "display": "flex",
+          "h": 24
+        },
+        {
+          "expanded": null,
+          "display": "flex",
+          "h": 24
+        },
+        {
+          "expanded": null,
+          "display": "flex",
+          "h": 24
+        }
+      ],
+      "tails": [
+        {
+          "text": "08:00",
+          "hasTrace": false,
+          "expanded": null,
+          "visible": true
+        },
+        {
+          "text": "08:00",
+          "hasTrace": false,
+          "expanded": null,
+          "visible": true
+        },
+        {
+          "text": "08:00",
+          "hasTrace": false,
+          "expanded": null,
+          "visible": true
+        }
+      ],
+      "userRows": 3,
+      "flowLen": 561
+    },
+    "on": {
+      "pressed": "true",
+      "think": [
+        {
+          "expanded": null,
+          "display": "none",
+          "h": 0
+        },
+        {
+          "expanded": null,
+          "display": "none",
+          "h": 0
+        },
+        {
+          "expanded": null,
+          "display": "none",
+          "h": 0
+        }
+      ],
+      "tails": [
+        {
+          "text": "已处理 0 步 · 5s ▸ 08:00",
+          "hasTrace": true,
+          "expanded": "false",
+          "visible": true
+        },
+        {
+          "text": "已处理 0 步 · 5s ▸ 08:00",
+          "hasTrace": true,
+          "expanded": "false",
+          "visible": true
+        },
+        {
+          "text": "已处理 0 步 · 5s ▸ 08:00",
+          "hasTrace": true,
+          "expanded": "false",
+          "visible": true
+        }
+      ],
+      "userRows": 3,
+      "flowLen": 564
+    },
+    "off2": {
+      "pressed": "false",
+      "think": [
+        {
+          "expanded": null,
+          "display": "flex",
+          "h": 24
+        },
+        {
+          "expanded": null,
+          "display": "flex",
+          "h": 24
+        },
+        {
+          "expanded": null,
+          "display": "flex",
+          "h": 24
+        }
+      ],
+      "tails": [
+        {
+          "text": "08:00",
+          "hasTrace": false,
+          "expanded": null,
+          "visible": true
+        },
+        {
+          "text": "08:00",
+          "hasTrace": false,
+          "expanded": null,
+          "visible": true
+        },
+        {
+          "text": "08:00",
+          "hasTrace": false,
+          "expanded": null,
+          "visible": true
+        }
+      ],
+      "userRows": 3,
+      "flowLen": 561
+    }
+  },
+  "errors": [],
+  "consoleLog": [],
+  "network": [
+    {
+      "path": "/plugins/??@deepseek-ai/dsh-client-modules/client.js&rev=5c32acb5d9ec",
+      "method": "GET",
+      "status": 200,
+      "utc": "2026-10-22T01:05:30.757Z"
+    },
+    {
+      "path": "/plugins/??@deepseek-ai/dsh-api-remotes/client.js,@deepseek-ai/dsh-client-ui-deliverables/client.js,@deepseek-ai/dsh-typert-registry/client.js,@deepseek-ai/dsh-client-connection/client.js,@deepseek-ai/dsh-api-workspace-controller/client.js,@deepseek-ai/dsh-api-session-controller/client.js,@deepseek-ai/dsh-client-ui-directory-picker-native/client.js&rev=34527dc94ea4",
+      "method": "GET",
+      "status": 200,
+      "utc": "2026-10-22T01:05:30.763Z"
+    },
+    {
+      "path": "/plugins/??@deepseek-ai/dsh-client-ui-open-in-app/client.js,@deepseek-ai/dsh-api-gateway/client.js,@deepseek-ai/dsh-api-job-controller/client.js,@deepseek-ai/dsh-api-terminal-controller/client.js,@deepseek-ai/dsh-api-workspace-files/client.js,@deepseek-ai/dsh-client-ui-settings-account/client.js,@deepseek-ai/dsh-client-hmr/client.js,@deepseek-ai/dsh-cordis-client-runner/client.js,@deepseek-ai/dsh-client-ui-theme/client.js,@deepseek-ai/dsh-client-locale/client.js,@deepseek-ai/dsh-client-shortcuts/client.js,@deepseek-ai/dsh-client-ui-shortcuts/client.js,@deepseek-ai/dsh-client-ui-layout/client.js,@deepseek-ai/dsh-client-ui-renderer/client.js,@deepseek-ai/dsh-client-ui-session/client.js,@deepseek-ai/dsh-client-resources/client.js,@deepseek-ai/dsh-client-ui-sidebar/client.js,@deepseek-ai/dsh-client-ui-sidebar-right/client.js,@deepseek-ai/dsh-client-ui-sidebar-documentpreview/client.js,@deepseek-ai/dsh-client-ui-sidebar-terminal/client.js,@deepseek-ai/dsh-client-ui-sidebar-files/client.js,@deepseek-ai/dsh-client-ui-settings/client.js,@deepseek-ai/dsh-client-ui-settings-general/client.js,@deepseek-ai/dsh-client-ui-settings-models/client.js,@deepseek-ai/dsh-client-ui-plugin-manager/client.js,@deepseek-ai/dsh-client-ui-settings-plugin-inventory/client.js,@deepseek-ai/dsh-client-ui-conversation/client.js,@deepseek-ai/dsh-client-ui-approval/client.js,@deepseek-ai/dsh-client-ui-chat/client.js,@deepseek-ai/dsh-client-ui-brand-official/client.js,@deepseek-ai/dsh-client-ui-attachment/client.js,@deepseek-ai/dsh-client-ui-tool/client.js,@deepseek-ai/dsh-client-ui-cordis/client.js,@deepseek-ai/dsh-client-ui-workspace/client.js,@deepseek-ai/dsh-client-ui-workflow-run/client.js,@deepseek-ai/dsh-client-ui-input-trigger/client.js,@deepseek-ai/dsh-client-ui-commands/client.js,@deepseek-ai/dsh-client-ui-skill/client.js,@deepseek-ai/dsh-client-ui-subagent/client.js,@deepseek-ai/dsh-client-ui-reference/client.js,@deepseek-ai/dsh-client-ui-jobs/client.js,@deepseek-ai/dsh-client-ui-goal/client.js,@deepseek-ai/dsh-client-ui-message-feedback/client.js,@deepseek-ai/dsh-client-ui-model-selection/client.js,@deepseek-ai/dsh-client-ui-permission-presets/client.js,@deepseek-ai/dsh-client-ui-agent-preset/client.js,@deepseek-ai/dsh-client-ui-settings-session-log/client.js,@deepseek-ai/dsh-client-ui-settings-plugins/client.js,@deepseek-ai/dsh-client-ui-settings-shell/client.js,@deepseek-ai/dsh-client-ui-settings-agent-loop/client.js,@deepseek-ai/dsh-client-ui-settings-subagent/client.js,@deepseek-ai/dsh-client-ui-settings-web-search/client.js,@deepseek-ai/dsh-client-ui-plan/client.js,@deepseek-ai/dsh-client-ui-user-questions/client.js,@deepseek-ai/dsh-client-ui-trajectory/client.js,dsh-result-only-view/client.js,@deepseek-ai/dsh-session-log-export/client.js,@deepseek-ai/dsh-client-file-upload/client.js&rev=a45db5ee00e1",
+      "method": "GET",
+      "status": 200,
+      "utc": "2026-10-22T01:05:30.965Z"
+    },
+    {
+      "path": "/api/settings/describe",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:05:31.306Z"
+    },
+    {
+      "path": "/api/dynamicCordisRunner/syncInspectManifest",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:05:31.306Z"
+    },
+    {
+      "path": "/api/credentials/describe",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:05:31.306Z"
+    },
+    {
+      "path": "/api/dynamicCordisRunner/inventory",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:05:31.306Z"
+    },
+    {
+      "path": "/plugins/events",
+      "method": "GET",
+      "status": 200,
+      "utc": "2026-10-22T01:05:31.307Z"
+    },
+    {
+      "path": "/api/session/modelCatalog",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:05:31.307Z"
+    },
+    {
+      "path": "/api/agentPresets/list",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:05:31.324Z"
+    },
+    {
+      "path": "/api/permissionPresets/catalog",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:05:31.341Z"
+    },
+    {
+      "path": "/api/dynamicCordisRunner/inventory",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:05:31.341Z"
+    },
+    {
+      "path": "/api/agentPresets/list",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:05:31.341Z"
+    },
+    {
+      "path": "/api/agentPresets/list",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:05:31.341Z"
+    },
+    {
+      "path": "/api/session/modelCatalog",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:05:31.343Z"
+    },
+    {
+      "path": "/api/credentials/describe",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:05:31.343Z"
+    },
+    {
+      "path": "/api/settings/describe",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:05:31.361Z"
+    },
+    {
+      "path": "/api/dynamicCordisRunner/syncInspectManifest",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:05:31.361Z"
+    },
+    {
+      "path": "/api/session/list",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:05:31.370Z"
+    },
+    {
+      "path": "/api/credentials/describe",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:05:31.370Z"
+    },
+    {
+      "path": "/api/session/create",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:05:31.399Z"
+    },
+    {
+      "path": "/api/agentPresets/list",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:05:31.479Z"
+    },
+    {
+      "path": "/api/commands/list",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:05:31.491Z"
+    },
+    {
+      "path": "/api/skills/list",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:05:31.491Z"
+    },
+    {
+      "path": "/api/commands/list",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:05:35.029Z"
+    },
+    {
+      "path": "/api/skills/list",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:05:35.030Z"
+    },
+    {
+      "path": "/api/commands/list",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:05:39.528Z"
+    },
+    {
+      "path": "/api/skills/list",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:05:39.528Z"
+    },
+    {
+      "path": "/api/commands/list",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:05:44.942Z"
+    },
+    {
+      "path": "/api/skills/list",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:05:44.942Z"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "origin": "http://127.0.0.1:3917",
+  "tokenPresent": true,
+  "utc": "2026-10-22T01:35:30.925Z",
+  "probePing": {
+    "status": 200,
+    "body": "{\"ok\":true,\"jobsService\":\"object\",\"jobsMethods\":[\"list\",\"get\",\"read\",\"readAt\",\"kill\",\"start\",\"wait\",\"remove\"],\"agentCount\":0,\"activeHandles\":[]}"
+  },
+  "probeList": {
+    "status": 200,
+    "body": "{\"unowned\":[],\"perAgent\":[],\"agents\":[],\"produced\":{}}"
+  },
+  "taskStatusTasks": {
+    "status": 200,
+    "body": "{\"tasks\":[]}"
+  },
+  "taskStatusOutputUnknown": {
+    "status": 400,
+    "body": "{\"error\":\"missing task id\"}"
+  },
+  "taskStatusOutputBadId": {
+    "status": 404,
+    "body": "{\"error\":\"task does-not-exist-9999 not found\"}"
+  }
+}

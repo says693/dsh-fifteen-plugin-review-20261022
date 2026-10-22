@@ -1,0 +1,384 @@
+{
+  "label": "run01",
+  "sessionId": "sess-sd-six",
+  "steps": [],
+  "onboarding": true,
+  "raw": {
+    "scrollport": true,
+    "rows": 18,
+    "expanded": 0
+  },
+  "state": {
+    "url": "http://127.0.0.1:9578/",
+    "viewport": {
+      "w": 1440,
+      "h": 1000,
+      "dpr": 1
+    },
+    "media": {
+      "dark": false
+    },
+    "scrollport": {
+      "x": 280,
+      "y": 76,
+      "w": 1158,
+      "h": 924,
+      "visible": true
+    },
+    "counts": {
+      "rows": 18,
+      "expanded": 0,
+      "turnProcess": 6,
+      "disclosureRows": 12
+    },
+    "control": {
+      "rect": {
+        "x": 1286,
+        "y": 952,
+        "w": 96,
+        "h": 32,
+        "visible": true
+      },
+      "visible": true,
+      "text": "全部收起",
+      "countAttr": "0",
+      "countText": "",
+      "title": "收起全部展开区块 · Ctrl+Alt+C",
+      "aria": "收起全部展开区块",
+      "bg": "rgb(255, 255, 255)",
+      "color": "rgb(129, 133, 140)",
+      "border": "rgba(0, 0, 0, 0.12)",
+      "zIndex": "15"
+    },
+    "gear": {
+      "rect": {
+        "x": 1390,
+        "y": 952,
+        "w": 32,
+        "h": 32,
+        "visible": true
+      },
+      "visible": true,
+      "expanded": "false",
+      "title": "快捷键设置"
+    },
+    "panel": null,
+    "dock": null,
+    "chips": [],
+    "debug": {
+      "version": "1.0.1",
+      "expanded": 0,
+      "affixed": 0,
+      "hotkey": "Ctrl+Alt+C"
+    },
+    "storage": {
+      "dsh.sessions.current": "{\"sessionId\":\"sess-sd-six\"}",
+      "dsh.sidebar-right.v1.session-ebb751e6-18f7-4e41-9868-513fa7f94786": "{\"bySession\":{\"session-ebb751e6-18f7-4e41-9868-513fa7f94786\":{\"layout\":{\"nodes\":{\"pane1\":{\"kind\":\"pane\",\"id\":\"pane1\",\"host\":\"dock\",\"tabs\":[]}},\"tabs\":{},\"rootId\":\"pane1\",\"floats\":[],\"activePaneId\":\"pane1\",\"expanded\":false,\"mode\":\"push\"},\"minted\":1}}}",
+      "dsh.workspace.view.v5": "{\"groupBy\":\"workspace\",\"orderBy\":\"updated\",\"groupExpansion\":{\"80c43f72-eb34-4b37-9d1b-2347e87a208e\":true},\"sessionOrderByAccount\":{},\"archivedFilter\":\"default\"}",
+      "dsh.sidebar-right.v1.sess-sd-six": "{\"bySession\":{\"sess-sd-six\":{\"layout\":{\"nodes\":{\"pane1\":{\"kind\":\"pane\",\"id\":\"pane1\",\"host\":\"dock\",\"tabs\":[]}},\"tabs\":{},\"rootId\":\"pane1\",\"floats\":[],\"activePaneId\":\"pane1\",\"expanded\":false,\"mode\":\"push\"},\"minted\":1}}}"
+    },
+    "styleTag": true,
+    "expandedSamples": [],
+    "bodyText": "新会话\nCtrl\n+\nAlt\n+\nN\n插件\n工作区\nworkspace\n六轮：每轮 Think 加工具卡\n59分钟\n未命名\n1小时\n未命名\n未命名\n1小时\n设置\n六轮：每轮 Think 加工具卡\n对话\n轨迹\n第 1 轮：请处理第 1 件事。\n08:37\n已完成\n已完成，用时 7秒\n仅可从已完成轮次的最后一条消息分支\n08:37\n第 2 轮：请处理第 2 件事。\n08:37\n已完成\n已完成，用时 7秒\n仅可从已完成轮次的最后一条消息分支\n08:37\n第 3 轮：请处理第 3 件事。\n08:37\n已完成\n已完成，用时 7秒\n仅可从已完成轮次的最后一条消息分支\n08:37\n第 4 轮：请处理第 4 件事。\n08:37\n已完成\n已完成，用时 7秒\n仅可从已完成轮次的最后一条消息分支\n08:37\n第 5 轮：请处理第 5 件事。\n08:37\n已完成\n已完成，用时 7秒\n仅可从已完成轮次的最后一条消息分支\n08:37\n第 6 轮：请处理第 6 件事。\n08:38\n已完成\n已完成，用时 7秒\n仅可从已完成轮次的最后一条消息分支\n08:38\n发消息或创建任务, / 调用指令, @ 文件或对话\n工作区内修改\nDeepSeek-V41-Flash\nHigh\n6 轮 6 步\n全部收起\n未命名\n1小时前\n空闲"
+  },
+  "inventory": {
+    "rows": [
+      {
+        "i": 0,
+        "isTp": true,
+        "expanded": false,
+        "variant": null,
+        "label": "已完成，用时 7秒",
+        "inComposer": false,
+        "ariaExpanded": "false",
+        "parentOpen": false,
+        "rect": {
+          "x": 485,
+          "y": -60,
+          "w": 742,
+          "h": 33
+        }
+      },
+      {
+        "i": 1,
+        "isTp": false,
+        "expanded": false,
+        "variant": "think",
+        "label": "思考第 1 轮的想法：先把问题拆成两半，再决定用哪个工具。",
+        "inComposer": false,
+        "ariaExpanded": "false",
+        "parentOpen": false,
+        "rect": {
+          "x": 485,
+          "y": -8,
+          "w": 737,
+          "h": 24
+        }
+      },
+      {
+        "i": 2,
+        "isTp": false,
+        "expanded": false,
+        "variant": "read",
+        "label": "读取file-1.txt",
+        "inComposer": false,
+        "ariaExpanded": "false",
+        "parentOpen": false,
+        "rect": {
+          "x": 485,
+          "y": -8,
+          "w": 737,
+          "h": 24
+        }
+      },
+      {
+        "i": 3,
+        "isTp": true,
+        "expanded": false,
+        "variant": null,
+        "label": "已完成，用时 7秒",
+        "inComposer": false,
+        "ariaExpanded": "false",
+        "parentOpen": false,
+        "rect": {
+          "x": 485,
+          "y": 109,
+          "w": 742,
+          "h": 33
+        }
+      },
+      {
+        "i": 4,
+        "isTp": false,
+        "expanded": false,
+        "variant": "think",
+        "label": "思考第 2 轮的想法：先把问题拆成两半，再决定用哪个工具。",
+        "inComposer": false,
+        "ariaExpanded": "false",
+        "parentOpen": false,
+        "rect": {
+          "x": 485,
+          "y": 161,
+          "w": 737,
+          "h": 24
+        }
+      },
+      {
+        "i": 5,
+        "isTp": false,
+        "expanded": false,
+        "variant": "read",
+        "label": "读取file-2.txt",
+        "inComposer": false,
+        "ariaExpanded": "false",
+        "parentOpen": false,
+        "rect": {
+          "x": 485,
+          "y": 161,
+          "w": 737,
+          "h": 24
+        }
+      },
+      {
+        "i": 6,
+        "isTp": true,
+        "expanded": false,
+        "variant": null,
+        "label": "已完成，用时 7秒",
+        "inComposer": false,
+        "ariaExpanded": "false",
+        "parentOpen": false,
+        "rect": {
+          "x": 485,
+          "y": 278,
+          "w": 742,
+          "h": 33
+        }
+      },
+      {
+        "i": 7,
+        "isTp": false,
+        "expanded": false,
+        "variant": "think",
+        "label": "思考第 3 轮的想法：先把问题拆成两半，再决定用哪个工具。",
+        "inComposer": false,
+        "ariaExpanded": "false",
+        "parentOpen": false,
+        "rect": {
+          "x": 485,
+          "y": 330,
+          "w": 737,
+          "h": 24
+        }
+      },
+      {
+        "i": 8,
+        "isTp": false,
+        "expanded": false,
+        "variant": "read",
+        "label": "读取file-3.txt",
+        "inComposer": false,
+        "ariaExpanded": "false",
+        "parentOpen": false,
+        "rect": {
+          "x": 485,
+          "y": 330,
+          "w": 737,
+          "h": 24
+        }
+      },
+      {
+        "i": 9,
+        "isTp": true,
+        "expanded": false,
+        "variant": null,
+        "label": "已完成，用时 7秒",
+        "inComposer": false,
+        "ariaExpanded": "false",
+        "parentOpen": false,
+        "rect": {
+          "x": 485,
+          "y": 447,
+          "w": 742,
+          "h": 33
+        }
+      },
+      {
+        "i": 10,
+        "isTp": false,
+        "expanded": false,
+        "variant": "think",
+        "label": "思考第 4 轮的想法：先把问题拆成两半，再决定用哪个工具。",
+        "inComposer": false,
+        "ariaExpanded": "false",
+        "parentOpen": false,
+        "rect": {
+          "x": 485,
+          "y": 499,
+          "w": 737,
+          "h": 24
+        }
+      },
+      {
+        "i": 11,
+        "isTp": false,
+        "expanded": false,
+        "variant": "read",
+        "label": "读取file-4.txt",
+        "inComposer": false,
+        "ariaExpanded": "false",
+        "parentOpen": false,
+        "rect": {
+          "x": 485,
+          "y": 499,
+          "w": 737,
+          "h": 24
+        }
+      },
+      {
+        "i": 12,
+        "isTp": true,
+        "expanded": false,
+        "variant": null,
+        "label": "已完成，用时 7秒",
+        "inComposer": false,
+        "ariaExpanded": "false",
+        "parentOpen": false,
+        "rect": {
+          "x": 485,
+          "y": 616,
+          "w": 742,
+          "h": 33
+        }
+      },
+      {
+        "i": 13,
+        "isTp": false,
+        "expanded": false,
+        "variant": "think",
+        "label": "思考第 5 轮的想法：先把问题拆成两半，再决定用哪个工具。",
+        "inComposer": false,
+        "ariaExpanded": "false",
+        "parentOpen": false,
+        "rect": {
+          "x": 485,
+          "y": 668,
+          "w": 737,
+          "h": 24
+        }
+      },
+      {
+        "i": 14,
+        "isTp": false,
+        "expanded": false,
+        "variant": "read",
+        "label": "读取file-5.txt",
+        "inComposer": false,
+        "ariaExpanded": "false",
+        "parentOpen": false,
+        "rect": {
+          "x": 485,
+          "y": 668,
+          "w": 737,
+          "h": 24
+        }
+      },
+      {
+        "i": 15,
+        "isTp": true,
+        "expanded": false,
+        "variant": null,
+        "label": "已完成，用时 7秒",
+        "inComposer": false,
+        "ariaExpanded": "false",
+        "parentOpen": false,
+        "rect": {
+          "x": 485,
+          "y": 785,
+          "w": 742,
+          "h": 33
+        }
+      },
+      {
+        "i": 16,
+        "isTp": false,
+        "expanded": false,
+        "variant": "think",
+        "label": "思考第 6 轮的想法：先把问题拆成两半，再决定用哪个工具。",
+        "inComposer": false,
+        "ariaExpanded": "false",
+        "parentOpen": false,
+        "rect": {
+          "x": 485,
+          "y": 837,
+          "w": 737,
+          "h": 24
+        }
+      },
+      {
+        "i": 17,
+        "isTp": false,
+        "expanded": false,
+        "variant": "read",
+        "label": "读取file-6.txt",
+        "inComposer": false,
+        "ariaExpanded": "false",
+        "parentOpen": false,
+        "rect": {
+          "x": 485,
+          "y": 837,
+          "w": 737,
+          "h": 24
+        }
+      }
+    ]
+  },
+  "errors": [],
+  "console": [
+    {
+      "type": "info",
+      "text": "[dsh-sticky-disclosure] applied v1.0.1 — Ctrl+Alt+C collapses all expanded sections",
+      "utc": "2026-10-22T01:37:27.687Z"
+    }
+  ]
+}

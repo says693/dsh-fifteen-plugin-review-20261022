@@ -1,0 +1,208 @@
+{
+  "rowInfo": [
+    {
+      "i": 0,
+      "text": "新会话",
+      "selected": true
+    },
+    {
+      "i": 1,
+      "text": "未命名\n1小时",
+      "selected": false
+    },
+    {
+      "i": 2,
+      "text": "未命名\n1小时",
+      "selected": false
+    },
+    {
+      "i": 3,
+      "text": "未命名\n1小时",
+      "selected": false
+    },
+    {
+      "i": 4,
+      "text": "未命名\n1小时",
+      "selected": false
+    },
+    {
+      "i": 5,
+      "text": "未命名\n1小时",
+      "selected": false
+    }
+  ],
+  "results": [
+    {
+      "row": 0,
+      "clicked": "新会话",
+      "badgeCount": 0,
+      "badgeTexts": [],
+      "tipsCount": 0,
+      "headerUtilities": null,
+      "assistantActions": [],
+      "bodyText": "新会话\nCtrl\n+\nAlt\n+\nN\n插件\n工作区\nworkspace\n新会话\n未命名\n1小时\n未命名\n1小时\n未命名\n1小时\n未命名\n1小时\n未命名\n1小时\n展开其余 2 个会话\n设置\n探索未至之境\n预览版\nworkspace\n标准模式\n描述你想要构建的内容, / 调用指令, @ 文件或对话\n工作区内修改\nDeepSeek-V41-Flash\nHigh\n预览版说明\n\nDeepSeek Harness 目前的 0.2 版本仍处于预览阶段，还有许多地方需要持续改进和打磨，希望听取广大开发者和用户的反馈建议。现在，新的桌面端面向广泛用户，开发者相关的进阶功能可在配置中开启使用。预计 DeepSeek Harness 的产品功能以及插件 API 都会继续快速迭代、持续演化，并逐渐趋于稳定。\n\n我们期待与全球用户和开发者一起，在开源、可复用、可组合的基础设施之上，共同探索智能上限。欢迎大家用 De"
+    },
+    {
+      "row": 1,
+      "clicked": "未命名\n1小时",
+      "badgeCount": 0,
+      "badgeTexts": [],
+      "tipsCount": 0,
+      "headerUtilities": {
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0,
+          "visible": false
+        },
+        "html": "<span class=\"_root_4ub78_1 OMoRSG_menuAnchor\"><div class=\"OMoRSG_split\" data-open-target=\"directory\" data-size=\"compact\" data-state=\"idle\"><button type=\"button\" class=\"OMoRSG_main\" aria-label=\"用 文件资源管理器 打开\" aria-keyshortcuts=\"Control+Shift+O\"><img src=\"open-in-app/icon/explorer\" width=\"13\" height=\"13\" class=\"OMoRSG_appIcon\" alt=\"\" draggable=\"false\"></button><button type=\"button\" class=\"OMoRSG_chevron\" aria-haspopup=\"menu\" aria-expanded=\"false\" aria-label=\"更多打开方式\"><svg width=\"10\" height=\"10\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" aria-hidden=\"true\" stroke-width=\"1\"><",
+        "childCount": 2
+      },
+      "assistantActions": [
+        {
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0,
+            "visible": false
+          },
+          "childCount": 2,
+          "html": "<button type=\"button\" class=\"_8_XoUG_action\" aria-label=\"好的回答\" aria-pressed=\"false\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" aria-hidden=\"true\" stroke-width=\"1\"><path d=\"M13.537 8.12098L12.3983 12.8455C12.1818 13.7438 11.378 14.3769 10.454 14.3769L9.35595 14.3769H7.43799H5.16577C3.50892 14.3769 2.16577 13.0337 2.16577 11.3769V7.88668C2.16577 7."
+        }
+      ],
+      "bodyText": "新会话\nCtrl\n+\nAlt\n+\nN\n插件\n工作区\nworkspace\nflash 档价目对照\n1小时\n未命名\n1小时\n未命名\n1小时\n未命名\n1小时\n未命名\n1小时\n展开其余 2 个会话\n设置\nflash 档价目对照\n对话\n轨迹\n第 1 轮：用 flash 档跑。\n08:42\n已完成\n已完成，用时 6秒\n\n第 1 段：flash 轮 的说明文字，用来把这一轮撑高，方便观察滚动与徽标位置。\n\n第 2 段：flash 轮 的说明文字，用来把这一轮撑高，方便观察滚动与徽标位置。\n\n用量 170K tok\n08:42\n发消息或创建任务, / 调用指令, @ 文件或对话\n工作区内修改\ndeepseek-official/deepseek-v4-flash\n1 轮 1 步\n170K tok·缓存命中 17%"
+    },
+    {
+      "row": 2,
+      "clicked": "未命名\n1小时",
+      "badgeCount": 0,
+      "badgeTexts": [],
+      "tipsCount": 0,
+      "headerUtilities": {
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0,
+          "visible": false
+        },
+        "html": "<span class=\"_root_4ub78_1 OMoRSG_menuAnchor\"><div class=\"OMoRSG_split\" data-open-target=\"directory\" data-size=\"compact\" data-state=\"idle\"><button type=\"button\" class=\"OMoRSG_main\" aria-label=\"用 文件资源管理器 打开\" aria-keyshortcuts=\"Control+Shift+O\"><img src=\"open-in-app/icon/explorer\" width=\"13\" height=\"13\" class=\"OMoRSG_appIcon\" alt=\"\" draggable=\"false\"></button><button type=\"button\" class=\"OMoRSG_chevron\" aria-haspopup=\"menu\" aria-expanded=\"false\" aria-label=\"更多打开方式\"><svg width=\"10\" height=\"10\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" aria-hidden=\"true\" stroke-width=\"1\"><",
+        "childCount": 2
+      },
+      "assistantActions": [
+        {
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0,
+            "visible": false
+          },
+          "childCount": 2,
+          "html": "<button type=\"button\" class=\"_8_XoUG_action\" aria-label=\"好的回答\" aria-pressed=\"false\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" aria-hidden=\"true\" stroke-width=\"1\"><path d=\"M13.537 8.12098L12.3983 12.8455C12.1818 13.7438 11.378 14.3769 10.454 14.3769L9.35595 14.3769H7.43799H5.16577C3.50892 14.3769 2.16577 13.0337 2.16577 11.3769V7.88668C2.16577 7."
+        }
+      ],
+      "bodyText": "新会话\nCtrl\n+\nAlt\n+\nN\n插件\n工作区\nworkspace\nflash 档价目对照\n1小时\n超大用量：千万级 token\n1小时\n未命名\n1小时\n未命名\n1小时\n未命名\n1小时\n展开其余 2 个会话\n设置\n超大用量：千万级 token\n对话\n轨迹\n第 1 轮：一个超大会话的用量。\n08:42\n已完成\n已完成，用时 6秒\n\n第 1 段：超大轮 的说明文字，用来把这一轮撑高，方便观察滚动与徽标位置。\n\n第 2 段：超大轮 的说明文字，用来把这一轮撑高，方便观察滚动与徽标位置。\n\n用量 71.6M tok\n08:42\n发消息或创建任务, / 调用指令, @ 文件或对话\n工作区内修改\nDeepSeek-V4-Pro\nHigh\n1 轮 1 步\n71.6M tok·缓存命中 16%"
+    },
+    {
+      "row": 3,
+      "clicked": "未命名\n1小时",
+      "badgeCount": 0,
+      "badgeTexts": [],
+      "tipsCount": 0,
+      "headerUtilities": {
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0,
+          "visible": false
+        },
+        "html": "<span class=\"_root_4ub78_1 OMoRSG_menuAnchor\"><div class=\"OMoRSG_split\" data-open-target=\"directory\" data-size=\"compact\" data-state=\"idle\"><button type=\"button\" class=\"OMoRSG_main\" aria-label=\"用 文件资源管理器 打开\" aria-keyshortcuts=\"Control+Shift+O\"><img src=\"open-in-app/icon/explorer\" width=\"13\" height=\"13\" class=\"OMoRSG_appIcon\" alt=\"\" draggable=\"false\"></button><button type=\"button\" class=\"OMoRSG_chevron\" aria-haspopup=\"menu\" aria-expanded=\"false\" aria-label=\"更多打开方式\"><svg width=\"10\" height=\"10\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" aria-hidden=\"true\" stroke-width=\"1\"><",
+        "childCount": 2
+      },
+      "assistantActions": [
+        {
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0,
+            "visible": false
+          },
+          "childCount": 2,
+          "html": "<button type=\"button\" class=\"_8_XoUG_action\" aria-label=\"好的回答\" aria-pressed=\"false\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" aria-hidden=\"true\" stroke-width=\"1\"><path d=\"M13.537 8.12098L12.3983 12.8455C12.1818 13.7438 11.378 14.3769 10.454 14.3769L9.35595 14.3769H7.43799H5.16577C3.50892 14.3769 2.16577 13.0337 2.16577 11.3769V7.88668C2.16577 7."
+        }
+      ],
+      "bodyText": "新会话\nCtrl\n+\nAlt\n+\nN\n插件\n工作区\nworkspace\nflash 档价目对照\n1小时\n超大用量：千万级 token\n1小时\n极小用量：1 token\n1小时\n未命名\n1小时\n未命名\n1小时\n展开其余 2 个会话\n设置\n极小用量：1 token\n对话\n轨迹\n第 1 轮：只回一个字。\n08:42\n已完成\n已完成，用时 6秒\n\n好。\n\n用量 1 tok\n08:42\n发消息或创建任务, / 调用指令, @ 文件或对话\n工作区内修改\nDeepSeek-V4-Pro\nHigh\n1 轮 1 步\n1 tok·缓存命中 0%"
+    },
+    {
+      "row": 4,
+      "clicked": "未命名\n1小时",
+      "badgeCount": 0,
+      "badgeTexts": [],
+      "tipsCount": 0,
+      "headerUtilities": {
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0,
+          "visible": false
+        },
+        "html": "<span class=\"_root_4ub78_1 OMoRSG_menuAnchor\"><div class=\"OMoRSG_split\" data-open-target=\"directory\" data-size=\"compact\" data-state=\"idle\"><button type=\"button\" class=\"OMoRSG_main\" aria-label=\"用 文件资源管理器 打开\" aria-keyshortcuts=\"Control+Shift+O\"><img src=\"open-in-app/icon/explorer\" width=\"13\" height=\"13\" class=\"OMoRSG_appIcon\" alt=\"\" draggable=\"false\"></button><button type=\"button\" class=\"OMoRSG_chevron\" aria-haspopup=\"menu\" aria-expanded=\"false\" aria-label=\"更多打开方式\"><svg width=\"10\" height=\"10\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" aria-hidden=\"true\" stroke-width=\"1\"><",
+        "childCount": 2
+      },
+      "assistantActions": [
+        {
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0,
+            "visible": false
+          },
+          "childCount": 2,
+          "html": "<button type=\"button\" class=\"_8_XoUG_action\" aria-label=\"好的回答\" aria-pressed=\"false\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" aria-hidden=\"true\" stroke-width=\"1\"><path d=\"M13.537 8.12098L12.3983 12.8455C12.1818 13.7438 11.378 14.3769 10.454 14.3769L9.35595 14.3769H7.43799H5.16577C3.50892 14.3769 2.16577 13.0337 2.16577 11.3769V7.88668C2.16577 7."
+        }
+      ],
+      "bodyText": "新会话\nCtrl\n+\nAlt\n+\nN\n插件\n工作区\nworkspace\nflash 档价目对照\n1小时\n超大用量：千万级 token\n1小时\n极小用量：1 token\n1小时\n用量全为零的会话\n1小时\n未命名\n1小时\n展开其余 2 个会话\n设置\n用量全为零的会话\n对话\n轨迹\n第 1 轮：用量字段存在但全为零。\n08:42\n已完成\n已完成，用时 6秒\n\n第 1 段：零用量轮 的说明文字，用来把这一轮撑高，方便观察滚动与徽标位置。\n\n第 2 段：零用量轮 的说明文字，用来把这一轮撑高，方便观察滚动与徽标位置。\n\n用量 0 tok\n08:42\n发消息或创建任务, / 调用指令, @ 文件或对话\n工作区内修改\nDeepSeek-V4-Pro\nHigh\n1 轮 1 步"
+    },
+    {
+      "row": 5,
+      "clicked": null,
+      "badgeCount": 0,
+      "badgeTexts": [],
+      "tipsCount": 0,
+      "headerUtilities": {
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0,
+          "visible": false
+        },
+        "html": "<span class=\"_root_4ub78_1 OMoRSG_menuAnchor\"><div class=\"OMoRSG_split\" data-open-target=\"directory\" data-size=\"compact\" data-state=\"idle\"><button type=\"button\" class=\"OMoRSG_main\" aria-label=\"用 文件资源管理器 打开\" aria-keyshortcuts=\"Control+Shift+O\"><img src=\"open-in-app/icon/explorer\" width=\"13\" height=\"13\" class=\"OMoRSG_appIcon\" alt=\"\" draggable=\"false\"></button><button type=\"button\" class=\"OMoRSG_chevron\" aria-haspopup=\"menu\" aria-expanded=\"false\" aria-label=\"更多打开方式\"><svg width=\"10\" height=\"10\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" aria-hidden=\"true\" stroke-width=\"1\"><",
+        "childCount": 2
+      },
+      "assistantActions": [
+        {
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0,
+            "visible": false
+          },
+          "childCount": 2,
+          "html": "<button type=\"button\" class=\"_8_XoUG_action\" aria-label=\"好的回答\" aria-pressed=\"false\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" aria-hidden=\"true\" stroke-width=\"1\"><path d=\"M13.537 8.12098L12.3983 12.8455C12.1818 13.7438 11.378 14.3769 10.454 14.3769L9.35595 14.3769H7.43799H5.16577C3.50892 14.3769 2.16577 13.0337 2.16577 11.3769V7.88668C2.16577 7."
+        }
+      ],
+      "bodyText": "新会话\nCtrl\n+\nAlt\n+\nN\n插件\n工作区\nworkspace\nflash 档价目对照\n1小时\n超大用量：千万级 token\n1小时\n极小用量：1 token\n1小时\n用量全为零的会话\n1小时\n未命名\n1小时\n展开其余 2 个会话\n设置\n用量全为零的会话\n对话\n轨迹\n第 1 轮：用量字段存在但全为零。\n08:42\n已完成\n已完成，用时 6秒\n\n第 1 段：零用量轮 的说明文字，用来把这一轮撑高，方便观察滚动与徽标位置。\n\n第 2 段：零用量轮 的说明文字，用来把这一轮撑高，方便观察滚动与徽标位置。\n\n用量 0 tok\n08:42\n发消息或创建任务, / 调用指令, @ 文件或对话\n工作区内修改\nDeepSeek-V4-Pro\nHigh\n1 轮 1 步"
+    }
+  ],
+  "errors": [],
+  "consoleLog": []
+}

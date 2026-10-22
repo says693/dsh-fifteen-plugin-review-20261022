@@ -1,0 +1,74 @@
+{
+  "open1": {
+    "panel": true,
+    "nav": true,
+    "chips": [
+      "All",
+      "+ board",
+      "+ view"
+    ],
+    "input": true
+  },
+  "afterBoard": {
+    "chips": [
+      {
+        "t": "All",
+        "active": true
+      },
+      {
+        "t": "复习",
+        "active": false
+      },
+      {
+        "t": "✎",
+        "active": false
+      },
+      {
+        "t": "✕",
+        "active": false
+      },
+      {
+        "t": "+ board",
+        "active": false
+      },
+      {
+        "t": "+ view",
+        "active": false
+      }
+    ],
+    "panelText": ""
+  },
+  "editor": null,
+  "assign": {
+    "ok": false
+  },
+  "afterAssign": {
+    "rows": [],
+    "groups": []
+  },
+  "afterTagFilter": {
+    "visible": [],
+    "total": 0,
+    "chips": [
+      "All",
+      "复习",
+      "✎",
+      "✕",
+      "+ board",
+      "+ view"
+    ]
+  },
+  "afterSaveView": {
+    "chips": [
+      "All",
+      "复习",
+      "✎",
+      "✕",
+      "+ board",
+      "+ view"
+    ]
+  },
+  "errors": [],
+  "console": [],
+  "dialogs": []
+}

@@ -1,0 +1,71 @@
+﻿{
+  "rows": [
+    {
+      "session": "sess-ti-zero",
+      "label": "0 轮",
+      "userRows": 0,
+      "steeringRows": 0,
+      "panelPresent": false,
+      "panelItemCount": 0,
+      "emptyStateText": null,
+      "panelAnyNode": 0,
+      "overlaySeatChildren": 1,
+      "probeVisible": true,
+      "scrollportScrollHeight": 960
+    },
+    {
+      "session": "sess-ti-one",
+      "label": "1 轮",
+      "userRows": 1,
+      "steeringRows": 0,
+      "panelPresent": false,
+      "panelItemCount": 0,
+      "emptyStateText": null,
+      "panelAnyNode": 0,
+      "overlaySeatChildren": 1,
+      "probeVisible": true,
+      "scrollportScrollHeight": 924
+    },
+    {
+      "session": "sess-ti-six",
+      "label": "6 轮",
+      "userRows": 6,
+      "steeringRows": 0,
+      "panelPresent": false,
+      "panelItemCount": 0,
+      "emptyStateText": null,
+      "panelAnyNode": 0,
+      "overlaySeatChildren": 1,
+      "probeVisible": true,
+      "scrollportScrollHeight": 2644
+    },
+    {
+      "session": "sess-ti-twenty",
+      "label": "20 轮",
+      "userRows": 20,
+      "steeringRows": 0,
+      "panelPresent": false,
+      "panelItemCount": 0,
+      "emptyStateText": null,
+      "panelAnyNode": 0,
+      "overlaySeatChildren": 1,
+      "probeVisible": true,
+      "scrollportScrollHeight": 6054
+    },
+    {
+      "session": "sess-ti-long",
+      "label": "超长单轮",
+      "userRows": 3,
+      "steeringRows": 0,
+      "panelPresent": false,
+      "panelItemCount": 0,
+      "emptyStateText": null,
+      "panelAnyNode": 0,
+      "overlaySeatChildren": 1,
+      "probeVisible": true,
+      "scrollportScrollHeight": 3733
+    }
+  ],
+  "errors": [],
+  "consoleLog": []
+}

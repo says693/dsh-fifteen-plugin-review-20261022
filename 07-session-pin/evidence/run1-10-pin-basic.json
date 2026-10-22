@@ -1,0 +1,882 @@
+{
+  "rows0": [
+    {
+      "idx": 0,
+      "kind": "workspace",
+      "text": "默认工作区",
+      "rowKey": "workspace:101ac9c7-365b-4997-b465-7f91f41c472a",
+      "y": 206,
+      "h": 34,
+      "cls": "YDXeBa_projectRow",
+      "badge": false,
+      "badgePinned": null,
+      "badgeAria": null,
+      "badgeTitle": null,
+      "swatchColor": null,
+      "swatchBg": null,
+      "rowBg": "rgba(0, 0, 0, 0)",
+      "rowShadow": "none",
+      "rowBefore": {
+        "content": "none",
+        "bg": "rgba(0, 0, 0, 0)",
+        "w": "auto",
+        "left": "auto"
+      },
+      "dataAttrs": {
+        "data-row-key": "workspace:101ac9c7-365b-4997-b465-7f91f41c472a"
+      }
+    },
+    {
+      "idx": 1,
+      "kind": "session",
+      "text": "新会话",
+      "rowKey": "session:session-6854de43-b6df-467b-a967-80a0bddadba9",
+      "y": 242,
+      "h": 32,
+      "cls": "YDXeBa_sessionRow YDXeBa_selected",
+      "badge": false,
+      "badgePinned": null,
+      "badgeAria": null,
+      "badgeTitle": null,
+      "swatchColor": null,
+      "swatchBg": null,
+      "rowBg": "rgba(38, 49, 72, 0.06)",
+      "rowShadow": "none",
+      "rowBefore": {
+        "content": "none",
+        "bg": "rgba(0, 0, 0, 0)",
+        "w": "auto",
+        "left": "auto"
+      },
+      "dataAttrs": {
+        "data-row-key": "session:session-6854de43-b6df-467b-a967-80a0bddadba9"
+      }
+    },
+    {
+      "idx": 2,
+      "kind": "session",
+      "text": "把这周的错题整理成表格 2分钟",
+      "rowKey": "session:session-36dafaf6-2551-4cb7-a7a0-5a148681f143",
+      "y": 276,
+      "h": 32,
+      "cls": "YDXeBa_sessionRow",
+      "badge": true,
+      "badgePinned": false,
+      "badgeAria": "false",
+      "badgeTitle": "置顶会话",
+      "swatchColor": null,
+      "swatchBg": "rgba(0, 0, 0, 0)",
+      "rowBg": "rgba(0, 0, 0, 0)",
+      "rowShadow": "none",
+      "rowBefore": {
+        "content": "none",
+        "bg": "rgba(0, 0, 0, 0)",
+        "w": "auto",
+        "left": "auto"
+      },
+      "dataAttrs": {
+        "data-row-key": "session:session-36dafaf6-2551-4cb7-a7a0-5a148681f143"
+      }
+    },
+    {
+      "idx": 3,
+      "kind": "session",
+      "text": "写一封给班主任的请假邮件 2分钟",
+      "rowKey": "session:session-3c8badf3-ce48-4e15-aae2-be9723a30ae1",
+      "y": 310,
+      "h": 32,
+      "cls": "YDXeBa_sessionRow",
+      "badge": true,
+      "badgePinned": false,
+      "badgeAria": "false",
+      "badgeTitle": "置顶会话",
+      "swatchColor": null,
+      "swatchBg": "rgba(0, 0, 0, 0)",
+      "rowBg": "rgba(0, 0, 0, 0)",
+      "rowShadow": "none",
+      "rowBefore": {
+        "content": "none",
+        "bg": "rgba(0, 0, 0, 0)",
+        "w": "auto",
+        "left": "auto"
+      },
+      "dataAttrs": {
+        "data-row-key": "session:session-3c8badf3-ce48-4e15-aae2-be9723a30ae1"
+      }
+    },
+    {
+      "idx": 4,
+      "kind": "session",
+      "text": "比较两个版本的实验数据差异 2分钟",
+      "rowKey": "session:session-300ede31-2667-45af-9046-0749490f3dd4",
+      "y": 344,
+      "h": 32,
+      "cls": "YDXeBa_sessionRow",
+      "badge": true,
+      "badgePinned": false,
+      "badgeAria": "false",
+      "badgeTitle": "置顶会话",
+      "swatchColor": null,
+      "swatchBg": "rgba(0, 0, 0, 0)",
+      "rowBg": "rgba(0, 0, 0, 0)",
+      "rowShadow": "none",
+      "rowBefore": {
+        "content": "none",
+        "bg": "rgba(0, 0, 0, 0)",
+        "w": "auto",
+        "left": "auto"
+      },
+      "dataAttrs": {
+        "data-row-key": "session:session-300ede31-2667-45af-9046-0749490f3dd4"
+      }
+    },
+    {
+      "idx": 5,
+      "kind": "session",
+      "text": "帮我整理一份关于海洋塑料污 2分钟",
+      "rowKey": "session:session-08fbbad4-a5f0-4e61-8e44-49b911727022",
+      "y": 378,
+      "h": 32,
+      "cls": "YDXeBa_sessionRow",
+      "badge": true,
+      "badgePinned": false,
+      "badgeAria": "false",
+      "badgeTitle": "置顶会话",
+      "swatchColor": null,
+      "swatchBg": "rgba(0, 0, 0, 0)",
+      "rowBg": "rgba(0, 0, 0, 0)",
+      "rowShadow": "none",
+      "rowBefore": {
+        "content": "none",
+        "bg": "rgba(0, 0, 0, 0)",
+        "w": "auto",
+        "left": "auto"
+      },
+      "dataAttrs": {
+        "data-row-key": "session:session-08fbbad4-a5f0-4e61-8e44-49b911727022"
+      }
+    }
+  ],
+  "storage0": {
+    "pin": null,
+    "all": {}
+  },
+  "controlStyle": [
+    {
+      "opacity": "1",
+      "visibility": "visible",
+      "display": "flex",
+      "w": 34,
+      "h": 16
+    },
+    {
+      "opacity": "1",
+      "visibility": "visible",
+      "display": "flex",
+      "w": 34,
+      "h": 16
+    },
+    {
+      "opacity": "1",
+      "visibility": "visible",
+      "display": "flex",
+      "w": 34,
+      "h": 16
+    },
+    {
+      "opacity": "1",
+      "visibility": "visible",
+      "display": "flex",
+      "w": 34,
+      "h": 16
+    }
+  ],
+  "sessionKeys": [
+    "session:session-6854de43-b6df-467b-a967-80a0bddadba9",
+    "session:session-36dafaf6-2551-4cb7-a7a0-5a148681f143",
+    "session:session-3c8badf3-ce48-4e15-aae2-be9723a30ae1",
+    "session:session-300ede31-2667-45af-9046-0749490f3dd4",
+    "session:session-08fbbad4-a5f0-4e61-8e44-49b911727022"
+  ],
+  "pinLast": {
+    "ok": true,
+    "title": "置顶会话"
+  },
+  "afterPinLast": {
+    "rows": [
+      {
+        "idx": 0,
+        "kind": "workspace",
+        "text": "默认工作区",
+        "rowKey": "workspace:101ac9c7-365b-4997-b465-7f91f41c472a",
+        "y": 206,
+        "h": 34,
+        "cls": "YDXeBa_projectRow",
+        "badge": false,
+        "badgePinned": null,
+        "badgeAria": null,
+        "badgeTitle": null,
+        "swatchColor": null,
+        "swatchBg": null,
+        "rowBg": "rgba(0, 0, 0, 0)",
+        "rowShadow": "none",
+        "rowBefore": {
+          "content": "none",
+          "bg": "rgba(0, 0, 0, 0)",
+          "w": "auto",
+          "left": "auto"
+        },
+        "dataAttrs": {
+          "data-row-key": "workspace:101ac9c7-365b-4997-b465-7f91f41c472a"
+        }
+      },
+      {
+        "idx": 1,
+        "kind": "session",
+        "text": "新会话",
+        "rowKey": "session:session-6854de43-b6df-467b-a967-80a0bddadba9",
+        "y": 242,
+        "h": 32,
+        "cls": "YDXeBa_sessionRow YDXeBa_selected",
+        "badge": false,
+        "badgePinned": null,
+        "badgeAria": null,
+        "badgeTitle": null,
+        "swatchColor": null,
+        "swatchBg": null,
+        "rowBg": "rgba(38, 49, 72, 0.06)",
+        "rowShadow": "none",
+        "rowBefore": {
+          "content": "none",
+          "bg": "rgba(0, 0, 0, 0)",
+          "w": "auto",
+          "left": "auto"
+        },
+        "dataAttrs": {
+          "data-row-key": "session:session-6854de43-b6df-467b-a967-80a0bddadba9"
+        }
+      },
+      {
+        "idx": 2,
+        "kind": "session",
+        "text": "把这周的错题整理成表格 2分钟",
+        "rowKey": "session:session-36dafaf6-2551-4cb7-a7a0-5a148681f143",
+        "y": 276,
+        "h": 32,
+        "cls": "YDXeBa_sessionRow",
+        "badge": true,
+        "badgePinned": false,
+        "badgeAria": "false",
+        "badgeTitle": "置顶会话",
+        "swatchColor": null,
+        "swatchBg": "rgba(0, 0, 0, 0)",
+        "rowBg": "rgba(0, 0, 0, 0)",
+        "rowShadow": "none",
+        "rowBefore": {
+          "content": "none",
+          "bg": "rgba(0, 0, 0, 0)",
+          "w": "auto",
+          "left": "auto"
+        },
+        "dataAttrs": {
+          "data-row-key": "session:session-36dafaf6-2551-4cb7-a7a0-5a148681f143"
+        }
+      },
+      {
+        "idx": 3,
+        "kind": "session",
+        "text": "写一封给班主任的请假邮件 2分钟",
+        "rowKey": "session:session-3c8badf3-ce48-4e15-aae2-be9723a30ae1",
+        "y": 310,
+        "h": 32,
+        "cls": "YDXeBa_sessionRow",
+        "badge": true,
+        "badgePinned": false,
+        "badgeAria": "false",
+        "badgeTitle": "置顶会话",
+        "swatchColor": null,
+        "swatchBg": "rgba(0, 0, 0, 0)",
+        "rowBg": "rgba(0, 0, 0, 0)",
+        "rowShadow": "none",
+        "rowBefore": {
+          "content": "none",
+          "bg": "rgba(0, 0, 0, 0)",
+          "w": "auto",
+          "left": "auto"
+        },
+        "dataAttrs": {
+          "data-row-key": "session:session-3c8badf3-ce48-4e15-aae2-be9723a30ae1"
+        }
+      },
+      {
+        "idx": 4,
+        "kind": "session",
+        "text": "比较两个版本的实验数据差异 2分钟",
+        "rowKey": "session:session-300ede31-2667-45af-9046-0749490f3dd4",
+        "y": 344,
+        "h": 32,
+        "cls": "YDXeBa_sessionRow",
+        "badge": true,
+        "badgePinned": false,
+        "badgeAria": "false",
+        "badgeTitle": "置顶会话",
+        "swatchColor": null,
+        "swatchBg": "rgba(0, 0, 0, 0)",
+        "rowBg": "rgba(0, 0, 0, 0)",
+        "rowShadow": "none",
+        "rowBefore": {
+          "content": "none",
+          "bg": "rgba(0, 0, 0, 0)",
+          "w": "auto",
+          "left": "auto"
+        },
+        "dataAttrs": {
+          "data-row-key": "session:session-300ede31-2667-45af-9046-0749490f3dd4"
+        }
+      },
+      {
+        "idx": 5,
+        "kind": "session",
+        "text": "帮我整理一份关于海洋塑料污 2分钟",
+        "rowKey": "session:session-08fbbad4-a5f0-4e61-8e44-49b911727022",
+        "y": 378,
+        "h": 32,
+        "cls": "YDXeBa_sessionRow",
+        "badge": true,
+        "badgePinned": true,
+        "badgeAria": "true",
+        "badgeTitle": "取消置顶",
+        "swatchColor": null,
+        "swatchBg": "rgba(0, 0, 0, 0)",
+        "rowBg": "rgba(0, 0, 0, 0)",
+        "rowShadow": "none",
+        "rowBefore": {
+          "content": "none",
+          "bg": "rgba(0, 0, 0, 0)",
+          "w": "auto",
+          "left": "auto"
+        },
+        "dataAttrs": {
+          "data-row-key": "session:session-08fbbad4-a5f0-4e61-8e44-49b911727022"
+        }
+      }
+    ],
+    "storage": {
+      "pin": null,
+      "all": {}
+    }
+  },
+  "pinSecond": {
+    "ok": true,
+    "title": "置顶会话"
+  },
+  "afterPinSecond": {
+    "rows": [
+      {
+        "idx": 0,
+        "kind": "workspace",
+        "text": "默认工作区",
+        "rowKey": "workspace:101ac9c7-365b-4997-b465-7f91f41c472a",
+        "y": 206,
+        "h": 34,
+        "cls": "YDXeBa_projectRow",
+        "badge": false,
+        "badgePinned": null,
+        "badgeAria": null,
+        "badgeTitle": null,
+        "swatchColor": null,
+        "swatchBg": null,
+        "rowBg": "rgba(0, 0, 0, 0)",
+        "rowShadow": "none",
+        "rowBefore": {
+          "content": "none",
+          "bg": "rgba(0, 0, 0, 0)",
+          "w": "auto",
+          "left": "auto"
+        },
+        "dataAttrs": {
+          "data-row-key": "workspace:101ac9c7-365b-4997-b465-7f91f41c472a"
+        }
+      },
+      {
+        "idx": 1,
+        "kind": "session",
+        "text": "新会话",
+        "rowKey": "session:session-6854de43-b6df-467b-a967-80a0bddadba9",
+        "y": 242,
+        "h": 32,
+        "cls": "YDXeBa_sessionRow YDXeBa_selected",
+        "badge": false,
+        "badgePinned": null,
+        "badgeAria": null,
+        "badgeTitle": null,
+        "swatchColor": null,
+        "swatchBg": null,
+        "rowBg": "rgba(38, 49, 72, 0.06)",
+        "rowShadow": "none",
+        "rowBefore": {
+          "content": "none",
+          "bg": "rgba(0, 0, 0, 0)",
+          "w": "auto",
+          "left": "auto"
+        },
+        "dataAttrs": {
+          "data-row-key": "session:session-6854de43-b6df-467b-a967-80a0bddadba9"
+        }
+      },
+      {
+        "idx": 2,
+        "kind": "session",
+        "text": "把这周的错题整理成表格 2分钟",
+        "rowKey": "session:session-36dafaf6-2551-4cb7-a7a0-5a148681f143",
+        "y": 276,
+        "h": 32,
+        "cls": "YDXeBa_sessionRow",
+        "badge": true,
+        "badgePinned": true,
+        "badgeAria": "true",
+        "badgeTitle": "取消置顶",
+        "swatchColor": null,
+        "swatchBg": "rgba(0, 0, 0, 0)",
+        "rowBg": "rgba(0, 0, 0, 0)",
+        "rowShadow": "none",
+        "rowBefore": {
+          "content": "none",
+          "bg": "rgba(0, 0, 0, 0)",
+          "w": "auto",
+          "left": "auto"
+        },
+        "dataAttrs": {
+          "data-row-key": "session:session-36dafaf6-2551-4cb7-a7a0-5a148681f143"
+        }
+      },
+      {
+        "idx": 3,
+        "kind": "session",
+        "text": "写一封给班主任的请假邮件 2分钟",
+        "rowKey": "session:session-3c8badf3-ce48-4e15-aae2-be9723a30ae1",
+        "y": 310,
+        "h": 32,
+        "cls": "YDXeBa_sessionRow",
+        "badge": true,
+        "badgePinned": false,
+        "badgeAria": "false",
+        "badgeTitle": "置顶会话",
+        "swatchColor": null,
+        "swatchBg": "rgba(0, 0, 0, 0)",
+        "rowBg": "rgba(0, 0, 0, 0)",
+        "rowShadow": "none",
+        "rowBefore": {
+          "content": "none",
+          "bg": "rgba(0, 0, 0, 0)",
+          "w": "auto",
+          "left": "auto"
+        },
+        "dataAttrs": {
+          "data-row-key": "session:session-3c8badf3-ce48-4e15-aae2-be9723a30ae1"
+        }
+      },
+      {
+        "idx": 4,
+        "kind": "session",
+        "text": "比较两个版本的实验数据差异 2分钟",
+        "rowKey": "session:session-300ede31-2667-45af-9046-0749490f3dd4",
+        "y": 344,
+        "h": 32,
+        "cls": "YDXeBa_sessionRow",
+        "badge": true,
+        "badgePinned": false,
+        "badgeAria": "false",
+        "badgeTitle": "置顶会话",
+        "swatchColor": null,
+        "swatchBg": "rgba(0, 0, 0, 0)",
+        "rowBg": "rgba(0, 0, 0, 0)",
+        "rowShadow": "none",
+        "rowBefore": {
+          "content": "none",
+          "bg": "rgba(0, 0, 0, 0)",
+          "w": "auto",
+          "left": "auto"
+        },
+        "dataAttrs": {
+          "data-row-key": "session:session-300ede31-2667-45af-9046-0749490f3dd4"
+        }
+      },
+      {
+        "idx": 5,
+        "kind": "session",
+        "text": "帮我整理一份关于海洋塑料污 2分钟",
+        "rowKey": "session:session-08fbbad4-a5f0-4e61-8e44-49b911727022",
+        "y": 378,
+        "h": 32,
+        "cls": "YDXeBa_sessionRow",
+        "badge": true,
+        "badgePinned": true,
+        "badgeAria": "true",
+        "badgeTitle": "取消置顶",
+        "swatchColor": null,
+        "swatchBg": "rgba(0, 0, 0, 0)",
+        "rowBg": "rgba(0, 0, 0, 0)",
+        "rowShadow": "none",
+        "rowBefore": {
+          "content": "none",
+          "bg": "rgba(0, 0, 0, 0)",
+          "w": "auto",
+          "left": "auto"
+        },
+        "dataAttrs": {
+          "data-row-key": "session:session-08fbbad4-a5f0-4e61-8e44-49b911727022"
+        }
+      }
+    ],
+    "storage": {
+      "pin": null,
+      "all": {}
+    }
+  },
+  "color1": {
+    "ok": true,
+    "title": "更换行颜色（点击循环切换，Shift+点击清除）"
+  },
+  "afterColor1": {
+    "rows": [
+      {
+        "idx": 0,
+        "kind": "workspace",
+        "text": "默认工作区",
+        "rowKey": "workspace:101ac9c7-365b-4997-b465-7f91f41c472a",
+        "y": 206,
+        "h": 34,
+        "cls": "YDXeBa_projectRow",
+        "badge": false,
+        "badgePinned": null,
+        "badgeAria": null,
+        "badgeTitle": null,
+        "swatchColor": null,
+        "swatchBg": null,
+        "rowBg": "rgba(0, 0, 0, 0)",
+        "rowShadow": "none",
+        "rowBefore": {
+          "content": "none",
+          "bg": "rgba(0, 0, 0, 0)",
+          "w": "auto",
+          "left": "auto"
+        },
+        "dataAttrs": {
+          "data-row-key": "workspace:101ac9c7-365b-4997-b465-7f91f41c472a"
+        }
+      },
+      {
+        "idx": 1,
+        "kind": "session",
+        "text": "新会话",
+        "rowKey": "session:session-6854de43-b6df-467b-a967-80a0bddadba9",
+        "y": 242,
+        "h": 32,
+        "cls": "YDXeBa_sessionRow YDXeBa_selected",
+        "badge": false,
+        "badgePinned": null,
+        "badgeAria": null,
+        "badgeTitle": null,
+        "swatchColor": null,
+        "swatchBg": null,
+        "rowBg": "rgba(38, 49, 72, 0.06)",
+        "rowShadow": "none",
+        "rowBefore": {
+          "content": "none",
+          "bg": "rgba(0, 0, 0, 0)",
+          "w": "auto",
+          "left": "auto"
+        },
+        "dataAttrs": {
+          "data-row-key": "session:session-6854de43-b6df-467b-a967-80a0bddadba9"
+        }
+      },
+      {
+        "idx": 2,
+        "kind": "session",
+        "text": "把这周的错题整理成表格 2分钟",
+        "rowKey": "session:session-36dafaf6-2551-4cb7-a7a0-5a148681f143",
+        "y": 276,
+        "h": 32,
+        "cls": "YDXeBa_sessionRow",
+        "badge": true,
+        "badgePinned": true,
+        "badgeAria": "true",
+        "badgeTitle": "取消置顶",
+        "swatchColor": "c0",
+        "swatchBg": "rgba(0, 0, 0, 0)",
+        "rowBg": "rgba(249, 115, 22, 0.1)",
+        "rowShadow": "rgb(249, 115, 22) 3px 0px 0px 0px inset",
+        "rowBefore": {
+          "content": "none",
+          "bg": "rgba(0, 0, 0, 0)",
+          "w": "auto",
+          "left": "auto"
+        },
+        "dataAttrs": {
+          "data-row-key": "session:session-36dafaf6-2551-4cb7-a7a0-5a148681f143"
+        }
+      },
+      {
+        "idx": 3,
+        "kind": "session",
+        "text": "写一封给班主任的请假邮件 2分钟",
+        "rowKey": "session:session-3c8badf3-ce48-4e15-aae2-be9723a30ae1",
+        "y": 310,
+        "h": 32,
+        "cls": "YDXeBa_sessionRow",
+        "badge": true,
+        "badgePinned": false,
+        "badgeAria": "false",
+        "badgeTitle": "置顶会话",
+        "swatchColor": null,
+        "swatchBg": "rgba(0, 0, 0, 0)",
+        "rowBg": "rgba(0, 0, 0, 0)",
+        "rowShadow": "none",
+        "rowBefore": {
+          "content": "none",
+          "bg": "rgba(0, 0, 0, 0)",
+          "w": "auto",
+          "left": "auto"
+        },
+        "dataAttrs": {
+          "data-row-key": "session:session-3c8badf3-ce48-4e15-aae2-be9723a30ae1"
+        }
+      },
+      {
+        "idx": 4,
+        "kind": "session",
+        "text": "比较两个版本的实验数据差异 2分钟",
+        "rowKey": "session:session-300ede31-2667-45af-9046-0749490f3dd4",
+        "y": 344,
+        "h": 32,
+        "cls": "YDXeBa_sessionRow",
+        "badge": true,
+        "badgePinned": false,
+        "badgeAria": "false",
+        "badgeTitle": "置顶会话",
+        "swatchColor": null,
+        "swatchBg": "rgba(0, 0, 0, 0)",
+        "rowBg": "rgba(0, 0, 0, 0)",
+        "rowShadow": "none",
+        "rowBefore": {
+          "content": "none",
+          "bg": "rgba(0, 0, 0, 0)",
+          "w": "auto",
+          "left": "auto"
+        },
+        "dataAttrs": {
+          "data-row-key": "session:session-300ede31-2667-45af-9046-0749490f3dd4"
+        }
+      },
+      {
+        "idx": 5,
+        "kind": "session",
+        "text": "帮我整理一份关于海洋塑料污 2分钟",
+        "rowKey": "session:session-08fbbad4-a5f0-4e61-8e44-49b911727022",
+        "y": 378,
+        "h": 32,
+        "cls": "YDXeBa_sessionRow",
+        "badge": true,
+        "badgePinned": true,
+        "badgeAria": "true",
+        "badgeTitle": "取消置顶",
+        "swatchColor": null,
+        "swatchBg": "rgba(0, 0, 0, 0)",
+        "rowBg": "rgba(0, 0, 0, 0)",
+        "rowShadow": "none",
+        "rowBefore": {
+          "content": "none",
+          "bg": "rgba(0, 0, 0, 0)",
+          "w": "auto",
+          "left": "auto"
+        },
+        "dataAttrs": {
+          "data-row-key": "session:session-08fbbad4-a5f0-4e61-8e44-49b911727022"
+        }
+      }
+    ],
+    "storage": {
+      "pin": null,
+      "all": {}
+    }
+  },
+  "color2": {
+    "ok": true,
+    "title": "更换行颜色（点击循环切换，Shift+点击清除）"
+  },
+  "afterColor2": {
+    "rows": [
+      {
+        "idx": 0,
+        "kind": "workspace",
+        "text": "默认工作区",
+        "rowKey": "workspace:101ac9c7-365b-4997-b465-7f91f41c472a",
+        "y": 206,
+        "h": 34,
+        "cls": "YDXeBa_projectRow",
+        "badge": false,
+        "badgePinned": null,
+        "badgeAria": null,
+        "badgeTitle": null,
+        "swatchColor": null,
+        "swatchBg": null,
+        "rowBg": "rgba(0, 0, 0, 0)",
+        "rowShadow": "none",
+        "rowBefore": {
+          "content": "none",
+          "bg": "rgba(0, 0, 0, 0)",
+          "w": "auto",
+          "left": "auto"
+        },
+        "dataAttrs": {
+          "data-row-key": "workspace:101ac9c7-365b-4997-b465-7f91f41c472a"
+        }
+      },
+      {
+        "idx": 1,
+        "kind": "session",
+        "text": "新会话",
+        "rowKey": "session:session-6854de43-b6df-467b-a967-80a0bddadba9",
+        "y": 242,
+        "h": 32,
+        "cls": "YDXeBa_sessionRow YDXeBa_selected",
+        "badge": false,
+        "badgePinned": null,
+        "badgeAria": null,
+        "badgeTitle": null,
+        "swatchColor": null,
+        "swatchBg": null,
+        "rowBg": "rgba(38, 49, 72, 0.06)",
+        "rowShadow": "none",
+        "rowBefore": {
+          "content": "none",
+          "bg": "rgba(0, 0, 0, 0)",
+          "w": "auto",
+          "left": "auto"
+        },
+        "dataAttrs": {
+          "data-row-key": "session:session-6854de43-b6df-467b-a967-80a0bddadba9"
+        }
+      },
+      {
+        "idx": 2,
+        "kind": "session",
+        "text": "把这周的错题整理成表格 2分钟",
+        "rowKey": "session:session-36dafaf6-2551-4cb7-a7a0-5a148681f143",
+        "y": 276,
+        "h": 32,
+        "cls": "YDXeBa_sessionRow",
+        "badge": true,
+        "badgePinned": true,
+        "badgeAria": "true",
+        "badgeTitle": "取消置顶",
+        "swatchColor": "c1",
+        "swatchBg": "rgba(0, 0, 0, 0)",
+        "rowBg": "rgba(234, 179, 8, 0.1)",
+        "rowShadow": "rgb(234, 179, 8) 3px 0px 0px 0px inset",
+        "rowBefore": {
+          "content": "none",
+          "bg": "rgba(0, 0, 0, 0)",
+          "w": "auto",
+          "left": "auto"
+        },
+        "dataAttrs": {
+          "data-row-key": "session:session-36dafaf6-2551-4cb7-a7a0-5a148681f143"
+        }
+      },
+      {
+        "idx": 3,
+        "kind": "session",
+        "text": "写一封给班主任的请假邮件 2分钟",
+        "rowKey": "session:session-3c8badf3-ce48-4e15-aae2-be9723a30ae1",
+        "y": 310,
+        "h": 32,
+        "cls": "YDXeBa_sessionRow",
+        "badge": true,
+        "badgePinned": false,
+        "badgeAria": "false",
+        "badgeTitle": "置顶会话",
+        "swatchColor": null,
+        "swatchBg": "rgba(0, 0, 0, 0)",
+        "rowBg": "rgba(0, 0, 0, 0)",
+        "rowShadow": "none",
+        "rowBefore": {
+          "content": "none",
+          "bg": "rgba(0, 0, 0, 0)",
+          "w": "auto",
+          "left": "auto"
+        },
+        "dataAttrs": {
+          "data-row-key": "session:session-3c8badf3-ce48-4e15-aae2-be9723a30ae1"
+        }
+      },
+      {
+        "idx": 4,
+        "kind": "session",
+        "text": "比较两个版本的实验数据差异 2分钟",
+        "rowKey": "session:session-300ede31-2667-45af-9046-0749490f3dd4",
+        "y": 344,
+        "h": 32,
+        "cls": "YDXeBa_sessionRow",
+        "badge": true,
+        "badgePinned": false,
+        "badgeAria": "false",
+        "badgeTitle": "置顶会话",
+        "swatchColor": null,
+        "swatchBg": "rgba(0, 0, 0, 0)",
+        "rowBg": "rgba(0, 0, 0, 0)",
+        "rowShadow": "none",
+        "rowBefore": {
+          "content": "none",
+          "bg": "rgba(0, 0, 0, 0)",
+          "w": "auto",
+          "left": "auto"
+        },
+        "dataAttrs": {
+          "data-row-key": "session:session-300ede31-2667-45af-9046-0749490f3dd4"
+        }
+      },
+      {
+        "idx": 5,
+        "kind": "session",
+        "text": "帮我整理一份关于海洋塑料污 2分钟",
+        "rowKey": "session:session-08fbbad4-a5f0-4e61-8e44-49b911727022",
+        "y": 378,
+        "h": 32,
+        "cls": "YDXeBa_sessionRow",
+        "badge": true,
+        "badgePinned": true,
+        "badgeAria": "true",
+        "badgeTitle": "取消置顶",
+        "swatchColor": null,
+        "swatchBg": "rgba(0, 0, 0, 0)",
+        "rowBg": "rgba(0, 0, 0, 0)",
+        "rowShadow": "none",
+        "rowBefore": {
+          "content": "none",
+          "bg": "rgba(0, 0, 0, 0)",
+          "w": "auto",
+          "left": "auto"
+        },
+        "dataAttrs": {
+          "data-row-key": "session:session-08fbbad4-a5f0-4e61-8e44-49b911727022"
+        }
+      }
+    ],
+    "storage": {
+      "pin": null,
+      "all": {}
+    }
+  },
+  "errors": [],
+  "console": [
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "utc": "2026-10-22T01:07:15.468Z"
+    }
+  ],
+  "dialogs": []
+}

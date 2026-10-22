@@ -1,0 +1,13 @@
+﻿{
+  "dismissed": "clicked-继续",
+  "target": "sess-ti-six",
+  "panelBefore": false,
+  "tiRootBefore": null,
+  "panelAfter": false,
+  "tiRoot2": null,
+  "afterActive": [],
+  "afterItems": 0,
+  "afterUserRows": 6,
+  "errors": [],
+  "consoleLog": []
+}

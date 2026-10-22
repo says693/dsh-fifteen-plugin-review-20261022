@@ -1,0 +1,63 @@
+{
+  "before": {
+    "found": true,
+    "i": 9,
+    "outer": "<button type=\"button\" class=\"VOzbGW_trigger\" aria-label=\"设置\" aria-keyshortcuts=\"Control+Alt+,\" aria-haspopup=\"dialog\" aria-expanded=\"false\"><div data-slot=\"settings.trigger\" style=\"display: contents;\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" aria-hidden=\"true\" stroke-width=\"1.3\"><path d=\"M8 9.75012C8.9665 9.75012 9.75 8.96662 9.75 8.00012C9.75 7.03362 8.9665 6.25012 8 6.25012C7.0335 6.25012 6.25 7.03362 6.25 8.00012C6.25 8.96662 7.0335 9.75012 8 9.75012Z\" stroke=\"currentColor\"></path><path d=\"M13.0107 7.79377C12.9505 7.89401 12.9205 7.94413",
+    "rect": {
+      "x": 10,
+      "y": 948,
+      "w": 260,
+      "h": 42
+    },
+    "disabled": false,
+    "visible": true,
+    "inDialog": false
+  },
+  "afterClick": {
+    "dialogs": [
+      {
+        "modal": null,
+        "cls": "_dialog_o6lrb_33 jLrgrW_dialog",
+        "rect": {
+          "x": 420,
+          "y": 328,
+          "w": 600,
+          "h": 344
+        }
+      }
+    ],
+    "settingsSelector": false,
+    "settingsAny": false
+  },
+  "afterHotkey": {
+    "settingsAny": false,
+    "dialogs": 1
+  },
+  "panel": {
+    "url": "http://127.0.0.1:3067/",
+    "viewport": {
+      "w": 1440,
+      "h": 1000
+    },
+    "dark": false,
+    "panelPresent": false,
+    "panelRect": null,
+    "panelStyle": null,
+    "tweakStyleExists": true,
+    "tweakCss": "",
+    "uiStyleExists": true,
+    "doc": {
+      "scrollW": 1440,
+      "clientW": 1440,
+      "overflowX": false
+    },
+    "storageKeys": [
+      "dsh.workspace.view.v5",
+      "dsh.sidebar-right.v1.session-2706f68c-a82a-4dfc-95b3-f4abb3626af2",
+      "dsh.sessions.current"
+    ],
+    "bodyBg": "rgb(255, 255, 255)"
+  },
+  "errors": [],
+  "consoleLog": []
+}

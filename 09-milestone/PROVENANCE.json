@@ -1,0 +1,62 @@
+{
+  "object": {
+    "name": "dsh-milestone",
+    "repo": "SnowCrescenter-tech/dsh-milestone",
+    "npm_package": "dsh-milestone@0.7.2",
+    "fixed_commit": "3bdd8d1327f30b64a1119aeb62c752ef1e12c713",
+    "license": "MIT",
+    "license_copyright_line": "Copyright (c) 2026 dsh-milestone contributors",
+    "npm_maintainer": "snowcrescenter <snowcrescenter@gmail.com>",
+    "source_relation": "package.json version 0.7.2 in both the registry tarball and the fixed commit tree; shipped `files` list matches the built tree (lib/index.js, lib/client.js, cordis.patch.yml, assets/*.svg)",
+    "license_hash_note": "LICENSE sha256 differs between tarball and source tree only because the tarball copy uses CRLF line endings; the copyright line is identical, so this is a packaging artifact, not a licence change"
+  },
+  "integrity": {
+    "tarball_file": "temp/dsh-milestone-0.7.2.tgz",
+    "tarball_sha256": "226ae3edb95db14bf484af1f4f2e5e17540ddae2fb67ea47b01d368041f93a69",
+    "tarball_sha1_shasum_computed": "05bff0576f22c73f89c62a46d167559876bb814b",
+    "tarball_sha1_shasum_registry": "05bff0576f22c73f89c62a46d167559876bb814b",
+    "tarball_sha512_integrity_computed": "sha512-F/mWJyfPObZLcyUT4v0bGWF6No4hE3brQEjS/mQYY0yMWkdlwgrIgUI7gsblWjAbs73AfPL6i1SbIA5Vln8J6Q==",
+    "tarball_sha512_integrity_registry": "sha512-F/mWJyfPObZLcyUT4v0bGWF6No4hE3brQEjS/mQYY0yMWkdlwgrIgUI7gsblWjAbs73AfPL6i1SbIA5Vln8J6Q==",
+    "shasum_match": true,
+    "integrity_match": true,
+    "verified_at": "2026-10-22T01:47:00Z",
+    "registry_tarball_url": "https://mirrors.cloud.tencent.com/npm/dsh-milestone/-/dsh-milestone-0.7.2.tgz"
+  },
+  "file_hashes": {
+    "temp/pkg/package/lib/client.js": "bfea11811e5cd3822e2a145f9cbb8a2cb8cd3cf127ede45bcee7feeeafc1a1ab",
+    "temp/pkg/package/lib/index.js": "da1e055ff6ba4c317c090567c55b90d3564029cb49cbca37732b5d0cf11676fa",
+    "temp/pkg/package/LICENSE": "e712208487fde5937a24b1c7968bcb43be9d231449d62356a7c8b7b35938c40a",
+    "temp/src/<commit>/LICENSE": "12a86c3af9614135fd8072a530ad8dc1ae4a9bd5f20ad47240bd3248bbc7c0f9",
+    "isolated-home/profiles/web3/node_modules/dsh-milestone/lib/client.js": "computed in evidence/p07-rootcause-queue.json"
+  },
+  "host": {
+    "cli": "C:/Users/32621/AppData/Roaming/npm/node_modules/@deepseek-ai/dsh/lib/bin.js",
+    "version": "@deepseek-ai/dsh 0.2.0-rc.2",
+    "node": "v24.19.0",
+    "invocation": "--profile <isolated> --host 127.0.0.1 --port 0 --no-open",
+    "isolation": "DSH_HOME / HOME / USERPROFILE / APPDATA / LOCALAPPDATA / XDG_* / npm_config_cache all under the task directory"
+  },
+  "browser": {
+    "engine": "Microsoft Edge (headless via Playwright)",
+    "version": "155.0.4283.62",
+    "playwright": "1.64.1",
+    "playwright_path": "H:/CODEX/dsh-code-security-review-20261019/tooling/node_modules/playwright/index.mjs",
+    "network_policy": "independent context; only 127.0.0.1 / localhost routes allowed, all other hosts aborted"
+  },
+  "profiles": {
+    "ctl": "control profile derived with --from-default-profile web, no plugin installed (bundles: dsh-base, dsh-web-app)",
+    "web": "first attempt: plugin added via `dsh plugin --profile web add dsh-milestone`, recorded as-is",
+    "web3": "same template, plugin installed with host-version overrides pinned in pnpm-workspace.yaml (this is the profile all reported readings come from)"
+  },
+  "timeline_utc": {
+    "task_started_by_previous_executor": "2026-10-22T01:21:00Z",
+    "handover": "2026-10-22T01:36:00Z",
+    "control_host_up": "2026-10-22T01:39:38Z",
+    "pinned_host_up": "2026-10-22T01:41:53Z",
+    "deliverables_written": "2026-10-22T01:50:00Z"
+  },
+  "not_verified": [
+    "no model call was made; every conversation shown is hand-written fixture text persisted through the official jsonl backend",
+    "the plugin's other surfaces (list panel, cross-session search, bookmark deep links, floating ball) were not exercised because the rail never mounts on this host"
+  ]
+}

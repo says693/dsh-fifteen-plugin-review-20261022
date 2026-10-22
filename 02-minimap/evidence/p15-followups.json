@@ -1,0 +1,49 @@
+{
+  "dark": {
+    "anchorBg": "rgba(128, 128, 128, 0.5)",
+    "bodyBg": "rgb(21, 21, 23)",
+    "anchorRect": {
+      "x": 12,
+      "y": 366,
+      "w": 12,
+      "h": 3
+    },
+    "anchors": 8,
+    "seatDisplay": "block",
+    "effectiveAnchorRgb": [
+      75,
+      75,
+      76
+    ],
+    "contrastRatio": 2.08,
+    "darkMedia": true,
+    "railWidth": 16,
+    "errs": []
+  },
+  "anchor8": {
+    "count": 8,
+    "heights": [
+      8
+    ],
+    "gaps": [
+      12
+    ],
+    "config": {
+      "enabled": true,
+      "minPrompts": 4,
+      "anchorSize": 8
+    }
+  },
+  "rapid": {
+    "staleHighlights": [
+      "u2",
+      "u4"
+    ],
+    "staleHighlightCount": 2,
+    "staleJumpedDots": [],
+    "errs": []
+  },
+  "singleClick": {
+    "staleHighlights": []
+  }
+}

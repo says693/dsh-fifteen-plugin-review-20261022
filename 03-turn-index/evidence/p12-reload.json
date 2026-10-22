@@ -1,0 +1,72 @@
+{
+  "rounds": [
+    {
+      "i": 0,
+      "styleTags": 1,
+      "anyTi": 0,
+      "panel": false,
+      "overlaySeatChildren": 1,
+      "prefKeys": [],
+      "userRows": 6,
+      "scrollHeight": 2644,
+      "probeVisible": true
+    },
+    {
+      "i": 1,
+      "styleTags": 1,
+      "anyTi": 0,
+      "panel": false,
+      "overlaySeatChildren": 1,
+      "prefKeys": [],
+      "userRows": 6,
+      "scrollHeight": 2644,
+      "probeVisible": true
+    },
+    {
+      "i": 2,
+      "styleTags": 1,
+      "anyTi": 0,
+      "panel": false,
+      "overlaySeatChildren": 1,
+      "prefKeys": [],
+      "userRows": 6,
+      "scrollHeight": 2644,
+      "probeVisible": true
+    }
+  ],
+  "finalStorage": {
+    "dsh.sessions.current": "{\"sessionId\":\"sess-ti-six\"}",
+    "dsh.sidebar-right.v1.sess-ti-six": "{\"bySession\":{\"sess-ti-six\":{\"layout\":{\"nodes\":{\"pane1\":{\"kind\":\"pane\",\"id\":\"pane1\",\"host\":\"dock\",\"tabs\":[]}},\"tabs\":{},\"rootId\":\"pane1\",\"floats\":[],\"activePaneId\":\"pane1\",\"expanded\":false,\"mode\":\"push\"},\"minted\":1}}}",
+    "dsh.sidebar-right.v1.session-cded7315-a936-41eb-a3db-96e7a8c6eac8": "{\"bySession\":{\"session-cded7315-a936-41eb-a3db-96e7a8c6eac8\":{\"layout\":{\"nodes\":{\"pane1\":{\"kind\":\"pane\",\"id\":\"pane1\",\"host\":\"dock\",\"tabs\":[]}},\"tabs\":{},\"rootId\":\"pane1\",\"floats\":[],\"activePaneId\":\"pane1\",\"expanded\":false,\"mode\":\"push\"},\"minted\":1}}}",
+    "dsh.workspace.view.v5": "{\"groupBy\":\"workspace\",\"orderBy\":\"updated\",\"groupExpansion\":{\"3d66859e-4425-4721-afaf-24874aee434a\":true},\"sessionOrderByAccount\":{},\"archivedFilter\":\"default\"}"
+  },
+  "viewport": {
+    "w": 1440,
+    "h": 1000,
+    "dpr": 1
+  },
+  "doc": {
+    "scrollWidth": 1440,
+    "clientWidth": 1440,
+    "overflowX": false
+  },
+  "scrollport": {
+    "rect": {
+      "x": 280,
+      "y": 76,
+      "w": 1158,
+      "h": 924,
+      "top": 76,
+      "bottom": 1000,
+      "left": 280,
+      "right": 1438
+    },
+    "scrollTop": 1720,
+    "scrollHeight": 2644,
+    "clientHeight": 924
+  },
+  "userRowCount": 6,
+  "panelPresent": false,
+  "errors": [],
+  "consoleLog": []
+}

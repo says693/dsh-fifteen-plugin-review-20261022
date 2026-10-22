@@ -1,0 +1,113 @@
+{
+  "utc": "2026-10-22T01:33:47.332Z",
+  "endpoint": "https://review.lingshulab.com",
+  "note": "评测站页面 ?q= 不生效，故拉 /api/reviews 与 /api/plugins 全量后本地扫描",
+  "reviews": {
+    "pages": [
+      {
+        "page": 1,
+        "status": 200,
+        "got": 20,
+        "total": 172
+      },
+      {
+        "page": 2,
+        "status": 200,
+        "got": 20,
+        "total": 172
+      },
+      {
+        "page": 3,
+        "status": 200,
+        "got": 20,
+        "total": 172
+      },
+      {
+        "page": 4,
+        "status": 200,
+        "got": 20,
+        "total": 172
+      },
+      {
+        "page": 5,
+        "status": 200,
+        "got": 20,
+        "total": 172
+      },
+      {
+        "page": 6,
+        "status": 200,
+        "got": 20,
+        "total": 172
+      },
+      {
+        "page": 7,
+        "status": 200,
+        "got": 20,
+        "total": 172
+      },
+      {
+        "page": 8,
+        "status": 200,
+        "got": 20,
+        "total": 172
+      },
+      {
+        "page": 9,
+        "status": 200,
+        "got": 12,
+        "total": 172
+      }
+    ],
+    "count": 172,
+    "hits": []
+  },
+  "plugins": {
+    "pages": [
+      {
+        "page": 1,
+        "status": 200,
+        "got": 20,
+        "total": 133
+      },
+      {
+        "page": 2,
+        "status": 200,
+        "got": 20,
+        "total": 133
+      },
+      {
+        "page": 3,
+        "status": 200,
+        "got": 20,
+        "total": 133
+      },
+      {
+        "page": 4,
+        "status": 200,
+        "got": 20,
+        "total": 133
+      },
+      {
+        "page": 5,
+        "status": 200,
+        "got": 20,
+        "total": 133
+      },
+      {
+        "page": 6,
+        "status": 200,
+        "got": 20,
+        "total": 133
+      },
+      {
+        "page": 7,
+        "status": 200,
+        "got": 13,
+        "total": 133
+      }
+    ],
+    "count": 133,
+    "hits": []
+  }
+}

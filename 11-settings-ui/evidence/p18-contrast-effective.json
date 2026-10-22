@@ -1,0 +1,153 @@
+{
+  "rows": [
+    {
+      "state": "light+default+100",
+      "dark": false,
+      "panelBgRaw": "rgb(255, 255, 255)",
+      "pageBg": "rgb(255, 255, 255)",
+      "panelCompositedHex": "#ffffff",
+      "label": {
+        "color": "rgb(15, 17, 21)",
+        "opacity": "0.6",
+        "effectiveHex": "#6f7073",
+        "ratio": 4.94
+      },
+      "k": null,
+      "mut": {
+        "color": "rgb(15, 17, 21)",
+        "opacity": "0.7",
+        "effectiveHex": "#57585b",
+        "ratio": 7.08
+      },
+      "hint": {
+        "color": "rgb(15, 17, 21)",
+        "opacity": "0.5",
+        "effectiveHex": "#87888a",
+        "ratio": 3.55
+      },
+      "chip": {
+        "color": "rgb(15, 17, 21)",
+        "opacity": "1",
+        "effectiveHex": "#0f1115",
+        "ratio": 18.9
+      },
+      "tweak": "[data-shortcut-modal=\"settings\"][role=\"dialog\"]{width:1080px;height:min(780px, calc(100vh - 48px));background-color:var(--dsw-alias-bg-layer-2)}"
+    },
+    {
+      "state": "dark+color+100",
+      "dark": true,
+      "panelBgRaw": "rgb(30, 42, 56)",
+      "pageBg": "rgb(21, 21, 23)",
+      "panelCompositedHex": "#1e2a38",
+      "label": {
+        "color": "rgb(249, 250, 251)",
+        "opacity": "0.6",
+        "effectiveHex": "#a1a7ad",
+        "ratio": 5.99
+      },
+      "k": {
+        "color": "rgb(249, 250, 251)",
+        "opacity": "0.65",
+        "effectiveHex": "#acb1b7",
+        "ratio": 6.75
+      },
+      "mut": {
+        "color": "rgb(249, 250, 251)",
+        "opacity": "0.7",
+        "effectiveHex": "#b7bcc1",
+        "ratio": 7.58
+      },
+      "hint": {
+        "color": "rgb(249, 250, 251)",
+        "opacity": "0.5",
+        "effectiveHex": "#8c929a",
+        "ratio": 4.63
+      },
+      "chip": {
+        "color": "rgb(249, 250, 251)",
+        "opacity": "1",
+        "effectiveHex": "#f9fafb",
+        "ratio": 13.92
+      },
+      "tweak": "[data-shortcut-modal=\"settings\"][role=\"dialog\"]{width:1080px;height:min(780px, calc(100vh - 48px));background-color:#1e2a38}"
+    },
+    {
+      "state": "dark+color+50",
+      "dark": true,
+      "panelBgRaw": "color(srgb 0.117647 0.164706 0.219608 / 0.5)",
+      "pageBg": "rgb(21, 21, 23)",
+      "panelCompositedHex": "#192028",
+      "label": {
+        "color": "rgb(249, 250, 251)",
+        "opacity": "0.6",
+        "effectiveHex": "#a0a3a6",
+        "ratio": 6.48
+      },
+      "k": {
+        "color": "rgb(249, 250, 251)",
+        "opacity": "0.65",
+        "effectiveHex": "#abaeb1",
+        "ratio": 7.36
+      },
+      "mut": {
+        "color": "rgb(249, 250, 251)",
+        "opacity": "0.7",
+        "effectiveHex": "#b6b8bc",
+        "ratio": 8.32
+      },
+      "hint": {
+        "color": "rgb(249, 250, 251)",
+        "opacity": "0.5",
+        "effectiveHex": "#898d91",
+        "ratio": 4.92
+      },
+      "chip": {
+        "color": "rgb(249, 250, 251)",
+        "opacity": "1",
+        "effectiveHex": "#f9fafb",
+        "ratio": 15.78
+      },
+      "tweak": "[data-shortcut-modal=\"settings\"][role=\"dialog\"]{width:1080px;height:min(780px, calc(100vh - 48px));background-color:color-mix(in srgb, #1e2a38 50%, transparent)}"
+    },
+    {
+      "state": "dark+color+30",
+      "dark": true,
+      "panelBgRaw": "color(srgb 0.117647 0.164706 0.219608 / 0.3)",
+      "pageBg": "rgb(21, 21, 23)",
+      "panelCompositedHex": "#181b21",
+      "label": {
+        "color": "rgb(249, 250, 251)",
+        "opacity": "0.6",
+        "effectiveHex": "#9fa1a4",
+        "ratio": 6.64
+      },
+      "k": {
+        "color": "rgb(249, 250, 251)",
+        "opacity": "0.65",
+        "effectiveHex": "#aaacaf",
+        "ratio": 7.57
+      },
+      "mut": {
+        "color": "rgb(249, 250, 251)",
+        "opacity": "0.7",
+        "effectiveHex": "#b5b7ba",
+        "ratio": 8.58
+      },
+      "hint": {
+        "color": "rgb(249, 250, 251)",
+        "opacity": "0.5",
+        "effectiveHex": "#888b8e",
+        "ratio": 5.02
+      },
+      "chip": {
+        "color": "rgb(249, 250, 251)",
+        "opacity": "1",
+        "effectiveHex": "#f9fafb",
+        "ratio": 16.48
+      },
+      "tweak": "[data-shortcut-modal=\"settings\"][role=\"dialog\"]{width:1080px;height:min(780px, calc(100vh - 48px));background-color:color-mix(in srgb, #1e2a38 30%, transparent)}"
+    }
+  ],
+  "errors": [],
+  "consoleLog": []
+}

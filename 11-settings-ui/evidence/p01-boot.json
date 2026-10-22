@@ -1,0 +1,941 @@
+{
+  "host": {
+    "origin": "http://127.0.0.1:3067",
+    "profile": "su"
+  },
+  "boot": {
+    "url": "http://127.0.0.1:3067/",
+    "title": "DeepSeek Harness",
+    "manifest": "{\"rev\":\"785522b28ac9\",\"entries\":[{\"id\":\"@deepseek-ai/dsh-client-ui-open-in-app\",\"url\":\"plugins/??@deepseek-ai/dsh-client-ui-open-in-app/client.js&rev=bcef3672e1b7\",\"rev\":\"bcef3672e1b7\",\"inject\":[\"@deepseek-ai/dsh-api-gateway\",\"@deepseek-ai/dsh-api-remotes\",\"@deepseek-ai/dsh-api-session-controller\",\"@deepseek-ai/dsh-client-locale\",\"@deepseek-ai/dsh-client-shortcuts\",\"@deepseek-ai/dsh-client-ui-conversation\",\"@deepseek-ai/dsh-client-ui-layout\",\"@deepseek-ai/dsh-client-ui-renderer\",\"@deepseek-ai/dsh-client-ui-session\",\"@deepseek-ai/dsh-client-ui-sidebar-documentpreview\"]},{\"id\":\"@deepseek-ai/dsh-api-gateway\",\"url\":\"plugins/??@deepseek-ai/dsh-api-gateway/client.js&rev=cd1728f98348\",\"rev\":\"cd1728f98348\",\"inject\":[\"@deepseek-ai/dsh-typert-registry\",\"@deepseek-ai/dsh-client-connection\"],\"immediately\":true},{\"id\":\"@deepseek-ai/dsh-api-job-controller\",\"url\":\"plugins/??@deepseek-ai/dsh-api-job-controller/client.js&rev=4d9247e736b2\",\"rev\":\"4d9247e736b2\",\"inject\":[\"@deepseek-ai/dsh-api-gateway\",\"@deepseek-ai/dsh-client-connection\"],\"external\":[\"@deepseek-ai/dsh-api-gateway/client\"]},{\"id\":\"@deepseek-ai/dsh-api-terminal-controller\",\"url\":\"plugins/??@deepseek-ai/dsh-api-terminal-controller/client.js&rev=be84abeed4bc\",\"rev\":\"be84abeed4bc\",\"inject\":[\"@deepseek-ai/dsh-api-gateway\"],\"external\":[\"@deepseek-ai/dsh-api-gateway/client\"]},{\"id\":\"@deepseek-ai/dsh-api-workspace-files\",\"url\":\"plugins/??@deepseek-ai/dsh-api-workspace-files/client.js&rev=30997ab69167\",\"rev\":\"30997ab69167\",\"inject\":[\"@deepseek-ai/dsh-api-gateway\",\"@deepseek-ai/dsh-client-resources\"]},{\"id\":\"@deepseek-ai/dsh-client-ui-settings-account\",\"url\":\"plugins/??@deepseek-ai/dsh-client-ui-settings-account/client.js&rev=4bd88c384578\",\"rev\":\"4bd88c384578\",\"inject\":[\"@deepseek-ai/dsh-api-remotes\",\"@deepseek-ai/dsh-client-locale\",\"@deepseek-ai/dsh-client-ui-chat\",\"@deepseek-ai/dsh-client-ui-layout\",\"@deepseek-ai/dsh-client-ui-settings\",\"@deepseek-ai/dsh-client-ui-theme\"]},{\"id\":\"@deepseek-ai/dsh-client-hmr\",\"url\":\"plugins/??@deepseek-ai/dsh-client-hmr/client.js&rev=c3bfb5ff90f0\",\"rev\":\"c3bfb5ff90f0\",\"inject\":[\"@deepseek-ai/dsh-client-modules\"],\"immediately\":true},{\"id\":\"@deepseek-ai/dsh-client-modules\",\"url\":\"plugins/??@deepseek-ai/dsh-client-modules/client.js&rev=3cb72dab9df4\",\"rev\":\"3cb72dab9df4\",\"inject\":[],\"immediately\":true},{\"id\":\"@deepseek-ai/dsh-cordis-client-runner\",\"url\":\"plugins/??@deepseek-ai/dsh-cordis-client-runner/client.js&rev=d65a784c652e\",\"rev\":\"d65a784c652e\",\"inject\":[\"@deepseek-ai/dsh-client-ui-renderer\",\"@deepseek-ai/dsh-api-remotes\",\"@deepseek-ai/dsh-client-modules\",\"@deepseek-ai/dsh-client-ui-theme\"]},{\"id\":\"@deepseek-ai/dsh-client-ui-theme\",\"url\":\"plugins/??@deepseek-ai/dsh-client-ui-theme/client.js&rev=8b40a9ad6c42\",\"rev\":\"8b40a9ad6c42\",\"inject\":[\"@deepseek-ai/dsh-client-connection\",\"@deepseek-ai/dsh-client-locale\",\"@deepseek-ai/dsh-client-ui-renderer\",\"@deepseek-ai/dsh-client-ui-settings\",\"@deepseek-ai/dsh-api-remotes\"],\"immediately\":true},{\"id\":\"@deepseek-ai/dsh-client-locale\",\"url\":\"plugins/??@deepseek-ai/dsh-client-locale/client.js&rev=43f6ea12b821\",\"rev\":\"43f6ea12b821\",\"inject\":[\"@deepseek-ai/dsh-client-connection\",\"@deepseek-ai/dsh-client-ui-renderer\",\"@deepseek-ai/dsh-client-ui-settings\",\"@deepseek-ai/dsh-api-remotes\"],\"immediately\":true},{\"id\":\"@deepseek-ai/dsh-client-shortcuts\",\"url\":\"plugins/??@deepseek-ai/dsh-client-shortcuts/client.js&rev=34d85aefb24c\",\"rev\":\"34d85aefb24c\",\"inject\":[\"@deepseek-ai/dsh-client-locale\"]},{\"id\":\"@deepseek-ai/dsh-client-ui-shortcuts\",\"url\":\"plugins/??@deepseek-ai/dsh-client-ui-shortcuts/client.js&rev=179798f97f50\",\"rev\":\"179798f97f50\",\"inject\":[\"@deepseek-ai/dsh-client-shortcuts\",\"@deepseek-ai/dsh-client-locale\",\"@deepseek-ai/dsh-client-ui-layout\",\"@deepseek-ai/dsh-client-ui-settings\"]},{\"id\":\"@deepseek-ai/dsh-client-ui-layout\",\"url\":\"plugins/??@deepseek-ai/dsh-client-ui-layout/client.js&rev=51806cbd260b\",\"rev\":\"51806cbd260b\",\"inject\":[\"@deepseek-ai/dsh-client-locale\",\"@deepseek-ai/dsh-client-ui-renderer\",\"@deepseek-ai/dsh",
+    "settingsEntryCandidates": [
+      {
+        "text": "设置",
+        "aria": "设置",
+        "title": null
+      }
+    ],
+    "styleTags": [
+      {
+        "id": null,
+        "len": 182,
+        "head": ":root{color-scheme:light}body{background-color:#fff;--dsh-boot-bg:#fff}@media(prefers-color-scheme:dark){:root{color-sch"
+      },
+      {
+        "id": null,
+        "len": 696,
+        "head": ".hVGvvW_row{border-bottom:.5px solid var(--dsw-alias-border-l2);align-items:center;gap:8px;padding:16px 0;display:flex}."
+      },
+      {
+        "id": null,
+        "len": 1465,
+        "head": ".pbvGtq_section{max-width:760px;color:var(--dsw-alias-label-primary);flex-direction:column;gap:12px;display:flex}.pbvGtq"
+      },
+      {
+        "id": null,
+        "len": 11271,
+        "head": ".zGbnIq_section{max-width:720px;color:var(--dsw-alias-label-primary);flex-direction:column;gap:12px;display:flex}.zGbnIq"
+      },
+      {
+        "id": null,
+        "len": 380,
+        "head": ".jLrgrW_dialog{width:min(600px,100%);max-height:100%;padding:0}.jLrgrW_content{box-sizing:border-box;flex-direction:colu"
+      },
+      {
+        "id": null,
+        "len": 185,
+        "head": ".GL8Viq_description{color:var(--dsw-alias-label-secondary);margin:0;font-size:14px;line-height:24px}.GL8Viq_editor{margi"
+      },
+      {
+        "id": null,
+        "len": 398,
+        "head": ".t1T8VW_copy{color:var(--dsw-alias-label-secondary);font-size:14px;line-height:24px}.t1T8VW_copy p{margin:0}.t1T8VW_copy"
+      },
+      {
+        "id": null,
+        "len": 857,
+        "head": "._8HJdBW_group{border-bottom:.5px solid var(--dsw-alias-border-l2);flex-direction:column;gap:8px;padding:16px 0;display:"
+      },
+      {
+        "id": null,
+        "len": 1536,
+        "head": ".bVCLcG_row{border-bottom:.5px solid var(--dsw-alias-border-l2);align-items:center;gap:8px;padding:16px 0;display:flex}."
+      },
+      {
+        "id": null,
+        "len": 4018,
+        "head": ".pI_x6G_frame{background:var(--dsw-alias-bg-base);grid-template-rows:100%;height:100%;display:grid;position:relative;ove"
+      },
+      {
+        "id": null,
+        "len": 302,
+        "head": ".gi5gtW_row{border-bottom:.5px solid var(--dsw-alias-border-l2);justify-content:space-between;align-items:center;gap:24p"
+      },
+      {
+        "id": null,
+        "len": 7771,
+        "head": ".nhfO0a_setting,.nhfO0a_row,.nhfO0a_binding{justify-content:space-between;align-items:center;gap:8px;display:flex}.nhfO0"
+      },
+      {
+        "id": "dsh-settings-ui-ui",
+        "len": 1504,
+        "head": ".su-sec{display:flex;flex-direction:column;gap:10px;max-width:560px;font-size:13px}.su-sec .su-label{font-size:12px;opac"
+      },
+      {
+        "id": null,
+        "len": 860,
+        "head": ":root{--dsw-font-family:-apple-system, BlinkMacSystemFont, \"Segoe UI\", \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaH"
+      },
+      {
+        "id": null,
+        "len": 141,
+        "head": "@supports (corner-shape:superellipse(1.5)){:root{--dsw-corner-shape:superellipse(1.5)}*,:before,:after{corner-shape:var("
+      },
+      {
+        "id": null,
+        "len": 19081,
+        "head": "body{--dsw-static-amber-100:#fef5e7;--dsw-static-amber-400:#f7ad31;--dsw-static-amber-500:#f59e0b;--dsw-static-amber-600"
+      },
+      {
+        "id": null,
+        "len": 298,
+        "head": ":root{--dsw-focus-ring-width:2px}:focus-visible{outline-color:var(--dsw-focus-ring-color,var(--dsw-alias-state-business-"
+      },
+      {
+        "id": null,
+        "len": 869,
+        "head": "body{--dsw-alias-onboarding-accent:#3964fe;--dsw-gradient-onboarding-violet-stops:#2a2fb6 33.102%, #8b76f6 50.954%, #c5c"
+      },
+      {
+        "id": null,
+        "len": 838,
+        "head": "body{--dsh-scrollbar-thumb:var(--dsw-alias-scrollbar-bg-l1);--dsh-scrollbar-thumb-hover:var(--dsw-alias-scrollbar-hover-"
+      },
+      {
+        "id": null,
+        "len": 11719,
+        "head": "body{--dsw-linear-gradient-think:linear-gradient(180deg, #fff 20.19%, #fff0 100%);--dsw-linear-think-select:linear-gradi"
+      },
+      {
+        "id": null,
+        "len": 705,
+        "head": ":root{--shiki-foreground:var(--dsw-alias-label-primary);--shiki-background:var(--dsw-alias-markdown-code-block);--shiki-"
+      },
+      {
+        "id": null,
+        "len": 6410,
+        "head": ".YDXeBa_projectRow,.YDXeBa_sessionRow{border-radius:var(--dsw-radius-md);padding:0 8px;cursor:pointer;user-select:none;c"
+      },
+      {
+        "id": null,
+        "len": 89,
+        "head": ".Qg_5Eq_exits{contain:strict;pointer-events:none;position:absolute;inset:0;overflow:clip}"
+      },
+      {
+        "id": null,
+        "len": 240,
+        "head": "._G5b-a_modalAction{min-width:72px}._G5b-a_modalError,._G5b-a_menuStatus{margin-top:8px;font-size:12px;line-height:18px}"
+      },
+      {
+        "id": null,
+        "len": 9674,
+        "head": ".bhn1Oq_root{--dsh-session-list-edge-inset:var(--dsh-sidebar-inline-padding);--dsh-session-list-scrollbar-width:5px;--ds"
+      },
+      {
+        "id": null,
+        "len": 371,
+        "head": ".IW6AQa_controls{align-items:center;gap:8px;display:flex}.IW6AQa_iconButton{border-radius:var(--dsw-radius-sm);width:28p"
+      },
+      {
+        "id": null,
+        "len": 9370,
+        "head": ".hHd-Xa_root{--dsh-sidebar-inline-padding:12px;height:100%;padding:6px var(--dsh-sidebar-inline-padding);box-sizing:bord"
+      },
+      {
+        "id": null,
+        "len": 394,
+        "head": ".yAWgPa_chip{max-width:240px;color:var(--dsw-alias-state-business-primary);user-select:none;align-items:baseline;gap:3px"
+      },
+      {
+        "id": null,
+        "len": 394,
+        "head": ".q44v1G_reference{border-radius:var(--dsw-radius-sm);line-height:inherit;vertical-align:baseline;color:var(--dsw-alias-s"
+      },
+      {
+        "id": null,
+        "len": 4393,
+        "head": "._7yHdaG_dock{box-sizing:border-box;width:calc(100% - var(--dsh-composer-side-clearance) - var(--dsh-composer-side-clear"
+      },
+      {
+        "id": null,
+        "len": 795,
+        "head": ".T1PP_q_row{border-bottom:.5px solid var(--dsw-alias-border-l2);align-items:center;gap:8px;padding:16px 0;display:flex}."
+      },
+      {
+        "id": null,
+        "len": 6717,
+        "head": ".wSkVaW_root{background:var(--dsw-alias-bg-base);flex-direction:column;min-width:0;height:100%;display:flex;position:rel"
+      },
+      {
+        "id": null,
+        "len": 2915,
+        "head": ".pXSMma_root{justify-content:center;align-items:center;min-width:0;height:100%;padding:0 24px;display:flex}.pXSMma_stack"
+      },
+      {
+        "id": null,
+        "len": 2407,
+        "head": ".JObwrW_root{flex:none;display:inline-flex}.JObwrW_trigger{border-radius:var(--dsw-radius-sm);color:var(--dsw-alias-labe"
+      },
+      {
+        "id": null,
+        "len": 5833,
+        "head": ".uV2eYG_root{padding:0 var(--dsh-composer-side-clearance) 4px;flex-direction:column;align-items:center;display:flex}.uV2"
+      },
+      {
+        "id": null,
+        "len": 1937,
+        "head": ".lXshSW_root{box-sizing:border-box;width:calc(100% - var(--dsh-composer-side-clearance) - var(--dsh-composer-side-cleara"
+      },
+      {
+        "id": null,
+        "len": 20570,
+        "head": ".X_2TxG_page{box-sizing:border-box;height:100%;color:var(--dsw-alias-label-primary);flex-direction:column;align-items:ce"
+      },
+      {
+        "id": null,
+        "len": 1163,
+        "head": ".fsXYAq_card{border:.5px solid var(--dsw-alias-border-l1);border-radius:var(--dsw-radius-lg);background:var(--dsw-alias-"
+      },
+      {
+        "id": null,
+        "len": 4503,
+        "head": ".DXqwVW_root{border:.5px solid var(--dsw-alias-border-l1);border-radius:var(--dsw-radius-lg);background:var(--dsw-alias-"
+      },
+      {
+        "id": null,
+        "len": 4179,
+        "head": ".o3BgMG_root{flex-direction:column;display:flex}.o3BgMG_leading{flex-shrink:0}.o3BgMG_root[data-tool^=cordis_] .o3BgMG_t"
+      },
+      {
+        "id": null,
+        "len": 200,
+        "head": ".ztWv_q_callRow{border-radius:var(--dsw-radius-sm)}.ztWv_q_subCalls{border-left:.5px solid var(--dsw-alias-border-l2);fl"
+      },
+      {
+        "id": null,
+        "len": 582,
+        "head": ".nvmz7W_panelButton{height:calc(22px + var(--dsh-content-font-delta,0px));corner-shape:round;background:var(--dsw-alias-"
+      },
+      {
+        "id": null,
+        "len": 3551,
+        "head": ".CY-8Ka_card{flex-direction:column;display:flex}.CY-8Ka_terminal{--dsl-terminal-font:var(--dsw-font-markdown-code-block-"
+      },
+      {
+        "id": null,
+        "len": 4052,
+        "head": "._3e4SsG_menu{z-index:100;box-sizing:border-box;--dsh-scrollbar-thumb:var(--dsw-alias-scrollbar-bg-l2);--dsh-scrollbar-t"
+      },
+      {
+        "id": null,
+        "len": 3201,
+        "head": ".VOzbGW_triggerRow{flex:none;align-items:center;gap:8px;width:calc(100% + 4px);margin:4px -2px;display:flex;position:rel"
+      },
+      {
+        "id": null,
+        "len": 1191,
+        "head": ".DOUpOa_indicator{box-sizing:border-box;border:1px solid color-mix(in srgb, var(--dsw-alias-brand-primary-new-colorprima"
+      },
+      {
+        "id": null,
+        "len": 56,
+        "head": ".UQsH_q_triggerLabel{white-space:nowrap;overflow:hidden}"
+      },
+      {
+        "id": null,
+        "len": 145,
+        "head": "._WvWnq_section{flex-direction:column;width:100%;display:flex}._WvWnq_section>[data-slot=\"settings.general.item\"]>:last-"
+      },
+      {
+        "id": null,
+        "len": 119,
+        "head": ".yIbyla_row{color:var(--dsw-alias-label-primary);overflow-wrap:anywhere;padding:16px 0;font-size:14px;line-height:22px}"
+      },
+      {
+        "id": null,
+        "len": 302,
+        "head": ".Pt1bsG_row{border-bottom:.5px solid var(--dsw-alias-border-l2);justify-content:space-between;align-items:center;gap:24p"
+      },
+      {
+        "id": null,
+        "len": 230,
+        "head": ".me01iq_action{align-items:center;gap:8px;min-width:0;display:flex}.me01iq_error{max-width:180px;color:var(--dsw-alias-s"
+      },
+      {
+        "id": null,
+        "len": 1336,
+        "head": ".mna1RW_root{padding:8px calc(var(--dsh-composer-side-clearance) + 16px) 12px;flex-direction:column;align-items:center;d"
+      },
+      {
+        "id": null,
+        "len": 35903,
+        "head": ".Y0dWHa_split{--dsh-scrollbar-thumb:var(--dsw-alias-scrollbar-bg-l2);--dsh-scrollbar-thumb-hover:var(--dsw-alias-scrollb"
+      },
+      {
+        "id": null,
+        "len": 3669,
+        "head": ".fV0t5q_root{z-index:4;box-sizing:border-box;width:100%;height:var(--dsh-trajectory-toolbar-height);border-bottom:.5px s"
+      },
+      {
+        "id": null,
+        "len": 5862,
+        "head": "._1p9O6q_root{z-index:1;isolation:isolate;border-bottom:.5px solid var(--dsw-alias-border-l2);user-select:none;flex:none"
+      },
+      {
+        "id": null,
+        "len": 437,
+        "head": ".qBU-ya_root{--dsh-trajectory-toolbar-height:32px;box-sizing:border-box;width:100%;height:100%;min-height:0;color:var(--"
+      },
+      {
+        "id": null,
+        "len": 5611,
+        "head": ".QsffPG_root{position:relative}.QsffPG_trigger{border-radius:var(--dsw-radius-sm);min-height:28px;color:var(--dsw-alias-"
+      },
+      {
+        "id": null,
+        "len": 1469,
+        "head": ".geFEbW_guide{--dsl-guide-entry-radius:var(--dsw-radius-xl);box-sizing:border-box;flex-direction:column;justify-content:"
+      },
+      {
+        "id": null,
+        "len": 164,
+        "head": "._1kL45W_button{width:28px;color:var(--dsw-alias-label-secondary);flex:none;padding:0}._1kL45W_button svg{width:15px;hei"
+      },
+      {
+        "id": null,
+        "len": 2677,
+        "head": ".P3OORG_session{display:contents}.P3OORG_session[hidden]{display:none}.P3OORG_panel{--dsh-dockkit-dock-layer:10;--dsh-do"
+      },
+      {
+        "id": null,
+        "len": 2064,
+        "head": ".mufS8W_card{box-sizing:border-box;z-index:100;--dsh-scrollbar-thumb:var(--dsw-alias-scrollbar-bg-l2);--dsh-scrollbar-th"
+      },
+      {
+        "id": null,
+        "len": 633,
+        "head": ".hF0LTq_limits{grid-template-columns:repeat(auto-fit,minmax(min(220px,100%),1fr));gap:16px;display:grid}.hF0LTq_limit{mi"
+      },
+      {
+        "id": null,
+        "len": 1898,
+        "head": ".UPHdGa_permission{gap:6px;padding:12px 0;display:grid}.UPHdGa_toggleRow{color:var(--dsw-alias-label-primary);justify-co"
+      },
+      {
+        "id": null,
+        "len": 152,
+        "head": ".AZSXYW_section{min-width:0;padding:16px 0}.AZSXYW_heading{color:var(--dsw-alias-label-primary);margin:0;font-size:13px;"
+      },
+      {
+        "id": null,
+        "len": 405,
+        "head": ".SVAs4q_label{border-radius:var(--dsw-radius-xs);background:var(--dsw-alias-fill-tsp-secondary);max-width:180px;height:2"
+      },
+      {
+        "id": null,
+        "len": 1581,
+        "head": ".cubgiG_menuAnchor{min-width:54px;max-width:100%}.cubgiG_seat{border-radius:var(--dsw-radius-sm);min-width:0;max-width:m"
+      },
+      {
+        "id": null,
+        "len": 2301,
+        "head": ".LSQftG_guideDialog{box-sizing:border-box;gap:0;width:min(640px,100%);height:min(600px,100%);max-height:100%;padding:0}."
+      },
+      {
+        "id": null,
+        "len": 5717,
+        "head": ".rtSEdW_section{max-width:720px;color:var(--dsw-alias-label-primary);flex-direction:column;gap:12px;display:flex}.rtSEdW"
+      },
+      {
+        "id": null,
+        "len": 7985,
+        "head": ".qSYn7G_section{width:100%;max-width:760px;color:var(--dsw-alias-label-primary);flex-direction:column;gap:14px;display:f"
+      },
+      {
+        "id": null,
+        "len": 1805,
+        "head": "._6_jNJa_dialog._6_jNJa_dialog{border-radius:var(--dsw-radius-panel);gap:38px;width:min(488px,100%)}._6_jNJa_categories{"
+      },
+      {
+        "id": null,
+        "len": 771,
+        "head": "._8_XoUG_action{width:calc(28px + var(--dsh-content-font-delta,0px));height:calc(28px + var(--dsh-content-font-delta,0px"
+      },
+      {
+        "id": null,
+        "len": 4922,
+        "head": "._7KE1Ra_root{min-width:0;position:relative}._7KE1Ra_trigger{border-radius:var(--dsw-radius-sm);min-width:0;max-width:mi"
+      },
+      {
+        "id": null,
+        "len": 135,
+        "head": ".nL4_yW_moreButton{width:28px;color:var(--dsw-alias-label-secondary);flex:none;padding:0}.nL4_yW_moreButton svg{width:15"
+      },
+      {
+        "id": null,
+        "len": 1325,
+        "head": ".zjup-W_entry{box-sizing:border-box;border:.5px solid var(--dsw-alias-border-l3);border-radius:var(--dsl-guide-entry-rad"
+      },
+      {
+        "id": null,
+        "len": 307,
+        "head": ".ymsBma_title{text-overflow:ellipsis;white-space:nowrap;min-width:0;overflow:hidden}.ymsBma_name{width:120px;min-width:4"
+      },
+      {
+        "id": null,
+        "len": 1983,
+        "head": ".k-1LKG_root{height:100%;min-height:0;color:var(--dsw-alias-label-primary);font-size:var(--dsh-content-font-size-seconda"
+      },
+      {
+        "id": null,
+        "len": 1382,
+        "head": ".iWlSmW_trigger{border-radius:var(--dsw-radius-sm);min-width:0;max-width:220px;height:28px;color:var(--dsw-alias-label-s"
+      },
+      {
+        "id": null,
+        "len": 851,
+        "head": ".oY77xG_row{border-bottom:.5px solid var(--dsw-alias-border-l2);align-items:center;gap:8px;padding:16px 0;display:flex}."
+      },
+      {
+        "id": null,
+        "len": 2281,
+        "head": ".cvtE3a_card{flex-direction:column;gap:8px;display:flex}.cvtE3a_row{align-items:center;min-height:32px;display:flex}.cvt"
+      },
+      {
+        "id": null,
+        "len": 4492,
+        "head": ".gNWCoW_card{flex-direction:column;display:flex}.gNWCoW_card .gNWCoW_title,.gNWCoW_card .gNWCoW_chevron{color:var(--dsw-"
+      },
+      {
+        "id": null,
+        "len": 5207,
+        "head": ".Nqubda_layer{flex:none;align-items:center;width:100%;height:42px;margin:8px 0 0;display:flex;position:relative}.Nqubda_"
+      },
+      {
+        "id": null,
+        "len": 465,
+        "head": ".tKrPPq_loading{box-sizing:border-box;width:100%;height:100%;min-height:0;color:var(--dsw-alias-label-secondary);font-fa"
+      },
+      {
+        "id": null,
+        "len": 4208,
+        "head": ".dhJKeW_preview{flex-direction:column;flex:auto;height:100%;min-height:0;display:flex}.dhJKeW_header{box-sizing:border-b"
+      },
+      {
+        "id": null,
+        "len": 103,
+        "head": "._0RKuNG_document{min-width:0;font-family:var(--dsw-font,inherit);white-space:normal;padding:10px 12px}"
+      },
+      {
+        "id": null,
+        "len": 211,
+        "head": ".HyIruq_frame{background:var(--dsw-alias-bg-base);border:none;width:100%;height:100%;min-height:240px;display:block}.HyI"
+      },
+      {
+        "id": null,
+        "len": 1249,
+        "head": ".lyqg2a_panel{z-index:2;inset-inline-start:50%;box-sizing:border-box;border:.5px solid var(--dsw-alias-border-l3);border"
+      },
+      {
+        "id": null,
+        "len": 495,
+        "head": ".rIfSMq_frame{height:100%;min-height:0;position:relative;overflow:hidden}.rIfSMq_scrollport{height:100%;overflow:auto}.r"
+      },
+      {
+        "id": null,
+        "len": 704,
+        "head": ".JFRUHG_frame{box-sizing:border-box;width:100%;min-width:100%;height:max-content;min-height:100%;font-family:var(--dsw-f"
+      },
+      {
+        "id": null,
+        "len": 963,
+        "head": ".Java6a_renderer{white-space:normal;flex-direction:column;flex:auto;width:100%;min-width:0;height:100%;min-height:0;disp"
+      },
+      {
+        "id": null,
+        "len": 73,
+        "head": ".Ku8BfW_body{flex-direction:column;height:100%;min-height:0;display:flex}"
+      },
+      {
+        "id": null,
+        "len": 1217,
+        "head": ".JqwYuG_anchor{flex:none;display:inline-flex}.JqwYuG_anchor .JqwYuG_warning,.JqwYuG_anchor .JqwYuG_warning:hover{color:v"
+      },
+      {
+        "id": null,
+        "len": 6270,
+        "head": ".Sixlwa_userRow{flex-direction:column;align-items:flex-end;gap:6px;display:flex}.Sixlwa_userStack{min-width:0;max-width:"
+      },
+      {
+        "id": null,
+        "len": 1918,
+        "head": ".ZkiH0q_text{color:var(--dsw-alias-label-secondary);font:inherit;white-space:pre-wrap;overflow-wrap:anywhere;margin:0}.Z"
+      },
+      {
+        "id": null,
+        "len": 1166,
+        "head": ".XrJvXW_root{min-width:0}.XrJvXW_root[data-open]{padding-bottom:4px}.XrJvXW_chevron{color:var(--dsw-alias-label-secondar"
+      },
+      {
+        "id": null,
+        "len": 2271,
+        "head": ".xzv4MW_actions{height:calc(28px + var(--dsh-content-font-delta,0px));align-items:center;gap:8px;display:flex}.xzv4MW_ti"
+      },
+      {
+        "id": null,
+        "len": 33824,
+        "head": ".EvIC1a_frame{flex-direction:column;flex:auto;min-height:0;display:flex;position:relative;container-type:inline-size}.Ev"
+      },
+      {
+        "id": null,
+        "len": 2187,
+        "head": ".O_Ebla_root{min-width:0}.O_Ebla_title{max-width:100%;color:var(--dsw-alias-label-tertiary);font:inherit;font-size:var(-"
+      },
+      {
+        "id": null,
+        "len": 3542,
+        "head": ".eGxaPq_slot{z-index:7;height:0;padding-inline:calc(var(--dsh-composer-side-clearance) + 16px);pointer-events:none;posit"
+      },
+      {
+        "id": null,
+        "len": 116,
+        "head": ".TTCZqG_visuallyHidden{clip:rect(0 0 0 0);white-space:nowrap;width:1px;height:1px;position:absolute;overflow:hidden}"
+      },
+      {
+        "id": null,
+        "len": 1156,
+        "head": ".lcKema_root{flex-direction:column;display:flex}.lcKema_root:not([data-expanded]){contain:size layout;height:calc(24px +"
+      },
+      {
+        "id": null,
+        "len": 1018,
+        "head": ".hWmORq_root{font-size:var(--dsh-content-font-size,14px);line-height:calc(24px + var(--dsh-content-font-delta,0px));colo"
+      },
+      {
+        "id": null,
+        "len": 859,
+        "head": "._5OnbHa_root{flex-direction:column;display:flex}._5OnbHa_leading{flex-shrink:0}._5OnbHa_title{font-weight:400}._5OnbHa_"
+      },
+      {
+        "id": null,
+        "len": 1007,
+        "head": ".l_V-RG_root{box-sizing:border-box;width:100%;min-width:0;height:calc(33px + var(--dsh-content-font-delta,0px));border:n"
+      },
+      {
+        "id": null,
+        "len": 1083,
+        "head": ".Q51KRG_root{min-width:0;display:inline-flex}.Q51KRG_root+.Q51KRG_root{margin-left:-6px}.Q51KRG_trigger{min-width:0;heig"
+      },
+      {
+        "id": null,
+        "len": 1324,
+        "head": ".bRhRbq_panel{z-index:1100;box-sizing:border-box;border-radius:var(--dsw-radius-lg);background:var(--dsw-specific-menu);"
+      },
+      {
+        "id": null,
+        "len": 105,
+        "head": ".TS9iAW_root{flex-direction:column;gap:16px;display:flex}.TS9iAW_actions{margin-top:4px;margin-left:-6px}"
+      },
+      {
+        "id": null,
+        "len": 1250,
+        "head": ".oz9t_a_root{border:.5px solid var(--dsw-alias-border-l1);border-radius:var(--dsw-radius-xl);background:var(--dsw-alias-"
+      },
+      {
+        "id": null,
+        "len": 959,
+        "head": ".bOPqQW_root{box-sizing:border-box;min-width:0;max-width:100%;font-size:calc(var(--dsh-content-font-size-secondary,13px)"
+      },
+      {
+        "id": null,
+        "len": 802,
+        "head": "._2XZxNq_row{border-bottom:.5px solid var(--dsw-alias-border-l2);align-items:center;gap:8px;padding:16px 0;display:flex}"
+      },
+      {
+        "id": null,
+        "len": 3485,
+        "head": ".iWrAna_card{flex-direction:column;display:flex}.iWrAna_row{height:calc(24px + var(--dsh-content-font-delta,0px));min-wi"
+      },
+      {
+        "id": null,
+        "len": 1342,
+        "head": ".OMoRSG_menuAnchor{flex:none;align-self:center;display:inline-flex}.OMoRSG_split{box-sizing:border-box;border:.5px solid"
+      },
+      {
+        "id": null,
+        "len": 1624,
+        "head": "._76YFJG_dialog{user-select:none;box-sizing:border-box;border:.5px solid var(--dsw-alias-border-inverted)}._76YFJG_conte"
+      },
+      {
+        "id": null,
+        "len": 5345,
+        "head": "._44HXVa_overlay{z-index:1001;background:var(--dsw-alias-bg-base);flex-direction:column;display:flex;position:fixed;inse"
+      },
+      {
+        "id": null,
+        "len": 105,
+        "head": ".ZCYJYW_image{corner-shape:round;object-fit:cover;border-radius:50%;width:100%;height:100%;display:block}"
+      },
+      {
+        "id": null,
+        "len": 1058,
+        "head": ".zwW4-W_card{z-index:40;box-sizing:border-box;border:.5px solid var(--dsw-alias-border-l2-darkmode-thin);background:var("
+      },
+      {
+        "id": null,
+        "len": 1355,
+        "head": ".yHnPSG_root{flex:1;min-width:0}.yHnPSG_anchor{width:100%}.yHnPSG_trigger{user-select:none;border-radius:var(--dsw-radiu"
+      },
+      {
+        "id": null,
+        "len": 3497,
+        "head": ".LcmJYa_section{color:var(--dsw-alias-label-primary);flex-direction:column;gap:16px;padding:8px 0;font-size:13px;line-he"
+      },
+      {
+        "id": null,
+        "len": 777,
+        "head": ".tQSFJa_onboardingOverlay{z-index:900;background:var(--dsw-alias-bg-base);user-select:none;flex-direction:column;display"
+      },
+      {
+        "id": null,
+        "len": 11252,
+        "head": ".ywGceq_page{--page-padding:clamp(40px, 8.333vw, 120px);width:100%;height:100%;min-height:480px;color:var(--dsw-alias-la"
+      },
+      {
+        "id": null,
+        "len": 2275,
+        "head": ".nLMEza_dock{box-sizing:border-box;width:calc(100% - var(--dsh-composer-side-clearance) - var(--dsh-composer-side-cleara"
+      },
+      {
+        "id": null,
+        "len": 532,
+        "head": ".oRe1gG_row{flex-direction:column;align-items:flex-end;gap:6px;display:flex}.oRe1gG_stack{min-width:0;max-width:min(calc"
+      },
+      {
+        "id": null,
+        "len": 1602,
+        "head": ".LVzXQa_frame{padding:6px calc(var(--dsh-composer-side-clearance) + 16px) 10px;justify-content:center;display:flex}.LVzX"
+      },
+      {
+        "id": null,
+        "len": 6273,
+        "head": ".Mbwy4a_frame{padding:6px calc(var(--dsh-composer-side-clearance) + 16px) 10px;justify-content:center;display:flex}.Mbwy"
+      },
+      {
+        "id": null,
+        "len": 2560,
+        "head": ".ROF66W_row{flex-direction:column;justify-content:flex-end;align-items:flex-end;gap:6px;padding:4px 0;display:flex}.ROF6"
+      },
+      {
+        "id": null,
+        "len": 5010,
+        "head": ".DBuyfa_root{width:100%;min-width:0}.DBuyfa_runHeader{box-sizing:border-box;border-radius:var(--dsw-radius-md);backgroun"
+      },
+      {
+        "id": null,
+        "len": 5369,
+        "head": ".ZKlsPq_root{align-items:center;gap:10px;min-width:0;display:inline-flex;position:relative}.ZKlsPq_switcherRoot{min-widt"
+      },
+      {
+        "id": null,
+        "len": 393,
+        "head": ".XJ7liG_frame{border:.5px solid var(--dsw-alias-border-l4);border-radius:var(--dsw-radius-lg);background:var(--dsw-alias"
+      },
+      {
+        "id": null,
+        "len": 74,
+        "head": ".olTFqa_root{width:100%;min-width:0;height:100%;min-height:0;display:flex}"
+      },
+      {
+        "id": null,
+        "len": 596,
+        "head": "._93YTAG_summary{min-width:0;color:inherit;align-items:center;gap:8px;margin-left:8px;font-size:12px;display:flex}._93YT"
+      },
+      {
+        "id": null,
+        "len": 3087,
+        "head": ".IP6KhG_root{--diff-empty-fill:color-mix(in srgb, var(--dsw-alias-interactive-bg-hover) 50%, transparent);box-sizing:bor"
+      },
+      {
+        "id": null,
+        "len": 4091,
+        "head": ".hz8-rW_card{--changes-fill:var(--dsw-static-neutral-50);--changes-hover:var(--dsw-static-neutral-100);border:.5px solid"
+      },
+      {
+        "id": null,
+        "len": 3463,
+        "head": ".nyYjTG_root{--deliverable-fill:var(--dsw-static-neutral-50);--deliverable-hover:var(--dsw-static-neutral-100);flex-dire"
+      },
+      {
+        "id": null,
+        "len": 1928,
+        "head": ".ZDDmpq_root{height:100%}.ZDDmpq_selector{flex:0 auto;min-width:0}.ZDDmpq_selectorLabel{text-overflow:ellipsis;white-spa"
+      },
+      {
+        "id": null,
+        "len": 2488,
+        "head": ".k74WwW_cards{flex-direction:column;gap:10px;display:flex}.k74WwW_card{--plan-card-fill:var(--dsw-static-neutral-50);--p"
+      },
+      {
+        "id": null,
+        "len": 1140,
+        "head": ".rS3zOq_wrap{align-items:center;gap:6px;display:inline-flex}.rS3zOq_chip{border-radius:var(--dsw-radius-sm);background:v"
+      },
+      {
+        "id": null,
+        "len": 1690,
+        "head": ".JVDQca_root{min-width:0;position:relative}.JVDQca_rail{scrollbar-width:none;--dsh-scrollbar-thumb:var(--dsw-alias-scrol"
+      },
+      {
+        "id": null,
+        "len": 725,
+        "head": ".BInVoG_mask{z-index:1000;pointer-events:none;background-color:var(--dsw-alias-bg-mask-drop);backdrop-filter:blur(10px);"
+      },
+      {
+        "id": null,
+        "len": 2580,
+        "head": ".gSkjMW_card{border:.5px solid var(--dsw-alias-border-l2,#0000001f);border-radius:var(--dsw-radius-lg);background:var(--"
+      },
+      {
+        "id": null,
+        "len": 962,
+        "head": "._54WpYG_rail{min-width:0;margin-bottom:-6px;padding:2px 10px 0}._54WpYG_imageItem{width:64px;height:64px;position:relat"
+      },
+      {
+        "id": null,
+        "len": 1784,
+        "head": ".R_Yw7q_gallery{flex-wrap:wrap;gap:10px;max-width:100%;display:flex}.R_Yw7q_gallery[data-align=end]{justify-content:flex"
+      },
+      {
+        "id": "dsh-settings-ui-style",
+        "len": 0,
+        "head": ""
+      }
+    ],
+    "bodyAttrs": {
+      "style": "--dsh-content-font-size: 14px;"
+    },
+    "storageKeys": [
+      "dsh.workspace.view.v5",
+      "dsh.sidebar-right.v1.session-2706f68c-a82a-4dfc-95b3-f4abb3626af2",
+      "dsh.sessions.current"
+    ],
+    "textSample": "新会话\nCtrl\n+\nAlt\n+\nN\n插件\n工作区\n默认工作区\n新会话\n设置\n探索未至之境\n预览版\n默认工作区\n标准模式\n描述你想要构建的内容, / 调用指令, @ 文件或对话\n工作区内修改\nDeepSeek-V41-Flash\nHigh\n预览版说明\n\nDeepSeek Harness 目前的 0.2 版本仍处于预览阶段，还有许多地方需要持续改进和打磨，希望听取广大开发者和用户的反馈建议。现在，新的桌面端面向广泛用户，开发者相关的进阶功能可在配置中开启使用。预计 DeepSeek Harness 的产品功能以及插件 API 都会继续快速迭代、持续演化，并逐渐趋于稳定。\n\n我们期待与全球用户和开发者一起，在开源、可复用、可组合的基础设施之上，共同探索智能上限。欢迎大家用 DeepSeek Harness 将想法变成现实，与社区一起丰富插件生态。\n\n继续"
+  },
+  "settingsOpen": {
+    "opened": false,
+    "cands": [
+      {
+        "i": 9,
+        "text": "设置",
+        "aria": "设置",
+        "title": null,
+        "slug": ""
+      }
+    ]
+  },
+  "panelAfterOpen": {
+    "url": "http://127.0.0.1:3067/",
+    "viewport": {
+      "w": 1440,
+      "h": 1000
+    },
+    "dark": false,
+    "panelPresent": false,
+    "panelRect": null,
+    "panelStyle": null,
+    "tweakStyleExists": true,
+    "tweakCss": "",
+    "uiStyleExists": true,
+    "doc": {
+      "scrollW": 1440,
+      "clientW": 1440,
+      "overflowX": false
+    },
+    "storageKeys": [
+      "dsh.workspace.view.v5",
+      "dsh.sidebar-right.v1.session-2706f68c-a82a-4dfc-95b3-f4abb3626af2",
+      "dsh.sessions.current"
+    ],
+    "bodyBg": "rgb(255, 255, 255)"
+  },
+  "sections": {
+    "panel": false,
+    "items": []
+  },
+  "hasSettingsUiSection": {
+    "panel": false
+  },
+  "errors": [],
+  "consoleLog": [],
+  "network": [
+    {
+      "path": "/plugins/??@deepseek-ai/dsh-client-modules/client.js&rev=5c32acb5d9ec",
+      "method": "GET",
+      "status": 200,
+      "utc": "2026-10-22T01:30:31.831Z"
+    },
+    {
+      "path": "/plugins/??@deepseek-ai/dsh-api-remotes/client.js,@deepseek-ai/dsh-client-ui-deliverables/client.js,@deepseek-ai/dsh-typert-registry/client.js,@deepseek-ai/dsh-client-connection/client.js,@deepseek-ai/dsh-api-workspace-controller/client.js,@deepseek-ai/dsh-api-session-controller/client.js,@deepseek-ai/dsh-client-ui-directory-picker-native/client.js&rev=34527dc94ea4",
+      "method": "GET",
+      "status": 200,
+      "utc": "2026-10-22T01:30:31.840Z"
+    },
+    {
+      "path": "/plugins/??@deepseek-ai/dsh-client-ui-open-in-app/client.js,@deepseek-ai/dsh-api-gateway/client.js,@deepseek-ai/dsh-api-job-controller/client.js,@deepseek-ai/dsh-api-terminal-controller/client.js,@deepseek-ai/dsh-api-workspace-files/client.js,@deepseek-ai/dsh-client-ui-settings-account/client.js,@deepseek-ai/dsh-client-hmr/client.js,@deepseek-ai/dsh-cordis-client-runner/client.js,@deepseek-ai/dsh-client-ui-theme/client.js,@deepseek-ai/dsh-client-locale/client.js,@deepseek-ai/dsh-client-shortcuts/client.js,@deepseek-ai/dsh-client-ui-shortcuts/client.js,@deepseek-ai/dsh-client-ui-layout/client.js,@deepseek-ai/dsh-client-ui-renderer/client.js,@deepseek-ai/dsh-client-ui-session/client.js,@deepseek-ai/dsh-client-resources/client.js,@deepseek-ai/dsh-client-ui-sidebar/client.js,@deepseek-ai/dsh-client-ui-sidebar-right/client.js,@deepseek-ai/dsh-client-ui-sidebar-documentpreview/client.js,@deepseek-ai/dsh-client-ui-sidebar-terminal/client.js,@deepseek-ai/dsh-client-ui-sidebar-files/client.js,@deepseek-ai/dsh-client-ui-settings/client.js,@deepseek-ai/dsh-client-ui-settings-general/client.js,@deepseek-ai/dsh-client-ui-settings-models/client.js,@deepseek-ai/dsh-client-ui-plugin-manager/client.js,@deepseek-ai/dsh-client-ui-settings-plugin-inventory/client.js,@deepseek-ai/dsh-client-ui-conversation/client.js,@deepseek-ai/dsh-client-ui-approval/client.js,@deepseek-ai/dsh-client-ui-chat/client.js,@deepseek-ai/dsh-client-ui-brand-official/client.js,@deepseek-ai/dsh-client-ui-attachment/client.js,@deepseek-ai/dsh-client-ui-tool/client.js,@deepseek-ai/dsh-client-ui-cordis/client.js,@deepseek-ai/dsh-client-ui-workspace/client.js,@deepseek-ai/dsh-client-ui-workflow-run/client.js,@deepseek-ai/dsh-client-ui-input-trigger/client.js,@deepseek-ai/dsh-client-ui-commands/client.js,@deepseek-ai/dsh-client-ui-skill/client.js,@deepseek-ai/dsh-client-ui-subagent/client.js,@deepseek-ai/dsh-client-ui-reference/client.js,@deepseek-ai/dsh-client-ui-jobs/client.js,@deepseek-ai/dsh-client-ui-goal/client.js,@deepseek-ai/dsh-client-ui-message-feedback/client.js,@deepseek-ai/dsh-client-ui-model-selection/client.js,@deepseek-ai/dsh-client-ui-permission-presets/client.js,@deepseek-ai/dsh-client-ui-agent-preset/client.js,@deepseek-ai/dsh-client-ui-settings-session-log/client.js,@deepseek-ai/dsh-client-ui-settings-plugins/client.js,@deepseek-ai/dsh-client-ui-settings-shell/client.js,@deepseek-ai/dsh-client-ui-settings-agent-loop/client.js,@deepseek-ai/dsh-client-ui-settings-subagent/client.js,@deepseek-ai/dsh-client-ui-settings-web-search/client.js,@deepseek-ai/dsh-client-ui-plan/client.js,@deepseek-ai/dsh-client-ui-user-questions/client.js,@deepseek-ai/dsh-client-ui-trajectory/client.js,@weibaohui/dsh-settings-ui/client.js,@deepseek-ai/dsh-session-log-export/client.js,@deepseek-ai/dsh-client-file-upload/client.js&rev=48066242ef2f",
+      "method": "GET",
+      "status": 200,
+      "utc": "2026-10-22T01:30:32.015Z"
+    },
+    {
+      "path": "/api/settings/describe",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:30:32.324Z"
+    },
+    {
+      "path": "/api/dynamicCordisRunner/syncInspectManifest",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:30:32.327Z"
+    },
+    {
+      "path": "/api/credentials/describe",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:30:32.327Z"
+    },
+    {
+      "path": "/api/dynamicCordisRunner/inventory",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:30:32.327Z"
+    },
+    {
+      "path": "/api/session/modelCatalog",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:30:32.330Z"
+    },
+    {
+      "path": "/plugins/events",
+      "method": "GET",
+      "status": 200,
+      "utc": "2026-10-22T01:30:32.331Z"
+    },
+    {
+      "path": "/api/agentPresets/list",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:30:32.352Z"
+    },
+    {
+      "path": "/api/permissionPresets/catalog",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:30:32.362Z"
+    },
+    {
+      "path": "/api/dynamicCordisRunner/inventory",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:30:32.363Z"
+    },
+    {
+      "path": "/api/agentPresets/list",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:30:32.363Z"
+    },
+    {
+      "path": "/api/session/list",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:30:32.363Z"
+    },
+    {
+      "path": "/api/agentPresets/list",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:30:32.382Z"
+    },
+    {
+      "path": "/api/session/modelCatalog",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:30:32.383Z"
+    },
+    {
+      "path": "/api/credentials/describe",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:30:32.396Z"
+    },
+    {
+      "path": "/api/settings/describe",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:30:32.405Z"
+    },
+    {
+      "path": "/api/dynamicCordisRunner/syncInspectManifest",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:30:32.413Z"
+    },
+    {
+      "path": "/api/credentials/describe",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:30:32.425Z"
+    },
+    {
+      "path": "/api/workspace/initializeDefault",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:30:32.827Z"
+    },
+    {
+      "path": "/api/session/create",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:30:32.878Z"
+    },
+    {
+      "path": "/api/agentPresets/list",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:30:32.936Z"
+    },
+    {
+      "path": "/api/commands/list",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:30:32.948Z"
+    },
+    {
+      "path": "/api/skills/list",
+      "method": "POST",
+      "status": 200,
+      "utc": "2026-10-22T01:30:32.959Z"
+    }
+  ],
+  "api": [
+    {
+      "path": "/dsh-settings-ui/api/status",
+      "method": "GET",
+      "status": 200,
+      "utc": "2026-10-22T01:30:32.325Z",
+      "body": "{\"settings\":{\"size\":\"default\",\"customWidth\":1280,\"customHeight\":960,\"opacity\":100,\"bgMode\":\"default\",\"bgColorLight\":\"#eef1f5\",\"bgColorDark\":\"#1e2a38\"}}"
+    }
+  ]
+}

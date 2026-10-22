@@ -1,0 +1,214 @@
+{
+  "utc": "2026-10-22T01:10:59.142Z",
+  "baseline": {
+    "combo": "Alt+Shift+KeyY",
+    "dispatchReturned": true,
+    "claimedBySomeone": false,
+    "defaultPrevented": false,
+    "keysAfter": [
+      "dsh.session-hotkeys.dsvHidden"
+    ]
+  },
+  "bindings": [
+    {
+      "combo": "Alt+Digit1",
+      "dispatchReturned": false,
+      "claimedBySomeone": true,
+      "defaultPrevented": true,
+      "keysAfter": [
+        "dsh.session-hotkeys.dsvHidden"
+      ]
+    },
+    {
+      "combo": "Alt+Digit2",
+      "dispatchReturned": false,
+      "claimedBySomeone": true,
+      "defaultPrevented": true,
+      "keysAfter": [
+        "dsh.session-hotkeys.dsvHidden"
+      ]
+    },
+    {
+      "combo": "Alt+KeyN",
+      "dispatchReturned": false,
+      "claimedBySomeone": true,
+      "defaultPrevented": true,
+      "keysAfter": [
+        "dsh.session-hotkeys.dsvHidden"
+      ]
+    },
+    {
+      "combo": "Alt+KeyP",
+      "dispatchReturned": false,
+      "claimedBySomeone": true,
+      "defaultPrevented": true,
+      "keysAfter": [
+        "dsh.session-hotkeys.dsvHidden"
+      ]
+    },
+    {
+      "combo": "Alt+KeyB",
+      "dispatchReturned": false,
+      "claimedBySomeone": true,
+      "defaultPrevented": true,
+      "keysAfter": [
+        "dsh.session-hotkeys.dsvHidden"
+      ]
+    },
+    {
+      "combo": "Alt+KeyM",
+      "dispatchReturned": false,
+      "claimedBySomeone": true,
+      "defaultPrevented": true,
+      "keysAfter": [
+        "dsh.session-hotkeys.dsvHidden"
+      ]
+    },
+    {
+      "combo": "Alt+KeyW",
+      "dispatchReturned": false,
+      "claimedBySomeone": true,
+      "defaultPrevented": true,
+      "keysAfter": [
+        "dsh.session-hotkeys.dsvHidden"
+      ]
+    },
+    {
+      "combo": "Alt+Shift+KeyF",
+      "dispatchReturned": false,
+      "claimedBySomeone": true,
+      "defaultPrevented": true,
+      "keysAfter": [
+        "dsh.session-hotkeys.dsvHidden"
+      ]
+    },
+    {
+      "combo": "Alt+Shift+KeyA",
+      "dispatchReturned": false,
+      "claimedBySomeone": true,
+      "defaultPrevented": true,
+      "keysAfter": [
+        "dsh.session-hotkeys.dsvHidden"
+      ]
+    },
+    {
+      "combo": "Alt+Shift+KeyU",
+      "dispatchReturned": true,
+      "claimedBySomeone": false,
+      "defaultPrevented": false,
+      "keysAfter": [
+        "dsh.session-hotkeys.dsvHidden"
+      ]
+    },
+    {
+      "combo": "Alt+Shift+Digit1",
+      "dispatchReturned": true,
+      "claimedBySomeone": false,
+      "defaultPrevented": false,
+      "keysAfter": [
+        "dsh.session-hotkeys.dsvHidden"
+      ]
+    },
+    {
+      "combo": "Ctrl+Alt+Digit1",
+      "dispatchReturned": true,
+      "claimedBySomeone": false,
+      "defaultPrevented": false,
+      "keysAfter": [
+        "dsh.session-hotkeys.dsvHidden"
+      ]
+    },
+    {
+      "combo": "Alt+Backquote",
+      "dispatchReturned": true,
+      "claimedBySomeone": false,
+      "defaultPrevented": false,
+      "keysAfter": [
+        "dsh.session-hotkeys.dsvHidden"
+      ]
+    },
+    {
+      "combo": "Alt+ArrowDown",
+      "dispatchReturned": true,
+      "claimedBySomeone": false,
+      "defaultPrevented": false,
+      "keysAfter": [
+        "dsh.session-hotkeys.dsvHidden"
+      ]
+    },
+    {
+      "combo": "Escape",
+      "dispatchReturned": false,
+      "claimedBySomeone": true,
+      "defaultPrevented": true,
+      "keysAfter": [
+        "dsh.session-hotkeys.dsvHidden"
+      ]
+    }
+  ],
+  "beforeArchive": {
+    "active": "session:session-b82a64e0-a6be-45a6-a240-f057d74ca6e0",
+    "n": 2,
+    "toast": null,
+    "focus": {
+      "tag": "INPUT",
+      "role": null,
+      "aria": "API 密钥",
+      "cls": "zGbnIq_input"
+    }
+  },
+  "archivedBefore": [],
+  "confirmVisible": {
+    "found": true,
+    "visible": true,
+    "rect": {
+      "w": 382,
+      "h": 196
+    },
+    "text": "归档会话 default-workspace 归档不会删除日志，但浏览器端无法恢复会话。 取消 归档 Enter 确认 · Esc 取消 · ←→ 切换",
+    "maskVisible": true
+  },
+  "modalSuspendsBindings": {
+    "combo": "Alt+Digit2",
+    "dispatchReturned": true,
+    "claimedBySomeone": false,
+    "defaultPrevented": false,
+    "keysAfter": [
+      "dsh.session-hotkeys.dsvHidden"
+    ]
+  },
+  "afterEsc": {
+    "active": "session:session-b82a64e0-a6be-45a6-a240-f057d74ca6e0",
+    "n": 2,
+    "toast": null,
+    "focus": {
+      "tag": "INPUT",
+      "role": null,
+      "aria": "API 密钥",
+      "cls": "zGbnIq_input"
+    }
+  },
+  "confirmAfterEsc": {
+    "found": true,
+    "visible": true
+  },
+  "archivedAfterEsc": [],
+  "confirm2": {
+    "visible": true,
+    "text": "归档会话 default-workspace 归档不会删除日志，但浏览器端无法恢复会话。 取消 归档 Enter 确认 · Esc 取消 · ←→ 切换"
+  },
+  "afterEnter": {
+    "active": "session:session-b82a64e0-a6be-45a6-a240-f057d74ca6e0",
+    "n": 2,
+    "toast": null,
+    "focus": {
+      "tag": "INPUT",
+      "role": null,
+      "aria": "API 密钥",
+      "cls": "zGbnIq_input"
+    }
+  },
+  "archivedAfterEnter": [],
+  "auditJson": null,
+  "errors": []
+}

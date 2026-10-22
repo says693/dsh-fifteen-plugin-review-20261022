@@ -1,0 +1,1 @@
+[dsh-cost-meter] wrote default pricing table to H:\CODEX\fifteen-plugin-reviews-20261022\r3-03-cost-meter\isolated-home\user-home\.dsh\cost-pricing.json

@@ -1,0 +1,18 @@
+{
+  "stage": "completed",
+  "state": "completed",
+  "blockers": [],
+  "files": [
+    "PLAN.md",
+    "PROVENANCE.json",
+    "RESULTS.json",
+    "REPORT.md",
+    "ISSUE_DRAFT.md",
+    "SITE_REVIEW.md",
+    "REPRODUCE.md",
+    "STATUS.json"
+  ],
+  "evidence_count": 68,
+  "confirmed_defects": 2,
+  "updated_at": "2026-10-22T10:20:04+08:00"
+}

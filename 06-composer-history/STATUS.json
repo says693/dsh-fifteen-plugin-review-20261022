@@ -1,0 +1,79 @@
+{
+  "stage": "completed",
+  "state": "completed",
+  "subject": "dsh-composer-history@0.8.15 (PerryLink/dsh-composer-history)",
+  "host": "@deepseek-ai/dsh 0.2.0-rc.2",
+  "startedAt": "2026-10-22T08:56:23+08:00",
+  "finishedAt": "2026-10-22T09:30:00+08:00",
+  "blocked": null,
+  "artifacts": [
+    { "file": "PLAN.md", "bytes": 7562, "note": "完成判据 + 7 点验证项 + 正常/异常成对表 + 停止条件" },
+    { "file": "PROVENANCE.json", "bytes": 7812, "note": "作者/版本/提交/双哈希/LICENSE/9 文件 sha256/宿主与工具/查重/进程" },
+    { "file": "evidence/", "note": "原始命令输出、探针读数 JSON、截图 PNG、watch 日志" },
+    { "file": "RESULTS.json", "bytes": 21697, "note": "32 项检查，每项含预期/实际/证据路径/四态" },
+    { "file": "REPORT.md", "bytes": 7559, "note": "技术版：先发现与影响，再读数、环境、限制；无总分无评级" },
+    { "file": "ISSUE_DRAFT.md", "bytes": 9663, "note": "悬赏 intake 草稿，marker {project:bench,target:PerryLink/dsh-composer-history,form:intake}；confirmed 缺陷 0 条" },
+    { "file": "SITE_REVIEW.md", "bytes": 3807, "note": "评测站稿件，CJK 1092 字（800–1500 内），六段式结构，禁词 0 命中" },
+    { "file": "REPRODUCE.md", "bytes": 9328, "note": "9 步复跑指引 + 7 条已知环境坑表" },
+    { "file": "STATUS.json", "note": "本文件" }
+  ],
+  "counts": {
+    "checksTotal": 32,
+    "confirmed": 27,
+    "uncertain": 3,
+    "untested": 2,
+    "confirmedDefects": 0
+  },
+  "uncertainItems": [
+    { "id": "I2", "why": "对照实验开始时搜索浮层已处于打开态，无法把「浮层出现」归因到那次 Ctrl+R；只能确认按键未被吞" },
+    { "id": "J1", "why": "只验证了取词后单次追加输入，未覆盖取词后立即连按 ↑ 的组合" },
+    { "id": "D1", "why": "跨工作区隔离的现象成立，但成因是 localStorage 按 origin 隔离，不能据此说插件做了工作区级过滤" }
+  ],
+  "untestedItems": [
+    { "id": "D2", "what": "historyScope:'workspace' 时并入同工作区其他会话", "missing": "改 profile Config + 重启宿主 + 双会话对照读数" },
+    { "id": "D2b", "what": "同 origin 下不同工作区是否隔离", "missing": "需在同一个 origin 里切换两个工作区，本轮宿主 cwd 固定，未构造" }
+  ],
+  "supersededSuspicions": [
+    { "suspicion": "Esc 关不掉 Ctrl+R 搜索浮层", "resolution": "能关；判据错误 —— 浮层节点常驻 DOM 只切 display，已用 getComputedStyle 复测" },
+    { "suspicion": "20014 字条目召回后草稿不出现", "resolution": "正常召回；等待策略与采样点错误，逐次 ↑ 并按长度收敛后 settle 14ms" },
+    { "suspicion": "输入草稿后按 ↑ 未召回", "resolution": "正常召回；同一步里先重设 caret 再读导致读到中间态" }
+  ],
+  "dedupe": {
+    "reviewSite": {
+      "queriedAt": "2026-10-22T09:14:56+08:00",
+      "method": "?q= 服务端不过滤，改为全量：/api/reviews 172 条 + /api/plugins 133 条本地扫描",
+      "hits": 0,
+      "perryLinkPluginsListed": ["dsh-memento"],
+      "targetListed": false
+    },
+    "bountyRepo": {
+      "queriedAt": "2026-10-22T09:14:00+08:00",
+      "queries": { "dsh-composer-history": 1, "PerryLink": 12, "composer": 6 },
+      "sameScopeHits": 0,
+      "note": "唯一 1 条命中是 #1317 pi2dsh 安全测评，正文不含本插件，按分词命中"
+    },
+    "verdict": "两站均查清，无同范围重复，可作首报候选"
+  },
+  "processes": {
+    "selfStarted": [
+      { "tag": "run4", "pid": 20832, "port": 5470, "status": "stopped" },
+      { "tag": "run5", "pid": 33680, "port": 5470, "status": "stopped" },
+      { "tag": "run6", "pid": 26460, "port": 8975, "status": "stopped" }
+    ],
+    "wrapperJobs": ["pwsh-1b905e32e7524592", "pwsh-53bc5a3db8f44dab", "pwsh-96e69a2cd56b4554"],
+    "portCheck": "Get-NetTCPConnection -State Listen -LocalPort 5470,8975 → 无监听",
+    "processCheck": "按 CommandLine 含本任务目录过滤 node.exe → 0 条",
+    "browserCheck": "按 CommandLine 含 browser-profile-a / fresh-* 过滤 msedge.exe → 0 条",
+    "userGuiUntouched": true
+  },
+  "boundaries": {
+    "submitted": false,
+    "uploaded": false,
+    "createdPublicRepo": false,
+    "modifiedPluginSource": false,
+    "modifiedSkillPack": false,
+    "spawnedSubagent": false,
+    "usedPaidModel": false,
+    "readRealSecrets": false
+  }
+}

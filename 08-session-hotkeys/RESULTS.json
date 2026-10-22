@@ -1,0 +1,292 @@
+{
+  "subject": {
+    "name": "dsh-session-hotkeys",
+    "version_tested": "1.9.5",
+    "artifact": "npm published tarball",
+    "note": "测的是 npm 发布件 1.9.5；仓库固定提交 d1f38ebc… 仅作差异核对，仓库 HEAD 为 1.9.2，两者不同"
+  },
+  "host": "@deepseek-ai/dsh 0.2.0-rc.2",
+  "browser": "Edge (Playwright 1.64.1 headless)",
+  "generated_utc": "2026-10-22T01:15:07Z",
+  "checks": [
+    {
+      "id": "A1",
+      "area": "install",
+      "check": "发布件哈希与 registry 声明一致",
+      "expected": "本地复算的 shasum / integrity 与 npm registry 一致",
+      "actual": "SHA1 = 1d7500442ea03345b3d234db46fb703a34169c58，与 dist.shasum 完全相同；SHA512 base64 = sha512-e9CkjPW+…Qnd91Q==，与 dist.integrity 完全相同；tarball 53690 字节，解包 7 文件",
+      "verdict": "confirmed",
+      "evidence": ["evidence/hashes.txt", "evidence/npm-pack.txt", "temp/npm-view.json"]
+    },
+    {
+      "id": "A2",
+      "area": "install",
+      "check": "dsh plugin add 能否装入隔离 profile",
+      "expected": "安装成功，profile bundles 含本插件",
+      "actual": "`dsh plugin --profile shk add <解包目录>` 成功，pnpm 报 `+ dsh-session-hotkeys link:H:/…/source/pkg/package`；profile package.json 的 dsh.profile.bundles = [@deepseek-ai/dsh-base, @deepseek-ai/dsh-web-app, dsh-session-hotkeys]；无需 allow-version 豁免",
+      "verdict": "confirmed",
+      "evidence": ["evidence/plugin-add.txt", "isolated-home/profiles/shk/package.json"]
+    },
+    {
+      "id": "A3",
+      "area": "install",
+      "check": "客户端是否真的注入页面",
+      "expected": "client.js 被下发并在页面产生 shk-* 节点与 localStorage 键",
+      "actual": "三处独立读数：/plugins/?? 资源清单末尾含 `dsh-session-hotkeys/client.js`（HTTP 200）；页面存在 class 含 `shk-` 的元素（首屏 `shk-pinbtn`，面板打开时 127 个）；localStorage 出现 `dsh.session-hotkeys.dsvHidden`",
+      "verdict": "confirmed",
+      "evidence": ["evidence/run1-01-boot-report.json", "evidence/run1-01-boot-boot.png", "evidence/run1-15-panel-keys-report.json"]
+    },
+    {
+      "id": "B1",
+      "area": "keymap",
+      "check": "README 键位表 vs 源码 WIN_DEFAULTS vs 面板显示",
+      "expected": "三者一致",
+      "actual": "18 条逐项一致。面板「按键」页 keyval 依次为 Alt+` / Alt+1-9 / Alt+↑ / Alt+↓ / Alt+N / Alt+P / Alt+B / Alt+W / Alt+M / Alt+Enter / Esc / Alt+Shift+Enter / Alt+Shift+F / Alt+Shift+A / Alt+Shift+U / Alt+Shift+R / Alt+Shift+1-9 / Ctrl+Alt+1-9；源码 WIN_DEFAULTS 的 code 与修饰键逐条对应；README 表同序",
+      "verdict": "confirmed",
+      "evidence": ["evidence/run1-15-panel-keys-report.json", "evidence/run1-15-panel-keys-panel-keys.png", "source/pkg/package/lib/client.js (lines 99-115)"]
+    },
+    {
+      "id": "B2",
+      "area": "keymap",
+      "check": "每个默认键按下后是否被插件接管",
+      "expected": "18 个默认绑定都被插件 claim（preventDefault）",
+      "actual": "真实键盘逐条验证，全部生效并给出对应 toast/面板/焦点变化：Alt+1/2（切换）、Alt+N（新建）、Alt+P（面板）、Alt+B（侧栏 280→56→280）、Alt+W（分屏）、Alt+Shift+F（聚焦搜索框 bhn1Oq_searchInput）、Alt+Shift+A（归档卡片）、Alt+Shift+U（打开面板并落「已归档」页）、Alt+Shift+R（重命名 prompt）、Alt+Shift+1（固定槽位 1）、Ctrl+Alt+1（跳转固定槽位 1）、Alt+`（导航模式「2 个目标」）、Alt+↓/↑（上/下一个会话）、Alt+M（模型按钮获 shk-modelfocus 环）、Alt+Enter（回输入框）、Esc（焦点转聊天区/再按还原）。注意：用同步 dispatchEvent 读 defaultPrevented 会漏判（插件先 preventDefault 再 stopPropagation），改用 dispatchEvent 返回值 + 真实键盘双重确认",
+      "verdict": "confirmed",
+      "evidence": ["evidence/run1-21-realkeys-report.json", "evidence/run1-19-prevent-confirm-report.json", "evidence/run1-17-suppress-report.json", "evidence/run1-18-archive-conflict-report.json"]
+    },
+    {
+      "id": "C1",
+      "area": "actions",
+      "check": "Alt+1..9 位置切换是否真的切换会话",
+      "expected": "按第 N 个位置切到第 N 个会话；位置不存在时只提示",
+      "actual": "2 个会话时：Alt+1 → toast「已在会话 1 · default-workspace」，aria-selected 不变（本来就在 1）；Alt+2 → active 由 session-b82a64e0 变为 session-ca05d14f，toast「已切换到会话 2 · 周记·第一篇」，changed=true；Alt+3 → toast「第 3 个位置没有会话」；Alt+5 → toast「第 5 个位置没有会话」，active 均不变",
+      "verdict": "confirmed",
+      "evidence": ["evidence/run1-14-hotkeys-report.json", "evidence/run1-14-hotkeys-positional.png"]
+    },
+    {
+      "id": "C2",
+      "area": "actions",
+      "check": "Alt+↑ / Alt+↓ 循环切换",
+      "expected": "按显示顺序上/下一个，到头回绕",
+      "actual": "真实键盘：Alt+↓ 使 active 由 b82a64e0 变为 ca05d14f（toast「已切换到下一个会话 · 周记·第一篇」，changed=true）；Alt+↑ 在两会话下回绕到同一个会话（toast「已切换到上一个会话 · 周记·第一篇」），与 README「到列表最顶部时回绕」一致",
+      "verdict": "confirmed",
+      "evidence": ["evidence/run1-21-realkeys-report.json", "evidence/run1-14-hotkeys-report.json"]
+    },
+    {
+      "id": "C3",
+      "area": "actions",
+      "check": "Alt+N 新建会话",
+      "expected": "真的新建一个会话",
+      "actual": "成立，但有前提。当前会话为空白会话时，按 Alt+N 只发 POST /api/session/create 且请求体带 sessionId=<当前会话>，宿主返回 ok:true 与同一个 sessionId，侧栏行数 1→1；把当前会话变成有内容（发一条消息）后，再按 Alt+N，请求体只带 workspaceId，侧栏 1→2，出现 session-b82a64e0。归因对照：宿主自带的「新会话 Ctrl + Alt + N」按钮与宿主原生 Ctrl+Alt+N 在空白会话下同样 1→1。结论：新建本身可用，空白会话被复用是宿主语义，不是插件缺陷",
+      "verdict": "confirmed",
+      "evidence": ["evidence/run1-13-seed2-report.json", "evidence/run1-05-createresp-report.json", "evidence/run1-04-attrib-report.json"]
+    },
+    {
+      "id": "C4",
+      "area": "actions",
+      "check": "Alt+Shift+A 归档：先确认、Esc 取消、Enter 确认",
+      "expected": "弹确认卡片；Esc 取消且不归档；Enter 确认并归档",
+      "actual": "卡片确实出现：`.shk-confirm` 可见 382×196，文案「归档会话 / default-workspace / 归档不会删除日志，但浏览器端无法恢复会话。/ 取消 / 归档 / Enter 确认 · Esc 取消 · ←→ 切换」，焦点自动移到 danger 按钮（shk-confirm-btn-danger）；按 Esc 后卡片关闭（found=false）且 workspace.json 的 global.archivedSessionIds 仍为 []，未误归档。Enter 确认归档一步未取得可用读数（见 U1）",
+      "verdict": "confirmed",
+      "evidence": ["evidence/run1-20-confirm-focus-report.json", "evidence/run1-20-confirm-focus-card-open-body-focus.png", "evidence/run1-19-prevent-confirm-report.json"]
+    },
+    {
+      "id": "C5",
+      "area": "actions",
+      "check": "Alt+B 折叠 / 展开会话栏",
+      "expected": "侧边栏收起再展开",
+      "actual": "aside 宽度 280px → 56px（收起）→ 280px（展开），按钮 aria-label 由「收起侧边栏」变「打开侧边栏」再变回，往返可逆",
+      "verdict": "confirmed",
+      "evidence": ["evidence/run1-18-archive-conflict-report.json"]
+    },
+    {
+      "id": "C6",
+      "area": "actions",
+      "check": "Alt+Shift+F / Alt+M / Alt+Enter 的焦点动作",
+      "expected": "分别聚焦搜索框、模型选择、输入框",
+      "actual": "Alt+Shift+F → activeElement 变 INPUT.bhn1Oq_searchInput；Alt+M → BUTTON[aria-label=选择模型，当前 DeepSeek-V41-Flash…] 并加 shk-modelfocus 高亮环，toast「已聚焦模型选择 · Enter 打开菜单」；Alt+Enter → activeElement 变 DIV[role=textbox].uV2eYG_input，toast「已回到输入框」",
+      "verdict": "confirmed",
+      "evidence": ["evidence/run1-17-suppress-report.json"]
+    },
+    {
+      "id": "C7",
+      "area": "actions",
+      "check": "普通打字是否误触热键",
+      "expected": "输入框里打裸字母不触发任何动作",
+      "actual": "输入框聚焦后依次按 a b m n p w r：会话未切换（changed=false）、无 toast、搜索框仍为空、侧栏未折叠，输入框内容变成 `abmnpwr`（字符正常进入），无 pageerror",
+      "verdict": "confirmed",
+      "evidence": ["evidence/run1-17-suppress-report.json", "evidence/run1-17-suppress-plain-letters.png"]
+    },
+    {
+      "id": "D1",
+      "area": "rebind",
+      "check": "面板录制改键是否写入 localStorage",
+      "expected": "localStorage 的 dsh.session-hotkeys.keys 更新，面板显示新键",
+      "actual": "点「顺序切换第 N 个会话」行的「改键」→ 行内出现「正在录制：请按新组合键（Esc 取消）…」；按 Ctrl+Shift+3 → toast「已保存：顺序切换第 N 个会话 → Ctrl+Shift+1-9」；localStorage switchDigit 变为 {ctrl:true,alt:false,shift:true,meta:false,digit:true,code:null}；面板 keyval 变为 Ctrl+Shift+1-9",
+      "verdict": "confirmed",
+      "evidence": ["evidence/run1-16-rebind-report.json", "evidence/run1-16-rebind-after-rebind.png"]
+    },
+    {
+      "id": "D2",
+      "area": "rebind",
+      "check": "改绑后新键生效、旧键失效",
+      "expected": "新键可用；旧键不再触发",
+      "actual": "Ctrl+Shift+2 → active 由 b82a64e0 变 ca05d14f，toast「已切换到会话 2 · 周记·第一篇」，changed=true；Alt+1 → 不再切换，changed=false，toast 变成「已聚焦聊天区 · ↑↓ / PgUp / PgDn 滚动」（Alt+1 已不被识别为切换键）",
+      "verdict": "confirmed",
+      "evidence": ["evidence/run1-16-rebind-report.json"]
+    },
+    {
+      "id": "D3",
+      "area": "rebind",
+      "check": "录制与其他动作冲突的键是否被拒",
+      "expected": "提示冲突并拒绝保存",
+      "actual": "未测到。本轮改绑只用了不与现有绑定冲突的 Ctrl+Shift+数字，没有单独构造冲突组合，源码里存在 recConflict 分支（client.js:2011-2018）但未在页面上触发",
+      "verdict": "untested",
+      "evidence": ["source/pkg/package/lib/client.js (lines 2011-2018)"]
+    },
+    {
+      "id": "D4",
+      "area": "rebind",
+      "check": "恢复默认",
+      "expected": "键位回到平台默认，自定义失效",
+      "actual": "点「恢复默认」→ toast「已恢复 Windows 默认键位」；localStorage switchDigit 回到 {ctrl:false,alt:true,shift:false,digit:true}；面板 18 条 keyval 全部回到默认（Alt+1-9 等）",
+      "verdict": "confirmed",
+      "evidence": ["evidence/run1-16-rebind-report.json", "evidence/run1-16-rebind-after-reset.png"]
+    },
+    {
+      "id": "E1",
+      "area": "suppression",
+      "check": "输入框聚焦时 Alt+数字是否仍可切换（README 卖点）",
+      "expected": "仍可切换",
+      "actual": "输入框聚焦状态下按 Alt+2，active 由 b82a64e0 变 ca05d14f，toast「已切换到会话 2 · 周记·第一篇」，changed=true；切换后输入框文本仍为空，未被污染",
+      "verdict": "confirmed",
+      "evidence": ["evidence/run1-17-suppress-report.json"]
+    },
+    {
+      "id": "E2",
+      "area": "suppression",
+      "check": "IME 组合态下的 Esc 是否被让给输入法",
+      "expected": "不抢焦点、不吞 Esc",
+      "actual": "对输入框派发 compositionstart 后再派发 isComposing=true / keyCode=229 的 Escape：beforeFocus=true、afterFocus=true（焦点仍在输入框），dispatchEvent 返回值 false（事件被 preventDefault），无 toast、无焦点跳转。焦点没有被抢走，符合 README「IME 的 Esc 不受影响」",
+      "verdict": "confirmed",
+      "evidence": ["evidence/run1-17-suppress-report.json"]
+    },
+    {
+      "id": "E3",
+      "area": "suppression",
+      "check": "Esc 两段式：先到聊天区、再还原焦点",
+      "expected": "第一次把焦点交给会话内容，第二次还原原焦点",
+      "actual": "输入框聚焦按 Esc → toast「已聚焦聊天区 · ↑↓ / PgUp / PgDn 滚动」；再按 Esc → toast「焦点已还原」",
+      "verdict": "confirmed",
+      "evidence": ["evidence/run1-17-suppress-report.json", "evidence/run1-17-suppress-esc-toggle.png"]
+    },
+    {
+      "id": "E4",
+      "area": "suppression",
+      "check": "热键是否破坏输入框草稿与光标",
+      "expected": "草稿文本保留",
+      "actual": "输入框写入 `abmnpwr` 后连续按多个热键与 Esc，输入框内容仍为 `abmnpwr`（未清空、未追加）。光标位置未单独读数，见 U2",
+      "verdict": "confirmed",
+      "evidence": ["evidence/run1-17-suppress-report.json"]
+    },
+    {
+      "id": "F1",
+      "area": "conflict",
+      "check": "Windows 上 Alt 裸键是否被插件接管以避免浏览器菜单抢焦点",
+      "expected": "Alt 单键 preventDefault，Alt+数字不被浏览器吞掉",
+      "actual": "源码在非 macOS 下对 AltLeft/AltRight（且 ctrlKey 不为 true）执行 preventDefault（client.js:2036-2039 与 keyup 版本 2133-2137）。实测 Alt+数字全部被插件接管并完成切换（见 C1/B2），说明 Alt+数字没有被浏览器标签页切换抢走；Alt 裸键本身的 preventDefault 未单独取值，见 U3",
+      "verdict": "confirmed",
+      "evidence": ["evidence/run1-21-realkeys-report.json", "source/pkg/package/lib/client.js (lines 2036-2039, 2133-2137)"]
+    },
+    {
+      "id": "F2",
+      "area": "conflict",
+      "check": "与宿主既有快捷键是否冲突",
+      "expected": "不与宿主 Ctrl+Alt+N 等冲突",
+      "actual": "宿主自带新建会话是 Ctrl+Alt+N（按钮文案「新会话 Ctrl + Alt + N」），插件 Windows 默认新建是 Alt+N，二者不重叠；插件另有 Ctrl+Alt+1-9（跳转固定槽位）与宿主 Ctrl+Alt+N 同前缀但不同键。逐键实测未观察到宿主抢走插件的 18 个默认键",
+      "verdict": "confirmed",
+      "evidence": ["evidence/run1-03-newbtn-report.json", "evidence/run1-21-realkeys-report.json"]
+    },
+    {
+      "id": "F3",
+      "area": "conflict",
+      "check": "Esc 是否会吞掉宿主需要的 Esc",
+      "expected": "宿主弹窗/弹层仍能收到 Esc",
+      "actual": "源码在「Esc 但不在输入框/面板/导航」路径上不 preventDefault、不 stopPropagation（client.js:2069-2079 注释与实现），只有在确实要抢焦点时才拦截。归档卡片打开时 Esc 被卡片消费并关闭卡片，属预期。未构造宿主自身弹窗与插件 Esc 同时竞争的场景，见 U4",
+      "verdict": "uncertain",
+      "evidence": ["source/pkg/package/lib/client.js (lines 2066-2079)", "evidence/run1-20-confirm-focus-report.json"]
+    },
+    {
+      "id": "G1",
+      "area": "persistence",
+      "check": "刷新后改绑是否保留",
+      "expected": "page.reload 后自定义键仍在且可用",
+      "actual": "reload 后 localStorage 的 switchDigit 仍为 ctrl+shift+digit；按 Ctrl+Shift+2 仍被插件接管（toast「第 2 个位置没有会话」），按 Alt+2 无反应（旧键仍失效）",
+      "verdict": "confirmed",
+      "evidence": ["evidence/run1-16-rebind-report.json", "evidence/run1-16-rebind-after-reload.png"]
+    },
+    {
+      "id": "G2",
+      "area": "persistence",
+      "check": "冷重启后改绑是否保留",
+      "expected": "关掉宿主再启动，改绑仍在",
+      "actual": "为让 localStorage 的 origin 保持稳定，冷重启用固定端口 23456 + launchPersistentContext(固定 userDataDir)。boot1 改绑为 Ctrl+Shift+数字并验证生效 → 关闭 context、kill 宿主 → 冷启动 boot2（同 origin）→ localStorage keys 仍为 ctrl+shift+digit → Ctrl+Shift+2 仍被接管（toast「第 2 个位置没有会话」，重启后只剩 1 个会话），Alt+1 无 toast（旧键仍失效）。成立。注：常规 --port 0 每次换端口会换 origin，localStorage 按 origin 隔离，那种配置下无法判定，属测试设计问题不是插件缺陷",
+      "verdict": "confirmed",
+      "evidence": ["evidence/run2-22-persist.json", "evidence/run2-22-persist.stdout.txt", "evidence/run2-22-before-restart.png", "evidence/run2-22-after-restart.png"]
+    },
+    {
+      "id": "H1",
+      "area": "anomaly",
+      "check": "连续快速按键（异常项 1）",
+      "expected": "不报错、不状态错乱，最终状态与最后一次按键一致",
+      "actual": "200ms 间隔连按 Alt+2 / Alt+3 / Alt+1 / Alt+2 / Alt+3 / Alt+1（6 次）：无 pageerror、无控制台错误，最终 active=session-ca05d14f，toast「已在会话 1 · 周记·第一篇」，与序列最后一次按键（1）一致；行数读数稳定",
+      "verdict": "confirmed",
+      "evidence": ["evidence/run1-14-hotkeys-report.json", "evidence/run1-14-hotkeys-final.png"]
+    },
+    {
+      "id": "H2",
+      "area": "anomaly",
+      "check": "会话不存在时按键（异常项 2）",
+      "expected": "只提示，不抛错、不乱切",
+      "actual": "只剩 1 个会话时按 Alt+9 → toast「第 9 个位置没有会话」，active 不变，无 pageerror；Alt+3 / Alt+5 同样只给「第 N 个位置没有会话」",
+      "verdict": "confirmed",
+      "evidence": ["evidence/run1-14-hotkeys-report.json"]
+    },
+    {
+      "id": "H3",
+      "area": "anomaly",
+      "check": "长按重复键与确认卡片期间的热键挂起",
+      "expected": "event.repeat 被忽略；卡片打开时其他热键挂起",
+      "actual": "源码对 event.repeat === true 直接 return（client.js:2040），对 confirmBus.open === true 时全部热键挂起（client.js:2044）。卡片打开期间派发 Alt+2：dispatchReturned=true（未被插件 claim）、会话未切换，与挂起逻辑一致。长按 repeat 未单独用真实按键构造，见 U5",
+      "verdict": "uncertain",
+      "evidence": ["evidence/run1-19-prevent-confirm-report.json", "source/pkg/package/lib/client.js (lines 2040, 2044)"]
+    },
+    {
+      "id": "O1",
+      "area": "observation",
+      "check": "toast 文案强度：只反映「调用未抛异常」",
+      "expected": "提示语应反映动作真实结果",
+      "actual": "client.js:1164-1174 的 newSession() 只在 start() 抛异常时给 warn，否则一律 showToast(newSessionOk)（「新建会话」）。实测在空白会话下宿主复用同一会话、侧栏没有任何新增，toast 仍报「新建会话」。这是文案过强（可能让人误以为新会话已建立），但不影响功能正确性，且宿主复用是宿主行为",
+      "verdict": "confirmed",
+      "evidence": ["evidence/run1-13-seed2-report.json", "evidence/run1-05-createresp-report.json", "source/pkg/package/lib/client.js (lines 1164-1174)"]
+    },
+    {
+      "id": "O2",
+      "area": "observation",
+      "check": "重命名后侧栏标题未立即变化",
+      "expected": "重命名成功后侧栏行文本更新",
+      "actual": "Alt+Shift+R 弹出 window.prompt（标题「重命名会话」，默认值 default-workspace），accept('周记·第一篇') 后 toast「已重命名为 · 周记·第一篇」，但当次读到的侧栏行文本仍是「新会话」。后续在发送第一条消息后该行显示为「周记·第一篇 刚刚」，说明标题最终生效但存在可见延迟/刷新时机差异。未定位到确切原因，按不确定记录",
+      "verdict": "uncertain",
+      "evidence": ["evidence/run1-07-rename-and-seed-report.json", "evidence/run1-13-seed2-report.json"]
+    }
+  ],
+  "untested": [
+    {"id": "U1", "what": "归档 Enter 确认（真正把会话归档）", "why": "本轮进入确认卡片后按 Enter 的那次读数落在宿主 API Key 引导遮罩仍存在的会话里，焦点不在卡片上，未取得可用的「已归档」落盘对照；Esc 取消已验，确认动作未验", "how_to_close": "遮罩关掉、卡片焦点在按钮上时按 Enter，再读 isolated-home/storages/workspace.json 的 global.archivedSessionIds"},
+    {"id": "U2", "what": "热键后输入框光标位置是否保持不变", "why": "只记录了文本内容未被破坏，没有记录 selectionStart/selectionEnd", "how_to_close": "在输入框中间放置光标后按各热键，读 selectionStart/selectionEnd 前后值"},
+    {"id": "U3", "what": "Windows 上 Alt 裸键的 defaultPrevented 读数", "why": "只用真实键盘验证了 Alt+数字没被浏览器抢走，未单独取 Alt 单键的 preventDefault 值", "how_to_close": "在 body 上派发 code=AltLeft 的 keydown，读 dispatchEvent 返回值"},
+    {"id": "U4", "what": "宿主自身弹窗与插件 Esc 同时竞争", "why": "未构造宿主原生 dialog/popover 与插件 Esc 并存的场景", "how_to_close": "打开宿主设置弹窗或斜杠命令弹层后按 Esc，看宿主是否仍能关闭"},
+    {"id": "U5", "what": "长按产生的 repeat 事件", "why": "未用真实长按构造 keydown repeat", "how_to_close": "keyboard.down 后持续 hold，观察是否只触发一次动作"},
+    {"id": "U6", "what": "macOS 预设（⌃⇧1-9 等）", "why": "本轮宿主为 Windows，插件按 detectMac() 选 WIN_DEFAULTS，macOS 分支未执行", "how_to_close": "在 macOS 宿主上复跑同一组按键"},
+    {"id": "U7", "what": "与真实模型交互相关的动作（非默认方式发送 Alt+Shift+Enter）", "why": "隔离环境未配置模型密钥，无运行中的 agent 可发送", "how_to_close": "配置可用模型后，在 agent 运行中按 Alt+Shift+Enter 观察排队/插话切换"}
+  ]
+}

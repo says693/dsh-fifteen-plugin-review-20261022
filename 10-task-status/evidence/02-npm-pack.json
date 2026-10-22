@@ -1,0 +1,66 @@
+﻿[
+  {
+    "id": "@vlln/dsh-task-status@0.3.1",
+    "name": "@vlln/dsh-task-status",
+    "version": "0.3.1",
+    "size": 15676,
+    "unpackedSize": 47324,
+    "shasum": "62c1deb97fc38a9bc2e749ebf6d987ce3c64b935",
+    "integrity": "sha512-rNIzEOFRYeCzvxCDWQED8KxWtFXescGvsDDDT4GPM2r9rvoicQIHDnzm6SDCzKE2q/MZx4Sw3M6JBUByFVcYlA==",
+    "filename": "vlln-dsh-task-status-0.3.1.tgz",
+    "files": [
+      {
+        "path": "LICENSE",
+        "size": 1071,
+        "mode": 420
+      },
+      {
+        "path": "README.md",
+        "size": 3103,
+        "mode": 384
+      },
+      {
+        "path": "cordis.patch.yml",
+        "size": 136,
+        "mode": 420
+      },
+      {
+        "path": "lib/client.js",
+        "size": 11270,
+        "mode": 420
+      },
+      {
+        "path": "lib/index.d.mts",
+        "size": 714,
+        "mode": 384
+      },
+      {
+        "path": "lib/index.mjs",
+        "size": 6268,
+        "mode": 420
+      },
+      {
+        "path": "package.json",
+        "size": 1272,
+        "mode": 420
+      },
+      {
+        "path": "src/client/task-status.tsx",
+        "size": 13347,
+        "mode": 420
+      },
+      {
+        "path": "src/index.d.mts",
+        "size": 714,
+        "mode": 384
+      },
+      {
+        "path": "src/index.mjs",
+        "size": 9429,
+        "mode": 420
+      }
+    ],
+    "entryCount": 10,
+    "bundled": []
+  }
+]

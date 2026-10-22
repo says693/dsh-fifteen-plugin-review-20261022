@@ -1,0 +1,64 @@
+{
+  "panel1": {
+    "rows": [
+      {
+        "t": "把这周的错题整理成表格",
+        "id": "session-36dafaf6-2551-4cb7-a7a0-5a148681f143",
+        "health": "",
+        "dot": "rgb(234, 179, 8)",
+        "tags": ""
+      },
+      {
+        "t": "帮我整理一份关于海洋塑料污",
+        "id": "session-08fbbad4-a5f0-4e61-8e44-49b911727022",
+        "health": "",
+        "dot": "rgba(0, 0, 0, 0)",
+        "tags": ""
+      }
+    ],
+    "groups": [
+      "▾ 未分组 (2)"
+    ]
+  },
+  "nav1": {
+    "chips": [],
+    "input": null,
+    "inputVal": null
+  },
+  "cur0": "{\"sessionId\":\"session-6854de43-b6df-467b-a967-80a0bddadba9\"}",
+  "cur1": "{\"sessionId\":\"session-6854de43-b6df-467b-a967-80a0bddadba9\"}",
+  "selectedAfterNav": [
+    "session:session-6854de43-b6df-467b-a967-80a0bddadba9"
+  ],
+  "headerAfterNav": null,
+  "panel2": {
+    "rows": [
+      {
+        "t": "把这周的错题整理成表格",
+        "id": "session-36dafaf6-2551-4cb7-a7a0-5a148681f143",
+        "health": "",
+        "dot": "rgb(234, 179, 8)",
+        "tags": ""
+      },
+      {
+        "t": "帮我整理一份关于海洋塑料污",
+        "id": "session-08fbbad4-a5f0-4e61-8e44-49b911727022",
+        "health": "",
+        "dot": "rgba(0, 0, 0, 0)",
+        "tags": ""
+      }
+    ],
+    "groups": [
+      "▾ 未分组 (2)"
+    ]
+  },
+  "errors": [],
+  "console": [
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "utc": "2026-10-22T01:12:49.803Z"
+    }
+  ],
+  "dialogs": []
+}

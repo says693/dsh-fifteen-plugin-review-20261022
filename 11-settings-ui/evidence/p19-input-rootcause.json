@@ -1,0 +1,119 @@
+{
+  "sel": [],
+  "rootCause": {
+    "selectionApi": {
+      "type": "number",
+      "inputMode": null,
+      "value": "4800",
+      "selectionStartReadable": false,
+      "selectionStartError": null,
+      "setSelectionRangeError": "Failed to execute 'setSelectionRange' on 'HTMLInputElement': The input element's type ('number') does not support selection.",
+      "activeBefore": true
+    },
+    "afterSelectAll": {
+      "value": "4800",
+      "selection": [
+        null,
+        null
+      ],
+      "active": true
+    },
+    "afterOneChar": {
+      "value": "480",
+      "active": true
+    },
+    "afterEndPlusChar": {
+      "value": "4800"
+    }
+  },
+  "paste": [
+    {
+      "tried": "900",
+      "value": "900",
+      "status": "{\"settings\":{\"size\":\"custom\",\"customWidth\":900,\"customHeight\":960,\"opacity\":30,\"bgMode\":\"color\",\"bgColorLight\":\"#eef1f5\",\"bgColorDark\":\"#1e2a38\"}}"
+    },
+    {
+      "tried": "1024",
+      "value": "1024",
+      "status": "{\"settings\":{\"size\":\"custom\",\"customWidth\":1024,\"customHeight\":960,\"opacity\":30,\"bgMode\":\"color\",\"bgColorLight\":\"#eef1f5\",\"bgColorDark\":\"#1e2a38\"}}"
+    }
+  ],
+  "keyboard": {
+    "chipFocusable": {
+      "tag": "BUTTON",
+      "text": "默认（800×800）",
+      "tabIndex": 0
+    },
+    "afterEnter": {
+      "on": [
+        "默认（800×800）",
+        "纯色"
+      ]
+    },
+    "aria": {
+      "chipsPressed": [
+        {
+          "t": "默认（800×800）",
+          "pressed": "true",
+          "role": null
+        },
+        {
+          "t": "大（1080×780）",
+          "pressed": "false",
+          "role": null
+        },
+        {
+          "t": "特大（1280×960）",
+          "pressed": "false",
+          "role": null
+        },
+        {
+          "t": "全屏",
+          "pressed": "false",
+          "role": null
+        },
+        {
+          "t": "自定义",
+          "pressed": "false",
+          "role": null
+        },
+        {
+          "t": "主题默认",
+          "pressed": "false",
+          "role": null
+        },
+        {
+          "t": "纯色",
+          "pressed": "true",
+          "role": null
+        },
+        {
+          "t": "恢复默认",
+          "pressed": null,
+          "role": null
+        }
+      ],
+      "chipsGroupRole": null,
+      "rangeLabel": {
+        "ariaLabel": null,
+        "labelledby": null,
+        "id": ""
+      },
+      "numLabels": [],
+      "colorLabels": [
+        {
+          "ariaLabel": null,
+          "labelledby": null,
+          "id": ""
+        },
+        {
+          "ariaLabel": null,
+          "labelledby": null,
+          "id": ""
+        }
+      ]
+    }
+  },
+  "errors": [],
+  "consoleLog": []
+}

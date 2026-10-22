@@ -1,0 +1,134 @@
+﻿{
+  "utc": "2026-10-22T01:06:40.067Z",
+  "dismiss": [
+    {
+      "clicked": true,
+      "text": "稍后配置"
+    },
+    {
+      "clicked": false,
+      "masks": 0
+    }
+  ],
+  "masksAfter": 0,
+  "t0": {
+    "n": 1,
+    "rows": [
+      {
+        "k": "session:session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e",
+        "t": "新会话",
+        "sel": "true"
+      }
+    ],
+    "active": "session:session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e",
+    "toast": null
+  },
+  "composer": {
+    "found": true,
+    "rect": {
+      "x": 469,
+      "y": 501,
+      "w": 770,
+      "h": 52
+    }
+  },
+  "beforeSend": {
+    "text": "第一条消息：把空白会话变成有内容的会话。",
+    "focused": true
+  },
+  "sendBtn": {
+    "clicked": true,
+    "disabled": false
+  },
+  "t1": {
+    "n": 1,
+    "rows": [
+      {
+        "k": "session:session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e",
+        "t": "周记·第一篇 刚刚",
+        "sel": "true"
+      }
+    ],
+    "active": "session:session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e",
+    "toast": null
+  },
+  "presses": [
+    {
+      "i": 0,
+      "before": 1,
+      "after": 2,
+      "keysAfter": [
+        "session:session-b82a64e0-a6be-45a6-a240-f057d74ca6e0",
+        "session:session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e"
+      ],
+      "titlesAfter": [
+        "新会话",
+        "周记·第一篇 刚刚"
+      ],
+      "toast": null
+    },
+    {
+      "i": 1,
+      "before": 2,
+      "after": 2,
+      "keysAfter": [
+        "session:session-b82a64e0-a6be-45a6-a240-f057d74ca6e0",
+        "session:session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e"
+      ],
+      "titlesAfter": [
+        "新会话",
+        "周记·第一篇 刚刚"
+      ],
+      "toast": null
+    },
+    {
+      "i": 2,
+      "before": 2,
+      "after": 2,
+      "keysAfter": [
+        "session:session-b82a64e0-a6be-45a6-a240-f057d74ca6e0",
+        "session:session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e"
+      ],
+      "titlesAfter": [
+        "新会话",
+        "周记·第一篇 刚刚"
+      ],
+      "toast": null
+    }
+  ],
+  "t2": {
+    "n": 2,
+    "rows": [
+      {
+        "k": "session:session-b82a64e0-a6be-45a6-a240-f057d74ca6e0",
+        "t": "新会话",
+        "sel": "true"
+      },
+      {
+        "k": "session:session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e",
+        "t": "周记·第一篇 刚刚",
+        "sel": "false"
+      }
+    ],
+    "active": "session:session-b82a64e0-a6be-45a6-a240-f057d74ca6e0",
+    "toast": null
+  },
+  "reqs": [
+    {
+      "path": "/api/session/prompt",
+      "post": "{\"type\":\"client-request\",\"rpcId\":\"48aa2e5e-f27f-4f78-be37-e1e851faba41\",\"method\":\"session/prompt\",\"payload\":{\"args\":{\"request\":{\"requestId\":\"5945ee9d-035d-498e-9887-b6615dd633b7\",\"sessionId\":\"session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e\",\"m"
+    },
+    {
+      "path": "/api/session/create",
+      "post": "{\"type\":\"client-request\",\"rpcId\":\"72099994-6177-4592-82a4-262d53a77b51\",\"method\":\"session/create\",\"payload\":{\"args\":{\"request\":{\"workspaceId\":\"194af2d3-53e4-4f7e-b44f-e51c135ab047\"}}}}"
+    },
+    {
+      "path": "/api/session/create",
+      "post": "{\"type\":\"client-request\",\"rpcId\":\"2b316447-3b6b-4d5f-a903-32d4f52c3f69\",\"method\":\"session/create\",\"payload\":{\"args\":{\"request\":{\"workspaceId\":\"194af2d3-53e4-4f7e-b44f-e51c135ab047\",\"sessionId\":\"session-b82a64e0-a6be-45a6-a240-f057d74ca6e0\"}"
+    },
+    {
+      "path": "/api/session/create",
+      "post": "{\"type\":\"client-request\",\"rpcId\":\"06498e39-f9de-4b15-b394-bafcb64215e8\",\"method\":\"session/create\",\"payload\":{\"args\":{\"request\":{\"workspaceId\":\"194af2d3-53e4-4f7e-b44f-e51c135ab047\",\"sessionId\":\"session-b82a64e0-a6be-45a6-a240-f057d74ca6e0\"}"
+    }
+  ]
+}

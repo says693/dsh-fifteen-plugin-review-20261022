@@ -1,0 +1,231 @@
+{
+  "target": {
+    "repo": "Sttrevens/dsh-cost-meter",
+    "package": "@steven-wu/dsh-cost-meter",
+    "version": "0.1.0-rc.3",
+    "sourceCommit": "9f8a924f2496856f671a508aca44bff7d3377770",
+    "license": "MIT",
+    "testedArtifact": "npm tarball (dist), unmodified"
+  },
+  "host": {
+    "cli": "@deepseek-ai/dsh 0.2.0-rc.2",
+    "browser": "Edge headless via Playwright 1.64.1",
+    "isolation": "DSH_HOME/HOME/USERPROFILE/APPDATA/LOCALAPPDATA/XDG_*/npm_config_cache inside task dir; --host 127.0.0.1 --port 0 --no-open"
+  },
+  "checkedAt": "2026-10-22T01:55Z",
+  "summary": {
+    "confirmed": 4,
+    "uncertain": 2,
+    "untested": 3,
+    "headline": "The plugin never renders: the host accepts its projection but the client view is never produced, so neither the session badge nor the per-turn badge appears anywhere."
+  },
+  "checks": [
+    {
+      "id": "INSTALL-01",
+      "area": "install",
+      "item": "dsh plugin --profile cm add @steven-wu/dsh-cost-meter@0.1.0-rc.3",
+      "expected": "package installs and the profile lists it",
+      "actual": "rejected: 'Plugin @steven-wu/dsh-cost-meter@0.1.0-rc.3 is incompatible with dsh 0.2.0-rc.2: peerDependencies {@deepseek-ai/dsh-client-runtime:^0.1.0-rc.6, @deepseek-ai/dsh-session-projection:^0.1.0-rc.6, @deepseek-ai/dsh-client-ui-conversation:^0.1.0-rc.6}' — nothing installed; succeeded only after `dsh plugin allow-version ... --dsh-version 0.2.0-rc.2 --accept-risk`",
+      "reading": { "exitBeforeAllow": 1, "exitAfterAllow": 0, "hostSessionProjectionVersion": "0.2.0-rc.2", "hostUiConversationVersion": "0.2.0-rc.2", "hostCordisVersion": "4.0.4" },
+      "evidence": ["evidence/install-01-add.txt", "evidence/install-02-allow-version.txt", "evidence/install-03-add-after-allow.txt"],
+      "status": "confirmed",
+      "note": "Install-face fact, not a UI defect. The declared peer range ^0.1.0-rc.6 does not cover the 0.2.0-rc.2 host."
+    },
+    {
+      "id": "A-01",
+      "area": "session badge",
+      "item": "Whole-session cost badge appears in the session header on a session that has token usage",
+      "expected": "a badge like $0.0346 in conversation.session.header.utilities",
+      "actual": "0 badges. Measured across 6 synthetic sessions, 3 viewports, light and dark, after reload, after session switching and after a cold restart: .dsh-cost-badge count is 0 in every sample.",
+      "reading": {
+        "badgeCount": 0,
+        "tipCount": 0,
+        "headerUtilitiesSlotPresent": true,
+        "headerUtilitiesChildren": 2,
+        "headerUtilitiesChildrenFromCostMeter": 0,
+        "costCssInjected": true,
+        "pluginClientLoaded": true
+      },
+      "evidence": ["evidence/p01-boot.json", "evidence/p03-open-sessions.json", "evidence/p10-layout-theme-persist.json", "evidence/p11-cold-restart.json", "evidence/p10-1440-main.png"],
+      "status": "confirmed"
+    },
+    {
+      "id": "A-02",
+      "area": "root cause",
+      "item": "Why the badge never renders: projection-registration contract mismatch",
+      "expected": "the unit registers with the field names the host reads (stateSchema + wire.viewSchema/wire.view)",
+      "actual": "the plugin passes {key, schema, init, apply, view, stateVersion}; the host's SessionProjectionRegistry.register reads definition.stateSchema and definition.wire. Result: on the host side the stored definition has stateSchema===undefined and wire===undefined, and every client-view path skips the key (`if (def.wire === void 0) continue`).",
+      "reading": {
+        "pluginPassesKeys": ["apply", "init", "key", "schema", "stateVersion", "view"],
+        "hostStoresKeys": ["apply", "init", "key", "stateSchema", "stateVersion", "wire"],
+        "hostStoredStateSchemaType": "undefined",
+        "hostStoredWireType": "undefined",
+        "registrySkipsKey": true,
+        "foldStillCorrect": true,
+        "foldedStateSample": { "totals": { "input": 12000, "output": 3400, "cacheRead": 2048, "cacheWrite": 0 }, "inputUsd": 0.00783, "priced": true }
+      },
+      "evidence": ["evidence/p06-run2.txt", "evidence/p07-values.txt", "isolated-home/storages/session_projcache/sessions/sess-cm-tiny.json"],
+      "status": "confirmed",
+      "note": "The fold and the persistence both work: the projection cache holds a sessionCost row (ver 3, seq 11, input 1, inputUsd 6.525e-7, priced true). Only the client view is dropped. Host source: dsh-session-projection/lib/index.js lines 69-80 (register) and 247 (`if (def.wire === void 0) continue`)."
+    },
+    {
+      "id": "B-01",
+      "area": "per-turn badge",
+      "item": "Per-turn cost at the end of each assistant message",
+      "expected": "each assistant message footer shows that turn's cost",
+      "actual": "0 rendered. The conversation.chat.assistant-actions slot exists and has 0 children from this plugin.",
+      "reading": { "assistantActionsSlotCount": 1, "childrenFromCostMeter": 0, "badgesInDom": 0 },
+      "evidence": ["evidence/p10-layout-theme-persist.json", "evidence/p01-boot.json"],
+      "status": "confirmed",
+      "note": "Blocked by the same A-02 root cause; TurnCostBadge returns null because useProjection('sessionCost') is undefined."
+    },
+    {
+      "id": "C-01",
+      "area": "hover breakdown",
+      "item": "Hovering the badge expands a breakdown (input / output / cache-read / cache-write with amounts and token counts)",
+      "expected": "a tooltip with 4 bucket lines plus the model line",
+      "actual": "not reachable — there is no badge to hover. No .dsh-cost-tip node exists in any sample.",
+      "reading": { "tipsInDom": 0 },
+      "evidence": ["evidence/p10-layout-theme-persist.json"],
+      "status": "untested",
+      "note": "Cannot be observed without a rendered badge. The tooltip implementation itself (fixed-position span, lines joined with newlines, four buckets) was read in the shipped bundle but not exercised."
+    },
+    {
+      "id": "D-01",
+      "area": "currency and precision",
+      "item": "USD symbol and decimal places, including very small amounts",
+      "expected": "a $ prefix and enough precision that a small amount does not read as zero",
+      "actual": "formatUsd is $ + toFixed(2) at >=1, toFixed(4) at >=0.01, otherwise toFixed(5). A 1-token turn (0.0000006525 USD) formats as '$0.00000' — indistinguishable from a free turn. Amounts are arithmetically correct; the floor is display precision.",
+      "reading": {
+        "1token_usd": 6.525e-7,
+        "1token_label": "$0.00000",
+        "0.0000065_label": "$0.00001",
+        "0.004187136_label": "$0.00419",
+        "0.03457293_label": "$0.0346",
+        "2.61_label": "$2.61",
+        "55.0188_label": "$55.02"
+      },
+      "evidence": ["evidence/p07-values.txt"],
+      "status": "confirmed",
+      "note": "Verified by driving the plugin's own unmodified init/apply/view and transcribing its formatUsd from the shipped bundle. Because of A-02 this never reaches the screen; the formatting fact stands on its own."
+    },
+    {
+      "id": "D-02",
+      "area": "pricing correctness",
+      "item": "Computed cost agrees with the official price list for the models the host actually offers",
+      "expected": "host model deepseek-flash priced from its own official rate",
+      "actual": "The host's catalog offers exactly two models: deepseek-flash (default) and deepseek-v4-pro. The plugin's table keys are deepseek-official/deepseek-v4-pro and deepseek-official/deepseek-v4-flash. deepseek-flash does not match, so priceOf falls back to the default row (the v4-pro rates), and 1M input + 1M output is reported as $2.61 where the official off-peak price is $0.75 — about 3.48x too high.",
+      "reading": {
+        "hostCatalogModels": ["deepseek-flash", "deepseek-v4-pro"],
+        "pluginTableKeys": ["deepseek-official/deepseek-v4-pro", "deepseek-official/deepseek-v4-flash", "default"],
+        "host_deepseek-flash_1M_1M_usd": 2.61,
+        "plugin_deepseek-v4-flash_1M_1M_usd": 0.87,
+        "official_deepseek-flash_offpeak_1M_1M_usd": 0.75,
+        "official_deepseek-v4-pro_offpeak_1M_1M_usd": 2.64,
+        "plugin_deepseek-v4-pro_1M_1M_usd": 2.61
+      },
+      "evidence": ["evidence/p08-model-catalog.json", "evidence/p09-pricing.txt"],
+      "status": "confirmed",
+      "note": "Official source https://api-docs.deepseek.com/quick_start/pricing fetched 2026-10-22T01:48Z (UTC clock of this machine). Off-peak = half of peak; peak is 01:00-04:00 and 06:00-10:00 UTC Mon-Fri. The v4-pro row is within ~1.1% of the official off-peak figure; the flash row never matches because the host uses the id deepseek-flash (the legacy deepseek-v4-flash alias is retired per the official footnote).",
+      "caveat": "The composer in evidence/p10-1440-main.png shows 'deepseek-official/deepseek-v4-flash' because that screenshot is of my own fixture session, whose stored model id I set to deepseek-v4-flash; the composer echoes the session's stored model. The host's own catalog (dumped above, evidence/p08-model-catalog.json) offers only deepseek-flash and deepseek-v4-pro, and names deepseek-flash as the default. So a user starting a normal session gets deepseek-flash, which is the id the price table misses."
+    },
+    {
+      "id": "D-03",
+      "area": "unknown model",
+      "item": "A model id that is not in the price table",
+      "expected": "either a clear 'unpriced' indication or a documented fallback",
+      "actual": "silently priced with the default row, with no marker anywhere in the view. some-vendor/mystery-model-9000 yields exactly the same 2.61 as deepseek-v4-pro for the same token counts.",
+      "reading": { "unpriced_usd": 2.61, "v4pro_usd": 2.61, "identical": true, "uiMarker": "none" },
+      "evidence": ["evidence/p09-pricing.txt"],
+      "status": "confirmed"
+    },
+    {
+      "id": "E-01",
+      "area": "persistence",
+      "item": "Values survive refresh, session switching and a cold restart",
+      "expected": "same values after each",
+      "actual": "the folded state does persist (projection-cache rows exist and survive a restart), but there is nothing displayed to compare, so the user-visible half of this check cannot be settled.",
+      "reading": {
+        "refresh": { "badgeCount": 0 },
+        "switchAwayBack": { "badgeCount": 0 },
+        "coldRestart": { "badgeCount": 0 },
+        "projcacheSessionCostRowPresent": true,
+        "projcacheSample": { "ver": 3, "seq": 11, "input": 1, "inputUsd": 6.525e-7, "priced": true }
+      },
+      "evidence": ["evidence/p10-layout-theme-persist.json", "evidence/p11-cold-restart.json", "isolated-home/storages/session_projcache/sessions/sess-cm-tiny.json"],
+      "status": "uncertain",
+      "note": "Backend persistence is real and verified; the 'does the number stay on screen' question is unanswerable while the badge never renders."
+    },
+    {
+      "id": "F-01",
+      "area": "layout and theme",
+      "item": "Readable at narrow widths and in dark theme; does not cover the composer",
+      "expected": "no horizontal overflow, no overlap with the input area",
+      "actual": "no horizontal overflow at 1440 / 1000 / 760 / 600 px and no overlap, but only because nothing is drawn. Dark theme likewise renders nothing from this plugin.",
+      "reading": { "overflowX": { "1440": false, "1000": false, "760": false, "600": false }, "composerOverlapPx2": 0, "darkBadgeCount": 0 },
+      "evidence": ["evidence/p10-layout-theme-persist.json", "evidence/p10-w600.png", "evidence/p10-dark-1440.png"],
+      "status": "untested",
+      "note": "Passing this check is not evidence of good layout; there are no elements to lay out."
+    },
+    {
+      "id": "G-01",
+      "area": "extremes",
+      "item": "Extreme usage: 1 token, tens of millions of tokens",
+      "expected": "sane numbers at both ends",
+      "actual": "1 token -> 6.525e-7 USD, shown as '$0.00000'; 48M/12M/9.6M/2M tokens -> 55.0188 USD, shown as '$55.02'. No overflow, no NaN, no scientific notation, no negative values.",
+      "reading": {
+        "tiny": { "inputTokens": 1, "usd": 6.525e-7, "label": "$0.00000" },
+        "huge": { "inputTokens": 48000000, "outputTokens": 12000000, "cacheReadTokens": 9600000, "cacheWriteTokens": 2000000, "usd": 55.0188, "label": "$55.02" }
+      },
+      "evidence": ["evidence/p07-values.txt"],
+      "status": "confirmed"
+    },
+    {
+      "id": "H-01",
+      "area": "empty state",
+      "item": "Session with no usage data",
+      "expected": "badges stay hidden rather than showing $0.00000",
+      "actual": "with no usage field at all, priced is false and the projection stays empty; with an all-zero usage object, priced is also false and the single turn carries a zero total. Both are correctly suppressed at the component level and would be hidden even if the wire worked.",
+      "reading": { "noUsageField_priced": false, "noUsageField_byTurn": {}, "allZero_priced": false, "allZero_turnTotal": 0 },
+      "evidence": ["evidence/p07-values.txt"],
+      "status": "confirmed",
+      "note": "Empty-state logic reads correctly in the shipped code; the suppression can only be observed once the wire exists."
+    },
+    {
+      "id": "I-01",
+      "area": "data handling",
+      "item": "Does the plugin read or send anything it should not",
+      "expected": "no network, no credentials, no session exfiltration",
+      "actual": "host half only registers a projection and reads one local JSON price file; client half only reads a projection and renders a span. No fetch/XHR/WebSocket to any host other than 127.0.0.1 in any sample; no credential or token read observed in source or traffic.",
+      "reading": { "outboundNonLocal": 0, "credentialReadsInSource": 0, "writesOutsideDshHome": "one, my own probe's fault — see note" },
+      "evidence": ["evidence/p01-boot.json", "evidence/p10-layout-theme-persist.json"],
+      "status": "confirmed",
+      "note": "On first boot with no pricing file the plugin writes ~/.dsh/cost-pricing.json by design. My first registry probe ran without DSH_HOME so it wrote C:\Users\USER\\.dsh\\cost-pricing.json; I verified the creation timestamp was mine, removed it, kept a copy at evidence/stray-created-by-my-probe-cost-pricing.json, and pinned DSH_COST_PRICING for every later run."
+    }
+  ],
+  "notTested": [
+    "Hover tooltip content and positioning (no badge to hover)",
+    "Any visual property of the badge (size, colour, contrast) at any width or theme",
+    "Real billing agreement (no model was called; all amounts are computed from a price table)",
+    "Whether the numbers refresh live during a streaming turn (no model call allowed)"
+  ],
+  "dedupe": {
+    "reviewSite": {
+      "url": "https://review.lingshulab.com",
+      "method": "pulled /api/plugins (20 items) and paged /api/reviews to exhaustion (172 items, 9 pages), scanned locally; ?q= is not used",
+      "queriedAt": "2026-10-22T01:49Z",
+      "hits": [],
+      "result": "no same-scope duplicate; no plugin or review mentions dsh-cost-meter or Sttrevens"
+    },
+    "githubBounty": {
+      "url": "https://github.com/FuRongJun-1999/dsh-bounty/issues",
+      "method": "REST /issues?state=all paged to exhaustion (1000 items) plus 4 targeted search queries",
+      "queriedAt": "2026-10-22T01:54Z",
+      "hits": [
+        { "number": 880, "title": "【测评报告】工作流插件上下文税 · 第 16 批（自动评测流水线）：3 件实测", "sameScope": false, "why": "measures context-window token overhead of plugins, not cost display; dsh-cost-meter appears only as one of 3 arms with 'four layers all near zero'" }
+      ],
+      "result": "no same-scope duplicate"
+    },
+    "conclusion": "first report for the cost-badge behaviour"
+  }
+}

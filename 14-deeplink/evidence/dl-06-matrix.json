@@ -1,0 +1,547 @@
+{
+  "host": "http://127.0.0.1:2690",
+  "cases": [
+    {
+      "id": "C1-session-valid",
+      "requestedParams": {
+        "session": "sess-dl-alpha-two"
+      },
+      "requestedUrl": "http://127.0.0.1:2690/?token=REDACTED&session=sess-dl-alpha-two",
+      "finalUrl": "http://127.0.0.1:2690/",
+      "finalSearch": "",
+      "selectedRowKey": "session:session-e9ea570e-d88f-4e06-ada9-d954cdb0874b",
+      "selectedRowText": "新会话",
+      "chatFlowKids": 0,
+      "userRows": 0,
+      "historyLength": 2,
+      "bodyBlank": false,
+      "bodyTextHead": "新会话 Ctrl + Alt + N 插件 工作区 beta 新会话 未命名 1小时 alpha 设置 探索未至之境 预览版 beta 标准模式 描述你想要构建的内容, / 调用指令, @ 文件或对话 工作区内修改 DeepSeek-V41-Flash High",
+      "deeplinkStylePresent": true,
+      "storage": {
+        "dsh.workspace.view.v5": "{\"groupBy\":\"workspace\",\"orderBy\":\"updated\",\"groupExpansion\":{\"ee73cda6-f6fe-44b6-b772-dabdbafe22e8\":true},\"sessionOrderByAccount\":{},\"archivedFilter\":\"default\"}",
+        "dsh.sessions.current": "{\"sessionId\":\"session-e9ea570e-d88f-4e06-ada9-d954cdb0874b\"}",
+        "dsh.sidebar-right.v1.session-e9ea570e-d88f-4e06-ada9-d954cdb0874b": "{\"bySession\":{\"session-e9ea570e-d88f-4e06-ada9-d954cdb0874b\":{\"layout\":{\"nodes\":{\"pane1\":{\"kind\":\"pane\",\"id\":\"pane1\",\"host\":\"dock\",\"tabs\":[]}},\"tabs\":{},\"rootId\":\"pane1\",\"floats\":[],\"activePaneId\":\"pane1\",\"expanded\":false,\"mode\":\"push\"},\"minted\":1}}}"
+      },
+      "httpStatus": 200,
+      "pageErrors": [],
+      "consoleWarn": [],
+      "navEvents": [
+        "http://127.0.0.1:2690/",
+        "http://127.0.0.1:2690/"
+      ],
+      "modalsDismissed": [
+        "/^继续$/",
+        "/^稍后配置$/"
+      ]
+    },
+    {
+      "id": "C1b-session-valid-beta",
+      "requestedParams": {
+        "session": "sess-dl-beta-one"
+      },
+      "requestedUrl": "http://127.0.0.1:2690/?token=REDACTED&session=sess-dl-beta-one",
+      "finalUrl": "http://127.0.0.1:2690/",
+      "finalSearch": "",
+      "selectedRowKey": "session:session-e9ea570e-d88f-4e06-ada9-d954cdb0874b",
+      "selectedRowText": "新会话",
+      "chatFlowKids": 0,
+      "userRows": 0,
+      "historyLength": 2,
+      "bodyBlank": false,
+      "bodyTextHead": "新会话 Ctrl + Alt + N 插件 工作区 beta 新会话 未命名 1小时 alpha 设置 探索未至之境 预览版 beta 标准模式 描述你想要构建的内容, / 调用指令, @ 文件或对话 工作区内修改 DeepSeek-V41-Flash High",
+      "deeplinkStylePresent": true,
+      "storage": {
+        "dsh.workspace.view.v5": "{\"groupBy\":\"workspace\",\"orderBy\":\"updated\",\"groupExpansion\":{\"ee73cda6-f6fe-44b6-b772-dabdbafe22e8\":true},\"sessionOrderByAccount\":{},\"archivedFilter\":\"default\"}",
+        "dsh.sessions.current": "{\"sessionId\":\"session-e9ea570e-d88f-4e06-ada9-d954cdb0874b\"}",
+        "dsh.sidebar-right.v1.session-e9ea570e-d88f-4e06-ada9-d954cdb0874b": "{\"bySession\":{\"session-e9ea570e-d88f-4e06-ada9-d954cdb0874b\":{\"layout\":{\"nodes\":{\"pane1\":{\"kind\":\"pane\",\"id\":\"pane1\",\"host\":\"dock\",\"tabs\":[]}},\"tabs\":{},\"rootId\":\"pane1\",\"floats\":[],\"activePaneId\":\"pane1\",\"expanded\":false,\"mode\":\"push\"},\"minted\":1}}}"
+      },
+      "httpStatus": 200,
+      "pageErrors": [],
+      "consoleWarn": [],
+      "navEvents": [
+        "http://127.0.0.1:2690/",
+        "http://127.0.0.1:2690/"
+      ],
+      "modalsDismissed": [
+        "/^稍后配置$/"
+      ]
+    },
+    {
+      "id": "C2-workspace-alpha",
+      "requestedParams": {
+        "workspace": "7529e9de-4bfc-4528-92e9-9ea05c755f53"
+      },
+      "requestedUrl": "http://127.0.0.1:2690/?token=REDACTED&workspace=7529e9de-4bfc-4528-92e9-9ea05c755f53",
+      "finalUrl": "http://127.0.0.1:2690/",
+      "finalSearch": "",
+      "selectedRowKey": "session:session-e9ea570e-d88f-4e06-ada9-d954cdb0874b",
+      "selectedRowText": "新会话",
+      "chatFlowKids": 0,
+      "userRows": 0,
+      "historyLength": 2,
+      "bodyBlank": false,
+      "bodyTextHead": "新会话 Ctrl + Alt + N 插件 工作区 beta 新会话 未命名 1小时 alpha 设置 探索未至之境 预览版 beta 标准模式 描述你想要构建的内容, / 调用指令, @ 文件或对话 工作区内修改 DeepSeek-V41-Flash High",
+      "deeplinkStylePresent": true,
+      "storage": {
+        "dsh.workspace.view.v5": "{\"groupBy\":\"workspace\",\"orderBy\":\"updated\",\"groupExpansion\":{\"ee73cda6-f6fe-44b6-b772-dabdbafe22e8\":true},\"sessionOrderByAccount\":{},\"archivedFilter\":\"default\"}",
+        "dsh.sessions.current": "{\"sessionId\":\"session-e9ea570e-d88f-4e06-ada9-d954cdb0874b\"}",
+        "dsh.sidebar-right.v1.session-e9ea570e-d88f-4e06-ada9-d954cdb0874b": "{\"bySession\":{\"session-e9ea570e-d88f-4e06-ada9-d954cdb0874b\":{\"layout\":{\"nodes\":{\"pane1\":{\"kind\":\"pane\",\"id\":\"pane1\",\"host\":\"dock\",\"tabs\":[]}},\"tabs\":{},\"rootId\":\"pane1\",\"floats\":[],\"activePaneId\":\"pane1\",\"expanded\":false,\"mode\":\"push\"},\"minted\":1}}}"
+      },
+      "httpStatus": 200,
+      "pageErrors": [],
+      "consoleWarn": [],
+      "navEvents": [
+        "http://127.0.0.1:2690/",
+        "http://127.0.0.1:2690/"
+      ],
+      "modalsDismissed": [
+        "/^稍后配置$/"
+      ]
+    },
+    {
+      "id": "C2b-workspace-beta",
+      "requestedParams": {
+        "workspace": "ee73cda6-f6fe-44b6-b772-dabdbafe22e8"
+      },
+      "requestedUrl": "http://127.0.0.1:2690/?token=REDACTED&workspace=ee73cda6-f6fe-44b6-b772-dabdbafe22e8",
+      "finalUrl": "http://127.0.0.1:2690/",
+      "finalSearch": "",
+      "selectedRowKey": "session:session-e9ea570e-d88f-4e06-ada9-d954cdb0874b",
+      "selectedRowText": "新会话",
+      "chatFlowKids": 0,
+      "userRows": 0,
+      "historyLength": 2,
+      "bodyBlank": false,
+      "bodyTextHead": "新会话 Ctrl + Alt + N 插件 工作区 beta 新会话 未命名 1小时 alpha 设置 探索未至之境 预览版 beta 标准模式 描述你想要构建的内容, / 调用指令, @ 文件或对话 工作区内修改 DeepSeek-V41-Flash High",
+      "deeplinkStylePresent": true,
+      "storage": {
+        "dsh.workspace.view.v5": "{\"groupBy\":\"workspace\",\"orderBy\":\"updated\",\"groupExpansion\":{\"ee73cda6-f6fe-44b6-b772-dabdbafe22e8\":true},\"sessionOrderByAccount\":{},\"archivedFilter\":\"default\"}",
+        "dsh.sessions.current": "{\"sessionId\":\"session-e9ea570e-d88f-4e06-ada9-d954cdb0874b\"}",
+        "dsh.sidebar-right.v1.session-e9ea570e-d88f-4e06-ada9-d954cdb0874b": "{\"bySession\":{\"session-e9ea570e-d88f-4e06-ada9-d954cdb0874b\":{\"layout\":{\"nodes\":{\"pane1\":{\"kind\":\"pane\",\"id\":\"pane1\",\"host\":\"dock\",\"tabs\":[]}},\"tabs\":{},\"rootId\":\"pane1\",\"floats\":[],\"activePaneId\":\"pane1\",\"expanded\":false,\"mode\":\"push\"},\"minted\":1}}}"
+      },
+      "httpStatus": 200,
+      "pageErrors": [],
+      "consoleWarn": [],
+      "navEvents": [
+        "http://127.0.0.1:2690/",
+        "http://127.0.0.1:2690/"
+      ],
+      "modalsDismissed": [
+        "/^稍后配置$/"
+      ]
+    },
+    {
+      "id": "C3-both",
+      "requestedParams": {
+        "session": "sess-dl-beta-one",
+        "workspace": "7529e9de-4bfc-4528-92e9-9ea05c755f53"
+      },
+      "requestedUrl": "http://127.0.0.1:2690/?token=REDACTED&session=sess-dl-beta-one&workspace=7529e9de-4bfc-4528-92e9-9ea05c755f53",
+      "finalUrl": "http://127.0.0.1:2690/",
+      "finalSearch": "",
+      "selectedRowKey": "session:session-e9ea570e-d88f-4e06-ada9-d954cdb0874b",
+      "selectedRowText": "新会话",
+      "chatFlowKids": 0,
+      "userRows": 0,
+      "historyLength": 2,
+      "bodyBlank": false,
+      "bodyTextHead": "新会话 Ctrl + Alt + N 插件 工作区 beta 新会话 未命名 1小时 alpha 设置 探索未至之境 预览版 beta 标准模式 描述你想要构建的内容, / 调用指令, @ 文件或对话 工作区内修改 DeepSeek-V41-Flash High",
+      "deeplinkStylePresent": true,
+      "storage": {
+        "dsh.workspace.view.v5": "{\"groupBy\":\"workspace\",\"orderBy\":\"updated\",\"groupExpansion\":{\"ee73cda6-f6fe-44b6-b772-dabdbafe22e8\":true},\"sessionOrderByAccount\":{},\"archivedFilter\":\"default\"}",
+        "dsh.sessions.current": "{\"sessionId\":\"session-e9ea570e-d88f-4e06-ada9-d954cdb0874b\"}",
+        "dsh.sidebar-right.v1.session-e9ea570e-d88f-4e06-ada9-d954cdb0874b": "{\"bySession\":{\"session-e9ea570e-d88f-4e06-ada9-d954cdb0874b\":{\"layout\":{\"nodes\":{\"pane1\":{\"kind\":\"pane\",\"id\":\"pane1\",\"host\":\"dock\",\"tabs\":[]}},\"tabs\":{},\"rootId\":\"pane1\",\"floats\":[],\"activePaneId\":\"pane1\",\"expanded\":false,\"mode\":\"push\"},\"minted\":1}}}"
+      },
+      "httpStatus": 200,
+      "pageErrors": [],
+      "consoleWarn": [],
+      "navEvents": [
+        "http://127.0.0.1:2690/",
+        "http://127.0.0.1:2690/"
+      ],
+      "modalsDismissed": [
+        "/^稍后配置$/"
+      ]
+    },
+    {
+      "id": "C3b-both-reversed-order",
+      "requestedParams": {
+        "workspace": "7529e9de-4bfc-4528-92e9-9ea05c755f53",
+        "session": "sess-dl-beta-one"
+      },
+      "requestedUrl": "http://127.0.0.1:2690/?token=REDACTED&workspace=7529e9de-4bfc-4528-92e9-9ea05c755f53&session=sess-dl-beta-one",
+      "finalUrl": "http://127.0.0.1:2690/",
+      "finalSearch": "",
+      "selectedRowKey": "session:session-e9ea570e-d88f-4e06-ada9-d954cdb0874b",
+      "selectedRowText": "新会话",
+      "chatFlowKids": 0,
+      "userRows": 0,
+      "historyLength": 2,
+      "bodyBlank": false,
+      "bodyTextHead": "新会话 Ctrl + Alt + N 插件 工作区 beta 新会话 未命名 1小时 alpha 设置 探索未至之境 预览版 beta 标准模式 描述你想要构建的内容, / 调用指令, @ 文件或对话 工作区内修改 DeepSeek-V41-Flash High",
+      "deeplinkStylePresent": true,
+      "storage": {
+        "dsh.workspace.view.v5": "{\"groupBy\":\"workspace\",\"orderBy\":\"updated\",\"groupExpansion\":{\"ee73cda6-f6fe-44b6-b772-dabdbafe22e8\":true},\"sessionOrderByAccount\":{},\"archivedFilter\":\"default\"}",
+        "dsh.sessions.current": "{\"sessionId\":\"session-e9ea570e-d88f-4e06-ada9-d954cdb0874b\"}",
+        "dsh.sidebar-right.v1.session-e9ea570e-d88f-4e06-ada9-d954cdb0874b": "{\"bySession\":{\"session-e9ea570e-d88f-4e06-ada9-d954cdb0874b\":{\"layout\":{\"nodes\":{\"pane1\":{\"kind\":\"pane\",\"id\":\"pane1\",\"host\":\"dock\",\"tabs\":[]}},\"tabs\":{},\"rootId\":\"pane1\",\"floats\":[],\"activePaneId\":\"pane1\",\"expanded\":false,\"mode\":\"push\"},\"minted\":1}}}"
+      },
+      "httpStatus": 200,
+      "pageErrors": [],
+      "consoleWarn": [],
+      "navEvents": [
+        "http://127.0.0.1:2690/",
+        "http://127.0.0.1:2690/"
+      ],
+      "modalsDismissed": [
+        "/^稍后配置$/"
+      ]
+    },
+    {
+      "id": "C4a-unknown-session",
+      "requestedParams": {
+        "session": "sess-does-not-exist"
+      },
+      "requestedUrl": "http://127.0.0.1:2690/?token=REDACTED&session=sess-does-not-exist",
+      "finalUrl": "http://127.0.0.1:2690/",
+      "finalSearch": "",
+      "selectedRowKey": "session:session-e9ea570e-d88f-4e06-ada9-d954cdb0874b",
+      "selectedRowText": "新会话",
+      "chatFlowKids": 0,
+      "userRows": 0,
+      "historyLength": 2,
+      "bodyBlank": false,
+      "bodyTextHead": "新会话 Ctrl + Alt + N 插件 工作区 beta 新会话 未命名 1小时 alpha 设置 探索未至之境 预览版 beta 标准模式 描述你想要构建的内容, / 调用指令, @ 文件或对话 工作区内修改 DeepSeek-V41-Flash High",
+      "deeplinkStylePresent": true,
+      "storage": {
+        "dsh.workspace.view.v5": "{\"groupBy\":\"workspace\",\"orderBy\":\"updated\",\"groupExpansion\":{\"ee73cda6-f6fe-44b6-b772-dabdbafe22e8\":true},\"sessionOrderByAccount\":{},\"archivedFilter\":\"default\"}",
+        "dsh.sessions.current": "{\"sessionId\":\"session-e9ea570e-d88f-4e06-ada9-d954cdb0874b\"}",
+        "dsh.sidebar-right.v1.session-e9ea570e-d88f-4e06-ada9-d954cdb0874b": "{\"bySession\":{\"session-e9ea570e-d88f-4e06-ada9-d954cdb0874b\":{\"layout\":{\"nodes\":{\"pane1\":{\"kind\":\"pane\",\"id\":\"pane1\",\"host\":\"dock\",\"tabs\":[]}},\"tabs\":{},\"rootId\":\"pane1\",\"floats\":[],\"activePaneId\":\"pane1\",\"expanded\":false,\"mode\":\"push\"},\"minted\":1}}}"
+      },
+      "httpStatus": 200,
+      "pageErrors": [],
+      "consoleWarn": [],
+      "navEvents": [
+        "http://127.0.0.1:2690/",
+        "http://127.0.0.1:2690/"
+      ],
+      "modalsDismissed": [
+        "/^稍后配置$/"
+      ]
+    },
+    {
+      "id": "C4b-unknown-workspace",
+      "requestedParams": {
+        "workspace": "00000000-0000-4000-8000-000000000000"
+      },
+      "requestedUrl": "http://127.0.0.1:2690/?token=REDACTED&workspace=00000000-0000-4000-8000-000000000000",
+      "finalUrl": "http://127.0.0.1:2690/",
+      "finalSearch": "",
+      "selectedRowKey": "session:session-e9ea570e-d88f-4e06-ada9-d954cdb0874b",
+      "selectedRowText": "新会话",
+      "chatFlowKids": 0,
+      "userRows": 0,
+      "historyLength": 2,
+      "bodyBlank": false,
+      "bodyTextHead": "新会话 Ctrl + Alt + N 插件 工作区 beta 新会话 未命名 1小时 alpha 设置 探索未至之境 预览版 beta 标准模式 描述你想要构建的内容, / 调用指令, @ 文件或对话 工作区内修改 DeepSeek-V41-Flash High",
+      "deeplinkStylePresent": true,
+      "storage": {
+        "dsh.workspace.view.v5": "{\"groupBy\":\"workspace\",\"orderBy\":\"updated\",\"groupExpansion\":{\"ee73cda6-f6fe-44b6-b772-dabdbafe22e8\":true},\"sessionOrderByAccount\":{},\"archivedFilter\":\"default\"}",
+        "dsh.sessions.current": "{\"sessionId\":\"session-e9ea570e-d88f-4e06-ada9-d954cdb0874b\"}",
+        "dsh.sidebar-right.v1.session-e9ea570e-d88f-4e06-ada9-d954cdb0874b": "{\"bySession\":{\"session-e9ea570e-d88f-4e06-ada9-d954cdb0874b\":{\"layout\":{\"nodes\":{\"pane1\":{\"kind\":\"pane\",\"id\":\"pane1\",\"host\":\"dock\",\"tabs\":[]}},\"tabs\":{},\"rootId\":\"pane1\",\"floats\":[],\"activePaneId\":\"pane1\",\"expanded\":false,\"mode\":\"push\"},\"minted\":1}}}"
+      },
+      "httpStatus": 200,
+      "pageErrors": [],
+      "consoleWarn": [],
+      "navEvents": [
+        "http://127.0.0.1:2690/",
+        "http://127.0.0.1:2690/"
+      ],
+      "modalsDismissed": [
+        "/^稍后配置$/"
+      ]
+    },
+    {
+      "id": "C4c-format-wrong",
+      "requestedParams": {
+        "session": "../../etc/passwd"
+      },
+      "requestedUrl": "http://127.0.0.1:2690/?token=REDACTED&session=..%2F..%2Fetc%2Fpasswd",
+      "finalUrl": "http://127.0.0.1:2690/",
+      "finalSearch": "",
+      "selectedRowKey": "session:session-e9ea570e-d88f-4e06-ada9-d954cdb0874b",
+      "selectedRowText": "新会话",
+      "chatFlowKids": 0,
+      "userRows": 0,
+      "historyLength": 2,
+      "bodyBlank": false,
+      "bodyTextHead": "新会话 Ctrl + Alt + N 插件 工作区 beta 新会话 未命名 1小时 alpha 设置 探索未至之境 预览版 beta 标准模式 描述你想要构建的内容, / 调用指令, @ 文件或对话 工作区内修改 DeepSeek-V41-Flash High",
+      "deeplinkStylePresent": true,
+      "storage": {
+        "dsh.workspace.view.v5": "{\"groupBy\":\"workspace\",\"orderBy\":\"updated\",\"groupExpansion\":{\"ee73cda6-f6fe-44b6-b772-dabdbafe22e8\":true},\"sessionOrderByAccount\":{},\"archivedFilter\":\"default\"}",
+        "dsh.sessions.current": "{\"sessionId\":\"session-e9ea570e-d88f-4e06-ada9-d954cdb0874b\"}",
+        "dsh.sidebar-right.v1.session-e9ea570e-d88f-4e06-ada9-d954cdb0874b": "{\"bySession\":{\"session-e9ea570e-d88f-4e06-ada9-d954cdb0874b\":{\"layout\":{\"nodes\":{\"pane1\":{\"kind\":\"pane\",\"id\":\"pane1\",\"host\":\"dock\",\"tabs\":[]}},\"tabs\":{},\"rootId\":\"pane1\",\"floats\":[],\"activePaneId\":\"pane1\",\"expanded\":false,\"mode\":\"push\"},\"minted\":1}}}"
+      },
+      "httpStatus": 200,
+      "pageErrors": [],
+      "consoleWarn": [],
+      "navEvents": [
+        "http://127.0.0.1:2690/",
+        "http://127.0.0.1:2690/"
+      ],
+      "modalsDismissed": [
+        "/^稍后配置$/"
+      ]
+    },
+    {
+      "id": "C4d-malformed-uuid",
+      "requestedParams": {
+        "workspace": "not-a-uuid"
+      },
+      "requestedUrl": "http://127.0.0.1:2690/?token=REDACTED&workspace=not-a-uuid",
+      "finalUrl": "http://127.0.0.1:2690/",
+      "finalSearch": "",
+      "selectedRowKey": "session:session-e9ea570e-d88f-4e06-ada9-d954cdb0874b",
+      "selectedRowText": "新会话",
+      "chatFlowKids": 0,
+      "userRows": 0,
+      "historyLength": 2,
+      "bodyBlank": false,
+      "bodyTextHead": "新会话 Ctrl + Alt + N 插件 工作区 beta 新会话 未命名 1小时 alpha 设置 探索未至之境 预览版 beta 标准模式 描述你想要构建的内容, / 调用指令, @ 文件或对话 工作区内修改 DeepSeek-V41-Flash High",
+      "deeplinkStylePresent": true,
+      "storage": {
+        "dsh.workspace.view.v5": "{\"groupBy\":\"workspace\",\"orderBy\":\"updated\",\"groupExpansion\":{\"ee73cda6-f6fe-44b6-b772-dabdbafe22e8\":true},\"sessionOrderByAccount\":{},\"archivedFilter\":\"default\"}",
+        "dsh.sessions.current": "{\"sessionId\":\"session-e9ea570e-d88f-4e06-ada9-d954cdb0874b\"}",
+        "dsh.sidebar-right.v1.session-e9ea570e-d88f-4e06-ada9-d954cdb0874b": "{\"bySession\":{\"session-e9ea570e-d88f-4e06-ada9-d954cdb0874b\":{\"layout\":{\"nodes\":{\"pane1\":{\"kind\":\"pane\",\"id\":\"pane1\",\"host\":\"dock\",\"tabs\":[]}},\"tabs\":{},\"rootId\":\"pane1\",\"floats\":[],\"activePaneId\":\"pane1\",\"expanded\":false,\"mode\":\"push\"},\"minted\":1}}}"
+      },
+      "httpStatus": 200,
+      "pageErrors": [],
+      "consoleWarn": [],
+      "navEvents": [
+        "http://127.0.0.1:2690/",
+        "http://127.0.0.1:2690/"
+      ],
+      "modalsDismissed": [
+        "/^稍后配置$/"
+      ]
+    },
+    {
+      "id": "C4e-very-long",
+      "requestedParams": {
+        "session": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+      },
+      "requestedUrl": "http://127.0.0.1:2690/?token=REDACTED&session=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "finalUrl": "http://127.0.0.1:2690/",
+      "finalSearch": "",
+      "selectedRowKey": "session:session-e9ea570e-d88f-4e06-ada9-d954cdb0874b",
+      "selectedRowText": "新会话",
+      "chatFlowKids": 0,
+      "userRows": 0,
+      "historyLength": 2,
+      "bodyBlank": false,
+      "bodyTextHead": "新会话 Ctrl + Alt + N 插件 工作区 beta 新会话 未命名 1小时 alpha 设置 探索未至之境 预览版 beta 标准模式 描述你想要构建的内容, / 调用指令, @ 文件或对话 工作区内修改 DeepSeek-V41-Flash High",
+      "deeplinkStylePresent": true,
+      "storage": {
+        "dsh.workspace.view.v5": "{\"groupBy\":\"workspace\",\"orderBy\":\"updated\",\"groupExpansion\":{\"ee73cda6-f6fe-44b6-b772-dabdbafe22e8\":true},\"sessionOrderByAccount\":{},\"archivedFilter\":\"default\"}",
+        "dsh.sessions.current": "{\"sessionId\":\"session-e9ea570e-d88f-4e06-ada9-d954cdb0874b\"}",
+        "dsh.sidebar-right.v1.session-e9ea570e-d88f-4e06-ada9-d954cdb0874b": "{\"bySession\":{\"session-e9ea570e-d88f-4e06-ada9-d954cdb0874b\":{\"layout\":{\"nodes\":{\"pane1\":{\"kind\":\"pane\",\"id\":\"pane1\",\"host\":\"dock\",\"tabs\":[]}},\"tabs\":{},\"rootId\":\"pane1\",\"floats\":[],\"activePaneId\":\"pane1\",\"expanded\":false,\"mode\":\"push\"},\"minted\":1}}}"
+      },
+      "httpStatus": 200,
+      "pageErrors": [],
+      "consoleWarn": [],
+      "navEvents": [
+        "http://127.0.0.1:2690/",
+        "http://127.0.0.1:2690/"
+      ],
+      "modalsDismissed": [
+        "/^稍后配置$/"
+      ]
+    },
+    {
+      "id": "C8a-empty-session",
+      "requestedParams": {
+        "session": ""
+      },
+      "requestedUrl": "http://127.0.0.1:2690/?token=REDACTED&session=",
+      "finalUrl": "http://127.0.0.1:2690/",
+      "finalSearch": "",
+      "selectedRowKey": "session:session-e9ea570e-d88f-4e06-ada9-d954cdb0874b",
+      "selectedRowText": "新会话",
+      "chatFlowKids": 0,
+      "userRows": 0,
+      "historyLength": 2,
+      "bodyBlank": false,
+      "bodyTextHead": "新会话 Ctrl + Alt + N 插件 工作区 beta 新会话 未命名 1小时 alpha 设置 探索未至之境 预览版 beta 标准模式 描述你想要构建的内容, / 调用指令, @ 文件或对话 工作区内修改 DeepSeek-V41-Flash High",
+      "deeplinkStylePresent": true,
+      "storage": {
+        "dsh.workspace.view.v5": "{\"groupBy\":\"workspace\",\"orderBy\":\"updated\",\"groupExpansion\":{\"ee73cda6-f6fe-44b6-b772-dabdbafe22e8\":true},\"sessionOrderByAccount\":{},\"archivedFilter\":\"default\"}",
+        "dsh.sessions.current": "{\"sessionId\":\"session-e9ea570e-d88f-4e06-ada9-d954cdb0874b\"}",
+        "dsh.sidebar-right.v1.session-e9ea570e-d88f-4e06-ada9-d954cdb0874b": "{\"bySession\":{\"session-e9ea570e-d88f-4e06-ada9-d954cdb0874b\":{\"layout\":{\"nodes\":{\"pane1\":{\"kind\":\"pane\",\"id\":\"pane1\",\"host\":\"dock\",\"tabs\":[]}},\"tabs\":{},\"rootId\":\"pane1\",\"floats\":[],\"activePaneId\":\"pane1\",\"expanded\":false,\"mode\":\"push\"},\"minted\":1}}}"
+      },
+      "httpStatus": 200,
+      "pageErrors": [],
+      "consoleWarn": [],
+      "navEvents": [
+        "http://127.0.0.1:2690/",
+        "http://127.0.0.1:2690/"
+      ],
+      "modalsDismissed": [
+        "/^稍后配置$/"
+      ]
+    },
+    {
+      "id": "C8b-empty-workspace",
+      "requestedParams": {
+        "workspace": ""
+      },
+      "requestedUrl": "http://127.0.0.1:2690/?token=REDACTED&workspace=",
+      "finalUrl": "http://127.0.0.1:2690/",
+      "finalSearch": "",
+      "selectedRowKey": "session:session-e9ea570e-d88f-4e06-ada9-d954cdb0874b",
+      "selectedRowText": "新会话",
+      "chatFlowKids": 0,
+      "userRows": 0,
+      "historyLength": 2,
+      "bodyBlank": false,
+      "bodyTextHead": "新会话 Ctrl + Alt + N 插件 工作区 beta 新会话 未命名 1小时 alpha 设置 探索未至之境 预览版 beta 标准模式 描述你想要构建的内容, / 调用指令, @ 文件或对话 工作区内修改 DeepSeek-V41-Flash High",
+      "deeplinkStylePresent": true,
+      "storage": {
+        "dsh.workspace.view.v5": "{\"groupBy\":\"workspace\",\"orderBy\":\"updated\",\"groupExpansion\":{\"ee73cda6-f6fe-44b6-b772-dabdbafe22e8\":true},\"sessionOrderByAccount\":{},\"archivedFilter\":\"default\"}",
+        "dsh.sessions.current": "{\"sessionId\":\"session-e9ea570e-d88f-4e06-ada9-d954cdb0874b\"}",
+        "dsh.sidebar-right.v1.session-e9ea570e-d88f-4e06-ada9-d954cdb0874b": "{\"bySession\":{\"session-e9ea570e-d88f-4e06-ada9-d954cdb0874b\":{\"layout\":{\"nodes\":{\"pane1\":{\"kind\":\"pane\",\"id\":\"pane1\",\"host\":\"dock\",\"tabs\":[]}},\"tabs\":{},\"rootId\":\"pane1\",\"floats\":[],\"activePaneId\":\"pane1\",\"expanded\":false,\"mode\":\"push\"},\"minted\":1}}}"
+      },
+      "httpStatus": 200,
+      "pageErrors": [],
+      "consoleWarn": [],
+      "navEvents": [
+        "http://127.0.0.1:2690/",
+        "http://127.0.0.1:2690/"
+      ],
+      "modalsDismissed": [
+        "/^稍后配置$/"
+      ]
+    },
+    {
+      "id": "C8c-both-empty",
+      "requestedParams": {
+        "session": "",
+        "workspace": ""
+      },
+      "requestedUrl": "http://127.0.0.1:2690/?token=REDACTED&session=&workspace=",
+      "finalUrl": "http://127.0.0.1:2690/",
+      "finalSearch": "",
+      "selectedRowKey": "session:session-e9ea570e-d88f-4e06-ada9-d954cdb0874b",
+      "selectedRowText": "新会话",
+      "chatFlowKids": 0,
+      "userRows": 0,
+      "historyLength": 2,
+      "bodyBlank": false,
+      "bodyTextHead": "新会话 Ctrl + Alt + N 插件 工作区 beta 新会话 未命名 1小时 alpha 设置 探索未至之境 预览版 beta 标准模式 描述你想要构建的内容, / 调用指令, @ 文件或对话 工作区内修改 DeepSeek-V41-Flash High",
+      "deeplinkStylePresent": true,
+      "storage": {
+        "dsh.workspace.view.v5": "{\"groupBy\":\"workspace\",\"orderBy\":\"updated\",\"groupExpansion\":{\"ee73cda6-f6fe-44b6-b772-dabdbafe22e8\":true},\"sessionOrderByAccount\":{},\"archivedFilter\":\"default\"}",
+        "dsh.sessions.current": "{\"sessionId\":\"session-e9ea570e-d88f-4e06-ada9-d954cdb0874b\"}",
+        "dsh.sidebar-right.v1.session-e9ea570e-d88f-4e06-ada9-d954cdb0874b": "{\"bySession\":{\"session-e9ea570e-d88f-4e06-ada9-d954cdb0874b\":{\"layout\":{\"nodes\":{\"pane1\":{\"kind\":\"pane\",\"id\":\"pane1\",\"host\":\"dock\",\"tabs\":[]}},\"tabs\":{},\"rootId\":\"pane1\",\"floats\":[],\"activePaneId\":\"pane1\",\"expanded\":false,\"mode\":\"push\"},\"minted\":1}}}"
+      },
+      "httpStatus": 200,
+      "pageErrors": [],
+      "consoleWarn": [],
+      "navEvents": [
+        "http://127.0.0.1:2690/",
+        "http://127.0.0.1:2690/"
+      ],
+      "modalsDismissed": [
+        "/^稍后配置$/"
+      ]
+    },
+    {
+      "id": "C8d-malformed-encoding",
+      "requestedParams": "session=%E0%A4%A",
+      "requestedUrl": "http://127.0.0.1:2690/?token=REDACTED&session=%E0%A4%A",
+      "finalUrl": "http://127.0.0.1:2690/",
+      "finalSearch": "",
+      "selectedRowKey": "session:session-e9ea570e-d88f-4e06-ada9-d954cdb0874b",
+      "selectedRowText": "新会话",
+      "chatFlowKids": 0,
+      "userRows": 0,
+      "historyLength": 2,
+      "bodyBlank": false,
+      "bodyTextHead": "新会话 Ctrl + Alt + N 插件 工作区 beta 新会话 未命名 1小时 alpha 设置 探索未至之境 预览版 beta 标准模式 描述你想要构建的内容, / 调用指令, @ 文件或对话 工作区内修改 DeepSeek-V41-Flash High",
+      "deeplinkStylePresent": true,
+      "storage": {
+        "dsh.workspace.view.v5": "{\"groupBy\":\"workspace\",\"orderBy\":\"updated\",\"groupExpansion\":{\"ee73cda6-f6fe-44b6-b772-dabdbafe22e8\":true},\"sessionOrderByAccount\":{},\"archivedFilter\":\"default\"}",
+        "dsh.sessions.current": "{\"sessionId\":\"session-e9ea570e-d88f-4e06-ada9-d954cdb0874b\"}",
+        "dsh.sidebar-right.v1.session-e9ea570e-d88f-4e06-ada9-d954cdb0874b": "{\"bySession\":{\"session-e9ea570e-d88f-4e06-ada9-d954cdb0874b\":{\"layout\":{\"nodes\":{\"pane1\":{\"kind\":\"pane\",\"id\":\"pane1\",\"host\":\"dock\",\"tabs\":[]}},\"tabs\":{},\"rootId\":\"pane1\",\"floats\":[],\"activePaneId\":\"pane1\",\"expanded\":false,\"mode\":\"push\"},\"minted\":1}}}"
+      },
+      "httpStatus": 200,
+      "pageErrors": [],
+      "consoleWarn": [],
+      "navEvents": [
+        "http://127.0.0.1:2690/",
+        "http://127.0.0.1:2690/"
+      ],
+      "modalsDismissed": [
+        "/^稍后配置$/"
+      ]
+    },
+    {
+      "id": "C8e-plus-and-percent",
+      "requestedParams": "session=a%2Bb%20c%25",
+      "requestedUrl": "http://127.0.0.1:2690/?token=REDACTED&session=a%2Bb%20c%25",
+      "finalUrl": "http://127.0.0.1:2690/",
+      "finalSearch": "",
+      "selectedRowKey": "session:session-e9ea570e-d88f-4e06-ada9-d954cdb0874b",
+      "selectedRowText": "新会话",
+      "chatFlowKids": 0,
+      "userRows": 0,
+      "historyLength": 2,
+      "bodyBlank": false,
+      "bodyTextHead": "新会话 Ctrl + Alt + N 插件 工作区 beta 新会话 未命名 1小时 alpha 设置 探索未至之境 预览版 beta 标准模式 描述你想要构建的内容, / 调用指令, @ 文件或对话 工作区内修改 DeepSeek-V41-Flash High",
+      "deeplinkStylePresent": true,
+      "storage": {
+        "dsh.workspace.view.v5": "{\"groupBy\":\"workspace\",\"orderBy\":\"updated\",\"groupExpansion\":{\"ee73cda6-f6fe-44b6-b772-dabdbafe22e8\":true},\"sessionOrderByAccount\":{},\"archivedFilter\":\"default\"}",
+        "dsh.sessions.current": "{\"sessionId\":\"session-e9ea570e-d88f-4e06-ada9-d954cdb0874b\"}",
+        "dsh.sidebar-right.v1.session-e9ea570e-d88f-4e06-ada9-d954cdb0874b": "{\"bySession\":{\"session-e9ea570e-d88f-4e06-ada9-d954cdb0874b\":{\"layout\":{\"nodes\":{\"pane1\":{\"kind\":\"pane\",\"id\":\"pane1\",\"host\":\"dock\",\"tabs\":[]}},\"tabs\":{},\"rootId\":\"pane1\",\"floats\":[],\"activePaneId\":\"pane1\",\"expanded\":false,\"mode\":\"push\"},\"minted\":1}}}"
+      },
+      "httpStatus": 200,
+      "pageErrors": [],
+      "consoleWarn": [],
+      "navEvents": [
+        "http://127.0.0.1:2690/",
+        "http://127.0.0.1:2690/"
+      ],
+      "modalsDismissed": [
+        "/^稍后配置$/"
+      ]
+    },
+    {
+      "id": "C8f-no-params-only-token",
+      "requestedParams": {},
+      "requestedUrl": "http://127.0.0.1:2690/?token=REDACTED",
+      "finalUrl": "http://127.0.0.1:2690/",
+      "finalSearch": "",
+      "selectedRowKey": "session:session-e9ea570e-d88f-4e06-ada9-d954cdb0874b",
+      "selectedRowText": "新会话",
+      "chatFlowKids": 0,
+      "userRows": 0,
+      "historyLength": 2,
+      "bodyBlank": false,
+      "bodyTextHead": "新会话 Ctrl + Alt + N 插件 工作区 beta 新会话 未命名 1小时 alpha 设置 探索未至之境 预览版 beta 标准模式 描述你想要构建的内容, / 调用指令, @ 文件或对话 工作区内修改 DeepSeek-V41-Flash High",
+      "deeplinkStylePresent": true,
+      "storage": {
+        "dsh.workspace.view.v5": "{\"groupBy\":\"workspace\",\"orderBy\":\"updated\",\"groupExpansion\":{\"ee73cda6-f6fe-44b6-b772-dabdbafe22e8\":true},\"sessionOrderByAccount\":{},\"archivedFilter\":\"default\"}",
+        "dsh.sessions.current": "{\"sessionId\":\"session-e9ea570e-d88f-4e06-ada9-d954cdb0874b\"}",
+        "dsh.sidebar-right.v1.session-e9ea570e-d88f-4e06-ada9-d954cdb0874b": "{\"bySession\":{\"session-e9ea570e-d88f-4e06-ada9-d954cdb0874b\":{\"layout\":{\"nodes\":{\"pane1\":{\"kind\":\"pane\",\"id\":\"pane1\",\"host\":\"dock\",\"tabs\":[]}},\"tabs\":{},\"rootId\":\"pane1\",\"floats\":[],\"activePaneId\":\"pane1\",\"expanded\":false,\"mode\":\"push\"},\"minted\":1}}}"
+      },
+      "httpStatus": 200,
+      "pageErrors": [],
+      "consoleWarn": [],
+      "navEvents": [
+        "http://127.0.0.1:2690/",
+        "http://127.0.0.1:2690/"
+      ],
+      "modalsDismissed": [
+        "/^稍后配置$/"
+      ]
+    }
+  ]
+}

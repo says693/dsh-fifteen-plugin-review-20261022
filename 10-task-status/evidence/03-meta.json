@@ -1,0 +1,77 @@
+{
+  "file": "temp/vlln-dsh-task-status-0.3.1.tgz",
+  "bytes": 15676,
+  "sha1": "62c1deb97fc38a9bc2e749ebf6d987ce3c64b935",
+  "sha256": "21f7c6489ab05ececfdf592a7c31f3fa5e7c8bd070c70bfce7ae461ee2d8b65e",
+  "sha512_b64": "sha512-rNIzEOFRYeCzvxCDWQED8KxWtFXescGvsDDDT4GPM2r9rvoicQIHDnzm6SDCzKE2q/MZx4Sw3M6JBUByFVcYlA==",
+  "registry_http": 200,
+  "registry": {
+    "name": "@vlln/dsh-task-status",
+    "latest": "0.3.1",
+    "versions": [
+      "0.3.1"
+    ],
+    "time_created": "2026-08-19T16:47:23.897Z",
+    "time_031": "2026-08-19T16:47:24.241Z",
+    "gitHead": "849d73a5a862b332634fc4b987174122bbd953bb",
+    "license": "MIT",
+    "author": null,
+    "maintainers": [
+      "vlln"
+    ],
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/vlln/+process.argv[1]+.git"
+    },
+    "homepage": "https://github.com/vlln/+process.argv[1]+#readme",
+    "bugs": {
+      "url": "https://github.com/vlln/+process.argv[1]+/issues"
+    },
+    "dist": {
+      "integrity": "sha512-rNIzEOFRYeCzvxCDWQED8KxWtFXescGvsDDDT4GPM2r9rvoicQIHDnzm6SDCzKE2q/MZx4Sw3M6JBUByFVcYlA==",
+      "shasum": "62c1deb97fc38a9bc2e749ebf6d987ce3c64b935",
+      "fileCount": 10,
+      "unpackedSize": 47324,
+      "tarball": "https://registry.npmjs.org/@vlln/dsh-task-status/-/dsh-task-status-0.3.1.tgz"
+    },
+    "peerDependencies": {
+      "@deepseek-ai/cordis": "^4.0.1",
+      "react": "^18.2.0"
+    },
+    "engines": {
+      "node": ">=22.19.0",
+      "dsh": ">=0.1.0-rc.5"
+    },
+    "dsh": {
+      "bundle": {
+        "patch": "./cordis.patch.yml"
+      },
+      "client": {
+        "inject": [
+          "@deepseek-ai/dsh-client-runtime",
+          "@deepseek-ai/dsh-client-ui-slots"
+        ],
+        "platform": "web"
+      }
+    }
+  },
+  "match_shasum": true,
+  "match_integrity": true,
+  "github_commit_http": 200,
+  "github_commit": {
+    "sha": "3751096f38eeb52df85b2cfae15a239d4197d643",
+    "date": "2026-10-03T16:54:00Z",
+    "message": "docs: 归档说明——官方已内置后台任务 UI，本插件冻结"
+  },
+  "github_repo_http": 200,
+  "github_repo": {
+    "full_name": "vlln/dsh-task-status",
+    "private": false,
+    "license": "MIT",
+    "default_branch": "main",
+    "stars": 8,
+    "pushed_at": "2026-10-03T16:54:03Z",
+    "size": 98,
+    "description": "DSH 插件：后台任务状态条（对话页任务进度 + 实时输出 tail）。官方 bundle 插件，dsh plugin --profile web add 安装"
+  }
+}

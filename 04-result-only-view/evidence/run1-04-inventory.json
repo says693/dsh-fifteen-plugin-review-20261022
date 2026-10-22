@@ -1,0 +1,185 @@
+{
+  "inventory": [
+    {
+      "i": 0,
+      "text": "",
+      "ariaPressed": "true",
+      "ariaLabel": "自动换行",
+      "title": null,
+      "cls": "_action_1pq26_43",
+      "rect": {
+        "x": 1158,
+        "y": 274,
+        "w": 24,
+        "h": 24
+      },
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Sego",
+      "borderRadius": "8px",
+      "parentCls": "_actions_1pq26_43",
+      "ancestorSlots": [
+        "conversation.chat.node",
+        "conversation.view",
+        "conversation.session",
+        "main.conversation",
+        "main",
+        "root"
+      ]
+    },
+    {
+      "i": 1,
+      "text": "",
+      "ariaPressed": "false",
+      "ariaLabel": "好的回答",
+      "title": null,
+      "cls": "_8_XoUG_action",
+      "rect": {
+        "x": 515,
+        "y": 785,
+        "w": 28,
+        "h": 28
+      },
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Sego",
+      "borderRadius": "8px",
+      "parentCls": "",
+      "ancestorSlots": [
+        "conversation.chat.assistant-actions",
+        "conversation.chat.node",
+        "conversation.view",
+        "conversation.session",
+        "main.conversation",
+        "main",
+        "root"
+      ]
+    },
+    {
+      "i": 2,
+      "text": "",
+      "ariaPressed": "false",
+      "ariaLabel": "有问题的回答",
+      "title": null,
+      "cls": "_8_XoUG_action",
+      "rect": {
+        "x": 551,
+        "y": 785,
+        "w": 28,
+        "h": 28
+      },
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Sego",
+      "borderRadius": "8px",
+      "parentCls": "",
+      "ancestorSlots": [
+        "conversation.chat.assistant-actions",
+        "conversation.chat.node",
+        "conversation.view",
+        "conversation.session",
+        "main.conversation",
+        "main",
+        "root"
+      ]
+    },
+    {
+      "i": 3,
+      "text": "◉ 只看结果",
+      "ariaPressed": "true",
+      "ariaLabel": null,
+      "title": "只看结果已开启：过程已隐藏，运行中以实时摘要芯片展示正在进行的步骤（问答与插件审批卡片除外）。点击恢复完整单行折叠。",
+      "cls": "",
+      "rect": {
+        "x": 655,
+        "y": 936,
+        "w": 79,
+        "h": 22
+      },
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Sego",
+      "borderRadius": "11px",
+      "parentCls": "",
+      "ancestorSlots": [
+        "conversation.input.left",
+        "conversation.composer.bar",
+        "conversation.composer",
+        "main.conversation",
+        "main",
+        "root"
+      ]
+    }
+  ],
+  "composerTarget": {
+    "found": true,
+    "rect": {
+      "x": 655,
+      "y": 936,
+      "w": 79,
+      "h": 22
+    },
+    "slots": [
+      "conversation.input.left",
+      "conversation.composer.bar",
+      "conversation.composer",
+      "main.conversation",
+      "main",
+      "root"
+    ],
+    "text": "◉ 只看结果",
+    "pressed": "true"
+  },
+  "composer": {
+    "composerSeat": {
+      "x": 280,
+      "y": 872,
+      "w": 1153,
+      "h": 128
+    },
+    "inputBox": {
+      "x": 469,
+      "y": 880,
+      "w": 770,
+      "h": 36
+    },
+    "slots": [
+      "root",
+      "sidebar",
+      "sidebar.brand.mark",
+      "sidebar.brand.name",
+      "sidebar.panellist",
+      "sidebar.workspaces",
+      "sidebar.workspaces.directoryFlow",
+      "sidebar.session.row.leading",
+      "sidebar.workspaces.session.row.action",
+      "sidebar.footer.action",
+      "sidebar.settings",
+      "settings.launcher",
+      "settings.trigger",
+      "main",
+      "main.conversation",
+      "conversation.header",
+      "conversation.header.leading",
+      "conversation.session.header",
+      "conversation.session.header.lineage",
+      "conversation.session.header.actions",
+      "conversation.session.header.utilities",
+      "conversation.session.header.corner",
+      "conversation.session",
+      "conversation.view",
+      "conversation.chat.node",
+      "conversation.chat.turnTail",
+      "conversation.chat.assistant-actions",
+      "conversation.composer",
+      "conversation.input.dock",
+      "conversation.composer.bar",
+      "conversation.input.overlay",
+      "conversation.input.attachments",
+      "conversation.input.permission",
+      "conversation.input.plan",
+      "conversation.input.left",
+      "conversation.input.right",
+      "conversation.input.model",
+      "conversation.input.activity",
+      "conversation.composer.dock",
+      "rightbar",
+      "rightbar.session",
+      "shell.overlay"
+    ]
+  },
+  "errors": [],
+  "consoleLog": []
+}

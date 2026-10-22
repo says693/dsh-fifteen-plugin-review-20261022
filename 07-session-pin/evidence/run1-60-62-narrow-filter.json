@@ -1,0 +1,279 @@
+{
+  "wide": {
+    "vw": 1440,
+    "overflowX": false,
+    "panel": {
+      "x": 1130,
+      "y": 48,
+      "w": 298,
+      "h": 205,
+      "right": 1428,
+      "display": "block"
+    },
+    "nav": {
+      "x": 846,
+      "y": 48,
+      "w": 294,
+      "h": 92,
+      "right": 1140,
+      "display": "flex"
+    },
+    "footer": {
+      "x": 12,
+      "y": 916,
+      "w": 256,
+      "h": 28,
+      "right": 268,
+      "display": "flex"
+    },
+    "sidebar": {
+      "x": 0,
+      "y": 0,
+      "w": 280,
+      "h": 1000,
+      "right": 280,
+      "display": "flex"
+    },
+    "badges": 5
+  },
+  "w1100": {
+    "vw": 1100,
+    "overflowX": false,
+    "panel": {
+      "x": 790,
+      "y": 48,
+      "w": 298,
+      "h": 205,
+      "right": 1088,
+      "display": "block"
+    },
+    "nav": {
+      "x": 506,
+      "y": 48,
+      "w": 294,
+      "h": 92,
+      "right": 800,
+      "display": "flex"
+    },
+    "footer": {
+      "x": 12,
+      "y": 816,
+      "w": 256,
+      "h": 28,
+      "right": 268,
+      "display": "flex"
+    },
+    "sidebar": {
+      "x": 0,
+      "y": 0,
+      "w": 280,
+      "h": 900,
+      "right": 280,
+      "display": "flex"
+    },
+    "badges": 5
+  },
+  "w900": {
+    "vw": 900,
+    "overflowX": false,
+    "panel": {
+      "x": 590,
+      "y": 48,
+      "w": 298,
+      "h": 205,
+      "right": 888,
+      "display": "block"
+    },
+    "nav": {
+      "x": 306,
+      "y": 48,
+      "w": 294,
+      "h": 92,
+      "right": 600,
+      "display": "flex"
+    },
+    "footer": {
+      "x": 13,
+      "y": 812,
+      "w": 30,
+      "h": 28,
+      "right": 43,
+      "display": "flex"
+    },
+    "sidebar": {
+      "x": 0,
+      "y": 0,
+      "w": 55,
+      "h": 900,
+      "right": 55,
+      "display": "flex"
+    },
+    "badges": 0
+  },
+  "w760": {
+    "vw": 760,
+    "overflowX": false,
+    "panel": {
+      "x": 450,
+      "y": 48,
+      "w": 298,
+      "h": 205,
+      "right": 748,
+      "display": "block"
+    },
+    "nav": {
+      "x": 166,
+      "y": 48,
+      "w": 294,
+      "h": 92,
+      "right": 460,
+      "display": "flex"
+    },
+    "footer": {
+      "x": 13,
+      "y": 812,
+      "w": 30,
+      "h": 28,
+      "right": 43,
+      "display": "flex"
+    },
+    "sidebar": {
+      "x": 0,
+      "y": 0,
+      "w": 55,
+      "h": 900,
+      "right": 55,
+      "display": "flex"
+    },
+    "badges": 0
+  },
+  "w640": {
+    "vw": 640,
+    "overflowX": false,
+    "panel": {
+      "x": 330,
+      "y": 48,
+      "w": 298,
+      "h": 205,
+      "right": 628,
+      "display": "block"
+    },
+    "nav": {
+      "x": 46,
+      "y": 48,
+      "w": 294,
+      "h": 92,
+      "right": 340,
+      "display": "flex"
+    },
+    "footer": {
+      "x": 13,
+      "y": 812,
+      "w": 30,
+      "h": 28,
+      "right": 43,
+      "display": "flex"
+    },
+    "sidebar": {
+      "x": 0,
+      "y": 0,
+      "w": 55,
+      "h": 900,
+      "right": 55,
+      "display": "flex"
+    },
+    "badges": 0
+  },
+  "back": {
+    "vw": 1440,
+    "overflowX": false,
+    "panel": {
+      "x": 1130,
+      "y": 48,
+      "w": 298,
+      "h": 205,
+      "right": 1428,
+      "display": "block"
+    },
+    "nav": {
+      "x": 846,
+      "y": 48,
+      "w": 294,
+      "h": 92,
+      "right": 1140,
+      "display": "flex"
+    },
+    "footer": {
+      "x": 12,
+      "y": 916,
+      "w": 256,
+      "h": 28,
+      "right": 268,
+      "display": "flex"
+    },
+    "sidebar": {
+      "x": 0,
+      "y": 0,
+      "w": 280,
+      "h": 1000,
+      "right": 280,
+      "display": "flex"
+    },
+    "badges": 5
+  },
+  "filterTest": {
+    "afterText": {
+      "visibleRows": [
+        "/goto 请假",
+        "写一封给班主任的请假邮件"
+      ],
+      "allRows": [
+        {
+          "t": "/goto 请假",
+          "disp": ""
+        },
+        {
+          "t": "比较两个版本的实验数据差异",
+          "disp": "none"
+        },
+        {
+          "t": "写一封给班主任的请假邮件",
+          "disp": ""
+        },
+        {
+          "t": "帮我整理一份关于海洋塑料污",
+          "disp": "none"
+        },
+        {
+          "t": "把这周的错题整理成表格",
+          "disp": "none"
+        }
+      ],
+      "sidebarRows": [
+        "新会话",
+        "帮我整理一份关于海洋塑料污 刚刚",
+        "/goto 请假 2分钟",
+        "把这周的错题整理成表格 3分钟",
+        "写一封给班主任的请假邮件 13分钟",
+        "比较两个版本的实验数据差异 13分钟"
+      ]
+    },
+    "afterClear": {
+      "visibleRows": [
+        "/goto 请假",
+        "比较两个版本的实验数据差异",
+        "写一封给班主任的请假邮件",
+        "帮我整理一份关于海洋塑料污",
+        "把这周的错题整理成表格"
+      ]
+    }
+  },
+  "errors": [],
+  "console": [
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "utc": "2026-10-22T01:18:37.604Z"
+    }
+  ]
+}

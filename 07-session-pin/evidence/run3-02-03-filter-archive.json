@@ -1,0 +1,161 @@
+{
+  "origin": "http://127.0.0.1:5956/?token=REDACTED",
+  "panel0": {
+    "groups": [
+      "▾ 复习 (1)",
+      "▾ 未分组 (4)"
+    ],
+    "rows": [
+      {
+        "t": "比较两个版本的实验数据差异",
+        "board": "board",
+        "tags": "考试 复习"
+      },
+      {
+        "t": "/goto 请假",
+        "tags": ""
+      },
+      {
+        "t": "写一封给班主任的请假邮件",
+        "tags": ""
+      },
+      {
+        "t": "帮我整理一份关于海洋塑料污",
+        "tags": ""
+      },
+      {
+        "t": "把这周的错题整理成表格",
+        "tags": ""
+      }
+    ],
+    "chips": [
+      "All",
+      "复习",
+      "✎",
+      "✕",
+      "复习",
+      "✎",
+      "✕",
+      "+ board",
+      "+ view",
+      "考试",
+      "复习"
+    ]
+  },
+  "filter1": {
+    "panelOpen": true,
+    "rows": [
+      {
+        "t": "比较两个版本的实验数据差异",
+        "disp": "none"
+      },
+      {
+        "t": "/goto 请假",
+        "disp": "none"
+      },
+      {
+        "t": "写一封给班主任的请假邮件",
+        "disp": "none"
+      },
+      {
+        "t": "帮我整理一份关于海洋塑料污",
+        "disp": "none"
+      },
+      {
+        "t": "把这周的错题整理成表格",
+        "disp": "none"
+      }
+    ],
+    "rowsAfterReopen": [
+      {
+        "t": "比较两个版本的实验数据差异",
+        "disp": "none"
+      },
+      {
+        "t": "/goto 请假",
+        "disp": "none"
+      },
+      {
+        "t": "写一封给班主任的请假邮件",
+        "disp": "none"
+      },
+      {
+        "t": "帮我整理一份关于海洋塑料污",
+        "disp": "none"
+      },
+      {
+        "t": "把这周的错题整理成表格",
+        "disp": "none"
+      }
+    ]
+  },
+  "filterCleared": 5,
+  "pinState": [
+    {
+      "k": "session:session-c031acc8-cd2e-48f3-b0ac-0ad30adda10d",
+      "t": "新会话"
+    },
+    {
+      "k": "session:session-08fbbad4-a5f0-4e61-8e44-49b911727022",
+      "t": "帮我整理一份关于海洋塑料污 14",
+      "pin": "true"
+    },
+    {
+      "k": "session:session-36dafaf6-2551-4cb7-a7a0-5a148681f143",
+      "t": "把这周的错题整理成表格 17分钟",
+      "pin": "true"
+    },
+    {
+      "k": "session:session-3c8badf3-ce48-4e15-aae2-be9723a30ae1",
+      "t": "写一封给班主任的请假邮件 28分",
+      "pin": "true"
+    },
+    {
+      "k": "session:session-300ede31-2667-45af-9046-0749490f3dd4",
+      "t": "比较两个版本的实验数据差异 28",
+      "pin": "true"
+    }
+  ],
+  "footerBefore": "已置顶的会话 (5)",
+  "archiveTarget": {
+    "key": "session:session-08fbbad4-a5f0-4e61-8e44-49b911727022",
+    "title": "帮我整理一份关于海洋塑料污 14分钟"
+  },
+  "archiveClick": {
+    "ok": true
+  },
+  "afterArchivePanel": {
+    "stillInPanel": false,
+    "panelRows": [],
+    "footer": "已置顶的会话 (5)",
+    "sidebar": [
+      "新会话",
+      "把这周的错题整理成表格 17分钟",
+      "写一封给班主任的请假邮件 28分钟",
+      "比较两个版本的实验数据差异 28分钟"
+    ]
+  },
+  "afterReload": {
+    "archivedStillInPanel": false,
+    "panelRows": [
+      "比较两个版本的实验数据差异",
+      "/goto 请假",
+      "写一封给班主任的请假邮件",
+      "帮我整理一份关于海洋塑料污",
+      "把这周的错题整理成表格"
+    ],
+    "footer": "已置顶的会话 (5)",
+    "sidebar": [
+      "新会话",
+      "把这周的错题整理成表格 17分钟",
+      "写一封给班主任的请假邮件 28分钟",
+      "比较两个版本的实验数据差异 28分钟"
+    ],
+    "groups": [
+      "▾ 复习 (1)",
+      "▾ 未分组 (4)"
+    ]
+  },
+  "errors": [],
+  "console": []
+}

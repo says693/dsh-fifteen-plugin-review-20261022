@@ -1,0 +1,14 @@
+{
+  "out": {
+    "ids": [
+      "@deepseek-ai/dsh-client-modules",
+      "create:[object Object]"
+    ],
+    "desc": [
+      "set loader, keys=mode,pendingQueue,load,create",
+      "domready loader keys=mode,pendingQueue,load,create"
+    ],
+    "count": 2
+  },
+  "errs": []
+}

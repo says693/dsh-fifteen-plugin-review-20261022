@@ -1,0 +1,27 @@
+﻿node.exe : npm notice
+所在位置 行:1 字符: 1
++ & "C:\Program Files/node.exe" "C:\Program Files/node_modules/npm/bin/ ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (npm notice:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+npm notice package: dsh-session-hotkeys@1.9.5
+npm notice Tarball Contents
+npm notice 20.4kB CHANGELOG.md
+npm notice 1.1kB LICENSE
+npm notice 12.2kB README.md
+npm notice 278B cordis.patch.yml
+npm notice 152.8kB lib/client.js
+npm notice 175B lib/index.js
+npm notice 3.0kB package.json
+npm notice Tarball Details
+npm notice name: dsh-session-hotkeys
+npm notice version: 1.9.5
+npm notice filename: dsh-session-hotkeys-1.9.5.tgz
+npm notice package size: 53.7 kB
+npm notice unpacked size: 189.9 kB
+npm notice shasum: 1d7500442ea03345b3d234db46fb703a34169c58
+npm notice integrity: sha512-e9CkjPW+KWM1l[...]qcqlKFGQnd91Q==
+npm notice total files: 7
+npm notice
+dsh-session-hotkeys-1.9.5.tgz

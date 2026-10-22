@@ -1,0 +1,230 @@
+{
+  "host": "http://127.0.0.1:2690",
+  "shapes": [
+    {
+      "id": "token-only",
+      "requested": "http://127.0.0.1:2690/?token=REDACTED",
+      "status": 200,
+      "redirects": [
+        {
+          "url": "http://127.0.0.1:2690/?token=REDACTED",
+          "status": 303,
+          "type": "document"
+        },
+        {
+          "url": "http://127.0.0.1:2690/",
+          "status": 200,
+          "type": "document"
+        }
+      ],
+      "firstSeen": {
+        "firstSearch": "",
+        "firstHref": "http://127.0.0.1:2690/",
+        "calls": [
+          {
+            "fn": "replaceState",
+            "url": "/"
+          }
+        ]
+      },
+      "final": {
+        "search": "",
+        "href": "http://127.0.0.1:2690/",
+        "bodyLen": 194,
+        "hasApp": true,
+        "selected": "session:session-e9ea570e-d88f-4e06-ada9-d954cdb0874b"
+      },
+      "errs": []
+    },
+    {
+      "id": "token+session",
+      "requested": "http://127.0.0.1:2690/?token=REDACTED&session=sess-dl-alpha-two",
+      "status": 200,
+      "redirects": [
+        {
+          "url": "http://127.0.0.1:2690/?token=REDACTED&session=sess-dl-alpha-two",
+          "status": 303,
+          "type": "document"
+        },
+        {
+          "url": "http://127.0.0.1:2690/",
+          "status": 200,
+          "type": "document"
+        }
+      ],
+      "firstSeen": {
+        "firstSearch": "",
+        "firstHref": "http://127.0.0.1:2690/",
+        "calls": [
+          {
+            "fn": "replaceState",
+            "url": "/"
+          }
+        ]
+      },
+      "final": {
+        "search": "",
+        "href": "http://127.0.0.1:2690/",
+        "bodyLen": 194,
+        "hasApp": true,
+        "selected": "session:session-e9ea570e-d88f-4e06-ada9-d954cdb0874b"
+      },
+      "errs": []
+    },
+    {
+      "id": "session+token",
+      "requested": "http://127.0.0.1:2690/?session=sess-dl-alpha-two&token=REDACTED",
+      "status": 200,
+      "redirects": [
+        {
+          "url": "http://127.0.0.1:2690/?session=sess-dl-alpha-two&token=REDACTED",
+          "status": 303,
+          "type": "document"
+        },
+        {
+          "url": "http://127.0.0.1:2690/",
+          "status": 200,
+          "type": "document"
+        }
+      ],
+      "firstSeen": {
+        "firstSearch": "",
+        "firstHref": "http://127.0.0.1:2690/",
+        "calls": [
+          {
+            "fn": "replaceState",
+            "url": "/"
+          }
+        ]
+      },
+      "final": {
+        "search": "",
+        "href": "http://127.0.0.1:2690/",
+        "bodyLen": 194,
+        "hasApp": true,
+        "selected": "session:session-e9ea570e-d88f-4e06-ada9-d954cdb0874b"
+      },
+      "errs": []
+    },
+    {
+      "id": "token+workspace",
+      "requested": "http://127.0.0.1:2690/?token=REDACTED&workspace=7529e9de-4bfc-4528-92e9-9ea05c755f53",
+      "status": 200,
+      "redirects": [
+        {
+          "url": "http://127.0.0.1:2690/?token=REDACTED&workspace=7529e9de-4bfc-4528-92e9-9ea05c755f53",
+          "status": 303,
+          "type": "document"
+        },
+        {
+          "url": "http://127.0.0.1:2690/",
+          "status": 200,
+          "type": "document"
+        }
+      ],
+      "firstSeen": {
+        "firstSearch": "",
+        "firstHref": "http://127.0.0.1:2690/",
+        "calls": [
+          {
+            "fn": "replaceState",
+            "url": "/"
+          }
+        ]
+      },
+      "final": {
+        "search": "",
+        "href": "http://127.0.0.1:2690/",
+        "bodyLen": 194,
+        "hasApp": true,
+        "selected": "session:session-e9ea570e-d88f-4e06-ada9-d954cdb0874b"
+      },
+      "errs": []
+    },
+    {
+      "id": "token+benign-param",
+      "requested": "http://127.0.0.1:2690/?token=REDACTED&foo=bar",
+      "status": 200,
+      "redirects": [
+        {
+          "url": "http://127.0.0.1:2690/?token=REDACTED&foo=bar",
+          "status": 303,
+          "type": "document"
+        },
+        {
+          "url": "http://127.0.0.1:2690/",
+          "status": 200,
+          "type": "document"
+        }
+      ],
+      "firstSeen": {
+        "firstSearch": "",
+        "firstHref": "http://127.0.0.1:2690/",
+        "calls": [
+          {
+            "fn": "replaceState",
+            "url": "/"
+          }
+        ]
+      },
+      "final": {
+        "search": "",
+        "href": "http://127.0.0.1:2690/",
+        "bodyLen": 194,
+        "hasApp": true,
+        "selected": "session:session-e9ea570e-d88f-4e06-ada9-d954cdb0874b"
+      },
+      "errs": []
+    },
+    {
+      "id": "session-no-token",
+      "requested": "http://127.0.0.1:2690/?session=sess-dl-alpha-two",
+      "status": 401,
+      "redirects": [
+        {
+          "url": "http://127.0.0.1:2690/?session=sess-dl-alpha-two",
+          "status": 401,
+          "type": "document"
+        }
+      ],
+      "firstSeen": {
+        "firstSearch": "?session=sess-dl-alpha-two",
+        "firstHref": "http://127.0.0.1:2690/?session=sess-dl-alpha-two",
+        "calls": []
+      },
+      "final": {
+        "search": "?session=sess-dl-alpha-two",
+        "href": "http://127.0.0.1:2690/?session=sess-dl-alpha-two",
+        "bodyLen": 68,
+        "hasApp": false,
+        "selected": null
+      },
+      "errs": []
+    },
+    {
+      "id": "no-query",
+      "requested": "http://127.0.0.1:2690/",
+      "status": 401,
+      "redirects": [
+        {
+          "url": "http://127.0.0.1:2690/",
+          "status": 401,
+          "type": "document"
+        }
+      ],
+      "firstSeen": {
+        "firstSearch": "",
+        "firstHref": "http://127.0.0.1:2690/",
+        "calls": []
+      },
+      "final": {
+        "search": "",
+        "href": "http://127.0.0.1:2690/",
+        "bodyLen": 68,
+        "hasApp": false,
+        "selected": null
+      },
+      "errs": []
+    }
+  ]
+}

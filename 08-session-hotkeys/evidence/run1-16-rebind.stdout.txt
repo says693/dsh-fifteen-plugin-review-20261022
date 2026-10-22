@@ -1,0 +1,148 @@
+﻿{
+  "utc": "2026-10-22T01:08:37.735Z",
+  "t0": {
+    "active": "session:session-b82a64e0-a6be-45a6-a240-f057d74ca6e0",
+    "n": 2,
+    "toast": null,
+    "keys": null,
+    "focus": {
+      "tag": "INPUT",
+      "role": null,
+      "aria": "API 密钥",
+      "cls": "zGbnIq_input"
+    }
+  },
+  "rebind": {
+    "found": true
+  },
+  "recording": {
+    "hint": [
+      "会话快捷键\nEsc\n按键\nAlt+1-9\nAlt+Shift+1-9\nAlt+Shift+U\n常用\n导航模式\nAlt+`\n改键\n导航模式：↑↓ 选择 · Enter 进入\n正在录制：请按新组合键（Esc 取消）…\nAlt+1-9\n取消\n上一个会话\nAlt+↑\n改键\n切换到显示顺序中的上一个会话\n下一个会话\nAlt+↓\n改键\n切换到显示顺序中的下一个会话\n新建会话\nAlt+N\n改键\n新建会话\n打开面板\nAlt+P\n改键\n打开 / 关闭本面板\n折叠 / 展开会话栏\nAlt+B\n改键\n折叠或展开左侧会话栏\n关闭聚焦面板 / 退出分屏\nAlt+W\n改键\n关闭聚焦的分屏面板；只剩一个时收起整个分屏\n聚焦模型选择\nAlt+M\n改键\n聚焦模型选择（再按一次回到输入框）\n聚焦输入框\nAlt+Enter\n改键\n把焦点移回聊天输入框\n退焦输入框 · 回到聊天区\nEsc\n改键\nEsc 聚焦聊天区；再按一次还原原焦点\n非默认方式发送\nAlt+Shift+Enter\n改键\n以与「忙时 Enter 行为」相反的方式发送当前消息\n搜索与会话操作\n聚焦搜索\nAlt+Shift+F\n改键\n聚焦并清空搜索框\n归档当前会话\nAlt+Shift+A\n改键\n归档当前会话（先弹确认卡片，可在「已归档」页查看）\n打开已归档列表\nAlt+Shift+U\n改键\n打开「已归档」会话列表页\n重命名当前会话\nAlt+Shift+R\n改键\n重命名当前会话\n固定槽位\n固定槽位（三态）\nAlt+Shift+1-9\n改键\n槽位三态：固定 / 跳转 / 取消\n跳转固定槽位\nCtrl+Alt+1-9\n改键\n纯跳转到固定槽位\n当前平台预设：Windows。键位与固定关系都保存在本浏览器。悬停每行可看完整说明。\n恢复默认\n↑↓ 移动 · ←→ 切换页签\n当前：default-workspace",
+      "常用\n导航模式\nAlt+`\n改键\n导航模式：↑↓ 选择 · Enter 进入\n正在录制：请按新组合键（Esc 取消）…\nAlt+1-9\n取消\n上一个会话\nAlt+↑\n改键\n切换到显示顺序中的上一个会话\n下一个会话\nAlt+↓\n改键\n切换到显示顺序中的下一个会话\n新建会话\nAlt+N\n改键\n新建会话\n打开面板\nAlt+P\n改键\n打开 / 关闭本面板\n折叠 / 展开会话栏\nAlt+B\n改键\n折叠或展开左侧会话栏\n关闭聚焦面板 / 退出分屏\nAlt+W\n改键\n关闭聚焦的分屏面板；只剩一个时收起整个分屏\n聚焦模型选择\nAlt+M\n改键\n聚焦模型选择（再按一次回到输入框）\n聚焦输入框\nAlt+Enter\n改键\n把焦点移回聊天输入框\n退焦输入框 · 回到聊天区\nEsc\n改键\nEsc 聚焦聊天区；再按一次还原原焦点\n非默认方式发送\nAlt+Shift+Enter\n改键\n以与「忙时 Enter 行为」相反的方式发送当前消息\n搜索与会话操作\n聚焦搜索\nAlt+Shift+F\n改键\n聚焦并清空搜索框\n归档当前会话\nAlt+Shift+A\n改键\n归档当前会话（先弹确认卡片，可在「已归档」页查看）\n打开已归档列表\nAlt+Shift+U\n改键\n打开「已归档」会话列表页\n重命名当前会话\nAlt+Shift+R\n改键\n重命名当前会话\n固定槽位\n固定槽位（三态）\nAlt+Shift+1-9\n改键\n槽位三态：固定 / 跳转 / 取消\n跳转固定槽位\nCtrl+Alt+1-9\n改键\n纯跳转到固定槽位\n当前平台预设：Windows。键位与固定关系都保存在本浏览器。悬停每行可看完整说明。\n恢复默认",
+      "正在录制：请按新组合键（Esc 取消）…\nAlt+1-9\n取消",
+      "正在录制：请按新组合键（Esc 取消）…\nAlt+1-9\n取消"
+    ]
+  },
+  "afterRecord": {
+    "active": "session:session-b82a64e0-a6be-45a6-a240-f057d74ca6e0",
+    "n": 2,
+    "toast": "已保存：顺序切换第 N 个会话 → Ctrl+Shift+1-9",
+    "keys": "{\"switchDigit\":{\"ctrl\":true,\"alt\":false,\"shift\":true,\"meta\":false,\"digit\":true,\"code\":null},\"pinToggle\":{\"ctrl\":false,\"alt\":true,\"shift\":true,\"meta\":false,\"digit\":true,\"code\":null},\"jumpPin\":{\"ctrl\":true,\"alt\":true,\"shift\":false,\"meta\":false,\"digit\":true,\"code\":null},\"prevSession\":{\"ctrl\":false,\"alt\":true,\"shift\":false,\"meta\":false,\"digit\":false,\"code\":\"ArrowUp\"},\"nextSession\":{\"ctrl\":false,\"alt\":true,\"shift\":false,\"meta\":false,\"digit\":false,\"code\":\"ArrowDown\"},\"newSession\":{\"ctrl\":false,\"alt\":true,\"shift\":false,\"meta\":false,\"digit\":false,\"code\":\"KeyN\"},\"archiveSession\":{\"ctrl\":false,\"alt\":true,\"shift\":true,\"meta\":false,\"digit\":false,\"code\":\"KeyA\"},\"archiveList\":{\"ctrl\":false,\"alt\":true,\"shift\":true,\"meta\":false,\"digit\":false,\"code\":\"KeyU\"},\"renameSession\":{\"ctrl\":false,\"alt\":true,\"shift\":true,\"meta\":false,\"digit\":false,\"code\":\"KeyR\"},\"navMode\":{\"ctrl\":false,\"alt\":true,\"shift\":false,\"meta\":false,\"digit\":false,\"code\":\"Backquote\"},\"panel\":{\"ctrl\":false,\"alt\":true,\"shift\":false,\"meta\":false,\"digit\":false,\"code\":\"KeyP\"},\"toggleSidebar\":{\"ctrl\":false,\"alt\":true,\"shift\":false,\"meta\":false,\"digit\":false,\"code\":\"KeyB\"},\"closeSplitView\":{\"ctrl\":false,\"alt\":true,\"shift\":false,\"meta\":false,\"digit\":false,\"code\":\"KeyW\"},\"searchFocus\":{\"ctrl\":false,\"alt\":true,\"shift\":true,\"meta\":false,\"digit\":false,\"code\":\"KeyF\"},\"focusModel\":{\"ctrl\":false,\"alt\":true,\"shift\":false,\"meta\":false,\"digit\":false,\"code\":\"KeyM\"},\"inputFocus\":{\"ctrl\":false,\"alt\":true,\"shift\":false,\"meta\":false,\"digit\":false,\"code\":\"Enter\"},\"inputBlur\":{\"ctrl\":false,\"alt\":false,\"shift\":false,\"meta\":false,\"digit\":false,\"code\":\"Escape\"},\"sendAlternate\":{\"ctrl\":false,\"alt\":true,\"shift\":true,\"meta\":false,\"digit\":false,\"code\":\"Enter\"}}",
+    "focus": {
+      "tag": "INPUT",
+      "role": null,
+      "aria": "API 密钥",
+      "cls": "zGbnIq_input"
+    }
+  },
+  "keyvalsAfter": [
+    "Alt+`",
+    "Ctrl+Shift+1-9",
+    "Alt+↑",
+    "Alt+↓",
+    "Alt+N",
+    "Alt+P",
+    "Alt+B",
+    "Alt+W",
+    "Alt+M",
+    "Alt+Enter",
+    "Esc",
+    "Alt+Shift+Enter",
+    "Alt+Shift+F",
+    "Alt+Shift+A",
+    "Alt+Shift+U",
+    "Alt+Shift+R",
+    "Alt+Shift+1-9",
+    "Ctrl+Alt+1-9"
+  ],
+  "panelClosed": true,
+  "oldKey": {
+    "key": "Alt+1",
+    "beforeActive": "session:session-b82a64e0-a6be-45a6-a240-f057d74ca6e0",
+    "afterActive": "session:session-b82a64e0-a6be-45a6-a240-f057d74ca6e0",
+    "changed": false,
+    "toast": "已聚焦聊天区 · ↑↓ / PgUp / PgDn 滚动"
+  },
+  "newKey": {
+    "key": "Ctrl+Shift+2",
+    "beforeActive": "session:session-b82a64e0-a6be-45a6-a240-f057d74ca6e0",
+    "afterActive": "session:session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e",
+    "changed": true,
+    "toast": "已切换到会话 2 · 周记·第一篇"
+  },
+  "beforeReload": {
+    "active": "session:session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e",
+    "n": 1,
+    "toast": "已切换到会话 2 · 周记·第一篇",
+    "keys": "{\"switchDigit\":{\"ctrl\":true,\"alt\":false,\"shift\":true,\"meta\":false,\"digit\":true,\"code\":null},\"pinToggle\":{\"ctrl\":false,\"alt\":true,\"shift\":true,\"meta\":false,\"digit\":true,\"code\":null},\"jumpPin\":{\"ctrl\":true,\"alt\":true,\"shift\":false,\"meta\":false,\"digit\":true,\"code\":null},\"prevSession\":{\"ctrl\":false,\"alt\":true,\"shift\":false,\"meta\":false,\"digit\":false,\"code\":\"ArrowUp\"},\"nextSession\":{\"ctrl\":false,\"alt\":true,\"shift\":false,\"meta\":false,\"digit\":false,\"code\":\"ArrowDown\"},\"newSession\":{\"ctrl\":false,\"alt\":true,\"shift\":false,\"meta\":false,\"digit\":false,\"code\":\"KeyN\"},\"archiveSession\":{\"ctrl\":false,\"alt\":true,\"shift\":true,\"meta\":false,\"digit\":false,\"code\":\"KeyA\"},\"archiveList\":{\"ctrl\":false,\"alt\":true,\"shift\":true,\"meta\":false,\"digit\":false,\"code\":\"KeyU\"},\"renameSession\":{\"ctrl\":false,\"alt\":true,\"shift\":true,\"meta\":false,\"digit\":false,\"code\":\"KeyR\"},\"navMode\":{\"ctrl\":false,\"alt\":true,\"shift\":false,\"meta\":false,\"digit\":false,\"code\":\"Backquote\"},\"panel\":{\"ctrl\":false,\"alt\":true,\"shift\":false,\"meta\":false,\"digit\":false,\"code\":\"KeyP\"},\"toggleSidebar\":{\"ctrl\":false,\"alt\":true,\"shift\":false,\"meta\":false,\"digit\":false,\"code\":\"KeyB\"},\"closeSplitView\":{\"ctrl\":false,\"alt\":true,\"shift\":false,\"meta\":false,\"digit\":false,\"code\":\"KeyW\"},\"searchFocus\":{\"ctrl\":false,\"alt\":true,\"shift\":true,\"meta\":false,\"digit\":false,\"code\":\"KeyF\"},\"focusModel\":{\"ctrl\":false,\"alt\":true,\"shift\":false,\"meta\":false,\"digit\":false,\"code\":\"KeyM\"},\"inputFocus\":{\"ctrl\":false,\"alt\":true,\"shift\":false,\"meta\":false,\"digit\":false,\"code\":\"Enter\"},\"inputBlur\":{\"ctrl\":false,\"alt\":false,\"shift\":false,\"meta\":false,\"digit\":false,\"code\":\"Escape\"},\"sendAlternate\":{\"ctrl\":false,\"alt\":true,\"shift\":true,\"meta\":false,\"digit\":false,\"code\":\"Enter\"}}",
+    "focus": {
+      "tag": "DIV",
+      "role": "textbox",
+      "aria": "发消息或创建任务, / 调用指令, @ 文件或对话",
+      "cls": "uV2eYG_input"
+    }
+  },
+  "afterReload": {
+    "active": "session:session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e",
+    "n": 1,
+    "toast": null,
+    "keys": "{\"switchDigit\":{\"ctrl\":true,\"alt\":false,\"shift\":true,\"meta\":false,\"digit\":true,\"code\":null},\"pinToggle\":{\"ctrl\":false,\"alt\":true,\"shift\":true,\"meta\":false,\"digit\":true,\"code\":null},\"jumpPin\":{\"ctrl\":true,\"alt\":true,\"shift\":false,\"meta\":false,\"digit\":true,\"code\":null},\"prevSession\":{\"ctrl\":false,\"alt\":true,\"shift\":false,\"meta\":false,\"digit\":false,\"code\":\"ArrowUp\"},\"nextSession\":{\"ctrl\":false,\"alt\":true,\"shift\":false,\"meta\":false,\"digit\":false,\"code\":\"ArrowDown\"},\"newSession\":{\"ctrl\":false,\"alt\":true,\"shift\":false,\"meta\":false,\"digit\":false,\"code\":\"KeyN\"},\"archiveSession\":{\"ctrl\":false,\"alt\":true,\"shift\":true,\"meta\":false,\"digit\":false,\"code\":\"KeyA\"},\"archiveList\":{\"ctrl\":false,\"alt\":true,\"shift\":true,\"meta\":false,\"digit\":false,\"code\":\"KeyU\"},\"renameSession\":{\"ctrl\":false,\"alt\":true,\"shift\":true,\"meta\":false,\"digit\":false,\"code\":\"KeyR\"},\"navMode\":{\"ctrl\":false,\"alt\":true,\"shift\":false,\"meta\":false,\"digit\":false,\"code\":\"Backquote\"},\"panel\":{\"ctrl\":false,\"alt\":true,\"shift\":false,\"meta\":false,\"digit\":false,\"code\":\"KeyP\"},\"toggleSidebar\":{\"ctrl\":false,\"alt\":true,\"shift\":false,\"meta\":false,\"digit\":false,\"code\":\"KeyB\"},\"closeSplitView\":{\"ctrl\":false,\"alt\":true,\"shift\":false,\"meta\":false,\"digit\":false,\"code\":\"KeyW\"},\"searchFocus\":{\"ctrl\":false,\"alt\":true,\"shift\":true,\"meta\":false,\"digit\":false,\"code\":\"KeyF\"},\"focusModel\":{\"ctrl\":false,\"alt\":true,\"shift\":false,\"meta\":false,\"digit\":false,\"code\":\"KeyM\"},\"inputFocus\":{\"ctrl\":false,\"alt\":true,\"shift\":false,\"meta\":false,\"digit\":false,\"code\":\"Enter\"},\"inputBlur\":{\"ctrl\":false,\"alt\":false,\"shift\":false,\"meta\":false,\"digit\":false,\"code\":\"Escape\"},\"sendAlternate\":{\"ctrl\":false,\"alt\":true,\"shift\":true,\"meta\":false,\"digit\":false,\"code\":\"Enter\"}}",
+    "focus": {
+      "tag": "DIV",
+      "role": "textbox",
+      "aria": "发消息或创建任务, / 调用指令, @ 文件或对话",
+      "cls": "uV2eYG_input"
+    }
+  },
+  "afterReloadNewKey": {
+    "key": "Ctrl+Shift+2",
+    "beforeActive": "session:session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e",
+    "afterActive": "session:session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e",
+    "changed": false,
+    "toast": "第 2 个位置没有会话"
+  },
+  "afterReloadOldKey": {
+    "key": "Alt+2",
+    "beforeActive": "session:session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e",
+    "afterActive": "session:session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e",
+    "changed": false,
+    "toast": null
+  },
+  "reset": {
+    "found": true,
+    "text": "恢复默认"
+  },
+  "afterReset": {
+    "active": "session:session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e",
+    "n": 1,
+    "toast": "已恢复 Windows 默认键位",
+    "keys": "{\"switchDigit\":{\"ctrl\":false,\"alt\":true,\"shift\":false,\"meta\":false,\"digit\":true,\"code\":null},\"pinToggle\":{\"ctrl\":false,\"alt\":true,\"shift\":true,\"meta\":false,\"digit\":true,\"code\":null},\"jumpPin\":{\"ctrl\":true,\"alt\":true,\"shift\":false,\"meta\":false,\"digit\":true,\"code\":null},\"prevSession\":{\"ctrl\":false,\"alt\":true,\"shift\":false,\"meta\":false,\"digit\":false,\"code\":\"ArrowUp\"},\"nextSession\":{\"ctrl\":false,\"alt\":true,\"shift\":false,\"meta\":false,\"digit\":false,\"code\":\"ArrowDown\"},\"newSession\":{\"ctrl\":false,\"alt\":true,\"shift\":false,\"meta\":false,\"digit\":false,\"code\":\"KeyN\"},\"archiveSession\":{\"ctrl\":false,\"alt\":true,\"shift\":true,\"meta\":false,\"digit\":false,\"code\":\"KeyA\"},\"archiveList\":{\"ctrl\":false,\"alt\":true,\"shift\":true,\"meta\":false,\"digit\":false,\"code\":\"KeyU\"},\"renameSession\":{\"ctrl\":false,\"alt\":true,\"shift\":true,\"meta\":false,\"digit\":false,\"code\":\"KeyR\"},\"navMode\":{\"ctrl\":false,\"alt\":true,\"shift\":false,\"meta\":false,\"digit\":false,\"code\":\"Backquote\"},\"panel\":{\"ctrl\":false,\"alt\":true,\"shift\":false,\"meta\":false,\"digit\":false,\"code\":\"KeyP\"},\"toggleSidebar\":{\"ctrl\":false,\"alt\":true,\"shift\":false,\"meta\":false,\"digit\":false,\"code\":\"KeyB\"},\"closeSplitView\":{\"ctrl\":false,\"alt\":true,\"shift\":false,\"meta\":false,\"digit\":false,\"code\":\"KeyW\"},\"searchFocus\":{\"ctrl\":false,\"alt\":true,\"shift\":true,\"meta\":false,\"digit\":false,\"code\":\"KeyF\"},\"focusModel\":{\"ctrl\":false,\"alt\":true,\"shift\":false,\"meta\":false,\"digit\":false,\"code\":\"KeyM\"},\"inputFocus\":{\"ctrl\":false,\"alt\":true,\"shift\":false,\"meta\":false,\"digit\":false,\"code\":\"Enter\"},\"inputBlur\":{\"ctrl\":false,\"alt\":false,\"shift\":false,\"meta\":false,\"digit\":false,\"code\":\"Escape\"},\"sendAlternate\":{\"ctrl\":false,\"alt\":true,\"shift\":true,\"meta\":false,\"digit\":false,\"code\":\"Enter\"}}",
+    "focus": {
+      "tag": "BUTTON",
+      "role": null,
+      "aria": null,
+      "cls": "shk-tab shk-tab-on"
+    }
+  },
+  "keyvalsAfterReset": [
+    "Alt+`",
+    "Alt+1-9",
+    "Alt+↑",
+    "Alt+↓",
+    "Alt+N",
+    "Alt+P",
+    "Alt+B",
+    "Alt+W",
+    "Alt+M",
+    "Alt+Enter",
+    "Esc",
+    "Alt+Shift+Enter",
+    "Alt+Shift+F",
+    "Alt+Shift+A",
+    "Alt+Shift+U",
+    "Alt+Shift+R",
+    "Alt+Shift+1-9",
+    "Ctrl+Alt+1-9"
+  ],
+  "errors": []
+}

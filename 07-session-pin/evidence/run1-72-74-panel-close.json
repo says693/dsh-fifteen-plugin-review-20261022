@@ -1,0 +1,35 @@
+{
+  "t1": {
+    "before": false,
+    "afterOpen": true
+  },
+  "t2": {
+    "panelBefore": true,
+    "navBefore": true,
+    "afterClickInput": {
+      "panel": false,
+      "focused": null
+    },
+    "afterType": {
+      "panel": false,
+      "value": ""
+    }
+  },
+  "t3": {
+    "panelBefore": true,
+    "chipText": "All",
+    "afterClickChip": {
+      "panel": false
+    }
+  },
+  "t4": {
+    "panelBefore": true,
+    "manageCount": 5,
+    "afterManage": {
+      "panel": true,
+      "editor": true
+    }
+  },
+  "errors": [],
+  "console": []
+}

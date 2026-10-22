@@ -1,0 +1,261 @@
+{
+  "contrast": [
+    {
+      "state": "dark+color+100",
+      "dark": true,
+      "panelBg": "rgb(30, 42, 56)",
+      "bodyBg": "rgb(21, 21, 23)",
+      "composite": {
+        "r": 30,
+        "g": 42,
+        "b": 56,
+        "a": 1
+      },
+      "label": {
+        "color": "rgb(249, 250, 251)",
+        "opacity": "0.6",
+        "bg": "rgba(0, 0, 0, 0)"
+      },
+      "chip": {
+        "color": "rgb(249, 250, 251)",
+        "opacity": "1",
+        "bg": "rgb(53, 54, 56)"
+      },
+      "hint": {
+        "color": "rgb(249, 250, 251)",
+        "opacity": "0.5",
+        "bg": "rgba(0, 0, 0, 0)"
+      },
+      "chipOn": {
+        "color": "rgb(249, 250, 251)",
+        "opacity": "1",
+        "bg": "rgb(53, 54, 56)"
+      },
+      "tick": {
+        "label": "rgb(249, 250, 251)",
+        "labelColorVsComposite": 13.92,
+        "chipColorVsComposite": 13.92,
+        "hintColorVsComposite": 13.92
+      },
+      "tweak": "[data-shortcut-modal=\"settings\"][role=\"dialog\"]{background-color:#1e2a38}"
+    },
+    {
+      "state": "dark+color+70",
+      "dark": true,
+      "panelBg": "color(srgb 0.117647 0.164706 0.219608 / 0.7)",
+      "bodyBg": "rgb(21, 21, 23)",
+      "composite": {
+        "r": 27.2999895,
+        "g": 35.70002099999999,
+        "b": 46.100027999999995,
+        "a": 1
+      },
+      "label": {
+        "color": "rgb(249, 250, 251)",
+        "opacity": "0.6",
+        "bg": "rgba(0, 0, 0, 0)"
+      },
+      "chip": {
+        "color": "rgb(249, 250, 251)",
+        "opacity": "1",
+        "bg": "rgb(53, 54, 56)"
+      },
+      "hint": {
+        "color": "rgb(249, 250, 251)",
+        "opacity": "0.5",
+        "bg": "rgba(0, 0, 0, 0)"
+      },
+      "chipOn": {
+        "color": "rgb(249, 250, 251)",
+        "opacity": "1",
+        "bg": "rgb(53, 54, 56)"
+      },
+      "tick": {
+        "label": "rgb(249, 250, 251)",
+        "labelColorVsComposite": 15.04,
+        "chipColorVsComposite": 15.04,
+        "hintColorVsComposite": 15.04
+      },
+      "tweak": "[data-shortcut-modal=\"settings\"][role=\"dialog\"]{background-color:color-mix(in srgb, #1e2a38 70%, transparent)}"
+    },
+    {
+      "state": "dark+color+50",
+      "dark": true,
+      "panelBg": "color(srgb 0.117647 0.164706 0.219608 / 0.5)",
+      "bodyBg": "rgb(21, 21, 23)",
+      "composite": {
+        "r": 25.499992499999998,
+        "g": 31.500014999999998,
+        "b": 39.50002,
+        "a": 1
+      },
+      "label": {
+        "color": "rgb(249, 250, 251)",
+        "opacity": "0.6",
+        "bg": "rgba(0, 0, 0, 0)"
+      },
+      "chip": {
+        "color": "rgb(249, 250, 251)",
+        "opacity": "1",
+        "bg": "rgb(53, 54, 56)"
+      },
+      "hint": {
+        "color": "rgb(249, 250, 251)",
+        "opacity": "0.5",
+        "bg": "rgba(0, 0, 0, 0)"
+      },
+      "chipOn": {
+        "color": "rgb(249, 250, 251)",
+        "opacity": "1",
+        "bg": "rgb(53, 54, 56)"
+      },
+      "tick": {
+        "label": "rgb(249, 250, 251)",
+        "labelColorVsComposite": 15.78,
+        "chipColorVsComposite": 15.78,
+        "hintColorVsComposite": 15.78
+      },
+      "tweak": "[data-shortcut-modal=\"settings\"][role=\"dialog\"]{background-color:color-mix(in srgb, #1e2a38 50%, transparent)}"
+    },
+    {
+      "state": "dark+color+30",
+      "dark": true,
+      "panelBg": "color(srgb 0.117647 0.164706 0.219608 / 0.3)",
+      "bodyBg": "rgb(21, 21, 23)",
+      "composite": {
+        "r": 23.6999955,
+        "g": 27.300008999999996,
+        "b": 32.900012,
+        "a": 1
+      },
+      "label": {
+        "color": "rgb(249, 250, 251)",
+        "opacity": "0.6",
+        "bg": "rgba(0, 0, 0, 0)"
+      },
+      "chip": {
+        "color": "rgb(249, 250, 251)",
+        "opacity": "1",
+        "bg": "rgb(53, 54, 56)"
+      },
+      "hint": {
+        "color": "rgb(249, 250, 251)",
+        "opacity": "0.5",
+        "bg": "rgba(0, 0, 0, 0)"
+      },
+      "chipOn": {
+        "color": "rgb(249, 250, 251)",
+        "opacity": "1",
+        "bg": "rgb(53, 54, 56)"
+      },
+      "tick": {
+        "label": "rgb(249, 250, 251)",
+        "labelColorVsComposite": 16.48,
+        "chipColorVsComposite": 16.48,
+        "hintColorVsComposite": 16.48
+      },
+      "tweak": "[data-shortcut-modal=\"settings\"][role=\"dialog\"]{background-color:color-mix(in srgb, #1e2a38 30%, transparent)}"
+    },
+    {
+      "state": "light+default+100",
+      "dark": false,
+      "panelBg": "rgb(255, 255, 255)",
+      "bodyBg": "rgb(255, 255, 255)",
+      "composite": {
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "a": 1
+      },
+      "label": {
+        "color": "rgb(15, 17, 21)",
+        "opacity": "0.6",
+        "bg": "rgba(0, 0, 0, 0)"
+      },
+      "chip": {
+        "color": "rgb(15, 17, 21)",
+        "opacity": "1",
+        "bg": "rgb(255, 255, 255)"
+      },
+      "hint": {
+        "color": "rgb(15, 17, 21)",
+        "opacity": "0.5",
+        "bg": "rgba(0, 0, 0, 0)"
+      },
+      "chipOn": {
+        "color": "rgb(15, 17, 21)",
+        "opacity": "1",
+        "bg": "rgb(255, 255, 255)"
+      },
+      "tick": {
+        "label": "rgb(15, 17, 21)",
+        "labelColorVsComposite": 18.9,
+        "chipColorVsComposite": 18.9,
+        "hintColorVsComposite": 18.9
+      },
+      "tweak": null
+    }
+  ],
+  "vp": [
+    {
+      "vp": [
+        1000,
+        900
+      ],
+      "rect": {
+        "x": 24,
+        "y": 60,
+        "w": 952,
+        "h": 780,
+        "right": 976,
+        "bottom": 840
+      },
+      "style": {
+        "width": "952px",
+        "height": "780px",
+        "maxWidth": "952px",
+        "backgroundColor": "rgb(255, 255, 255)",
+        "borderRadius": "28px",
+        "overflow": "hidden"
+      },
+      "secW": 560,
+      "secH": 202,
+      "overflowChips": [],
+      "chipRows": 3,
+      "numW": [],
+      "panelScrollW": 952,
+      "panelClientW": 952
+    },
+    {
+      "vp": [
+        760,
+        900
+      ],
+      "rect": {
+        "x": 24,
+        "y": 60,
+        "w": 712,
+        "h": 780,
+        "right": 736,
+        "bottom": 840
+      },
+      "style": {
+        "width": "712px",
+        "height": "780px",
+        "maxWidth": "712px",
+        "backgroundColor": "rgb(255, 255, 255)",
+        "borderRadius": "28px",
+        "overflow": "hidden"
+      },
+      "secW": 476,
+      "secH": 232,
+      "overflowChips": [],
+      "chipRows": 4,
+      "numW": [],
+      "panelScrollW": 712,
+      "panelClientW": 712
+    }
+  ],
+  "errors": [],
+  "consoleLog": []
+}

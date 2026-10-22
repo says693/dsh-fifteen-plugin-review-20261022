@@ -1,0 +1,1061 @@
+{
+  "currentSessionId": "{\"sessionId\":\"session-5a0b261b-2264-4e16-83c7-237905f1d656\"}",
+  "boot": {
+    "url": "http://127.0.0.1:9798/",
+    "origin": "http://127.0.0.1:9798",
+    "viewport": {
+      "w": 1440,
+      "h": 1000
+    },
+    "storage": {
+      "keys": [
+        "dsh.workspace.view.v5",
+        "dsh.sessions.current",
+        "dsh.sidebar-right.v1.session-5a0b261b-2264-4e16-83c7-237905f1d656"
+      ],
+      "enabled": null,
+      "settings": null
+    },
+    "styleTags": [
+      {
+        "cssId": "result-only-hide",
+        "chars": 7610
+      }
+    ],
+    "toggles": [
+      {
+        "text": "◉ 只看结果",
+        "ariaPressed": "true",
+        "title": "只看结果已开启：过程已隐藏，运行中以实时摘要芯片展示正在进行的步骤（问答与插件审批卡片除外）。点击恢复完整单行折叠。",
+        "rect": {
+          "x": 655,
+          "y": 573,
+          "w": 79,
+          "h": 22
+        },
+        "visible": true
+      }
+    ],
+    "counts": {
+      "think": 0,
+      "thinkVisible": 0,
+      "thinkDisplayed": 0,
+      "toolCall": 0,
+      "toolCallVisible": 0,
+      "toolAttr": 0,
+      "kinds": {},
+      "flowItems": 0,
+      "pre": 0,
+      "table": 0
+    },
+    "thinkRows": [],
+    "toolRows": [],
+    "turnTail": [],
+    "turnProcess": [],
+    "items": [],
+    "pre": [],
+    "tables": [],
+    "scroll": [
+      {
+        "scrollTop": 0,
+        "scrollHeight": 960,
+        "clientHeight": 960
+      }
+    ],
+    "bodyTextLen": 427,
+    "bodyText": "新会话 Ctrl + Alt + N 插件 工作区 workspace 新会话 未命名 1小时 未命名 1小时 未命名 1小时 未命名 1小时 设置 探索未至之境 预览版 workspace 标准模式 描述你想要构建的内容, / 调用指令, @ 文件或对话 工作区内修改 ◉ 只看结果 DeepSeek-V41-Flash High 预览版说明 DeepSeek Harness 目前的 0.2 版本仍处于预览阶段，还有许多地方需要持续改进和打磨，希望听取广大开发者和用户的反馈建议。现在，新的桌面端面向广泛用户，开发者相关的进阶功能可在配置中开启使用。预计 DeepSeek Harness 的产品功能以及插件 API 都会继续快速迭代、持续演化，并逐渐趋于稳定。 我们期待与全球用户和开发者一起，在开源、可复用、可组合的基础设施之上，共同探索智能上限。欢迎大家用 DeepSeek Harness",
+    "conversationText": "",
+    "conversationTextLen": 0
+  },
+  "dom": {
+    "total": 261,
+    "rows": [
+      {
+        "tag": "DIV",
+        "cls": "pI_x6G_sidebarCol",
+        "role": null,
+        "text": "新会话 Ctrl + Alt + N 插件 工作区 workspace 新会话 未命名 1小时 未命名 1小时 未命名 1小时 未命名 1小时 设置",
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "w": 280,
+          "h": 1000
+        }
+      },
+      {
+        "tag": "BUTTON",
+        "cls": "hHd-Xa_newSession",
+        "role": null,
+        "text": "新会话 Ctrl + Alt + N",
+        "rect": {
+          "x": 14,
+          "y": 70,
+          "w": 252,
+          "h": 38
+        }
+      },
+      {
+        "tag": "SPAN",
+        "cls": "hHd-Xa_newSessionLabelMask",
+        "role": null,
+        "text": "新会话",
+        "rect": {
+          "x": 27,
+          "y": 78,
+          "w": 155,
+          "h": 22
+        }
+      },
+      {
+        "tag": "SPAN",
+        "cls": "hHd-Xa_newSessionContent",
+        "role": null,
+        "text": "新会话",
+        "rect": {
+          "x": 27,
+          "y": 78,
+          "w": 226,
+          "h": 22
+        }
+      },
+      {
+        "tag": "SPAN",
+        "cls": "hHd-Xa_newSessionLabel hHd-Xa_wide",
+        "role": null,
+        "text": "新会话",
+        "rect": {
+          "x": 129,
+          "y": 78,
+          "w": 42,
+          "h": 22
+        }
+      },
+      {
+        "tag": "SPAN",
+        "cls": "hHd-Xa_newSessionShortcut",
+        "role": null,
+        "text": "Ctrl + Alt + N",
+        "rect": {
+          "x": 182,
+          "y": 81,
+          "w": 71,
+          "h": 16
+        }
+      },
+      {
+        "tag": "KBD",
+        "cls": "_key_38b9q_1",
+        "role": null,
+        "text": "Ctrl",
+        "rect": {
+          "x": 182,
+          "y": 81,
+          "w": 19,
+          "h": 16
+        }
+      },
+      {
+        "tag": "KBD",
+        "cls": "_separator_38b9q_30",
+        "role": null,
+        "text": "+",
+        "rect": {
+          "x": 204,
+          "y": 81,
+          "w": 8,
+          "h": 16
+        }
+      },
+      {
+        "tag": "KBD",
+        "cls": "_key_38b9q_1",
+        "role": null,
+        "text": "Alt",
+        "rect": {
+          "x": 215,
+          "y": 81,
+          "w": 15,
+          "h": 16
+        }
+      },
+      {
+        "tag": "KBD",
+        "cls": "_separator_38b9q_30",
+        "role": null,
+        "text": "+",
+        "rect": {
+          "x": 233,
+          "y": 81,
+          "w": 8,
+          "h": 16
+        }
+      },
+      {
+        "tag": "KBD",
+        "cls": "_key_38b9q_1",
+        "role": null,
+        "text": "N",
+        "rect": {
+          "x": 244,
+          "y": 81,
+          "w": 9,
+          "h": 16
+        }
+      },
+      {
+        "tag": "NAV",
+        "cls": "hHd-Xa_panelList",
+        "role": null,
+        "text": "插件",
+        "rect": {
+          "x": 12,
+          "y": 120,
+          "w": 256,
+          "h": 36
+        }
+      },
+      {
+        "tag": "BUTTON",
+        "cls": "hHd-Xa_panelRow",
+        "role": null,
+        "text": "插件",
+        "rect": {
+          "x": 14,
+          "y": 120,
+          "w": 252,
+          "h": 36
+        }
+      },
+      {
+        "tag": "SPAN",
+        "cls": "hHd-Xa_panelTitle hHd-Xa_wide",
+        "role": null,
+        "text": "插件",
+        "rect": {
+          "x": 46,
+          "y": 127,
+          "w": 28,
+          "h": 22
+        }
+      },
+      {
+        "tag": "DIV",
+        "cls": "hHd-Xa_regionArea",
+        "role": null,
+        "text": "工作区 workspace 新会话 未命名 1小时 未命名 1小时 未命名 1小时 未命名 1小时",
+        "rect": {
+          "x": 8,
+          "y": 164,
+          "w": 272,
+          "h": 780
+        }
+      },
+      {
+        "tag": "DIV",
+        "cls": "bhn1Oq_root",
+        "role": null,
+        "text": "工作区 workspace 新会话 未命名 1小时 未命名 1小时 未命名 1小时 未命名 1小时",
+        "rect": {
+          "x": 12,
+          "y": 164,
+          "w": 268,
+          "h": 780
+        }
+      },
+      {
+        "tag": "SPAN",
+        "cls": "bhn1Oq_sectionLabel bhn1Oq_wide",
+        "role": null,
+        "text": "工作区",
+        "rect": {
+          "x": 16,
+          "y": 174,
+          "w": 42,
+          "h": 20
+        }
+      },
+      {
+        "tag": "DIV",
+        "cls": "bhn1Oq_listArea",
+        "role": null,
+        "text": "workspace 新会话 未命名 1小时 未命名 1小时 未命名 1小时 未命名 1小时",
+        "rect": {
+          "x": 8,
+          "y": 206,
+          "w": 272,
+          "h": 738
+        }
+      },
+      {
+        "tag": "DIV",
+        "cls": "bhn1Oq_treeBody bhn1Oq_wide",
+        "role": null,
+        "text": "workspace 新会话 未命名 1小时 未命名 1小时 未命名 1小时 未命名 1小时",
+        "rect": {
+          "x": 12,
+          "y": 206,
+          "w": 268,
+          "h": 738
+        }
+      },
+      {
+        "tag": "DIV",
+        "cls": "bhn1Oq_list",
+        "role": "tree",
+        "text": "workspace 新会话 未命名 1小时 未命名 1小时 未命名 1小时 未命名 1小时",
+        "rect": {
+          "x": 8,
+          "y": 206,
+          "w": 270,
+          "h": 738
+        }
+      },
+      {
+        "tag": "SPAN",
+        "cls": "_root_38jqx_3",
+        "role": null,
+        "text": "workspace",
+        "rect": {
+          "x": 12,
+          "y": 206,
+          "w": 256,
+          "h": 34
+        }
+      },
+      {
+        "tag": "SPAN",
+        "cls": "YDXeBa_projectText",
+        "role": null,
+        "text": "workspace",
+        "rect": {
+          "x": 42,
+          "y": 213,
+          "w": 218,
+          "h": 20
+        }
+      },
+      {
+        "tag": "SPAN",
+        "cls": "YDXeBa_title",
+        "role": null,
+        "text": "workspace",
+        "rect": {
+          "x": 42,
+          "y": 213,
+          "w": 218,
+          "h": 20
+        }
+      },
+      {
+        "tag": "SPAN",
+        "cls": "_root_38jqx_3",
+        "role": null,
+        "text": "新会话",
+        "rect": {
+          "x": 12,
+          "y": 242,
+          "w": 256,
+          "h": 32
+        }
+      },
+      {
+        "tag": "DIV",
+        "cls": "YDXeBa_sessionRow YDXeBa_selected",
+        "role": "treeitem",
+        "text": "新会话",
+        "rect": {
+          "x": 12,
+          "y": 242,
+          "w": 256,
+          "h": 32
+        }
+      },
+      {
+        "tag": "SPAN",
+        "cls": "YDXeBa_title",
+        "role": null,
+        "text": "新会话",
+        "rect": {
+          "x": 40,
+          "y": 248,
+          "w": 214,
+          "h": 20
+        }
+      },
+      {
+        "tag": "SPAN",
+        "cls": "_root_38jqx_3",
+        "role": null,
+        "text": "未命名 1小时",
+        "rect": {
+          "x": 12,
+          "y": 276,
+          "w": 256,
+          "h": 32
+        }
+      },
+      {
+        "tag": "SPAN",
+        "cls": "YDXeBa_title",
+        "role": null,
+        "text": "未命名",
+        "rect": {
+          "x": 40,
+          "y": 282,
+          "w": 187,
+          "h": 20
+        }
+      },
+      {
+        "tag": "SPAN",
+        "cls": "YDXeBa_time",
+        "role": null,
+        "text": "1小时",
+        "rect": {
+          "x": 233,
+          "y": 284,
+          "w": 27,
+          "h": 16
+        }
+      },
+      {
+        "tag": "SPAN",
+        "cls": "_root_38jqx_3",
+        "role": null,
+        "text": "未命名 1小时",
+        "rect": {
+          "x": 12,
+          "y": 310,
+          "w": 256,
+          "h": 32
+        }
+      },
+      {
+        "tag": "SPAN",
+        "cls": "YDXeBa_title",
+        "role": null,
+        "text": "未命名",
+        "rect": {
+          "x": 40,
+          "y": 316,
+          "w": 187,
+          "h": 20
+        }
+      },
+      {
+        "tag": "SPAN",
+        "cls": "YDXeBa_time",
+        "role": null,
+        "text": "1小时",
+        "rect": {
+          "x": 233,
+          "y": 318,
+          "w": 27,
+          "h": 16
+        }
+      },
+      {
+        "tag": "SPAN",
+        "cls": "_root_38jqx_3",
+        "role": null,
+        "text": "未命名 1小时",
+        "rect": {
+          "x": 12,
+          "y": 344,
+          "w": 256,
+          "h": 32
+        }
+      },
+      {
+        "tag": "SPAN",
+        "cls": "YDXeBa_title",
+        "role": null,
+        "text": "未命名",
+        "rect": {
+          "x": 40,
+          "y": 350,
+          "w": 187,
+          "h": 20
+        }
+      },
+      {
+        "tag": "SPAN",
+        "cls": "YDXeBa_time",
+        "role": null,
+        "text": "1小时",
+        "rect": {
+          "x": 233,
+          "y": 352,
+          "w": 27,
+          "h": 16
+        }
+      },
+      {
+        "tag": "SPAN",
+        "cls": "_root_38jqx_3",
+        "role": null,
+        "text": "未命名 1小时",
+        "rect": {
+          "x": 12,
+          "y": 378,
+          "w": 256,
+          "h": 32
+        }
+      },
+      {
+        "tag": "SPAN",
+        "cls": "YDXeBa_title",
+        "role": null,
+        "text": "未命名",
+        "rect": {
+          "x": 40,
+          "y": 384,
+          "w": 187,
+          "h": 20
+        }
+      },
+      {
+        "tag": "SPAN",
+        "cls": "YDXeBa_time",
+        "role": null,
+        "text": "1小时",
+        "rect": {
+          "x": 233,
+          "y": 386,
+          "w": 27,
+          "h": 16
+        }
+      },
+      {
+        "tag": "DIV",
+        "cls": "hHd-Xa_footArea",
+        "role": null,
+        "text": "设置",
+        "rect": {
+          "x": 12,
+          "y": 944,
+          "w": 256,
+          "h": 50
+        }
+      },
+      {
+        "tag": "DIV",
+        "cls": "hHd-Xa_settingsArea",
+        "role": null,
+        "text": "设置",
+        "rect": {
+          "x": 12,
+          "y": 944,
+          "w": 256,
+          "h": 50
+        }
+      },
+      {
+        "tag": "DIV",
+        "cls": "VOzbGW_triggerRow",
+        "role": null,
+        "text": "设置",
+        "rect": {
+          "x": 10,
+          "y": 948,
+          "w": 260,
+          "h": 42
+        }
+      },
+      {
+        "tag": "BUTTON",
+        "cls": "VOzbGW_trigger",
+        "role": null,
+        "text": "设置",
+        "rect": {
+          "x": 10,
+          "y": 948,
+          "w": 260,
+          "h": 42
+        }
+      },
+      {
+        "tag": "SPAN",
+        "cls": "UQsH_q_triggerLabel",
+        "role": null,
+        "text": "设置",
+        "rect": {
+          "x": 42,
+          "y": 958,
+          "w": 28,
+          "h": 22
+        }
+      },
+      {
+        "tag": "DIV",
+        "cls": "pXSMma_root",
+        "role": null,
+        "text": "探索未至之境 预览版",
+        "rect": {
+          "x": 453,
+          "y": 401,
+          "w": 806,
+          "h": 44
+        }
+      },
+      {
+        "tag": "DIV",
+        "cls": "pXSMma_stack",
+        "role": null,
+        "text": "探索未至之境 预览版",
+        "rect": {
+          "x": 477,
+          "y": 401,
+          "w": 758,
+          "h": 44
+        }
+      },
+      {
+        "tag": "DIV",
+        "cls": "pXSMma_headline",
+        "role": null,
+        "text": "探索未至之境 预览版",
+        "rect": {
+          "x": 477,
+          "y": 401,
+          "w": 758,
+          "h": 32
+        }
+      },
+      {
+        "tag": "SPAN",
+        "cls": "pXSMma_titleGroup",
+        "role": null,
+        "text": "探索未至之境 预览版",
+        "rect": {
+          "x": 771,
+          "y": 401,
+          "w": 215,
+          "h": 32
+        }
+      },
+      {
+        "tag": "SPAN",
+        "cls": "",
+        "role": null,
+        "text": "探索未至之境",
+        "rect": {
+          "x": 771,
+          "y": 401,
+          "w": 156,
+          "h": 32
+        }
+      },
+      {
+        "tag": "SPAN",
+        "cls": "pXSMma_previewBadge",
+        "role": null,
+        "text": "预览版",
+        "rect": {
+          "x": 934,
+          "y": 403,
+          "w": 52,
+          "h": 21
+        }
+      },
+      {
+        "tag": "DIV",
+        "cls": "wSkVaW_heroWorkspaceRow",
+        "role": null,
+        "text": "workspace 标准模式",
+        "rect": {
+          "x": 453,
+          "y": 457,
+          "w": 806,
+          "h": 28
+        }
+      },
+      {
+        "tag": "BUTTON",
+        "cls": "pXSMma_workspace",
+        "role": null,
+        "text": "workspace",
+        "rect": {
+          "x": 473,
+          "y": 457,
+          "w": 114,
+          "h": 28
+        }
+      },
+      {
+        "tag": "SPAN",
+        "cls": "pXSMma_workspaceLabel",
+        "role": null,
+        "text": "workspace",
+        "rect": {
+          "x": 501,
+          "y": 461,
+          "w": 62,
+          "h": 20
+        }
+      },
+      {
+        "tag": "SPAN",
+        "cls": "_root_4ub78_1 cubgiG_menuAnchor",
+        "role": null,
+        "text": "标准模式",
+        "rect": {
+          "x": 592,
+          "y": 457,
+          "w": 106,
+          "h": 28
+        }
+      },
+      {
+        "tag": "BUTTON",
+        "cls": "cubgiG_seat",
+        "role": null,
+        "text": "标准模式",
+        "rect": {
+          "x": 592,
+          "y": 457,
+          "w": 106,
+          "h": 28
+        }
+      },
+      {
+        "tag": "SPAN",
+        "cls": "cubgiG_seatLabel",
+        "role": null,
+        "text": "标准模式",
+        "rect": {
+          "x": 620,
+          "y": 461,
+          "w": 52,
+          "h": 20
+        }
+      },
+      {
+        "tag": "DIV",
+        "cls": "uV2eYG_root uV2eYG_hero",
+        "role": null,
+        "text": "描述你想要构建的内容, / 调用指令, @ 文件或对话 工作区内修改 ◉ 只看结果 DeepSeek-V41-Flash High",
+        "rect": {
+          "x": 453,
+          "y": 493,
+          "w": 806,
+          "h": 114
+        }
+      },
+      {
+        "tag": "DIV",
+        "cls": "uV2eYG_scroll",
+        "role": null,
+        "text": "描述你想要构建的内容, / 调用指令, @ 文件或对话",
+        "rect": {
+          "x": 469,
+          "y": 501,
+          "w": 770,
+          "h": 52
+        }
+      },
+      {
+        "tag": "DIV",
+        "cls": "uV2eYG_grow",
+        "role": null,
+        "text": "描述你想要构建的内容, / 调用指令, @ 文件或对话",
+        "rect": {
+          "x": 469,
+          "y": 501,
+          "w": 770,
+          "h": 52
+        }
+      },
+      {
+        "tag": "DIV",
+        "cls": "uV2eYG_placeholder",
+        "role": null,
+        "text": "描述你想要构建的内容, / 调用指令, @ 文件或对话",
+        "rect": {
+          "x": 483,
+          "y": 505,
+          "w": 748,
+          "h": 24
+        }
+      },
+      {
+        "tag": "DIV",
+        "cls": "uV2eYG_row",
+        "role": null,
+        "text": "工作区内修改 ◉ 只看结果 DeepSeek-V41-Flash High",
+        "rect": {
+          "x": 469,
+          "y": 565,
+          "w": 774,
+          "h": 42
+        }
+      },
+      {
+        "tag": "DIV",
+        "cls": "uV2eYG_modes",
+        "role": null,
+        "text": "工作区内修改",
+        "rect": {
+          "x": 517,
+          "y": 570,
+          "w": 126,
+          "h": 28
+        }
+      },
+      {
+        "tag": "SPAN",
+        "cls": "_root_4ub78_1",
+        "role": null,
+        "text": "工作区内修改",
+        "rect": {
+          "x": 517,
+          "y": 570,
+          "w": 126,
+          "h": 28
+        }
+      },
+      {
+        "tag": "BUTTON",
+        "cls": "iWlSmW_trigger",
+        "role": null,
+        "text": "工作区内修改",
+        "rect": {
+          "x": 517,
+          "y": 570,
+          "w": 126,
+          "h": 28
+        }
+      },
+      {
+        "tag": "SPAN",
+        "cls": "iWlSmW_triggerLabel",
+        "role": null,
+        "text": "工作区内修改",
+        "rect": {
+          "x": 543,
+          "y": 574,
+          "w": 78,
+          "h": 20
+        }
+      },
+      {
+        "tag": "BUTTON",
+        "cls": "",
+        "role": null,
+        "text": "◉ 只看结果",
+        "rect": {
+          "x": 655,
+          "y": 573,
+          "w": 79,
+          "h": 22
+        }
+      },
+      {
+        "tag": "DIV",
+        "cls": "uV2eYG_trailing",
+        "role": null,
+        "text": "DeepSeek-V41-Flash High",
+        "rect": {
+          "x": 998,
+          "y": 567,
+          "w": 238,
+          "h": 34
+        }
+      },
+      {
+        "tag": "DIV",
+        "cls": "uV2eYG_standardControls",
+        "role": null,
+        "text": "DeepSeek-V41-Flash High",
+        "rect": {
+          "x": 998,
+          "y": 570,
+          "w": 180,
+          "h": 28
+        }
+      },
+      {
+        "tag": "DIV",
+        "cls": "_7KE1Ra_root",
+        "role": null,
+        "text": "DeepSeek-V41-Flash High",
+        "rect": {
+          "x": 998,
+          "y": 570,
+          "w": 180,
+          "h": 28
+        }
+      },
+      {
+        "tag": "SPAN",
+        "cls": "_7KE1Ra_triggerLabel",
+        "role": null,
+        "text": "DeepSeek-V41-Flash",
+        "rect": {
+          "x": 1006,
+          "y": 574,
+          "w": 119,
+          "h": 20
+        }
+      },
+      {
+        "tag": "SPAN",
+        "cls": "_7KE1Ra_triggerEffort",
+        "role": null,
+        "text": "High",
+        "rect": {
+          "x": 1128,
+          "y": 574,
+          "w": 27,
+          "h": 20
+        }
+      },
+      {
+        "tag": "H2",
+        "cls": "jLrgrW_title",
+        "role": null,
+        "text": "预览版说明",
+        "rect": {
+          "x": 448,
+          "y": 356,
+          "w": 544,
+          "h": 28
+        }
+      },
+      {
+        "tag": "DIV",
+        "cls": "t1T8VW_actions",
+        "role": null,
+        "text": "继续",
+        "rect": {
+          "x": 448,
+          "y": 608,
+          "w": 544,
+          "h": 36
+        }
+      },
+      {
+        "tag": "BUTTON",
+        "cls": "_button_1rv3m_2 _primary_1rv3m_36 _md_1rv3m_23 t1T8VW_primary",
+        "role": null,
+        "text": "继续",
+        "rect": {
+          "x": 872,
+          "y": 608,
+          "w": 120,
+          "h": 36
+        }
+      }
+    ],
+    "sessionIdAttrs": [],
+    "treeitems": [
+      {
+        "text": "workspace",
+        "attrs": {
+          "class": "YDXeBa_projectRow",
+          "data-row-key": "workspace:ac1753c6-dd89-451b-a529-74e44357e9e6",
+          "role": "treeitem",
+          "aria-expanded": "true",
+          "draggable": "true"
+        }
+      },
+      {
+        "text": "新会话",
+        "attrs": {
+          "data-row-key": "session:session-5a0b261b-2264-4e16-83c7-237905f1d656",
+          "class": "YDXeBa_sessionRow YDXeBa_selected",
+          "role": "treeitem",
+          "aria-selected": "true",
+          "draggable": "false"
+        }
+      },
+      {
+        "text": "未命名 1小时",
+        "attrs": {
+          "data-row-key": "session:sess-rov-long",
+          "class": "YDXeBa_sessionRow",
+          "role": "treeitem",
+          "aria-selected": "false",
+          "draggable": "true"
+        }
+      },
+      {
+        "text": "未命名 1小时",
+        "attrs": {
+          "data-row-key": "session:sess-rov-multi",
+          "class": "YDXeBa_sessionRow",
+          "role": "treeitem",
+          "aria-selected": "false",
+          "draggable": "true"
+        }
+      },
+      {
+        "text": "未命名 1小时",
+        "attrs": {
+          "data-row-key": "session:sess-rov-one",
+          "class": "YDXeBa_sessionRow",
+          "role": "treeitem",
+          "aria-selected": "false",
+          "draggable": "true"
+        }
+      },
+      {
+        "text": "未命名 1小时",
+        "attrs": {
+          "data-row-key": "session:sess-rov-empty",
+          "class": "YDXeBa_sessionRow",
+          "role": "treeitem",
+          "aria-selected": "false",
+          "draggable": "true"
+        }
+      }
+    ],
+    "cur": "{\"sessionId\":\"session-5a0b261b-2264-4e16-83c7-237905f1d656\"}",
+    "allStorage": {
+      "dsh.workspace.view.v5": "{\"groupBy\":\"workspace\",\"orderBy\":\"updated\",\"groupExpansion\":{\"ac1753c6-dd89-451b-a529-74e44357e9e6\":true},\"sessionOrderByAccount\":{},\"archivedFilter\":\"default\"}",
+      "dsh.sessions.current": "{\"sessionId\":\"session-5a0b261b-2264-4e16-83c7-237905f1d656\"}",
+      "dsh.sidebar-right.v1.session-5a0b261b-2264-4e16-83c7-237905f1d656": "{\"bySession\":{\"session-5a0b261b-2264-4e16-83c7-237905f1d656\":{\"layout\":{\"nodes\":{\"pane1\":{\"kind\":\"pane\",\"id\":\"pane1\",\"host\":\"dock\",\"tabs\":[]}},\"tabs\":{},\"rootId\":\"pane1\",\"floats\":[],\"activePaneId\":\"pa"
+    }
+  },
+  "api": {
+    "/api/sessions": {
+      "status": 404,
+      "body": "not found"
+    },
+    "/api/session/list": {
+      "status": 404,
+      "body": "not found"
+    },
+    "/api/workspaces": {
+      "status": 404,
+      "body": "not found"
+    },
+    "/api/workspace/sessions": {
+      "status": 404,
+      "body": "not found"
+    }
+  },
+  "errors": [],
+  "consoleLog": [
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "utc": "2026-10-22T01:03:45.032Z"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "utc": "2026-10-22T01:03:45.035Z"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "utc": "2026-10-22T01:03:45.039Z"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "utc": "2026-10-22T01:03:45.044Z"
+    }
+  ]
+}

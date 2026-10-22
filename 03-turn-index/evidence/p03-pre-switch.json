@@ -1,0 +1,60 @@
+{
+  "dismissed": "clicked-继续",
+  "before": {
+    "url": "http://127.0.0.1:2122/",
+    "viewport": {
+      "w": 1440,
+      "h": 1000,
+      "dpr": 1
+    },
+    "doc": {
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "overflowX": false
+    },
+    "panel": null,
+    "list": null,
+    "items": [],
+    "activeKeys": [],
+    "activeCount": 0,
+    "scrollport": {
+      "rect": {
+        "x": 280,
+        "y": 40,
+        "w": 1158,
+        "h": 960,
+        "top": 40,
+        "bottom": 1000,
+        "left": 280,
+        "right": 1438
+      },
+      "scrollTop": 0,
+      "scrollHeight": 960,
+      "clientHeight": 960
+    },
+    "flowRows": [],
+    "userRowCount": 0,
+    "steeringRowCount": 0,
+    "storage": {
+      "dsh.workspace.view.v5": "{\"groupBy\":\"workspace\",\"orderBy\":\"updated\",\"groupExpansion\":{\"3d66859e-4425-4721-afaf-24874aee434a\":true},\"sessionOrderByAccount\":{},\"archivedFilter\":\"default\"}",
+      "dsh.sessions.current": "{\"sessionId\":\"session-cded7315-a936-41eb-a3db-96e7a8c6eac8\"}",
+      "dsh.sidebar-right.v1.session-cded7315-a936-41eb-a3db-96e7a8c6eac8": "{\"bySession\":{\"session-cded7315-a936-41eb-a3db-96e7a8c6eac8\":{\"layout\":{\"nodes\":{\"pane1\":{\"kind\":\"pane\",\"id\":\"pane1\",\"host\":\"dock\",\"tabs\":[]}},\"tabs\":{},\"rootId\":\"pane1\",\"floats\":[],\"activePaneId\":\"pane1\",\"expanded\":false,\"mode\":\"push\"},\"minted\":1}}}"
+    },
+    "shellOverlay": {
+      "x": 0,
+      "y": 0,
+      "w": 1440,
+      "h": 1000,
+      "top": 0,
+      "bottom": 1000,
+      "left": 0,
+      "right": 1440
+    },
+    "chatColumn": null,
+    "bodyText": "新会话\nCtrl\n+\nAlt\n+\nN\n插件\n工作区\nworkspace\n新会话\n未命名\n1小时\n未命名\n1小时\n未命名\n1小时\n未命名\n1小时\n未命名\n1小时\n设置\n探索未至之境\n预览版\nworkspace\n标准模式\n描述你想要构建的内容, / 调用指令, @ 文件或对话\n工作区内修改\nDeepSeek-V41-Flash\nHigh\n添加一个 API Key 开始使用\n\n配置 DeepSeek 官方模型，即可开始使用。\n\nAPI 密钥\n稍后配置\n保存并继续"
+  },
+  "overlayHtml": "<div data-slot=\"shell.overlay\" style=\"display: contents;\"></div>",
+  "tiRoot": null,
+  "errors": [],
+  "consoleLog": []
+}

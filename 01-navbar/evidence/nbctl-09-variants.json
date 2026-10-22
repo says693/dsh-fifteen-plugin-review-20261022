@@ -1,0 +1,103 @@
+{
+  "results": [
+    {
+      "i": 2,
+      "text": "NB 长会话 45 条 6分钟",
+      "x": 140,
+      "y": 292,
+      "title": "workspace",
+      "flowKids": 1,
+      "flowText": "加载更早",
+      "userRows": 0,
+      "dots": 0,
+      "navDisplay": null,
+      "navRect": null,
+      "activeIdx": -1,
+      "cons": [
+        "[session-controller] event feed subscriber failed: TypeError: Cannot read properties of undefined (reading 'kind')\n    at Object.start (http://127.0.0"
+      ]
+    },
+    {
+      "i": 3,
+      "text": "NB 八条对照 6分钟",
+      "x": 140,
+      "y": 326,
+      "title": "workspace",
+      "flowKids": 0,
+      "flowText": "",
+      "userRows": 0,
+      "dots": 0,
+      "navDisplay": null,
+      "navRect": null,
+      "activeIdx": -1,
+      "cons": [
+        "[session-controller] event feed subscriber failed: TypeError: Cannot read properties of undefined (reading 'kind')\n    at Object.start (http://127.0.0"
+      ]
+    },
+    {
+      "i": 4,
+      "text": "NB 超长消息 6分钟",
+      "x": 140,
+      "y": 360,
+      "title": "workspace",
+      "flowKids": 0,
+      "flowText": "",
+      "userRows": 0,
+      "dots": 0,
+      "navDisplay": null,
+      "navRect": null,
+      "activeIdx": -1,
+      "cons": [
+        "[session-controller] event feed subscriber failed: TypeError: Cannot read properties of undefined (reading 'kind')\n    at Object.start (http://127.0.0"
+      ]
+    },
+    {
+      "i": 5,
+      "text": "NB 只有一条 6分钟",
+      "x": 140,
+      "y": 394,
+      "title": "workspace",
+      "flowKids": null,
+      "flowText": "",
+      "userRows": 0,
+      "dots": 0,
+      "navDisplay": null,
+      "navRect": null,
+      "activeIdx": -1,
+      "cons": []
+    },
+    {
+      "i": 6,
+      "text": "未命名 6分钟",
+      "x": 140,
+      "y": 428,
+      "title": "workspace",
+      "flowKids": null,
+      "flowText": "",
+      "userRows": 0,
+      "dots": 0,
+      "navDisplay": null,
+      "navRect": null,
+      "activeIdx": -1,
+      "cons": []
+    },
+    {
+      "i": 7,
+      "text": "未分组",
+      "x": 140,
+      "y": 465,
+      "title": "workspace",
+      "flowKids": 0,
+      "flowText": "",
+      "userRows": 0,
+      "dots": 0,
+      "navDisplay": null,
+      "navRect": null,
+      "activeIdx": -1,
+      "cons": [
+        "[session-controller] event feed subscriber failed: TypeError: Cannot read properties of undefined (reading 'kind')\n    at Object.start (http://127.0.0"
+      ]
+    }
+  ],
+  "errors": []
+}

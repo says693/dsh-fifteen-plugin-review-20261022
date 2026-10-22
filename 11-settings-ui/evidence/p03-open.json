@@ -1,0 +1,75 @@
+{
+  "dismiss1": [
+    "click 继续",
+    "click 继续",
+    "click 继续",
+    "click 继续"
+  ],
+  "dialogsAfterDismiss": [
+    {
+      "modal": null,
+      "cls": "_dialog_o6lrb_33 jLrgrW_dialog",
+      "text": "添加一个 API Key 开始使用\n\n配置 DeepSeek 官方模型，即可开始使用。\n\nAPI 密钥\n稍后配置\n保存并继续"
+    }
+  ],
+  "open": {
+    "found": true,
+    "rect": {
+      "x": 10,
+      "y": 948,
+      "w": 260,
+      "h": 42
+    }
+  },
+  "afterButtonClick": {
+    "settingsSel": false,
+    "settingsAny": false,
+    "dialogs": [
+      {
+        "modal": null,
+        "cls": "_dialog_o6lrb_33 jLrgrW_dialog",
+        "text": "添加一个 API Key 开始使用\n\n配置 DeepSeek 官方模型，即可开始使用。\n\nAPI 密钥\n稍后配置\n保存并继续"
+      }
+    ]
+  },
+  "hotkey": "Control+Alt+,",
+  "afterHotkey": {
+    "settingsSel": false,
+    "settingsAny": false,
+    "settingsOuter": null,
+    "dialogs": [
+      {
+        "modal": null,
+        "cls": "_dialog_o6lrb_33 jLrgrW_dialog",
+        "text": "添加一个 API Key 开始使用\n\n配置 DeepSeek 官方模型，即可开始使用。\n\nAPI 密钥\n稍后配置\n保存并继续"
+      }
+    ]
+  },
+  "panel": {
+    "url": "http://127.0.0.1:3067/",
+    "viewport": {
+      "w": 1440,
+      "h": 1000
+    },
+    "dark": false,
+    "panelPresent": false,
+    "panelRect": null,
+    "panelStyle": null,
+    "tweakStyleExists": true,
+    "tweakCss": "",
+    "uiStyleExists": true,
+    "doc": {
+      "scrollW": 1440,
+      "clientW": 1440,
+      "overflowX": false
+    },
+    "storageKeys": [
+      "dsh.workspace.view.v5",
+      "dsh.sidebar-right.v1.session-2706f68c-a82a-4dfc-95b3-f4abb3626af2",
+      "dsh.sessions.current"
+    ],
+    "bodyBg": "rgb(255, 255, 255)"
+  },
+  "errors": [],
+  "consoleLog": []
+}

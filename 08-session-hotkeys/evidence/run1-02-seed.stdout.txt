@@ -1,0 +1,38 @@
+﻿{
+  "start": 1,
+  "presses": [
+    {
+      "i": 0,
+      "rowCountBefore": 1,
+      "rowCountAfter": 1,
+      "toast": "新建会话",
+      "activeKey": "session:session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e"
+    },
+    {
+      "i": 1,
+      "rowCountBefore": 1,
+      "rowCountAfter": 1,
+      "toast": "新建会话",
+      "activeKey": "session:session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e"
+    },
+    {
+      "i": 2,
+      "rowCountBefore": 1,
+      "rowCountAfter": 1,
+      "toast": "新建会话",
+      "activeKey": "session:session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e"
+    }
+  ],
+  "mid": {
+    "rowCount": 1,
+    "rows": [
+      {
+        "key": "session:session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e",
+        "sel": "true",
+        "text": "新会话"
+      }
+    ],
+    "activeKey": "session:session-ca05d14f-3ae7-4fff-8999-a9b22d3c424e"
+  },
+  "errors": []
+}

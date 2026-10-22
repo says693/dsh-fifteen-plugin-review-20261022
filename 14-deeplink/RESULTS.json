@@ -1,0 +1,204 @@
+{
+  "object": "qyw233/dsh-deeplink @ fffa63a8906c962625d79ab62469e2ce03aee9b9 (package.json 0.6.1, MIT)",
+  "artifact_note": "npm 无发布件（registry 404、镜像 404、search 无同名包）；以本地目录安装 -> 全部结论均为「未测发布包」",
+  "host": "@deepseek-ai/dsh 0.2.0-rc.2",
+  "browser": "Edge 155.0.4283.62 headless via Playwright",
+  "evaluated_at": "2026-10-22T10:42:00+08:00",
+  "summary": {
+    "confirmed_findings": 9,
+    "uncertain": 2,
+    "untested": 3,
+    "one_line": "插件确实被宿主加载，也能正确解析 ?session= / ?workspace= 并给出静默回落；但本版宿主上两条深链都走不通：?token= 会先被宿主 303 重写掉整个 query，而即便绕过鉴权让插件读到参数，它调用的 sessions.open / workspaces.connectWorkspace 在 0.2.0-rc.2 的服务面上不存在。"
+  },
+  "checks": [
+    {
+      "id": "C0-baseline-control",
+      "title": "对照：不装插件的 profile 能否正常渲染合成会话（隔离夹具问题与插件问题）",
+      "expected": "对照 profile 能列出并渲染 alpha/beta 两个工程的 3 个合成会话",
+      "actual": "ctl profile（只 dsh-base + dsh-web-app）侧栏列出 6 行（2 workspace + 1 新会话 + 3 合成会话），点开 sess-dl-alpha-two 后 [data-chat-flow] 有 12 个子元素、[data-chat-flow-kind=user] 3 个；sess-dl-beta-one 与 sess-dl-alpha-one 各 4 / 1。无 pageerror。",
+      "evidence": [
+        "evidence/ctl-04-modal-diag.json",
+        "evidence/ctl-05-rows.json",
+        "evidence/ctl-09-all-rows.png"
+      ],
+      "state": "confirmed",
+      "note": "这一步证明会话夹具本身没问题：后续在装插件的 profile 上出现的异常不能归给夹具。"
+    },
+    {
+      "id": "C1-session-param",
+      "title": "?session=<id> 能否直达对应会话",
+      "expected": "页面切到该会话，正文含该会话独有文本，URL 稳定",
+      "actual": "走 README 描述的方式（带 ?token=...&session=<id> 一次打开）时宿主先回 303 到 `/`，整个 query 被丢弃，插件根本没机会读参数：7 种 URL 形状（token-only / token+session / session+token / token+workspace / token+foo / 无 token / 无 query）全部 303→`/?token=` 落地成 `200 /`，首帧 location.search 为空串。改为「同一 context 先走一次 token URL 铸 cookie、再导航 /?session=sess-dl-alpha-two」后插件读到了参数，但抛 TypeError: sessions.open is not a function，当前会话仍是默认的 session-e9ea570e…，chatFlowKids=0。",
+      "evidence": [
+        "evidence/dl-09-url-shapes.json",
+        "evidence/dl-10-authed-deeplink.json",
+        "evidence/dl-08-trace.json",
+        "evidence/dl-D-D1-session.png"
+      ],
+      "state": "confirmed",
+      "note": "两个独立阻断：宿主鉴权重定向吞 query（属宿主行为，不是插件缺陷）+ 插件调用了本版不存在的 API。"
+    },
+    {
+      "id": "C2-workspace-param",
+      "title": "?workspace=<id> 能否直达对应项目",
+      "expected": "连上该工程并打开其最新/空白会话，URL 变成 ?session=<新 id>",
+      "actual": "同样的两层阻断。铸好 cookie 后导航 /?workspace=7529e9de-…（alpha）与 /?workspace=ee73cda6-…（beta），console 都是 TypeError: workspaces.connectWorkspace is not a function；当前会话未变（仍 session-e9ea570e…），URL 未被改写成 ?session=。",
+      "evidence": [
+        "evidence/dl-10-authed-deeplink.json",
+        "evidence/dl-D-D3-workspace-alpha.png",
+        "evidence/dl-D-D4-workspace-beta.png"
+      ],
+      "state": "confirmed",
+      "note": "connectWorkspace 存在于宿主 dsh-client-ui-workspace 的 UiWorkspaceService，但不在 workspaces 服务对象上——插件取的是后者。"
+    },
+    {
+      "id": "C3-both-params",
+      "title": "?session= 与 ?workspace= 同时出现的优先级",
+      "expected": "源码与 README 都写 session 优先，且 workspace 参数被消费掉",
+      "actual": "两个分支都在参数解析阶段被选对：带 session 时走 onSessionList（报 sessions.open 不存在），带 workspace 时走 onWorkspaceList（报 connectWorkspace 不存在），顺序反过来也一样——说明 readTarget() 的 session 优先逻辑生效。但「最终落到哪个会话」无法观察，因为跳转本身没成功。",
+      "evidence": [
+        "evidence/dl-10-authed-deeplink.json",
+        "evidence/dl-12-anomalies.json",
+        "evidence/dl-case-C3-both.png",
+        "evidence/dl-case-C3b-both-reversed-order.png"
+      ],
+      "state": "confirmed",
+      "note": "只确认了参数选择逻辑（session 优先），未确认「同时出现时页面最终停在哪」，因为两条路径都失败。"
+    },
+    {
+      "id": "C4-invalid-id",
+      "title": "无效 id（不存在 / 格式错 / 超长 / 非法编码）的提示与回落",
+      "expected": "不白屏、不报错，静默回落到默认会话（README 第 17 行）",
+      "actual": "全部不白屏、无 pageerror、bodyLen 正常。console.warn 文案逐条给出：不存在会话 -> `[dsh-deeplink] 会话 'sess-nope' 不在会话列表中，忽略深链参数`；不存在工程 -> `[dsh-deeplink] 工程 '00000000-0000-4000-8000-000000000000' 不在工程列表中，忽略深链参数`；`../../etc/passwd` 与 `not-a-uuid` 同上；2000 字符 id 被原样打进 warn（无截断）；`%E0%A4%A` 被 URLSearchParams 解成替换字符 `'�%A'` 后同样走 warn。",
+      "evidence": [
+        "evidence/dl-10-authed-deeplink.json",
+        "evidence/dl-12-anomalies.json",
+        "evidence/dl-case-C4a-unknown-session.png",
+        "evidence/dl-E-E2-bad-encoding.png"
+      ],
+      "state": "confirmed",
+      "note": "回落行为本身体验良好：有 warn 可查、页面不炸。但 warn 只到 console，普通用户在界面上看不到任何提示（见 U2）。"
+    },
+    {
+      "id": "C5-follow-and-refresh",
+      "title": "地址栏是否跟随当前会话；参数是否被后续导航清除；刷新是否稳定",
+      "expected": "切会话时 URL 变 ?session=<当前 id>；无会话时清空；刷新后一致",
+      "actual": "syncUrl 的「删除 session/workspace/new」逻辑确实执行：`/?session=sess-dl-alpha-one&keepme=1` 被 replaceState 成 `/?keepme=1`（session 被消费、未知参数 keepme 保留）。但因为跳转失败、current 没变，URL 没有被写成 ?session=<当前 id>；手动点侧栏会话行时 history 调用数为 0（没有跟随）。刷新后 URL 仍是 `/?keepme=1`，页面回到默认会话。",
+      "evidence": [
+        "evidence/dl-13-follow-precise.json",
+        "evidence/dl-11-follow-settings-viewports.json",
+        "evidence/dl-F2-manual-click.png",
+        "evidence/dl-F3-after-reload.png"
+      ],
+      "state": "uncertain",
+      "note": "「是否跟随」在当前宿主上无法得到干净的判定：跟随依赖 current 变化，而 current 永远不变，所以既可能是「跟着没变化」，也可能是「跟随逻辑没触发」。已确认的是：replaceState 确实被调用、session 参数被消费掉、未知参数被保留。"
+    },
+    {
+      "id": "C6-token-coexistence",
+      "title": "宿主自己的 ?token= 与深链参数共存是否互相破坏",
+      "expected": "两者互不破坏：鉴权通过且跳转生效",
+      "actual": "互相破坏，且方向明确：只要根路径请求带 ?token=，宿主的 authorizeIndex() 一律 `res.writeHead(303,{location:'./'})`，Location 是相对 `./` 而不是原 URL，query 被整体丢弃——深链参数在插件运行前就没了。反过来，去掉 token 后 401（`session-no-token` 与 `no-query` 两种形状都是 401、bodyLen 小、无应用），必须先有 cookie。实测 7 种形状的 303→200 全部如此。",
+      "evidence": [
+        "evidence/dl-09-url-shapes.json",
+        "evidence/dl-08-trace.json"
+      ],
+      "state": "confirmed",
+      "note": "这是本轮最关键的一条：README 与插件 prompt 里示范的 `http://127.0.0.1:3080/?session=...` 在带 token 的 URL 形态下必然失效。宿主源码位置：dsh-client-connection/lib/index.js 的 authorizeIndex()。"
+    },
+    {
+      "id": "C7-settings-card-and-viewports",
+      "title": "设置卡是否存在；窄窗与深色主题下是否可用",
+      "expected": "插件配置里出现「深链」卡片（两个开关），窄窗/深色不错位",
+      "actual": "插件页能看到「已安装 1 @dsh-community/dsh-deeplink」且启用开关为开；但「插件配置」区域只有 5 个官方开关（智能体团队/自动授权审查/自动化任务/语音输入 + 各插件行），没有「深链」卡片，`地址栏跟随` 文案在 600/760/1440 宽与深浅两色下都不存在，`.dshdl-switch` 数量恒为 0。页面本身无横向溢出（scrollWidth == clientWidth），深色下 bg rgb(21,21,23)/fg rgb(249,250,251)。",
+      "evidence": [
+        "evidence/dl-11-follow-settings-viewports.json",
+        "evidence/dl-07-diag.json",
+        "evidence/dl-C7-settings-plugins.png",
+        "evidence/dl-C7-w600.png",
+        "evidence/dl-C7-dark.png"
+      ],
+      "state": "confirmed",
+      "note": "插件注入的 style 节点存在（857 字符，data-plugin-css=@dsh-community/dsh-deeplink），说明浏览器半确实跑起来并执行到了样式注入；卡没出现的原因是它注册到 settings.plugin.item，而本版宿主插件页消费的槽是 plugins.item（另加 settings.plugins.tab）。"
+    },
+    {
+      "id": "C8-anomalies",
+      "title": "空参数 / 重复参数 / 非法编码",
+      "expected": "空参数当没有（源码 `if (session !== null && session !== '')`）；重复取第一个；非法编码不抛",
+      "actual": "`?session=` 与 `?session=&workspace=`：无 warn、无报错、页面正常（等价于没参数）。`?session=sess-dl-alpha-one&session=sess-dl-beta-one`：URLSearchParams.get 取第一个，日志里不是「不在列表中」，说明拿到的是 alpha-one（随后撞上 sessions.open 不存在）。`%E0%A4%A` 不抛异常，解成替换字符后按「不在列表中」处理。",
+      "evidence": [
+        "evidence/dl-12-anomalies.json",
+        "evidence/dl-case-C8a-empty-session.png",
+        "evidence/dl-E-E1-dup-session.png"
+      ],
+      "state": "confirmed",
+      "note": "三项都与源码分支一致，没有发现崩溃或白屏。"
+    },
+    {
+      "id": "C9-jump-toggle",
+      "title": "「跳转到指定对话」开关关闭后是否真的不跳转",
+      "expected": "localStorage 里 dsh-deeplink.jump=0 时，带 ?session= 重载不处理深链",
+      "actual": "写入 dsh-deeplink.jump=0 后带 ?session=sess-dl-alpha-two 导航：console 无任何 dsh-deeplink 输出（既没有 sessions.open 的 TypeError，也没有「不在列表中」的 warn），页面正常。对照默认值（jump 未设）同一 URL 会报 TypeError，说明开关的读取确实生效。",
+      "evidence": [
+        "evidence/dl-12-anomalies.json",
+        "evidence/dl-E-E5-jump-off.png"
+      ],
+      "state": "confirmed",
+      "note": "开关本身能用；但因为没有设置卡（C7），用户实际上没有界面去关它。"
+    },
+    {
+      "id": "U1-model-prompt-section",
+      "title": "节点半注册的 model prompt section 是否可观察",
+      "expected": "宿主 prompt 里出现 plugin:dsh-deeplink 段，模型会主动贴深链",
+      "actual": "未测。没有调用模型（任务禁止），也没有可读的 prompt dump 入口，无法验证该段是否真的注入、注入后模型是否按它贴链接。",
+      "evidence": [],
+      "state": "untested",
+      "note": "只核对了源码：lib/index.js 用 ctx.systemPrompt.section 注册，order -97，文本里给的是 `http://127.0.0.1:<port>/?session=...` 形态——正是 C6 里会被 303 吞掉 query 的形态。"
+    },
+    {
+      "id": "U2-user-visible-invalid-hint",
+      "title": "无效 id 时界面上是否有可见提示",
+      "expected": "README 写「静默回落」，但用户体验上是否至少有个 toast",
+      "actual": "界面上完全没有任何提示（设置页、会话页、composer 都没有变化）；只有 console.warn。截图 dl-case-C4a-unknown-session.png 与正常打开的截图肉眼无差别。",
+      "evidence": [
+        "evidence/dl-case-C4a-unknown-session.png",
+        "evidence/dl-case-C8f-no-params-only-token.png"
+      ],
+      "state": "uncertain",
+      "note": "「不该弹窗打扰」也是一种设计取舍，README 明确写了 silent fallback，所以不判缺陷；但对新手来说「点了个链接什么都没发生」很难自查，记 uncertain 是因为无法判断作者意图是「静默」还是「本该有提示但没做」。"
+    },
+    {
+      "id": "U3-old-host-compat",
+      "title": "在更早的宿主版本上是否可用",
+      "expected": "README 说适配过 httpServer→webServer 改名，sessions 服务在旧版可能有 open()",
+      "actual": "未测。本机只有 0.2.0-rc.2 一个官方宿主；无法回测 0.1.x。",
+      "evidence": [],
+      "state": "untested",
+      "note": "因此「sessions.open 不存在」只能判定为与本版宿主不兼容，不能断言作者写错。"
+    },
+    {
+      "id": "U4-npm-artifact",
+      "title": "npm 发布包完整性与源码一致性",
+      "expected": "有发布件则核对 shasum/integrity 与 lib/client.js 是否同源",
+      "actual": "未测（无发布件）。registry 404、腾讯镜像 404、search API 无同名包；只能测固定提交的本地目录。",
+      "evidence": [
+        "evidence/dedup-review-site.json"
+      ],
+      "state": "untested",
+      "note": "报告与投稿草稿均写明「未测发布包」。"
+    }
+  ],
+  "stderr_only": [
+    {
+      "id": "E0-early-fixture-miss",
+      "title": "早期两次探针失败（夹具/交互问题，非插件缺陷）",
+      "detail": "probe-02-tree / probe-03-control-open 首版失败：宿主的「预览版说明」弹窗与设置向导（稍后配置）叠了两层遮罩，Playwright 点击被 _mask_ 拦截；以及早先误按 [data-session-id] 找会话行（宿主用的是 [role=treeitem][data-row-key]）。已改为 page-lib.mjs 的 dismissModals + data-row-key 定位，之后全部通过。",
+      "classification": "测试脚本问题，不记插件缺陷"
+    },
+    {
+      "id": "E1-json-parse-bom",
+      "title": "PowerShell ConvertFrom-Json 读接口响应报错",
+      "detail": "curl 输出带 BOM 导致 ConvertFrom-Json 对 9 页 JSON 全部失败（但文件本身完整）；改用 node 逐页 JSON.parse 后成功解析 172 条。",
+      "classification": "工具链问题，不影响查重结论"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "store": [
+    13,
+    13,
+    14,
+    15,
+    30,
+    26,
+    20014
+  ],
+  "walk": [
+    {
+      "step": 1,
+      "firstLen": 26,
+      "finalLen": 26,
+      "settleMs": 10
+    },
+    {
+      "step": 2,
+      "firstLen": 30,
+      "finalLen": 30,
+      "settleMs": 6
+    },
+    {
+      "step": 3,
+      "firstLen": 20014,
+      "finalLen": 20014,
+      "settleMs": 14
+    }
+  ],
+  "afterTypingOnLong": 20016,
+  "afterEscOnLong": 1,
+  "errors": []
+}

@@ -1,0 +1,138 @@
+{
+  "plugin": {
+    "name": "dsh-session-pin",
+    "version": "0.7.19",
+    "repository": "https://github.com/PerryLink/dsh-session-pin",
+    "author_github": "PerryLink",
+    "license": "Apache-2.0",
+    "license_file": "temp/pkg/package/LICENSE",
+    "install_channel": "npm published tarball (downloaded with `npm pack dsh-session-pin@0.7.19`, installed with `dsh plugin --profile pin add <tgz>`)",
+    "npm_published_utc": "2026-10-05T11:10:37.203Z",
+    "npm_latest": "0.7.19",
+    "npm_user": "GitHub Actions <npm-oidc-no-reply@github.com>",
+    "description": "Pin sessions and workspaces to the top of the DeepSeek-Harness sidebar with per-pin row colors - a dual-face (host + client) dsh plugin with row [pin][swatch] controls, a header toggle, a pinned panel, boards/tags/saved views, a health summary and /goto."
+  },
+  "package_integrity": {
+    "tarball": "temp/dsh-session-pin-0.7.19.tgz",
+    "tarball_bytes": 132926,
+    "dist_shasum": "f551e6123d41cdab62ce7aefac8e6bd11d65b6b3",
+    "computed_sha1": "f551e6123d41cdab62ce7aefac8e6bd11d65b6b3",
+    "shasum_match": true,
+    "dist_integrity": "sha512-RedQtH6hiVyRYDHA3BocPzsju/4gL8Reb6eMnKanwQIGpCEKscO6WagZbKAa1aos4YAlzaqXj7DHL9r+j0aVYg==",
+    "computed_sha512_base64": "RedQtH6hiVyRYDHA3BocPzsju/4gL8Reb6eMnKanwQIGpCEKscO6WagZbKAa1aos4YAlzaqXj7DHL9r+j0aVYg==",
+    "integrity_match": true,
+    "file_count": 14,
+    "unpacked_size": 504916,
+    "npm_attestations": "https://registry.npmjs.org/-/npm/v1/attestations/dsh-session-pin@0.7.19 (SLSA provenance v1)",
+    "git_head_at_publish": "a7f5eaa2b3d25e1c7e47879c5946c9f8581ebb4f",
+    "evidence": "evidence/npm-view-0.7.19.json, evidence/hashes.json"
+  },
+  "source_reference": {
+    "commit": "ed1a8ad0ce2724a9a783c842e4d1b1e270fcfdad",
+    "role": "source cross-check only; the version actually installed and exercised is the npm tarball above",
+    "note": "the npm publish carries gitHead a7f5eaa2b3d25e1c7e47879c5946c9f8581ebb4f, which is not the commit fixed for this round; the published bundle is what was tested"
+  },
+  "package_files_sha256": {
+    "package.json": "b65b18dd726a7b1d23a3b6995d248343d11d0ab8aea77a4d5678b9929a13ef51",
+    "lib/index.js": "660a87fbd6dac18c8f0dc966588d00a5d48d3bcd4b10af3cc58c0a8e2701b720",
+    "lib/client.js": "32110da815c64894afb829c877d7f534d277247268d441f7216033b366e237b6",
+    "LICENSE": "a22a0c495566ce9b09b25aa3feab8d54a5b12c6a26eb3dcb5324ead9a586da66",
+    "cordis.patch.yml": "ae5ace218378cbb07858be6fd837831c5f03e0a97feb6a853cb4b6383c29cc23",
+    "README.md": "a956e9d22c9327b477092cfa40d7e20c3f38c513c1df1fa8d7059de228d9d075",
+    "README-zh.md": "8cc7401f2a83dd4cf44901460f1690eecbfce6f39b17b278c2273fe27e3d9f62",
+    "CHANGELOG.md": "2e971398712f49244313fb6a91b825039f54f4dd944c5033f7fa796a02f4700f",
+    "SECURITY.md": "2e7765b16abd7da92e52bb434f5e949a962766fc781a75b30a74fd5105d7e63d"
+  },
+  "bundle_mount": {
+    "patch_file": "cordis.patch.yml",
+    "patch_content": "- insert:\\n    - id: session-pin\\n      name: dsh-session-pin",
+    "settings_entry_id": "session-pin",
+    "client_platform": "web",
+    "client_immediately": true,
+    "manifest_permissions": ["browser:local-storage", "settings:read", "settings:write"],
+    "declared_engines_dsh": ">=0.1.2-rc.1 <0.2.0 || >=0.1.5-alpha.1 <0.2.0 || >=0.1.6-0 <0.2.0 || >=0.1.7-0 <0.2.0 || >=0.2.0-0 <0.3.0 || >=0.2.1-0 <0.3.0"
+  },
+  "host": {
+    "package": "@deepseek-ai/dsh",
+    "version": "0.2.0-rc.2",
+    "bin": "C:/Users/32621/AppData/Roaming/npm/node_modules/@deepseek-ai/dsh/lib/bin.js",
+    "profile": "pin",
+    "profile_created_with": "node <bin> --profile pin --from-default-profile web --dump-config",
+    "profile_bundles": ["@deepseek-ai/dsh-base", "@deepseek-ai/dsh-web-app", "dsh-session-pin"],
+    "launch_flags": "--host 127.0.0.1 --port 0 --no-open",
+    "origins_observed": [
+      "http://127.0.0.1:8677 (run1)",
+      "http://127.0.0.1:7552 (run2, cold restart)"
+    ],
+    "install_peer_warning": "pnpm printed `Issues with peer dependencies found` but install exited 0 and the profile bundle list is correct; no allow-version exemption was needed"
+  },
+  "isolation": {
+    "task_root": "H:/CODEX/fifteen-plugin-reviews-20261022/r2-02-session-pin",
+    "DSH_HOME": "isolated-home/",
+    "HOME": "isolated-home/user-home",
+    "USERPROFILE": "isolated-home/user-home",
+    "APPDATA": "isolated-home/appdata",
+    "LOCALAPPDATA": "isolated-home/localappdata",
+    "XDG_*": "isolated-home/{cache,config,data}",
+    "npm_config_cache": "temp/npm-cache",
+    "workspace_cwd": "fixtures/workspace",
+    "host_created_workspace_outside_task_dir": {
+      "path": "H:/视频/document/deepseek-harness/default-workspace",
+      "note": "the host itself creates its built-in default workspace outside DSH_HOME; that directory already existed (created 2026-10-19) and was only read as a side observation, not modified by this run except through normal host session files inside isolated-home/"
+    },
+    "user_daily_gui_touched": false,
+    "user_gui_ports_avoided": [1241, 2538, 4756]
+  },
+  "tools": {
+    "node": "v24.19.0",
+    "npm": "11.17.0",
+    "pnpm": "11.7.0 (bundled with the dsh CLI)",
+    "playwright": "1.64.1 (H:/CODEX/dsh-code-security-review-20261019/tooling/node_modules/playwright/index.mjs, referenced read-only)",
+    "browser": "Microsoft Edge (Playwright chromium.launch, headless, executablePath msedge.exe)",
+    "os": "Windows x64",
+    "viewport": "1440x1000 primary; 1100/900/760/640 for the narrow-window checks"
+  },
+  "timing": {
+    "session_started_local": "2026-10-22T08:56:24+08:00",
+    "first_host_ready_utc": "2026-10-22T00:59:19Z",
+    "last_evidence_written_utc": "2026-10-22T01:30:00Z",
+    "timezone": "Asia/Shanghai (+08:00)"
+  },
+  "duplicate_check": {
+    "checked_utc": "2026-10-22T01:30:00Z",
+    "conclusion": "两站都查清：GitHub dsh-bounty 用 dsh-session-pin / session-pin / session pin / PerryLink 四个词查，命中均为其他插件（dsh-session-manager、dsh-hermes-memory、dsh-doublecheck 等），同范围重复 0；review.lingshulab.com 的 ?q= 服务端不过滤，改拉 /api/reviews 全量 172 条（9 页 × 20）本地扫描，dsh-session-pin / session-pin / PerryLink / 置顶 四个模式命中 0。就本轮可见范围而言无重复，可按首报写。",
+    "sites": [
+      {
+        "site": "https://github.com/FuRongJun-1999/dsh-bounty/issues",
+        "method": "GitHub search API, repo-scoped issue search, 4 queries",
+        "queries": [
+          {"q": "dsh-session-pin", "total_count": 12, "same_scope_hits": 0},
+          {"q": "session-pin", "total_count": 12, "same_scope_hits": 0},
+          {"q": "session pin", "total_count": 12, "same_scope_hits": 0},
+          {"q": "PerryLink", "total_count": 12, "same_scope_hits": 0}
+        ],
+        "note": "all hits are other plugins' reviews or memory-plugin security reports that merely contain the substring 'pin'; none reviews PerryLink/dsh-session-pin"
+      },
+      {
+        "site": "https://review.lingshulab.com",
+        "method": "the site's `?q=` parameter does not filter, so the full public index was paged via /api/reviews and scanned locally",
+        "index_total": 172,
+        "pages_fetched": 9,
+        "page_size": 20,
+        "scan_pattern": "dsh-session-pin|session-pin|perrylink|置顶 over the whole review record JSON",
+        "same_scope_hits": 0,
+        "status": "checked_clear",
+        "evidence": "evidence/lingshulab-index-scan.json"
+      }
+    ]
+  },
+  "processes": {
+    "hosts_created": [
+      {"tag": "run1", "origin": "http://127.0.0.1:8677", "wrapper_pid": 2428, "host_pid": 26176, "stopped": true},
+      {"tag": "run2", "origin": "http://127.0.0.1:7552", "wrapper_pid": 34296, "host_pid": 35184, "stopped": true, "purpose": "cold restart persistence check"}
+    ],
+    "browsers": "every probe launched its own headless Edge context and closed it at the end of the script",
+    "final_check": "no node process with `--profile pin` or `host.mjs run*pin`; no listener on 7552 or 8677",
+    "other_agents_processes_untouched": true
+  }
+}
